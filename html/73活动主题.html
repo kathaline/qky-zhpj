@@ -1,0 +1,741 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>学生综合素质评价</title>
+<!--框架css-->
+<link href="../css/frame_type_1.0.css" rel="stylesheet" type="text/css"/>
+<!--附加css-->
+<link href="../css/stu_judge.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
+<script language="JavaScript" charset="utf-8" src="../js/js_pack.js"></script>
+</head>
+
+<body class="ai-w-big">
+<!--顶部-->
+<div class="div-rgt">
+  <a href="" class="cd-feedback"><i class="qkyicon">&#xe6af;</i><p>反馈</p></a>
+  <a href="#0" class="cd-top"><i class="qkyicon">&#xe6a5;</i></a>
+</div>
+<div class="qky_newheader clear">
+   <div class="qky_newh-con">
+    <div class="qkyh_logo"><img src="../images/top/qkyoa_logo.png"><img src="../images/top/qkyoa_logo02.png"/></div>
+    <div class="qkyh_navbox"><a href="" class="cur">首页</a><a href="">学生成长报告书</a></div>
+    <div class="qkyh_infobox fr">
+        <div class="inf_school fl" title="中山市第一实验中学市第一实验中学">中山市第一实验中学市第一实验中学</div>
+    	<div class="info fl">
+            <div class="txbox"><span></span><img src="../images/stu_judge/nobody.png"/></div>
+            <div class="userbox">万洪泉老师</div>
+            <div class="usersel">
+                <a>消息提示</a>
+                <a>修改密码</a>
+                <a>退出登录</a>
+            </div> 
+        </div>
+        <div class="menubtn fr">
+            <div class="menusel clear">
+                <div class="menulist"><a><img src="../images/icons/ico_xybg.png"/><span>校园办公</span></a></div>
+                <div class="menulist"><img src="../images/icons/ico_xyzf.png"><span>校园支付</span></div>
+                <div class="menulist"><img src="../images/icons/ico_ydxy.png"><span>移动校园</span></div>
+                <div class="menulist"><img src="../images/icons/ico_zhjx.png"><span>智慧教学</span></div>
+                <div class="menulist"><img src="../images/icons/ico_zhkj.png"><span>智慧空间</span></div>
+                <div class="menulist"><img src="../images/icons/ico_pkxk.png"><span>智能排课</span></div>
+                <div class="menulist"><img src="../images/icons/ico_zhpj.png"><span>综合评价</span></div>
+                <div class="menulist"><img src="../images/icons/ico_cysz.png"><span>常用设置</span></div>
+            </div>
+        </div>  
+    </div>
+   </div>
+   <div class="qky_tips">
+     <div class="qky_tips-con">你收到ssansakxnsa,as  <strong class="co_y">6</strong>  条，是否处理？<a href="#" class="tips_btn">马上处理</a><a href="#" class="tips_btn">不再显示</a><a href="#" class="tips_clos" title="关闭"><i class="qkyicon">&#xe6aa;</i></a></div>
+    </div>
+</div>
+<div class="qky_content">
+  <div class="judge_wraper judge_w_n">
+   <div class="judge_cont_2">
+      <div class="cont_tit">
+         <div class="fr"><a href="#" class="bg_blue"><i class="qkyicon">&#xe6ea;</i>返回</a></div>
+         <div class="fl"><h3><i class="qkyicon">&#xe6ec;</i>活动主题列表</h3>
+         </div>
+      </div>
+         
+      <div class="judge_srh">
+        <ul class="ul_srh">
+            <li><span>学年学期：</span>
+                <select name="select">
+                  <option selected>全部学期</option>
+                  <option>2016-2017年上学期</option>
+                  <option>2016-2017年上学期</option>
+                </select>
+            </li>
+            <li><span>当前年级：</span>
+                <select name="select">
+                  <option selected>小一</option>
+                  <option>小一</option>
+                  <option>小一</option>
+                </select>
+            </li>
+            <li><span>活动类型：</span>
+                <select name="select">
+                  <option selected>全部活动</option>
+                  <option>社会实践</option>
+                  <option>社区服务</option>
+                </select>
+            </li>
+
+         </ul>
+         <div class="search fl"><input name="text" type="text"  placeholder="请输入活动名称"><a href="#" title="搜索"><i class="qkyicon">&#xe631;</i></a></div>
+          <div class="fr"><a href="#" class="bg_gray fr mar_l10"><i class="qkyicon">&#xe6b9;</i>删除评价</a><a class="bg_gray fr"  onclick="popIn('#set_add')"><i class="qkyicon fz_0">&#xe69e;</i>新建评价</a></div>
+      </div>
+         
+      
+        <div class="stu_jcont list-02">
+           <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
+            <tr>
+              <th width="5%" scope="col"><input name="" type="checkbox" value=""></th>
+              <th width="22%" scope="col">评价体系名称</th>
+              <th width="13%" scope="col">学年学期</th>
+              <th width="10%" scope="col">评价类型</th>
+              <th width="13%" scope="col">适用年级</th>
+              <th width="6%" scope="col">使用状态</th>
+             
+              <th width="31%" scope="col">操作</th>
+             </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期年度上学期年度上学期年度上学期年度上学期年度上学期年度上学期年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>全年级</td>
+              <td><span class="co_gray"><i class="qkyicon fz_2">&#xe709;</i>未启用</span></td>
+              
+              <td><a href="" class="a_btn">编辑指标</a> <a onClick="popIn('#set_edit')" class="a_btn">修改评价</a><a href="" class="a_btn a_btn_gray">启用</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>小1，小2，小3，小4</td>
+              <td><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>已启用</span></td>
+              
+              <td><a  onClick="popIn('#looko_norm')" class="a_btn">查看指标</a> <a onClick="popIn('#looko_infor')" class="a_btn">查看信息</a><a  class="a_btn a_btn_gray"  onClick="popIn('#set_del')">废用</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>小1，小2</td>
+              <td><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>已启用</span></td>
+              <td><a onClick="popIn('#looko_norm')" class="a_btn">查看指标</a> <a onClick="popIn('#looko_infor')" class="a_btn">查看信息</a><a  class="a_btn a_btn_gray"  onClick="popIn('#set_del')">废用</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>小3，小4</td>
+              <td><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>已启用</span></td>
+              <td><a href="" class="a_btn">编辑指标</a> <a onClick="popIn('#set_edit')" class="a_btn">修改评价</a><a href="" class="a_btn a_btn_gray">启用</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>全年级</td>
+              <td><span class="co_gray"><i class="qkyicon fz_2">&#xe709;</i>未启用</span></td>
+              
+              <td><a href="" class="a_btn">编辑指标</a> <a onClick="popIn('#set_edit')" class="a_btn">修改评价</a><a href="" class="a_btn a_btn_gray">启用</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>小1，小2，小3，小4</td>
+              <td><span class="co_gray"><i class="qkyicon fz_2">&#xe709;</i>未启用</span></td>
+              
+              <td><a href="" class="a_btn">编辑指标</a> <a onClick="popIn('#set_edit')" class="a_btn">修改评价</a><a href="" class="a_btn a_btn_gray">启用</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>小1，小2</td>
+              <td><span class="co_gray"><i class="qkyicon fz_2">&#xe709;</i>未启用</span></td>
+              <td><a href="" class="a_btn">编辑指标</a> <a onClick="popIn('#set_edit')" class="a_btn">修改评价</a><a href="" class="a_btn a_btn_gray">启用</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>小3，小4</td>
+              <td><span class="co_gray"><i class="qkyicon fz_2">&#xe709;</i>未启用</span></td>
+              <td><a href="" class="a_btn">编辑指标</a> <a onClick="popIn('#set_edit')" class="a_btn">修改评价</a><a href="" class="a_btn a_btn_gray">启用</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>小1，小2，小3，小4</td>
+              <td><span class="co_gray"><i class="qkyicon fz_2">&#xe709;</i>未启用</span></td>
+              <td><a href="" class="a_btn">编辑指标</a> <a onClick="popIn('#set_edit')" class="a_btn">修改评价</a><a href="" class="a_btn a_btn_gray">启用</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value=""></td>
+              <td>2016-2017年度上学期</td>
+              <td>2016-2017年上学期</td>
+              <td>按学期</td>
+              <td>小1，小2</td>
+              <td><span class="co_gray"><i class="qkyicon fz_2">&#xe709;</i>未启用</span></td>
+              <td><a href="" class="a_btn">编辑指标</a> <a onClick="popIn('#set_edit')" class="a_btn">修改评价</a><a href="" class="a_btn a_btn_gray">启用</a></td>
+            </tr>
+          </table>
+  
+        </div>
+        <div class="div-page">
+          <a href="#" class="no">上一页</a>
+          <a href="#" class="cur">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          ...
+          <a href="#">12</a>
+          <a href="#">下一页</a>
+        </div>
+	</div>
+  </div>
+</div>
+<div class="qky_footer">
+  <div>Copyright1999-2016  广东全通教育股份有限公司 版权所有</div>
+</div>
+
+<!--新建评价弹窗-->
+<div class="set_box yc" id="set_add">
+    <div class="set_mask"></div>
+    <div class="set_mask_main set_add">
+      <div class="main_title">新建评价体系<div class="mask_close" onClick="popOut('#set_add')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+          <div class="add_01">
+          <ul class="ul_add">
+             <li><span class="tit_span">评价名称：</span><input name="text" type="text"  placeholder="" class="add_txt"></li>
+             <li><span class="tit_span">学年学期：</span>
+               <select class="sel_02">
+                 <option selected>2016-2017年上学期</option>
+                 <option>2016-2017年上学期</option>
+                 <option>2016-2017年上学期</option>
+               </select>
+             </li>
+             <li><span class="tit_span">评价频率：</span>
+               <form name="form1" method="post" action="">
+                   <label>
+                     <input type="radio" name="RadioGroup1" value="学期" id="RadioGroup1_0">
+                     按学期</label>
+                   <label>
+                     <input type="radio" name="RadioGroup1" value="每日" id="RadioGroup1_1">
+                     按每日</label>
+               </form>
+             </li>
+             <li><span class="tit_span">使用状态：</span> 
+			    未启用
+              <form name="form1" method="post" action="">
+                   <label>
+                     <input type="radio" name="RadioGroup1" value="是" id="RadioGroup1_0">
+                     是</label>
+                   <label>
+                     <input type="radio" name="RadioGroup1" value="否" id="RadioGroup1_1">
+                     否</label>
+               </form>
+			  
+             </li>
+         </ul>
+          <div class="add_div">
+             <span class="tit_span fl">适用年级：</span>
+              <span class="span_c_nj fl"> 
+                <div class="nav_list fl">
+                      <div class="erone">
+                        <h4 class="fl"><label><input name="" type="checkbox" value="小学">小学：</label></h4>
+                        <ul class="fl">
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小1</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小2</label>
+                           </li>        
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小3</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小4</label>
+                           </li>        
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小5</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小6</label>
+                           </li>        
+                        </ul>
+                      </div> 
+                      <div class="erone">
+                        <h4 class="fl"><label><input name="" type="checkbox" value="小学">初中：</label></h4>
+                        <ul class="fl">
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小1</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小2</label>
+                           </li>        
+                        </ul>
+                      </div>
+                      <div class="erone">
+                        <h4 class="fl"><label><input name="" type="checkbox" value="小学">高中：</label></h4>
+                        <ul class="fl">
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小1</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小2</label>
+                           </li>        
+                        </ul>
+                      </div>
+                </div>
+                <div class="fl all_chk">
+                 <label>
+                 <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                 全年级</label>
+                </div>
+              </span> 
+             
+         </div>
+         </div>
+          <div class="add_01">
+          <div class="add_div div_pf">
+             <span class="tit_span fl">评分方式：</span>
+             <span class="span_c_nj fl"> 
+             <div class="tabs">
+              <div id="tags">
+               <form name="form1" method="post" action="">
+                   <label  class="selectTag">
+                     <input name="RadioGroup1" type="radio" id="RadioGroup1_0"  onClick="selectTag('tagContent0',this)" value="百分制评分"checked>
+                     百分制评分</label>
+                 <label>
+                     <input name="RadioGroup1" type="radio" id="RadioGroup1_1"  onClick="selectTag('tagContent1',this)" value="等第制评分" >
+                     等第制评分</label>
+               </form>
+               <div class="clear"></div>
+               </div>
+               <div id="tagContent">
+                <div class="tagContent" id="tagContent0"></div>
+                <div class="tagContent" id="tagContent1" style="display:none;">
+                   <div class="tab_pf">
+                     <div class="pf_one"><strong>A:</strong><span ><input name="" type="text">-<input name="" type="text"></span></div>
+                     <div class="pf_one"><strong>B:</strong><span ><input name="" type="text">-<input name="" type="text"></span></div>
+                     <div class="pf_one"><strong>C:</strong><span ><input name="" type="text">-<input name="" type="text"></span></div>
+                     <div class="pf_one"><strong>D:</strong><span ><input name="" type="text">-<input name="" type="text"></span></div>
+                     <div class="pf_one"><strong>E:</strong><span ><input name="" type="text">-<input name="" type="text"></span></div>
+                   </div>
+                </div>
+               </div>
+             </div>
+             </span>
+         </div>
+         </div>
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#set_add')" class="bg_org">开始创建</a><a onClick="popOut('#set_add')" class="bg_w">取消</a></div>
+  </div>
+</div>
+<!--废用确认-->
+<div class="set_box yc" id="set_del">
+    <div class="set_mask"></div>
+    <div class="set_mask_main set_del">
+      <div class="main_title">确认废用<div class="mask_close" onClick="popOut('#set_del')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+          <p class="fz_1 text">废用后，已评数据将会保留，但不作评价报告处理；</p>
+		  <p class="fz_1 text">确认操作？</p>
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#set_del')" class="bg_org">确认</a></div>
+  </div>
+</div>
+
+<!--修改设置弹窗-->
+<div class="set_box yc" id="set_edit">
+    <div class="set_mask"></div>
+    <div class="set_mask_main set_add">
+      <div class="main_title">修改评价<div class="mask_close" onClick="popOut('#set_edit')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+          <div class="add_01">
+          <ul class="ul_add">
+             <li><span class="tit_span">评价名称：</span><input name="text" type="text" class="add_txt"  placeholder="" value="2016-2017上学期学生评价"></li>
+             <li><span class="tit_span">学年学期：</span>
+               <select class="sel_02">
+                 <option selected>2016-2017年上学期</option>
+                 <option>2016-2017年上学期</option>
+                 <option>2016-2017年上学期</option>
+               </select>
+             </li>
+             <li><span class="tit_span">评价频率：</span>
+               <form name="form1" method="post" action="">
+                   <label>
+                     <input type="radio" name="RadioGroup1" value="学期" id="RadioGroup1_0">
+                     按学期</label>
+                   <label>
+                     <input name="RadioGroup1" type="radio" id="RadioGroup1_1" value="每日" checked>
+                     按每日</label>
+               </form>
+             </li>
+             <li><span class="tit_span">使用状态：</span>
+               <!--<form name="form1" method="post" action="">
+                   <label>
+                     <input name="RadioGroup1" type="radio" id="RadioGroup1_0" value="是" checked>
+                     是</label>
+                   <label>
+                     <input type="radio" name="RadioGroup1" value="否" id="RadioGroup1_1">
+                     否</label>
+               </form> -->
+			   未启用
+             </li>
+         </ul>
+          <div class="add_div">
+             <span class="tit_span fl">适用年级：</span>
+              <span class="span_c_nj fl"> 
+                <div class="nav_list fl">
+                      <div class="erone">
+                        <h4 class="fl"><label><input name="" type="checkbox" value="小学">小学：</label></h4>
+                        <ul class="fl">
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小1</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小2</label>
+                           </li>        
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小3</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小4</label>
+                           </li>        
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小5</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小6</label>
+                           </li>        
+                        </ul>
+                      </div> 
+                      <div class="erone">
+                        <h4 class="fl"><label><input name="" type="checkbox" value="小学">初中：</label></h4>
+                        <ul class="fl">
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小1</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小2</label>
+                           </li>        
+                        </ul>
+                      </div>
+                      <div class="erone">
+                        <h4 class="fl"><label><input name="" type="checkbox" value="小学">高中：</label></h4>
+                        <ul class="fl">
+                           <li>
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_0">
+                                   小1</label>
+                           </li>
+                           <li>    
+                                 <label>
+                                   <input type="checkbox" name="CheckboxGroup1" value="小1" id="CheckboxGroup1_1">
+                                   小2</label>
+                           </li>        
+                        </ul>
+                      </div>
+                </div>
+              </span> 
+             
+         </div>
+         </div>
+          <div class="add_01">
+          <ul class="ul_add ul_add-02">
+             <li><span class="tit_span">评分方式：</span>
+               <form name="form1" method="post" action="">
+                   <label>
+                     <input name="RadioGroup1" type="radio" id="RadioGroup1_0" value="分数评分（1.2.3.....）" checked>
+                     分数评分（1.2.3.....）</label>
+                   <label>
+                     <input type="radio" name="RadioGroup1" value="等级评分（A.B.C... )" id="RadioGroup1_1">
+                     等级评分（A.B.C... )</label>
+               </form>
+             </li>
+         </ul>
+         </div>
+         <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
+          <tr>
+            <th width="25%" scope="col">创建人</th>
+            <th width="25%" scope="col">创建时间</th>
+            <th width="25%" scope="col">最后修改人</th>
+            <th width="25%" scope="col">最后修改时间</th>
+           </tr>
+          <tr>
+            <td>李启勤</td>
+		    <td>2016-4-1 12：00</td>
+            <td>王小龙</td>
+            <td>2016-4-1 12：00</td>
+          </tr>
+        </table>
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#set_edit')" class="bg_org">保存</a><a onClick="popOut('#set_edit')" class="bg_w">取消</a></div>
+  </div>
+</div>
+
+<!--查看指标弹窗-->
+<div class="set_box yc" id="looko_norm">
+    <div class="set_mask"></div>
+    <div class="set_mask_main set_add">
+      <div class="main_title">查看指标<div class="mask_close" onClick="popOut('#looko_norm')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+<div class="judge_srh judge_srh_2">
+         <h3 class="tit_edit01"><em>指标组成：</em><span>日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现日常表现</span><em>(示例)</em></h3>
+         
+      </div>
+      <div class="stu_jcont list-02">
+                <div class="judge_content">
+                <div class="judge_tit02 tit-top01"><span>日常表现</span></div>
+                   <table width="100%" border="0" cellspacing="1" cellpadding="1" class="judge_table">
+                    <tr>
+                      <th width="19%" scope="col">二级指标</th>
+                      <th width="61%" scope="col">指标说明</th>
+                      <th width="20%" scope="col">评分（加/减）</th>
+                    </tr>
+                    <tr>
+                      <td>纪律遵守</td>
+                      <td>按时到校，不早退</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>文明素养</td>
+                      <td>尊敬师长，乐于助人</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>上课表现</td>
+                      <td>上课期间，遵守课堂纪律，不吵闹认真听讲</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>学习能力</td>
+                      <td>能够按时自主完成作业</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>卫生保护</td>
+                      <td>能自觉爱护教室校园环境</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>考试纪律</td>
+                      <td>考试 不抄袭 不作弊</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table>
+
+                </div>
+                <div class="judge_content">
+                <div class="judge_tit02"><span>考勤表现</span></div>
+                   <table width="100%" border="0" cellspacing="1" cellpadding="1" class="judge_table">
+                    <tr>
+                      <th width="19%" scope="col">二级指标</th>
+                      <th width="61%" scope="col">指标说明</th>
+                      <th width="20%" scope="col">评分（加/减）</th>
+                    </tr>
+                    <tr>
+                      <td>纪律遵守</td>
+                      <td>按时到校，不早退</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>文明素养</td>
+                      <td>尊敬师长，乐于助人</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>上课表现</td>
+                      <td>上课期间，遵守课堂纪律，不吵闹认真听讲</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>学习能力</td>
+                      <td>能够按时自主完成作业</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>卫生保护</td>
+                      <td>能自觉爱护教室校园环境</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>考试纪律</td>
+                      <td>考试 不抄袭 不作弊</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table>
+
+                </div>
+      </div>
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#looko_norm')" class="bg_w">关闭</a></div>
+  </div>
+</div>
+
+<!--查看信息弹窗-->
+<div class="set_box yc" id="looko_infor">
+    <div class="set_mask"></div>
+    <div class="set_mask_main set_add">
+      <div class="main_title">查看指标<div class="mask_close" onClick="popOut('#looko_infor')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+          <div class="add_01">
+          <ul class="ul_add">
+             <li><span class="tit_span">评价名称：</span>2016-2017上学期学生评价</li>
+             <li><span class="tit_span">学年学期：</span>
+               2016-2017年上学期
+             </li>
+             <li><span class="tit_span">评价频率：</span>
+               
+                     按学期
+             </li>
+             <li><span class="tit_span">使用状态：</span>
+			   未启用
+             </li>
+         </ul>
+          <div class="add_div">
+             <span class="tit_span fl">适用年级：</span>
+              <span class="span_c_nj fl"> 
+                <div class="nav_list fl">
+                      <div class="erone">
+                        <ul class="fl">
+                           <li>
+                                
+                                   小1
+                           </li>
+                           <li>    
+                               
+                                   小2
+                           </li>        
+                           <li>
+                                   小3
+                           </li>
+                           <li>
+                                   小4
+                           </li>        
+                           <li>
+                                   小5
+                           </li>
+                           <li> 
+                                   小6
+                           </li>        
+                        </ul>
+                      </div> 
+                      <div class="erone">
+                        <ul class="fl">
+                           <li>
+                                
+                                   小1
+                           </li>
+                           <li> 小2
+                           </li>        
+                        </ul>
+                      </div>
+                      
+                </div>
+              </span> 
+             
+         </div>
+         </div>
+          <div class="add_01">
+          <div class="add_div div_pf">
+             <span class="tit_span fl">评分方式：</span>
+             <span class="span_c_nj fl"> 
+             <div id="tags">
+              
+               <form name="form1" method="post" action="" id="1370640112">
+                   <label class="">
+                     <input name="RadioGroup1" type="radio" id="RadioGroup1_0"  value="百分制评分">
+                     百分制评分</label>
+                 <label class="selectTag">
+                     <input name="RadioGroup1" type="radio" id="RadioGroup1_1"  value="等第制评分" checked>
+                     等第制评分</label>
+               </form>
+               
+             </div>
+               
+                   <div class="pf_pf">
+                     <div class="pf_two"><strong>A:</strong><span>90-100</span></div>
+                     <div class="pf_two"><strong>B:</strong><span>80-90</span></div>
+                     <div class="pf_two"><strong>C:</strong><span>70-80</span></div>
+                     <div class="pf_two"><strong>D:</strong><span>60-70</span></div>
+                     <div class="pf_two"><strong>E:</strong><span>0-59</span></div>
+                   </div>
+               
+             </span>
+         </div>
+         </div>
+         <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
+          <tr>
+            <th width="25%" scope="col">创建人</th>
+            <th width="25%" scope="col">创建时间</th>
+            <th width="25%" scope="col">最后修改人</th>
+            <th width="25%" scope="col">最后修改时间</th>
+           </tr>
+          <tr>
+            <td>李启勤</td>
+		    <td>2016-4-1 12：00</td>
+            <td>王小龙</td>
+            <td>2016-4-1 12：00</td>
+          </tr>
+        </table>
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#looko_infor')" class="bg_w">关闭</a></div>
+  </div>
+</div>
+
+</body>
+</html>

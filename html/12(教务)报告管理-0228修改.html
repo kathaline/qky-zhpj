@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>学生综合素质评价</title>
+<!--框架css-->
+<link href="../css/frame_type_1.0.css" rel="stylesheet" type="text/css"/>
+<!--附加css-->
+<link href="../css/stu_judge.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
+<script language="JavaScript" charset="utf-8" src="../js/js_pack.js"></script>
+</head>
+
+<body class="ai-w-big">
+<!--顶部-->
+<div class="div-rgt">
+  <a href="" class="cd-feedback"><i class="qkyicon">&#xe6af;</i><p>反馈</p></a>
+  <a href="#0" class="cd-top"><i class="qkyicon">&#xe6a5;</i></a>
+</div>
+<div class="qky_newheader clear">
+   <div class="qky_newh-con">
+    <div class="qkyh_logo"><img src="../images/top/qkyoa_logo.png"><img src="../images/top/qkyoa_logo02.png"/></div>
+    <div class="qkyh_navbox"><a href="" class="cur">首页</a><a href="">学生成长报告书</a></div>
+    <div class="qkyh_infobox fr">
+        <div class="inf_school fl" title="中山市第一实验中学市第一实验中学">中山市第一实验中学市第一实验中学</div>
+    	<div class="info fl">
+            <div class="txbox"><span></span><img src="../images/stu_judge/nobody.png"/></div>
+            <div class="userbox">万洪泉老师</div>
+            <div class="usersel">
+                <a>消息提示</a>
+                <a>修改密码</a>
+                <a>退出登录</a>
+            </div> 
+        </div>
+        <div class="menubtn fr">
+            <div class="menusel clear">
+                <div class="menulist"><a><img src="../images/icons/ico_xybg.png"/><span>校园办公</span></a></div>
+                <div class="menulist"><img src="../images/icons/ico_xyzf.png"><span>校园支付</span></div>
+                <div class="menulist"><img src="../images/icons/ico_ydxy.png"><span>移动校园</span></div>
+                <div class="menulist"><img src="../images/icons/ico_zhjx.png"><span>智慧教学</span></div>
+                <div class="menulist"><img src="../images/icons/ico_zhkj.png"><span>智慧空间</span></div>
+                <div class="menulist"><img src="../images/icons/ico_pkxk.png"><span>智能排课</span></div>
+                <div class="menulist"><img src="../images/icons/ico_zhpj.png"><span>综合评价</span></div>
+                <div class="menulist"><img src="../images/icons/ico_cysz.png"><span>常用设置</span></div>
+            </div>
+        </div>  
+    </div>
+   </div>
+   
+</div>
+<div class="qky_content">
+   <div class="judge_wraper judge_w_n">
+   <div class="judge_cont_2">
+      <div class="cont_tit">
+         <div class="fr"><a href="#" class="bg_blue"><i class="qkyicon">&#xe6ea;</i>返回</a></div>
+         <div class="fl"><h3><i class="qkyicon">&#xe6cc;</i>报告管理列表</h3>
+         </div>
+      </div>
+      <div class="judge_srh">
+         
+        <ul class="ul_srh">
+            
+            <li><span>当前学校：</span>
+                <select name="select">
+                  <option selected>中山市第一实验小学</option>
+                  <option>中山市第一实验小学</option>
+                  <option>中山市第一实验小学</option>
+                </select>
+            </li>
+            <li><span>学年学期：</span>
+                <select name="select">
+                  <option selected>全部学期</option>
+                  <option>2016-2017年上学期</option>
+                  <option>2016-2017年上学期</option>
+                </select>
+            </li>
+            <li><span>发布状态：</span>
+                <select name="select">
+                  <option selected>全部状态</option>
+                  <option>已发布</option>
+                  <option>暂停发布</option>
+                </select>
+            </li>
+
+         </ul>
+         <a href="#" class="bg_org fl"><i class="qkyicon fz_0">&#xe6ac;</i>筛选</a>
+      </div>
+	</div>
+     <div class="judge_rep">
+        <div class="rep_list">
+           <ul>
+              <li>
+                <div class="rep_pic"><a onClick="popIn('#set_rept')"><i class="qkyicon">&#xe731;</i></a></div>
+                <div class="rep_add1"><a onClick="popIn('#set_rept')"><i class="qkyicon">&#xe731;</i>新建评价报告</a></div>
+              </li>
+              <li>
+                <div class="rep_pic"><div class="rep_del01"><span><i class="qkyicon">&#xe6b7;</i></span></div><img src="../images/stu_judge/bgao_ico01.png"/></div>
+                <div class="rep_intro">
+                  <a href="#" class="tit" title="2016-2017学年上学期评价报告">2016-2017学年上学期评价报告</a>
+                  <p class="p_tit"><span class="span_cla" title="小一、小二、小三、小四、小五">小一、小二、小三、小四、小五</span><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>发布中</span></p>
+                  <div class="rep_btn01"><a href="#" class="b_co btn-dul l_line"><i class="qkyicon">&#xe6af;</i>编辑设置</a><a  onClick="popIn('#report-ok')" class="b_co btn-dul"><i class="qkyicon">&#xe7aa;</i>点击发布</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="rep_pic"><div class="rep_del01"><span><i class="qkyicon">&#xe6b7;</i></span></div><img src="../images/stu_judge/bgao_ico01.png"/></div>
+                <div class="rep_intro">
+                  <a href="#" class="tit" title="2016-2017学年上学期评价报告">2016-2017学年上学期评价报告</a>
+                  <p class="p_tit"><span class="span_cla" title="小一、小二、小三、小四、小五">小一、小二、小三、小四、小五</span><span class="co_y"><i class="qkyicon fz_2">&#xe6ca;</i>未发布</span></p>
+                  <div class="rep_btn01"><a onClick="popIn('#report-brws')" class="b_co btn-dul l_line"><i class="qkyicon">&#xe765;</i>查看设置</a><a  onClick="popIn('#report-quit')" class="b_co btn-dul"><i class="qkyicon">&#xe7af;</i>取消发布</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="rep_pic"><div class="rep_del01"><span><i class="qkyicon">&#xe6b7;</i></span></div><img src="../images/stu_judge/bgao_ico01.png"/></div>
+                <div class="rep_intro">
+                  <a href="#" class="tit" title="2016-2017学年上学期评价报告">2016-2017学年上学期评价报告</a>
+                  <p class="p_tit"><span class="span_cla" title="小一、小二、小三、小四、小五">小一、小二、小三、小四、小五</span><span class="co_b"><i class="qkyicon fz_1">&#xe701;</i>已生成</span></p>
+                  <div class="rep_btn01"><a href="#" class="b_co btn-dul l_line"><i class="qkyicon">&#xe6af;</i>编辑设置</a><a onClick="popIn('#report-ok')" class="b_co btn-dul"><i class="qkyicon">&#xe7aa;</i>点击发布</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="rep_pic"><div class="rep_del01"><span><i class="qkyicon">&#xe6b7;</i></span></div><img src="../images/stu_judge/bgao_ico01.png"/></div>
+                <div class="rep_intro">
+                  <a href="#" class="tit" title="2016-2017学年上学期评价报告">2016-2017学年上学期评价报告</a>
+                  <p class="p_tit"><span class="span_cla" title="小一、小二、小三、小四、小五">小一、小二、小三、小四、小五</span><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>发布中</span></p>
+                  <div class="rep_btn01"><a href="#" class="b_co btn-dul l_line"><i class="qkyicon">&#xe6af;</i>编辑设置</a><a onClick="popIn('#report-ok')" class="b_co btn-dul"><i class="qkyicon">&#xe7aa;</i>点击发布</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="rep_pic"><div class="rep_del01"><span><i class="qkyicon">&#xe6b7;</i></span></div><img src="../images/stu_judge/bgao_ico01.png"/></div>
+                <div class="rep_intro">
+                  <a href="#" class="tit" title="2016-2017学年上学期评价报告">2016-2017学年上学期评价报告</a>
+                  <p class="p_tit"><span class="span_cla" title="小一、小二、小三、小四、小五">小一、小二、小三、小四、小五</span><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>发布中</span></p>
+                  <div class="rep_btn01"><a href="#" class="b_co btn-dul l_line"><i class="qkyicon">&#xe6af;</i>编辑设置</a><a onClick="popIn('#report-ok')" class="b_co btn-dul"><i class="qkyicon">&#xe7aa;</i>点击发布</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="rep_pic"><div class="rep_del01"><span><i class="qkyicon">&#xe6b7;</i></span></div><img src="../images/stu_judge/bgao_ico01.png"/></div>
+                <div class="rep_intro">
+                  <a href="#" class="tit" title="2016-2017学年上学期评价报告">2016-2017学年上学期评价报告</a>
+                  <p class="p_tit"><span class="span_cla" title="小一、小二、小三、小四、小五">小一、小二、小三、小四、小五</span><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>发布中</span></p>
+                  <div class="rep_btn01"><a href="#" class="b_co btn-dul l_line"><i class="qkyicon">&#xe6af;</i>编辑设置</a><a onClick="popIn('#report-ok')" class="b_co btn-dul"><i class="qkyicon">&#xe7aa;</i>点击发布</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="rep_pic"><div class="rep_del01"><span><i class="qkyicon">&#xe6b7;</i></span></div><img src="../images/stu_judge/bgao_ico01.png"/></div>
+                <div class="rep_intro">
+                  <a href="#" class="tit" title="2016-2017学年上学期评价报告">2016-2017学年上学期评价报告</a>
+                  <p class="p_tit"><span class="span_cla" title="小一、小二、小三、小四、小五">小一、小二、小三、小四、小五</span><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>发布中</span></p>
+                  <div class="rep_btn01"><a href="#" class="b_co btn-dul l_line"><i class="qkyicon">&#xe6af;</i>编辑设置</a><a onClick="popIn('#report-ok')" class="b_co btn-dul"><i class="qkyicon">&#xe7aa;</i>点击发布</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="rep_pic"><div class="rep_del01"><span><i class="qkyicon">&#xe6b7;</i></span></div><img src="../images/stu_judge/bgao_ico01.png"/></div>
+                <div class="rep_intro">
+                  <a href="#" class="tit" title="2016-2017学年上学期评价报告">2016-2017学年上学期评价报告</a>
+                  <p class="p_tit"><span class="span_cla" title="小一、小二、小三、小四、小五">小一、小二、小三、小四、小五</span><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>发布中</span></p>
+                  <div class="rep_btn01"><a href="#" class="b_co btn-dul l_line"><i class="qkyicon">&#xe6af;</i>编辑设置</a><a onClick="popIn('#report-ok')" class="b_co btn-dul"><i class="qkyicon">&#xe7aa;</i>点击发布</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="rep_pic"><div class="rep_del01"><span><i class="qkyicon">&#xe6b7;</i></span></div><img src="../images/stu_judge/bgao_ico01.png"/></div>
+                <div class="rep_intro">
+                  <a href="#" class="tit" title="2016-2017学年上学期评价报告">2016-2017学年上学期评价报告</a>
+                  <p class="p_tit"><span class="span_cla" title="小一、小二、小三、小四、小五">小一、小二、小三、小四、小五</span><span class="co_green"><i class="qkyicon fz_2">&#xe706;</i>发布中</span></p>
+                  <div class="rep_btn01"><a href="#" class="b_co btn-dul l_line"><i class="qkyicon">&#xe6af;</i>编辑设置</a><a onClick="popIn('#report-ok')" class="b_co btn-dul"><i class="qkyicon">&#xe7aa;</i>点击发布</a></div>
+                </div>
+              </li>
+           </ul>
+        </div>
+        <div class="div-page">
+          <a href="#" class="no">上一页</a>
+          <a href="#" class="cur">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          ...
+          <a href="#">12</a>
+          <a href="#">下一页</a>
+        </div>
+             <div class="import_tips">
+               <h3><i class="qkyicon">&#xe72f;</i>最终评价算法说明：</h3>
+               <p>算法=评价体系1（指标1*%+指标2*%......+指标X*%）*%+评价体系2（）*%......+评价体系X（）*%</p>
+             </div>
+    </div>
+  </div>
+</div>
+<div class="qky_footer">
+  <div>Copyright1999-2016  广东全通教育股份有限公司 版权所有</div>
+</div>
+
+<!--新建报告弹窗-->
+<div class="set_box yc" id="set_rept">
+    <div class="set_mask"></div>
+    <div class="set_mask_main rep_oklist">
+      <div class="main_title">新建评价报告<div class="mask_close" onClick="popOut('#set_rept')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+          <div class="add_tit"><span class="add-steps cur"><strong>1</strong>选择所需体系的条件</span><i class="qkyicon">&#xe665;</i><span class="add-steps"><strong>2</strong>选择报告体系组成并设置权重</span></div>
+          <div class="add_reprt01">
+          
+            <div class="srh_one"><span class="fl tit_span">学年学期：</span>
+              <select class="sel_02 fl">
+                 <option selected>2016-2017年上学期</option>
+                 <option>2016-2017年上学期</option>
+                 <option>2016-2017年上学期</option>
+               </select>
+              
+            </div>
+            <div class="srh_one"><span class="fl tit_span">适用年级：</span>
+              <form name="form1" method="post" action="" class="fl srh-form">
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="小一" id="CheckboxGroup3_0">
+                    小一</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="小二" id="CheckboxGroup3_1">
+                    小二</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="小三" id="CheckboxGroup3_2">
+                    小三</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="小四" id="CheckboxGroup3_3">
+                    小四</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="小五" id="CheckboxGroup3_4">
+                    小五</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="初一" id="CheckboxGroup3_5">
+                    初一</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="初二" id="CheckboxGroup3_6">
+                    初二</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="初三" id="CheckboxGroup3_7">
+                    初三</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="初四" id="CheckboxGroup3_8">
+                    初四</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="高一" id="CheckboxGroup3_9">
+                    高一</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="高一" id="CheckboxGroup3_10">
+                    高一</label>
+                  <label>
+                    <input type="checkbox" name="CheckboxGroup3" value="高一" id="CheckboxGroup3_10">
+                    高一</label>
+              </form>
+            </div>
+             
+            <div class="srh-relsult">
+               <p>该条件下适用体系有<strong class="co_y">6</strong>个</p>
+            </div>
+          
+         </div>
+          
+          
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#set_rept')" class="bg_w">取消操作</a><a onClick="popIn('#set_rep-qr'),popOut('#set_rept')" class="bg_w">下一步</a></div>
+  </div>
+</div>
+<!--新建报告确认-->
+<div class="set_box yc" id="set_rep-qr">
+    <div class="set_mask"></div>
+    <div class="set_mask_main rep_oklist">
+      <div class="main_title">设置报告<div class="mask_close" onClick="popOut('#set_rep-qr')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+           <div class="add_tit"><span class="add-steps"><strong>1</strong>选择所需体系的条件</span><i class="qkyicon">&#xe665;</i><span class="add-steps cur"><strong>2</strong>选择报告体系组成并设置权重</span></div>
+           
+           <div class="add_reprt02 pad_tb15">
+              <div class="addsteps-t"><h3 class="fl">注：报告体系只限1-2个体系组成</h3></div>
+                <div class="perc_add">
+                    <div class="perce-t"><span class="wid-60">选择体系</span><span class="wid-30 pad_no">设置权重</span><span class="wid-10">删除操作</span></div>
+                    <form name="form3" method="post" action=""  class="add-tx">
+                    <div class="perce-con"><span class="wid-60"><a href="#" class="a_chked a_chk mar_r5"></a>2016-2017学年学生评价按学期</span><span class="wid-30"><input name="text" type="text" placeholder="" class="wid-30" value="">%</span><span class="wid-10"><a href="#" title="删除"><i class="qkyicon">&#xe6aa;</i></a></span></div>
+                    <div class="perce-con"><span class="wid-60"><a href="#" class="a_chk mar_r5"></a>2016-2017学年学生评价按学期</span><span class="wid-30"><input name="text" type="text" placeholder="" class="wid-30" value="" disabled>%</span><span class="wid-10"><a href="#" title="删除"><i class="qkyicon">&#xe6aa;</i></a></span></div>
+                    <div class="perce-con"><span class="wid-60"><a href="#" class="a_chk mar_r5"></a>2016-2017学年学生评价按学期</span><span class="wid-30"><input name="text" type="text" placeholder="" class="wid-30" value="" disabled>%</span><span class="wid-10"><a href="#" title="删除"><i class="qkyicon">&#xe6aa;</i></a></span></div>
+                    <div class="perce-con"><span class="wid-60"><a href="#" class="a_chk mar_r5"></a>2016-2017学年学生评价按学期</span><span class="wid-30"><input name="text" type="text" placeholder="" class="wid-30" value="" disabled>%</span><span class="wid-10"><a href="#" title="删除"><i class="qkyicon">&#xe6aa;</i></a></span></div>
+                    </form>
+                </div>
+           </div>
+        
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#set_rep-qr')" class="bg_org">确认提交</a><a onClick="popIn('#set_rept'),popOut('#set_rep-qr')" class="bg_w">上一步</a><a onClick="popOut('#set_rep-qr')" class="bg_w">取消操作</a></div>
+  </div>
+</div>
+<!--发布成功弹窗-->
+<div class="set_box yc" id="report-ok">
+    <div class="set_mask"></div>
+    <div class="set_mask_main report-ok-main">
+      <div class="main_title">报告发布<div class="mask_close" onClick="popOut('#report-ok')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+          <p class="fz_1 text">报告发布成功！报告已同步给学生</p>
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#report-ok')" class="bg_w">关闭</a></div>
+  </div>
+</div>
+<div class="set_box yc" id="report-brws">
+    <div class="set_mask"></div>
+    <div class="set_mask_main rep_oklist">
+      <div class="main_title">查看报告设置<div class="mask_close" onClick="popOut('#report-brws')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+          <div class="add_reprt01">
+          
+            <div class="srh_one fz_1"><span class="fl tit_span">学年学期：</span>2016-2017年上学期</div>
+            <div class="srh_one fz_1"><span class="fl tit_span">适用年级：</span>
+              <form name="form1" method="post" action="" class="fl srh-form">
+                  <label>
+                    
+                    小一</label>
+                  <label>
+                    小二</label>
+                  <label>
+                    小三</label>
+                  <label>
+                    小四</label>
+                
+              </form>
+            </div>
+            
+            <div class="srh_one fz_1"><span>体系组成及权重：</span>
+             
+            <div class="clear fz_0">
+               <span class="srh_bg fl pad_lr10 mar_l15 mar_tb10">高三年级评价体系 - 按日     <strong class="co_b">（50%）</strong></span>
+               <span class="srh_bg fl pad_lr10 mar_l15 mar_tb10">高三年级评价体系 - 按日     <strong class="co_b">（50%）</strong></span>
+               <span class="srh_bg fl pad_lr10 mar_l15 mar_tb10">高三年级评价体系 - 按日     <strong class="co_b">（50%）</strong></span>
+               <span class="srh_bg fl pad_lr10 mar_l15 mar_tb10">高三年级评价体系 - 按日     <strong class="co_b">（50%）</strong></span>
+            </div>
+            </div>
+          
+         </div>
+          
+          
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#report-brws')" class="bg_w">关闭</a></div>
+  </div>
+</div>
+</body>
+</html>

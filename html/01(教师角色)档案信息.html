@@ -12,7 +12,8 @@
 <script language="JavaScript" charset="utf-8" src="../js/js_pack.js"></script>
 <script>
 $(document).ready(function(){
-	  $("#header").load("nav.html");
+	  $("#header").load("nav.html #qkynav");
+	  $("#content").load("nav.html .container");
 	  $("#footer").load("nav.html .footer");
 	  }); 
 </script>
@@ -22,7 +23,7 @@ $(document).ready(function(){
 <!--顶部-->
 <div id="header"></div>
 
-<div class="qky_content">
+<div class="qky_content" id="content">
    <div class="judge_nav">
       <ul>
          <li><a href="#" class="cur"><i class="qkyicon">&#xe6ed;</i><p>档案信息</p></a></li>

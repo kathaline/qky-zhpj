@@ -5,52 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <title>学生综合评价</title>
 <!--框架css-->
+<!-- Bootstrap 基础样式 CSS -->
+<link href="../dist/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
 <link href="../css/frame_type_1.0.css" rel="stylesheet" type="text/css"/>
 <!--附加css-->
 <link href="../css/stu_judge.css" rel="stylesheet" type="text/css"/>
 <script language="JavaScript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/js_pack.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/ai-fix-show.js"></script>
+<!--js-->
+<script src="../dist/sea.js"></script>
+<script src="../dist/seaconfig.js"></script>
+<script>
+ seajs.use(["bs","nav","navicon","com/radio_checkbox1.1","com/dropdown_havevalue"],function(){
+	 $("#qkynav").qkynav();
+ });
+</script>
 </head>
 
-<body  class="ai-w-big" >
+<body>
 <!--顶部-->
-
-<div class="qky_header">
-    <div class="header2">
-      <div class="qky_top_box">
-	  <div class="qt_menubar_btn fl">
-	  <a>
-	  <img src="../images/stu_judge/untitled.png"/>
-	  </a>
-	  </div>
-        <div class="qky_logo"><img src="../images/top/logo2.png" height="36"></div>
-  <ul class="qky_top_navs">
-          <li><a class="cur">学生综合素质评价</a></li>
-		  <li><a >学生成长报告书</a></li>
-        </ul>
-        <div class="qky_top_search"><a href="#">全课测试学校</a><!--<a href="#" class="mes p-r">消息<span>3</span></a>--> <a href="#" class="head p-r"><img src="../images/stu_judge/qky-top-head.jpg"/>张三 老师</a>
-		
-		</div>
-        <div class="r-s-list p-a">
-		<a href="#">退出</a>
-		</div>
-        <div class="clear"></div>
-      </div>
-    </div>
-    
+<div class="div-rgt">
+  <a href="" class="cd-feedback"><i class="qkyicon">&#xe6af;</i><p>反馈</p></a>
+  <a href="#0" class="cd-top"><i class="qkyicon">&#xe6a5;</i></a>
 </div>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="qkynav"></div>
 <div class="qky_content">
-   <div class="judge_nav">
-      <ul>
-         <li><a href="#" class="cur"><i class="qkyicon">&#xe6ed;</i><p>档案信息</p></a></li>
-         <li><a href="#"><i class="qkyicon">&#xe6eb;</i><p>学生评价</p></a></li>
-      </ul>
-   </div>
+   
    <div class="judge_wraper">
   <div class="judge_cont_2">
       <div class="cont_tit">
-         <div class="fr"><a href="#" class="bg_blue"><i class="qkyicon">&#xe6ea;</i>返回列表</a></div>
+         <div class="fr"><a href="01teacher-data.html" class="bg_blue"><i class="qkyicon_14">&#xe604;</i>返回列表</a></div>
          <div class="fl"><h3><i class="qkyicon">&#xe6ed;</i>杨鹏</h3></div>
       </div>
 
@@ -120,9 +106,7 @@
       </div>
   </div>
 </div>
-<div class="qky_footer">
-  <div>Copyright1999-2016  广东全通教育股份有限公司 版权所有</div>
-</div>
+<div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
 
 <!--添加记录弹窗-->
 <div class="set_box yc" id="set_cla">

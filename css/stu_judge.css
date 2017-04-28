@@ -288,7 +288,7 @@ a.bg_bl04{margin-right:3%;background:#fff}
 .ul_data li span{display:inline-block;margin-right:15px}
 .ul_data li .data-tit{width:100px;text-align:right}
 .data-favor{display:inline-block;padding:0 15px;background:#f0f0f0;border:1px dashed #ddd;margin:0 8px}
-.stu_inf-guide ul.nav{width:180px;margin:15px 0}
+.stu_inf-guide ul.nav{ width:100%;margin:15px 0}
 .stu_inf-guide ul.nav li{line-height:26px;border:1px solid #ddd;margin-bottom:5px;cursor:pointer;font-size:14px; padding:7px 10px 7px 15px;}
 .stu_inf-guide ul.nav.nav_name li:first-child{ border-top:none;}
 .stu_inf-guide ul.nav li i{margin:0 5px 0 0;}
@@ -859,13 +859,13 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 .add_subj .two_cell{ width:20%; margin:5px 0;}
 .add_subj .two_cell .text01{ width:32% !important;vertical-align:middle;}
 /*年级-评分*/
-.stu_inf-guide ul.nav li a{ display:block;}
+.stu_inf-guide ul.nav li a{ display:block; padding:0;}
 .txt-xs{ width:25%; margin:0 3px;}
 .judge_table input[type="text"]{ text-align:center;}
 .setp_tit.rr{ right:20px;top:5px;}
 .stu_data.fr .jdg-tips{ min-height:160px;}
 .table_r td{ min-width:68px;}
-.list-maxw{ overflow-x:scroll;}
+.list-maxw{ overflow-x:auto;}
 /*数据上报*/
 .dform02{ margin:15px 0; overflow:hidden; font-size:13px;}
 .dform02 .one_cell{ width:49%; margin:0;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}

@@ -58,6 +58,7 @@ define(function(require) {
 		}
 	};
 	
+	
 	//私有方法，检测参数是否合法
     function isValid(options) {
         return !options || (options && typeof options === "object") ? true : false;

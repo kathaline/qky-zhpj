@@ -597,7 +597,7 @@ span.search{ display:inline-block;}
 .xuey_tit{ border-bottom:none;}
 .xuey_tit h3{font-size: 18px;color: #333;}
 .xuey_tit em{ font-size:13px;}
-.score-count{ background:url(../images/stu_judge/xueye-bg.png) center 0 no-repeat; margin:0 auto; height:120px; margin-top:-20px;}
+.score-count{ background:url(../images/stu_judge/xueye-bg.png) center 0 no-repeat; margin:0 auto; height:120px; margin-bottom:-20px;}
 .tit-count{ text-align:center; font-size:32px; height:80px; line-height:110px; font-weight:600; color:#0274a6;}
 .tit-count em{ font-size:20px;}
 .count-alls { background:#f8f8f8; overflow:hidden;}

@@ -36,29 +36,47 @@
   <a href="#0" class="cd-top"><i class="qkyicon">&#xe6a5;</i></a>
 </div>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="qkynav"></div>
+<div class="judge_nav-bar">
+   <div class="judge_nav">
+      <ul>
+         <li><a href="02(管理教师)学生评价-日常评价操作.html" class="cur">学生评价</a></li>
+         <li><a href="03(管理员)学业水平-成绩信息管理.html">学业水平</a></li>
+         <li><a href="04体质健康.html">体质健康</a></li>
+         <li><a href="05(管理员)个人荣誉-1.html">个人荣誉</a></li>
+         <li><a href="06(教师)实践活动-1.html">实践活动</a></li>
+      </ul>
+   </div>
+</div>   
 <div class="qky_content">
-  <div class="judge_wraper">
-    <div class="cont-wrap">
-      <div class="cont_tit">
-        <div class="fr"><a href="04体质健康.html" class="bg_blue"><i class="qkyicon_14">&#xe604;</i>返回</a></div>
-        <div class="fl">
-          <h3><i class="qkyicon">&#xe7f8;</i>体检报告详情</h3>
-        </div>
-      </div>
+   
+     <div class="cont-wrap mar_t20">
+      <div class="judge_tit judge_tab-t pad_lr20">
+            <ul class="ul_mage fl">
+               <li><a href="#" class="current">日常评价</a></li>
+               <li><a href="#">学期评价</a></li>
+               <li><a href="#">学期评语</a></li>
+            </ul>
+            <div class="fr"><a href="" class="bg_blue"><i class="qkyicon">&#xe717;</i>评价查询</a><a href="" class="bg_blue"><i class="qkyicon">&#xe72e;</i>体系管理</a><a href="" class="bg_blue"><i class="qkyicon">&#xe72e;</i>批量导入</a><a href="#" class="bg_blue"><i class="qkyicon">&#xe6cc;</i>评价报告</a></div>
+                    
+          </div>
+      
       <div class="judge_srh">
-        <ul class="ul_srh">
-          <li><span>当前学校：</span> 中山市第一中学 </li>
+        <ul class="ul_srh fl">
+          <li><span>学年学期：</span>2016-2017学年度第二学期</li>
           <li>|</li>
-          <li><span>体测名称：</span> 22016-2017学年小一体检报告</li>
-          <li>|</li>
-          <li><span>当前年级：</span> 小一</li>
-          <li>|</li>
-          <li><span>选择班级：</span>14班</li>
+          <li><span>评价体系：</span>
+                <select name="select">
+                  <option selected>请选择</option>
+                  <option>2016-2017学年第一学期日常评价</option>
+                  <option>2016-2017学年第一学期日常评价</option>
+                </select>
+          </li>
         </ul>
+            <div class="fr"><a href="" class="bg_blue"><i class="qkyicon">&#xe717;</i>评价查询</a><a href="" class="bg_blue"><i class="qkyicon">&#xe72e;</i>体系管理</a><a href="" class="bg_blue"><i class="qkyicon">&#xe72e;</i>批量导入</a><a href="#" class="bg_blue"><i class="qkyicon">&#xe6cc;</i>评价报告</a></div>
       </div>
     </div>
     <div class="judge_wraper">
-      <div class="judge_cont_2 pad_lr20">
+      <div class="judge_cont_2">
         <div class="judge_mage">
           <div class="stu_inf-guide fl">
             <div class="cont_tit"> <span class="search">
@@ -110,38 +128,10 @@
         </div>
       </div>
     </div>
-  </div>
+
 </div>
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
-<div class="set_box yc" id="set_up">
-    <div class="set_mask"></div>
-    <div class="set_mask_main">
-      <div class="main_title">上传体检报告<div class="mask_close" onClick="popOut('#set_up')"><i class="qkyicon">&#xe6aa;</i></div></div>
-        <div class="main_cont">
-          <ul class="ul_add">
-             <li><span class="tit_span">当前学号：</span><em class="fz_1">201601001</em></li>
-             
-                <li> <span class="tit_span">上传附件：</span><span class="span-up">
-                 <form action="" method="post" enctype="multipart/form-data">
-                  <input type='text' name='textfield' id='textfield' class='txt' /> 
-                  <input type='button' class='btn' value='浏览...' />
-                  <input type="file" name="fileField" class="file" id="fileField" size="28" onChange="document.getElementById('textfield').value=this.value" />
-                  <input type="submit" name="submit" class="bgc_gray btn_gray" value="上传" />
-                  </form>
-                  
-                 </span>
-               <div class="pad_l90">
-                 （暂只支持图片格式，图片命名为学号）
-               </div></li>
-              
-         </ul>
-               <div class=" pad_t20 pad_lr20">
-                 <i class="qkyicon co_333">&#xe72f;</i><em class="co_333">备注</em>：为了系统导入成功，请核对学号与当前学生一致。
-               </div>
-          
-        </div>
-        <div class="mask_btns"><a onClick="popOut('#set_up')" class="bg_org">保存</a><a onClick="popOut('#set_up')" class="bg_w">取消</a></div>
-  </div>
-</div>
+
+
 </body>
 </html>

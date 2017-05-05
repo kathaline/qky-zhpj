@@ -1,10 +1,10 @@
 
 @font-face {font-family: "qky_icon";
-  src: url('iconfont.eot?t=1493284230862'); /* IE9*/
-  src: url('iconfont.eot?t=1493284230862#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1493284230862') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1493284230862') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1493284230862#qky_icon') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1493889990510'); /* IE9*/
+  src: url('iconfont.eot?t=1493889990510#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1493889990510') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1493889990510') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1493889990510#qky_icon') format('svg'); /* iOS 4.1- */
 }
 
 .qky_icon {
@@ -42,8 +42,6 @@
 .qky-yiwen:before { content: "\e7bf"; }
 
 .qky-sousuo:before { content: "\e635"; }
-
-.qky-shanchu1:before { content: "\e6b2"; }
 
 .qky-picture:before { content: "\e7fe"; }
 
@@ -249,7 +247,7 @@
 
 .qky-tips:before { content: "\e72f"; }
 
-.qky-shanchu2:before { content: "\e6b7"; }
+.qky-shanchu1:before { content: "\e6b7"; }
 
 .qky-phone:before { content: "\e618"; }
 
@@ -295,7 +293,7 @@
 
 .qky-12:before { content: "\e6cb"; }
 
-.qky-shanchu3:before { content: "\e6a8"; }
+.qky-shanchu2:before { content: "\e6a8"; }
 
 .qky-yongche:before { content: "\e79c"; }
 
@@ -307,7 +305,7 @@
 
 .qky-feiji3:before { content: "\e770"; }
 
-.qky-shanchu4:before { content: "\e6b8"; }
+.qky-shanchu3:before { content: "\e6b8"; }
 
 .qky-guanbi4:before { content: "\e7cb"; }
 
@@ -395,7 +393,7 @@
 
 .qky-bianji:before { content: "\e6a9"; }
 
-.qky-shanchu5:before { content: "\e6b9"; }
+.qky-shanchu4:before { content: "\e6b9"; }
 
 .qky-xiaoxi2:before { content: "\e694"; }
 
@@ -983,6 +981,8 @@
 
 .qky-gantanhao11-copy:before { content: "\e7e1"; }
 
+.qky-xls:before { content: "\e80e"; }
+
 .qky-wuneirong:before { content: "\e736"; }
 
 .qky-jiaolian1:before { content: "\e780"; }
@@ -1037,6 +1037,8 @@
 
 .qky-wen:before { content: "\e7e8"; }
 
+.qky-xingbiao:before { content: "\e6b2"; }
+
 .qky-yuan3:before { content: "\e7f6"; }
 
 .qky-dui5:before { content: "\e7e9"; }
@@ -1055,15 +1057,23 @@
 
 .qky-leixing:before { content: "\e804"; }
 
+.qky-shouhui:before { content: "\e812"; }
+
 .qky-qingjia:before { content: "\e806"; }
 
 .qky-girl:before { content: "\e7fb"; }
+
+.qky-xingbiao1:before { content: "\e811"; }
 
 .qky-yifasongyoujian:before { content: "\e809"; }
 
 .qky-jiangxu:before { content: "\e801"; }
 
 .qky-tiaozhengquanzhong:before { content: "\e80d"; }
+
+.qky-doc:before { content: "\e80f"; }
+
+.qky-jpg:before { content: "\e810"; }
 
 .qky-yihuifu:before { content: "\e807"; }
 

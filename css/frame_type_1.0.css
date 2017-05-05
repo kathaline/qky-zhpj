@@ -7,8 +7,9 @@
 @charset "utf-8";
 /*图标字体架构*/
 @import "iconfont.css";
+@import "../iconfont/iconfont.css";
 /*基础样式*/
-body{width:100%; padding: 50px 0;
+body{width:100%; padding: 50px 0; color:#666;
     background: #f4f4f4;
     position: absolute;
     top: 0;
@@ -20,7 +21,7 @@ img,button{ border:0px;}
 img{vertical-align: middle;}
 a{ color:#666; cursor:pointer; outline:none;}
 i,em{ font-style:normal;}
-textarea,input,select{ outline:none;font-family: Microsoft YaHei, Arial;resize:none; font-size:14px;}
+textarea,input,select{font-family: Microsoft YaHei, Arial;resize:none; font-size:14px;}
 input[type="text"], select { padding:5px 0;border: 1px solid #ccc;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px;line-height: 1.42857143;}
 textarea { border: 1px solid #ccc; line-height:28px;}
 .clear2{ clear:both; zoom:1;}
@@ -44,7 +45,8 @@ textarea { border: 1px solid #ccc; line-height:28px;}
 .b_ba{ background:#04acf7;}
 .fz_0{ font-size:12px !important;}
 .fz_1{ font-size:14px !important;}
-.fz_2{ font-size:16px !important;}
+.fz_1{ font-size:14px !important;}
+.fz15{ font-size:16px !important;}
 .fz_3,.fz_18{ font-size:18px !important;}
 .fz_4{ font-size:20px !important;}
 .fz_5{ font-size:22px !important;}

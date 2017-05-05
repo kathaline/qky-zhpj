@@ -3,6 +3,8 @@
 项目:学生综合评价1.2css
 修改版 日期：2017-3-29
 */
+.u-line{ text-decoration:underline;}
+.bor_lb{ border-left:3px solid #03a9f4}
 label { font-weight:normal}
 .stu_jcont .stu_data.fl{ width:82%;}.stu_jcont .stu_inf-guide.fr{ width:16%;}.stu_jcont .stu_inf-guide.fr ul.nav{ width:100%;}
 /*.ai-w-big .qky_content,.ai-w-big .qky_top_box,.ai-w-small .qky_content,.ai-w-small .qky_top_box{width:1200px;height:auto;margin:0 auto}
@@ -57,11 +59,11 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .bg_blue{color: #333;background-color: #fff; border:1px solid #ccc !important;}
 .bg_blue:hover{color: #333;background-color:#f6f6f6; border:1px solid #adadad;}
 .bg_blue i,.bg_org i,.bg_gray i{ margin-right:3px; vertical-align:middle; font-size:16px !important;}
-.co_green{color:#13af07}
-.co_y{color:#f90}
-.co_b{color:#03a9f4;}
-.co_gray{ color:#547381;}
-.co_y:hover,.co_y:focus{ color:#f60;}
+.co_green{color:#13af07 !important}
+.co_y{color:#f90 !important}
+.co_b{color:#03a9f4 !important;}
+.co_gray{ color:#547381 !important;}
+.co_y:hover,.co_y:focus{ color:#f60 !important;}
 /*翻页*/
 .div-page,.div-page-2{text-align:center;margin:15px auto}
 .div-page a,.div-page-2 a{display:inline-block;padding:6px 12px;border: 1px solid transparent;margin:0 3px;vertical-align:middle;}
@@ -97,32 +99,33 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .cont_tit .fr a{margin:0 0 0 10px;}
 .judge_srh{line-height:30px;padding:10px 5px;overflow:hidden;}
 .cont-wrap>.judge_srh{ padding:10px 20px !important;}
-.ul_srh li{ font-size:13px;float:left;line-height:34px;margin:5px 10px 5px 0}
-.judge_stu .ul_srh li{margin:5px 10px 5px 0}
-.judge_srh a{margin:5px 0}
+.ul_srh li{ font-size:13px;float:left;line-height:34px;margin:0 15px 0 0}
+.judge_stu .ul_srh li{margin:0 10px 0 0}
 .judge_srh_2{padding:15px 5px 10px 5px; line-height:14px;}
 .judge_srh_2 .tit_edit01{font-size:12px;height:20px;line-height:20px;}
 .judge_wraper select{-webkit-padding-right:10px;}
 /*搜索*/
-.judge_srh .search{margin:5px 0}
+.search{ width:100%; max-width:300px;}
+.judge_srh02 .search,.judge_srh .search,.cont_tit .search{max-width:190px;}
+.search input { width:80%; display:inline-block;border-right:none; padding:6px 0 6px 5px; -moz-border-radius: 4px 0 0 4px;-webkit-border-radius: 4px 0 0 4px;border-radius: 4px 0 0 4px;}
+.search a{ width:20%;display:inline-block;padding:6px 8px;float:right!important;margin:0!important;border:1px solid #03a9f4;color:#03a9f4;line-height: 1.26; text-align:center;}
 .search{background:#fff;}
-.search input{width:144px; display:inline-block;border-right:none; padding:6px 0 6px 5px; -moz-border-radius: 4px 0 0 4px;-webkit-border-radius: 4px 0 0 4px;border-radius: 4px 0 0 4px;}
-.search a{display:inline-block;padding:6px 8px;float:right!important;margin:0!important;border:1px solid #03a9f4;color:#03a9f4;line-height: 1.26; text-align:center;}
-.search-2 input{ width:240px;}
-.judge_srh02{padding:12px 20px;line-height:30px;overflow:hidden;border-bottom:1px solid #eee}
-.judge_srh02 i.arrow-down,.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) 0 5px no-repeat;width:16px;height:30px;display:block;float:right}
-.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) -16px 5px no-repeat}
+
+.judge_srh02{padding:10px 20px;overflow:hidden;}
+.judge_srh02 i.arrow-down,.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) 0 3px no-repeat;width:16px;height:22px;display:block;float:right}
+.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) -16px 3px no-repeat}
 .judge_srh02 span.st-name-tit{margin:0 20px 0 15px}
-.judge_srh02 span.st-name,.judge_srh02 span.st-name-cur{width:auto;padding:7px 10px;margin:0 5px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;border: 1px solid #eee;}
-.judge_srh02 span.st-name-cur{ background:#e6f6fd; color:#03a9f4; border:none;}
-.judge_srh02 .show_s_list{ width:95px;}
+span.st-name,span.st-name-cur{ line-height:28px; display:inline-block;width:auto;padding:0 10px;margin:0 5px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;border: 1px solid #e0e0e0; background:#fff;}
+span.st-name-cur{ background:#e6f6fd; color:#03a9f4; border:none;}
+span.st-name .p-a.rep_del01{ display:block; width:14px; height:14px; line-height:14px;top:6px;right:0;}
+span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
+.judge_srh02 .show_s_list{ width:140px;}
 .stu_names{width:100%;margin:0 auto;overflow:hidden;background:#fcfcfc}
-.names_list{height:102px;overflow-y:auto;padding:5px 0;display:none}
-.names_list li{float:left;margin:5px 18px;height:24px;line-height:24px;cursor:pointer;width:78px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:1px solid #fcfcfc}
+.names_list{height:112px;overflow-y:auto;padding:5px 0;display:none}
+.names_list li{float:left;margin:5px 18px;height:24px;line-height:24px;cursor:pointer;width:82px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:1px solid #fcfcfc}
 .names_list li.cur,.names_list li:hover{color:#03a9f4;border:1px solid #03a9f4}
 .stu_jcont{width:100%;height:auto;overflow:hidden;margin-top:15px}
 .judge_tit{width:100%;background:#fff}
-.judge_nav-tit{background:#fff;width:885px;padding:10px 0;z-index:100}
 .judge_tit h3{font-size:18px;color:#333}
 .judge_tit a{margin-left:10px;float:left}
 .judge_tit02{border-bottom:2px dotted #ccc;padding:10px 0;position:relative;margin-bottom:20px}
@@ -138,7 +141,7 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .judge_table tr:hover{background-color:#f5f5f5; cursor:pointer;}
 .judge_side.fl,.judge_side.fr{width:21%; position:relative;}
 .judge_cont.fr,.judge_cont.fl{ width:78%}
-.judge_side .date-cho{width:100%; max-width:252px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:1px solid #ddd;background:#f9f9f9}
+.judge_side .date-cho{width:100%; max-width:252px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:1px solid #e0e0e0;background:#f9f9f9}
 .judge_side .date-cho h3{ font-size:12px; text-align:center; line-height:40px;}
 .judge_side .ico_bg{background:url(../images/stu_judge/date_bg.png) 0 0 no-repeat;height:32px;margin-left:-1px;margin-right:-1px}
 .date_list{width:100%}
@@ -154,10 +157,10 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .date_days li a:hover{background:#04acf7;color:#fff}
 .date_days li.over a{background:#cecece;color:#fff}
 .date_days li.today a{ background:#f60 !important; color:#fff;}
-.p_tips{height:28px;line-height:28px;border-top:1px solid #ddd;text-align:center;width:100%;overflow:hidden;background:#fff;color:#999}
+.p_tips{height:28px;line-height:28px;border-top:1px solid #e0e0e0;text-align:center;width:100%;overflow:hidden;background:#fff;color:#999}
 .set_box{width:100%;height:100%;top:0;left:0;z-index:99}
 .set_mask{width:100%;height:100%;position:fixed;top:0;left:0;z-index:100;background:url(../images/stu_judge/mask_bg.png)}
-.set_mask_main{width:509px;border-radius:4px;border:1px solid #ddd;background:#fff;position:fixed;z-index:101;top:80px;left:50%;margin-left:-254px}
+.set_mask_main{width:509px;border-radius:4px;border:1px solid #0e0e0;background:#fff;position:fixed;z-index:101;top:80px;left:50%;margin-left:-254px}
 .main_title{color:#666;border-bottom:1px solid #04acf7;padding:16px 20px;font-size:16px;position:relative}
 .mask_close{position:absolute;top:16px;right:20px;cursor:pointer}
 .main_cont{padding:15px 30px;line-height:32px}
@@ -170,7 +173,7 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 span.tit_span{width:90px;text-align:right;display:inline-block;vertical-align:top}
 select.sel_01{width:30%;height:28px;line-height:28px;border:1px solid #ccc;margin-right:15px}
 .ul_add li .a_mark:hover{color:#f60}
-.perc_span{outline:0;background:#fff;display:inline-block;height:26px;line-height:26px;width:60px;margin:0 5px;border:1px solid #ccc;text-align:center;overflow:hidden;vertical-align:middle}
+.perc_span{outline:0;background:#fff;display:inline-block;height:26px;line-height:26px;width:32%;border:1px solid #ccc;text-align:center;overflow:hidden;vertical-align:middle}
 .ul_add li .em_tips{color:#999;margin-left:20px}
 .a_mark i{vertical-align:middle;margin:0 5px;color:#999}
 .ul_add li .mark_txtare{border:1px solid #ccc;width:64%;line-height:20px;padding:3px;height:60px}
@@ -294,6 +297,10 @@ a.bg_bl04{margin-right:3%;background:#fff}
 .stu_inf-guide ul.nav li i{margin:0 5px 0 0;}
 .stu_inf-guide ul.nav li.active{border-left:3px solid #03a9f4;color:#03a9f4}
 .stu_inf-guide{ background:#fff;}
+@media (min-width: 768px){.judge_side>.stu_inf-guide{ width:198px;}}
+@media (min-width: 992px){.judge_side>.stu_inf-guide{ width:202px;}}
+@media (min-width: 1200px){.judge_side>.stu_inf-guide{ width:252px;}}
+
 .stu_inf-guide.fl,.stu_inf-guide.fr{width:18%}
 .edit_data li{line-height:30px;margin-bottom:20px}
 .edit_data .data-r{position:relative}
@@ -362,12 +369,13 @@ a.ul_data-btn:hover{border:1px solid #999}
 .date_term li.over a{border:1px solid #f90;color:#f90}
 .date_term li.bfr a{border:1px solid #eee;color:#999;cursor:default}
 .date_term li a:hover{border:1px solid #b1e6ff}
-.judge_xq{width:auto;padding:10px 20px  15px 20px;}
+.judge_xq{width:auto;}
 
 .judge_py{padding:10px 0 20px;overflow:hidden}
-.judge_py >.fr{border-left:1px dashed #ccc;padding-left:25px}
+.judge_py >.fr{width:30%;border-left:1px dashed #ccc;padding-left:20px}
+.judge_py >.fl{ width:70%; padding-right:20px;}
 .judge_py .fl .h3_pyu{font-size:14px;height:30px;line-height:30px}
-.judge_py textarea{width:584px;padding:5px;line-height:24px}
+.judge_py >.fl textarea{width:100%;padding:5px;line-height:24px}
 .judge_py .save_pyu{height:36px;line-height:36px;text-align:right}
 .judge_py .save_pyu input{vertical-align:middle;margin-right:8px}
 .judge_pj{overflow:hidden}
@@ -379,10 +387,11 @@ a.ul_data-btn:hover{border:1px solid #999}
 .judge_py .fr .tit-pyu a.cur{border-bottom:2px solid #f90;color:#f90}
 .judge_py .fr .tit-pyu a:hover{color:#f90}
 .judge_py .fr .ul_pylist{margin:10px 0}
-.judge_py .fr .ul_pylist li{line-height:24px;height:24px;margin:4px 0}
-.judge_py .fr .ul_pylist li span{float:left;display:inline-block;width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.judge_py .fr .ul_pylist li{line-height:24px;height:24px;margin:5px 0;  position:relative;}
+.judge_py .fr .ul_pylist li span{float:left;display:inline-block;width:85%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .judge_py .fr .ul_pylist li .bg_gray{float:right;height:22px;line-height:22px}
-.judge_py .fr .ul_pylist li .qkyicon{ cursor:pointer; color: #f90;}
+.judge_py .fr .ul_pylist li .qkyicon{ cursor:pointer; color: #999;}
+.judge_py .fr .ul_pylist li a .qkyicon:hover{ color:#f60;}
 .judge_tab-t{background:#f9f9f9;height:50px;border-bottom:1px solid #e7e7e7;}
 .judge_tab-t .fr{margin-top:8px}
 .judge_tab-t .fr a.bg_blue{ color:#03a9f4; border:none !important; background:none}
@@ -425,7 +434,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 .all_zb{height:30px;line-height:30px;margin-bottom:10px}
 .all_zb input{vertical-align:middle;margin-right:8px}
 .tit-top01{margin-top:15px}
-.stu_py{line-height:24px;padding:20px;font-size:14px; border:1px solid #caedfc; background:#f2fafd;}
+.stu_py{line-height:24px;padding:20px;font-size:14px; background:#f4fafc;}
 .stu_py strong{color:#333;font-weight:700}
 .div_pf{margin-top:10px}
 #tags label{margin-right:30px}
@@ -564,7 +573,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 .jdg-tips .h3-tips{ font-size:20px; margin:30px 0; }
 .jdg-tips .h3-tips .qkyicon{ font-size:72px; vertical-align:middle;}
 .jdg-tips .p-tips{ font-size:13px; margin-bottom:20px;}
-.co_333{ color:#333; font-weight:bold;}
+.co_333{ color:#333;}
 .jdg-tips .p-tips a{ margin:0 10px;color:#03a9f4;}
 /*学期浏览*/
 .pf_xq span.current{ cursor:default;border:none; background-color:transparent; font-size:13px;color:#333;}
@@ -666,9 +675,10 @@ span.search{ display:inline-block;}
 .tests-subj p span{ margin-right:15px;}
 .ai-w-big .tests_tit ,.ai-w-big .tests-subj{ width:770px;}
 .tests_tit ,.tests-subj{ width:100%;}
-@media (min-width: 768px){.tests-subj p{max-width:440px;}.td_sw{width: 240px;}}
-@media (min-width: 992px){.tests-subj p{ max-width:540px;}.td_sw{width: 300px;}}
-@media (min-width: 1200px){.tests-subj p{max-width:700px;} .td_sw{width: 356px;}}
+.judge_nav-tit{z-index:100}
+@media (min-width: 768px){.tests-subj p{max-width:440px;}.td_sw{width: 240px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:748px;}.judge_nav-tit{width:100%;}}
+@media (min-width: 992px){.tests-subj p{ max-width:540px;}.td_sw{width: 300px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:755px;}.judge_nav-tit{width:968px;}}
+@media (min-width: 1200px){.tests-subj p{max-width:700px;} .td_sw{width: 356px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:934px;}.judge_nav-tit{width:1198px;}}
 
 .stus-cont{ overflow:hidden; height:auto;}
 .stus-xuey-tit{ padding:20px 20px 10px; height:20px; line-height:20px; text-align:center;}
@@ -833,7 +843,7 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 .btn_no{color:#999;border:1px solid #e7e7e7;cursor:default; background:#e7e7e7;padding:0 10px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
 /*指标库已选指标*/
 .add_01 .search input{ width:194px;}
-.bor_btm{ border-bottom:1px solid #ddd;}
+.bor_btm{ border-bottom:1px solid #e0e0e0;}
 .bor_r{border-right:1px solid #ddd;}
 .bor_top{border-top:1px solid #ddd;}
 .bor_all{ border:1px solid #ddd;}
@@ -847,9 +857,6 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 .table_s.judge_table .a_btn{ margin:0;}
 .table_s.judge_table td{ padding:10px 0;}
 .judge_table .txt-edit{ width:80%; margin:0 auto; text-align:center; font-size:13px;}
-.stu_inf-guide .search{ width:100%}
-.stu_inf-guide .search input { width:80%;}
-.stu_inf-guide .search a{ width:20%}
 .stu_inf-guide ul.nav_name{ width:100%; max-height:512px; overflow-y:auto; margin:0 0 15px;}
 .stu_inf-guide ul.nav_name li:last-child{margin-bottom:0;}
 .test-img{ width:100%; padding:10px 3%; text-align:center;}
@@ -1031,3 +1038,63 @@ table.formbox_one td .div_dul{ margin:0;}
 /*评价统计*/
 .tj-px{ cursor:pointer;}
 .tj-px .qkyicon{vertical-align:middle;}
+
+/*评价-年级*/
+.sidebar {
+  display: block;
+  width:100%;
+}
+.content {
+  display: block;
+  overflow: hidden;
+  width: auto;
+}
+
+.sidebar-nav { max-height:420px; overflow-y:auto;}
+.sidebar-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sidebar-nav a,
+.sidebar-nav a:hover,
+.sidebar-nav a:focus,
+.sidebar-nav a:active {
+  outline: none;
+}
+.sidebar-nav ul li,
+.sidebar-nav ul a {
+  display: block;
+}
+.sidebar-nav ul a { width:100%;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  padding: 10px 0;
+}
+.sidebar-nav ul a:hover,
+.sidebar-nav ul a:focus,
+.sidebar-nav ul a:active {
+  color:#0288d1;
+  text-decoration: none;
+}
+.sidebar-nav ul ul a {
+  padding: 10px 0 10px 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar-nav ul ul a .arrow{ color:#999;}
+.sidebar-nav ul ul li ul a {
+  padding: 10px 0 10px 30px;
+}
+.sidebar-nav ul ul a:hover,
+.sidebar-nav ul ul a:focus,
+.sidebar-nav ul ul a:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.sidebar-nav-item {
+  padding-left: 5px;
+}
+.sidebar-nav-item-icon {
+  padding-right: 5px;
+}
+.arrow{float:right;line-height:1.42857}
+.active>a>.qky-you2:before{content: "\e6a5";}.fa.arrow:before{content:"\f104"}
+.active>a>.qky-xiangxia:before{ content: "\e812"; }
+.sidebar-nav ul ul li ul a.current,.sidebar-nav ul ul li ul a.current .qky_icon{ color:#0288d1}

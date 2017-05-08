@@ -3,6 +3,9 @@
 项目:学生综合评价1.2css
 修改版 日期：2017-3-29
 */
+.bor_all{ border:1px solid #ddd;}
+textarea.bor_no,input.bor_no,select.bor_no{ border:none !important; outline:none;}
+
 .u-line{ text-decoration:underline;}
 .bor_lb{ border-left:3px solid #03a9f4}
 label { font-weight:normal}
@@ -163,10 +166,10 @@ span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .set_mask_main{width:509px;border-radius:4px;border:1px solid #0e0e0;background:#fff;position:fixed;z-index:101;top:80px;left:50%;margin-left:-254px}
 .main_title{color:#666;border-bottom:1px solid #04acf7;padding:16px 20px;font-size:16px;position:relative}
 .mask_close{position:absolute;top:16px;right:20px;cursor:pointer}
-.main_cont{padding:15px 30px;line-height:32px}
+.main_cont{padding:15px 30px;}
 .mask_btns{padding:20px 0 25px;text-align:center;width:100%;overflow:hidden; }
 .mask_btns a{margin:0 15px;font-size:14px}
-.bg_w{background:#f6f6f6;border:1px solid #ccc;}
+.bg_w{background:#f6f6f6;border:1px solid #ccc; line-height:32px;}
 .bg_w:hover{border:1px solid #999}
 .ul_add{height:auto;width:100%}
 .ul_add li{margin:10px 0;overflow:hidden;width:100%}
@@ -377,7 +380,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 .judge_py .fl .h3_pyu{font-size:14px;height:30px;line-height:30px}
 .judge_py >.fl textarea{width:100%;padding:5px;line-height:24px}
 .judge_py .save_pyu{height:36px;line-height:36px;text-align:right}
-.judge_py .save_pyu input{vertical-align:middle;margin-right:8px}
+.judge_py .save_pyu input{margin-right:5px}
 .judge_pj{overflow:hidden}
 .judge_pj .qkyicon{cursor:pointer}
 .judge_pj .qkyicon.curr,.judge_pj .qkyicon:hover{color:#f60}
@@ -846,7 +849,6 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 .bor_btm{ border-bottom:1px solid #e0e0e0;}
 .bor_r{border-right:1px solid #ddd;}
 .bor_top{border-top:1px solid #ddd;}
-.bor_all{ border:1px solid #ddd;}
 .stu_names.bor_all{ margin-top:20px; overflow:hidden;}
 .stu_names .name_tit{background:#e5f7ff;width:30px;text-align:center;color:#04acf7;font-size:14px;padding:13px 0;height:80px; line-height:20px;}
 .haved_zb{ width:726px; padding:15px 0 0; height:92px; overflow-y:auto;}

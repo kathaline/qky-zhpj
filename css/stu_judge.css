@@ -115,9 +115,9 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .judge_srh02 i.arrow-down,.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) 0 3px no-repeat;width:16px;height:22px;display:block;float:right}
 .judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) -16px 3px no-repeat}
 .judge_srh02 span.st-name-tit{margin:0 20px 0 15px}
-span.st-name,span.st-name-cur{ line-height:28px; display:inline-block;width:auto;padding:0 10px;margin:0 5px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;border: 1px solid #e0e0e0; background:#fff;}
+span.st-name,span.st-name-cur{ line-height:28px; display:inline-block;width:auto;padding:0 10px;margin:0 5px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; background:#fff;}
 span.st-name-cur{ background:#e6f6fd; color:#03a9f4; border:none;}
-span.st-name .p-a.rep_del01{ display:block; width:14px; height:14px; line-height:14px;top:6px;right:0;}
+span.st-name .p-a.rep_del01{ display:block; width:14px; height:14px; line-height:14px;top:3px;right:0;}
 span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .judge_srh02 .show_s_list{ width:140px;}
 .stu_names{width:100%;margin:0 auto;overflow:hidden;background:#fcfcfc}
@@ -132,9 +132,9 @@ span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .judge_tit02 span{width:180px;text-align:center;position:absolute;background:#fff;left:50%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:-90px;font-size:16px;height:20px;line-height:20px;color:#333}
 .judge_content{margin-bottom:20px;}
 .judge_table a:hover{color:#03a9f4;}
-.judge_table th{padding: 10px; background: #fbfbfb; font-weight: normal; color: #808080; border-bottom: none;}
+.judge_table th{padding: 10px; background: #fbfbfb; font-weight: normal; color: #87c4e0; border-bottom: none;}
 .judge_table th.bg_f3{ background:#f3f3f3;}
-.judge_table td{padding:10px}
+.judge_table td{padding:10px; color:#333;}
 .judge_table td i{vertical-align:middle}
 .judge_table tr{background:#fff;}
 .judge_table tr:nth-of-type(odd){background-color: #fbfbfb}
@@ -892,7 +892,8 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 .fenlei li{ padding:10px 20px 10px 86px; position:relative; border-bottom:1px dashed #dedfee; margin-top:-1px; margin-bottom:-1px;}
 .fenlei li:last-child{border-bottom:none;}
 .fenlei li >a,.fenlei li span {line-height: 22px;float: left;padding: 0 9px; margin:3px 4px;color: #333;border-right:none;}
-.fenlei li a.fl_tit,.fenlei li span.fl_tit{ color:#999; position:absolute; left:10px;top:10px; width:70px; text-align:right; padding:0; margin:3px 0; font-size:12px;}
+.fenlei li a.fl_tit,.fenlei li span.fl_tit{ color:#999; position:absolute; left:0;top:10px; width:70px; text-align:right; padding:0; margin:3px 0; font-size:12px;}
+.srh_bg .fenlei li span.fl_tit{ width:96px; text-align:left;}
 .fenlei label input{ vertical-align:middle; margin-right:3px; margin-bottom:3px;}
 .fenlei label input{ vertical-align:middle; margin-right:3px; margin-bottom:3px;}
 .fenlei .fenl_dn{ margin:0 10px;}

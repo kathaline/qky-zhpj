@@ -5,7 +5,9 @@
 */
 .bor_all{ border:1px solid #ddd;}
 textarea.bor_no,input.bor_no,select.bor_no{ border:none !important; outline:none;}
-
+.co_333{color:#333}
+.co_666{color:#666}
+.co_999{color:#999}
 .u-line{ text-decoration:underline;}
 .bor_lb{ border-left:3px solid #03a9f4}
 label { font-weight:normal}
@@ -65,6 +67,7 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .co_green{color:#13af07 !important}
 .co_y{color:#f90 !important}
 .co_b{color:#03a9f4 !important;}
+.co_b2{color:#106e97 !important;}
 .co_gray{ color:#547381 !important;}
 .co_y:hover,.co_y:focus{ color:#f60 !important;}
 /*翻页*/
@@ -141,6 +144,7 @@ span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .judge_table td i{vertical-align:middle}
 .judge_table tr{background:#fff;}
 .judge_table tr:nth-of-type(odd){background-color: #fbfbfb}
+.table_nobg td{ background:#fff; vertical-align:text-top}
 .judge_table tr:hover{background-color:#f5f5f5; cursor:pointer;}
 .judge_side.fl,.judge_side.fr{width:21%; position:relative;}
 .judge_cont.fr,.judge_cont.fl{ width:78%}
@@ -167,6 +171,7 @@ span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .main_title{color:#666;border-bottom:1px solid #04acf7;padding:16px 20px;font-size:16px;position:relative}
 .mask_close{position:absolute;top:16px;right:20px;cursor:pointer}
 .main_cont{padding:15px 30px;}
+.main_cont li{ line-height:34px;}
 .mask_btns{padding:20px 0 25px;text-align:center;width:100%;overflow:hidden; }
 .mask_btns a{margin:0 15px;font-size:14px}
 .bg_w{background:#f6f6f6;border:1px solid #ccc; line-height:32px;}
@@ -357,7 +362,6 @@ a.ul_data-btn:hover{border:1px solid #999}
 .dr_tips_m{position:fixed!important;top:150px!important}
 .h3_dr{font-size:18px;text-align:center}
 .ul_add li span.t_import{max-width:90px;text-align:right;display:inline-block;vertical-align:top;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.co_999{color:#999}
 .import_list li{line-height:36px;overflow:hidden;height:36px}
 .import_list li .spn_import{position:relative;padding:0 25px 0 0;display:inline-block;max-width:900px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .import_list li .spn_import .qkyicon{display:none}
@@ -847,8 +851,8 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 /*指标库已选指标*/
 .add_01 .search input{ width:194px;}
 .bor_btm{ border-bottom:1px solid #e0e0e0;}
-.bor_r{border-right:1px solid #ddd;}
-.bor_top{border-top:1px solid #ddd;}
+.bor_r{border-right:1px solid #e7e7e7;}
+.bor_top{border-top:1px solid #e7e7e7;}
 .stu_names.bor_all{ margin-top:20px; overflow:hidden;}
 .stu_names .name_tit{background:#e5f7ff;width:30px;text-align:center;color:#04acf7;font-size:14px;padding:13px 0;height:80px; line-height:20px;}
 .haved_zb{ width:726px; padding:15px 0 0; height:92px; overflow-y:auto;}
@@ -882,7 +886,7 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 .table_r td{ min-width:68px;}
 .list-maxw{ overflow-x:auto;}
 /*数据上报*/
-.dform02{ margin:15px 0; overflow:hidden; font-size:13px;}
+.dform02{ margin:15px 0; overflow:hidden;}
 .dform02 .one_cell{ width:49%; margin:0;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .dform02 .one_cell .tit_span,.add_subj .two_cell .tit_span{width:104px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:inline-block; text-align:right; vertical-align:middle;}
 .dform02 .one_cell .add_txt{ width:60% !important;vertical-align:middle;}

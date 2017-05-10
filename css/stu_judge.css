@@ -140,6 +140,7 @@ span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .judge_table a:hover{color:#03a9f4;}
 .judge_table th{padding: 10px; background: #fbfbfb; font-weight: normal; color: #87c4e0; border-bottom: none;}
 .judge_table th.bg_f3{ background:#f3f3f3;}
+.judge_table th.bg_f6{ background:#f6f6f6;}
 .judge_table td{padding:10px; color:#333;}
 .judge_table td i{vertical-align:middle}
 .judge_table tr{background:#fff;}
@@ -858,6 +859,7 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 .haved_zb{ width:726px; padding:15px 0 0; height:92px; overflow-y:auto;}
 
 /*健康*/
+.judge_table.jtable_tc tr:nth-of-type(odd) {background-color: #fff;}.judge_table.jtable_tc tr:nth-of-type(even) {background-color: #fbfbfb;}
 .judge_table.table_s{border-collapse:separate; border-spacing:1px !important; overflow-x:auto;}
 .td_sw{height:24px; line-height:24px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:block;}
 .table_s.judge_table .a_btn{ margin:0;}

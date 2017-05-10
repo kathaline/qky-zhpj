@@ -19,7 +19,6 @@
 <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/js_pack.js"></script>
-<script language="JavaScript" charset="utf-8" src="../js/ai-fix-show.js"></script>
 <!--js-->
 <script src="../dist/sea.js"></script>
 <script src="../dist/seaconfig.js"></script>
@@ -36,23 +35,36 @@
   <a href="" class="cd-feedback"><i class="qkyicon">&#xe6af;</i><p>反馈</p></a>
   <a href="#0" class="cd-top"><i class="qkyicon">&#xe6a5;</i></a>
 </div>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="qkynav"></div>   
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="qkynav"></div>
+   
 <div class="qky_content">
    
      <div class="cont-wrap mar_t20">
-       <div class="cont_tit pad_lr20">
+      <div class="cont_tit pad_lr20">
          <div class="fr"><a href="02(管理教师)学生评价-日常评价操作.html" class="bg_blue"><i class="qkyicon_14">&#xe604;</i>返回</a></div>
-         <div class="fl"><h3><i class="qkyicon">&#xe6ec;</i><span>学生评价</span><i class="qkyicon mar_lr5">&#xe676;</i><span>评价查询</span><i class="qkyicon mar_lr5">&#xe676;</i><span>评价列表</span></h3></div>
+         <div class="fl"><h3><i class="qkyicon">&#xe767;</i>评价体系管理</h3></div>
       </div>
-       
+            
+      <div class="judge_mage">
+         
+        <div class="judge_tit judge_tab-t pad_lr20">
+          <ul class="ul_mage fl">
+             <li><a href="02(管理员)学生评价-已启用体系.html">已启用体系</a></li>
+             <li><a href="02(管理员)学生评价-未启用体系.html">未启用体系</a></li>
+             <li><a href="02(管理员)学生评价-体系草稿箱.html">草稿箱</a></li>
+             <li><a href="02(管理员)学生评价-公共体系库.html" class="current">公共体系库</a></li>
+          </ul>
+          <div class="fr"><a href="02(管理员)学生评价-创建体系.html" class="bg_gray"><i class="qkyicon">&#xe731;</i>创建评价体系</a></div>
+        </div>
+         
         <div class="judge_srh pad_lr20">
            
-           <ul class="ul_srh">
+          <ul class="ul_srh">
               <li><span>学年学期：</span>
                   <select name="select">
                     <option selected>2016-2017学年第一学期</option>
-                    <option>2016-2017学年第一学期</option>
-                    <option>2016-2017学年第一学期</option>
+                    <option>1班</option>
+                    <option>10班</option>
                   </select>
               </li>
               <li><span>评价类型：</span>
@@ -64,13 +76,13 @@
               </li>
            </ul>
         </div>
-
+      
         <div class="stu_jcont list-02 pad_lr20">
-           <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
+         <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
           <tr>
             <th width="18%" scope="col">学年学期</th>
             <th width="26%" scope="col">评价体系</th>
-            <th width="24%" scope="col">相关年级</th>
+            <th width="24%" scope="col">适用年级</th>
             <th width="12%" scope="col">评价类型</th>
             <th width="10%" scope="col">评分方式</th>
             <th width="10%" scope="col">操作</th>
@@ -80,8 +92,8 @@
             <td>中山市综评中学一年级日常评价</td>
             <td>一年级、二年级</td>
             <td>日常评价</td>
-            <td>百分制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-日常.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><span class="co_gray">百分制</span></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
           <tr>
             <td>2016-2017年度上学期</td>
@@ -89,7 +101,7 @@
             <td>全年级</td>
             <td><span class="co_green">学期评价</span></td>
             <td><span class="co_b2 fz_0">(Vx)</span>等第制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-学期.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
           <tr>
             <td>2016-2017年度上学期</td>
@@ -97,7 +109,7 @@
             <td>小一、小二、小三、小四、小五</td>
             <td>日常评价</td>
             <td>百分制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-日常.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
           <tr>
             <td>2016-2017年度上学期</td>
@@ -105,7 +117,7 @@
             <td>一年级、二年级</td>
             <td>日常评价</td>
             <td>百分制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-日常.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
           <tr>
             <td>2016-2017年度上学期</td>
@@ -113,7 +125,7 @@
             <td>全年级</td>
             <td><span class="co_green">学期评价</span></td>
             <td><span class="co_b2 fz_0">(Vx)</span>等第制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-学期.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
           <tr>
             <td>2016-2017年度上学期</td>
@@ -121,7 +133,7 @@
             <td>小一、小二、小三、小四、小五</td>
             <td>日常评价</td>
             <td>百分制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-日常.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
           <tr>
             <td>2016-2017年度上学期</td>
@@ -129,7 +141,7 @@
             <td>一年级、二年级</td>
             <td>日常评价</td>
             <td>百分制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-日常.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
           <tr>
             <td>2016-2017年度上学期</td>
@@ -137,7 +149,7 @@
             <td>全年级</td>
             <td><span class="co_green">学期评价</span></td>
             <td><span class="co_b2 fz_0">(Vx)</span>等第制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-学期.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
           <tr>
             <td>2016-2017年度上学期</td>
@@ -145,7 +157,7 @@
             <td>一年级、二年级</td>
             <td>日常评价</td>
             <td>百分制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-日常.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
           <tr>
             <td>2016-2017年度上学期</td>
@@ -153,7 +165,7 @@
             <td>全年级</td>
             <td><span class="co_green">学期评价</span></td>
             <td><span class="co_b2 fz_0">(Vx)</span>等第制</td>
-            <td><a href="02(管理教师)学生评价-评价查询-学期.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+            <td><a href="02(管理员)学生评价-创建体系.html" class="qkyicon_14 mar_r10" title="编辑">&#xe60f;</a><a onClick="popIn('#set_del')" class="qkyicon_14" title="删除">&#xe613;</a></td>
             </tr>
         </table>
           <div class="div-page">
@@ -169,12 +181,24 @@
           </div>
            
         </div>
-      </div>
-   
+        
+    </div>
+    </div>
+    
 
 </div>
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
 
+<div class="set_box yc" id="set_del">
+    <div class="set_mask"></div>
+    <div class="set_mask_main">
+      <div class="main_title">提示<div class="mask_close" onClick="popOut('#set_del')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+          <p class="fz_3 txtcenter"><i class="qkyicon_14 mar_r10 fz_5 co_y">&#xe6a4;</i>删除后将<span class="co_y">无法找回</span>，是否确认删除体系？</p>
+        </div>
+        <div class="mask_btns"><a onClick="" class="bg_org">确认</a><a onClick="popOut('#set_del')" class="bg_w">取消</a></div>
+  </div>
+</div>
 
 </body>
 </html>

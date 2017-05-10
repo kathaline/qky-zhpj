@@ -4,6 +4,11 @@
 修改版 日期：2017-3-29
 */
 .bor_all{ border:1px solid #ddd;}
+.rad4{border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+.block{ display:block}
+.iblock{ display:inline-block}
+.disabled,.sidebar-nav ul .disabled:hover{ color:#999; cursor:default;}
+.disabled>.collapse.in { display:none;}
 textarea.bor_no,input.bor_no,select.bor_no{ border:none !important; outline:none;}
 .co_333{color:#333}
 .co_666{color:#666}
@@ -83,10 +88,12 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .qky_top_box .r-s-list a{color:#fff}
 .wid-100{ width:100% !important; display:inline-block;}
 .wid-60{ width:60% !important; display:inline-block;}
+.wid-50{ width:50% !important; display:inline-block;}
+.wid-40{ width:40% !important; display:inline-block;}
 .wid-30{ width:30% !important; display:inline-block;}
 .wid-10{ width:10% !important; text-align:center;}
 .wid-10 a:hover{ color:#f60;}
-.wid-100,.wid-60,.wid-30,.wid-10{display:inline-block; padding:0 1%;}
+.wid-100,.wid-60,.wid-50,.wid-40,.wid-30,.wid-10{display:inline-block; padding-left:3px;}
 .txtarea01{ border:1px solid #ccc; line-height:26px;}
 
 /*二级菜单*/
@@ -306,6 +313,7 @@ a.bg_bl04{margin-right:3%;background:#fff}
 .stu_inf-guide ul.nav li i{margin:0 5px 0 0;}
 .stu_inf-guide ul.nav li.active{border-left:3px solid #03a9f4;color:#03a9f4}
 .stu_inf-guide{ background:#fff;}
+.bor_all.rad4.p-r .p-a{ right:3px;top:0;}
 @media (min-width: 768px){.judge_side>.stu_inf-guide{ width:198px;}}
 @media (min-width: 992px){.judge_side>.stu_inf-guide{ width:202px;}}
 @media (min-width: 1200px){.judge_side>.stu_inf-guide{ width:252px;}}
@@ -824,7 +832,7 @@ span.search{ display:inline-block;}
 .hon_data.stu_data .mark_txtare{ width:560px; padding:3px; line-height:24px; border:1px solid #ccc;}
 
 table.formbox_one{ width:94%;margin-bottom:10px;}
-table.formbox_one td{ padding:12px 0; font-size:14px; line-height:26px;}
+table.formbox_one td{ padding:10px 0; font-size:14px; line-height:32px;}
 table.formbox_one .sel_edit,table.formbox_one .span-up{ width:100% !important;}
 table.formbox_one .span-up .txt{ width:52%;}
 table.formbox_one .mark_txtare{ width:100% !important;padding:0 !important; text-indent:3px;}
@@ -960,7 +968,7 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 .spn_i{ height:200px; display:inline-block; margin-top:-40px; margin-bottom:10px;}
 .stuhon_pic .qkyicon{ font-size:217px; color:#78d1f8;}
 .formbox_one .tarea{ width:100%; text-indent:3px;resize: vertical;}
-table.formbox_one td.name{ vertical-align:top; padding-top:13px;}
+table.formbox_one td.name{ vertical-align:top; padding-top:10px;}
 table.formbox_one td .div_dul{ margin:0;}
 /*活动详情*/
 .act_top{ background:url(../images/stu_judge/act-top.png) center 0 no-repeat !important;}

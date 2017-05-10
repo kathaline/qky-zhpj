@@ -402,7 +402,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 .judge_py .fr .ul_pylist li a .qkyicon:hover{ color:#f60;}
 .judge_tab-t{background:#f9f9f9;height:50px;border-bottom:1px solid #e7e7e7;}
 .judge_tab-t .fr{margin-top:8px}
-.judge_tab-t .fr a.bg_blue{ color:#03a9f4; border:none !important; background:none}
+.judge_tab-t .fr a.bg_blue,.cont_tit .fr a.bg_blue{ color:#03a9f4; border:none !important; background:none}
 .ul_mage{width:auto;height:50px;overflow:hidden;}
 .ul_mage li{float:left}
 .ul_mage li a{margin:0;font-size:15px;padding:0 20px;text-align:center; margin-top:10px; line-height:40px; color:#737373;}
@@ -1003,6 +1003,7 @@ table.formbox_one td .div_dul{ margin:0;}
 
 .bgs_top{ margin-top:-20px; height:246px; background:url(../images/stu_judge/topbg_bgs.png) center  center no-repeat;}
 .bor_tno{ border-top:none !important;}
+.bor_bno{ border-bottom:none !important;}
 .bgs_tit{ height:30px; line-height:30px; overflow:hidden; padding:15px 0 0; clear:both;}
 .bgs_title{ background:url(../images/stu_judge/bgstit_bg.png) center center no-repeat; height:62px; line-height:62px; text-align:center; color:#fff; font-size:24px;}
 .mar_b20{ margin-bottom:20px !important;}

@@ -87,10 +87,15 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .qky_top_box .r-s-list{top:62px;right:0;width:70px;height:auto;text-align:center;background:#03a9f4;line-height:30px;box-shadow:0 2px 3px 1px #1b4558;display:none}
 .qky_top_box .r-s-list a{color:#fff}
 .wid-100{ width:100% !important; display:inline-block;}
+.wid-90{ width:90% !important; display:inline-block;}
+.wid-80{ width:80% !important; display:inline-block;}
+.wid-70{ width:70% !important; display:inline-block;}
 .wid-60{ width:60% !important; display:inline-block;}
 .wid-50{ width:50% !important; display:inline-block;}
 .wid-40{ width:40% !important; display:inline-block;}
 .wid-30{ width:30% !important; display:inline-block;}
+.wid-25{ width:25% !important; display:inline-block;}
+.wid-20{ width:20% !important; display:inline-block;}
 .wid-10{ width:10% !important; text-align:center;}
 .wid-10 a:hover{ color:#f60;}
 .wid-100,.wid-60,.wid-50,.wid-40,.wid-30,.wid-10{display:inline-block; padding-left:3px;}
@@ -344,13 +349,13 @@ a.ul_data-btn:hover{border:1px solid #999}
 .div_import .blue{color:#04acf7;text-decoration:underline}
 .div_import .bg_gray{position:relative}
 .div_import .bg_gray input[type=file]{position:absolute;left:0;top:0;width:100%;height:28px;opacity:0;filter:alpha(opacity=0);cursor:pointer}
-.bg_bl02{border:1px solid #04acf7;color:#04acf7;}
-.bg_bl02:hover{ background:#04acf7; color:#fff;border:1px solid #04acf7;}
+.bg_bl02{background:#04acf7; color:#fff;border:1px solid #04acf7;}
+.bg_bl02:hover{border:1px solid #04acf7;color:#04acf7; background:#fff}
 .no_btn{background:#eee;border:1px solid #e0e0e0;color:#999;cursor:default}
 .span_lab label{margin-right:15px}
 .import_one{margin:10px 0}
 .import_one .import_tit{background:#f9f9f9;border:1px solid #f0f0f0;height:50px;font-size:14px;line-height:50px}
-.import_one .import_tit strong{background:url(../images/stu_judge/ico_dr-tit.png) 0 0 no-repeat;display:inline-block;color:#03a9f4;width:104px;margin-right:10px;padding-left:20px}
+.import_one .import_tit strong{background:url(../images/stu_judge/ico_dr-tit.png) 0 0 no-repeat;height:48px;display:inline-block;color:#03a9f4;width:104px;margin-right:10px;padding-left:20px}
 .import_one .import_tit span{color:#999;font-size:12px}
 .import_one .btn001{margin:10px 60px 20px}
 .import_one .imp_cont{background:#f9f9f9;border:1px dashed #bbb;margin:20px 5px;padding:20px 30px}
@@ -453,14 +458,22 @@ a.ul_data-btn:hover{border:1px solid #999}
 .stu_py{line-height:24px;padding:20px;font-size:14px; background:#f4fafc;}
 .stu_py strong{color:#333;font-weight:700}
 .div_pf{margin-top:10px}
-#tags label{margin-right:30px}
+#tags label{margin-right:30px;padding-left: 20px; margin-bottom:0;margin-left: 0;vertical-align: middle; display:inline-block;}
+#tags label.selectTag .radio_a { background: #03a9f4;border: 1px solid #03a9f4;}
+#tags label.selectTag .radio_a b { background: #fff;}
 .tab_pf{width:624px;background:#f9f9f9;border:1px solid #ddd;overflow:hidden;margin-top:10px;padding:5px 0}
-.tab_pf .pf_one{width:48%;float:left;margin:3px 1%;font-size:14px}
-.tab_pf .pf_one strong{width:40px;font-weight:700;display:inline-block;text-align:right}
-.tab_pf .pf_one span input{width:90px;margin:0 5px;padding:0 5px;height:26px;line-height:26px;border:1px solid #ccc}
+.tab_pf .pf_one{width:48%;float:left;margin:7px 1%;}
+.tab_pf .pf_one .tit{ text-align:center;}
+.tab_pf .pf_one strong{width:8%;font-weight:700;display:inline-block;text-align:center}
+.tab_pf .pf_one span{ width:80%; display:inline-block}
+.tab_pf .pf_one span input{width:44%;margin:0 5px;padding:5px;}
 .pf_xq span{display:inline-block;width:22px;height:22px;text-align:center;line-height:20px;-moz-border-radius:60%;-webkit-border-radius:60%;border-radius:60%;margin:0 5px;background:#f9f9f9;border:1px solid #ccc;cursor:pointer}
 .pf_xq span:hover{border:1px solid #f60;color:#f60}
 .pf_xq span.cur{background:#f90;border:1px solid #f60;color:#fff}
+.tab_pf.fenlei.div_dul{ width:100%;}
+.tab_pf.fenlei.div_dul .pf_one{width:80%;margin:7px 1%;}
+.del.p-a{ right:3px;top:0}
+.pf_one .del.p-a{ width:8%}
 
 /***评价报告***/
 /*12*/
@@ -785,19 +798,19 @@ span.search{ display:inline-block;}
 .con_tit02 .fr a{ margin-left:10px;}
 
 .kp_zb01{ width:96%; margin:0 2% 10px;}
-.kp_zb01 .table_zb{ font-size:13px;}
-.kp_zb01 .table_zb th{ background:#d8f3f9;}
-.kp_zb01 .table_zb tr:first-child{background:#f7fcfd; }
+.kp_zb01 .table_zb{ margin-bottom:2px}
+.kp_zb01 .table_zb th{ background:#e3f6fa;}
+.kp_zb01 .table_zb tr:first-child td{background:#f7fcfd; }
 .kp_zb01 .table_zb td{ line-height:30px;}
-.kp_zb01 .table_zb td:first-child{ background:#fafafa; padding:0;border-top:1px solid #e9e9e9;}
+.kp_zb01 .table_zb td:first-child{ background:#fcfcfc; padding:0;border-top:1px solid #eee;}
+.zb_perc { display:block;}
 .zb_perc input{ width:50%; margin-right:3px; border:1px solid #bee4ec; text-align:center;}
-.kp_zb01 .table_zb input[type="text"]{ height:28px; line-height:28px; padding:0 5px;}
+.kp_zb01 .table_zb input[type="text"]{  padding:5px;}
 .zb_no01{ clear:both; padding:15px 10px; overflow:hidden;}
-.zb_no01 .tit{ width:76%;border:1px solid #cbe7f3;}
 .zb_no01 .co_b{ margin-left:10px;}
 .zb_no02{height:100%; overflow:hidden; padding:10px 10px 10px 11%; position:relative; border-bottom:1px dashed #e6e6e6;}
 .zb_no02 input[type="text"]{ border:1px solid #ddd;}
-.zb_no02 .zb_perc02{ position:absolute; display:block; height:30px; padding:10px 0; width:10%; left:0;top:0; background:#f6f6f6; text-align:center;}
+.zb_no02 .zb_perc02{ position:absolute; display:block; padding:10px 0; width:10%; left:0;top:0; background:#f9f9f9; text-align:center;}
 .zb_no02 .zb_perc02 input{ width:50%;text-align:center; margin-right:2px;}
 .zb_no02 .tit{ width:20%; margin-right:13px;}
 .zb_no02 .inf{ width:65%;}
@@ -908,7 +921,7 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ padding:0; width:10
 .fenlei li{ padding:10px 20px 10px 86px; position:relative; border-bottom:1px dashed #dedfee; margin-top:-1px; margin-bottom:-1px;}
 .fenlei li:last-child{border-bottom:none;}
 .fenlei li >a,.fenlei li span {line-height: 22px;float: left;padding: 0 9px; margin:3px 4px;color: #333;border-right:none;}
-.fenlei li a.fl_tit,.fenlei li span.fl_tit{ color:#999; position:absolute; left:0;top:10px; width:70px; text-align:right; padding:0; margin:3px 0; font-size:12px;}
+.fenlei li a.fl_tit,.fenlei li span.fl_tit{ color:#999; position:absolute; left:0;top:10px; width:70px; padding:0; margin:3px 0; font-size:12px;}
 .srh_bg .fenlei li span.fl_tit{ width:96px; text-align:left;}
 .fenlei label input{ vertical-align:middle; margin-right:3px; margin-bottom:3px;}
 .fenlei label input{ vertical-align:middle; margin-right:3px; margin-bottom:3px;}

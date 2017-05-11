@@ -259,9 +259,9 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 
 /*单选改装*/
 .radio label{ line-height:30px; height:30px;}
-.radio_a{ display:block; width:14px; height:14px; border:1px solid #ddd; border-radius:50%; background:#ffffff; margin-top:9px; }
+.radio_a{ display:block; width:14px; height:14px; border:1px solid #ddd; border-radius:50%; background:#ffffff; margin-top:8px; }
 .radio_a b{ width:6px; height:6px; display:block; margin:3px;border-radius:50%;}
-.select .radio_a{background:#2baf2b; border:1px solid #2baf2b;}
+.select .radio_a{background:#03a9f4; border:1px solid #03a9f4;}
 .select .radio_a b{background:#fff;}
 
 .disabled .radio_a{background:#ffffff; border:1px solid #dadada;}

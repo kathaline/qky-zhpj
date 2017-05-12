@@ -130,8 +130,8 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .search{background:#fff;}
 
 .judge_srh02{padding:10px 20px;overflow:hidden;}
-.judge_srh02 i.arrow-down,.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) 0 3px no-repeat;width:16px;height:22px;display:block;float:right}
-.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) -16px 3px no-repeat}
+.judge_srh02 i.arrow-down,.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) -16px 3px no-repeat;width:16px;height:22px;display:block;float:right}
+.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) 0 3px no-repeat}
 .judge_srh02 span.st-name-tit{margin:0 20px 0 15px}
 span.st-name,span.st-name-cur{ line-height:28px; display:inline-block;width:auto;padding:0 10px;margin:0 5px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; background:#fff;}
 span.st-name-cur{ background:#e6f6fd; color:#03a9f4; border:none;}
@@ -139,7 +139,7 @@ span.st-name .p-a.rep_del01{ display:block; width:14px; height:14px; line-height
 span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .judge_srh02 .show_s_list{ width:140px;}
 .stu_names{width:100%;margin:0 auto;overflow:hidden;background:#fcfcfc}
-.names_list{height:112px;overflow-y:auto;padding:5px 0;display:none}
+.names_list{height:112px;overflow-y:auto;padding:5px 0;}
 .names_list li{float:left;margin:5px 18px;height:24px;line-height:24px;cursor:pointer;width:82px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:1px solid #fcfcfc}
 .names_list li.cur,.names_list li:hover{color:#03a9f4;border:1px solid #03a9f4}
 .stu_jcont{width:100%;height:auto;overflow:hidden;margin-top:15px}
@@ -395,7 +395,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 .judge_py{padding:10px 0 20px;overflow:hidden}
 .judge_py >.fr{width:30%;border-left:1px dashed #ccc;padding-left:20px}
 .judge_py >.fl{ width:70%; padding-right:20px;}
-.judge_py .fl .h3_pyu{font-size:14px;height:30px;line-height:30px}
+.judge_py .h3_pyu{font-size:14px;height:30px;line-height:30px}
 .judge_py >.fl textarea{width:100%;padding:5px;line-height:24px}
 .judge_py .save_pyu{height:36px;line-height:36px;text-align:right}
 .judge_py .save_pyu input{margin-right:5px}

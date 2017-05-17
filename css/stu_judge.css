@@ -154,7 +154,7 @@ span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .judge_table th{padding: 10px; background:#f5f5f5; font-weight: normal; color: #747474; border-bottom: none;}
 .judge_table th.bg_f3{ background:#f3f3f3;}
 .judge_table th.bg_f6{ background:#f6f6f6;}
-.judge_table td{padding:20px 10px; color:#333;border-bottom:1px solid #e0e0e0;}
+.judge_table td{padding:15px 10px; color:#333;border-bottom:1px solid #e0e0e0;}
 .judge_table td i{vertical-align:middle}
 .judge_table tr{background:#fff; }
 .table_nobg td{ background:#fff; vertical-align:text-top;}
@@ -826,7 +826,7 @@ span.search{ display:inline-block;}
 .btm_noline,.btm_noline .cont_tit{ border-bottom:none;}
 /*个人荣誉列表*/
 .rep_list li .honor_tips{ position:absolute;top:0;left:0; width:62px; height:26px; line-height:26px; background:#03a9f4; color:#fff; text-align:center;}
-.rep_list li .hon_intro{ text-align:center; font-size:13px; padding:5px 0;}
+.rep_list li .hon_intro{ text-align:center; font-size:13px; padding:5px 0; background:#f9f9f9;}
 .rep_list li .hon_intro .honor_t{ display:inline-block; width:98%; margin:0 1%; height:24px; line-height:24px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .rep_list li .hon_intro .honor_t:hover{ text-decoration:underline;}
 /*新建级别弹窗*/
@@ -867,8 +867,10 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 .pyu_img img{ width:50px; height:50px; border:2px solid #e0e0e0;}
 .tit_pyu{ height:26px; line-height:26px; margin-bottom:5px;}
 .tit_pyu .co_333{ margin-right:15px; font-size:14px;}
-.pyu_con{font-size:13px;}
-
+.pyu_img{ width:6%; min-width:52px;}
+.pyu_con{ width:94%;}
+@media (min-width: 768px)and (max-width: 991px){.pyu_con{ width:92%;}}
+@media (min-width: 992px)and (max-width:1199px){.pyu_con{ width:93%;}}
 /*无操作按钮*/
 .btn_no{color:#999;border:1px solid #e7e7e7;cursor:default; background:#e7e7e7;padding:0 10px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
 /*指标库已选指标*/
@@ -881,11 +883,11 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 .haved_zb{ width:726px; padding:15px 0 0; height:92px; overflow-y:auto;}
 
 /*健康*/
-.judge_table.jtable_tc tr:nth-of-type(odd) {background-color: #fff;}.judge_table.jtable_tc tr:nth-of-type(even) {background-color: #fbfbfb;}
+
 .judge_table.table_s{border-collapse:separate; border-spacing:1px !important; overflow-x:auto;}
 .td_sw{height:24px; line-height:24px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:block;}
 .table_s.judge_table .a_btn{ margin:0;}
-.table_s.judge_table td{ padding:10px 0;}
+.table_s.judge_table td{ padding:15px 0;}
 .judge_table .txt-edit{ width:80%; margin:0 auto; text-align:center; font-size:13px;}
 .stu_inf-guide ul.nav_name{ width:100%; max-height:512px; overflow-y:auto; margin:0 0 15px;}
 .stu_inf-guide ul.nav_name li:last-child{margin-bottom:0;}

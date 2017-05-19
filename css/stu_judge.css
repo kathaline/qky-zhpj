@@ -303,7 +303,7 @@ a.bg_bl04{margin-right:3%;background:#fff}
 .data-one{width:100%;height:auto;overflow:hidden}
 .data-h3{padding:20px 0;border-bottom:1px dashed #ddd;position:relative; margin-top:-20px;margin-bottom:20px}
 .data-h3 span{position:absolute;top:33px;background:#fff;display:inline-block;padding-right:20px;font-size:16px}
-.stu_data{width:80%; padding-bottom:20px;}
+.stu_data{width:100%; padding-bottom:20px;}
 .stu_data .stu_pic{margin:0 20px;padding:2px;width:180px;position:relative}
 .stu_data .stu_pic img{height:180px;width:180px;border:1px solid #f0f0f0}
 .ul_data{padding:20px 0 0 50px}
@@ -415,6 +415,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 .judge_tab-t{background:#f9f9f9;height:50px;border-bottom:1px solid #e7e7e7;}
 .judge_tab-t .fr{margin-top:8px}
 .judge_tab-t .fr a.bg_blue,.cont_tit .fr a.bg_blue{ color:#03a9f4; border:none !important; background:none; padding-right:0;}
+.judge_tab-t .fr a.bg_blue:hover,.cont_tit .fr a.bg_blue:hover{color:#0288d1;}
 .ul_mage{width:auto;height:50px;overflow:hidden;}
 .ul_mage li{float:left}
 .ul_mage li a{margin:0;font-size:15px;padding:0 20px;text-align:center; margin-top:10px; line-height:40px; color:#737373;}
@@ -743,7 +744,7 @@ span.search{ display:inline-block;}
 .span-up .file{ position:absolute; top:2px;left:0; height:28px; filter:alpha(opacity:0);opacity: 0;width:62%; }
 .span-up .p-tips-a{ font-size:13px; color:#03a9f4;}
 .span-up .p-tips-a:hover{ text-decoration:underline;}
-.set_text{ width:30%; padding-left:3px;font-weight:normal;}
+.set_text{ width:30%; padding-left:3px !important;font-weight:normal;}
 .manage-import > .main_cont{ padding:0 20px;}
 .manage-import .imp_cont{ background:#fafafa;}
 .manage-import .fl .ul_add .span_lab {width:76%;}
@@ -1134,7 +1135,13 @@ table.formbox_one td .div_dul{ margin:0;}
   padding-right: 5px;
 }
 .arrow{float:right;line-height:1.42857}
-.sidebar-nav ul ul li ul a .qky-zhengque2:before { content: "\e790"; }
+.qky-zhengque2:before { content: "\e790"; }
 .active>a>.qky-you2:before{content: "\e6a5";}.fa.arrow:before{content:"\f104"}
 .active>a>.qky-xiangxia:before{ content: "\e812"; }
-.sidebar-nav ul ul li ul a.current,.sidebar-nav ul ul li ul a.current .qky_icon,.sidebar-nav ul a:active  .qky-zhengque2:before{ color:#0288d1}
+.sidebar-nav ul ul li ul a.current,.sidebar-nav ul ul li ul a.current .qky_icon,.sidebar-nav ul a:active  .qky-zhengque2:before{ color:#03a9f4}
+/*评价详情附件下载*/
+.fj_down li.p-r{ width:32%;  margin:0 1% 0 0;}
+.fj_down li.p-r img{height:100px;}
+.fj_down li.p-r .p-a{top:-6px; left:0;}
+.fj_down li.p-r .p-a:hover{color:#0288d1;}
+.fj_down li.p-r .p-a.cur{color:#03a9f4}

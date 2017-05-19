@@ -233,7 +233,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .navbar-inverse .nav_pjname{ color:#fff; }
 .navbar-inverse .navbar-nav > li > a {color:#a5a5a5;}
 .navbar-inverse .navbar-nav > li > a:hover{ background:#6c6c6c; color:#d8d8d8;}
-.navbar-inverse .navbar-nav > .active > a { background:#0288d1 !important}
+.navbar-inverse .navbar-nav > .active > a { background:#03a9f4 !important}
 .navbar-inverse .navbar-nav > .active > a:hover { background: #2baf2b}
 .navbar-inverse .nav_other li .dropdown-menu{ background:#515151;}
 .navbar-inverse .nav_other li .dropdown-menu li a{ color:#a5a5a5;}

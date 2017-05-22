@@ -690,9 +690,7 @@ span.search{ display:inline-block;}
 .stu-tests-list li a:hover{ text-decoration:underline; color:#f60;}
 .xuey_table td{padding:15px 5px;line-height:24px;text-align:center; border-bottom:1px solid #eee;}
 .xuey_table td i{vertical-align:middle}
-
 .xuey_table td:nth-child(3){text-align:left;}
-.xuey_table tr:hover{ background:#f2fafd;}
 
 .test-sub{ background:url(../images/stu_judge/stu-test-bg.png) center center no-repeat; height:26px; color:#fff; padding-right:5px;font-size:14px;}
 .line_mid{ position:relative; }
@@ -707,9 +705,9 @@ span.search{ display:inline-block;}
 .ai-w-big .tests_tit ,.ai-w-big .tests-subj{ width:770px;}
 .tests_tit ,.tests-subj{ width:100%;}
 .judge_nav-tit{z-index:100}
-@media (min-width: 768px){.tests-subj p{max-width:440px;}.td_sw{width: 240px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:748px;}.judge_nav-tit{width:100%;}}
-@media (min-width: 992px){.tests-subj p{ max-width:540px;}.td_sw{width: 300px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:755px;}.judge_nav-tit{width:968px;}}
-@media (min-width: 1200px){.tests-subj p{max-width:700px;} .td_sw{width: 356px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:934px;}.judge_nav-tit{width:1198px;}}
+@media (min-width: 768px){.tests-subj p.fl{max-width:440px;}.td_sw{width: 240px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:748px;}.judge_nav-tit{width:100%;}}
+@media (min-width: 992px){.tests-subj p.fl{ max-width:540px;}.td_sw{width: 300px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:755px;}.judge_nav-tit{width:968px;}}
+@media (min-width: 1200px){.tests-subj p.fl{max-width:700px;} .td_sw{width: 356px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:934px;}.judge_nav-tit{width:1198px;}}
 
 .stus-cont{ overflow:hidden; height:auto;}
 .stus-xuey-tit{ padding:20px 20px 10px; height:20px; line-height:20px; text-align:center;}
@@ -1007,10 +1005,15 @@ table.formbox_one td .div_dul{ margin:0;}
 .p_act{ text-indent:2em; font-size:13px; line-height:26px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:3;overflow: hidden; position:relative;}
 .p_act a{ position:absolute; bottom:-7px; right:8px; background:#fff;}
 /*实践详情-评价*/
+.tests-subj.fl{ width:92%;}
 .test-sub img{ border:1px solid #03a9f4;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; width:52px; height:52px; margin-top:-13px;}
 .tests-subj p.wid-100{ padding:0;}
 .act_stuxds{ position:relative;}
-.act_stuxds .em_zt{ position:absolute; right:10px; top:10px; display:block; width:60px; height:37px;}
+.xuey_table td .a_btn i{ vertical-align:inherit}
+@media (min-width: 768px){.tests-subj p.wid-100{ width:600px !important;}}
+@media (min-width: 992px){.tests-subj p.wid-100{ width:760px !important;}}
+@media (min-width: 1200px){.tests-subj p.wid-100{ width:960px !important;}}
+.act_stuxds .em_zt{ position:absolute; right:10px; top:20px; display:block; width:60px; height:37px;}
 .act_stuxds .em_haved{background:url(../images/stu_judge/haved_bg.png) 0 0 no-repeat;}
 .act_teac_dp td{ padding:0 5px!important; border-top:1px dashed #fff;}
 .act_teac_dp .judge_py textarea{ width:715px;}

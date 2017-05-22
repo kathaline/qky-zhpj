@@ -18,6 +18,7 @@ textarea.bor_no,input.bor_no,select.bor_no{ border:none !important; outline:none
 .bor_lb{ border-left:3px solid #03a9f4}
 label { font-weight:normal}
 .stu_jcont .stu_data.fl{ width:82%;}.stu_jcont .stu_inf-guide.fr{ width:16%;}.stu_jcont .stu_inf-guide.fr ul.nav{ width:100%;}
+.stu_data.fr{ width:80%;}
 /*.ai-w-big .qky_content,.ai-w-big .qky_top_box,.ai-w-small .qky_content,.ai-w-small .qky_top_box{width:1200px;height:auto;margin:0 auto}
 .ai-w-small .qky_content,.ai-w-small .qky_top_box{width:1000px}
 .ai-w-big .judge_cont,.ai-w-small .judge_cont{padding:0px 20px ;width:885px;}
@@ -263,10 +264,10 @@ a.a_btn:hover{background:#2fb0e8;color:#fff; border:1px solid #7cc6e6;}
 .creat_zb .bg_gray{background:#fff}
 .creat_zb .bg_gray i{vertical-align:middle}
 .creat_add{margin:20px;}
-.creat_add a{display:inline-block;width:48%;font-size:16px;height:36px;line-height:36px;padding:0;text-align:center}
+.creat_add a{display:inline-block;width:49%;font-size:16px;height:36px;line-height:36px;padding:0;text-align:center}
 a.bg_bl03,a.bg_bl04{border:1px solid #2fb0e8;background:#edfaff;color:#2fb0e8;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}
-a.bg_bl03{background:#edfaff;}
-a.bg_bl04{margin-right:3%;background:#fff}
+a.bg_bl03{background:#edfaff;float: right;}
+a.bg_bl04{background:#fff}
 .creat_add a:hover{color:#03a9f4; border:1px solid #03a9f4;}
 .bgao-tit{font-size:14px;width:960px}
 .bgao-tit a{width:106px}
@@ -447,11 +448,11 @@ a.ul_data-btn:hover{border:1px solid #999}
 .tit_tab a.curr,.tit_tab a:hover{border-bottom:2px solid #f90;color:#f90}
 .fl_chk{width:260px;position:relative}
 .fl_chk .search{width:240px;position:absolute;left:0;top:0}
-.fl_chk form{padding:35px 20px 10px 0; height:183px;overflow-y:auto;overflow-x:hidden}
-.fl_chk form label{width:240px;margin:15px 0;display:block;padding:0;height:16px}
-.fl_chk form label input,.fl_chk form label span{display:block;float:left;height:16px;line-height:16px}
+.fl_chk form{padding:35px 20px 10px 0; height:220px;overflow-y:auto;overflow-x:hidden}
+.fl_chk form label{width:240px;max-width:240px;margin:18px 0;display:block;padding:0;height:16px}
+.fl_chk form label input,.fl_chk form label span{display:block;float:left;height:16px;line-height:16px; margin:0}
 .fl_chk form label span{width:226px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fr-zbk{width:490px; height:188px;overflow-y:auto;overflow-x:hidden}
+.fr-zbk{width:490px; height:180px;overflow-y:auto;overflow-x:hidden}
 .all_zb{height:30px;line-height:30px;margin-bottom:10px}
 .all_zb input{vertical-align:middle;margin-right:8px}
 .tit-top01{margin-top:15px}
@@ -599,8 +600,8 @@ a.ul_data-btn:hover{border:1px solid #999}
 .rep_stu_list02 li a:hover p{ color:#f60;}
 .div-page .a-more{ padding:0 30px;}
 /**冷启动18**/
-.jdg-tips{ min-height:150px; padding:20px; text-align:center;}
-.jdg-tips .h3-tips{ font-size:20px; margin:30px 0; }
+.jdg-tips{padding:20px; text-align:center;}
+.jdg-tips .h3-tips{ font-size:20px; margin:20px 0; }
 .jdg-tips .h3-tips .qkyicon{ font-size:72px; vertical-align:middle;}
 .jdg-tips .p-tips{ font-size:13px; margin-bottom:20px;}
 .co_333{ color:#333;}
@@ -760,7 +761,7 @@ span.search{ display:inline-block;}
 .alll-chk{ color:#333;}
 .imp_cont .span_lab strong{ margin-right:15px;}
 /*管理员报告书-学生列表*/
-.rpt-topp{ background:url(../images/stu_judge/bgs-top_bg.png) center 0 no-repeat; margin:0 auto; height:120px; margin-top:-20px; position:relative;}
+.rpt-topp{ background:url(../images/stu_judge/bgs-top_bg.png) center 0 no-repeat; margin:0 auto; height:120px; position:relative;}
 .rpt-topp .btns{ position:absolute; bottom:10px; right:0;}
 .rpt-topp .btns a{ background:#fff; font-size:14px;}
 .rpt-topp .btns a:hover{ background:#04acf7; color:#fff;}
@@ -878,7 +879,6 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 /*无操作按钮*/
 .btn_no{color:#999;border:1px solid #e7e7e7;cursor:default; background:#e7e7e7;padding:0 10px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
 /*指标库已选指标*/
-.add_01 .search input{ width:194px;}
 .bor_btm{ border-bottom:1px solid #e0e0e0;}
 .bor_r{border-right:1px solid #e7e7e7;}
 .bor_top{border-top:1px solid #e7e7e7;}
@@ -1007,7 +1007,6 @@ table.formbox_one td .div_dul{ margin:0;}
 .p_act{ text-indent:2em; font-size:13px; line-height:26px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:3;overflow: hidden; position:relative;}
 .p_act a{ position:absolute; bottom:-7px; right:8px; background:#fff;}
 /*实践详情-评价*/
-.cont_tit .ul_srh li{ margin-top:10px;}
 .test-sub img{ border:1px solid #03a9f4;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; width:52px; height:52px; margin-top:-13px;}
 .tests-subj p.wid-100{ padding:0;}
 .act_stuxds{ position:relative;}

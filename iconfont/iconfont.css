@@ -1,10 +1,10 @@
 
 @font-face {font-family: "qky_icon";
-  src: url('iconfont.eot?t=1494917775680'); /* IE9*/
-  src: url('iconfont.eot?t=1494917775680#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1494917775680') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1494917775680') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1494917775680#qky_icon') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1495186693289'); /* IE9*/
+  src: url('iconfont.eot?t=1495186693289#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1495186693289') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1495186693289') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1495186693289#qky_icon') format('svg'); /* iOS 4.1- */
 }
 
 .qky_icon {
@@ -38,8 +38,6 @@
 .qky-guanbi:before { content: "\e7be"; }
 
 .qky-yiwen:before { content: "\e7bf"; }
-
-.qky-sousuo:before { content: "\e635"; }
 
 .qky-picture:before { content: "\e7fe"; }
 
@@ -129,7 +127,7 @@
 
 .qky-query:before { content: "\e7c4"; }
 
-.qky-sousuo2:before { content: "\e63b"; }
+.qky-sousuo:before { content: "\e63b"; }
 
 .qky-rili:before { content: "\e68f"; }
 
@@ -488,8 +486,6 @@
 .qky-xiangxia3:before { content: "\e7d0"; }
 
 .qky-ico-addobj:before { content: "\e6fc"; }
-
-.qky-shenhe1:before { content: "\e664"; }
 
 .qky-gantanhao3:before { content: "\e7d1"; }
 
@@ -989,21 +985,11 @@
 
 .qky-wentidewen:before { content: "\e7ed"; }
 
-.qky-notpass-1-copy:before { content: "\e61d"; }
-
-.qky-pass-1-copy:before { content: "\e621"; }
-
 .qky-dui6:before { content: "\e7ee"; }
-
-.qky-weitongguoshenhe:before { content: "\e614"; }
 
 .qky-pingfenqia:before { content: "\e80c"; }
 
 .qky-leixing:before { content: "\e804"; }
-
-.qky-iconfontshenheshibai:before { content: "\e603"; }
-
-.qky-shenhe2:before { content: "\e609"; }
 
 .qky-shouhui:before { content: "\e812"; }
 
@@ -1013,17 +999,15 @@
 
 .qky-xingbiao1:before { content: "\e811"; }
 
-.qky-shenhe3:before { content: "\e669"; }
-
 .qky-yifasongyoujian:before { content: "\e809"; }
 
 .qky-jiangxu:before { content: "\e801"; }
 
-.qky-dingdanshenheyitongguo:before { content: "\e76c"; }
-
 .qky-doc:before { content: "\e80f"; }
 
 .qky-jpg:before { content: "\e810"; }
+
+.qky-zanwujilu:before { content: "\e635"; }
 
 .qky-yihuifu:before { content: "\e807"; }
 

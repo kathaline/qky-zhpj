@@ -417,8 +417,8 @@ a.ul_data-btn:hover{border:1px solid #999}
 .judge_py .fr .ul_pylist li a .qkyicon:hover{ color:#f60;}
 .judge_tab-t{background:#f9f9f9;height:50px;border-bottom:1px solid #e7e7e7;}
 .judge_tab-t .fr{margin-top:8px}
-.judge_tab-t .fr a.bg_blue,.cont_tit .fr a.bg_blue{ color:#03a9f4; border:none !important; background:none; padding-right:0;}
-.judge_tab-t .fr a.bg_blue:hover,.cont_tit .fr a.bg_blue:hover{color:#0288d1;}
+.judge_tab-t .fr a.bg_blue,.cont_tit .fr a.bg_blue,.bgs_tit .fr a.bg_blue{ color:#03a9f4; border:none !important; background:none; padding-right:0;}
+.judge_tab-t .fr a.bg_blue:hover,.cont_tit .fr a.bg_blue:hover,.bgs_tit .fr a.bg_blue:hover{color:#0288d1;}
 .ul_mage{width:auto;height:50px;overflow:hidden;}
 .ul_mage li{float:left}
 .ul_mage li a{margin:0;font-size:15px;padding:0 20px;text-align:center; margin-top:10px; line-height:40px; color:#737373;}
@@ -1041,13 +1041,14 @@ table.formbox_one td .div_dul{ margin:0;}
 .bgs_top{ margin-top:-20px; height:246px; background:url(../images/stu_judge/topbg_bgs.png) center  center no-repeat;}
 .bor_tno{ border-top:none !important;}
 .bor_bno{ border-bottom:none !important;}
-.bgs_tit{ height:30px; line-height:30px; overflow:hidden; padding:15px 0 0; clear:both;}
+.bgs_tit{line-height:30px; overflow:hidden; padding:10px 0 0; clear:both;}
 .bgs_title{ background:url(../images/stu_judge/bgstit_bg.png) center center no-repeat; height:62px; line-height:62px; text-align:center; color:#fff; font-size:24px;}
 .mar_b20{ margin-bottom:20px !important;}
 .bgs_py .user,.bgs_py .py_con{ position:relative;}
 .bgs_py .user img{ width:72px; height:72px;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; border:2px solid #c1e9fb;}
-.bgs_py .user .bgs_role{ position:absolute; bottom:0; right:0; display:block; background:#f60; color:#fff;;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; width:22px; height:22px; text-align:center; line-height:22px;}
-.bgs_py .py_con{ margin-top:3px;font-size:14px;-moz-border-radius:6px; -webkit-border-radius:6px;border-radius:6px; padding:10px 15px; background:#e6f6fd;min-height:52px;  width:996px;}
+.bgs_py .user .bgs_role{ position:absolute; bottom:0; left:50px; display:block; background:#f60; color:#fff;;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; width:22px; height:22px; text-align:center; line-height:22px;}
+.bgs_py .user{width:9%}
+.bgs_py .py_con{ margin-top:3px;font-size:14px;-moz-border-radius:6px; -webkit-border-radius:6px;border-radius:6px; padding:10px 15px; background:#e6f6fd;min-height:52px;  width:91%;}
 .bgs_py .py_con p{ line-height:26px; }
 .bgs_py .py_con .em_ico{ position:absolute; left:-10px; top:20px; background:url(../images/stu_judge/bgs_pyico.png) 0 0 no-repeat; width:10px; height:12px; display:block;}
 
@@ -1057,8 +1058,9 @@ table.formbox_one td .div_dul{ margin:0;}
 .a_under{ text-decoration: underline !important;}
 
 .bgs_ry{ background:#f2fafd;}
-.bgs_ry .user img{ width:162px; height:118px;}
-.bgs_ry .act_stuxds{ width:915px;}
+.bgs_ry .user{ width:17%; padding-right:1%;}
+.bgs_ry .user img{ width:100%;max-width:162px; height:118px; margin:5px;}
+.bgs_ry .act_stuxds{ width:83%; padding-right:1%;}
 .bgs_ry .act_stuxds .tests_tit{ width:915px;}
 .bgs_ry .act_stuxds p{ line-height:24px;}
 .bgs_tips .qkyicon{ vertical-align:middle;}

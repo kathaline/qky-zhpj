@@ -978,8 +978,9 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 
 .fil_more{ position:relative;}
 .fil_more:hover .div_more{ display:block; position:absolute; right:5px; z-index:10; top:28px; background:#fff;}
-.div_more ul{ width:auto; min-width:290px; padding:10px;}
-.div_more li a{ float:inherit; margin:0 10px; height:26px; line-height:26px;}
+.div_more ul{ width:auto; min-width:350px; padding:5px;}
+.div_more li{ margin:5px 0;}
+.div_more li a{ float:inherit; margin:5px 10px; height:26px; line-height:26px;}
 .div_more li a:hover{color:#03a9f4;}
 
 .rep_list li .honor_tips.bg_over{ background:#e0e0e0; color:#999; cursor:default;}

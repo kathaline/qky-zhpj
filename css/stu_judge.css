@@ -767,9 +767,9 @@ span.search{ display:inline-block;}
 .rpt-topp .btns a:hover{ background:#04acf7; color:#fff;}
 .rpt_list0{ overflow:hidden; width:100%; height:auto; font-size:13px;}
 .rpt_list0 ul{ padding-left:40px;}
-.rpt_list0 li{ float:left;width: 17%; height:194px;margin:10px 1% 10px;text-align: center; position:relative; padding:5px 0;}
+.rpt_list0 li{ float:left;width: 17%; height:200px;margin:10px 1% 10px;text-align: center; position:relative; padding:5px 0;}
 .rpt_list0 li:hover,.rpt_list0 li.cur{ background:#f9f9f9;}
-.img-top{ background:url(../images/stu_judge/bgs-bg.png) 0 0 no-repeat; width:122px; height:112px; margin:10px auto; color:#fff; padding:30px 0 0;}
+.img-top{ background:url(../images/stu_judge/bgs-bg.png) 0 0 no-repeat; width:122px; height:142px; margin:10px auto; color:#fff; padding:30px 0 0;}
 .img-top p{ line-height:24px;}
 .img-top h3{ font-size:14px;}
 .rpt_list0 li input,.rpt_list0 li.cur input{ display:block; position:absolute; left:5px;top:5px;}
@@ -833,6 +833,9 @@ span.search{ display:inline-block;}
 .rep_list li .hon_intro{ text-align:center; font-size:13px; padding:5px 0;}
 .rep_list li .hon_intro .honor_t{ display:inline-block; width:98%; margin:0 1%; height:24px; line-height:24px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .rep_list li .hon_intro .honor_t:hover{ text-decoration:underline;}
+.bor_all.mark_txtare{ height:auto !important; padding:0 !important;}
+.bor_all .co_999.pad_r5{ height:16px; line-height:14px; margin-top:0;}
+.bor_all textarea{ margin-bottom:0; padding-bottom:0;}
 /*新建级别弹窗*/
 .form_hon{ width:354px;}
 .form_hon label{ margin-right:15px;}
@@ -1033,7 +1036,6 @@ table.formbox_one td .div_dul{ margin:0;}
 .b_tips{ position:relative;}
 .b_tips .qkyicon{ cursor:pointer;}
 .b_tips:hover .spn_tip{ display:block; color:#2fb0e8; position:absolute; left:15px;top:5px; background:#fff; padding:2px 10px;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px; border:1px dashed #7cc6e6; width:120px;}
-.judge_wraper select.wid-30{ padding:0;}
 .fenlei li span{ width:96px;}
 
 .bgs_top{ margin-top:-20px; height:246px; background:url(../images/stu_judge/topbg_bgs.png) center  center no-repeat;}

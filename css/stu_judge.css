@@ -3,6 +3,7 @@
 项目:学生综合评价1.2css
 修改版 日期：2017-3-29
 */
+*{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
 .bor_all{ border:1px solid #ddd;}
 .rad4{border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
@@ -77,7 +78,7 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .cont-wrap>.cont_tit{ padding:10px 20px;}
 .cont-wrap>.judge_srh{ padding:10px 20px !important;}
 .cont_tit h3{font-size:15px; margin:0;line-height:34px;}
-.cont_tit h3 .qkyicon{ margin-right:3px; vertical-align:middle;}
+.cont_tit h3 .qkyicon{ margin-right:3px;}
 .cont_tit .fr a{margin:0 0 0 10px;}
 .judge_srh{line-height:30px;padding:10px 5px;overflow:hidden;}
 .ul_srh li{ font-size:13px;float:left;line-height:34px;margin:0 15px 0 0}
@@ -587,7 +588,7 @@ span.tit02-fback{display:inline-block;}
 .con01-fback{ margin-left:30px;}
 .con01-fback label{ margin-right:20px;}
 .con02-fback{ margin:5px 0 0 45px; width:1020px;}
-.con02-fback .txtar-fback{width:1010px; border:1px solid #ccc; background:#f9f9f9; padding:5px; }
+.con02-fback .txtar-fback{width:1010px; border:1px solid #ccc; background:#fcfcfc; padding:5px; }
 
 /*学业水平*/
 /*管理员*/

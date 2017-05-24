@@ -19,46 +19,6 @@ textarea.bor_no,input.bor_no,select.bor_no{ border:none !important; outline:none
 label { font-weight:normal}
 .stu_jcont .stu_data.fl{ width:82%;}.stu_jcont .stu_inf-guide.fr{ width:16%;}.stu_jcont .stu_inf-guide.fr ul.nav{ width:100%;}
 .stu_data.fr{ width:80%;}
-/*.ai-w-big .qky_content,.ai-w-big .qky_top_box,.ai-w-small .qky_content,.ai-w-small .qky_top_box{width:1200px;height:auto;margin:0 auto}
-.ai-w-small .qky_content,.ai-w-small .qky_top_box{width:1000px}
-.ai-w-big .judge_cont,.ai-w-small .judge_cont{padding:0px 20px ;width:885px;}
-.judge_cont_2{width:auto}
-.ai-w-big .judge_cont,.ai-w-small .judge_cont{ padding:10px 20px 15px 20px;}
-.ai-w-big .judge_py textarea{width:785px}
-.ai-w-big .creat_zb .ul_creatt li input.text02{width:504px}
-.ai-w-big .judge_xq .judge_tit{width:1160px}
-.ai-w-small .judge_xq .judge_tit{width:960px}
-.ai-w-small .judge_cont,.ai-w-small .judge_nav-tit{width:678px}
-.ai-w-small .ul_srh li{margin:5px 5px 5px 0}
-.ai-w-small .stu_data{width:760px}
-.ai-w-small .stu_data .ul_data{padding:20px 0 0 10px}
-.ai-w-small .creat_zb .ul_creatt li{margin:0 15px 5px 0}
-.ai-w-small .xy-cont_l{width:720px !important;}
-.ai-w-big .con_tit02.nav{ width:1136px;}
-.ai-w-small .con_tit02.nav{ width:934px;}
-.ai-w-big .qky_tips-con{ width:1200px;}
-.ai-w-small .qky_tips-con{ width:1000px;}*/
-/*荣誉*/
-/*.ai-w-big .rep_list .honor_list li{ width:215px; margin:15px 3%; height:215px; background:none;}
-.ai-w-small .rep_list .honor_list li{ width:178px; margin:15px 3%; height:186px; background:none;}
-.ai-w-big .rep_list .honor_list li .rep_pic{ height:157px;}
-.ai-w-small .rep_list .honor_list li .rep_pic{ height:120px; line-height:120px;}
-.ai-w-big .rep_list .honor_list li .rep_pic img{ height:157px;}
-.ai-w-small .rep_list .honor_list li .rep_pic img{ height:120px;}
-.ai-w-big .hon_data.stu_data{ width:1120px;}
-.ai-w-small .hon_data.stu_data{ width:958px;}
-.ai-w-big .stu_data.fr .rep_list .honor_list li{ width:230px; margin:12px 4%; height:230px; background:none;}
-.ai-w-big .stu_data.fr .rep_list .honor_list li .rep_pic{}
-.ai-w-big .stu_data.fr .rep_list .honor_list li .rep_pic,.ai-w-big .stu_data.fr .rep_list .honor_list li img{ height:165px;}
-.ai-w-small .stu_data.fr .rep_list .honor_list li{ width:190px; margin:12px 26px; height:200px; background:none;}
-.ai-w-small .stu_data.fr .rep_list .honor_list li .rep_pic,.ai-w-small .stu_data.fr .rep_list .honor_list li img{ height:128px;}
-.ai-w-big .pyu_con{ width:1082px;}
-.ai-w-small .pyu_con{ width:882px;}*/
-/*健康*/
-/*.ai-w-big .td_sw{ width:356px;}
-.ai-w-small .td_sw{ width:273px;}
-.ai-w-big .w100 .tests_tit ,.ai-w-big .w100 .tests-subj{ width:970px;}
-.ai-w-small .w100 .tests_tit ,.ai-w-small .w100 .tests-subj{ width:600px;}*/
 
 .cont-wrap,.judge_cont,.judge_cont_2,.judge_xq{background:#fff;width:auto;border:1px solid #e0e0e0}
 
@@ -1019,7 +979,7 @@ table.formbox_one td .div_dul{ margin:0;}
 @media (min-width: 768px){.tests-subj p.wid-100{ width:600px !important;}}
 @media (min-width: 992px){.tests-subj p.wid-100{ width:760px !important;}}
 @media (min-width: 1200px){.tests-subj p.wid-100{ width:960px !important;}}
-.act_stuxds .em_zt{ position:absolute; right:10px; top:20px; display:block; width:60px; height:37px;}
+.act_stuxds .em_zt{ position:absolute; right:10px; top:25px; display:block; width:60px; height:37px;}
 .act_stuxds .em_haved{background:url(../images/stu_judge/haved_bg.png) 0 0 no-repeat;}
 .act_teac_dp td{ padding:0 5px!important; border-top:1px dashed #fff;}
 .act_teac_dp .judge_py textarea{ width:715px;}

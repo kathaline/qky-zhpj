@@ -27,6 +27,8 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .bg_blue,.bg_org,.bg_gray,.mask_btns a{display: inline-block;padding: 5px 12px;font-weight: normal;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
 .bg_org{background:#03a9f4; border:1px solid #03a9f4;color:#fff;}
 .bg_org:hover,.bg_org:focus{background:#0288d1;border:1px solid #0288d1;color:#fff;}
+.import_up.bg_org{background:#f90; border:1px solid #f90;color:#fff;}
+.import_up.bg_org:hover{background:#f60; border:1px solid #f60;}
 .bg_gray{background:#f9f9f9;border:1px solid #ccc;color:#666;}
 .bg_gray:hover{border:1px solid #999}
 .bg_blue{color: #333;background-color: #fff; border:1px solid #ccc !important;}
@@ -62,7 +64,7 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .wid-20{ width:20% !important; display:inline-block;}
 .wid-10{ width:10% !important; text-align:center;}
 .wid-10 a:hover{ color:#f60;}
-.wid-100,.wid-60,.wid-50,.wid-40,.wid-30,.wid-10{display:inline-block; padding-left:3px;}
+.wid-100,.wid-90,.wid-80,.wid-70,.wid-60,.wid-50,.wid-40,.wid-30,.wid-20,.wid-10{display:inline-block; padding-left:3px;}
 .txtarea01{ border:1px solid #ccc; line-height:26px;}
 
 /*二级菜单*/
@@ -160,8 +162,8 @@ select.sel_01{width:30%;height:28px;line-height:28px;border:1px solid #ccc;margi
 .perc_span{outline:0;background:#fff;display:inline-block;height:26px;line-height:26px;width:32%;border:1px solid #ccc;text-align:center;overflow:hidden;vertical-align:middle}
 .ul_add li .em_tips{color:#999;margin-left:20px}
 .a_mark i{vertical-align:middle;margin:0 5px;color:#999}
-.ul_add li .mark_txtare{border:1px solid #ccc;width:64%;line-height:20px;padding:3px;height:60px}
-select.sel_02{width:65%;border:1px solid #ccc;margin-right:15px}
+.ul_add li .mark_txtare{border:1px solid #ccc;width:70%;line-height:20px;padding:3px;height:60px}
+select.sel_02{width:70%;border:1px solid #ccc;margin-right:15px}
 select.sel_02 optgroup{font-style:normal;font-weight:700}
 select.sel_02 optgroup option{-moz-padding-left:10px}
 .b_datec{line-height: 1.42857143;}
@@ -194,7 +196,7 @@ a.a_btn:hover{background:#2fb0e8;color:#fff; border:1px solid #7cc6e6;}
 .set_del p.text{ text-align:center;}
 .add_01{width:100%;height:auto}
 .main_cont .add_01 .ul_add li{width:50%!important;float:left;height:31px}
-.add_txt{width:64%!important;padding:5px 0 5px 3px !important}
+.add_txt{width:70%!important;padding:5px 0 5px 3px !important}
 .main_cont .add_01 li .b_datec .set_text{width:64%!important}
 .main_cont .add_01 .ul_add li form{width:280px;float:right}
 .main_cont .add_01 li form label{margin-right:30px}
@@ -796,7 +798,8 @@ span.search{ display:inline-block;}
 .rep_list li .hon_intro .honor_t:hover{ text-decoration:underline;}
 .bor_all.mark_txtare{ height:auto !important; padding:0 !important;}
 .bor_all .co_999.pad_r5{ height:16px; line-height:14px; margin-top:0;}
-.bor_all textarea{ margin-bottom:0; padding-bottom:0;}
+.bor_all textarea{ margin-bottom:0; padding-bottom:0; padding-left:0;}
+.bor_all input{padding-left:0;}
 /*新建级别弹窗*/
 .form_hon{ width:354px;}
 .form_hon label{ margin-right:15px;}

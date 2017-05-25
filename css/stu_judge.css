@@ -895,8 +895,8 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 
 .fenlei li{ padding:10px 20px 10px 86px; position:relative; border-bottom:1px dashed #dedfee; margin-top:-1px; margin-bottom:-1px;}
 .fenlei li:last-child{border-bottom:none;}
-.fenlei li >a,.fenlei li span {line-height: 22px;float: left;padding: 0 9px; margin:3px 4px;color: #333;border-right:none;}
-.fenlei li a.fl_tit,.fenlei li span.fl_tit{ color:#999; position:absolute; left:0;top:10px; width:70px; padding:0; margin:3px 0; font-size:12px;}
+.fenlei li >a,.fenlei li span {line-height: 22px;float: left;padding: 0 px; margin:3px 4px;color: #333;border-right:none;}
+.fenlei li a.fl_tit,.fenlei li span.fl_tit{ color:#999; position:absolute; left:0;top:10px; width:90px; padding:0; margin:3px 0; font-size:12px;}
 .srh_bg .fenlei li span.fl_tit{ width:96px; text-align:left;}
 .fenlei label input{ vertical-align:middle; margin-right:3px; margin-bottom:3px;}
 .fenlei label input{ vertical-align:middle; margin-right:3px; margin-bottom:3px;}
@@ -1000,8 +1000,8 @@ table.formbox_one td .div_dul{ margin:0;}
 .a_chk.dis_chk{background-position:-28px 0; cursor:default}
 .b_tips{ position:relative;}
 .b_tips .qkyicon{ cursor:pointer;}
-.b_tips:hover .spn_tip{ display:block; color:#2fb0e8; position:absolute; left:15px;top:5px; background:#fff; padding:2px 10px;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px; border:1px dashed #7cc6e6; width:120px;}
-.fenlei li span{ width:96px;}
+.b_tips:hover .spn_tip{ display:block; color:#2fb0e8; position:absolute; left:15px;top:5px; background:#fff; padding:2px 10px;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px; border:1px dashed #7cc6e6; width:150px;}
+.fenlei li span{ width:120px;}
 
 .bgs_top{ margin-top:-20px; height:246px; background:url(../images/stu_judge/topbg_bgs.png) center  center no-repeat;}
 .bor_tno{ border-top:none !important;}

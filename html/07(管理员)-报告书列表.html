@@ -93,7 +93,7 @@
                 <td>小一（1）班</td>
                 <td>学生评价20%；学业水平60%；体质健康20%</td>
                 <td><span class="co_gray"><i class="qkyicon fz_1 mar_r5">&#xe710;</i>已生成</span></td>
-                <td><a href="07(管理员)-报告书.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="" class="qkyicon_14 mar_r10" title="修改权重">&#xe60f;</a><a href="" class="qkyicon fz_1" title="公示">&#xe7b1;</a></td>
+                <td><a href="07(管理员)-报告书.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a onClick="popIn('#creat-rpt')" class="qkyicon_14 mar_r10" title="修改权重">&#xe60f;</a><a href="" class="qkyicon fz_1" title="公示">&#xe7b1;</a></td>
               </tr>
               <tr>
                 <td><a href="#" class="a_chk"></a></td>
@@ -101,15 +101,15 @@
                 <td>兴趣班(12)班</td>
                 <td>学生评价20%；学业水平60%；体质健康20%</td>
                 <td><span class="co_green"><i class="qkyicon mar_r5">&#xe6ff;</i>公示中</span></td>
-                <td><a href="07(管理员)-报告书.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="" class="qkyicon_14 mar_r10" title="修改权重">&#xe60f;</a><a href="" class="qkyicon fz_1" title="归档">&#xe638;</a></td>
+                <td><a href="07(管理员)-报告书.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a onClick="popIn('#creat-rpt')" class="qkyicon_14 mar_r10" title="修改权重">&#xe60f;</a><a href="" class="qkyicon fz_1" title="归档">&#xe638;</a></td>
               </tr>
               <tr>
                 <td><a href="#" class="a_chked a_chk"></a></td>
                 <td>2016-2017学年度第一学期-小一（1）班</td>
                 <td>小一（1）班</td>
                 <td>学生评价20%；学业水平60%；体质健康20%</td>
-                <td><span class="co_gray"><i class="qkyicon fz_1 mar_r5">&#xe710;</i>已生成</span></td>
-                <td><a href="07(管理员)-报告书.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="" class="qkyicon_14 mar_r10" title="修改权重">&#xe60f;</a><a href="" class="qkyicon fz_1" title="公示">&#xe7b1;</a></td>
+                <td><span class="co_green"><i class="qkyicon fz_1 mar_r5">&#xe70c;</i>生成中</span></td>
+                <td></td>
               </tr>
               <tr>
                 <td><a href="#" class="a_chk"></a></td>
@@ -125,7 +125,7 @@
                 <td>小一（1）班</td>
                 <td>学生评价20%；学业水平60%；体质健康20%</td>
                 <td><span class="co_y"><i class="qkyicon mar_r5">&#xe6ca;</i><strong>失败</strong></span></td>
-                <td><a href="07(管理员)-报告书.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a></td>
+                <td><a href="07(管理员)-报告书.html" class="qkyicon" title="重新生成">&#xe607;</a></td>
               </tr>
             </table>
     
@@ -155,5 +155,51 @@
   </div>
 </div>
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+
+<div class="set_box yc" id="creat-rpt">
+    <div class="set_mask"></div>
+    <div class="set_mask_main set_add">
+      <div class="main_title">修改权重<em class="fz_1">（小一（1）班）</em><div class="mask_close" onClick="popOut('#creat-rpt')"><i class="qkyicon">&#xe6aa;</i></div></div>
+        <div class="main_cont">
+          <div class="imp_cont">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="formbox_one">
+              <tr>
+                  <td width="10%" align="right" class="name">报告学期：</td>
+                  <td colspan="7">2016-2017年上学期</td>
+              </tr>
+              <tr>
+                  <td width="10%" align="right" class="name">模块权重：</td>
+                  <td width="90%" colspan="7">
+                  <div class="div_dul pad_t40">
+                    <div class="setp_tit fr"><em class="co_999">（设置模块分值，权重值总和为100%）</em>：</div>
+                     <ul class="ul_srh">
+                        <li class="wid-30"> 
+                        <span class="co_b"> <label>
+                                <a href="#" class="a_chked a_chk mar_r5"></a>学生评价： </label></span><input name="text" type="text" placeholder="" class="wid-30" value="">%</li>
+                        <li class="wid-30">
+                                <span class="co_b"><label>
+                                <a href="#" class="a_chked a_chk mar_r5"></a>学业水平： </label></span><input name="text" type="text" placeholder="" class="wid-30" value="">%</li>
+                        <li class="wid-30">
+                                <span class="co_b"><label>
+                                <a href="#" class="a_chk mar_r5"></a>体质健康： </label></span><input name="text" type="text" placeholder="" class="wid-30" value="" disabled>%</li>
+                        <li class="wid-30">
+                                <span class="co_b"><label>
+                                <a href="#" class="a_chked a_chk mar_r5"></a>个人荣誉： </label></span>加分项<b class="b_tips mar_l10"><i class="qkyicon">&#xe7de;</i><span class="spn_tip yc">加分项直接算入评分</span></b></li>
+                        <li class="wid-30">
+                                <span class="co_b"><label>
+                                <a href="#" class="a_chked a_chk mar_r5"></a>实践活动： </label></span>加分项<b class="b_tips mar_l10"><i class="qkyicon">&#xe7de;</i><span class="spn_tip yc">加分项直接算入评分</span></b></li>
+                     </ul>
+                    <div class="clear"></div>
+                 </div>
+                  </td>
+              </tr>
+              
+            </table>
+          </div>   
+          
+        </div>
+        <div class="mask_btns"><a onClick="popOut('#creat-rpt')" class="bg_org">确认修改</a><a onClick="popOut('#creat-rpt')" class="bg_w">取消</a></div>
+  </div>
+</div>
 </body>
 </html>

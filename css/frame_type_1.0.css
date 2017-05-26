@@ -243,4 +243,26 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .navbar-inverse .nav_more .nav_more_lli h5{}
 .navbar-inverse .nav_more .nav_more_lli a{ color:#737373;text-decoration:inherit;}
 .navbar-inverse .nav_more .nav_more_lli a:hover{ color:#21a2db;}
+/*单选改装*/
+.radio label{ line-height:30px; height:30px;}
+.radio_a{ display:block; width:14px; height:14px; border:1px solid #ddd; border-radius:50%; background:#ffffff; margin-top:8px; }
+.radio_a b{ width:6px; height:6px; display:block; margin:3px;border-radius:50%;}
+.select .radio_a{background:#03a9f4; border:1px solid #03a9f4;}
+.select .radio_a b{background:#fff;}
 
+.disabled .radio_a{background:#ffffff; border:1px solid #dadada;}
+.disabled.select .radio_a{background:#2baf2b; border:1px solid #2baf2b; opacity:0.4;}
+.disabled.select .radio_a b{background:#fff;}
+
+.error .radio_a{background:#ffffff; border:1px solid #f0485f;}
+.error.select .radio_a{background:#f0485f; border:1px solid #f0485f;}
+.error.select .radio_a b{background:#fff;}
+/*复选改装*/
+.checkbox label{line-height:30px; height:30px;}
+a.checkbox_a{display:block; width:16px; height:16px; border:1px solid #dadada; border-radius:4px;background:#ffffff; line-height:15px; text-align:center; text-decoration: inherit; margin:6px 5px 0 0;}
+.checkbox_a i{ color:#fff;}
+.select a.checkbox_a{background:#2baf2b; border:1px solid #2baf2b;}
+.disabled a.checkbox_a{background:#ffffff; border:1px solid #dadada;}
+.disabled.select a.checkbox_a{background:#2baf2b; border:1px solid #2baf2b; opacity:0.4;}
+.error a.checkbox_a{background:#ffffff; border:1px solid #f0485f;}
+.error.select a.checkbox_a{background:#f0485f; border:1px solid #f0485f;}

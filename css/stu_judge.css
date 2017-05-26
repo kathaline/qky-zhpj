@@ -5,7 +5,7 @@
 */
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
-.bor_all{ border:1px solid #ddd;}
+.bor_all{ border:1px solid #ccc; outline:}
 .bor_all.mark_txtare{ height:auto !important; padding:0 !important;}
 .bor_all .co_999.pad_r5{ height:16px; line-height:14px; margin-top:0;}
 .bor_all textarea{ margin-bottom:0; padding-bottom:0; padding-left:0;}
@@ -1062,60 +1062,21 @@ table.formbox_one td .div_dul{ margin:0;}
 .tj-px .qkyicon{vertical-align:middle;}
 
 /*评价-年级*/
-.sidebar {
-  display: block;
-  width:100%;
-}
-.content {
-  display: block;
-  overflow: hidden;
-  width: auto;
-}
+.sidebar {display: block; width:100%;}
+.content { display: block; overflow: hidden; width: auto;}
 
 .sidebar-nav { max-height:420px; overflow-y:auto;}
-.sidebar-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.sidebar-nav a,
-.sidebar-nav a:hover,
-.sidebar-nav a:focus,
-.sidebar-nav a:active {
-  outline: none;
-}
-.sidebar-nav ul li,
-.sidebar-nav ul a {
-  display: block;
-}
-.sidebar-nav ul a { width:100%;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-  padding: 10px 0;
-}
-.sidebar-nav ul a:hover,
-.sidebar-nav ul a:focus,
-.sidebar-nav ul a:active {
-  color:#0288d1;
-  text-decoration: none;
-}
-.sidebar-nav ul ul a {
-  padding: 10px 0 10px 15px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
+.sidebar-nav ul { padding: 0; margin: 0;  list-style: none;}
+.sidebar-nav a,.sidebar-nav a:hover,.sidebar-nav a:focus,.sidebar-nav a:active {  outline: none;}
+.sidebar-nav ul li,.sidebar-nav ul a {  display: block;}
+.sidebar-nav ul a { width:100%;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;  padding: 10px 0;}
+.sidebar-nav ul a:hover,.sidebar-nav ul a:focus,.sidebar-nav ul a:active { color:#0288d1; text-decoration: none;}
+.sidebar-nav ul ul a {  padding: 10px 0 10px 15px;  background-color: rgba(255, 255, 255, 0.1);}
 .sidebar-nav ul ul a .arrow{ color:#999;}
-.sidebar-nav ul ul li ul a {
-  padding: 10px 0 10px 30px;
-}
-.sidebar-nav ul ul a:hover,
-.sidebar-nav ul ul a:focus,
-.sidebar-nav ul ul a:active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.sidebar-nav-item {
-  padding-left: 5px;
-}
-.sidebar-nav-item-icon {
-  padding-right: 5px;
-}
+.sidebar-nav ul ul li ul a { padding: 10px 0 10px 30px;}
+.sidebar-nav ul ul a:hover,.sidebar-nav ul ul a:focus,.sidebar-nav ul ul a:active {  background-color: rgba(255, 255, 255, 0.2);}
+.sidebar-nav-item {padding-left: 5px;}
+.sidebar-nav-item-icon {padding-right: 5px;}
 .arrow{float:right;line-height:1.42857}
 .qky-zhengque2:before { content: "\e790"; }
 .active>a>.qky-you2:before{content: "\e6a5";}.fa.arrow:before{content:"\f104"}

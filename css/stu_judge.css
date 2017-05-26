@@ -5,18 +5,17 @@
 */
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
-.bor_all{ border:1px solid #ccc; outline:}
+.bor_all{ padding:0 !important; position:relative;}
 .bor_all.mark_txtare{ height:auto !important; padding:0 !important;}
-.bor_all .co_999.pad_r5{ height:16px; line-height:14px; margin-top:0;}
-.bor_all textarea{ margin-bottom:0; padding-bottom:0; padding-left:0;}
-.bor_all input{padding-left:0;}
+.bor_all .co_999.text-right{ height:16px; line-height:14px; margin-top:0; position:absolute; right:0; bottom:12px;}
+.bor_all textarea{ margin-bottom:0; padding-bottom:22px; height:100%;}
+.bor_all input,.bor_all textarea{padding-left:3px;}
 .bor_all .text-right.co_999 .co_y{ color:#f00 !important}
 .rad4{border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
 .block{ display:block}
 .iblock{ display:inline-block}
 .disabled,.sidebar-nav ul .disabled:hover{ color:#999; cursor:default;}
 .disabled>.collapse.in { display:none;}
-textarea.bor_no,input.bor_no,select.bor_no{ border:none !important; outline:none;}
 .co_333{color:#333}
 .co_666{color:#666}
 .co_999{color:#999}

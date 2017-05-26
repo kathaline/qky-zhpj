@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*
 项目:学生综合评价1.2css
-修改版 日期：2017-3-29
+修改版 日期：2017-59
 */
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
@@ -139,6 +139,10 @@ span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .out-line{border-top:40px #1699d3 solid;width: 0px;height: 0px;border-left:116px #21a2db solid;position: relative;}
 .out-line strong{ display:block; width:80px; text-align:center; position:absolute; top:-38px; left:-75px;}
 .out-line em{ display:block; width:80px; text-align:center;position:absolute; top:-22px; left:-115px;}
+/*体测开发新增表格*/
+.re_write{width: 100%;}
+.re_write td {padding: 0 0 0 3px !important;border: none;}
+.re_write tr{ border-bottom:0;background: none;}
 
 .judge_side.fl,.judge_side.fr{width:21%; position:relative;}
 .judge_cont.fr,.judge_cont.fl{ width:78%}
@@ -378,7 +382,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 .judge_py >.fr{width:30%;border-left:1px dashed #ccc;padding-left:20px}
 .judge_py >.fl{ width:70%; padding-right:20px;}
 .judge_py .h3_pyu{font-size:14px;height:30px;line-height:30px}
-.judge_py >.fl textarea{width:100%;padding:5px;line-height:24px}
+.judge_py >.fl textarea{width:100%;line-height:24px}
 .judge_py .save_pyu{height:36px;line-height:36px;text-align:right}
 .judge_py .save_pyu input{margin-right:5px}
 .judge_pj{overflow:hidden}
@@ -953,7 +957,7 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 .rep_list .sjhd_lists li{ background:none;}
 
 .fil_more{ position:relative;}
-.fil_more:hover .div_more{ display:block; position:absolute; right:5px; z-index:10; top:28px; background:#fff;}
+.fil_more:hover .div_more{ display:block; position:absolute; right:0; z-index:10; top:31px; background:#fff;}
 .div_more ul{ width:auto; min-width:350px; padding:5px;}
 .div_more li{ margin:5px 0;}
 .div_more li a{ float:inherit; margin:5px 10px; height:26px; line-height:26px;}
@@ -1091,3 +1095,4 @@ table.formbox_one td .div_dul{ margin:0;}
 /**评价操作附件上传进度**/
 .img_status:before {content: " ";position: absolute;top: 0;right: 0;bottom: 0;left: 0;background-color: rgba(0,0,0,.5);}
 .status_cont{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);color: #fff;}
+

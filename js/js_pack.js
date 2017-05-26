@@ -266,3 +266,5 @@ function ShowMenu(obj,n){
  }
 }
 //-->
+/*年级-三级*/
+$(function() {$('#menu').metisMenu({toggle: false});});

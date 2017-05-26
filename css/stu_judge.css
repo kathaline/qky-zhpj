@@ -6,10 +6,13 @@
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
 .bor_all{ border:1px solid #e0e0e0;}
-.bor_all.rad4{ border:0;padding:0 !important; position:relative;}
+.bor_all.rad4{ border:1px solid #ccc;padding:0 !important; position:relative;}
+.bor_all .bor_no{ border:none;}
 .bor_all.mark_txtare{ height:auto !important; padding:0 !important;}
-.bor_all .co_999.text-right{ height:16px; line-height:14px; margin-top:0; position:absolute; right:0; bottom:12px;}
-.bor_all textarea{ margin-bottom:0; padding-bottom:22px; height:100%;}
+/*.bor_all .co_999.text-right{ height:16px; line-height:14px; margin-top:0; position:absolute; right:0; bottom:12px;}*/
+.bor_all .co_999.text-right{ height:16px; line-height:14px; margin-top:0;}
+.bor_all textarea{ margin-bottom:0; height:100%; padding-bottom:0}
+.bor_all input{ padding-right:35px;}
 .bor_all input,.bor_all textarea{padding-left:3px;}
 .bor_all .text-right.co_999 .co_y{ color:#f00 !important}
 .rad4{border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}

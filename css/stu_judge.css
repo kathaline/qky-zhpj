@@ -142,7 +142,7 @@ span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 /*体测开发新增表格*/
 .re_write{width: 100%;}
 .re_write td {padding: 0 0 0 3px !important;border: none;}
-.re_write tr{ border-bottom:0;background: none;}
+.re_write tr{ border-bottom:0;background-color:transparent;}
 
 .judge_side.fl,.judge_side.fr{width:21%; position:relative;}
 .judge_cont.fr,.judge_cont.fl{ width:78%}

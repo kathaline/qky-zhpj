@@ -307,7 +307,7 @@ a.bg_bl04{background:#fff}
 .stu_inf-guide ul.nav li i{margin:0 5px 0 0;}
 .stu_inf-guide ul.nav li.active{border-left:3px solid #21a2db;color:#21a2db}
 .stu_inf-guide{ background:#fff;}
-.bor_all.rad4.p-r .p-a{ right:3px;top:0;}
+.bor_all.rad4.p-r .p-a{ right:3px;top:2px;}
 @media (min-width: 768px){.judge_side>.stu_inf-guide{ width:198px;}}
 @media (min-width: 992px){.judge_side>.stu_inf-guide{ width:202px;}}
 @media (min-width: 1200px){.judge_side>.stu_inf-guide{ width:252px;}}
@@ -789,11 +789,9 @@ span.search{ display:inline-block;}
 .kp_zb01 .table_zb td:first-child{ background:#fcfcfc; padding:0;border-top:1px solid #eee;}
 .zb_perc { display:block;}
 .zb_perc input{ width:50%; margin-right:3px; border:1px solid #bee4ec; text-align:center;}
-.kp_zb01 .table_zb input[type="text"]{  padding:5px;}
 .zb_no01{ clear:both; padding:15px 10px; overflow:hidden;}
 .zb_no01 .co_b{ margin-left:10px;}
 .zb_no02{height:100%; overflow:hidden; padding:10px 10px 10px 11%; position:relative; border-bottom:1px dashed #e6e6e6;}
-.zb_no02 input[type="text"]{ border:1px solid #ddd;}
 .zb_no02 .zb_perc02{ position:absolute; display:block; padding:10px 0; width:10%; left:0;top:0; background:#f9f9f9; text-align:center;}
 .zb_no02 .zb_perc02 input{ width:50%;text-align:center; margin-right:2px;}
 .zb_no02 .tit{ width:20%; margin-right:13px;}

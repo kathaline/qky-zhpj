@@ -6,6 +6,11 @@
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
 .bor_all{ border:1px solid #ddd;}
+.bor_all.mark_txtare{ height:auto !important; padding:0 !important;}
+.bor_all .co_999.pad_r5{ height:16px; line-height:14px; margin-top:0;}
+.bor_all textarea{ margin-bottom:0; padding-bottom:0; padding-left:0;}
+.bor_all input{padding-left:0;}
+.bor_all .text-right.co_999 .co_y{ color:#f00 !important}
 .rad4{border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
 .block{ display:block}
 .iblock{ display:inline-block}
@@ -119,7 +124,6 @@ span.st-name .p-a.rep_del01:hover{ background:#f0f0f0;}
 .judge_tit02 span{width:180px;text-align:center;position:absolute;background:#fff;left:50%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:-90px;font-size:16px;height:20px;line-height:20px;color:#333}
 .judge_content{margin-bottom:20px;}
 /*通用表格*/
-.judge_table{ font-size:13px;}
 .judge_table a:hover{color:#21a2db;}
 .judge_table th{padding: 10px; background:#21a2db; font-weight: normal; color: #fff; border-bottom: none;}
 .judge_table th.bg_f3{ background:#1699d3;}
@@ -804,10 +808,6 @@ span.search{ display:inline-block;}
 .rep_list li .hon_intro{ text-align:center; font-size:13px; padding:5px 0;}
 .rep_list li .hon_intro .honor_t{ display:inline-block; width:98%; margin:0 1%; height:24px; line-height:24px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .rep_list li .hon_intro .honor_t:hover{ text-decoration:underline;}
-.bor_all.mark_txtare{ height:auto !important; padding:0 !important;}
-.bor_all .co_999.pad_r5{ height:16px; line-height:14px; margin-top:0;}
-.bor_all textarea{ margin-bottom:0; padding-bottom:0; padding-left:0;}
-.bor_all input{padding-left:0;}
 /*新建级别弹窗*/
 .form_hon{ width:354px;}
 .form_hon label{ margin-right:15px;}

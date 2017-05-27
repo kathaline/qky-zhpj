@@ -79,7 +79,7 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .txtarea01{ border:1px solid #ccc; line-height:26px;}
 
 /*二级菜单*/
-.judge_nav-bar{ height:50px;background-color: #fcfcfc;border-bottom:1px solid #f0f0f0; overflow:hidden;}
+.judge_nav-bar{ height:50px;background-color: #f9f9f9;border-bottom:1px solid #e7e7e7; overflow:hidden;}
 .judge_nav ul{width:100%;margin:0 auto; }
 .judge_nav ul li{float:left;text-align:center;margin:0 2px; }
 .judge_nav ul li a{color:#666;display:block;font-size:16px;margin-bottom:1px; padding:0 3px; margin-right:20px;height:49px; line-height:49px;}

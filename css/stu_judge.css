@@ -467,7 +467,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 
 /***评价报告***/
 /*12*/
-.judge_rep{ background:#fff; border:1px solid #eee; margin-top:20px;}
+.judge_rep{ background:#fff; border:1px solid #e0e0e0; margin-top:20px;}
 .rep_list,.rep_stu_list,.rep_stu_list02{ margin:15px auto; overflow:hidden;}
 .rep_list ul{ padding:0 1%;width:100%;}
 .rep_list li{float: left; width: 23%; height: 272px; margin: 10px 1%; background: #f9f9f9; position: relative;}

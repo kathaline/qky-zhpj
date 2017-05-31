@@ -9,7 +9,12 @@
 @import "iconfont.css";
 @import "../iconfont/iconfont.css";
 /*基础样式*/
-body{width:100%; padding: 50px 0; color:#666;background:#f0f0f0;  position: absolute; top: 0;left: 0; min-height: 100%;}
+body{width:100%; padding: 50px 0; color:#666;
+    background:#eaeaea;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;}
 	
 /*优化代码显示-开发新增0509*/
 .ms-controller, .ms-important, [ms-controller], [ms-important] { visibility: hidden;}
@@ -21,7 +26,8 @@ img{vertical-align: middle;}
 a{ color:#666; cursor:pointer; outline:none;}
 i,em{ font-style:normal;}
 textarea,input,select{ outline:none;font-family: Microsoft YaHei, Arial;resize:none;}
-input[type="text"], select,textarea  {  padding:5px 0 5px 3px;border: 1px solid #ccc;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px;line-height:22px;}
+input[type="text"], select,textarea  {  padding:0 0 0 5px;border: 1px solid #d4d4d4;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px;}
+input[type="text"], select{ height:30px;}
 /*input[type="text"]:focus, select:focus,textarea:focus,.perc_span:focus,.bor_all.rad4:focus{ outline: 0; border: 1px solid #03a9f4; box-shadow: 0px 0px 8px 0px #76d4fe;}*/
 .clear2{ clear:both; zoom:1;}
 .fl{ float:left;}
@@ -123,7 +129,10 @@ input[type="text"], select,textarea  {  padding:5px 0 5px 3px;border: 1px solid 
 .mar_b20{margin-bottom:20px !important;}
 
 
-.qky_content,.judge_nav{margin-right: auto; margin-left: auto;}
+.qky_content,.judge_nav{
+  margin-right: auto;
+  margin-left: auto;
+}
 /*中部模块框架样式*/
 .qky_content{ width:100%; _width:expression((documentElement.clientWidth<1000)?'1000px':'auto'); height:auto; overflow:hidden; padding-bottom:16px;}
 

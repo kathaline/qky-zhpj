@@ -9,12 +9,7 @@
 @import "iconfont.css";
 @import "../iconfont/iconfont.css";
 /*基础样式*/
-body{width:100%; padding: 50px 0; color:#666;
-    background:#eaeaea;
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;}
+body{width:100%; padding: 50px 0; color:#666;background:#eaeaea;position: absolute;top: 0;left: 0;min-height: 100%;}
 	
 /*优化代码显示-开发新增0509*/
 .ms-controller, .ms-important, [ms-controller], [ms-important] { visibility: hidden;}
@@ -155,13 +150,13 @@ body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-
 .qkyff_fluid{ background:#fff; width:100%;}
 .navbar-fixed-top {border: 0;}
 .qky_content,.judge_nav{width:100%;}
+.footer{ position: absolute; bottom:0; padding:15px 0; text-align:center; left:0; width:100%; background:#fff; color:#737373;z-index: 1001; display:none;border-top: 1px solid #d8d8d8;}
+.footer.open{ display:block;}
+.footer.default{ background:#fff; }
 @media (min-width: 768px){.qky_content,.judge_nav{width:100%;}}
 @media (min-width: 992px){.qky_content,.judge_nav{width: 970px;}}
 @media (min-width: 1200px){.qky_content,.judge_nav{width: 1200px;}}
-.footer{ position: absolute; bottom:0; padding:15px 0; text-align:center; left:0; width:100%; background:#fff; color:#737373;z-index: 1001; display:none;border-top: 1px solid #d8d8d8;}
-.footer.open{ display:block;}
-.footer.inverse{}
-.footer.default{ background:#fff; }
+@media (min-width: 1440px){.qky_content,.judge_nav{width: 1440px; padding-left:15px;padding-right:15px;}}
 
 
 /*主色调定义*/

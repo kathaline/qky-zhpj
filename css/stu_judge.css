@@ -3,6 +3,43 @@
 项目:学生综合评价1.2css
 修改版 日期：2017-59
 */
+@media (min-width: 768px){
+	.stu_jcont .stu_inf-guide.fr ul.nav{ width:140px;}
+	.tests-subj p.fl{max-width:440px;}.td_sw{width: 240px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:748px;}.judge_nav-tit{width:100%;}
+	.judge_side>.stu_inf-guide{ width:198px;}
+	.rep_list li .rep_pic,.rep_list li .rep_pic img{ height:120px;}
+	.pyu_con{ width:92%;}
+	.tests-subj p.wid-100{ width:600px !important;}
+	}
+@media (min-width: 992px){
+	.stu_jcont .stu_inf-guide.fr ul.nav{ width:150px;}
+	.tests-subj p.fl{ max-width:540px;}.td_sw{width: 300px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:755px;}.judge_nav-tit{width:968px;}
+	.judge_side>.stu_inf-guide{ width:202px;}
+	.rep_list li .rep_pic,.rep_list li .rep_pic img{ height:130px;}
+	.sjhd_lists li .rep_pic,.sjhd_lists li .rep_pic img{height:145px !important;}
+	.pyu_con{ width:93%;}
+	.tests-subj p.wid-100{ width:760px !important;}
+	}
+@media (min-width: 1200px){
+	.stu_jcont .stu_inf-guide.fr ul.nav{ width:185px;}
+	.tests-subj p.fl{max-width:700px;} .td_sw{width: 356px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:934px;}.judge_nav-tit{width:1198px;}
+	.judge_side>.stu_inf-guide{ width:252px;}
+	.rep_list li .rep_pic,.rep_list li .rep_pic img{height:156px;}
+	.sjhd_lists li .rep_pic,.sjhd_lists li .rep_pic img{height:180px !important;}
+	.score-one{ width:118px !important;}
+	.pyu_con{ width:94%;}
+	.tests-subj p.wid-100{ width:900px !important;}
+	}
+@media (min-width: 1440px){
+	.judge_side>.stu_inf-guide{ width:290px;}
+	.tests-subj p.fl{max-width:960px;} .fl .judge_nav-tit,.fr .judge_nav-tit{width:1098px;}.judge_nav-tit{width:1408px;}
+	
+	.rep_list li .rep_pic,.rep_list li .rep_pic img{height:182px !important; line-height:182px!important;}
+	.sjhd_lists li .rep_pic,.sjhd_lists li .rep_pic img{height:212px !important;}
+	.score-one{ width:122px !important;}
+	.pyu_img {width: 5%  !important;}.pyu_con{ width:95%;}
+	.tests-subj p.wid-100{ width:1100px !important;}
+	}
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
 .bor_all{ border:1px solid #d8d8d8;}
@@ -28,9 +65,6 @@ h3{ font-weight:normal; font-size:14px;}
 label { font-weight:normal}
 .stu_jcont .stu_data.fl{ width:82%;}.stu_jcont .stu_inf-guide.fr{ width:16%;}.stu_jcont .stu_inf-guide.fr ul.nav{ width:100%;}
 .stu_data.fr{ width:80%;}
-@media (min-width: 768px){.stu_jcont .stu_inf-guide.fr ul.nav{ width:140px;}}
-@media (min-width: 992px){.stu_jcont .stu_inf-guide.fr ul.nav{ width:150px;}}
-@media (min-width: 1200px){.stu_jcont .stu_inf-guide.fr ul.nav{ width:185px;}}
 
 .cont-wrap,.judge_cont,.judge_cont_2,.judge_xq{background:#fff;width:auto;border:1px solid #d8d8d8}
 
@@ -102,12 +136,12 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .judge_srh_2 .tit_edit01{font-size:12px;height:20px;line-height:20px;}
 .ul_srh select{-webkit-padding-right:10px; height:26px; line-height:24px;}
 /*搜索*/
-.search{  width:100%; max-width:260px;background:#fff; border:1px solid #d4d4d4; -moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px; height:26px; line-height:24px;}
-.judge_srh02 .search,.judge_srh .search,.cont_tit .search{max-width:190px;}
-.search input { width:88%; display:inline-block;border:none; background:transparent; height:24px;line-height:24px; padding-right:0}
+.search{  width:100%; max-width:386px;background:#fff; border:1px solid #d4d4d4; -moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px; height:26px; line-height:24px;}
+.judge_srh02 .search,.judge_srh .search,.judge_tab-t .search{max-width:190px;}
+.search input {float: right; width:88%; display:inline-block;border:none; background:transparent; height:24px;line-height:24px; padding-right:0}
 .search a{ width:12%;display:inline-block;padding:0 8px;float:left!important;margin:0!important;text-align:center;}
 
-.judge_srh02{padding:10px 20px;overflow:hidden;}
+.judge_srh02{padding:15px 20px;overflow:hidden;}
 .judge_srh02 i.arrow-down,.judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) -16px 3px no-repeat;width:16px;height:22px;display:block;float:right}
 .judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) 0 3px no-repeat}
 .judge_srh02 span.st-name-tit{margin:0 20px 0 15px}
@@ -150,7 +184,7 @@ span.st-name .p-a.rep_del01:hover{ color:#f00}
 
 .judge_side.fl,.judge_side.fr{width:21%; position:relative;}
 .judge_cont.fr,.judge_cont.fl{ width:78%}
-.judge_side .date-cho{width:100%; max-width:252px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:1px solid #d8d8d8;background:#f9f9f9}
+.judge_side .date-cho{width:100%;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:1px solid #d8d8d8;background:#f9f9f9}
 .judge_side .date-cho h3{ font-size:12px; text-align:center; line-height:40px;}
 .judge_side .ico_bg{background:url(../images/stu_judge/date_bg.png) 0 0 no-repeat;height:32px;margin-left:-1px;margin-right:-1px}
 .date_list{width:100%}
@@ -310,9 +344,6 @@ a.bg_bl04{background:#fff}
 .stu_inf-guide ul.nav li.active{border-left:3px solid #21a2db;color:#21a2db}
 .stu_inf-guide{ background:#fff;}
 .bor_all.rad4.p-r .p-a{ right:3px;top:2px;}
-@media (min-width: 768px){.judge_side>.stu_inf-guide{ width:198px;}}
-@media (min-width: 992px){.judge_side>.stu_inf-guide{ width:202px;}}
-@media (min-width: 1200px){.judge_side>.stu_inf-guide{ width:252px;}}
 
 .stu_inf-guide.fl,.stu_inf-guide.fr{width:18%}
 .edit_data li{line-height:30px;margin-bottom:20px}
@@ -472,14 +503,12 @@ a.ul_data-btn:hover{border:1px solid #999}
 .judge_rep{ background:#fff; border:1px solid #d8d8d8; margin-top:20px;}
 .rep_list,.rep_stu_list,.rep_stu_list02{ margin:15px auto; overflow:hidden;}
 .rep_list ul{ padding:0 1%;width:100%;}
-.rep_list li{float: left; width: 23%; height: 272px; margin: 10px 1%; background: #f9f9f9; position: relative;}
+.rep_list li{float: left; width: 23%; height:auto; margin: 10px 1%; background: #f9f9f9; position: relative;}
 .rep_list li .rep_pic{ height:156px; background:#3eb8ee;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px; text-align:center; line-height:146px;}
-.rep_list li .rep_pic img{ width:100%; height:156px; vertical-align:top;}
-@media (min-width: 768px)and (max-width: 991px){.rep_list li .rep_pic,.rep_list li .rep_pic img{ height:120px;}}
-@media screen and (min-width: 992px) and (max-width: 1199px){.rep_list li .rep_pic,.rep_list li .rep_pic img{ height:130px;}}
+.rep_list li .rep_pic img{ width:100%; vertical-align:top;}
 .rep_list li .rep_pic a{ display:block;}
 .rep_list li .rep_pic a>.qkyicon{ color:#e6f6fd; font-size:90px;}
-.rep_list li .rep_add1 { padding:50px 0 20px; text-align:center;}
+.rep_list li .rep_add1 { padding:50px 0 42px; text-align:center;}
 .rep_list li .rep_add1 a{ color:#f60; font-size:18px;}
 .rep_list li .rep_del01{ display:none;}
 .rep_list li:hover .rep_del01{ display:block; line-height:30px; text-align:right; position:absolute; right:-1px;top:0;  background:url(../images/stu_judge/del_bg.png) 0 0 no-repeat; width:58px; height:47px;}
@@ -637,6 +666,7 @@ span.search{ display:inline-block;}
 .tit-count em{ font-size:20px;}
 .count-alls { background:#f8f8f8; overflow:hidden;}
 .count-alls .fl{ border-right:1px solid #e6f0f5; padding:20px 1% 20px 20px; width:15%}
+.count-alls .fl .score-one{ width:auto !important;}
 
 .score-one{ width:116px;text-align:center; padding:15px 0 0; font-size:13px; color:#fff;}
 .fl .score-one{ background:url(../images/stu_judge/score-total.png) center center no-repeat;}
@@ -670,7 +700,6 @@ span.search{ display:inline-block;}
 .data-sub .span-percent{ width:80%;}
 .data-sub .span-percent em{ height:18px;}
 /*学生*/
-.xy-cont_l{ max-width:936px;}
 .xy-cont_l{ padding:0 0 10px!important; }
 .xy-cont_l .cont_tit{ padding:10px 20px;}
 .xy-cont_l .judge_srh{ padding:13px 20px;  border-bottom:1px solid #eee;}
@@ -697,9 +726,6 @@ span.search{ display:inline-block;}
 .ai-w-big .tests_tit ,.ai-w-big .tests-subj{ width:770px;}
 .tests_tit ,.tests-subj{ width:100%;}
 .judge_nav-tit{z-index:100}
-@media (min-width: 768px){.tests-subj p.fl{max-width:440px;}.td_sw{width: 240px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:748px;}.judge_nav-tit{width:100%;}}
-@media (min-width: 992px){.tests-subj p.fl{ max-width:540px;}.td_sw{width: 300px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:755px;}.judge_nav-tit{width:968px;}}
-@media (min-width: 1200px){.tests-subj p.fl{max-width:700px;} .td_sw{width: 356px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:934px;}.judge_nav-tit{width:1198px;}}
 
 .stus-cont{ overflow:hidden; height:auto;}
 .stus-xuey-tit{ padding:20px 20px 10px; height:20px; line-height:20px; text-align:center;}
@@ -752,13 +778,13 @@ span.search{ display:inline-block;}
 .rpt-topp .btns a:hover{ background:#04acf7; color:#fff;}
 .rpt_list0{ overflow:hidden; width:100%; height:auto; font-size:13px;}
 .rpt_list0 ul{ padding-left:40px;}
-.rpt_list0 li{ float:left;width: 17%; height:200px;margin:10px 1% 10px;text-align: center; position:relative; padding:5px 0;}
+.rpt_list0 li{ float:left;width: 17%; height:auto;margin:10px 1% 10px;text-align: center; position:relative; padding:5px 0;}
 .rpt_list0 li:hover,.rpt_list0 li.cur{ background:#f9f9f9;}
 .img-top{ background:url(../images/stu_judge/bgs-bg.png) 0 0 no-repeat; width:122px; height:142px; margin:10px auto; color:#fff; padding:30px 0 0;}
 .img-top p{ line-height:24px;}
 .img-top h3{ font-size:14px;}
 .rpt_list0 li input,.rpt_list0 li.cur input{ display:block; position:absolute; left:5px;top:5px;}
-.rpt_list0 li a>p{ height:32px; overflow:hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden;}
+.rpt_list0 li a>p{ height:32px; overflow:hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden; margin:0;}
 /*报告书*/
 .pers_txt h4{ font-size:18px; height:32px; line-height:32px;}
 .pers_txt h4 em{ font-size:13px; margin-left:8px;}
@@ -766,7 +792,6 @@ span.search{ display:inline-block;}
 .pers_histor{float: right;margin-right: 80px;text-align: center;background: url(../images/stu_judge/bgs-bg.png) 0 0 no-repeat;width: 122px;height: 142px; overflow:hidden;}
 .pers_histor a{ width:70px; height:52px; padding:45px 26px; display:block; text-align:center; color:#fff; font-size:14px;}
 .rpt_btm{ margin:10px ;}
-
 .rpt_notop{ margin-top:0 !important;}
 .xy-cont_l{}
 .rpt_stui{ padding:0 15px; font-size:13px;}
@@ -776,6 +801,10 @@ span.search{ display:inline-block;}
 .sut_pic-l h3 em{ font-size:12px; margin-left:3px;}
 .stu_rpt_inf p{ line-height:20px; padding-bottom:8px;}
 .rpt_list0 li .fz_5{ margin:10px 0 0 !important; display:inline-block}
+/*档案袋*/
+.dang_bg{ background:url(../images/stu_judge/dang-bg.png) 0 0 no-repeat; width:122px; height:142px; margin:10px auto; padding:30px 0 0;}
+.w30{ width:30px; height:30px; overflow:hidden; display:inline-block;}
+.w30 img{ width:100%; height:100%;}
 
 /*新建指标*/
 .con_tit02{ margin:0 14px; padding:15px 0;height:30px; line-height:30px;}
@@ -803,7 +832,7 @@ span.search{ display:inline-block;}
 
 /*个人荣誉*/
 .rep_list .honor_list{ padding:0 2%;}
-.rep_list .honor_list li{float:left; width:19%; position:relative;margin: 15px 3%;height: 215px; background:none}
+.rep_list .honor_list li{float:left; width:19%; position:relative;margin: 15px 3%; background:none}
 .qky_tips{ width:100%; background:#fffadd; height:38px; line-height:38px; border-bottom:1px solid #f5e29d;}
 .qky_tips-con{ margin:0 auto; text-align:center; color:#604e29; position:relative;}
 .qky_tips-con a{color:#604e29;}
@@ -854,9 +883,6 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 .tit_pyu{ height:26px; line-height:26px; margin-bottom:5px;}
 .tit_pyu .co_333{ margin-right:15px; font-size:14px;}
 .pyu_img{ width:6%; min-width:52px;}
-.pyu_con{ width:94%;}
-@media (min-width: 768px)and (max-width: 991px){.pyu_con{ width:92%;}}
-@media (min-width: 992px)and (max-width:1199px){.pyu_con{ width:93%;}}
 /*无操作按钮*/
 .btn_no{color:#999;border:1px solid #dfdfdf;cursor:default; background:#e7e7e7;padding:0 10px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
 /*指标库已选指标*/
@@ -951,12 +977,13 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 .all_tc{ margin:0; width:100%; height:auto; min-height:400px;}
 
 /*实践活动01*/
-.sjhd_lists li{ width:257px !important; height:300px !important; margin:18px 12px !important;}
+.sjhd_lists li{ width:21% !important; margin:15px 2% !important;}
 .sjhd_lists li:hover{-webkit-box-shadow: #ccc 0px 0px 5px;-moz-box-shadow: #ccc 0px 0px 5px;box-shadow: #ccc 0px 0px 5px;}
 .sjhd_lists li:hover a{color:#21a2db; text-decoration:underline;}
-.sjhd_lists li .rep_pic,.sjhd_lists li .rep_pic img{ width:257px; height:192px !important;}
 .sjhd_t{ line-height:24px; height:50px; text-align:left;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden;}
 .sjhd_date{ text-align:left;}
+.sjhd_date.co_999{ position:relative; padding-right:60px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; width:100%;}
+.sjhd_date.co_999 span.mar_l15{ position:absolute; right:0;}
 .rep_list .sjhd_lists li{ background:none;}
 
 .fil_more{ position:relative;}
@@ -996,9 +1023,6 @@ table.formbox_one td .div_dul{ margin:0;}
 .tests-subj p.wid-100{ padding:0;}
 .act_stuxds{ position:relative;}
 .xuey_table td .a_btn i{ vertical-align:inherit}
-@media (min-width: 768px){.tests-subj p.wid-100{ width:600px !important;}}
-@media (min-width: 992px){.tests-subj p.wid-100{ width:760px !important;}}
-@media (min-width: 1200px){.tests-subj p.wid-100{ width:960px !important;}}
 .act_stuxds .em_zt{ position:absolute; right:10px; top:25px; display:block; width:60px; height:37px;}
 .act_stuxds .em_haved{background:url(../images/stu_judge/haved_bg.png) 0 0 no-repeat;}
 .act_teac_dp td{ padding:0 5px!important; border-top:1px dashed #fff;}
@@ -1038,10 +1062,9 @@ table.formbox_one td .div_dul{ margin:0;}
 .a_under{ text-decoration: underline !important;}
 
 .bgs_ry{ background:#f2fafd;}
-.bgs_ry .user{ width:17%; padding-right:1%;}
+.bgs_ry .user{ width:17%; padding-right:1%; text-align:center;}
 .bgs_ry .user img{ width:100%;max-width:162px; height:118px; margin:5px;}
 .bgs_ry .act_stuxds{ width:83%; padding-right:1%;}
-.bgs_ry .act_stuxds .tests_tit{ width:915px;}
 .bgs_ry .act_stuxds p{ line-height:24px;}
 .bgs_tips .qkyicon{ vertical-align:middle;}
 .jdg-tips strong{ text-align:left; display:inline-block;}

@@ -30,7 +30,7 @@
 	.pyu_con{ width:94%;}
 	.tests-subj p.wid-100{ width:900px !important;}
 	}
-@media (min-width: 1440px){
+@media (min-width: 1600px){
 	.judge_side>.stu_inf-guide{ width:290px;}
 	.tests-subj p.fl{max-width:960px;} .fl .judge_nav-tit,.fr .judge_nav-tit{width:1098px;}.judge_nav-tit{width:1408px;}
 	

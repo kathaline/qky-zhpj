@@ -146,9 +146,9 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .judge_srh02 i.arrow-up{background:url(../images/stu_judge/i-arrow-up.png) 0 3px no-repeat}
 .judge_srh02 span.st-name-tit{margin:0 20px 0 15px}
 span.st-name,span.st-name-cur,.nopass_list .sp_nopass{ border: 1px solid #d4d4d4 !important;line-height: 26px!important; display:inline-block;width:auto!important;padding:0 10px;margin:0 10px 10px 0!important;background:#f0f0f0;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
-span.st-name:hover,.nopass_list .sp_nopass:hover{ background:#fff; color:#21a2db;}
+span.st-name:hover,span.st-name.cur,.nopass_list .sp_nopass:hover,.nopass_list .sp_nopass.cur{ background:#fff; color:#21a2db;}
 span.st-name .p-a.rep_del01{ display:block; width:14px; height:14px; line-height:14px;top:5px;right:0;}
-span.st-name .p-a.rep_del01:hover{ color:#f00}
+span.st-name .p-a.rep_del01:hover,span.st-name.cur .p-a.rep_del01{ color:#f00}
 .judge_srh02 .show_s_list{ width:140px;}
 .stu_names{width:100%;margin:0 auto;overflow:hidden;background:#fcfcfc}
 .names_list{height:112px;overflow-y:auto;padding:5px 0;}
@@ -468,15 +468,17 @@ a.ul_data-btn:hover{border:1px solid #999}
 .tit_tab{height:54px;padding:0 20px!important}
 .tit_tab a{display:inline-block;padding:0 15px;height:53px;line-height:53px;margin-right:3px}
 .tit_tab a.curr,.tit_tab a:hover{border-bottom:2px solid #f90;color:#f90}
-.fl_chk{width:260px;position:relative}
-.fl_chk .search{width:240px;position:absolute;left:0;top:0}
-.fl_chk form{padding:35px 20px 10px 0; height:220px;overflow-y:auto;overflow-x:hidden}
-.fl_chk form label{width:240px;max-width:240px;margin:18px 0;display:block;padding:0;height:16px}
+.fl_chk{width:240px;position:relative}
+.fl_chk .search{width:220px;position:absolute;left:0;top:0}
+.fl_chk form{padding:20px 10px 10px 0; height:200px;overflow-y:auto;overflow-x:hidden}
+.fl_chk form label{width:230px;margin:18px 0;display:block;padding:0;height:16px}
 .fl_chk form label input,.fl_chk form label span{display:block;float:left;height:16px;line-height:16px; margin:0}
-.fl_chk form label span{width:226px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fr-zbk{width:490px; height:180px;overflow-y:auto;overflow-x:hidden}
-.all_zb{height:30px;line-height:30px;margin-bottom:10px}
-.all_zb input{vertical-align:middle;margin-right:8px}
+.fl_chk form label span{width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fr-zbk{width:600px; height:170px;overflow-y:auto;overflow-x:hidden}
+.fr-zbk .nopass_list{height:170px !important;max-height:180px !important;}
+.m-wid.nopass_list span{ width:180px !important;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.all_zb{height:30px;line-height:30px;}
+.all_zb input{margin-right:8px}
 .tit-top01{margin-top:15px}
 .stu_py{line-height:24px;padding:20px;font-size:14px; background:#f4fafc;}
 .stu_py strong{color:#333;font-weight:700}
@@ -868,7 +870,7 @@ table.formbox_one .mark_txtare{ width:100% !important;padding:0 !important; text
 table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-indent:3px;}
 /*荣誉审核*/
 .mark_txtare02{ width:94%; padding:3px; border:1px solid #ccc;}
-.nopass_list{ max-height:93px; overflow-y:auto;}
+.nopass_list{ max-height:80px; overflow-y:auto;}
 .nopass_list span{ display:inline-block;}
 .nopass_list .sp_nopass .qkyicon{ vertical-align:middle; margin:0 5px;}
 .nopass_list .sp_nopass:hover .qkyicon{ color:#f60;}

@@ -10,6 +10,7 @@
 	.rep_list li .rep_pic,.rep_list li .rep_pic img{ height:120px;}
 	.pyu_con{ width:92%;}
 	.tests-subj p.wid-100{ width:600px !important;}
+	.grow_date{ margin-left:40%;}
 	}
 @media (min-width: 992px){
 	.stu_jcont .stu_inf-guide.fr ul.nav{ width:150px;}
@@ -19,6 +20,7 @@
 	.sjhd_lists li .rep_pic,.sjhd_lists li .rep_pic img{height:145px !important;}
 	.pyu_con{ width:93%;}
 	.tests-subj p.wid-100{ width:760px !important;}
+	.grow_date{ margin-left:350px;}
 	}
 @media (min-width: 1360px){
 	.stu_jcont .stu_inf-guide.fr ul.nav{ width:185px;}
@@ -29,6 +31,7 @@
 	.score-one{ width:118px !important;}
 	.pyu_con{ width:94%;}
 	.tests-subj p.wid-100{ width:900px !important;}
+	.grow_date{ margin-left:460px;}
 	}
 @media (min-width: 1600px){
 	.judge_side>.stu_inf-guide{ width:290px;}
@@ -39,6 +42,7 @@
 	.score-one{ width:122px !important;}
 	.pyu_img {width: 5%  !important;}.pyu_con{ width:95%;}
 	.tests-subj p.wid-100{ width:1100px !important;}
+	.grow_date{ margin-left:570px;}
 	}
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
@@ -181,7 +185,7 @@ span.st-name .p-a.rep_del01:hover,span.st-name.cur .p-a.rep_del01{ color:#f00}
 .out-line em{ display:block; width:80px; text-align:center;position:absolute; top:-22px; left:-115px;}
 /*体测开发新增表格*/
 .re_write{width: 100%;}
-.re_write td {padding: 0 0 0 3px !important;border: none;}
+.re_write td {padding: 0 0 0 3px !important;}
 .re_write tr{ border-bottom:0;background-color:transparent !important;}
 
 .judge_side.fl,.judge_side.fr{width:21%; position:relative;}
@@ -1130,3 +1134,44 @@ table.formbox_one td .div_dul{ margin:0;}
 .img_status:before {content: " ";position: absolute;top: 0;right: 0;bottom: 0;left: 0;background-color: rgba(0,0,0,.5);}
 .status_cont{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);color: #fff;}
 
+/*档案袋*/
+.grow_file{ margin-left:120px; margin-right:150px;}
+.grow_date{ position:fixed; left:50%; top:260px; width:100px;}
+.grow_date >ul>li{ border-left:5px solid #999; margin:5px 0; padding-left:5px;}
+.grow_date >ul>li.active{border-color:#21a2db; }
+.grow_date >ul>li.active >a{ font-size:18px;color:#21a2db; font-weight:bold;}
+.grow_date >ul>li.active >a li:hover,.grow_date >ul>li.active >a li:focus,.grow_date >ul>li.active >a li:active  a{color:#21a2db;}
+.grow_date ul li, .grow_date ul a { display: block;}
+.grow_date  >ul>li li{ height:26px;}
+
+.cover-pic.p-a{ left:20px;top:20px; border:1px solid #dcf2fc; padding:4px; background:#fff; z-index:1;}
+.cover-pic.p-a img{ position:relative; width:150px; height:150px;}
+.cover-top{  background:url(../images/stu_judge/file_tbg.png) right bottom #dcf2fc no-repeat; min-height:140px;}
+.data.p-a{left:200px; bottom:0; height:60px; line-height:60px;}
+.cover_btm{ min-height:60px;}
+.time-line{ left:50%;top:0; height:100%; width:3px; background:#d4d4d4; z-index:0; margin-left:-1px;}
+.time_tree{ width:100%; height:auto; position:relative;}
+.time-tit{ padding:20px; text-align:center;}
+.time-tit span{ background:#d4d4d4; padding:5px 20px; z-index:2; color:#fff;}
+
+.tree_list{ width:100%; position:relative;}
+.tree_list li{ width:50%; position:absolute; left:0px; top:0px; margin-bottom:20px; z-index:1}
+.tree_list li.li_time{ padding:0; position:relative}
+.tree_list li.li_time.time-tit{ position:-60px;}
+.tree_list li .mid{height:auto;overflow:hidden; border:1px solid #d4d4d4;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;background:#fff;}
+.tree_list li .arrow{ width:33px; height:16px; overflow:hidden; position:absolute; top:15px;z-index:1}
+.tree_list li.left_box{ padding-right:27px;}
+.tree_list li.left_box .arrow{ right:-5px; background:url(../images/stu_judge/tree_left.png) no-repeat;}
+.tree_list li.right_box{ padding-left:28px; margin-top:20px; margin-bottom:20px; margin-right:0;}
+.tree_list li.right_box .arrow{ left:-4px; background:url(../images/stu_judge/tree_right.png) no-repeat;}
+.tree_list li:hover .mid{ border:1px solid #21a2db;}
+.tree_list li:hover .arrow{ background-position:0 -16px;}
+.p-a.g-anchor{top:-80px;}
+
+.content-header{ width:100%; padding:20px 20px 0; height:60px; overflow:hidden;}
+.content-header .day{float: left; font-size: 35px;line-height: normal;color: #333;font-weight: 700;font-family: arial; margin: -6px 0 0;width: 45px;}
+.content-header .time-right {float: left;width: 36px;}
+.content-header .month,.content-header .year{font-size: 12px; color: #888;}
+.tree_txt{ padding-top:15px; padding-bottom:10px;}
+.tree_txt p{ padding-left:20px;text-indent:-20px;} 
+.tree_tips{ height:40px; line-height:40px;}

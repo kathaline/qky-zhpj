@@ -10,7 +10,7 @@
 	.rep_list li .rep_pic,.rep_list li .rep_pic img{ height:120px;}
 	.pyu_con{ width:92%;}
 	.tests-subj p.wid-100{ width:600px !important;}
-	.grow_date{ margin-left:40%;}
+	.grow_date{ margin-left:41%;}
 	}
 @media (min-width: 992px){
 	.stu_jcont .stu_inf-guide.fr ul.nav{ width:150px;}
@@ -20,7 +20,7 @@
 	.sjhd_lists li .rep_pic,.sjhd_lists li .rep_pic img{height:145px !important;}
 	.pyu_con{ width:93%;}
 	.tests-subj p.wid-100{ width:760px !important;}
-	.grow_date{ margin-left:350px;}
+	.grow_date{ margin-left:400px;}
 	}
 @media (min-width: 1360px){
 	.stu_jcont .stu_inf-guide.fr ul.nav{ width:185px;}
@@ -31,7 +31,7 @@
 	.score-one{ width:118px !important;}
 	.pyu_con{ width:94%;}
 	.tests-subj p.wid-100{ width:900px !important;}
-	.grow_date{ margin-left:460px;}
+	.grow_date{ margin-left:520px;}
 	}
 @media (min-width: 1600px){
 	.judge_side>.stu_inf-guide{ width:290px;}
@@ -42,7 +42,7 @@
 	.score-one{ width:122px !important;}
 	.pyu_img {width: 5%  !important;}.pyu_con{ width:95%;}
 	.tests-subj p.wid-100{ width:1100px !important;}
-	.grow_date{ margin-left:570px;}
+	.grow_date{ margin-left:620px;}
 	}
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
@@ -1137,7 +1137,7 @@ table.formbox_one td .div_dul{ margin:0;}
 .status_cont{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);color: #fff;}
 
 /*档案袋*/
-.grow_file{ margin-left:120px; margin-right:150px;}
+.grow_file{ margin-left:100px; margin-right:100px;}
 .grow_date{ position:fixed; left:50%; top:260px; width:100px;}
 .grow_date >ul>li{ border-left:5px solid #999; margin:5px 0; padding-left:5px;}
 .grow_date >ul>li.active{border-color:#21a2db; }

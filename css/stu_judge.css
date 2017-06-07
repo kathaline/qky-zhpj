@@ -1050,7 +1050,7 @@ table.formbox_one td .div_dul{ margin:0;}
 .a_chk.dis_chk{background-position:-28px 0; cursor:default}
 .b_tips{ position:relative;}
 .b_tips .qkyicon{ cursor:pointer;}
-.b_tips:hover .spn_tip{ display:block; color:#2fb0e8; position:absolute; left:15px;top:5px; background:#fff; padding:2px 10px;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px; border:1px dashed #7cc6e6; width:150px;}
+.b_tips:hover .spn_tip{ display:block; color:#2fb0e8; position:absolute; left:15px;top:5px; background:#fff; padding:0 10px;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px; border:1px dashed #7cc6e6; width:110px;}
 .fenlei li span{ width:120px;}
 
 .bgs_top{ margin-top:-20px; height:246px; background:url(../images/stu_judge/topbg_bgs.png) center  center no-repeat;}

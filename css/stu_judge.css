@@ -74,7 +74,7 @@ label { font-weight:normal}
 .cont-wrap,.judge_cont,.judge_cont_2,.judge_xq{background:#fff;width:auto;border:1px solid #d8d8d8}
 /*按钮*/
 a:hover,a:focus { outline:none; text-decoration:none;}
-.bg_blue,.bg_org,.bg_gray,.mask_btns a,.no_btn{display: inline-block;font-weight: normal;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+.bg_blue,.bg_org,.bg_gray,.mask_btns a,.no_btn{display: inline-block;font-weight: normal;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
 .bg_org{background:#21a2db; border:1px solid transparent;color:#fff; padding:0 15px; height:30px; line-height:28px;}
 .bg_org:hover,.bg_org:focus{background:#0288d1;border:1px solid #0288d1;color:#fff;}
 .judge_srh .bg_org{ height:26px; line-height:24px; padding:0 10px;}

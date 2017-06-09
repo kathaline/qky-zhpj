@@ -21,8 +21,9 @@
 	.pyu_con{ width:93%;}
 	.tests-subj p.wid-100{ width:760px !important;}
 	.grow_date{ margin-left:400px;}
+	.ul_srh li{ margin:5px 15px 5px 0 !important;}
 	}
-@media (min-width: 1360px){
+@media (min-width: 1260px){
 	.stu_jcont .stu_inf-guide.fr ul.nav{ width:185px;}
 	.tests-subj p.fl{max-width:700px;} .td_sw{width: 356px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:934px;}.judge_nav-tit{width:1198px;}
 	.judge_side>.stu_inf-guide{ width:252px;}
@@ -32,8 +33,9 @@
 	.pyu_con{ width:94%;}
 	.tests-subj p.wid-100{ width:900px !important;}
 	.grow_date{ margin-left:520px;}
+	.ul_srh li {margin: 0 15px 0 0 !important;}
 	}
-@media (min-width: 1600px){
+@media (min-width: 1560px){
 	.judge_side>.stu_inf-guide{ width:290px;}
 	.tests-subj p.fl{max-width:960px;} .fl .judge_nav-tit,.fr .judge_nav-tit{width:1098px;}.judge_nav-tit{width:1408px;}
 	
@@ -43,6 +45,7 @@
 	.pyu_img {width: 5%  !important;}.pyu_con{ width:95%;}
 	.tests-subj p.wid-100{ width:1100px !important;}
 	.grow_date{ margin-left:620px;}
+	.ul_srh li {margin: 0 15px 0 0 !important;}
 	}
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
@@ -137,6 +140,7 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .cont_tit .fr a{margin:0 0 0 15px;}
 .judge_srh{line-height:26px;padding:15px 5px;overflow:hidden;}
 .ul_srh li{ font-size:13px;float:left;line-height:26px;margin:0 15px 0 0}
+.ul_srh li .b_datec .set_text{ height:26px;}
 .judge_stu .ul_srh li{margin:0 10px 0 0}
 .judge_srh_2{padding:15px 5px 10px 5px; line-height:14px;}
 .judge_srh_2 .tit_edit01{font-size:12px;height:20px;line-height:20px;}
@@ -178,6 +182,7 @@ span.st-name .p-a.rep_del01:hover,span.st-name.cur .p-a.rep_del01{ color:#f00}
 .judge_table tr:nth-of-type(odd) {background-color: #e6f6fd;}
 .table_nobg td{ background:#fff; vertical-align:text-top; border-bottom:none;}
 .table_nobg td div { color:#747474}
+td.bor_lw{ border-left:1px solid #fff;}
 /*学业表格*/
 .tle-tj03 th:first-child{ padding:0 !important;}
 .out-line{border-top:40px #1699d3 solid;width: 0px;height: 0px;border-left:116px #21a2db solid;position: relative;}

@@ -1063,11 +1063,11 @@ table.formbox_one td .div_dul{ margin:0;}
 .bor_tno{ border-top:none !important;}
 .bor_bno{ border-bottom:none !important;}
 .bgs_tit{line-height:30px; overflow:hidden; padding:10px 0 0; clear:both;}
-.bgs_title{border: 2px solid #21a2db; height:62px; line-height:62px; text-align:center; color:#21a2db; width:260px; margin:0 auto; font-size:24px;-moz-border-radius:40px; -webkit-border-radius:40px;border-radius:40px;}
+.bgs_title{border:1px solid #999; height:56px; line-height:56px; text-align:center; width:240px; margin:0 auto; font-size:24px;-moz-border-radius:50px; -webkit-border-radius:50px;border-radius:50px;}
 .mar_b20{ margin-bottom:20px !important;}
 .bgs_py .user,.bgs_py .py_con{ position:relative;}
 .bgs_py .user img{ width:72px; height:72px;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; border:2px solid #c1e9fb;}
-.bgs_py .user .bgs_role{ position:absolute; bottom:0; left:50px; display:block; background:#f60; color:#fff;;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; width:22px; height:22px; text-align:center; line-height:22px;}
+.bgs_py .user .bgs_role{ position:absolute; bottom:0; left:50px; display:block; background:#f60; color:#fff;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; width:22px; height:22px; text-align:center; line-height:22px;}
 .bgs_py .user{width:9%}
 .bgs_py .py_con{ margin-top:3px;font-size:14px;-moz-border-radius:6px; -webkit-border-radius:6px;border-radius:6px; padding:10px 15px; background:#e6f6fd;min-height:52px;  width:91%;}
 .bgs_py .py_con p{ line-height:26px; }

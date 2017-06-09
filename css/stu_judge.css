@@ -1063,7 +1063,7 @@ table.formbox_one td .div_dul{ margin:0;}
 .bor_tno{ border-top:none !important;}
 .bor_bno{ border-bottom:none !important;}
 .bgs_tit{line-height:30px; overflow:hidden; padding:10px 0 0; clear:both;}
-.bgs_title{ background:url(../images/stu_judge/bgstit_bg.png) center center no-repeat; height:62px; line-height:62px; text-align:center; color:#fff; font-size:24px;}
+.bgs_title{border: 2px solid #21a2db; height:62px; line-height:62px; text-align:center; color:#21a2db; width:260px; margin:0 auto; font-size:24px;-moz-border-radius:40px; -webkit-border-radius:40px;border-radius:40px;}
 .mar_b20{ margin-bottom:20px !important;}
 .bgs_py .user,.bgs_py .py_con{ position:relative;}
 .bgs_py .user img{ width:72px; height:72px;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; border:2px solid #c1e9fb;}

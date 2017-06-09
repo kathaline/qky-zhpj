@@ -64,6 +64,7 @@ h3{ font-weight:normal; font-size:14px;}
 .block{ display:block}
 .iblock{ display:inline-block}
 .disabled,.sidebar-nav ul .disabled:hover{ color:#999; cursor:default;}
+select.disabled,input.disabled{ border-color:#e0e0e0;}
 .disabled>.collapse.in { display:none;}
 .co_333{color:#333}
 .co_666{color:#666}
@@ -254,6 +255,7 @@ select.sel_02 optgroup option{-moz-padding-left:10px}
 .b_datec .set_text{width:102px;z-index:9;}
 .b_datec,.li_choice{position:relative}
 .b_datec i{position:absolute;right:2px;top:-5px;z-index:5;vertical-align:middle;height:26px;line-height:26px; color:#999;}
+.b_datec.wid-70 i{top:2px;}
 .list-02{margin-top:0px;}
 .ai-w-big .judge_table .a_btn{margin:0 10px;}
 a.a_btn{ margin:0 2px;height:24px;line-height:24px;padding:0 10px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;display:inline-block;border:1px solid #2fb0e8;background:#fff;color:#2fb0e8;}

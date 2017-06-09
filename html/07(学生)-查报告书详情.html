@@ -17,10 +17,8 @@
 <![endif]-->
 <!--附加css-->
 <link href="../css/stu_judge.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/js_pack.js"></script>
-<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
 <!--js-->
 <script src="../dist/sea.js"></script>
 <script src="../dist/seaconfig.js"></script>
@@ -29,6 +27,8 @@
 	 $("#qkynav").qkynav();
  });
 </script>
+<script type="text/javascript" src="../js/echarts.js"></script>
+
 </head>
 
 <body>
@@ -41,7 +41,7 @@
 <div class="qky_content">
   <div class="judge_wraper">
    <div class="bgs_top"></div>
-   <div class="judge_wraper mar_0">
+   
    <div class="judge_cont_2 bor_tno">
      <div class=" pad_btm15">
         <div class="bgs_tit pad_lr20">
@@ -126,9 +126,6 @@
                   </ul>
                  </div>
               </div>
-          <script type="text/javascript">
-          jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",vis:8,trigger:"click"});
-          </script>
   
            </div>	   
         </div>
@@ -143,8 +140,8 @@
               <th scope="col">成绩</th>
               <th scope="col">得分</th>
               <th scope="col">等级</th>
-              <td width="429" rowspan="7">
-                   <div class=" txtcenter"><img src="../images/stu_judge/bgs02_03.png"/></div>
+              <td width="429" rowspan="7" class=" bor_lw">
+                   <div class="txtcenter "><img src="../images/stu_judge/bgs02_03.png"/></div>
               </td>
              </tr>
             <tr>
@@ -156,8 +153,8 @@
             <tr>
               <td>肺活量（毫升）</td>
               <td>3346</td>
-              <td>85</td>
-              <td>良好</td>
+              <td><span class="co_r">55</span></td>
+              <td><span class="co_r"><i class="qkyicon mar_r5">&#xe6ca;</i>不及格</span></td>
              </tr>
             <tr>
               <td>50米跑（秒）</td>
@@ -187,37 +184,7 @@
         </div>
         <div class="clear"></div>
      </div>
-     <div class="pad_btm15 mar_b20 pad_lr20">
-       <div class="bgs_title mar_b20">学生评语</div>
-        <div class="stu_jcont">
-           <div class="bgs_py pad_tb15">
-             <div class="fl user"><span class="bgs_role">教</span><img src="../images/stu_judge/teacher_tx.jpg"/></div>
-             <div class="fr py_con">
-               <em class="em_ico"></em>
-               <p> 该生自入学以来，勤奋刻苦，努力学习，热爱劳动，善于帮助他人，乐此不疲，学习态度端正，尊敬师长，对于各项活动都积极参加，言谈中常常幽默常以笑面对生活， 深受师生喜爱。该生自入学以来，勤奋刻苦，努力学习，热爱劳动，善于帮助他人，乐此不疲，学习态度端正，尊敬师长，对于各项活动都积极参加，言谈中常常幽默常以笑面对生活， 深受师生喜爱。该生自入学以来，勤奋刻苦，努力学习，热爱劳动，善于帮助他人，乐此不疲，学习态度端正，尊敬师长，对于各项活动都积极参加，言谈中常常幽默常以笑面对生活， 深受师生喜爱。</p>
-             </div>
-             <div class="clear"></div>
-           </div>
-           <div class="bgs_py pad_tb15">
-             <div class="fl user"><span class="bgs_role">学</span><img src="../images/stu_judge/nobody.png"/></div>
-             <div class="fr py_con">
-               <em class="em_ico"></em>
-               <div class="txtcenter pad_tb15"><i class="qkyicon mar_r5">&#xe697;</i>暂无评语</div>
-             </div>
-             <div class="clear"></div>
-           </div>
-           <div class="bgs_py pad_tb15">
-             <div class="fl user"><span class="bgs_role">家</span><img src="../images/stu_judge/jz_pic.jpg"/></div>
-             <div class="fr py_con">
-               <em class="em_ico"></em>
-               <div class="txtcenter pad_tb15"><i class="qkyicon mar_r5">&#xe697;</i>暂无评语</div>
-             </div>
-             <div class="clear"></div>
-           </div>
-           
-        </div>
-        <div class="clear"></div>
-     </div>
+     
      <div class="pad_btm15 mar_b20 pad_lr20">
        <div class="bgs_title mar_b20">个人荣誉<strong class="co_y"> 2</strong> 次</div>
         <div class="stu_jcont">
@@ -269,13 +236,83 @@
         </div>
         <div class="clear"></div>
      </div>
-     
+     <div class="pad_btm15 mar_b20 pad_lr20">
+       <div class="bgs_title mar_b20">学生评语</div>
+        <div class="stu_jcont">
+           <div class="bgs_py pad_tb15">
+             <div class="fl user"><span class="bgs_role">教</span><img src="../images/stu_judge/teacher_tx.jpg"/></div>
+             <div class="fr py_con">
+               <em class="em_ico"></em>
+               <p> 该生自入学以来，勤奋刻苦，努力学习，热爱劳动，善于帮助他人，乐此不疲，学习态度端正，尊敬师长，对于各项活动都积极参加，言谈中常常幽默常以笑面对生活， 深受师生喜爱。该生自入学以来，勤奋刻苦，努力学习，热爱劳动，善于帮助他人，乐此不疲，学习态度端正，尊敬师长，对于各项活动都积极参加，言谈中常常幽默常以笑面对生活， 深受师生喜爱。该生自入学以来，勤奋刻苦，努力学习，热爱劳动，善于帮助他人，乐此不疲，学习态度端正，尊敬师长，对于各项活动都积极参加，言谈中常常幽默常以笑面对生活， 深受师生喜爱。</p>
+             </div>
+             <div class="clear"></div>
+           </div>
+           <div class="bgs_py pad_tb15">
+             <div class="fl user"><span class="bgs_role">学</span><img src="../images/stu_judge/nobody.png"/></div>
+             <div class="fr py_con">
+               <em class="em_ico"></em>
+               <div class="txtcenter pad_tb15"><i class="qkyicon mar_r5">&#xe697;</i>暂无评语</div>
+             </div>
+             <div class="clear"></div>
+           </div>
+           <div class="bgs_py pad_tb15">
+             <div class="fl user"><span class="bgs_role">家</span><img src="../images/stu_judge/jz_pic.jpg"/></div>
+             <div class="fr py_con">
+               <em class="em_ico"></em>
+               <div class="txtcenter pad_tb15"><i class="qkyicon mar_r5">&#xe697;</i>暂无评语</div>
+             </div>
+             <div class="clear"></div>
+           </div>
+           
+        </div>
+        <div class="clear"></div>
+     </div>
+     <div class="pad_btm15 mar_b20 pad_lr20">
+       <div class="bgs_title mar_b20">学生考勤情况</div>
+       <div class="stu_jcont list-02">
+          <div class="fl wid-50 pad_r10">
+             <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5">学校必修课考勤</div>
+             <div class="p-r">
+               <div class="fl wid-50"><strong class="co_green fz_max txtcenter block">100%</strong><p class="txtcenter co_999">出勤率</p></div>
+               <div class="fr wid-50">
+                  <ul class="p-r">
+                     <li class="fl wid-50 pad_t15 co_666">正常：7</li>
+                     <li class="fl wid-50 pad_t15 co_y">迟到：1</li>
+                     <li class="fl wid-50 pad_t15 co_b">请假：2</li>
+                     <li class="fl wid-50 pad_t15 co_r">缺勤：0</li>
+                  </ul>
+               </div>
+               
+
+			 </div>
+          </div>  
+          <div class="fr  wid-50 pad_l10">
+             <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5">学校选修课考勤</div>
+             <div class="p-r">
+               <div class="fl wid-50"><strong class="co_green fz_max txtcenter block">100%</strong><p class="txtcenter co_999">出勤率</p></div>
+               <div class="fr wid-50">
+                  <ul class="p-r">
+                     <li class="fl wid-50 pad_t15 co_666">正常：7</li>
+                     <li class="fl wid-50 pad_t15 co_y">迟到：1</li>
+                     <li class="fl wid-50 pad_t15 co_b">请假：2</li>
+                     <li class="fl wid-50 pad_t15 co_r">缺勤：0</li>
+                  </ul>
+               </div>
+			          
+          </div>
+        </div>
+        
+        <div class="clear"></div>
+     </div>
+          <div class="rept_tips co_999 clear"><i class="qkyicon mar_r5">&#xe72f;</i>出勤率=(正常+请假）/总课程数*100%</div>
 	</div>
      
-  </div>
+  
 
   </div>
 </div>
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+
+
 </body>
 </html>

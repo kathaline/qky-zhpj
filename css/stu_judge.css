@@ -1063,7 +1063,7 @@ table.formbox_one td .div_dul{ margin:0;}
 .bor_tno{ border-top:none !important;}
 .bor_bno{ border-bottom:none !important;}
 .bgs_tit{line-height:30px; overflow:hidden; padding:10px 0 0; clear:both;}
-.bgs_title{border:1px solid #999; height:56px; line-height:56px; text-align:center; width:240px; margin:0 auto; font-size:24px;-moz-border-radius:50px; -webkit-border-radius:50px;border-radius:50px;}
+.bgs_title{background:url(../images/stu_judge/bgstit_bg.png) center center no-repeat; height:62px; line-height:62px; text-align:center; color:#fff; font-size:24px;}
 .mar_b20{ margin-bottom:20px !important;}
 .bgs_py .user,.bgs_py .py_con{ position:relative;}
 .bgs_py .user img{ width:72px; height:72px;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%; border:2px solid #c1e9fb;}
@@ -1080,7 +1080,7 @@ table.formbox_one td .div_dul{ margin:0;}
 
 .bgs_ry{ background:#f2fafd;}
 .bgs_ry .user{ width:17%; padding-right:1%; text-align:center;}
-.bgs_ry .user img{ width:100%;max-width:162px; height:118px; margin:5px;}
+.bgs_ry .user img{ width:100%;max-width:162px; height:118px;}
 .bgs_ry .act_stuxds{ width:83%; padding-right:1%;}
 .bgs_ry .act_stuxds p{ line-height:24px;}
 .bgs_tips .qkyicon{ vertical-align:middle;}

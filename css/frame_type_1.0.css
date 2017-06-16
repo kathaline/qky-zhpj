@@ -157,7 +157,7 @@ body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-
 .footer.default{ background:#fff; }
 @media (min-width: 768px){.qky_content,.judge_nav{width:100%;}}
 @media (min-width: 992px){.qky_content,.judge_nav{width: 970px;}}
-@media (min-width: 1260px){.qky_content,.judge_nav{width: 1200px;}}
+@media (min-width: 1200px){.qky_content,.judge_nav{width: 1200px;}}
 @media (min-width: 1560px){.qky_content,.judge_nav{width: 1440px; padding-left:15px;padding-right:15px;}}
 
 

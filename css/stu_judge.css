@@ -23,7 +23,7 @@
 	.grow_date{ margin-left:400px;}
 	.ul_srh li{ margin:5px 15px 5px 0 !important;}
 	}
-@media (min-width: 1260px){
+@media (min-width: 1200px){
 	.stu_jcont .stu_inf-guide.fr ul.nav{ width:185px;}
 	.tests-subj p.fl{max-width:700px;} .td_sw{width: 356px;}.fl .judge_nav-tit,.fr .judge_nav-tit{width:934px;}.judge_nav-tit{width:1198px;}
 	.judge_side>.stu_inf-guide{ width:252px;}
@@ -1172,14 +1172,16 @@ table.formbox_one td .div_dul{ margin:0;}
 .tree_list li.left_box .arrow{ right:-5px; background:url(../images/stu_judge/tree_left.png) no-repeat;}
 .tree_list li.right_box{ padding-left:28px; margin-top:20px; margin-bottom:20px; margin-right:0;}
 .tree_list li.right_box .arrow{ left:-4px; background:url(../images/stu_judge/tree_right.png) no-repeat;}
-.tree_list li:hover .mid{ border:1px solid #21a2db;}
-.tree_list li:hover .arrow{ background-position:0 -16px;}
+.tree_list li:hover .mid{border:1px solid #ccc;box-shadow: 0px 0px 8px 0px #ccc;}
+.tree_list li.cur-term .mid{ border:1px solid #21a2db; box-shadow: 0px 0px 8px 0px #76d4fe;}
+.tree_list li.cur-term .arrow{ background-position:0 -16px;}
 .p-a.g-anchor{top:-80px;}
 
 .content-header{ width:100%; padding:20px 20px 0; height:60px; overflow:hidden;}
-.content-header .day{float: left; font-size: 35px;line-height: normal;color: #333;font-weight: 700;font-family: arial; margin: -6px 0 0;width: 45px;}
+.content-header .day{float: left; font-size: 36px;line-height: normal;font-weight: 700;font-family: arial; margin: -2px 0 0;width: 45px;}
 .content-header .time-right {float: left;width: 36px;}
 .content-header .month,.content-header .year{font-size: 12px; color: #888;}
 .tree_txt{ padding-top:15px; padding-bottom:10px;}
 .tree_txt p{ padding-left:20px;text-indent:-20px;} 
 .tree_tips{ height:40px; line-height:40px;}
+.tree_tips .fl{ font-weight:bold; color:#333;}

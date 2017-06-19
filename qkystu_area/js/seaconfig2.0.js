@@ -47,12 +47,12 @@ seajs.config({
 });
 
 var opt={
-	navli_j:[
-			{name:"我的工资条",attrcont:"href='index.html'",isactive:false},
-			{name:"工资管理",attrcont:"href='index_wage_manag.html'",isactive:false},
-			{name:"工资模板管理",attrcont:"href='index_wagemould_manag.html'",isactive:false},
-			{name:"工资统计查询",attrcont:"href='index_count.html'",isactive:false},
-	]
+		navli_j:[
+			{name:"评价督导工作",attrcont:"href='index.html'",isactive:true},
+			{name:"评价体系管理",attrcont:"href=''",isactive:false},
+			{name:"大数据分析",attrcont:"href=''",isactive:false},
+			{name:"成长档案袋",attrcont:"href=''",isactive:false},
+		],//主导航条
 }
 
 for(var i=0;i<opt.navli_j.length;i++){

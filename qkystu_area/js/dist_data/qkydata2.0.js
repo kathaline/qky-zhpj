@@ -6,19 +6,19 @@
 define({
 	navdata:{/*导航数据*/
 	    htmlsrc:"mould_html/qkynav2.0.html",//头部模板获取异步地址
-		logosrc:"images/nav_logo/qky-logo.png",//logo来源路径
-		pjname:"工资管理",//应用名
+		logosrc:"images/nav_logo/logo.png",//logo来源路径
+		pjname:"综合素质评价",//应用名
 		theme:"navbar-default",//主题
 		themetype:{
-			pjnameColor:"#2baf2b",//应用名颜色
-			navactiveColor:"#2baf2b"//主导航活动时背景色
+			pjnameColor:"#21a2db",//应用名颜色
+			navactiveColor:"#21a2db"//主导航活动时背景色
 		},//个性定制专属的应用名颜色和主导航选中颜色
 		distclass:["navbar", "navbar-fixed-top", "headernav"],//默认一定要用的class
 		navli_j:[
-			{name:"我的工资条",attrcont:"href='index.html'",isactive:true},
-			{name:"工资管理",attrcont:"href='index_wage_manag.html'",isactive:false},
-			{name:"工资模板管理",attrcont:"href='index_wagemould_manag.html'",isactive:false},
-			{name:"工资统计查询",attrcont:"href='index_count.html'",isactive:false},
+			{name:"评价督导工作",attrcont:"href='index.html'",isactive:true},
+			{name:"评价体系管理",attrcont:"href='index_wage_manag.html'",isactive:false},
+			{name:"大数据分析",attrcont:"href='index_wagemould_manag.html'",isactive:false},
+			{name:"成长档案袋",attrcont:"href='index_count.html'",isactive:false},
 		],//主导航条
 		
 		

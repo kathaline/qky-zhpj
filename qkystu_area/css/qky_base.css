@@ -1,9 +1,5 @@
 /*
- * 全课云基础样式 1.0 zwt 2016-12-16 创建1.0
-   1.2 zwt 2017-01-13 变为分离式 成为1.2
-   1.3 zwt 2017-03-6 整理了所有公用模块，增加了许多基础颜色值，把特殊模块给独立出去，以后在这个基础css里只会出现api里的模块css，版本变更为1.3
-   1.4 zwt 2017-04-01 重新整理头部样式，增加消息应用，个人设置，消息通知等附加页面css，增加大框的几种挡位选择，修改基础背景色，优化和补足一些基础css的细节，版本变更为1.4
-   2.0 zwt 2017-05-10 调整整体结构，增加自主日历插件样式
+ * 综合素质评价区域版基础样式
  */
 
 
@@ -250,193 +246,10 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .second_level .add_navbar span i{ display:inline-block; width:24px; height:24px; border:1px solid #979797; border-radius:4px; line-height:22px; text-align:center; margin-right:5px; color:#737373;}
 .second_level .seachApp{ margin:7px 0; width:13%; float:right;}
 
-/*应用中心*/
-.app_box{ margin-bottom:15px; padding:20px;}
-.appseach_box{margin-bottom:15px; padding:20px;}
-.appseach_box h4{ border-bottom:1px solid #d8d8d8; padding:0 20px 20px; margin:0 -20px 20px;}
-.app_box h4{ font-size:16px; color:#737373; margin:0; padding:5px;}
-.app_box h4 i{ color:#27b0f2; font-size:16px}
-.app_box h4 a{font-size:16px; color:#737373;}
-.app_box h4 a:hover{ text-decoration:inherit; color:#737373;}
-.app_ul{ padding:15px 10px 0;}
-.app_list{ width:25%; float:left;cursor:pointer; margin-bottom:15px;}
-.app_list.add_list{ display:none;}
-.app_icon{ background:#efefef;border-radius:18px;width:76px;height:76px; border:2px solid #efefef; line-height:76px; text-align:center; color:#acacac; font-size:26px;}
-.app_icon img{ width:50px; height:50px; margin:13px auto; display:block; }
-.app_list:hover .app_icon{background:#fff; border-color:#d2d2d2; }
-.app_icon.add{ border:1px solid #c7c7c7; width:78px; height:78px;line-height:78px; text-align:center; color:#999; background:#fff;}
-.app_icon.add:hover{ color:#27b0f2;}
-.app_cont{ text-align:left; padding-left:20px; }
-.app_cont .txt{ display:block; padding:10px 0;color:#333;}
-.app_cont .txt:hover{ color:#27b0f2; text-decoration:inherit;}
-.app_cont .btn-default.stop_use:hover{background:#f0485f; color:#fff !important; border-color:#f0485f; }
-.app_cont .btn-default.add_app:hover{background:#27b0f2; color:#fff !important; border-color:#27b0f2;}
-
-/*应用详细*/
-.app_infobox{ padding:40px 30px;}
-.app_icon.info{ width:120px; line-height:120px; height:120px; margin:0 auto;}
-.app_infobox .btn.app{ display:block; margin:20px auto;}
-.app_info{ list-style:none; margin:0; padding:0; width:140px; margin:0 auto;}
-.app_info li label{ display:inline-block;}
-.app_info li span{ color:#666;}
-.app_info li{ color:#333; font-size:13px; padding:5px 0;}
-.app_info_cont{ padding:0;}
-.app_info_title{ margin:0 0 20px;}
-.app_info_cont p{ line-height:24px; color:#666;}
-.app_info_ad{background:#f5f5f5;border:1px solid #d8d8d8;border-radius:5px;width:100%;height:338px; padding:30px 60px; margin-top:20px; position:relative;}
-.app_info_ad .swiper-container{ height:100% !important;}
-.app_info_ad .arrow{ background:#27b0f2 !important; color:#fff!important; border-radius:10px!important; width:26px!important; height:26px!important; line-height:26px!important;}
-.app_info_ad .swiper-slide{ border-radius:8px; }
-.app_info_ad .swiper-slide img{ width:96%; height:95%; margin:1% 2%; border-radius:8px;box-shadow:0 0 5px #acacac; display:block;}
-
-/*消息中心*/
-.news_leftli{ padding:5px 0; display:block; color:#333; cursor:pointer;}
-.news_leftli span{ display:block; border-left:2px solid #fff; height:24px; line-height:24px; width:100%; padding-left:20px;}
-.news_leftli:hover{ background:#f5f5f5;text-decoration:inherit; color:#222;}
-.news_leftli:hover span{border-color:#aaa;}
-.news_leftli.active{ background:#f5f5f5; color:#27b0f2;}
-.news_leftli.active span{ border-color:#27b0f2;}
-.news_title{ margin:0; padding:20px; border-bottom:1px solid #d8d8d8;}
-.news_title i{ color:#27b0f2;}
-
-/*应用消息*/
-.news_bar{ padding:10px 20px;}
-.news_bar label.control-label{ color:#737373; font-weight:normal;}
-.news_list_bar{padding:8px 0 2px; background:#f9f9f9;}
-.news_list{ padding:15px 20px; border-bottom:1px solid #d8d8d8;}
-.news_list_li{ float:left; vertical-align:middle;}
-.news_list_li .checkbox-qky{ margin:17px auto;}
-.news_list_li .app_icon{ width:50px !important; height:50px !important; line-height:50px!important; font-size:20px!important; border-radius:10px!important; margin:0 auto;}
-.news_list_li .app_icon img{ width:34px!important; height:34px!important; margin:8px auto!important;}
-.news_list_li .news_name{ line-height:24px;}
-.news_list_li .news_times{line-height:18px; font-size:13px; color:#737373;}
-.news_list_li .news_cont{line-height:24px; margin-top:10px;}
-.news_list_li .news_appname{ line-height:24px; color:#737373; text-align:right;}
-.news_list_li i.news_list_close{ display:block; text-align:right; margin-top:30px; color:#666; display:none; cursor:pointer;}
-.news_chbox{ width:3%;}
-.news_icon{ width:8%;}
-.news_content{ width:72%; padding-left:5px;}
-.news_other{ width:17%;}
-.news_list:hover{ background:#f5f5f5;}
-.news_list:hover i.news_list_close{ display:block;}
-
-/*消息设置*/
-.newssetup_box{ padding:0 15px 20px; margin-top:10px;}
-.newssetup_box h4{ font-size:16px; color:#333; margin:0; padding:5px 0;}
-.newssetup_box h4 i{ color:#27b0f2; font-size:16px}
-.newssetup_box h4 a{font-size:16px; color:#333;}
-.newssetup_box h4 a:hover{ text-decoration:inherit; color:#737373;}
-
-.newssetup_li{ padding:15px 15px 0 30px;}
-.newssetup_li_appname{ line-height:50px; padding-left:10px;}
-
-.qky_switch{ width:50px; height:30px; border-radius:30px; background:#999; border:2px solid #999;}
-.qky_switch_btn{ width:26px; height:26px; background:#fff; border-radius:50%;}
-.qky_switch.active{ background:#27b0f2; border-color:#27b0f2;}
-.qky_switch.active .qky_switch_btn{ margin-left:20px; box-shadow:-1px 1px 2px 0 rgba(0,0,0,0.20);}
-
-.qky_switch.qky_switch_s{ width:40px; height:22px;border-radius:16px;}
-.qky_switch.qky_switch_s .qky_switch_btn{ width:18px; height:18px;}
-.qky_switch.qky_switch_s.active{background:#2baf2b; border-color:#2baf2b;}
-.qky_switch.qky_switch_s.active .qky_switch_btn{ margin-left:18px;}
-
-/*账户设置*/
-
-.title_bar{ background:#f5f5f5; height:40px; line-height:40px; padding-left:20px;}
-.changephotos_box{ padding:30px 60px;}
-.changephotos_box img{ width:100px; height:100px; border-radius:50%;}
-.changephotos_box .btn{ margin-top:23px;}
-.changephotos_box .btn i{ color:#737373 !important;}
-.changephotos_box span{ color:#737373; display:block; line-height:24px; font-size:13px;}
-.accset_form{ padding:20px 75px 10px; }
-.accset_form hr{ margin:0 -75px 15px; border-color:#dfdfdf;}
-.accset_form .control-label{ text-align:left; color:#535353; padding-top:5px;}
-.accset_form .form-group{ padding-bottom:10px; margin-bottom:0;}
-.accset_form .error_color{ line-height:24px;}
-.accset_form .submit_box{}
-.password_grade{ margin-top:5px; position:relative;}
-.password_grade span{ display:block; clear:both;}
-.password_grade div{ float:left; width:32%; height:20px; background:#eaeaea; border-radius:3px;}
-.password_grade div.two{ margin:0 2%;}
-.password_grade:after{ content:"弱"; position:absolute; left:100%; top:0; height:20px; line-height:20px; color:#737373;}
-.password_grade.weak .one{ background:#f0485f;}
-.password_grade.weak:after{ content:"弱";}
-.password_grade.mid .one,.password_grade.mid .two{ background:#ff7800;}
-.password_grade.mid:after{ content:"中";}
-.password_grade.strong div{background:#2baf2b;}
-.password_grade.strong:after{ content:"强";}
-
 /*提示弹层*/
 .mask_poptips{ position:fixed; width:120px; height:60px; line-height:60px; text-align:center; color:#fff; background:rgba(0,0,0,0.6); border-radius:5px; top:50%; left:50%; 
  z-index:55555; margin:-60px 0 0 -30px; display:none;}
- /*更换头像弹层*/
-.image-editor{ width:100%; height:340px; background:#eaeaea; padding:50px 0; position:relative; overflow:hidden; margin-bottom:10px;}
-.cropit-preview {background-color: #f8f8f8;background-size: cover;margin:0 auto;}
-.cropit-preview-image-container {cursor: move;}
-.cropit-preview-background {opacity: .2;cursor: auto;}
-.slider-wrappers{ position:absolute; bottom:0; left:0; z-index:5555; width:100%; background:#fff; height:40px; padding-top:16px;}
-.slider-wrappers .clear{ width:250px; margin:0 auto;}
-.slider-wrappers span{ display:inline-block; float:left; width:35px; text-align:center; line-height:24px; color:#737373;}
-.slider-wrappers input.cropit-image-zoom-input{ display:inline-block; width:180px; float:left; height:24px;}
-.slider-wrappers input[type=range]{ -webkit-appearance:none; border-radius:10px;background:#d8d8d8; height:1px; outline:none; margin-top:11px;}
-.slider-wrappers input[type=range]::-webkit-slider-thumb {-webkit-appearance: none; background:#27b0f2;width:10px;height:10px;border-radius:100%;}  
- 
- /*切换身份|密码重置*/
- .switch_box{ position:absolute; top:0; left:0; width:100%; min-height:100%; z-index:22; background:url(../images/switch_bg.png) no-repeat 50% 50%; background-size:100% 100%; padding:50px 0;}
- .switch_box .col-sm-6{padding:0  20px;}
- .swith_list{ background:#fff; box-shadow:0 0 22px 0 rgba(86,177,175,0.59);border-radius:5px; display:block; width:100%; padding:40px 30px; cursor:pointer; margin-bottom:40px;}
- .swith_list{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
- .swith_list:hover{ margin:-20px 0 60px;box-shadow:0 7px 30px 0 #6faaaf;}
- .switch_photo{ width:26%;}
- .switch_photo img{ display:block; margin:0 auto; width:90px; height:90px; border-radius:50%;}
- .switch_cont{ width:74%; padding-left:20px; font-size:16px;}
- .switch_cont label{ line-height:30px; margin:0; display:block; color:#333; padding-top:17px;}
- .switch_cont span{ display:inline-block; color:#737373; padding-top:5px;}  
- 
- .swith_nav{ padding:40px; text-align:center; border-bottom:1px solid #d8d8d8; margin:0 -15px;}
- .swith_navlist{ display:inline-block; padding:0 40px; cursor:pointer;}
- .swith_navlist img{ display:block; width:93px; height:93px; border-radius:50%; border:3px solid #fff;}
- .swith_navlist span{ display:block; font-size:16px; color: #333; line-height:34px;}
- .swith_navlist:hover{ text-decoration:inherit;}
- .swith_navlist:hover img,.swith_navlist.active img{ border-color:#27b0f2;} 
- .swith_navlist:hover span,.swith_navlist.active span{ color:#27b0f2;}
- .switch_form{ padding:40px 0;}
- 
- /*登录页*/
-.login_box{ width:100%; height:100%;background:url(../images/loginbg.png) no-repeat center center;  left:0; top:0;}
-.login_box.bgfluid{position: absolute; background-size:100% 100%; padding:0;}
-.login_mian{ width:470px; background:#fff;box-shadow:0 0 22px 0 rgba(86,177,175,0.59);border-radius:10px;padding:20px; margin:0 auto; }
-.login_mian.pjmian{ width:96%; max-width:900px; padding:10px;}
-.login_mian.juzhong{ position:absolute; left:50%; top:50%; margin-left:-235px; margin-top:-250px; padding:40px; height:500px;}
-.login_mian.pjmian.juzhong{margin-left:-450px; padding:20px; top:15%;}
-.login_logo{ background:url(../images/loginlogobg.png) no-repeat right center; width:100%; background-size:100%; padding:10% 0 10%;}
-.login_logo img{ width:40%; display:block; margin:0 auto;}
-.login_mian.pjmian .login_logo{ background:none; padding:10px 0 0;}
-.login_mian.pjmian .login_logo img{ width:30%; margin:0;}
-.login_pjbox{ border-right:1px solid #ebebeb; height:230px; margin-top:-15px; padding-top:25px; padding-right:10px;}
-.login_pjbox .swiper-container{ height:100%;}
-.login_pjbox .pagination{ margin:0; bottom:0;}
-.login_pjbox .swiper-pagination-switch{ background:#d8d8d8; width:7px; height:7px; margin-right:5px; border-radius:1px;} 
-.login_pjbox .swiper-active-switch{ background:#2baf2b;} 
-.login_pjbox_txt{ overflow:auto; height:40px; line-height:20px;}
-.login_body .nav{ width:90%; margin:0 auto 10px;}
-.login_body .nav >li{ padding:0 15px;}
-.login_body .nav >li >a{ color:#737373; font-size:18px; border-bottom:2px solid #fff; cursor:pointer; padding:10px 0;}
-.login_body .nav >li >a:hover,.login_body .nav >li.active >a{ background:#fff; border-bottom:2px solid #2baf2b; color:#333;}
-.login_type{ display:none;}
-.login_type.one{ display:block;}
-.login_box .input-group-addon { background:#fff; padding:6px;}
-.login_qw{ width:46%; padding:5px; border:1px solid #d8d8d8; margin:20px auto 0;}
-.login_qw img{ width:100%;}
-.login_qwtxt{ width:46%;margin:5px auto 10px; line-height:20px; font-size:13px; color:#333;}
-.login_oth span{ line-height:26px;}
-.login_oth a{ width:26px; height:26px; display:inline-block; cursor:pointer;}
-.login_oth a:hover{ width:28px; height:28px;}
-.login_oth a img{ width:100%;}
-.login_opt{ padding-top:2px;}
-.login_opt a.btn{ padding:0 0 0 5px ;}
-.login_opt a.btn.one{ padding-left:0; padding-right:5px; border-right:1px solid #d8d8d8;}
- 
+  
 /**********4.组件改装**********/
 
 /*按钮改装*/
@@ -691,7 +504,7 @@ a.checkbox_a{display:block; width:16px; height:16px; border:1px solid #dadada; b
 /*全屏模块分左右*/
 .container_left {display:none;}
 @media (min-width: 768px) {
-.container_left {position: fixed;top: 51px;bottom: 50px;left: 0;z-index: 1000;display: block;padding: 20px;overflow-x: hidden;overflow-y: auto; background-color: #354052;border-right: 1px solid #eee; height:100%;}
+.container_left {position: fixed;top: 51px;bottom: 50px;left: 0;z-index: 1000;display: block;overflow-x: hidden;overflow-y: auto; background-color: #354052;border-right: 1px solid #eee; height:100%;}
 }
 
 /*gzglbase*/
@@ -720,3 +533,6 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .table-responsive._sm .table>tbody>tr>td{ min-width:90px;}
 .table-responsive._sm .table>tbody>tr>td.big_mw{ min-width:180px;}
 
+/* 左侧菜单 */
+.menu_l{border-bottom:1px solid #414b5c;}
+.menu_l li a{ display:block; height:60px; line-height:60px; border-bottom:4px solid #2b3544; border-top:1px solid #414b5c; padding:0 20px; color:#fff;}

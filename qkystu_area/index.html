@@ -11,10 +11,9 @@
 <link href="js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
 
 <!--全课云基础样式覆盖-->
-<link href="css/iconfont2.0.css" rel="stylesheet">
-<link href="css/qkybase2.0.css" rel="stylesheet">
-<link href="css/gzglbase.css" rel="stylesheet">
-<link href="css/quickcss2.0.css" rel="stylesheet">
+<link href="css/iconfont.css" rel="stylesheet">
+<link href="css/qky_base.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -36,15 +35,13 @@
               <label for="search_starttime" class="col-sm-2 control-label pr0 pl0">时间月份：</label>
               
               <div class="col-sm-4 pr0">
-              <div class="col-sm-6 col-xs-6">
-                        <input type="text" class="form-control laydate-icon" onclick="laydate()">  
-                        </div>
+              <div class="qkycalendar_box default"><input type="text"  value="" class="form-control" onClick="WdatePicker()" onFocus="this.className='form-control'" placeholder="限一个月"/><i class="qkyicon">&#xe695;</i></div>
               </div>
               
               <div class="col-sm-1 pl0 pr0 t_c height30_line co_93">——</div>
               
               <div class="col-sm-4 pl0">
-                <div class="qkycalendar_box default"><input type="text" class="form-control qkycalendar_btn" placeholder="结束年月"><input type="text" class="form-control laydate-icon" onclick="laydate()">  </div>
+                <div class="qkycalendar_box default"><input type="text" class="form-control qkycalendar_btn" placeholder="结束年月"></div>
               </div>
               
             </div>
@@ -129,8 +126,9 @@
 <!--模块化js--> 
 <script src="js/sea.js"></script> 
 <script src="js/seaconfig2.0.js"></script> 
+<script src="js/plug-in/laydate/laydate.js"></script>
 <script>
-     seajs.use(["jq","bs","nav","gzgl/mygzt"],function(j,b,n,mygzt){
+     seajs.use(["jq","bs","nav","gzgl/mygzt","datep"],function(j,b,n,mygzt,datep){
 		 opt.navli_j[0].isactive=true;
 		 $("#qkynav").qkynav(opt);	 
 		 mygzt.mygzt_run();

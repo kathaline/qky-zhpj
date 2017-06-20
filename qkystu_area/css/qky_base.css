@@ -535,4 +535,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 /* 左侧菜单 */
 .menu_l{border-bottom:1px solid #414b5c;}
-.menu_l li a{ display:block; height:60px; line-height:60px; border-bottom:4px solid #2b3544; border-top:1px solid #414b5c; padding:0 20px; color:#fff;}
+.menu_l li{border-bottom:4px solid #2b3544; border-top:1px solid #414b5c;}
+.menu_l li a{ display:block; height:60px; line-height:60px;  padding:0 20px; color:#a0acbf;}
+.menu_l li a:hover{ text-decoration:none;background:#323d4e;color:#fff;}
+.menu_l li a.cur{ border-left:4px solid #27b0f2; background:#2f3949;color:#fff; }

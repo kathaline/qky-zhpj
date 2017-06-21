@@ -29,17 +29,82 @@
                 <div class="row">
                     <ul class="menu_l">
                        <li><a href="#" class=" cur">评价体系</a></li>
-                       <li><a href="#">评价公告发布</a></li>
-                       <li><a href="#">学校公告发布</a></li>
+                       <li><a href="#">信息发布</a></li>
+                       <li><a href="#">学校反馈管理</a></li>
                     </ul>
                 </div>
             </div>
             <div class="container_right col-sm-10 col-sm-offset-2">
                <div class="pt15 pb15 ">
-               <h6 class="co_73"><i class="icon_area fz_14 mr5">&#xe835;</i><span>评价体系管理</span><i class="qkyicon_14 ml10 mr10">&#xe6b3;</i><span>评价体系信息</span><i class="qkyicon_14 ml10 mr10">&#xe6b3;</i><span>草稿箱</span></h6>
+               <h6 class="co_73"><i class="icon_area fz_14 mr5">&#xe835;</i><span>评价体系管理</span><i class="qkyicon_14 ml10 mr10">&#xe6b3;</i><span>评价体系信息</span></h6>
                </div>
-               <div class="qkycadr pa20">
-                 
+               <div class="qkycadr area_main">
+                 <div class="tab" role="tabpanel">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">草稿箱</a></li>
+                          <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">未发布</a></li>
+                          <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">已发布</a></li>
+                      </ul>
+                      <!-- Tab panes -->
+                      <div class="tab-content tabs">
+                          <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                             <div class="pt15 pb15">
+                              <form class="form-horizontal">
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="form-group mb0 ml20 po_r">
+                                      <label for="search_starttime" class="fl">学年学期</label>
+                                      <div class="col-sm-6 col-md-7 col-lg-8">
+                                        <div class="dropdown qkydropdown havechoose">
+                                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                                            <span class="value">全部学期</span>
+                                            <span class="caret"></span>
+                                          </a>
+                                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li role="presentation"><a>2016-2017学年度第二学期</a></li>
+                                            <li role="presentation"><a>2016-2017学年度第一学期</a></li>
+                                            <li role="presentation"><a>2015-2016学年度第二学期</a></li>
+                                            <li role="presentation"><a>2015-2016学年度第一学期</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="form-group mb0 ml20 po_r">
+                                      <label for="search_starttime" class="fl">评价类型</label>
+                                      <div class="col-sm-6 col-md-7 col-lg-8">
+                                        <div class="dropdown qkydropdown havechoose">
+                                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                                            <span class="value">全部类型</span>
+                                            <span class="caret"></span>
+                                          </a>
+                                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li role="presentation"><a>日常评价</a></li>
+                                            <li role="presentation"><a>学期评价</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 text-right">
+                                    <button type="submit" class="btn btn-primary mr20"><i></i>创建评价体系</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane fade" id="Section2">
+                              <h3>Section 2</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                          </div>
+                          <div role="tabpanel" class="tab-pane fade" id="Section3">
+                              <h3>Section 3</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                          </div>
+                      </div>
+                  </div>
                </div>
             </div>
         </div> 
@@ -49,14 +114,12 @@
 <script src="js/sea.js"></script> 
 <script src="js/seaconfig2.0.js"></script> 
 <script>
-     seajs.use(["jq","bs","nav","gzgl/mygzt","datep"],function(j,b,n,mygzt,datep){
+     seajs.use(["jq","bs","nav","dw"],function(j,b,n,dw){
 		 opt.navli_j[0].isactive=true;
 		 $("#qkynav").qkynav(opt);	 
 		 mygzt.mygzt_run();
 
 	});
-	/*$(function() {$('#menu_l').metisMenu({toggle: false});});
-*/
     </script>
 </body>
 </html>

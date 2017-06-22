@@ -36,6 +36,7 @@
 	.ul_srh li {margin: 0 15px 0 0 !important;}
 	}
 @media (min-width: 1560px){
+	.stu_jcont .stu_inf-guide.fr ul.nav{ width:220px;}
 	.judge_side>.stu_inf-guide{ width:290px;}
 	.tests-subj p.fl{max-width:960px;} .fl .judge_nav-tit,.fr .judge_nav-tit{width:1098px;}.judge_nav-tit{width:1408px;}
 	
@@ -72,7 +73,7 @@ select.disabled,input.disabled{ border-color:#e0e0e0; background:#f9f9f9;}
 .u-line{ text-decoration:underline;}
 .bor_lb{ border-left:3px solid #21a2db}
 label { font-weight:normal}
-.stu_jcont .stu_data.fl{ width:82%;}.stu_jcont .stu_inf-guide.fr{ width:16%;}.stu_jcont .stu_inf-guide.fr ul.nav{ width:100%;}
+.stu_jcont .stu_data.fl{ width:82%;}.stu_jcont .stu_inf-guide.fr{ width:16%;}
 .stu_data.fr{ width:80%;}
 
 .cont-wrap,.judge_cont,.judge_cont_2,.judge_xq{background:#fff;width:auto;border:1px solid #d8d8d8}

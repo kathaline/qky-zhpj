@@ -141,7 +141,7 @@ a:hover,a:focus { outline:none; text-decoration:none;}
 .cont_tit h3 .qkyicon{ margin-right:3px;}
 .cont_tit .fr a{margin:0 0 0 15px;}
 .judge_srh{line-height:26px;padding:15px 5px;overflow:hidden;}
-.ul_srh li{ font-size:13px;float:left;line-height:26px;margin:0 15px 0 0}
+.ul_srh li{float:left;line-height:26px;margin:0 15px 0 0}
 .ul_srh li .b_datec .set_text{ height:26px;}
 .judge_stu .ul_srh li{margin:0 10px 0 0}
 .judge_srh_2{padding:15px 5px 10px 5px; line-height:14px;}

@@ -75,6 +75,7 @@ select.disabled,input.disabled{ border-color:#e0e0e0; background:#f9f9f9;}
 label { font-weight:normal}
 .stu_jcont .stu_data.fl{ width:82%;}.stu_jcont .stu_inf-guide.fr{ width:16%;}
 .stu_data.fr{ width:80%;}
+.term-wid{ width:200px;}
 
 .cont-wrap,.judge_cont,.judge_cont_2,.judge_xq{background:#fff;width:auto;border:1px solid #d8d8d8}
 /*按钮*/

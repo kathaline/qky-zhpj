@@ -537,7 +537,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 .rep_list li .rep_pic img{ width:100%; vertical-align:top;}
 .rep_list li .rep_pic a{ display:block;}
 .rep_list li .rep_pic a>.qkyicon{ color:#e6f6fd; font-size:90px;}
-.rep_list li .rep_add1 { padding:50px 0 42px; text-align:center;}
+.rep_list li .rep_add1 { text-align:center; height:117px; padding-top:50px;}
 .rep_list li .rep_add1 a{ color:#f60; font-size:18px;}
 .rep_list li .rep_del01{ display:none;}
 .rep_list li:hover .rep_del01{ display:block; line-height:30px; text-align:right; position:absolute; right:-1px;top:0;  background:url(../images/stu_judge/del_bg.png) 0 0 no-repeat; width:58px; height:47px;}

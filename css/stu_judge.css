@@ -537,13 +537,13 @@ a.ul_data-btn:hover{border:1px solid #999}
 .rep_list li .rep_pic img{ width:100%; vertical-align:top;}
 .rep_list li .rep_pic a{ display:block;}
 .rep_list li .rep_pic a>.qkyicon{ color:#e6f6fd; font-size:90px;}
-.rep_list li .rep_add1 { text-align:center; height:117px; padding-top:50px;}
+.rep_list li .rep_add1 { text-align:center; height:120px; padding-top:50px;}
 .rep_list li .rep_add1 a{ color:#f60; font-size:18px;}
 .rep_list li .rep_del01{ display:none;}
 .rep_list li:hover .rep_del01{ display:block; line-height:30px; text-align:right; position:absolute; right:-1px;top:0;  background:url(../images/stu_judge/del_bg.png) 0 0 no-repeat; width:58px; height:47px;}
 .rep_list li .rep_del01 span{display:inline-block; cursor:pointer;}
 .rep_list li .rep_del01 span .qkyicon{ font-size:22px; color:#fff;}
-.rep_list li .rep_intro{ font-size:14px; margin:5px 0 0;}
+.rep_list li .rep_intro{ font-size:14px; margin:5px 0 0; height:115px;}
 .rep_list li .rep_intro .tit{ color:#333; text-decoration:underline; height:32px; line-height:32px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:inline-block; width:96%;margin:0 2%;}
 .rep_list li .rep_intro .tit:hover{ color:#f60;}
 .rep_list li .rep_intro .p_tit{width:96%; margin:0 2% 5px; height:26px; line-height:26px;}

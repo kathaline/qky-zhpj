@@ -9,7 +9,7 @@
 @import "iconfont.css";
 @import "../iconfont/iconfont.css";
 /*基础样式*/
-body{width:100%; padding: 50px 0; color:#666;background:#eaeaea;position: absolute;top: 0;left: 0;min-height: 100%;}
+body{background:#eaeaea;background: #f0f5f7 url(../images/stu_judge/qky-xszhpj-bg.png) no-repeat center top;width:100%; padding: 50px 0; color:#666;position: absolute;top: 0;left: 0;min-height: 100%;}
 	
 /*优化代码显示-开发新增0509*/
 .ms-controller, .ms-important, [ms-controller], [ms-important] { visibility: hidden;}
@@ -242,6 +242,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .navbar-inverse .nav_more .nav_more_lli h5{}
 .navbar-inverse .nav_more .nav_more_lli a{ color:#737373;text-decoration:inherit;}
 .navbar-inverse .nav_more .nav_more_lli a:hover{ color:#21a2db;}
+.navbar-default .nav_other li .other_sel .user_photo img { border: 2px solid #a5a5a5;}
 /*单选改装*/
 .radio label{ line-height:30px; height:30px;}
 .radio_a{ display:block; width:14px; height:14px; border:1px solid #ddd; border-radius:50%; background:#ffffff; margin-top:8px; }

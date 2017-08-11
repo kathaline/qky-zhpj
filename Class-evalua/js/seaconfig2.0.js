@@ -5,7 +5,7 @@ seajs.config({
 	  /***库引用***/
 	'jq':'jq/1.11.1/jquery',
     'bs': 'bootstrap/3.3.0/js/bootstrap.min',//引用bootstrap前端框架
-	
+
 	/***所有项目默认模块***/
     'nav': 'common_default/nav_add2.0',//引用整体头部
 	'app': 'common_default/appcenter',//引用应用中心的js模块
@@ -17,6 +17,9 @@ seajs.config({
 	'dw':'common_cadr/dropdown_havevalue',
 	'steps':'common_cadr/steps',
 	'upfile':'common_cadr/file',
+	
+	'jq10':'common_cadr/bootstrap-select/jquery-1.10.2.min',
+	'bsel':'common_cadr/bootstrap-select/bootstrap-select',
 
 	/****插件***/
 	'ci':'plug-in/cropit-master/jquery.cropit',
@@ -53,9 +56,9 @@ seajs.config({
 
 var opt={
 	navli_j:[
-			{name:"体系管理",attrcont:"href='html/01evalua-sys.html'",isactive:false},
-			{name:"班级评价",attrcont:"href='html/'",isactive:false},
-			{name:"评价统计",attrcont:"href='html/'",isactive:false},
+			{name:"体系管理",attrcont:"href='01evalua-sys.html'",isactive:false},
+			{name:"班级评价",attrcont:"href=''",isactive:false},
+			{name:"评价统计",attrcont:"href=''",isactive:false},
 	]
 }
 

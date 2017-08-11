@@ -15,9 +15,9 @@ define({
 		},//个性定制专属的应用名颜色和主导航选中颜色
 		distclass:["navbar", "navbar-fixed-top", "headernav"],//默认一定要用的class
 		navli_j:[
-			{name:"体系管理",attrcont:"href='html/01evalua-sys.html'",isactive:false},
-			{name:"班级评价",attrcont:"href='html/'",isactive:false},
-			{name:"评价统计",attrcont:"href='html/'",isactive:false},
+			{name:"体系管理",attrcont:"href='01evalua-sys.html'",isactive:false},
+			{name:"班级评价",attrcont:"href=''",isactive:false},
+			{name:"评价统计",attrcont:"href=''",isactive:false},
 		],//主导航条
 		
 		morebtn:true,//是否显示最左汉堡包菜单建已经是否执行更多操作

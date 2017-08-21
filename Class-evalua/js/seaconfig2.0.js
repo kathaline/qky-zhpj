@@ -74,7 +74,7 @@ for(var i=1;i<opt.navli_j.length;i++){
 	navli_j:[],
 	appcenter_link:"appcenter.html",//应用中心页面链
 	newscenter_link:"newscenter.html",//消息中心页面链接
-	otherli:[["切换身份","href='switch_user.html'"],["账户设置","href='account_settings.html'"],["个人设置","href='#'"],["退出","href='login.html'"]],
+	otherli:[["切换身份","href='switch_user.html'"],["数据设置","href='html/00set-term.html'"],["账户设置","href='account_settings.html'"],["个人设置","href='#'"],["退出","href='login.html'"]],
 	newsimgsrc:"../images/appicon/",
 };
 

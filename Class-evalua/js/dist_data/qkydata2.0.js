@@ -16,7 +16,7 @@ define({
 		distclass:["navbar", "navbar-fixed-top", "headernav"],//默认一定要用的class
 		navli_j:[
 			{name:"体系管理",attrcont:"href='01evalua-sys.html'",isactive:false},
-			{name:"班级评价",attrcont:"href=''",isactive:false},
+			{name:"班级评价",attrcont:"href='02eva-will.html'",isactive:false},
 			{name:"评价统计",attrcont:"href=''",isactive:false},
 		],//主导航条
 		

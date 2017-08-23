@@ -608,9 +608,6 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .sta-chose a.iblock{ cursor:pointer; color:#666;}
 .sta-chose .bg-info{ color:#333 !important;}
 .sta-chose .checkbox-qky{ width:94px; margin-top:10px; margin-bottom:10px;}
-.sta-minw{white-space: nowrap;max-height:600px; overflow-y:hidden; overflow-x:auto;}
-.sta-minw-c{ width:auto; }
-.sta-minw-c .fl{display: inline; width:300px;}
 .sta-minw .table-responsive._sm .table>tbody>tr>td:nth-of-type(2){ min-width:134px;}
 /*教师排名*/
 .sta-tcher img{ width:56px; height:56px; border:1px solid #e0e0e0;}

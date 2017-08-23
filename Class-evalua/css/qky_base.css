@@ -76,6 +76,7 @@ a:hover,a:focus {color:#0288d1;}
 
 /*警告颜色覆盖*/
 .text-warning{ color:#f80;}
+.text-success{ color:#51c20c;}
 /*标签及徽章背景色优先级*/
 .label-primary.badge{background-color: #337ab7;}
 .label-success.badge{background-color: #5cb85c;}
@@ -275,7 +276,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 /**********4.组件改装**********/
 
 /*按钮改装*/
-.btn{ padding:4px 15px;}
+.btn{ padding:4px 15px; max-height:30px;}
 .btn-xl, .btn-group-xl > .btn {padding:16px 20px;font-size:20px;line-height:1.33;border-radius: 6px;}
 .btn-group-lg > .btn {padding:5px 15px;}
 .btn-lg{padding: 10px 16px;}
@@ -350,6 +351,7 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 .table.bor_b>tbody >tr >td,.table.bor_b>tbody >tr >th{ border-bottom:1px  solid #dfdfdf; border-top:none; vertical-align:middle;}
 .table>thead >tr >th.media-middle,.table>tbody >tr >th.media-middle {vertical-align: middle;}
 .table>tbody >tr{background: #f2fafd;}
+.bg-no.table>tbody >tr { background:none;}
 .table.table-striped > tbody > tr:nth-child(odd) {background: #f2fafd;}
 .table.table-striped > tbody > tr:nth-child(even) { background-color: #e6f6fd;}
 .table.table-striped > tbody > tr.gray_bg{background-color: #fbfbfb;}
@@ -533,7 +535,7 @@ padding:10px;}
 .data_view_li{ margin-bottom:20px; padding:0;}
 .data_view_tit{ text-align:center; color:#8e8e8e; line-height:34px;}
 .data_view_limain{ height:320px;}
-
+.data_view_limain.big-h{ height:500px;}
 
 
 /*全屏模块分左右*/
@@ -562,6 +564,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .table-responsive._sm{  width: 100%;  overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar;}
 .table-responsive._sm .table>tbody>tr>td{ min-width:90px;}
 .table-responsive._sm .table>tbody>tr>td.big_mw{ min-width:180px;}
+.table-responsive._sm .table.bg-no>tbody>tr>td.small-nw{ min-width:36px;}
 
 /*tab切换样式覆盖*/
 .tab .nav-tabs{ position: relative;}
@@ -599,5 +602,12 @@ ul,li{ padding:0; margin:0; list-style:none;}
 }
 .heig-in{ max-height:160px; overflow-y:auto;}
 
-/*选择年级*/
-.menu_l.grade{}
+/*评价统计*/
+.media-left.statis-l{ min-width:80px;}
+.sta-chose .iblock{ width:66px;}
+.sta-chose a.iblock{ cursor:pointer; color:#666;}
+.sta-chose .bg-info{ color:#333 !important;}
+.sta-chose .checkbox-qky{ width:110px; margin-top:10px; margin-bottom:10px;}
+/*教师排名*/
+.sta-tcher img{ width:56px; height:56px; border:1px solid #e0e0e0;}
+.table.ver-middle th,.table.ver-middle td{ vertical-align:middle;}

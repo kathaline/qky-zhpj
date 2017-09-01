@@ -603,7 +603,20 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bor-b{border-bottom: 1px solid #eee;}
 }
 .heig-in{ max-height:160px; overflow-y:auto;}
-
+/*班级评价-选择班级*/
+.cla-height{ overflow-y:auto; overflow-x:hidden;}
+@media  (max-height: 768px){
+.cla-height{ max-height:540px;}
+}
+@media (min-height: 768px)and (max-height: 900px){
+.cla-height{ max-height:666px;}
+}
+@media (min-height: 900px)and (max-height: 1080px){
+.cla-height{ max-height:806px;}
+}
+@media (min-height:1080px){
+.cla-height{ max-height:980px;}
+}
 /*评价统计*/
 .media-left.statis-l{ min-width:80px;}
 .sta-chose .iblock{ width:66px;}

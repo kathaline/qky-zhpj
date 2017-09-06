@@ -107,6 +107,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pt15{ padding-top:15px!important;}
 .pt20{ padding-top:20px!important;}
 .pt44{ padding-top:44px!important;}
+.pt80{ padding-top:80px!important;}
 .pt88{ padding-top:88px!important;}
 .pt50{ padding-top:50px!important;}
 .pb0{ padding-bottom:0px!important;}
@@ -144,7 +145,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 /*weui-navbar样式覆盖*/
 .weui-navbar{ position:fixed; background-color:#fff;}
 .weui-navbar.header-t2{top:44px;}
-.weui-navbar__item{font-size:16px; padding:9px 0 8px;}
+.weui-navbar__item{font-size:16px; padding:5px 0 4px;}
 .weui-navbar__item:after{ border-right:0;}
 .weui-navbar__item.weui-bar__item--on{ background-color:#fff; color:#28ce57; border-bottom:2px solid #28ce57;}
 .weui-navbar__item.weui-bar__item--on:after{}

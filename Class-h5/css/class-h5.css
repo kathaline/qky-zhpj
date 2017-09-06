@@ -181,9 +181,9 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .color-warning { color:#f70 !important;}
 
 /*表格*/
-.table th{text-align:center; font-size:13px; color:#888; font-weight:normal; padding:5px 0; background:#f6f6f6;}
-.table td{ text-align:center; font-size:14px; padding:10px 0; color:#666;}
-
+.table th{text-align:left; font-size:13px; color:#888; font-weight:normal; padding:5px 0; background:#f6f6f6;}
+.table td{ font-size:14px; padding:10px 0; color:#666;}
+.table th:first-child,.table td:first-child{ padding-left:10px;}
 
 /*首页TIPS提示*/
 .bantips .weui-cell__hd{ border-right:1px solid #ddd;}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>班级评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/class-h5.css">
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="../js/swiper.js"></script>
+</head>
+<body ontouchstart>
+  <div class="header-title"><div class="header-left"><a href="index.html" class="iconfont icon-shouye1 fz_20"></a></div><h3>评价统计</h3></div>
+
+  <div class="weui-tab">
+    <div class="weui-navbar header-t2">
+      <a class="weui-navbar__item weui-bar__item--on" href="#tab1">周统计</a>
+      <a class="weui-navbar__item" href="#tab2">月统计</a>
+      <a class="weui-navbar__item" href="#tab3">学期统计</a>
+    </div>
+    <div class="weui-tab__bd pt88">
+      <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+        <div class="weui-cells mt12">
+            <div class="weui-cell weui-cell_select weui-cell_select-after">
+              <div class="weui-cell__hd"><label class="weui-label wid-s co_88">体系</label></div>
+              <div class="weui-cell__bd">
+                <input class="weui-input pt10 pb10" id="systerm" type="text" value="2017-2018学年度中学班级评价" placeholder="">
+              </div>
+            </div>
+            <div class="weui-cell weui-cell_select weui-cell_select-after">
+              <div class="weui-cell__hd"><label class="weui-label wid-s co_88">筛选</label></div>
+              <div class="weui-cell__bd">
+                <input class="weui-input pt10 pb10" id="grade" type="text" value="全年级 第三周" placeholder="">
+              </div>
+            </div>
+            
+        </div>
+        
+        <div class="weui-cells mt12">
+          <div class="weui-loadmore weui-loadmore_line ser-tit">
+            <span class="weui-loadmore__tips co_ff pt5 pb5 pl20 pr20">本周之星</span>
+          </div>
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="radius-4 star mb20">
+                  <div class="weui-panel__bd">
+                    <div class="weui-media-box weui-media-box_appmsg">
+                      <div class="weui-media-box__bd">
+                        <p class="weui-media-box__desc co_66 mb10">一年级（1）班<span class="fz_18 color-warning">  98.5 </span>分</p>
+                        <p class="weui-media-box__desc co_66">王志杰 老师</p>
+                      </div>
+                      <div class="weui-media-box__hd po_r">
+                        <i class="iconfont icon-diyiminghuangguan- po_ab_l star-icon fz_30 color-warning"></i>
+                        <img class="weui-media-box__thumb radius-cirle" src="../image/teacher.jpg" alt="">
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="radius-4 star mb20">
+                  <div class="weui-panel__bd">
+                    <div class="weui-media-box weui-media-box_appmsg">
+                      <div class="weui-media-box__bd">
+                        <p class="weui-media-box__desc co_66 mb10">一年级（2）班<span class="fz_18 color-warning">  98.5 </span>分</p>
+                        <p class="weui-media-box__desc co_66">李璨帅 老师</p>
+                      </div>
+                      <div class="weui-media-box__hd po_r">
+                        <i class="iconfont icon-diyiminghuangguan- po_ab_l star-icon fz_30 color-warning"></i>
+                        <img class="weui-media-box__thumb radius-cirle" src="../image/teacher_tx.jpg" alt="">
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <script>
+            $(".swiper-container").swiper({
+                loop: true,
+                autoplay: 3000
+            });
+        </script>
+        <div class="weui-cells mt12">
+          <div class="weui-cell pa0">
+            <div class="weui-cell__ft table">
+              <table width="100%" border="0" cellspacing="0">
+                <tbody><tr>
+                  <th width="11%" scope="col">排名</th>
+                  <th width="43%" scope="col">班级</th>
+                  <th width="24%" scope="col">班主任</th>
+                  <th width="22%" scope="col">得分</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>一年级（1）班</td>
+                  <td>王志杰</td>
+                  <td><span class="color-warning">98.5</span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>一年级（2）班 </td>
+                  <td>李璨帅</td>
+                  <td><span class="color-warning">98.5</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>一年级（3）班 </td>
+                  <td>李璨2帅</td>
+                  <td><span class="color-warning">97.5</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>三年级（1）班 </td>
+                  <td>王帅</td>
+                  <td>97</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>三年级（5）班 </td>
+                  <td>李大嘴</td>
+                  <td>95.5</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>初三（5）班 </td>
+                  <td>赵燕</td>
+                  <td>95.5</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>初一（2）班 </td>
+                  <td>寇帅</td>
+                  <td>92</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>初一（1）班 </td>
+                  <td>杨潇惠</td>
+                  <td>91.5</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>初一（3）班 </td>
+                  <td>杨淑丽</td>
+                  <td>91</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>四年级（3）班 </td>
+                  <td>惠利</td>
+                  <td>90</td>
+                </tr>
+              </tbody></table>
+      
+            </div>
+          </div>
+          
+        </div>
+        <div class="pb50 mb12"></div> 
+      </div>
+      <div id="tab2" class="weui-tab__bd-item">
+        
+        
+        <div class="pb50 mb12"></div> 
+      </div>
+      <div id="tab3" class="weui-tab__bd-item">
+        
+        <div class="pb50 mb12"></div> 
+      </div>
+    </div>
+  </div>
+  
+  <div class="weui-tabbar">
+    <a href="01statis.html" class="weui-tabbar__item weui-bar__item--on">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-tji"></i>
+      </div>
+      <p class="weui-tabbar__label">评价统计</p>
+    </a>
+    <a href="" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-luru"></i>
+      </div>
+      <p class="weui-tabbar__label">评价录入</p>
+    </a>
+    <a href="mine.html" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-mine"></i>
+      </div>
+      <p class="weui-tabbar__label">我的班</p>
+    </a>
+  </div>
+  <script>
+    $("#systerm").picker({//品牌选择
+      title: "请选择评价体系",
+      cols: [
+        {
+          textAlign: 'center',
+          values: ['2017-2018学年度中学班级评价', '2016-2017学年度中学班级评价', '2015-2016学年度中学班级评价', '2017-2018学年度中学班级评价']
+        }
+      ],
+      onChange: function(p, v, dv) {
+        console.log(p, v, dv);
+      },
+      onClose: function(p, v, d) {
+        console.log("close");
+      }
+    });
+	$("#grade").picker({
+	  title: "选择对应年级周次",
+	  cols: [
+		{
+		  textAlign: 'center',
+		  values: ['全年级', '一年级', '二年级','三年级','四年级', '五级','六年级','初一','初二','初三','高一','高二','高三']
+		},
+		{
+		  textAlign: 'center',
+		  values: ['第一周', '第二周', '第三周', '第四周', '第五周', '第六周', '第七周', '第八周']
+		},
+		 
+	  ]
+	});
+  </script>
+</body>
+</html>

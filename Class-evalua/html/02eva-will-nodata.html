@@ -77,36 +77,13 @@
   
 </div>
 <div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
-<!-- 模态框（Modal） -->
-<div class="modal fade" id="tips3" tabindex="-1" role="dialog" aria-labelledby="tips3Label" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content tab" role="tabpanel">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-					&times;
-				</button>
-                <h4 class="modal-title" id="myModalLabel">一年级(1)班 - 评价反馈</h4>
-				
-			</div>
-			<div class="modal-body">
-                <p>仪容仪表 - 头发：</p>
-                <textarea class="form-control" rows="6"></textarea>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-				<button type="button" class="btn btn-primary">确认</button>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal -->
-</div>
 <!--模块化js--> 
 <script src="../js/sea.js"></script> 
 <script src="../js/seaconfig2.0.js"></script> 
 <script>
- seajs.use(["jq","bs","nav","rach","dw"],function(j,b,n,rach,dw){
+ seajs.use(["jq","bs","nav","dw"],function(j,b,n,dw){
 	 opt.navli_j[0].isactive=true;
 	 $("#qkynav").qkynav(opt);	 
-     rach.rach_run(function(t){},function(t){});
 	 
 });
 </script>

@@ -157,7 +157,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-cells_radio .weui-check:checked+.icon-checked{background: #28ce57;border: 1px solid #28ce57;}
 /*picker样式覆盖*/
 .weui-picker-modal .picker-modal-inner{ background-color:#fbfbfb; font-size:16px;}
-.toolbar .picker-button{ color:#2dae99;}
+.toolbar .picker-button{ color:#28ce57;}
 /*.weui-cells样式覆盖*/
 .weui-cells{ font-size:15px;}
 /*panel列表样式覆盖*/

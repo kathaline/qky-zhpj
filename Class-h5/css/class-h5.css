@@ -224,22 +224,5 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .card .weui-flex__item{ border-right:1px solid #eee;}
 .card .weui-flex__item:last-child{border-right:0;}
 
-/*评分*/
-.starts,.starts ul{float:left;}
-.starts{padding-left:16px;}
-.starts ul li{float:left;color: #ccc;padding-right:10px;}
-.weui-cell__ft .starts,.weui-media-box__bd .starts{ height:22px; padding-left:5px;}
-.weui-media-box__bd .starts li{ height:17px; line-height:17px;}
-.weui-cell__ft .starts ul li,.weui-media-box__bd .starts ul li{padding-right:5px;}
-.starts ul li.on{color:#f90;}
-.starts ul span{display:inline;float:left;padding-left:10px;height:31px;line-height:31px;}
-
-/*用户登录*/
-.log-div{ height:auto; position:absolute; top:50%; margin-top:-230px; width:90%; left:50%; margin-left:-45%;}
-.logo{ margin-bottom:50px;}
-.logo img{width:50px; height:50px;}
-.login .weui-cell:before{ height:0; border-top:0;}
-.login .weui-cell{ border-bottom:1px solid #70f4bc; padding-left:0; padding-right:0;}
-.logo,.login .icon_lx,.login .weui-vcode-btn,.login input::-webkit-input-placeholder{ color:#cefbe8;}
-.login .weui-vcode-btn{ height:34px; line-height:24px; border:1px solid #70f4bc;}
-.bg-shading .login .weui-btn{background-color:#b3fddd; color:#28ce57;}
+/*无数据tips*/
+.tips{ width:100%;top:55%; margin-top:-110px;}

@@ -606,17 +606,37 @@ ul,li{ padding:0; margin:0; list-style:none;}
 /*班级评价-选择班级*/
 .cla-height{ overflow-y:auto; overflow-x:hidden;}
 @media  (max-height: 768px){
-.cla-height{ max-height:540px;}
+.cla-height{ max-height:426px;}
 }
 @media (min-height: 768px)and (max-height: 900px){
-.cla-height{ max-height:666px;}
+.cla-height{ max-height:496px;}
 }
 @media (min-height: 900px)and (max-height: 1080px){
-.cla-height{ max-height:806px;}
+.cla-height{ max-height:600px;}
 }
 @media (min-height:1080px){
-.cla-height{ max-height:980px;}
+.cla-height{ max-height:740px;}
 }
+.cla-height a{ text-decoration:none;}
+.cla-height >a.block{ padding-left:20px; padding-right:20px; height:40px; line-height:40px; font-size:15px;}
+.cla-height ul { border-top:1px solid #eee; border-bottom:1px solid #eee;}
+.cla-height ul li a{ height:36px; line-height:36px; padding-left:60px; display:block; color:#666;}
+.cla-height ul li a.bor-lb{background:#f6f6f6; color:#27b0f2;}
+/*评价-备注附件*/
+.import_list li.li_img .spn_import a .icon_class{display:inline-block;position:absolute;right:0;top:0; z-index:9; width:24px; height:24px; background:#000; line-height:24px; margin:0;color:#fff;}
+.import_list li.li_img{width:80px; height:60px; text-align:center; overflow:hidden;}
+.import_list li.li_img .spn_import .div_img{width:80px; height:60px;}
+.import_list li.li_img .spn_import img{ width:80px;height:60px;}
+.import_list li .spn_import { position: relative; padding:0; display: inline-block; max-width: 900px;  white-space: nowrap;  overflow: hidden; text-overflow: ellipsis;}
+.import_list li.li_img .a_add{ display:block; line-height:60px; color:#fff;background: #3eb8ee;}
+.import_list li.li_img .a_add .qkyicon{line-height:60px; font-size:30px;}
+.import_list li.li_img .a_moree{ color:#3eb8ee;}
+.import_list li.li_img .a_moree .qkyicon{ color:#3eb8ee; height:50px; line-height:50px; font-size:60px;}
+.import_list li.li_img .a_moree p{ margin-top:-15px; height:20px; line-height:20px; z-index:2;}
+.img_status:before {content: " ";position: absolute;top: 0;right: 0;bottom: 0;left: 0;background-color: rgba(0,0,0,.5);}
+.status_cont{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);color: #fff;}
+.down-img img{ height:108px;}
+
 /*评价统计*/
 .media-left.statis-l{ min-width:80px;}
 .sta-chose .iblock{ width:66px;}

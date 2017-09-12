@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>班级评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/class-h5.css">
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="../js/swiper.js"></script>
+</head>
+<body ontouchstart>
+  <div class="header-title"><div class="header-left"><a href="index.html" class="iconfont icon-shouye1 fz_20"></a></div><h3>我的班</h3></div>
+
+  <div class="pt44"></div>
+  <div class="user_bg monster-user pt15 pl10 pr10 po_r">
+    <div class="po_ab_l bg-shading"></div>
+    <div class="weui-media-box_appmsg weui-cell_access pl10 co_ff po_r">
+      <div class="weui-media-box__hd">
+        <div class="user-img radius-cirle"><img src="../image/teacher.jpg"></div>
+      </div>
+      <div class="weui-media-box__bd">
+        <h4 class="weui-media-box__title fz_16">迪丽热巴</h4>
+        <p class="weui-media-box__desc co_ff pt5"><span>一年级（1）班</span><span class="ml20">数学老师</span></p>
+      </div>
+    </div>
+    <div class="card mt10 pt10 pb15 bg_white po_r">
+      <div class="weui-cells mt0 bef-no">
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+          <div class="weui-cell__hd"><label class="weui-label wid-s co_88">筛选</label></div>
+          <div class="weui-cell__bd">
+            <input class="weui-input pt10 pb10" id="grade" type="text" value="第3周" placeholder="">
+          </div>
+        </div>
+      </div>
+      <div class="weui-flex mt15">
+        <div class="weui-flex__item">
+           <div class="placeholder">
+              <p class="fz_12 pl15"><i class="iconfont icon-wxbpinpaibao fz_14 mr5"></i>年级排名</p>
+              <p class="mt15 mb15 t-center fz_16">第 2 名<strong class="fz_18 color-warning ml10">98.6</strong></p>
+              <p class="fz_12 mt5 t-center co_99">(年级平均分：95.6分)</p>
+           </div>
+        </div>
+        <div class="weui-flex__item pl10">
+           <div class="placeholder">
+              <p class="fz_12"><i class="iconfont icon-paiming1 fz_14 mr5"></i>年级前3名</p>
+              <p class="fz_12 mt5 pl20">No.1<span class="ml10">5班</span><strong class="fz_14 color-warning ml10">99</strong></p>
+              <p class="fz_12 mt5 pl20">No.2<span class="ml10">1班</span><strong class="fz_14 color-warning ml10">98.6</strong></p>
+              <p class="fz_12 mt5 pl20">No.3<span class="ml10">2班</span><strong class="fz_14 color-warning ml10">97.5</strong></p>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="weui-cells__title mt12 pt5 pb5 fz_13 co_66"><i class="iconfont icon-dashuju fz_14 mr5"></i>各指标评价雷达图（分数百分百）</div>
+  <div class="weui-cells pl10 pr10 pb15">
+     <div class="data_view_limain" id="cla-radar"></div>
+  </div>
+  <div class="weui-cells__title mt12 pt5 pb5 fz_13 co_66"><i class="iconfont icon-wxbbaobiao fz_14 mr5"></i>班级在各周次排名趋势图</div>
+  <div class="weui-cells pl10 pr10 pb15">
+     <div class="data_view_limain" id="cla-ranking"></div>
+  </div>
+  <div class="weui-cells__title mt12 pt5 pb5 fz_13 co_66"><i class="iconfont icon-text fz_14 mr5"></i>班级评分详情（最终得分：<span class="color-warning fz_16">98.6</span>）</div>
+  <div class="weui-cells">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">一级指标最多有十个字</div>
+        <div class="weui-cell__ft co_33">加减分</div>
+      </div>
+      <div class="weui-cells mt0 pa0">
+        <div id="accor" class="user-infro col-100">
+          <ul>
+            <li class="clearfix fold">
+              <h5 class="fz_14 fz_nor">
+                  <div class="weui-cell">
+                    <div class="weui-cell__bd"><i class="iconfont icon-xia color-primary mr5"></i>二级指标最多有十个字</div>
+                    <div class="weui-cell__ft color-danger">-1.5</div>
+                  </div>
+              </h5>
+              <div class="foldContent weui-cells weui-cells_form mt0 bg_gray" style="display:none;">
+                  <div class="weui-cell"> <p class="fz_13">二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字</p></div>
+                  <div class="weui-cell">
+                      <ul class="weui-uploader__files" id="uploaderFiles">
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                      </ul>
+                  </div>
+              </div>
+            </li>
+            <li class="clearfix fold">
+              <h5 class="fz_14 fz_nor">
+                  <div class="weui-cell">
+                    <div class="weui-cell__bd"><i class="iconfont icon-xia color-primary mr5"></i>二级指标最多有十个字</div>
+                    <div class="weui-cell__ft co_33">+1.5</div>
+                  </div>
+              </h5>
+              <div class="foldContent weui-cells weui-cells_form mt0 bg_gray" style="display:none;">
+                  <div class="weui-cell"> <p class="fz_13">二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字</p></div>
+                  <div class="weui-cell">
+                      <ul class="weui-uploader__files" id="uploaderFiles">
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                      </ul>
+                  </div>
+              </div>
+            </li>
+            <li class="clearfix fold">
+              <h5 class="fz_14 fz_nor">
+                  <div class="weui-cell">
+                    <div class="weui-cell__bd"><i class="iconfont icon-xia color-primary mr5"></i>二级指标最多有十个字</div>
+                    <div class="weui-cell__ft co_33">+1.5</div>
+                  </div>
+              </h5>
+              <div class="foldContent weui-cells weui-cells_form mt0 bg_gray" style="display:none;">
+                  <div class="weui-cell"> <p class="fz_13">二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字</p></div>
+                  <div class="weui-cell">
+                      <ul class="weui-uploader__files" id="uploaderFiles">
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                      </ul>
+                  </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+  </div>
+  <div class="weui-cells mt0">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">一级指标最多有十个字</div>
+        <div class="weui-cell__ft co_33">加减分</div>
+      </div>
+      <div class="weui-cells mt0 pa0">
+        <div id="accor" class="user-infro col-100">
+          <ul>
+            <li class="clearfix fold">
+              <h5 class="fz_14 fz_nor">
+                  <div class="weui-cell">
+                    <div class="weui-cell__bd"><i class="iconfont icon-xia color-primary mr5"></i>二级指标最多有十个字</div>
+                    <div class="weui-cell__ft color-danger">-1.5</div>
+                  </div>
+              </h5>
+              <div class="foldContent weui-cells weui-cells_form mt0 bg_gray" style="display:none;">
+                  <div class="weui-cell"> <p class="fz_13">二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字</p></div>
+                  <div class="weui-cell">
+                      <ul class="weui-uploader__files" id="uploaderFiles">
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                      </ul>
+                  </div>
+              </div>
+            </li>
+            <li class="clearfix fold">
+              <h5 class="fz_14 fz_nor">
+                  <div class="weui-cell">
+                    <div class="weui-cell__bd"><i class="iconfont icon-xia color-primary mr5"></i>二级指标最多有十个字</div>
+                    <div class="weui-cell__ft co_33">+1.5</div>
+                  </div>
+              </h5>
+              <div class="foldContent weui-cells weui-cells_form mt0 bg_gray" style="display:none;">
+                  <div class="weui-cell"> <p class="fz_13">二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字</p></div>
+                  <div class="weui-cell">
+                      <ul class="weui-uploader__files" id="uploaderFiles">
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                      </ul>
+                  </div>
+              </div>
+            </li>
+            <li class="clearfix fold">
+              <h5 class="fz_14 fz_nor">
+                  <div class="weui-cell">
+                    <div class="weui-cell__bd"><i class="iconfont icon-xia color-primary mr5"></i>二级指标最多有十个字</div>
+                    <div class="weui-cell__ft co_33">+1.5</div>
+                  </div>
+              </h5>
+              <div class="foldContent weui-cells weui-cells_form mt0 bg_gray" style="display:none;">
+                  <div class="weui-cell"> <p class="fz_13">二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字二级指标说明文字</p></div>
+                  <div class="weui-cell">
+                      <ul class="weui-uploader__files" id="uploaderFiles">
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                        <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
+                      </ul>
+                  </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+  </div>
+  
+  <div class="pb50 mb12"></div> 
+  <div class="weui-tabbar">
+    <a href="01statis.html" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-tji"></i>
+      </div>
+      <p class="weui-tabbar__label">评价统计</p>
+    </a>
+    <a href="" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-luru"></i>
+      </div>
+      <p class="weui-tabbar__label">评价录入</p>
+    </a>
+    <a href="03mine.html" class="weui-tabbar__item weui-bar__item--on">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-mine"></i>
+      </div>
+      <p class="weui-tabbar__label">我的班</p>
+    </a>
+  </div>
+  <script>
+	$("#grade").picker({
+	  title: "选择对应周次",
+	  cols: [
+		{
+		  textAlign: 'center',
+		  values: ['第1周', '第2周', '第3周', '第4周', '第5周', '第6周', '第7周', '第8周']
+		},
+		 
+	  ]
+	});
+	$(function(){    
+		$("li>h5","#accor").bind("click",function(){
+			var li=$(this).parent();
+			if(li.hasClass("fold")){
+				li.removeClass("fold");
+				$(this).find(".weui-cell .iconfont").removeClass("icon-xia").addClass("icon-shang");
+				li.find(".foldContent").slideDown();
+			}else{
+				li.addClass("fold");
+				$(this).find(".weui-cell .iconfont").removeClass("icon-shang").addClass("icon-xia");
+				li.find(".foldContent").slideUp();
+			}
+		});
+	})
+	
+var radarChart = echarts.init(document.getElementById('cla-radar'));
+option = {
+    title: {
+        text: ''
+    },
+    backgroundColor: 'rgba(255,255,255,0)',
+    toolbox: {
+        show: true,
+        feature: {
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    tooltip: {},
+    legend: {
+		x:'76%',
+        data: [ '得分','平均分']
+    },
+    radar: {
+        // shape: 'circle',
+        indicator: [
+           { name: '文明礼貌', max: 100},
+           { name: '仪容仪表', max: 100},
+           { name: '笑容为啥', max: 100},
+           { name: '三操', max: 100},
+           { name: '纪律', max: 100},           
+        ],
+		center: ['50%', '57%'],
+    },
+    series: [{
+        name: '',
+        type: 'radar',
+        // areaStyle: {normal: {}},
+        itemStyle: {normal: {areaStyle: {type: 'default'}}},
+        data : [
+                {
+                value : [89, 56, 32, 66, 53],
+                name : '平均分'
+				,itemStyle:{normal: {color:'#f0ad4e'}},
+            },
+             {
+                value : [28, 36, 12, 68, 60],
+                name : '得分'
+				,itemStyle:{normal: {color:'#596c96'}},
+            },
+        ]
+    }]
+};        // 使用刚指定的配置项和数据显示图表。
+        radarChart.setOption(option);
+
+var schoolChart = echarts.init(document.getElementById('cla-ranking'));
+  var   option = {
+  title: {
+      text: ''
+  },
+  tooltip : {
+      trigger: 'axis'
+  },
+  legend: {
+      x:'70%',
+      y:'5%',
+      data:['班级排名']
+  },
+  toolbox: {
+      feature: {
+          saveAsImage: {}
+      }
+  },
+  grid: {
+      left: '2%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+  },
+  xAxis : [
+      {
+          type : 'category',
+          boundaryGap : false,
+		  axisLabel: {
+            "interval": 0,
+            "rotate": 30,
+            "splitNumber": 15,
+            "textStyle": {
+                "fontSize": 10,
+				"color":"#999",
+			}
+            },
+          data : ['第1周', '第2周', '第3周', '第4周', '第5周']
+      }
+  ],
+  yAxis : [
+      {
+          type : 'value'
+      }
+  ],
+  series : [
+      {
+          name:'班级排名',
+          type:'line',
+          stack: '总量',
+		  itemStyle:{normal: {color:'#5bc0de'}},
+          label: {
+              normal: {
+                  show: true,
+                  position: 'top'
+              }
+          },
+          areaStyle: {normal: {}},
+          data:[4,1,5,11,2]
+      }
+  ]
+  };
+        // 使用刚指定的配置项和数据显示图表。
+        schoolChart.setOption(option);
+  </script>
+</body>
+</html>

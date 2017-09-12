@@ -29,6 +29,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .radius-4{ border-radius:4px;}
 .radius-cirle{ border-radius:50%;}
 .bg_white{ background-color:#fff;}
+.bg_gray{ background-color:#f9f9f9;}
 .co_ff{ color:#fff!important;}
 .co_e0{ color:#e0e0e0!important;}
 .co_a3{ color:#a3a3a3!important;}
@@ -160,13 +161,15 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .toolbar .picker-button{ color:#28ce57;}
 /*.weui-cells样式覆盖*/
 .weui-cells{ font-size:15px;}
+.weui-cells+.weui-cells.mt0:before{ border-top:0;}
 /*panel列表样式覆盖*/
-.weui-media-box_appmsg .weui-media-box__hd { height:60px; line-height:42px;}
+.weui-cells__title{background-color: #fff; position:relative; margin-bottom:0; z-index:0;}
+.weui-cells__title:before {top: 0;border-top: 1px solid #d9d9d9; -webkit-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scaleY(.5); transform: scaleY(.5);content: " ";  position: absolute;  left: 0; right: 0;  height: 1px;  color: #d9d9d9;}
 .weui-media-box_appmsg .weui-media-box__thumb{ height:100%;}
 .weui-uploader__file{ text-align:center; line-height:79px;}
 .weui-uploader__file img{ width:100%; height:100%;}
 
-.weui-label.wid-s{ width:40px;}
+.weui-label.wid-s{ width:40px; margin-top:1px;}
 .weui-cell__bd{-webkit-box-flex:0; -webkit-flex: none;flex:none;}
 .weui-cell__hd+.weui-cell__bd,.weui-cell__bd.bd-txt,.weui-cell__ft{-webkit-box-flex: 1; -webkit-flex: 1;flex: 1;}
 .weui-media-box__desc{ color:#888;line-height: 1.41176471;}
@@ -210,19 +213,21 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .header-title .header-left a{ display:block; height:34px; line-height:34px; padding:0 8px;color:#28ce57;}
 .header-title h3{margin: 0 20%; line-height: 44px; text-align: center;  height: 44px; font-size: 17px;  font-weight: 400;  width: 60%;  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 
-/*个人中心*/
-.bg-shading{ color:#fff; background: -webkit-linear-gradient(left top, #01b1c6 , #28ce57);  background: -o-linear-gradient(bottom right, #01b1c6, #28ce57);   background: -moz-linear-gradient(bottom right, #01b1c6, #28ce57);  background: linear-gradient(to bottom right, #01b1c6 , #029c4a); }
-.user_bg{ min-height:90px;}
+/*我的班*/
+.bg-shading{ width:100%; z-index:0;min-height:180px; color:#fff; background: -webkit-linear-gradient(left top, #01ada3 , #28ce57);  background: -o-linear-gradient(bottom right, #01ada3, #28ce57);   background: -moz-linear-gradient(bottom right, #01ada3, #28ce57);  background: linear-gradient(to bottom right, #01ada3 , #28ce57); }
 .user-img{ text-align:center;filter: Alpha(Opacity=50) ;/* for IE */ background-color:rgba(255, 255, 255, 0.5); /*for FF*/ width:50px; height:50px; line-height:50px; padding:3px;}
 .user-img img{ width:100%; height:100%;border-radius: 50%;}
-.user-infro li{ border-bottom:1px solid #e0e0e0;}
-.user-infro .weui-cells:after{ height:0; border:0;}
+.user-infro >ul> li{ }
 .weui-cell__ft.po_r .po_ab_r{ top:50%; margin-top:-11px;}
 
-.monster-user.user_bg{ min-height:150px; margin-bottom:44px;}
-.card{ border-radius:8px ; min-height:100px; color:#6f6103;box-shadow: 0 0 8px #8f9d97;}
+.weui-cells.bef-no:before {height: 0; border-top:none;}
+.card .weui-cells.mt0{ margin-top:-5px !important;}
+
+.card{ border-radius:8px ; min-height:100px;box-shadow: 0 0 8px #8f9d97;}
 .card .weui-flex__item{ border-right:1px solid #eee;}
 .card .weui-flex__item:last-child{border-right:0;}
-
+/*数据图*/
+.data_view_limain{ height:240px;}
 /*无数据tips*/
 .tips{ width:100%;top:55%; margin-top:-110px;}
+

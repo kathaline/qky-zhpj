@@ -214,20 +214,23 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .header-title h3{margin: 0 20%; line-height: 44px; text-align: center;  height: 44px; font-size: 17px;  font-weight: 400;  width: 60%;  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 
 /*我的班*/
-.bg-shading{ width:100%; z-index:0;min-height:180px; color:#fff; background: -webkit-linear-gradient(left top, #01ada3 , #28ce57);  background: -o-linear-gradient(bottom right, #01ada3, #28ce57);   background: -moz-linear-gradient(bottom right, #01ada3, #28ce57);  background: linear-gradient(to bottom right, #01ada3 , #28ce57); }
+.bg-shading{ width:100%; z-index:0;min-height:75%; color:#fff; background: -webkit-linear-gradient(left top, #01ada3 , #28ce57);  background: -o-linear-gradient(bottom right, #01ada3, #28ce57);   background: -moz-linear-gradient(bottom right, #01ada3, #28ce57);  background: linear-gradient(to bottom right, #01ada3 , #28ce57); }
 .user-img{ text-align:center;filter: Alpha(Opacity=50) ;/* for IE */ background-color:rgba(255, 255, 255, 0.5); /*for FF*/ width:50px; height:50px; line-height:50px; padding:3px;}
 .user-img img{ width:100%; height:100%;border-radius: 50%;}
 .user-infro >ul> li{ }
 .weui-cell__ft.po_r .po_ab_r{ top:50%; margin-top:-11px;}
 
 .weui-cells.bef-no:before {height: 0; border-top:none;}
+.weui-cells.bef-no:after{ height:0; border-bottom:none;}
 .card .weui-cells.mt0{ margin-top:-5px !important;}
+.card .weui-cells+.weui-flex{ border-top:1px solid #d9d9d9;}
 
-.card{ border-radius:8px ; min-height:100px;box-shadow: 0 0 8px #8f9d97;}
+.card{ border-radius:8px; box-shadow: 0 0 8px #8f9d97;}
 .card .weui-flex__item{ border-right:1px solid #eee;}
 .card .weui-flex__item:last-child{border-right:0;}
 /*数据图*/
 .data_view_limain{ height:240px;}
 /*无数据tips*/
-.tips{ width:100%;top:55%; margin-top:-110px;}
+.tips.po_r{ width:100%; overflow:hidden; margin-top:13%;}
+.tips.po_ab_l{ width:100%;top:50%; margin-top:-110px;}
 

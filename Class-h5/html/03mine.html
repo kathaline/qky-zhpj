@@ -67,7 +67,7 @@
   </div>  
   <div class="weui-cells__title mt12 pt5 pb5 fz_13 co_66"><i class="iconfont icon-dashuju fz_14 mr5"></i>各指标评价雷达图（分数百分百）</div>
   <div class="weui-cells pl10 pr10 pb15">
-     <div class="data_view_limain" id="cla-radar"></div>
+     <div class="data_view_limain pt10" id="cla-radar"></div>
   </div>
   <div class="weui-cells__title mt12 pt5 pb5 fz_13 co_66"><i class="iconfont icon-wxbbaobiao fz_14 mr5"></i>班级在各周次排名趋势图</div>
   <div class="weui-cells pl10 pr10 pb15">
@@ -266,13 +266,12 @@ option = {
     radar: {
         // shape: 'circle',
         indicator: [
-           { name: '文明礼貌', max: 100},
            { name: '仪容仪表', max: 100},
            { name: '笑容为啥', max: 100},
            { name: '三操', max: 100},
            { name: '纪律', max: 100},           
         ],
-		center: ['50%', '57%'],
+		center: ['50%', '51%'],
     },
     series: [{
         name: '',
@@ -281,12 +280,12 @@ option = {
         itemStyle: {normal: {areaStyle: {type: 'default'}}},
         data : [
                 {
-                value : [89, 56, 32, 66, 53],
+                value : [89, 56, 32, 66],
                 name : '平均分'
 				,itemStyle:{normal: {color:'#f0ad4e'}},
             },
              {
-                value : [28, 36, 12, 68, 60],
+                value : [28, 36, 12, 68],
                 name : '得分'
 				,itemStyle:{normal: {color:'#596c96'}},
             },

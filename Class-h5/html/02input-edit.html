@@ -656,7 +656,7 @@
   </div>
   <div class="pb50 mb20"></div> 
   <div class="weui-btn-area weui-footer_fixed-bottom">
-    <a class="weui-btn weui-btn_primary bg_white" href="02input-edit.html">提交评价</a>
+    <a class="weui-btn weui-btn_primary bg_white"  href="javascript:;" id='ok-toast'>提交评价</a>
   </div>
   <script>
 	$(function(){    
@@ -673,6 +673,12 @@
 			}
 		});
 	})
+	      $(document).on("click", "#ok-toast", function() {
+        $.toast("提交成功", function() {
+          console.log('close');
+        });
+      })
+
   </script>
 </body>
 </html>

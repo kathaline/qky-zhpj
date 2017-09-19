@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>班级评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/class-h5.css">
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="../js/swiper.js"></script>
+</head>
+<body ontouchstart>
+
+  <div class="header-title">
+    <div class="weui-flex t-center">
+      <div class="pl5 col-35"><div class="weui-flex placeholder"><a href="#" class="iconfont icon-prev fz_15 pl10 pt10 pr5 pb10"></a><span class="weui-flex__item fz_14 pt10">第一周</span><a href="#" class="iconfont icon-next fz_15 pl5 pt10 pr10 pb10"></a></div></div>
+      <div class="weui-flex__item pr5"><div class="weui-flex placeholder"><a href="#" class="iconfont icon-prev fz_15 pl10 pt10 pr5 pb10"></a><span class="weui-flex__item fz_14 pt10">星期一 2017-08-25</span><a href="#" class="iconfont icon-next fz_15 pl5 pt10 pr10 pb10"></a></div></div>
+    </div>
+  </div>
+  <div class="pt44"></div>
+  <div class="t-center tips po_ab_l">
+    <p class="iconfont icon-mwuquanxian fz_90 co_99"></p>
+    <p class="fz_14 co_88">没有评价权限</p>
+  </div>
+  <div class="pb50 mb12"></div> 
+  <div class="weui-tabbar">
+    <a href="01statis.html" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-tji"></i>
+      </div>
+      <p class="weui-tabbar__label">评价统计</p>
+    </a>
+    <a href="02input.html" class="weui-tabbar__item weui-bar__item--on">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-luru"></i>
+      </div>
+      <p class="weui-tabbar__label">评价录入</p>
+    </a>
+    <a href="03mine.html" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-mine"></i>
+      </div>
+      <p class="weui-tabbar__label">我的班</p>
+    </a>
+  </div>
+  <script>
+    $(".systerm").picker({
+      title: "请选择评价体系",
+      cols: [
+        {
+          textAlign: 'center',
+          values: ['2017-2018学年度中学班级评价', '2016-2017学年度中学班级评价', '2015-2016学年度中学班级评价', '2017-2018学年度中学班级评价']
+        }
+      ],
+      onChange: function(p, v, dv) {
+        console.log(p, v, dv);
+      },
+      onClose: function(p, v, d) {
+        console.log("close");
+      }
+    });
+	$(function(){    
+		$("li>h5","#accor").bind("click",function(){
+			var li=$(this).parent();
+			if(li.hasClass("fold")){
+				li.removeClass("fold");
+				$(this).find(".weui-cell .iconfont").removeClass("icon-xia").addClass("icon-shang");
+				li.find(".foldContent").slideDown();
+			}else{
+				li.addClass("fold");
+				$(this).find(".weui-cell .iconfont").removeClass("icon-shang").addClass("icon-xia");
+				li.find(".foldContent").slideUp();
+			}
+		});
+	})
+  </script>
+</body>
+</html>

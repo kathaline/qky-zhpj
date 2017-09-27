@@ -656,7 +656,8 @@
   </div>
   <div class="pb50 mb20"></div> 
   <div class="weui-btn-area weui-footer_fixed-bottom mt0 pt20">
-    <a class="weui-btn weui-btn_primary bg_white"  href="javascript:;" id='ok-toast'>提交评价</a>
+    <!--<a class="weui-btn weui-btn_primary bg_white"  href="javascript:;" id='ok-toast'>提交评价</a>-->
+    <a class="weui-btn weui-btn_primary bg_white"  href="javascript:;" id='failed-toast'>提交评价</a>
   </div>
   <script>
 	$(function(){    
@@ -678,7 +679,9 @@
           console.log('close');
         });
       })
-
+      .on("click", "#failed-toast", function() {
+        $.toast("提交失败", "forbidden");
+      })
   </script>
 </body>
 </html>

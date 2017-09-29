@@ -270,4 +270,4 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .tooltip { position: absolute; z-index: 1070; display: block;line-height: 1.42857143; padding:2px 0;}
 .tooltip-arrow { position: absolute; width: 0; height: 0; border-color: transparent; border-style: solid;}
 .tooltip.top .tooltip-arrow { bottom: 0; left: 35%;  margin-left: -5px;  border-width: 5px 5px 0;  border-top-color: #f43530;}
-.weui-badge.fz_10{ line-height:14px; height:15px;}
+.weui-badge.fz_10{ line-height:14px; height:13px;}

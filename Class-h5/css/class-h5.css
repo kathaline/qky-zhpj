@@ -267,6 +267,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .role{ width:20px; text-align:center; height:20px; line-height:20px;}
 .role.po_ab_r{ bottom:0;top:auto;}
 .div-icon{ height:58px; line-height:58px;}
+.div-icon.po_r .po_ab_l { left:50%; top:-5px; }
+.div-icon.po_r .po_ab_l .tooltip{min-width:40px; }
 .tooltip { position: absolute; z-index: 1070; display: block;line-height: 1.42857143; padding:2px 0;}
 .tooltip-arrow { position: absolute; width: 0; height: 0; border-color: transparent; border-style: solid; z-index:1071;}
 .tooltip.top .tooltip-arrow { bottom: -2px; left: 33%;  margin-left: -5px;  border-width: 8px 5px 0;  border-top-color: #f43530;transform: rotate(15deg);}

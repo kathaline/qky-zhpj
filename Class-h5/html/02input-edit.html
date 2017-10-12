@@ -655,9 +655,19 @@
    </div>
   </div>
   <div class="pb50 mb20"></div> 
-  <div class="weui-btn-area weui-footer_fixed-bottom mt0 pt20">
-    <!--<a class="weui-btn weui-btn_primary bg_white"  href="javascript:;" id='ok-toast'>提交评价</a>-->
-    <a class="weui-btn weui-btn_primary bg_white"  href="javascript:;" id='failed-toast'>提交评价</a>
+  <div class="weui-btn-area fixed-btm ma0 bg_white">
+    <div class="fl pt5">
+      <label for="weuiAgree" class="weui-agree">
+        <input id="weuiAgree" type="checkbox" class="weui-agree__checkbox">
+        <span class="weui-agree__text fz_14">
+          推送给班主任<span class="weui-badge middle ml5">New</span>
+        </span>
+      </label>
+    </div>
+    <div class="fr col-35">
+      <!--<a class="weui-btn weui-btn_primary bg_white"  href="javascript:;" id='ok-toast'>提交评价</a>-->
+      <a class="weui-btn weui-btn_primary"  href="javascript:;" id='failed-toast'>提交评价</a>
+    </div>
   </div>
   <script>
 	$(function(){    

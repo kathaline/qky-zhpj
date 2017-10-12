@@ -194,11 +194,13 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-media-box__desc{ color:#888;line-height: 1.41176471;}
 /*按钮样式覆盖*/
 .weui-btn_primary{background-color: #28ce57; border:1px solid #28ce57;}
+.weui-btn_primary:after{ border:0;}
 .weui-dialog__btn{ color: #2dae99;}
 .weui-btn_plain-primary {color: #28ce57; border: 1px solid #28ce57;}
 .weui-btn-area.weui-btn-area-inline{display: -webkit-box;display: -webkit-flex;display: flex;}
 .weui-btn-area.weui-btn-area-inline .weui-btn{margin-top: auto; margin-right: 15px; width: 100%; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;}
 .weui-btn-area.weui-btn-area-inline .weui-btn:last-child { margin-right: 0;}
+.weui-btn_plain-primary:after { border-color:#28ce57;}
 /*颜色样式覆盖*/
 .color-primary { color:#596c96;}
 .color-def { color:#69a0f4;}

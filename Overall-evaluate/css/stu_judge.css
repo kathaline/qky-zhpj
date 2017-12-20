@@ -789,6 +789,7 @@ span.search{ display:inline-block;}
 .import-chks label{ display:block; line-height:24px; margin:3px 0;}
 .ul_add .span_lab{ display:inline-block; width:86%;}
 .ul_add .span_lab label{ display:inline-block;}
+.span_lab.max-subject{ max-height:140px; overflow-y:auto;}
 .span-up{ position:relative;width:65%;display:inline-block;}
 .span-up input{ vertical-align:middle; margin:0; padding:0}
 .span-up .file-box{ position:relative;}

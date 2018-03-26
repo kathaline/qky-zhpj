@@ -716,7 +716,8 @@ span.search{ display:inline-block;}
 .score-one p{ margin:0;}
 .score-one h3 strong{ font-size:24px;}
 .ai-w-big .picScroll-left{ position:relative; width:960px; padding:20px 15px 20px 20px; height:92px; margin-right:0;  overflow:hidden; border-left:1px solid #fff;}
-.picScroll-left.fr{ position:relative; width:85%; padding:20px 2% 20px 3%; height:133px;  border-left:1px solid #fff; overflow-x:hidden; overflow-y:inherit}
+.picScroll-left.fr{ width:100%; position:relative; padding:20px 2% 20px 3%; height:133px;  border-left:1px solid #fff; overflow-x:hidden; overflow-y:inherit}
+.count-alls .fl+.picScroll-left.fr{width:85% !important; }
 
 .picScroll-left .hd a{ position:absolute; top:45px; color:#ccc; z-index:10; display:block; width:20px; height:30px;background: #f8f8f8;}
 .picScroll-left .hd a:hover{ color:#32aee5;}

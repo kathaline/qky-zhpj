@@ -725,7 +725,8 @@ span.search{ display:inline-block;}
 .ai-w-big .picScroll-left .hd a.next{left:965px;}
 .picScroll-left .hd a.prev{ left:20px;}
 .picScroll-left .hd a.next{ right:0;}
-.picScroll-left .bd{}
+.picScroll-left .bd{ position:relative}
+.picScroll-left .bd .tempWrap{ width:100% !important;}
 .picScroll-left .score-one{ background:url(../images/stu_judge/score-ave.png) center center no-repeat; float:left;}
 .picScroll-left .score-one h3{ color:#666;}
 .top_noline .cont_tit{ border-bottom:none; padding-top:10px;}

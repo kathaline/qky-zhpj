@@ -23,7 +23,7 @@
     <div class="col-sm-3">
       <div class="div-user pa20 text-center co_ff">
         <img src="../images/teacher.jpg" class="img-circle img-100 img-bor"> 
-        <div class="fz_16 pt15">张晓明<span class="ml15 bor-fff radius-12 pl10 pr10">教师</span></div>  
+        <div class="fz_16 pt15">张晓明<span class="ml15 bor-fff radius-12 pl10 pr10">管理员</span></div>  
         <div class="pt15">带班：<span>初一（1）班</span>，<span>初一（2）班</span></div>  
       </div>
       <div class="qkycadr mb15 side-menu smenu-bg">
@@ -31,6 +31,12 @@
         <ul class="ul-menu">
           <li class="active">
             <a href="01index.html" class="line-2 co_33 pa10"><i class="iconfont icon-zhuye mr5"></i>我的主页</a>
+          </li>
+          <li>
+            <a href="01term-setting.html" class="line-2 co_33 pa10"><i class="iconfont icon-shezhi mr5"></i>学期设置</a>
+          </li>
+          <li>
+            <a href="01evaluate-system.html" class="line-2 co_33 pa10"><i class="iconfont icon-liebiao mr5"></i>评价体系</a>
           </li>
         </ul>
         <div class="bor-bgray pa15 clear"><div class="fl fz_16">基础信息</div></div>
@@ -67,7 +73,7 @@
               <div class="mt15 progress-cont">最终确认无误归档，归档后将无法再修改。</div>
             </div>
           </div>
-          <div class="bg-gray pl15 pr15 pt10 pb10 fz_13"><i class="iconfont icon-tongzhi fz_14 mr5"></i>温馨提示：通知班级开始申报</div>
+          <div class="bg-gray pl15 pr15 pt10 pb10 fz_13"><i class="iconfont icon-tongzhi fz_14 mr5"></i>温馨提示：请管理员及时创建</div>
         </div>
       </div>
       <div class="col-sm-8 pl0">
@@ -75,13 +81,129 @@
         <div class="tab" role="tabpanel">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs qkycadr mb15" role="tablist">
-            <li role="presentation" class="active"><a href="#Section1" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">动态</a></li>
-            <li role="presentation"><a href="#Section2" aria-controls="follow" role="tab" data-toggle="tab" class="fz_16">家长提问</a></li>
+            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">本学期</a></li>
+            <li role="presentation"><a href="#Section2" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">动态</a></li>
+            <li role="presentation"><a href="#Section3" aria-controls="follow" role="tab" data-toggle="tab" class="fz_16">家长提问</a></li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content tabs">
-            
             <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+              <div class="row co_ff ml0 mb15">
+                <div class="col-sm-3 pl0">
+                  <div class="percent bg-grn">
+                    <img src="../images/percent01.jpg" class="po_ab">
+                    <div class="per-cont">
+                      <h3>89.9%</h3>
+                      <div>总完成率</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="percent bg-cyan">
+                    <img src="../images/percent02.jpg" class="po_ab">
+                    <div class="per-cont">
+                      <h3>1287</h3>
+                      <div>全完成学生数</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="percent bg-blue">
+                    <img src="../images/percent03.jpg" class="po_ab">
+                    <div class="per-cont">
+                      <h3>1500</h3>
+                      <div>已申报学生数</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="percent bg-ylw">
+                    <img src="../images/percent04.jpg" class="po_ab">
+                    <div class="per-cont">
+                      <h3>82.5%</h3>
+                      <div>审核通过率</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="pa15 clear fz_15"><i class="iconfont icon-zhuzhuangtu mr5"></i>学生评价申报情况<span class="co_93 fz_13">（每日凌晨更新一次）</span></div>
+                <div class="data_view_limain" id="stu-ranking"></div>
+                <div class="bg-gray pl15 pr15 pt10 pb10 fz_13"><i class="iconfont icon-tongzhi fz_14 mr5"></i>完成率=全完成申报学生数/评价学生总数*100%</div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="row">
+                  <div class="col-sm-6 bor-r">
+                    <div class="pa15 clear fz_15"><i class="iconfont icon-koufen mr5 error_color"></i>扣分前五名</div>
+                    <ul class="pl15">
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 bor-r">
+                    <div class="pa15 clear fz_15"><i class="iconfont icon-jiafen mr5 text-success"></i>加分前五名</div>
+                    <ul class="pl15">
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="pa15 clear fz_15"><i class="iconfont icon-bingzhuangtu mr5"></i>成绩导入情况<span class="co_93 fz_13">（全校班级数：1500）</span></div>
+                <div class="row">
+                  <div class="col-sm-6 ">
+                    <div class="ml15 pl10 clear fz_15 bor-lb">期末考试</div>
+                    <div class="data_view_limain" id="score-pie"></div>
+                  </div>
+                  <div class="col-sm-6 ">
+                    <div class="ml15 pl10 clear fz_15 bor-lb">体育测试</div>
+                    <div class="data_view_limain" id="text-pie"></div>
+                  </div>
+                </div>
+              </div>
+              <!--冷启动begin-->
+              <div class="qkycadr mb15">
+                <div class="pa15 clear fz_15"><i class="iconfont icon-zhuzhuangtu mr5"></i>学生评价申报情况<span class="co_93 fz_13">（每日凌晨更新一次）</span></div>
+                <div class="nodata">
+                  <div><img src="../images/nowork.png"></div>
+                  <div class="pa15">暂无统计数据，请稍后查看</div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="row">
+                  <div class="col-sm-6 bor-r">
+                    <div class="pa15 clear fz_15"><i class="iconfont icon-koufen mr5 error_color"></i>扣分前五名</div>
+                    <div class="nodata">
+                      <div><img src="../images/nowork.png"></div>
+                      <div class="pa15">暂无任何数据</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 bor-r">
+                    <div class="pa15 clear fz_15"><i class="iconfont icon-jiafen mr5 text-success"></i>加分前五名</div>
+                    <div class="nodata">
+                      <div><img src="../images/nowork.png"></div>
+                      <div class="pa15">暂无任何数据</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="pa15 clear fz_15"><i class="iconfont icon-bingzhuangtu mr5"></i>成绩导入情况<span class="co_93 fz_13">（全校班级数：1500）</span></div>
+                <div class="nodata">
+                  <div><img src="../images/nowork.png"></div>
+                  <div class="pa15">暂无任何数据</div>
+                </div>
+              </div>
+              <!--冷启动over-->
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section2">
               <div class="qkycadr mb15">
                 <div class="dynamic po_r wd100">
                   <div class="po_ab"><div class="bg-blue mt15 ml15 img-40 text-center"><i class="iconfont icon-pingjia fz_28 co_ff"></i></div></div>
@@ -152,7 +274,7 @@
               </div>
               <!--冷启动over-->
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="Section2">
+            <div role="tabpanel" class="tab-pane fade" id="Section3">
                  
             </div>
           </div>
@@ -161,7 +283,7 @@
       </div>
       <div class="col-sm-4 pl0">
         <div class="qkycadr mb15">
-          <div class="bor-bgray pa15 fz_16 co_33">学生申报情况<span class="co_93 fz_13">（<strong class="text-warning">5</strong>）</span></div>
+          <div class="bor-bgray pa15 fz_16 co_33">待审核任务<span class="co_93 fz_13">（<strong class="text-warning">5</strong>）</span></div>
           <ul class="div-box pl15 pr15">
             <li>
               <a href="#" class="co_63">阙海滔家长已上传评价申报信息</a>
@@ -179,7 +301,7 @@
               <a href="#" class="co_63">阙海滔家长已阙海滔家长已上传评价申阙海滔家长已上传评价申报信息</a>
             </li>
           </ul>
-          <div class="pa15"><a href="#" class="block text-center bg-gray co_63 pa5">查看更多</a></div>
+          <div class="pa15"><a href="#" class="btn btn-primary btn-md block"><i class="iconfont icon-shenhe mr5"></i>开始审核</a></div>
         </div>
         <div class="qkycadr mb15">
           <div class="bor-bgray pa15 clear">

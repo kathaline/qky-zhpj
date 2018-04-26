@@ -1,7 +1,7 @@
 /****
 特殊模块，数据视图渲染
 ****/ 
-
+		
 define(function(require) {
 var datas={
 	sc_data:{
@@ -57,7 +57,7 @@ function xrzb(id,datas,tit){
 }
 });
 
-var myChart = echarts.init(document.getElementById('stu-ranking'));
+var rankChart = echarts.init(document.getElementById('stu-ranking'));
 
 // 指定图表的配置项和数据
 var option = {
@@ -158,112 +158,5 @@ var option = {
 };
 
 // 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option);
-/*
-var studentChart = echarts.init(document.getElementById('stu-ranking'));//学生评价申报情况
-option = {
-    title: {
-        text: ''
-    },
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {type: 'cross'}
-    },
-	grid: {
-        top:40,
-        left:'10%',
-       right:'10%',
-        bottom:'50',
-    },
-    
-    legend: {
-        data:['上报量','完成率'],
-        align: 'right',
-        right: '2%',
-        top:0,
-    },
-    xAxis: [
-        {
-            type: 'category',
-            axisTick: {
-                alignWithLabel: true,
-                
-            },
-            boundaryGap: ['0%', '0%'],
-        "axisLabel": {
-            interval: {default: 0},
-            rotate:50,
-            formatter : function(params){
-               var newParamsName = "";// 最终拼接成的字符串
-                var paramsNameNumber = params.length;// 实际标签的个数
-                var provideNumber = 4;// 每行能显示的字的个数
-                var rowNumber = Math.ceil(paramsNameNumber / provideNumber);// 换行的话，需要显示几行，向上取整
-                
-                 条件等同于rowNumber>1
-               if (paramsNameNumber > provideNumber) {
-                    // 循环每一行,p表示行 
-                  var tempStr = "";
-                   tempStr=params.substring(0,4);
-                   newParamsName = tempStr+"...";// 最终拼成的字符串
-              } else {
-                    // 将旧标签的值赋给新标签
-                  newParamsName = params;
-             }
-                //将最终的字符串返回
-                return newParamsName
-          }
+rankChart.setOption(option);
 
-      },
-         data: ['一年级','二年级','三年级','四年级','五年级','六年级','初一','初二','初三','高一','高二','高三',]
-        }
-    ],
-     yAxis: [
-        {
-            type: 'value',
-            name: '',
-            min: 0,
-            max: 1500,
-            position: 'left',
-            
-            axisLabel: {
-                formatter: '{value} '
-            }
-        },{
-            type: 'value',
-            name: '',
-            position: 'right',
-            
-            axisLabel: {
-                formatter: '{value} %'
-            }
-        }
-    ], 
-    series: [
-        {
-            name:'上报量',
-            color: '#81d0d7',
-            type:'bar',
-            barWidth:'40%',
-            data:[917,689,1264,534,757,435,1154,656,742,1135,1242,742]
-        },
-        
-        {
-        name:'完成率',
-         color: '#66d282',
-         yAxisIndex: 1,
-            type:'line',
-            itemStyle : {
-                normal : {
-                    lineStyle:{
-                        width:3,//折线宽度
-                    },
-                    
-                },
-                
-            },
-        data:[75,74,85,79,85,82,84.5,83,73.5,74,84.5,90,]
-    }
-    ]
-};   
- studentChart.setOption(option);
- */

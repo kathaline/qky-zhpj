@@ -13,7 +13,7 @@ body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-
 .ms-controller, .ms-important, [ms-controller], [ms-important] { visibility: hidden;}
 ul,li{ padding:0; margin:0; list-style:none;}
 label{ margin:0;}
-a:hover{ text-decoration:none;}
+a:hover,a:focus{ text-decoration:none;}
 /*整体框架基础*/
 .qkyff_fluid{ background:#fff; width:100%;}
 .container {width:100%;}
@@ -287,9 +287,10 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 
 /*按钮改装*/
 .btn{ padding:4px 15px; max-height:30px;}
+.btn+.btn{ margin-left:15px}
 .btn-xl, .btn-group-xl > .btn {padding:16px 20px;font-size:20px;line-height:1.33;border-radius: 6px;}
 .btn-group-lg > .btn {padding:5px 15px;}
-.btn.btn-lg{padding: 10px 16px;font-size: 18px !important; max-height:46px !important;}
+.btn.btn-lg{padding: 10px 16px; max-height:46px !important;}
 .btn.btn-md{padding: 8px 16px;font-size: 16px !important; max-height:40px !important;}
 .btn-sm, .btn-group-sm > .btn {padding:4px 10px;line-height: 1.3;}
 .btn-xs, .btn-group-xs > .btn {padding:1px 5px;line-height: 1.35;}
@@ -313,7 +314,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 
 /*下拉组改装*/
 .qkydropdown{ height:30px;}
-.qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 5px; vertical-align: inherit;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 10px; vertical-align: inherit;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .qkydropdown .btn .iconfont{ position:absolute; right:6px; top:8px; border:0; width:14px; height:14px; text-align:center; line-height:14px; color:#333;}
 .qkydropdown.open .btn .iconfont:before{content: "\e63d";}
 .qkydropdown .dropdown-menu{ width:100%; max-height:440px; overflow-y:auto;}
@@ -339,7 +340,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 
 /*复选改装*/
 .checkbox label{line-height:30px; height:30px;}
-a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; border-radius:4px;background:#fff; line-height:12px; text-align:center; text-decoration: inherit; margin-right:5px; margin-top:3px;}
+a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #cecece; border-radius:4px;background:#fff; line-height:12px; text-align:center; text-decoration: inherit; margin-right:5px; margin-top:3px;}
 .checkbox label a.checkbox_a{ margin-top:8px;}
 .checkbox-qky.disabled { pointer-events: none; cursor: not-allowed; filter: alpha(opacity=65); -webkit-box-shadow: none; box-shadow: none; opacity: .65;}
 .checkbox_a i{ color:#fff;}
@@ -369,8 +370,9 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 .table.table-striped > tbody > tr.gray_bg{background-color: #fbfbfb;}
 .table.table-bordered  >thead >tr >th{ border-bottom:1px solid #dfdfdf;}
 .table.table-bordered  >tbody >tr >td{ border-top:1px solid #dfdfdf;}
+.table.table-fbordered  >thead >tr >th,.table.table-fbordered  >tbody >tr >td{ border-bottom:2px solid #fff;}
 .table-hover> tbody > tr:hover >td {background-color:#f9f9f9;}
-.table.table-striped >tbody >tr >td a.iconfont+a.iconfont{ margin-left:15px;}
+.table >tbody >tr >td a.iconfont+a.iconfont,.alert a.iconfont+a.iconfont{ margin-left:15px;}
 .table-condensed > thead > tr > th, 
 .table-condensed > tbody > tr > th, 
 .table-condensed > tfoot > tr > th{ 
@@ -495,6 +497,7 @@ padding:10px;}
 
 /*tab切换样式覆盖*/
 .tab .nav-tabs{ position: relative;border-bottom: 1px solid #ececec;}
+.tab .nav-tabs.qkycadr{border-bottom:1px solid #e0e0e0}
 .tab .nav-tabs li{text-align: center; margin-right: 10px;float: left; margin-bottom: -1px;}
 .tab .nav-tabs li >a{ display: block;  padding:15px 0; margin-left:15px; color:#666; background: transparent; margin-right: 0; border: none; border-radius: 0; overflow: hidden;  position: relative; z-index: 1;  transition: all 0.5s ease 0s;}
 .tab .nav-tabs li >a:before{ content: ""; width: 100%; height: 2px; background: #27b0f2; position: absolute; top:-2px; left: 0; transition: all 0.3s ease 0s;}
@@ -533,7 +536,8 @@ padding:10px;}
 /*用户信息*/
 .div-user{ background-image:url(../images/user-bg.jpg); background-size:100% 100%;}
 /*左侧菜单*/
-.side-menu{ background-image:url(../images/side-l-bg.jpg); background-position:bottom center; background-repeat: no-repeat; background-size:100% auto; min-height:520px;}
+.side-menu{ min-height:500px;}
+.smenu-bg{ background-image:url(../images/side-l-bg.jpg); background-position:bottom center; background-repeat: no-repeat; background-size:100% auto;}
 @media (min-width: 1600px) {
 	.side-menu{ min-height:620px;}
 }
@@ -547,12 +551,18 @@ padding:10px;}
 .progress-nav .progress-sign:before,.progress-nav .progress-sign:after{ content: " ";position: absolute;  width:46%; top:10px; border-top:3px solid #e0e0e0; -webkit-transform-origin: 0 0;  transform-origin: 0 0; -webkit-transform: scaleY(.5); transform: scaleY(.5);}
 .progress-nav .progress-sign:before{left: 0;}
 .progress-nav .progress-sign:after{right:0;}
-.progress-nav .col-sm-3:first-child .progress-sign:before,.progress-nav .col-sm-3:last-child .progress-sign:after{border-top:none;}
+.progress-nav .col-sm-3:first-child .progress-sign:before,.progress-nav .col-sm-3:last-child .progress-sign:after,.progress-nav .col-sm-4:first-child .progress-sign:before,.progress-nav .col-sm-4:last-child .progress-sign:after{border-top:none;}
 
 .progress-nav .finish .progress-sign{ border-color:#038dc9; background-color:#199ed8;}
 .progress-nav .active .progress-sign{ border-color:#199ed8;}
 .progress-nav .finish .progress-sign:before,.progress-nav .finish .progress-sign:after,.progress-nav .active .progress-sign:before{ border-top-color:#199ed8;}
 .progress-nav .active .progress-cont{ color:#199ed8;}
+
+.progress-nav .progress-sign.sign-num{ width:40px; height:40px; line-height:36px; font-size:18px; color:#aaa;}
+.progress-nav .progress-sign.sign-num:before,.progress-nav .progress-sign.sign-num:after{top:19px;width:45%;}
+.progress-nav .active .progress-sign{color:#199ed8;}
+.progress-nav .finish .progress-sign{color:#fff;}
+
 
 /*本学期-通过率-色块*/
 .percent{ position:relative; padding:18px 15px;}
@@ -570,4 +580,57 @@ padding:10px;}
 
 /*动态*/
 .dynamic{ padding:15px 15px 15px 70px; min-height:75px;}
-.dynamic .po_ab{}
+
+/*创建体系*/
+.hei100{height:100% !important;}
+textarea.form-control { padding: 4px 10px 4px 10px;}
+.table.table-fbordered >tbody >tr >td{ height:0;}
+
+.cour-labels .label.iblock{ border:1px solid transparent;cursor:pointer;  font-weight:normal;}
+.label-cour.label{ background:#f0f0f0; color:#666; font-weight:normal; font-size:13px;}
+.label-cour.label:hover{ background:#fff; border:1px dashed #199ed8;}
+.label.label-cur{background:#fff; border:1px dashed #199ed8 !important; color:#199ed8;}
+.label-cour.alert,.label-cur.alert{padding: .14em .6em .2em;}
+.label-cour.alert button.close{opacity:.5; float:none;}
+.label-cur.alert button.close{float:none;}
+
+@media (min-width: 768px){
+.modal.modal-creat .modal-dialog{ width:450px;}
+}
+.modal.modal-creat .modal-dialog{ height:100%; margin-bottom:0; margin-top:0;}
+.modal.modal-creat{ left:auto;}
+.modal.modal-creat .modal-backdrop.in{opacity:0;}
+.modal.modal-creat .modal-content.pt61{ padding-top:61px; height:100%; overflow:hidden;}
+.modal.modal-creat .modal-dialog .modal-body{ height:100%; overflow-y:auto;}
+
+.modal-bmenu  .ul-menu{ border-bottom:1px solid #ececec; padding-left:20px; padding-right:20px;}
+.modal-bmenu  .ul-menu:last-child{ border-bottom:none;}
+.modal-bmenu  .ul-menu> li{ border-top:1px solid #eee;}
+.modal-bmenu  .ul-menu> li:first-child{ border-top:none;}
+.modal-bmenu  .ul-menu li ul{padding-left:25px;}
+
+/*设置标签*/
+.alert .form-control{ margin-top:-4px;}
+/*modal-Left-弹窗左侧划入*/  
+.modal.left.fade .modal-dialog{  
+left: -320px;  
+-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;  
+-moz-transition: opacity 0.3s linear, left 0.3s ease-out;  
+-o-transition: opacity 0.3s linear, left 0.3s ease-out;  
+transition: opacity 0.3s linear, left 0.3s ease-out;  
+}  
+
+.modal.left.fade.in .modal-dialog{  left: 0;  }  
+/*modal-Right-弹窗右侧划入*/  
+.modal.right.fade .modal-dialog {  
+right: -320px;  
+-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;  
+-moz-transition: opacity 0.3s linear, right 0.3s ease-out;  
+-o-transition: opacity 0.3s linear, right 0.3s ease-out;  
+transition: opacity 0.3s linear, right 0.3s ease-out;  
+}  
+
+.modal.right.fade.in .modal-dialog {  right: 0;  }  
+
+/*学生-你需要做*/
+.step-stu{ position:relative; display:block; max-width:100%;-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .05);box-shadow: 0 5px 10px rgba(0, 0, 0, .05);}

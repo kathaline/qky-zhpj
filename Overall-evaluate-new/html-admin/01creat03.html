@@ -19,8 +19,11 @@
 <body class="qkybody">
 <div id="qkynav"></div>
 <div class="container po_r mt15">
+    <div class="bor-bgray pa15 clear">
+      <div class="fl fz_16 co_33"><i class="iconfont icon-dingwei mr5 co_93"></i>第三步：设置启用基本信息</div>
+    </div>
   <div class="qkycadr mb15">
-    <div class="row ml0 mr0 mt15 progress-nav pt20 pb20 text-center">
+    <!--<div class="row ml0 mr0 mt15 progress-nav pt20 pb20 text-center">
       <div class="col-sm-4 po_r finish">
         <div class="progress-sign sign-num">1</div>
         <div class="mt15 progress-cont fz_15">创建评价体系</div>
@@ -34,7 +37,7 @@
         <div class="mt15 progress-cont fz_15">设置适用信息</div>
       </div>
       
-    </div>
+    </div>-->
     <div class="pa20 text-warning"><i class="iconfont icon-gantanhao fz_14 mr5"></i>按要求填写体系名称、体系学期与适用学段，学期开始后 学期和学段将无法修改，请谨慎启用</div>
     <form class="form-horizontal pt15">
         <div class="form-group">
@@ -68,19 +71,40 @@
             <div class="col-sm-12 pa0 mt5">
               <label class="checkbox-qky parent fz_nwe" lj="checkbox_grader" isc="no"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>全部学段</label>
             </div>
-            <div class="col-sm-12 pa0 mt5">
-              <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>小学</label>
-              <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>初中</label>
-              <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>高中</label>
+            <div class="col-sm-12 pa0 mt10">
+              <div class="col-sm-2 pa0">
+                <label class="checkbox-qky child fz_nwe bor-r pr20" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>小学</label>
+              </div>
+              <div class="col-sm-10 pa0">
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>一年级</label>
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>二年级</label>
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>三年级</label>
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>四年级</label>
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>五年级</label>
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>六年级</label>
+              </div>
             </div>
-          </div>
-        </div>
-      
-        <div class="form-group">
-          <label class="col-sm-3 text-right pt5 pl0 pr0">行为标签</label>
-          <div class="col-sm-9">
-               <div class="co_33 iblock mr20"><span class="badge bg-grn radius-cirle pa5 mr5"><i class="iconfont icon-finish fz_14"></i></span>已设置</div><a href="01set-label.html" class="btn btn-info"><i class="iconfont icon-shezhi fz_14 mr5"></i>设置行为标签</a>
-         <div class="mt15 mb15 co_93"><i class="iconfont icon-tongzhi fz_14 mr5"></i>提示：建议设置二级指标的行为标签，作为评价学生时可供参考，让评价更加清楚。如无需设置，可直接点击<strong class="co_63">立即启用</strong>。</div>
+            <div class="col-sm-12 pa0 mt10">
+              <div class="col-sm-2 pa0">
+                <label class="checkbox-qky child fz_nwe bor-r pr20" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>初中</label>
+              </div>
+              <div class="col-sm-10 pa0">
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>初一</label>
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>初二</label>
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>初三</label>
+              </div>
+            </div>
+            <div class="col-sm-12 pa0 mt10">
+              <div class="col-sm-2 pa0">
+                <label class="checkbox-qky child fz_nwe bor-r pr20" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>高中</label>
+              </div>
+              <div class="col-sm-10 pa0">
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>高一</label>
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>高二</label>
+                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>高三</label>
+              </div>
+            </div>
+            
           </div>
         </div>
       

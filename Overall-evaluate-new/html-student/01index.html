@@ -40,22 +40,117 @@
     </div>
     <div class="col-sm-9 pa0">
       <div class="col-sm-12 pl0">
-        <div class="qkycadr mb15">
-          <div class="bor-bgray pa15 fz_16 co_33">你需要做？</div>
-          <div class="media pa20 mt0">
-            <div class="media-left">
-              <a href="#">
-                <img class="media-object img-60" src="../images/stu.png">
-              </a>
+        <div class="tab qkycadr mb15" role="tabpanel">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#Section01" aria-controls="app" role="tab" data-toggle="tab" class="fz_16">常用应用</a></li>
+            <li role="presentation"><a href="#Section02" aria-controls="progress" role="tab" data-toggle="tab" class="fz_16">你需要做？</a></li>
+          </ul>
+           <div class="tab-content tabs">
+            <div role="tabpanel" class="tab-pane fade in active" id="Section01">
+              <div class="row pa20 text-center">
+                <div class="col-sm-2">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-xueye"></use>
+                    </svg>
+                  </div>
+                  <div>学业水平</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-jiankang"></use>
+                    </svg>
+                  </div>
+                  <div>身心健康</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-yishu"></use>
+                    </svg>
+                  </div>
+                  <div>艺术素养</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-shijian"></use>
+                    </svg>
+                  </div>
+                  <div>实践活动</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-jubanpeixunban"></use>
+                    </svg>
+                  </div>
+                  <div>课程中心</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-gengduo"></use>
+                    </svg>
+                  </div>
+                  <div>更多应用</div>
+                </div>
+               <!-- <div class="col-sm-3 pa0">
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 text-primary"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 pa0">
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 co_blue"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 text-primary"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 pa0">
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 co_blue"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 text-primary"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 pa0">
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 co_blue"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 text-primary"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                </div>-->
+              </div>
             </div>
-            <div class="media-body">
-              <div class="popover right step-stu">
-              <div class="arrow" style="top: 50%;"></div><div class="popover-content">学生评价进行中，请完成行为评价数据的自查（“学生评价”栏- 点击“数据自查”按钮），如有问题，请直接联系学校管理员或点击“<strong class="text-primary">我要提问</strong>”进行反馈</div>
+            <div role="tabpanel" class="tab-pane fade" id="Section02">
+            <div class="media pa20 mt0">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object img-60" src="../images/stu.png">
+                </a>
+              </div>
+              <div class="media-body">
+                <div class="popover right step-stu">
+                <div class="arrow" style="top: 50%;"></div><div class="popover-content">学生评价进行中，请完成行为评价数据的自查（“学生评价”栏- 点击“数据自查”按钮），如有问题，请直接联系学校管理员或点击“<strong class="text-primary">我要提问</strong>”进行反馈</div>
+              </div>
+              </div>
             </div>
             </div>
           </div>
-          
         </div>
+        
       </div>
       <div class="col-sm-8 pl0">
         
@@ -211,20 +306,26 @@
               <!--冷启动begin-->
               <div class="qkycadr mb15">
                 <div class="nodata">
-                  <div><img src="../images/nowork.png"></div>
+                  <svg class="icon fz_100" aria-hidden="true">
+                    <use xlink:href="#icon-wushuju"></use>
+                  </svg>
                   <div class="pa15">暂无统计数据，请稍后查看</div>
                 </div>
               </div>
               <div class="qkycadr mb15">
                 <div class="nodata">
-                  <div><img src="../images/nowork.png"></div>
+                  <svg class="icon fz_100" aria-hidden="true">
+                    <use xlink:href="#icon-wushuju"></use>
+                  </svg>
                   <div class="pa15">暂无任何数据</div>
                 </div>
               </div>
               <div class="qkycadr mb15">
                 <div class="pa15 clear fz_15"><i class="iconfont icon-bingzhuangtu mr5"></i>期末考试</div>
                 <div class="nodata">
-                  <div><img src="../images/nowork.png"></div>
+                  <svg class="icon fz_100" aria-hidden="true">
+                    <use xlink:href="#icon-wushuju"></use>
+                  </svg>
                   <div class="pa15">学校暂未上传成绩</div>
                 </div>
               </div>
@@ -296,7 +397,9 @@
               <!--冷启动begin-->
               <div class="qkycadr mb15">
                 <div class="nodata">
-                  <div><img src="../images/nonews.png"></div>
+                  <svg class="icon fz_100" aria-hidden="true">
+                    <use xlink:href="#icon-wudongtai"></use>
+                  </svg>
                   <div class="pa15">暂无动态信息，请稍后查看</div>
                 </div>
               </div>
@@ -359,7 +462,9 @@
         <div class="qkycadr mb15">
           <div class="bor-bgray pa15 fz_16 co_33">待审核任务<span class="co_93 fz_13">（<strong class="text-warning">0</strong>）</span></div>
           <div class="nodata">
-            <div><img src="../images/notask.png"></div>
+            <svg class="icon fz_100" aria-hidden="true">
+              <use xlink:href="#icon-wurenwu"></use>
+            </svg>
             <div class="pa15">暂无待审核事项</div>
           </div>
         </div>
@@ -369,7 +474,9 @@
             <a href="#" class="fr co_63">更多<i class="iconfont icon-gengduo1"></i></a>
           </div>
           <div class="nodata">
-            <div><img src="../images/nohonor.png"></div>
+            <svg class="icon fz_100" aria-hidden="true">
+              <use xlink:href="#icon-wurongyu"></use>
+            </svg>
             <div class="pa15">暂无荣誉</div>
           </div>
         </div>
@@ -379,7 +486,9 @@
             <a href="#" class="fr co_63">更多<i class="iconfont icon-gengduo1"></i></a>
           </div>
           <div class="nodata">
-            <div><img src="../images/noact.png"></div>
+            <svg class="icon fz_100" aria-hidden="true">
+              <use xlink:href="#icon-wuhuodong"></use>
+            </svg>
             <div class="pa15">暂无活动</div>
           </div>
         </div>
@@ -394,6 +503,7 @@
 <!--模块化js--> 
 <script src="../js/sea.js"></script> 
 <script src="../js/seaconfig2.0.js"></script> 
+<script src="../iconfont/ncolor/iconfont.js"></script> 
 <script src="../js/plug-in/echarts/echarts.min.js"></script> 
 <script>
  seajs.use(["jq","bs","nav","data_v_s"]

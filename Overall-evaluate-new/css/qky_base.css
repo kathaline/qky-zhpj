@@ -14,6 +14,14 @@ body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-
 ul,li{ padding:0; margin:0; list-style:none;}
 label{ margin:0;}
 a:hover,a:focus{ text-decoration:none;}
+
+/*彩色图标*/
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
 /*整体框架基础*/
 .qkyff_fluid{ background:#fff; width:100%;}
 .container {width:100%;}
@@ -566,9 +574,12 @@ padding:10px;}
 .progress-nav .finish .progress-sign{color:#fff;}
 
 /*本学期-通过率-色块*/
-.percent{ position:relative; padding:18px 15px;}
+.percent{ position:relative; padding:18px 5px 18px 15px;}
 .percent img.po_ab{ width:100%; height: 100%;opacity:0.05;filter:alpha(opacity=5); z-index:0;}
 .percent .per-cont{ position:relative; z-index:1;}
+.percent-tops{cursor:pointer;}
+.percent-tops .popover.po_ab{ width:214px; top:28px; }
+.percent-tops:hover .popover.po_ab{ display:block;}
 
 /*审核任务 */
 .div-box >li,.div-box >div{ border-bottom:1px solid #eaf0f3; padding-top:15px; padding-bottom:15px;}
@@ -578,9 +589,17 @@ padding:10px;}
 .dynamic{ padding:15px 15px 15px 70px; min-height:75px;}
 
 /*创建体系*/
-.hei100{height:100% !important;}
+.table.hei100 tbody,.table.hei100 tr,.table.hei100 td{ height:100%;}
+.over-h{ overflow:hidden;height:100%;}
+.over-h .form-control{ height:100%;overflow:hidden; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
 textarea.form-control { padding: 4px 10px 4px 10px;}
-.table.table-fbordered >tbody >tr >td{ height:0;}
+textarea.form-control.hei100[rows="2"]{ min-height:50px;}
+.table.table-fbordered >tbody >tr >td{ height:0;height:100%\9;}
+.over-h input.form-control{ min-height:50px\9;}
+@-moz-document url-prefix() { 
+  .over-h input.form-control{ min-height:50px;}
+  .table.table-fbordered >tbody >tr >td{height:100%;}
+}
 
 .cour-labels .label.iblock{ border:1px solid transparent;cursor:pointer;  font-weight:normal;}
 .label-cour.label{ background:#f0f0f0; color:#666; font-weight:normal; font-size:13px;}

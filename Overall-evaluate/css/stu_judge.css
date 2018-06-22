@@ -1023,8 +1023,12 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 
 .fil_more{ position:relative;}
 .fil_more:hover .div_more{ display:block; position:absolute; right:0; z-index:10; top:25px; background:#fff;}
-.div_more ul{ width:auto; min-width:350px; padding:5px;}
+.div_more ul{ width:auto; min-width:650px; padding:5px;}
 .div_more li{ margin:5px 0;}
+.div_more ul li{ padding-left:80px;}
+.div_more ul li span.p-a{ left:0;border-right:1px solid #dfdfdf;}
+.div_more ul li span{ display:inline-block }
+.div_more ul li span:last-child{border-right:none;}
 .div_more li a{ float:inherit; margin:5px 10px; height:26px; line-height:26px;}
 .div_more li a:hover{color:#21a2db;}
 

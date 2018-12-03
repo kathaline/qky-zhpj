@@ -7,7 +7,7 @@ define({
 	navdata:{/*导航数据*/
 		"logosrc":"images/nav_logo/logo.png",
 		"pjname":"学生电子信息",
-		"navli":[["学生电子信息","href='index.html'"],["电子信息管理","href='index_gl.html'"],["电子信息统计","href='index_tj.html'"]],
+		"navli":[["基础信息","href='index_basic.html'"],["学生信息","href='index.html'"],["信息管理","href='index_gl.html'"],["数据统计","href='index_tj.html'"]],
 		"navli_active":0,
 		"moreli":{
 			"校园办公":["xiaoyuanbangong",[["个人办公","href='#'"],["行政办公","href='#'"],["流程审批","href='#'"]]],

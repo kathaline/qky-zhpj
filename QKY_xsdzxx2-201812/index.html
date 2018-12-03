@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
   <body class="qkybody">
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" id="qkynav"></nav>
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation" id="qkynav"></nav>
     <div class="container po_r mt20">
       <a class="btn-border po_a_r pt5 pb5" id="ljtag_btn" isc="no"><i class="qkyicon_14">&#xe67d;</i><br><span>收<br>起<br>条<br> 件</span></a>
       
@@ -67,6 +67,7 @@
                       <div class="iblock">
                           <span class="po_r pr20 bg_gray02">男<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">农村户口,非农村户口<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">走读,住校<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">就近入学,艺术特招,体育特招,统一招生考试<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">独生子女,非独生子女<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span>                  
                       </div>
+                      <a class="btn btn-success fr mt5 ml15" role="button" data-toggle="modal" data-target="#myModal"><i class="qkyicon_14 mr5">&#xe63a;</i>导出结果</a>
                       <a class="btn btn-success fr mt5" role="button" data-toggle="modal" data-target="#myModal"><i class="qkyicon_14 mr5">&#xe671;</i>高级搜索</a>
                       </td>               
                   </tr>
@@ -265,14 +266,16 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">性别：</label>
               <div class="col-sm-9">
-                <div class="hei27 radio pt0">
-                      <label class="radio-qky clear pl0 pt0" id="radio_value_1">
+               <div class="checkbox">
+                  <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>男</label>
+                  <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>女</label>
+<!--                      <label class="radio-qky clear pl0 pt0" id="radio_value_1">
                         <a class="radio_a fl"><b></b></a><span class="fr ml5">男</span>
                       </label>
                       <label class="radio-qky clear pt0" id="radio_value_2">
                         <a class="radio_a fl"><b></b></a><span class="fr ml5">女</span>
                       </label>    
-                </div>
+-->                </div>
               </div>
             </div>
             <div class="form-group">
@@ -391,7 +394,6 @@
               </div>
             </div>
             
-        </form>
             <div class="form-group border-t pt10 pb10">
               <label class="col-sm-2 control-label t_r pt10">已选条件：</label>
               <div class="col-sm-9 pl5">
@@ -402,6 +404,7 @@
                 </div>
               </div>
             </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -416,7 +419,7 @@
     <script src="dist/sea.js"></script>
     <script>
      seajs.use(["bootstrap/3.3.0/js/bootstrap.min","comjs/nav_add1.1","comjs/iconfont","./js/lj_navbar","./js/radio","./js/check",],function(){
-		 $("#qkynav").qkynav();
+		 $("#qkynav").qkynav({navli_active:1});
 		 //$(".tips").tooltip({placement:"top"});//更改标签显示方式
 		 $(".stu_li").on("click",function(){
 		   	 window.location.href="index_info.html"; 

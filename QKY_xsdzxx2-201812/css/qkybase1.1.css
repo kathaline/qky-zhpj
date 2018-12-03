@@ -489,13 +489,14 @@ footer.default{ background:#fff; }
 .r90{transform:rotate(-90deg); -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);}/*旋转90度  ie8以及以下没作用*/
 .r180{transform:rotate(-180deg); -webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg); display:inline-block;}
 .r180,.r90,.trn{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}/*过度执行动画  ie8以及以下没作用*/
-.height30{ height:30px; padding:4px 12px;}
+.height30{ height:30px !important; padding:4px 12px;}
 .height34{ height:34px; padding:6px 12px;}
 .t_c{ text-align:center;}
 .t_l{ text-align:left;}
 .t_r{ text-align:right;}
 
 .fz_we{ font-weight:bold!important;}
+.fz_nwe{ font-weight:normal !important;}
 .fz_12{ font-size:12px!important;}
 .fz_13{ font-size:12px!important;}
 .fz_14{ font-size:14px!important;}
@@ -589,3 +590,11 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 /*提示框*/
 .tips.po_r .po_a_l{ display:none;}
 .tips.po_r:hover .po_a_l{ display:block; top:20px; width:500px;}
+/*新增基础信息*/
+.box-div{ border:1px solid #ddd; background:#fff;}
+.tit-div{ border-bottom:1px solid #ddd; padding:15px; margin-top:0; font-size:16px; line-height: 1.42857143;}
+.menu-ul{ padding:0;}
+.menu-ul li{ list-style:none; margin-bottom:10px;}
+.menu-ul li a{ padding:10px 15px 10px 20px; display:block; color:#666;}
+.menu-ul li.active a{ border-left:3px solid #2baf2b; color:#2baf2b;}
+.table_ljchoose span.text-danger{color: #a94442;}

@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
   <body class="qkybody">
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" id="qkynav"></nav>
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation" id="qkynav"></nav>
     <div class="qkyff_fluid">
         <div class="container">
           <div class="row pt15 pb15"> 
@@ -223,7 +223,7 @@
     <script src="dist/sea.js"></script>
     <script>
      seajs.use(["bootstrap/3.3.0/js/bootstrap.min","comjs/nav_add1.1","comjs/iconfont","./js/info_nav"],function(){
-		 $("#qkynav").qkynav();  
+		 $("#qkynav").qkynav({navli_active:1});  
 	});
     </script>
   </body>

@@ -17,14 +17,12 @@
 <![endif]-->
 <!--附加css-->
 <link href="../css/stu_judge.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
-<script language="JavaScript" charset="utf-8" src="../js/js_pack.js"></script>
 <!--js-->
 <script src="../dist/sea.js"></script>
 <script src="../dist/seaconfig.js"></script>
 <script>
- seajs.use(["bs","nav","navicon","com/radio_checkbox1.1","com/dropdown_havevalue"],function(){
+ seajs.use(["bs","nav","navicon",],function(){
 	 $("#qkynav").qkynav();
  });
 </script>
@@ -44,9 +42,8 @@
    <div class="judge_wraper">
     <div class="cont-wrap">
       <div class="cont_tit">
-         <div class="fr"><a href="06活动主题-管理员.html" class="bg_blue"><i class="qkyicon">&#xe6b0;</i>活动管理</a></div>
-         <div class="fl"><h3><i class="qkyicon">&#xe6ec;</i>学生活动信息</h3>
-         </div>
+         <div class="fr"><a href="06批量导入.html" class="bg_blue"><i class="qkyicon fz_1">&#xe72e;</i>批量导入</a><a href="06添加主题-新增（社区）.html" class="bg_blue"><i class="qkyicon fz_1">&#xe769;</i>活动发布</a><a class="bg_blue" href="06活动管理-管理员.html"><i class="qkyicon fz_1">&#xe613;</i>活动管理</a></div>
+         <div class="fl"><h3><i class="qkyicon">&#xe6ec;</i>实践活动汇总</h3></div>
       </div>
 	 
       <div class="judge_srh">
@@ -76,7 +73,70 @@
 
          </ul>
       </div>
-      
+      <div class="bor_lb pad_l10 mar_lr20 mar_tb10">条件筛选下，共计<strong class="co_y mar_lr5">231</strong>次活动，各项活动如下</div>
+      <div class="stu_jcont list-02 pad_lr20">
+         <table width="100%" border="0" cellspacing="1" cellpadding="1" class="table table-bordered">
+          <thead>
+            <tr>
+              <th width="16%" scope="col">活动类型</th>
+              <th width="8%" scope="col">累计次数</th>
+              <th width="9%" scope="col">累计时长(H)</th>
+              <th width="16%" scope="col">活动类型</th>
+              <th width="9%" scope="col">累计次数</th>
+              <th width="9%" scope="col">累计时长(H)</th>
+              <th width="16%" scope="col">活动类型</th>
+              <th width="8%" scope="col">累计次数</th>
+              <th width="9%" scope="col">累计时长(H)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>军事训练</th>
+              <td>1</td>
+              <td>13.5</td>
+              <th>参观体验</th>
+              <td>1</td>
+              <td>13.5</td>
+              <th>党团活动</th>
+              <td>1</td>
+              <td>13.5</td>
+            </tr>
+            <tr>
+              <th>生产劳动</th>
+              <td>2</td>
+              <td>9</td>
+              <th>研学旅行</th>
+              <td>2</td>
+              <td>9</td>
+              <th>社团活动</th>
+              <td>2</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <th>社会调查</th>
+              <td>1</td>
+              <td>13.5</td>
+              <th>科技创新、研究学习成果</th>
+              <td>1</td>
+              <td>--</td>
+              <th>志愿服务</th>
+              <td>1</td>
+              <td>13.5</td>
+            </tr>
+            <tr>
+              <th>勤工俭学</th>
+              <td>2</td>
+              <td>9</td>
+              <th>创造发明成果</th>
+              <td>2</td>
+              <td>--</td>
+              <th>公益活动</th>
+              <td>2</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+           </table>
+      </div>
    </div>
    <div class="judge_wraper">
      <div class="judge_cont_2">
@@ -84,10 +144,8 @@
        <div class="judge_mage">
            
           <div class="judge_tit judge_tab-t pad_lr20">
-            <ul class="ul_mage fl">
-               <li><a href="#" class="current">全部活动<strong class="co_y">126</strong>个</a></li>
-               <li><a href="#">我的发布<strong class="co_y">46</strong>个</a></li>
-            </ul>
+            <div class="fl pad_t15 fz15"><i class="qkyicon">&#xe65d;</i>活动列表</div>
+            
             <div class="fr fil_more"><a href="#" class="bg_gray">筛选<i class="qkyicon fz_0 mar_l5">&#xe66f;</i></a>
               <div class="div_more bor_all yc"> 
               <ul>
@@ -123,56 +181,56 @@
           <div class="rep_list">
              <ul class="honor_list sjhd_lists">
                 <li class="bor_all">
-                  <a href="#"><div class="rep_pic"><img src="../images/stu_judge/act0.jpg"/></div></a>
+                  <a href="06(管理员)实践活动-活动详情.html"><div class="rep_pic"><img src="../images/stu_judge/act0.jpg"/></div></a>
                   <div class="hon_intro pad_lr10">
                     <p class="sjhd_t mar_tb10 bor_btm"><a href="#" title=""><strong class="co_b mar_r5">[社会实践]</strong>全国第三节奥数一等奖</a></p>
                     <p class="sjhd_date co_999"><span><i class="qkyicon mar_r5">&#xe69b;</i>2016-12-01~2016-12-09</span><span class="mar_l15 co_green"><i class="qkyicon fz_2">&#xe706;</i>进行中</span></p>
                   </div>
                 </li>
                 <li class="bor_all">
-                  <a href="#"><div class="rep_pic"><img src="../images/stu_judge/act0.jpg"/></div></a>
+                  <a href="06(管理员)实践活动-活动详情.html"><div class="rep_pic"><img src="../images/stu_judge/act0.jpg"/></div></a>
                   <div class="hon_intro pad_lr10">
                     <p class="sjhd_t mar_tb10 bor_btm"><a href="#" title=""><strong class="co_b mar_r5">[社区服务]</strong>第三届物理知识竞赛初中组甲等全国第三节奥数一等奖</a></p>
                     <p class="sjhd_date co_999"><span><i class="qkyicon mar_r5">&#xe69b;</i>2016-12-01~2016-12-09</span><span class="mar_l15 co_green"><i class="qkyicon fz_2">&#xe706;</i>进行中</span></p>
                   </div>
                 </li>
                 <li class="bor_all">
-                  <a href="#"><div class="rep_pic"><img src="../images/stu_judge/u=2836002265,3861354015&fm=23&gp=0.jpg"/></div></a>
+                  <a href="06(管理员)实践活动-活动详情.html"><div class="rep_pic"><img src="../images/stu_judge/u=2836002265,3861354015&fm=23&gp=0.jpg"/></div></a>
                   <div class="hon_intro pad_lr10">
                     <p class="sjhd_t mar_tb10 bor_btm"><a href="#" title=""><strong class="co_b mar_r5">[社会实践]</strong>第三届物理知识竞赛初中组甲等全国第三节奥数第三届物理知识竞赛初中组甲等全国第三节奥数一等奖</a></p>
                     <p class="sjhd_date co_999"><span><i class="qkyicon mar_r5">&#xe69b;</i>2016-12-01~2016-12-09</span><span class="mar_l15 co_green"><i class="qkyicon fz_2">&#xe706;</i>进行中</span></p>
                   </div>
                 </li>
                 <li class="bor_all">
-                  <a href="#"><div class="rep_pic"><img src="../images/stu_judge/u=4259780311,133181763&fm=23&gp=0.jpg"/></div></a>
+                  <a href="06(管理员)实践活动-活动详情.html"><div class="rep_pic"><img src="../images/stu_judge/u=4259780311,133181763&fm=23&gp=0.jpg"/></div></a>
                   <div class="hon_intro pad_lr10">
                     <p class="sjhd_t mar_tb10 bor_btm"><a href="#" title=""><strong class="co_b mar_r5">[社区服务]</strong>初中组甲等全国第三节奥数一等奖</a></p>
                     <p class="sjhd_date co_999"><span><i class="qkyicon mar_r5">&#xe69b;</i>2016-12-01~2016-12-09</span><span class="mar_l15 co_green"><i class="qkyicon fz_2">&#xe706;</i>进行中</span></p>
                   </div>
                 </li>
                 <li class="bor_all">
-                  <a href="#"><div class="rep_pic"><img src="../images/stu_judge/u=3544148112,2870303507&fm=21&gp=0.jpg"/></div></a>
+                  <a href="06(管理员)实践活动-活动详情.html"><div class="rep_pic"><img src="../images/stu_judge/u=3544148112,2870303507&fm=21&gp=0.jpg"/></div></a>
                   <div class="hon_intro pad_lr10">
                     <p class="sjhd_t mar_tb10 bor_btm"><a href="#" title=""><strong class="co_b mar_r5">[社会实践]</strong>全国第三节奥数一等奖</a></p>
                     <p class="sjhd_date co_999"><span><i class="qkyicon mar_r5">&#xe69b;</i>2016-12-01~2016-12-09</span><span class="mar_l15 co_green"><i class="qkyicon fz_2">&#xe706;</i>进行中</span></p>
                   </div>
                 </li>
                 <li class="bor_all">
-                  <a href="#"><div class="rep_pic"><img src="../images/stu_judge/u=3400835992,2253561262&fm=23&gp=0.jpg"/></div></a>
+                  <a href="06(管理员)实践活动-活动详情.html"><div class="rep_pic"><img src="../images/stu_judge/u=3400835992,2253561262&fm=23&gp=0.jpg"/></div></a>
                   <div class="hon_intro pad_lr10">
                     <p class="sjhd_t mar_tb10 bor_btm"><a href="#" title=""><strong class="co_b mar_r5">[社区服务]</strong>第三届物理知识竞赛初中组甲等全国第三节奥数一等奖</a></p>
                     <p class="sjhd_date co_999"><span><i class="qkyicon mar_r5">&#xe69b;</i>2016-12-01~2016-12-09</span><span class="mar_l15 co_green"><i class="qkyicon fz_2">&#xe706;</i>进行中</span></p>
                   </div>
                 </li>
                 <li class="bor_all">
-                  <a href="#"><div class="rep_pic"><img src="../images/stu_judge/u=2836002265,3861354015&fm=23&gp=0.jpg"/></div></a>
+                  <a href="06(管理员)实践活动-活动详情.html"><div class="rep_pic"><img src="../images/stu_judge/u=2836002265,3861354015&fm=23&gp=0.jpg"/></div></a>
                   <div class="hon_intro pad_lr10">
                     <p class="sjhd_t mar_tb10 bor_btm"><a href="#" title=""><strong class="co_b mar_r5">[社会实践]</strong>第三届物理知识竞赛初中组甲等全国第三节奥数第三届物理知识竞赛初中组甲等全国第三节奥数一等奖</a></p>
                     <p class="sjhd_date co_999"><span><i class="qkyicon mar_r5">&#xe69b;</i>2016-12-01~2016-12-09</span><span class="mar_l15 co_green"><i class="qkyicon fz_2">&#xe706;</i>进行中</span></p>
                   </div>
                 </li>
                 <li class="bor_all">
-                  <a href="#"><div class="rep_pic"><img src="../images/stu_judge/u=4259780311,133181763&fm=23&gp=0.jpg"/></div></a>
+                  <a href="06(管理员)实践活动-活动详情.html"><div class="rep_pic"><img src="../images/stu_judge/u=4259780311,133181763&fm=23&gp=0.jpg"/></div></a>
                   <div class="hon_intro pad_lr10">
                     <p class="sjhd_t mar_tb10 bor_btm"><a href="#" title=""><strong class="co_b mar_r5">[社会实践]</strong>初中组甲等全国第三节奥数一等奖</a></p>
                     <p class="sjhd_date co_999"><span><i class="qkyicon mar_r5">&#xe69b;</i>2016-12-01~2016-12-09</span><span class="mar_l15 co_gray"><i class="qkyicon fz_1">&#xe701;</i>已结束</span></p>

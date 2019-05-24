@@ -299,4 +299,3 @@ a.checkbox_a{display:block; width:16px; height:16px; border:1px solid #dadada; b
 .disabled.select a.checkbox_a{background:#2baf2b; border:1px solid #2baf2b; opacity:0.4;}
 .error a.checkbox_a{background:#ffffff; border:1px solid #f0485f;}
 .error.select a.checkbox_a{background:#f0485f; border:1px solid #f0485f;}
-

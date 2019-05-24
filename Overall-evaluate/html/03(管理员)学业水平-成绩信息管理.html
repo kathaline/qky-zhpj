@@ -9,7 +9,6 @@
 <link href="../dist/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
 <!--框架css-->
 <link href="../css/frame_type_1.0.css" rel="stylesheet" type="text/css"/>
-
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -42,184 +41,1306 @@
    
    <div class="judge_wraper">
     <div class="cont-wrap">
-      <div class="cont_tit">
-         <div class="fr"><a  href="03(管理员)学业水平-批量导入.html" class="bg_blue"  ><i class="qkyicon">&#xe72e;</i>成绩导入</a></div>
-         <div class="fl"><h3><i class="qkyicon">&#xe6ec;</i>考试信息列表</h3></div>
-      </div>
-	 
-      <div class="judge_srh">
-         
-         <ul class="ul_srh fl">
-            <li><span>当前学期：</span>
-                <select name="select" class="term-wid">
-                  <option selected>2016-2017学年第一学期</option>
-                  <option>1班</option>
-                  <option>10班</option>
-                </select>
-            </li>
-            <li><span>当前年级：</span>
-                <select name="select">
-                  <option selected>一年级</option>
-                  <option>一年级</option>
-                  <option>初三</option>
-                </select>
-            </li>
-			 <li><span>考试类型：</span>
-                <select name="select">
-                  <option selected>全部类型</option>
-                  <option>期末</option>
-                  <option>期中</option>
-				  <option>月考</option>
-                </select>
-            </li>
-         </ul>
-         <div class="fr"><a href="#" class="bg_gray mar_r10"><i class="qkyicon">&#xe6b9;</i>删除考试</a><a href="#" class="bg_gray"><i class="qkyicon fz_0">&#xe6ae;</i>导出成绩</a></div>
-      </div>
-      
-      <div class="top_noline pad_lr20">
-      <div class="stu_jcont list-02">
-         <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
-          <tr>
-            <th width="4%" scope="col">
-                  <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_0">
-                  
-            </th>
-            <th width="22%" scope="col">考试名称</th>
-            <th width="7%" scope="col">类别</th>
-            <th width="19%" scope="col">考试时间段</th>
-            <th width="7%" scope="col">年级</th>
-            <th width="14%" scope="col">考试班级</th>
-            <th width="8%" scope="col">导入人员</th>
-            <th width="9%" scope="col">操作</th>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_1">
-                 </td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1 mar_r10" title="统计">&#xe7ab;</a><a href="" class="qkyicon_14 fz_2" title="发送提醒">&#xe63a;</a></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_2">
-                  </td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_3">
-                 </td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_4">
-                  </td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_5">
-                  </td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_6">
-                  </td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_7">
-                 </td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_8"></td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_9"></td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_10"></td>
-            <td>2016-2017学年上学期期末考试</td>
-            <td>期末</td>
-            <td>2016-06-30~2016-07-01</td>
-            <td>小一</td>
-            <td>1班、2班、3班</td>
-            <td>赖小龙</td>
-            <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
-          </tr>
-        </table>
-        <div class="div-page">
-          <a href="#" class="no">上一页</a>
-          <a href="#" class="cur">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          ...
-          <a href="#">12</a>
-          <a href="#">下一页</a>
-          <input name="" type="text" placeholder="输入页码" class="txt_num">
-          <a href="#" class="bg_blue">GO</a>
+      <div class="tab " role="tabpanel">
+         <div class="nav nav-tabs">
+          <ul class="fl" role="tablist">
+            <li role="presentation"><a href="#Section01" aria-controls="" role="tab" data-toggle="tab" class="fz_16">必修和选修</a></li>
+            <li role="presentation"><a href="#Section02" aria-controls="" role="tab" data-toggle="tab" class="fz_16">学业考试</a></li>
+            <li role="presentation"><a href="#Section03" aria-controls="" role="tab" data-toggle="tab" class="fz_16">选修I（B）和选修II</a></li>
+            <li role="presentation" class="active"><a href="#Section04" aria-controls="" role="tab" data-toggle="tab" class="fz_16">学科竞赛</a></li>
+          </ul>
+          <div class="fr mar_t15 mar_r20"><a  href="03(管理员)学业水平-批量导入.html" class=" co_b"><i class="qkyicon">&#xe72e;</i>批量导入</a></div>
+         </div>
+         <div class="tab-content tabs">
+          <div role="tabpanel" class="tab-pane fade" id="Section01">
+            <div class="judge_srh pad_lr20">
+               
+               <ul class="ul_srh fl">
+                  <li><span>当前学期：</span>
+                      <select name="select" class="term-wid">
+                        <option selected>2016-2017学年第一学期</option>
+                        <option>1班</option>
+                        <option>10班</option>
+                      </select>
+                  </li>
+                  <li><span>当前年级：</span>
+                      <select name="select">
+                        <option selected>一年级</option>
+                        <option>一年级</option>
+                        <option>初三</option>
+                      </select>
+                  </li>
+                   <li><span>考试类型：</span>
+                      <select name="select">
+                        <option selected>全部类型</option>
+                        <option>期末</option>
+                        <option>期中</option>
+                        <option>月考</option>
+                      </select>
+                  </li>
+               </ul>
+               <div class="fr"><a href="#" class="bg_gray mar_r10"><i class="qkyicon">&#xe6cf;</i>科目设置</a><a href="#" class="bg_gray mar_r10"><i class="qkyicon">&#xe6b9;</i>删除考试</a><a href="#" class="bg_gray"><i class="qkyicon fz_0">&#xe6ae;</i>导出成绩</a></div>
+            </div>
+            
+            <div class="top_noline pad_lr20">
+            <div class="stu_jcont list-02">
+               <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
+                <tr>
+                  <th width="8%" scope="col">
+                        <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_0">
+                        
+                  </th>
+                  <th width="20%" scope="col">考试名称</th>
+                  <th width="9%" scope="col">考试类型</th>
+                  <th width="17%" scope="col">考试时间</th>
+                  <th width="36%" scope="col">考试班级</th>
+                  <th width="10%" scope="col">操作</th>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_1">
+                       </td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、初一（1）班、初一（1）班、初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1 mar_r10" title="统计">&#xe7ab;</a><a href="" class="qkyicon_14 fz_2" title="发送提醒">&#xe63a;</a></td>
+                </tr>
+                <tr>
+                  <td> <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_2">
+                        </td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30~2016-07-01</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_3">
+                       </td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30~2016-07-01</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
+                </tr>
+                <tr>
+                  <td> <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_4">
+                        </td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30~2016-07-01</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_5">
+                        </td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30~2016-07-01</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_6">
+                        </td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30~2016-07-01</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_7">
+                       </td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30~2016-07-01</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
+                </tr>
+                <tr>
+                  <td> <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_8"></td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30~2016-07-01</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_9"></td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30~2016-07-01</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_10"></td>
+                  <td>2016-2017学年上学期期末考试</td>
+                  <td>期末</td>
+                  <td>2016-06-30~2016-07-01</td>
+                  <td>初一（1）班、初一（1）班、初一（1）班、</td>
+                  <td><a href="03(管理员)学业水平-成绩详情.html" class="qkyicon_14 mar_r10" title="查看">&#xe610;</a><a href="03(管理员)学业水平-成绩统计.html" class="qkyicon fz_1" title="统计">&#xe7ab;</a></td>
+                </tr>
+              </table>
+              <div class="div-page">
+                <a href="#" class="no">上一页</a>
+                <a href="#" class="cur">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                ...
+                <a href="#">12</a>
+                <a href="#">下一页</a>
+                <input name="" type="text" placeholder="输入页码" class="txt_num">
+                <a href="#" class="bg_blue">GO</a>
+              </div>
+               
+            </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="Section02">
+            <div class="judge_srh pad_lr20">
+               
+               <ul class="ul_srh fl">
+                  <li><span>当前学期：</span>
+                      <select name="select" class="term-wid">
+                        <option selected>2016-2017学年第一学期</option>
+                        <option>1班</option>
+                        <option>10班</option>
+                      </select>
+                  </li>
+                  <li><span>当前年级：</span>
+                      <select name="select">
+                        <option selected>一年级</option>
+                        <option>一年级</option>
+                        <option>初三</option>
+                      </select>
+                  </li>
+               </ul>
+               <div class="fr"><a href="#" class="bg_gray mar_r10" data-toggle="modal" data-target="#add1"><i class="qkyicon">&#xe6cf;</i>单个新增</a><a href="#" class="bg_gray mar_r10" data-toggle="modal" data-target="#delete1"><i class="qkyicon">&#xe6b9;</i>删除选中</a><a href="#" class="bg_gray"><i class="qkyicon fz_0">&#xe6ae;</i>导出成绩</a></div>
+            </div>
+            
+            <div class="top_noline pad_lr20">
+            <div class="stu_jcont list-02">
+               <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
+                <tr>
+                  <th width="8%" scope="col">
+                        <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_0">
+                        
+                  </th>
+                  <th scope="col">年级</th>
+                  <th scope="col">班级</th>
+                  <th scope="col">学生</th>
+                  <th scope="col">科目</th>
+                  <th scope="col">合格线考试</th>
+                  <th scope="col">等级性考试</th>
+                  <th scope="col">操作考试</th>
+                  <th scope="col">操作</th>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_1">
+                       </td>
+                  <td>一年级</td>
+                  <td>一年级(1)班</td>
+                  <td>安静</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><a href="" class="qkyicon_14 mar_r10" title="编辑" data-toggle="modal" data-target="#edit1">&#xe60f;</a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+              <div class="div-page">
+                <a href="#" class="no">上一页</a>
+                <a href="#" class="cur">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                ...
+                <a href="#">12</a>
+                <a href="#">下一页</a>
+                <input name="" type="text" placeholder="输入页码" class="txt_num">
+                <a href="#" class="bg_blue">GO</a>
+              </div>
+               
+            </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="Section03">
+            <div class="judge_srh pad_lr20">
+               
+               <ul class="ul_srh fl">
+                  <li><span>当前学期：</span>
+                      <select name="select" class="term-wid">
+                        <option selected>2016-2017学年第一学期</option>
+                        <option>1班</option>
+                        <option>10班</option>
+                      </select>
+                  </li>
+                  <li><span>当前年级：</span>
+                      <select name="select">
+                        <option selected>一年级</option>
+                        <option>一年级</option>
+                        <option>初三</option>
+                      </select>
+                  </li>
+                  <li><span>成绩类型：</span>
+                      <select name="select">
+                        <option selected>全部</option>
+                        <option>选修I（B）</option>
+                        <option>选修II</option>
+                      </select>
+                  </li>
+               </ul>
+               <div class="fr"><a href="#" class="bg_gray mar_r10" data-toggle="modal" data-target="#add2"><i class="qkyicon">&#xe6cf;</i>单个新增</a><a href="#" class="bg_gray mar_r10" data-toggle="modal" data-target="#delete1"><i class="qkyicon">&#xe6b9;</i>删除选中</a><a href="#" class="bg_gray"><i class="qkyicon fz_0">&#xe6ae;</i>导出成绩</a></div>
+            </div>
+            
+            <div class="top_noline pad_lr20">
+            <div class="stu_jcont list-02">
+               <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
+                <tr>
+                  <th width="8%" scope="col">
+                        <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_0">
+                        
+                  </th>
+                  <th scope="col">年级</th>
+                  <th scope="col">班级</th>
+                  <th scope="col">学生</th>
+                  <th scope="col">类型</th>
+                  <th scope="col">科目</th>
+                  <th scope="col">模块</th>
+                  <th scope="col">总学时</th>
+                  <th scope="col">学分</th>
+                  <th scope="col">成绩</th>
+                  <th scope="col">操作</th>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_1">
+                       </td>
+                  <td>一年级</td>
+                  <td>一年级(1)班</td>
+                  <td>安静</td>
+                  <td>选修I（B）</td>
+                  <td>对联文化研究</td>
+                  <td>语文</td>
+                  <td>18 </td>
+                  <td>1</td>
+                  <td>合格</td>
+                  <td><a href="" class="qkyicon_14 mar_r10" title="编辑" data-toggle="modal" data-target="#edit2">&#xe60f;</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_1"></td>
+                  <td>一年级</td>
+                  <td>一年级(1)班</td>
+                  <td>安静</td>
+                  <td>选修II</td>
+                  <td>高中新高考选课下的生涯规划</td>
+                  <td>数学</td>
+                  <td>18</td>
+                  <td>1</td>
+                  <td>合格</td>
+                  <td><a href="" class="qkyicon_14 mar_r10" title="编辑" data-toggle="modal" data-target="#edit2">&#xe60f;</a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+              <div class="div-page">
+                <a href="#" class="no">上一页</a>
+                <a href="#" class="cur">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                ...
+                <a href="#">12</a>
+                <a href="#">下一页</a>
+                <input name="" type="text" placeholder="输入页码" class="txt_num">
+                <a href="#" class="bg_blue">GO</a>
+              </div>
+               
+            </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade in active" id="Section04">
+            <div class="judge_srh pad_lr20">
+               
+               <ul class="ul_srh fl">
+                  <li><span>当前学期：</span>
+                      <select name="select" class="term-wid">
+                        <option selected>2016-2017学年第一学期</option>
+                        <option>1班</option>
+                        <option>10班</option>
+                      </select>
+                  </li>
+                  <li><span>当前年级：</span>
+                      <select name="select">
+                        <option selected>一年级</option>
+                        <option>一年级</option>
+                        <option>初三</option>
+                      </select>
+                  </li>
+               </ul>
+               <div class="fr"><a href="#" class="bg_gray mar_r10" data-toggle="modal" data-target="#add3"><i class="qkyicon">&#xe6cf;</i>单个新增</a><a href="#" class="bg_gray mar_r10" data-toggle="modal" data-target="#delete1"><i class="qkyicon">&#xe6b9;</i>删除选中</a><a href="#" class="bg_gray"><i class="qkyicon fz_0">&#xe6ae;</i>导出成绩</a></div>
+            </div>
+            
+            <div class="top_noline pad_lr20">
+            <div class="stu_jcont list-02">
+               <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table jdg_table02">
+                <tr>
+                  <th width="8%" scope="col">
+                        <input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_0">
+                        
+                  </th>
+                  <th scope="col">年级</th>
+                  <th scope="col">班级</th>
+                  <th scope="col">学生</th>
+                  <th scope="col">项目</th>
+                  <th scope="col">级别</th>
+                  <th scope="col">主办单位</th>
+                  <th scope="col">时间</th>
+                  <th scope="col">名次或等第</th>
+                  <th scope="col">操作</th>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_1">
+                       </td>
+                  <td>一年级</td>
+                  <td>一年级(1)班</td>
+                  <td>安静</td>
+                  <td>奥林匹克数学竞赛</td>
+                  <td>市级</td>
+                  <td>市教育局</td>
+                  <td>2019-5-8</td>
+                  <td>1</td>
+                  <td><a href="" class="qkyicon_14 mar_r10" title="编辑" data-toggle="modal" data-target="#edit3">&#xe60f;</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="CheckboxGroup2" value="复选框" id="CheckboxGroup2_1"></td>
+                  <td>一年级</td>
+                  <td>一年级(1)班</td>
+                  <td>安静</td>
+                  <td>奥林匹克数学竞赛</td>
+                  <td>市级</td>
+                  <td>市教育局</td>
+                  <td>2019-5-8</td>
+                  <td>3</td>
+                  <td><a href="" class="qkyicon_14 mar_r10" title="编辑" data-toggle="modal" data-target="#edit3">&#xe60f;</a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+              <div class="div-page">
+                <a href="#" class="no">上一页</a>
+                <a href="#" class="cur">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                ...
+                <a href="#">12</a>
+                <a href="#">下一页</a>
+                <input name="" type="text" placeholder="输入页码" class="txt_num">
+                <a href="#" class="bg_blue">GO</a>
+              </div>
+               
+            </div>
+            </div>
+          </div>
         </div>
-         
-      </div>
       </div>
 	</div>
    
   </div>
 </div>
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<div class="modal fade" id="add1" tabindex="-1" role="dialog" aria-labelledby="add1Label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">添加学业</h4>
 
+			</div>
+			<div class="modal-body">
+               <form class="form-horizontal pad_t20 pad_l20">
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学年学期</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生班级</label>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级（1）班</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级（1）班</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生姓名</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学业科目</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">合格线考试</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">等级性考试</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">操作考试</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<div class="modal fade" id="edit1" tabindex="-1" role="dialog" aria-labelledby="edit1Label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">编辑学业</h4>
 
+			</div>
+			<div class="modal-body">
+               <form class="form-horizontal pad_t20 pad_l20">
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学年学期</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生班级</label>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级（1）班</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级（1）班</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生姓名</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学业科目</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">合格线考试</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">等级性考试</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">操作考试</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<div class="modal fade" id="delete1" tabindex="-1" role="dialog" aria-labelledby="delete1Label" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">确认删除</h4>
+
+			</div>
+			<div class="modal-body">
+               <div class="pad_20 fz_16 text-center"><i class="qkyicon mar_r5 fz_18 co_r">&#xe7d1;</i>是否确认删除？删除后无法找回</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="add2" tabindex="-1" role="dialog" aria-labelledby="add2Label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">添加成绩</h4>
+
+			</div>
+			<div class="modal-body">
+               <form class="form-horizontal pad_t20 pad_l20">
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学年学期</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生班级</label>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级（1）班</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级（1）班</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生姓名</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">类型</label>
+                    <div class="col-sm-8">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">选修I（B）</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">选修I（B）</a></li>
+                          <li role="presentation"><a title="">选修II</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">科目</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">模块</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">总学时</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学分</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">成绩</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<div class="modal fade" id="edit2" tabindex="-1" role="dialog" aria-labelledby="edit2Label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">编辑成绩</h4>
+
+			</div>
+			<div class="modal-body">
+               <form class="form-horizontal pad_t20 pad_l20">
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学年学期</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生班级</label>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级（1）班</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级（1）班</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生姓名</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">类型</label>
+                    <div class="col-sm-8">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">选修I（B）</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">选修I（B）</a></li>
+                          <li role="presentation"><a title="">选修II</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">科目</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">模块</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">总学时</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学分</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">成绩</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="add3" tabindex="-1" role="dialog" aria-labelledby="add3Label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">添加竞赛</h4>
+
+			</div>
+			<div class="modal-body">
+               <form class="form-horizontal pad_t20 pad_l20">
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学年学期</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生班级</label>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级（1）班</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级（1）班</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生姓名</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">项目</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">级别</label>
+                    <div class="col-sm-8">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">请选择</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">省级</a></li>
+                          <li role="presentation"><a title="">市级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">主办单位</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">时间</label>
+                    <div class="col-sm-8 has-feedback">
+                      <input type="text" class="form-control" placeholder="" onclick="WdatePicker()">
+                      <span class="form-control-feedback mr5" aria-hidden="true"><i class="qkyicon fz_1 co_999">&#xe68f;</i></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">名次或等第</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<div class="modal fade" id="edit3" tabindex="-1" role="dialog" aria-labelledby="edit3Label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">编辑竞赛</h4>
+
+			</div>
+			<div class="modal-body">
+               <form class="form-horizontal pad_t20 pad_l20">
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学年学期</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生班级</label>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">一年级（1）班</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">一年级（1）班</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">学生姓名</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">项目</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">级别</label>
+                    <div class="col-sm-8">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">请选择</span>
+                          <span class="qky_icon qky-xiajiantou4"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="">省级</a></li>
+                          <li role="presentation"><a title="">市级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">主办单位</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">时间</label>
+                    <div class="col-sm-8 has-feedback">
+                      <input type="text" class="form-control" placeholder="" onclick="WdatePicker()">
+                      <span class="form-control-feedback mr5" aria-hidden="true"><i class="qkyicon fz_1 co_999">&#xe68f;</i></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">名次或等第</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
 </body>
 </html>

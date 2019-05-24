@@ -1280,8 +1280,8 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .list-over{ max-height:370px; overflow-y:auto; overflow-x:hidden;}
 /*tab*/
 .tab .nav-tabs{ position: relative;}
-.tab .nav-tabs li{text-align: center; margin-right: 10px;margin-bottom: -3px;}
-.tab .nav-tabs li a{ display: block; font-weight:normal;; font-size:16px; color: #737373; padding:15px; background: transparent; margin-right: 0; border: none; border-radius: 0; overflow: hidden;  position: relative; transition: all 0.5s ease 0s;}
+.tab .nav-tabs li{text-align: center; margin-right: 10px;margin-bottom: -3px; float:left;}
+.tab .nav-tabs li a{ display: block; font-weight:normal;font-size:16px; color: #737373; padding:15px 0; margin-left:20px; background: transparent; margin-right: 0; border: none; border-radius: 0; overflow: hidden;  position: relative; transition: all 0.5s ease 0s;}
 .tab .nav-tabs li a:before{ content: ""; width: 100%; height: 2px; background: #27b0f2; position: absolute; top:-2px; left: 0; transition: all 0.3s ease 0s;}
 .tab .nav-tabs li a:hover:before,
 .tab .nav-tabs li.active a:before,
@@ -1295,6 +1295,12 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .nav-tabs li.active a:hover,
 .nav-tabs li a:hover{ border: none; color:#000;}
 .tab-contenttabs{ height:auto;}
+
+.tab.tab-sty2 >.nav-tabs>ul> li{margin-bottom:0;}
+.tab.tab-sty2 >.nav-tabs>ul> li> a{ padding:8px 15px; margin-top:6px; margin-bottom:6px; margin-left:10px;}
+.tab.tab-sty2 >.nav-tabs>ul> li> a:before{width: 0; height:0}
+.tab.tab-sty2 >.nav-tabs>ul> li.active >a,.tab.tab-sty2 >.nav-tabs>ul >li >a:hover{ background:#f3f3f3; border:1px solid #e8e8e8; border-radius:20px; color: #000;}
+
 /*色块*/
 .percent{ position:relative; padding:15px 5px 15px 10px;}
 .percent img.p-a{ width:100%; height: 100%;opacity:0.05;filter:alpha(opacity=5); z-index:0; top: 0;left: 0;}
@@ -1316,3 +1322,16 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .pics-list .piccell{ width:80px; height:60px; float:left; margin:5px;}
 .pics-list .thumbnail{ width:100%; height:100%; display:block; background-size:cover; margin-bottom:0;}
 .pics-list .a_add{display: block; text-align:center; line-height: 60px; color: #fff; background: #3eb8ee;}
+
+/*下拉组改装*/
+.qkydropdown{ height:30px;}
+.qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 10px; vertical-align: inherit;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.qkydropdown .btn .qky_icon{ position:absolute; right:6px; top:8px; border:0; width:14px; height:14px; text-align:center; line-height:14px; color:#333;}
+.qkydropdown.open .btn .qky_icon.qky-xiajiantou4:before{content: "\e6a5";}
+.qkydropdown .dropdown-menu{ min-width:100%; max-height:440px; overflow-y:auto;}
+.maxh{ max-height:200px; overflow-y:auto;}
+.dropdown-menu > li > a{ padding-left:10px; padding-right:10px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.dropdown-menu > li > a.active{color: #27b0f2;}
+.dropdown-menu > li .dw-tit{ display:inline-block; color:#999; padding-left:10px; padding-right:10px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.form-control-feedback{ height:30px; line-height:30px;}

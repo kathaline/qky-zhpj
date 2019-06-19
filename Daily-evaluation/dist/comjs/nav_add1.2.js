@@ -20,6 +20,7 @@ define(function(require) {
 				$(this).html(qkyhtml.navhtml);
 				$(".nav_logo img").attr("src",opts.logosrc);
 				$(".nav_pjname").html(opts.pjname);
+				$(".school_name").html(opts.tea_info.school);
 				$(".other_name").html(opts.tea_info.name);
 				if(opts.tea_info.isphoto)$(".user_photo").removeClass("dist").html("<img src='"+opts.tea_info.photo+"' />");
 				else $(".user_photo").addClass("dist");

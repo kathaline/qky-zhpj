@@ -26,6 +26,7 @@ define({
            '<li class="dropdown">'+
               '<a href="#" class="dropdown-toggle clear other_sel" data-toggle="dropdown">'+
               '<div class="user_photo fl"><i class="qkyicon_14">&#xe84d;</i></div>'+
+              '<span class="fl school_name ml5"></span>'+
               '<span class="fl other_name"></span>'+
               '<span class="caret"></span>'+
               '</a>'+

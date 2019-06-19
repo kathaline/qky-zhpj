@@ -6,7 +6,7 @@
 define({
 	navdata:{/*导航数据*/
 		"logosrc":"../images/nav_logo/logo.png",
-		"pjname":"学生综合素质评价",
+		"pjname":"日常评价",
 		"navli":[["首页","href='01index.html'"],["指标管理","href='02index-quota.html'"],["积分兑换","href='03.html'"],],
 		"navli_active":0,
 		"moreli":{
@@ -18,7 +18,7 @@ define({
 		"common":[["个人办公","href='#'"],["行政办公","href='#'"],["流程审批","href='#'"]],
 		"lately":[["个人办公","href='#'"],["行政办公","href='#'"],["流程审批","href='#'"]],
 		"isinfo":true,//是否支持登录显示个人信息
-		"tea_info":{"name":"杨鹏","isphoto":true,"photo":"../images/tx01.png"},
+		"tea_info":{"name":"杨鹏","school":"全课云运营学校","isphoto":true,"photo":"../images/tx01.png"},
 		"otherli":[["个人设置","href='#'"],["退出","id='toOut'"]]
 	}
 });

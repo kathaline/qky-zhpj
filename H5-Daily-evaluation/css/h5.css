@@ -63,6 +63,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .text-indent{text-indent:2em;}
 .radius-4{ border-radius:4px;}
 .radius-6{ border-radius:6px;}
+.radius-10{ border-radius:10px;}
 .radius-cirle{ border-radius:50%;}
 .bg_white{ background-color:#fff !important;}
 .bg_black{background-color:#000 !important;}
@@ -230,10 +231,10 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 /*tabbar样式覆盖*/
 .weui-tabbar{ background-color:#fbfbfb; position:fixed;}
-.weui-tabbar__item{ padding-top:6px; padding-bottom:4px;}
-.weui-tabbar__icon{ width:22px; height:22px;}
+.weui-tabbar__item{ padding-top:6px; padding-bottom:2px;}
+.weui-tabbar__icon{ width:24px; height:24px;}
 .weui-tabbar__item.weui-bar__item--on .weui-tabbar__icon>i,.weui-tabbar__item.weui-bar__item--on i.weui-tabbar__icon,.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{ color: #111;}
-.weui-tabbar__label { line-height:1.4}
+.weui-tabbar__label { font-size:12px; line-height:1.4; margin-top:2px;}
 .weui-footer_fixed-bottom{ bottom:10px;}
 /*weui-navbar样式覆盖*/
 .weui-tab{ height:auto;}
@@ -264,7 +265,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-media-box_appmsg .weui-media-box__thumb{ height:100%;}
 .weui-media-box:before{ left:0;}
 .weui-media-box_appmsg .weui-media-box__hd.eva-hd{ line-height:normal; height:auto; margin-right:12px;}
-.weui-media-box__hd .eva-name{}
+.weui-panel.bor-no:before,.weui-panel.bor-no:after{ border:none; height:0;}
 
 .weui-label.wid-s{ width:40px; margin-top:1px;}
 .weui-label.wid-md{ width:80px; margin-top:1px;}
@@ -318,4 +319,4 @@ ul,li{ padding:0; margin:0; list-style:none;}
 }
 .date-badge{min-width: 8px; border-radius:6px; background-color: #d0d0d0; color: #fff; display:inline-block; text-align: center; font-size: 12px; vertical-align: middle; padding:2px 6px;}
 .eva-add{ bottom:60px; right:12px;}
-.evaadd-btn{ width:46px; height:46px; background-color:#09acfb; z-index:10; display:block; text-align:center; line-height:46px; border-radius:50%;-moz-box-shadow:1px 2px 5px #999; -webkit-box-shadow:1px 2px 5px #999; box-shadow:1px 2px 5px #999;}
+.evaadd-btn{ width:50px; height:50px; background-color:#09acfb; z-index:10; display:block; text-align:center; line-height:50px; border-radius:50%;-moz-box-shadow:1px 2px 5px #999; -webkit-box-shadow:1px 2px 5px #999; box-shadow:1px 2px 5px #999;}

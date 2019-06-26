@@ -234,7 +234,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-tabbar__item{ padding-top:6px; padding-bottom:2px;}
 .weui-tabbar__icon{ width:24px; height:24px;}
 .weui-tabbar__item.weui-bar__item--on .weui-tabbar__icon>i,.weui-tabbar__item.weui-bar__item--on i.weui-tabbar__icon,.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{ color: #111;}
-.weui-tabbar__label { font-size:12px; line-height:1.4; margin-top:2px;}
+.weui-tabbar__label { line-height:1.4; margin-top:2px;}
 .weui-footer_fixed-bottom{ bottom:10px;}
 /*weui-navbar样式覆盖*/
 .weui-tab{ height:auto;}

@@ -134,6 +134,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .ml8{ margin-left:8px!important;}
 .ml10{ margin-left:10px!important;}
 .ml12{ margin-left:12px!important;}
+.ml15{ margin-left:15px!important;}
 .ml20{ margin-left:20px!important;}
 .mr0{ margin-right:0px!important;}
 .mr5{ margin-right:5px!important;}
@@ -216,6 +217,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .img14{ width:14px; height:14px;}
 .img16{ width:16px; height:16px;}
 .img20{ width:20px; height:20px;}
+.img24{ width:24px; height:24px;}
 .img26{ width:26px; height:26px;}
 .img30{ width:30px; height:30px;}
 .img40{ width:40px; height:40px;}
@@ -265,7 +267,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-media-box_appmsg .weui-media-box__thumb{ height:100%;}
 .weui-media-box:before{ left:0;}
 .weui-media-box_appmsg .weui-media-box__hd.eva-hd{ line-height:normal; height:auto; margin-right:12px;}
-.weui-panel.bor-no:before,.weui-panel.bor-no:after,.weui-cells.bor-no:after, .weui-cells.bor-no:before{ border:none; height:0;}
+.weui-panel.bor-no:before,.weui-panel.bor-no:after,.weui-cells.bor-no:after, .weui-cells.bor-no:before,.weui-cell.bor-no:before{ border:none; height:0;}
 
 .weui-label.wid-s{ width:40px; margin-top:1px;}
 .weui-label.wid-md{ width:80px; margin-top:1px;}
@@ -320,3 +322,4 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .date-badge{min-width: 8px; border-radius:6px; background-color: #d0d0d0; color: #fff; display:inline-block; text-align: center; font-size: 12px; vertical-align: middle; padding:2px 6px;}
 .eva-add{ bottom:60px; right:12px;}
 .evaadd-btn{ width:56px; text-align:center; height:56px; line-height:56px;  background-color:#09acfb; z-index:10; display:block;border-radius:50%;-moz-box-shadow:1px 2px 5px #999; -webkit-box-shadow:1px 2px 5px #999; box-shadow:1px 2px 5px #999;}
+.weui-cell__hd img{ display:inline-block; margin-right:0;}

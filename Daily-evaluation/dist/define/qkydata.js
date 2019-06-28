@@ -6,7 +6,7 @@
 define({
 	navdata:{/*导航数据*/
 		"logosrc":"../images/nav_logo/logo.png",
-		"pjname":"日常评价",
+		"pjname":"综合素质评价",
 		"navli":[["首页","href='01index.html'"],["指标管理","href='02index-quota.html'"],["积分商城管理","href='03.html'"],],
 		"navli_active":0,
 		"moreli":{

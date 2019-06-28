@@ -69,6 +69,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bg_black{background-color:#000 !important;}
 .bg_gray{ background-color:#f3f3f3 !important;}
 .body-bg-grn{ background-color:#a4e9cd !important;}
+.bg-trans{ background-color:transparent !important;}
 .pointer{cursor: pointer}
 .co_ff{ color:#fff!important;}
 .co_e0{ color:#e0e0e0!important;}
@@ -179,6 +180,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pr12{ padding-right:12px!important;}
 .pr20{ padding-right:20px!important;}
 .pr60{ padding-right:60px!important;}
+.ptb10{ padding-top:10px !important;padding-bottom:10px!important;}
+.plr12{padding-left:12px!important;padding-right:12px!important;}
 .pa0{ padding:0!important;}
 .pa5{ padding:5px!important;}
 .pa10{ padding:10px!important;}
@@ -216,6 +219,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .img12{ width:12px; height:12px;}
 .img14{ width:14px; height:14px;}
 .img16{ width:16px; height:16px;}
+.img18{ width:18px; height:18px;}
 .img20{ width:20px; height:20px;}
 .img24{ width:24px; height:24px;}
 .img26{ width:26px; height:26px;}
@@ -247,6 +251,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-navbar__item.weui-bar__item--on:after{}
 
 /*表单类样式覆盖*/
+.weui-cell{ padding-left:12px; padding-right:12px;}
+.weui-cell_access:active{background-color:inherit}
 .weui-loadmore.weui-loadmore_line{ margin-bottom:0;}
 .weui-loadmore_line .weui-loadmore__tips{ background:#f6f6f6;}
 /*单选样式*/
@@ -267,7 +273,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-media-box_appmsg .weui-media-box__thumb{ height:100%;}
 .weui-media-box:before{ left:0;}
 .weui-media-box_appmsg .weui-media-box__hd.eva-hd{ line-height:normal; height:auto; margin-right:12px;}
-.weui-panel.bor-no:before,.weui-panel.bor-no:after,.weui-cells.bor-no:after, .weui-cells.bor-no:before,.weui-cell.bor-no:before{ border:none; height:0;}
+.weui-panel.bor-no:before,.weui-panel.bor-no:after,.weui-cells.bor-no:after, .weui-cells.bor-no:before,.weui-cell.bor-no:before,.weui-cells__title.bor-no:before{ border:none; height:0;}
 
 .weui-label.wid-s{ width:40px; margin-top:1px;}
 .weui-label.wid-md{ width:80px; margin-top:1px;}

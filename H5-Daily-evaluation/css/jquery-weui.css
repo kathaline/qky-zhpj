@@ -2032,6 +2032,7 @@ button.swiper-pagination-bullet {
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
 }
+.weui-popup__container.weui-popup__container--visible .weui-popup__overlay { opacity: 0.7;}
 .weui-popup__container {
   display: none;
 }

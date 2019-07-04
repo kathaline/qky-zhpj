@@ -76,6 +76,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bg_gray{ background-color:#f3f3f3 !important;}
 .body-bg-grn{ background-color:#a4e9cd !important;}
 .bg-trans{ background-color:transparent !important;}
+.bg_b7{ background:rgba(0, 0, 0, .7)}
 .pointer{cursor: pointer}
 .co_ff{ color:#fff!important;}
 .co_e0{ color:#e0e0e0!important;}
@@ -375,3 +376,4 @@ fieldset:after{right:0;}
 .stus-cla .weui-cells:after{ border-bottom:none;}
 .stus-cla.show .icon-jiantou2:before { content: "\e625";}
 .stus-cla .weui-cells .weui-cell__hd{ padding-right:8px;}
+.eva-evid{transform: rotate(-20deg); color:#ff000080; border: 1px dashed #ff000080; padding: 5px; font-size:12px;  margin-right:86px;  margin-top:10px; border-radius:4px; z-index:0;}

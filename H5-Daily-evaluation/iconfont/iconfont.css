@@ -1,10 +1,10 @@
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1561966020753'); /* IE9 */
-  src: url('iconfont.eot?t=1561966020753#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQ0AAsAAAAACZQAAAPmAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDeAqFEIQmATYCJAMoCxYABCAFhG0HgQYbSgjIHpIkgVJE05AIqkACFIJ/Pruv+6qqVT2zkCMJmZDC3StHcERHQuRw8z01CwXZ/9+17E+nRA4wJYWAgc1S9mUzRQmkUdURqFa2R/YcgmKHbtLcuufgWPInFljeVwo+SmasAmyj4TCAIoKiyDaiAfAUxLPpfE7g4xDgaUUq2uj61l7wxSEfJ0BrOZsC34ATl9EpUkSccKlDxyEiNQc83gPHrN/XL3rKFwyRRX7S9OV1GCpDG0N6YRYstgUUzfkB/iqwQA8AB9qaGFyP7hR7oOM/eU8mAt+zUwwmdJQmx5BpQrNaaCcU9DRQDgYMFkdETPL5x8tAMbKxCpitpQwC0rgwEOK5sBASuHAQErmIICRxEUNI5iKBkMaFIORwkUIYcpIB5Y9uAJADdwFqCGbyZmGQ4jOuWv6bjcPCw6P9tUVL88NLoUdn5Y3OdQ9Pi6sdlvqcPT90rWm8f3LwerPE2BZMNOtuTw52Ez2TyhSx80NPOTdBmMY1F12ET7wy+srn+aMBRjX4D3VVBScore/gM11colijirIJ7UaAsuQ17uofLwXa8u7gE0yVTiqe5tWGdOi5bPXLy2dbnn2b3d9LXtbMy/bBJV/8onK+Th4wZEbfWZ0NSXOhXNy8dl2WScOsGXeEzPvm9u3Lu+g1dL+sF9zezEaAZtOxXkP24wwUWy/EJvHmdox+DGTYdjOuDfym0ipwa/v9N7hV4HYp+PJgSNE1BTXRJiOqtqA26tOicwtyoXxJ8fftMTltE/9frRu8fDjgRNmX1x/OseMFQGWvfWcFJ1w4bAGAQzeCONtRmrlU89Le6UNNufzOgR34ED2Pe1f5/4nag//45g6ArxU/YeTFNM2XUgwUVj0yWzkqFXCCRnZ5916IJq/YLsDTolGjCWzwwCMTrceHpsMNAc8vUkYFMCS0BEtKB4TD9ICInN4QkzIMPN1puDqnPhIduQzoxioBUYdrMNTiOVjq8BThMO8hohG/IKaOdPDMVf1b5nQS9x8lyZQiGE0vID4jnFT1KH+7s5swwz4l/RqL1E+km2dQVnpmuNJAnEQ2cYZ7lmUrRRGVwoHqydOI3S6QSwormVHpFqVcxRkZNOmb0meEA/wZhYQwhYKAQUyzAIIzg8AJNdZX+Ed+vhsCw8DOFDJj1o9kPwSJG75zRBbpZBZANBidhWYdymvczMLIRqGgICgSgQNEPfET7EpRgHAlH2SFMIMiHUuFvItiMuhqtKgxvXuzYwdqbs055A/xMrJyihQrUapMXjn5Uq6MRQuf5lNCX63rPTWH0wdpJQxfy5LNYXMcuYFbR0qb587F/ZjPUoMzYWQBAAA=') format('woff2'),
-  url('iconfont.woff?t=1561966020753') format('woff'),
-  url('iconfont.ttf?t=1561966020753') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  url('iconfont.svg?t=1561966020753#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1562146042858'); /* IE9 */
+  src: url('iconfont.eot?t=1562146042858#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAATUAAsAAAAACoQAAASEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCEBgqGZIVEATYCJAMsCxgABCAFhG0HgRAbBAlRVFBiyP4AZYztoBaZpoTsLsMODkboFggweIznu8tziGADkz/gCnau4+DJUDx8vx/t3Gff1iTtJgcSQ/doEhJDYjqJDAlKoWRKJpSHVfq/dy1/CsR5/oDUqRIpYLUwyWYp+7KTkmKhW2GqWKgK1TpS/4T797+2ZrB/ahrFNYkuj8RuPZMEnHnSdE2TqDcSIMC8/wf0Ky87XCNaDyebJJPEZpRgEkNUYJWAhsE5QKCafnXCB8eSP7HsMe8rBR8lo5ZNr5tQAEUX2SY0IJ6GeDUdxJvwws0EZqcy6h4tb+5Aq8LdKxAfpLCgteJSerrDKDTixCK+4RrTl/QJfE1+P/4p1UpSM/dWz98vuTDbae9yJTNfotYLQD6NjFtAIT6RoY8astItDWaz0OgxsA4fJamfz+sOWFcOtOiuKDA78I4bBpKsqJrB/MebzETjmjaA+Vye6RTwSPTII9MTj0LPPCq98Gj0ymOgM4+gC4+RrjwmurvMQC27HwE7wH/iNsO8roUkPGOt2sumy3as/UVHR0Ph7yfl8Li5Ib1ZRTzGH7dWFY1SIxaFpH+cGdXl9YzQY3rkY5oLi3CUWqbtsHgM8coeS8aZFVg5WIJpK2WDhSNy2DOIvya/mCKKEQHGFme4IHQNoldxuJkXIldOTeK4PPYpFgzILeXs4VDEkENeNAqw+ZidRuhhxEJJPKbHVQ77xugRHVbvKDOun8EviICX/ZhBbdCswL5apZcBOzmZWpFXrCcza8juejl/tfn7OjE5sWjvLsWNFPpfyk643+cOgcUljanUW9SrSAnp6JiYEVP2XBJc5qQIBKBBPYHusLSYyMAkkY9yD+wxZgFF6wghcXEp0hAJOdYUGpvAt1lLgLTc+z1pCZAao/d0Xq6yT8hRmfuq05Qfmu+2XltHSC2Xzq2R91+DEfLmdMk9OXV65K9Lp0T+OlPnlayzu8iZgpRj40PAe3c90AzCvcMNYqZ+hHeE/qcZeHh7QFCB32NHZDkq5/8odXLBtytw92BzAMY5YM0GW0miAvYlAE58quJYymY9Iufq132wg6RuZSNgV/+ad4Pv74FjOT0BP47GpYCffRcU47T7REbpfTb7I65WYAWKonVVa8xBsO1KHRaPNJmFhNnr468Y21NbP3IIikAYFTUgGZxANjpDFMwtqBZ3oBndhdlNK6cv9mkNoky44Y5B2PEGyZYfkO34QhTMP6iO/IdmpwaYvY2BCy4uku0LGi1Cl9nnTDoq5r6X2tPuLRQmtHRZm5D3UKcyy4q5Qr26gjHqNQ5JT0SJiDOuVcSW2e0wDBVLtPLRoZxHlFTzeU59U85REbR7SEMWglyM7RwjOZQYj1Ym7Y2f34IEI2TRPVOa0nuQlpLrZ4pyCiMQK6Z41JRneU3qhFBCCMdwmhJhllkAhV5JYRJ6Ox9ykBxvRiFRledL8bGm3P6W6PXW/tyncT9oiRQ5StRoMcQYU8yxxIblnSRz4UlbWqrBDw2NgTNuQYaUaU2sJQlbJlVaUi/peKbzKZKzZzK+2Eq0uEYKZYoAAAAA') format('woff2'),
+  url('iconfont.woff?t=1562146042858') format('woff'),
+  url('iconfont.ttf?t=1562146042858') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1562146042858#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -41,6 +41,10 @@
 
 .icon-jiantou4:before {
   content: "\e625";
+}
+
+.icon-shanchu:before {
+  content: "\e632";
 }
 
 .icon-icon-xinzeng:before {

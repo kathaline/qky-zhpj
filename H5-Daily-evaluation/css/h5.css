@@ -156,6 +156,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .ma12{ margin:12px!important;}
 .ma20{ margin:20px!important;}
 .mauto{ margin-left:auto!important;margin-right:auto!important;}
+.mlr12{ margin-left:12px !important; margin-right:12px !important;}
 
 .pt0{ padding-top:0px!important;}
 .pt5{ padding-top:5px!important;}
@@ -168,6 +169,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pt80{ padding-top:80px!important;}
 .pt88{ padding-top:88px!important;}
 .pt50{ padding-top:50px!important;}
+.pt60{ padding-top:60px!important;}
 .pb0{ padding-bottom:0px!important;}
 .pb5{ padding-bottom:5px!important;}
 .pb10{ padding-bottom:10px!important;}
@@ -187,6 +189,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pr12{ padding-right:12px!important;}
 .pr20{ padding-right:20px!important;}
 .pr60{ padding-right:60px!important;}
+.ptb5{ padding-top:5px !important;padding-bottom:5px!important;}
 .ptb10{ padding-top:10px !important;padding-bottom:10px!important;}
 .plr12{padding-left:12px!important;padding-right:12px!important;}
 .pa0{ padding:0!important;}
@@ -377,3 +380,14 @@ fieldset:after{right:0;}
 .stus-cla.show .icon-jiantou2:before { content: "\e625";}
 .stus-cla .weui-cells .weui-cell__hd{ padding-right:8px;}
 .eva-evid{transform: rotate(-20deg); color:#ff000080; border: 1px dashed #ff000080; padding: 5px; font-size:12px;  margin-right:86px;  margin-top:10px; border-radius:4px; z-index:0;}
+
+/*个人中心*/
+.bg-shading{ background:url(../image/mine-bg.jpg) center top no-repeat; background-size:contain;}
+@media all and (min-width:768px) {.bg-shading{background-size:cover;}}
+.user_bg{ min-height:90px;}
+.card{ border-radius:8px ; min-height:100px;box-shadow: 0 0 8px #8f9d97;}
+.card .weui-flex__item{ border-right:1px solid #eee;}
+.card .weui-flex__item:last-child{border-right:0;}
+
+.points-box{ background: -webkit-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: -o-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: -moz-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); margin-top: 16px; position: relative; overflow: hidden; margin-left:12px; margin-right:12px;}
+.points-badge{ background-color:#5b4321;}

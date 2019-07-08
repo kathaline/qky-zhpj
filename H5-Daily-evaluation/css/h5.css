@@ -379,7 +379,7 @@ fieldset:after{right:0;}
 .stus-cla .weui-cells:after{ border-bottom:none;}
 .stus-cla.show .icon-jiantou2:before { content: "\e625";}
 .stus-cla .weui-cells .weui-cell__hd{ padding-right:8px;}
-.eva-evid{transform: rotate(-20deg); color:#ff000080; border: 1px dashed #ff000080; padding: 5px; font-size:12px;  margin-right:86px;  margin-top:10px; border-radius:4px; z-index:0;}
+.eva-evid{margin-right:86px; z-index:0; height:60px;opacity:0.8;filter:alpha(opacity=80);}
 
 /*个人中心*/
 .bg-shading{ background:url(../image/mine-bg.jpg) center top no-repeat; background-size:contain;}
@@ -391,3 +391,9 @@ fieldset:after{right:0;}
 
 .points-box{ background: -webkit-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: -o-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: -moz-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); position: relative; overflow: hidden; margin-left:12px; margin-right:12px;}
 .points-badge{ background-color:#5b4321;}
+/*切换*/
+.weui-cell_switch{ border:1px solid rgba(0, 0, 0, 0.075); position:relative; box-shadow: 2px 2px 8px #ddd;}
+.weui-cell_switch .po_ab_r .iconfont{margin-top:-8px; color:#fff;}
+.checked.weui-cell_switch{ border: 2px solid rgba(5, 164, 241, 1);}
+.checked.weui-cell_switch .po_ab_r .iconfont{color:#09acfb;margin-top:-9px;}
+.label-tips{ padding:2px 7px; border-radius:12px; background:rgba(255,255,255,0.3);}

@@ -389,5 +389,5 @@ fieldset:after{right:0;}
 .card .weui-flex__item{ border-right:1px solid #eee;}
 .card .weui-flex__item:last-child{border-right:0;}
 
-.points-box{ background: -webkit-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: -o-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: -moz-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); margin-top: 16px; position: relative; overflow: hidden; margin-left:12px; margin-right:12px;}
+.points-box{ background: -webkit-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: -o-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: -moz-linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); background: linear-gradient(left top, #efe4e4 ,#f9eabf , #f4dc95); position: relative; overflow: hidden; margin-left:12px; margin-right:12px;}
 .points-badge{ background-color:#5b4321;}

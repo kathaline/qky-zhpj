@@ -396,4 +396,4 @@ fieldset:after{right:0;}
 .weui-cell_switch .po_ab_r .iconfont{margin-top:-8px; color:#fff;}
 .checked.weui-cell_switch{ border: 2px solid rgba(5, 164, 241, 1);}
 .checked.weui-cell_switch .po_ab_r .iconfont{color:#09acfb;margin-top:-9px;}
-.label-tips{ padding:2px 7px; border-radius:12px; background:rgba(255,255,255,0.3);}
+.label-tips{ padding:2px 7px; border-radius:12px; background:rgba(255,255,255,0.3);vertical-align: middle;}

@@ -247,7 +247,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 /*tabbar样式覆盖*/
 .weui-tabbar{ background-color:#fbfbfb; position:fixed;}
-.weui-tabbar__item{ padding-top:6px; padding-bottom:1px;}
+.weui-tabbar__item{ padding-top:8px; padding-bottom:4px;}
 .weui-tabbar__icon{ width:24px; height:24px;}
 .weui-tabbar__item.weui-bar__item--on .weui-tabbar__icon>i,.weui-tabbar__item.weui-bar__item--on i.weui-tabbar__icon,.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{ color: #111;}
 .weui-tabbar__label { line-height:1.4; margin-top:2px;}
@@ -304,7 +304,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-btn-area.weui-btn-area-inline .weui-btn:last-child { margin-right: 0;}
 .weui-btn_plain-primary:after { border-color:#09acfb;}
 
-.weui-tabbar .weui-btn{  font-size:15px;}
+.weui-tabbar .weui-btn{  font-size:15px; padding-top:5px; padding-bottom:5px;}
 .weui-tabbar .weui-btn+.weui-btn{ margin-top:0;}
 .weui-row.weui-tabbar .weui-col-50{ width: 50%;}
 .weui-tabbar .weui-btn_disabled { color: rgba(0,0,0,.3) !important;background-color: #f7f7f7 !important;pointer-events: none !important; border-color:rgba(0,0,0,.3)}
@@ -349,7 +349,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 }
 .date-badge{min-width: 8px; border-radius:6px; background-color: #d0d0d0; color: #fff; display:inline-block; text-align: center; font-size: 12px; vertical-align: middle; padding:2px 6px;}
 .eva-add{ bottom:60px; right:12px;}
-.evaadd-btn{ width:56px; text-align:center; height:56px; line-height:56px;  background-color:#09acfb; z-index:10; display:block;border-radius:50%;}
+.evaadd-btn{ width:60px; text-align:center; height:60px; line-height:60px;  background-color:#09acfb; z-index:10; display:block;border-radius:50%;}
 .eva-add_q,.eva-add{ z-index:2;}
 .eva-add_q{ left:-10px;bottom:60px;}
 .eva-add_q .weui-btn,.evaadd-btn{-moz-box-shadow:1px 2px 8px #b9b9b9; -webkit-box-shadow:1px 2px 8px #b9b9b9; box-shadow:1px 2px 8px #b9b9b9;}

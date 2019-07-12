@@ -403,7 +403,7 @@ fieldset:after{right:0;}
 .triangle-topright{position: absolute; display: block; width:30px; height:53px; background-color:#d8f1fe; transform: rotate(-48deg);top:-22px;left:25px; z-index:1; }
 .div-alarm .triangle-topright{ background-color:#f6383a; }
 .div-alarm .num{color:#fff;}
-.weui-mark-rt { display: block; left: -8px; top:10px;height: 16px;line-height: 20px!important; position: relative; text-align: center;  transform: rotate(45deg);  width:78px;}
+.weui-mark-rt { display: block; left: -2px; top:4px;height: 16px;line-height: 20px!important; position: relative; text-align: center;  transform: rotate(45deg);  width:78px;}
 
 .Bscore,.Sscore{ margin-right:0 !important; border-radius:10PX; height:50PX !important; line-height:20PX !important; padding-top:5px; font-size:12px;}
 .Bscore+.Sscore{ margin-left:5PX;}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>综合素质评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart>
+<div class="weui-search-bar" id="searchBar">
+  <form class="weui-search-bar__form">
+    <div class="weui-search-bar__box">
+      <i class="weui-icon-search"></i>
+      <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required>
+      <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+    </div>
+    <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+      <i class="weui-icon-search"></i>
+      <span>搜索</span>
+    </label>
+  </form>
+  <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+</div>
+<div class="row ml12 mr0">
+  <div class="col-50 pl0">
+    <a class="block mt12 co_66 po_r" href="">
+      <div class="po_ab_r mark-topright"><span class="weui-mark-rt zindex1 fz_10 co_ff bg-warning">最新上传</span></div>
+      <div class="div-album resize" style="background-image:url(../image/banner01.jpg); height:90px;"></div>
+      <p class="name mt5 fz_12">一年级（1）班 杨小雨</p>
+    </a>
+  </div>
+  <div class="col-50 pl0">
+    <a class="block mt12 co_66" href="">
+      <div class="div-album resize" style="background-image:url(../image/album.jpg); height:90px;"></div>
+      <p class="name mt5 fz_12">一年级（1）班 杨小雨</p>
+    </a>
+  </div>
+  <div class="col-50 pl0">
+    <a class="block mt12 co_66" href="">
+      <div class="div-album resize" style="background-image:url(../image/0.jpg); height:90px;"></div>
+      <p class="name mt5 fz_12">一年级（1）班 杨小雨</p>
+    </a>
+  </div>
+  <div class="col-50 pl0">
+    <a class="block mt12 co_66" href="">
+      <div class="div-album resize" style="background-image:url(../image/banner01.jpg); height:90px;"></div>
+      <p class="name mt5 fz_12">一年级（1）班 杨小雨</p>
+    </a>
+  </div>
+  <div class="col-50 pl0">
+    <a class="block mt12 co_66" href="">
+      <div class="div-album resize" style="background-image:url(../image/album.jpg); height:90px;"></div>
+      <p class="name mt5 fz_12">一年级（1）班 杨小雨</p>
+    </a>
+  </div>
+  
+</div>
+<div class="weui-loadmore">
+  <i class="weui-loading"></i>
+  <span class="weui-loadmore__tips">正在加载</span>
+</div>
+<div class="pb50"></div>
+<div class="weui-tabbar weui-row zindex1">
+  <a href="02mine.html" class="weui-btn weui-btn_default weui-col-100">返回</a>
+</div>
+
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+scaleW=window.innerWidth/320;
+scaleH=window.innerHeight/568;
+var resizes = document.querySelectorAll('.resize');
+          for (var j=0; j<resizes.length; j++) {
+           resizes[j].style.width=parseInt(resizes[j].style.width)*scaleW+'px';
+		   resizes[j].style.height=parseInt(resizes[j].style.height)*scaleH+'px';
+		   resizes[j].style.top=parseInt(resizes[j].style.top)*scaleH+'px';
+		   resizes[j].style.left=parseInt(resizes[j].style.left)*scaleW+'px'; 
+          }
+</script>
+</body>
+</html>

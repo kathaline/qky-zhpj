@@ -395,8 +395,6 @@ fieldset:after{right:0;}
 /*切换*/
 .weui-cell_switch{ border:1px solid rgba(0, 0, 0, 0.075); position:relative; box-shadow: 2px 2px 8px #ddd;}
 .weui-cell_switch .po_ab_r .iconfont{margin-top:-8px; color:#fff;}
-.checked.weui-cell_switch{ border: 2px solid rgba(5, 164, 241, 1);}
-.checked.weui-cell_switch .po_ab_r .iconfont{color:#09acfb;margin-top:-9px;}
 .label-tips{ padding:2px 7px; border-radius:12px; background:rgba(255,255,255,0.3);vertical-align: middle;}
 .name{width: auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; word-wrap: break-word; word-break: break-all;}
 /*角标*/

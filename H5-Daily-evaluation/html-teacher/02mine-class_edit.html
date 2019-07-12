@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>综合素质评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart>
+<form class="pl12 pr12">
+  <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray">
+    <div class="weui-cell weui-cell_select ptb10 plr12">
+      <div class="weui-cell__bd">
+        <input class="weui-input" id="date" type="text" placeholder="选择日期">
+      </div>
+    </div>
+  </div>
+  <div class="weui-media-box_appmsg mt12">
+    <div class="weui-media-box__bd">
+      <div class="fz_12">选择指标</div>
+    </div>
+  </div>
+  <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray">
+    <div class="weui-cell weui-cell_select ptb10 plr12">
+      <div class="weui-cell__bd">
+        <input class="weui-input" id="quota" type="text" placeholder="" value="考勤-迟到（-1）">
+      </div>
+    </div>
+  </div>
+  <div class="weui-media-box_appmsg mt12">
+    <div class="weui-media-box__bd">
+      <div class="fz_12">添加学生</div>
+    </div>
+  </div>
+  <div class="weui-cells radius-10 mt10">
+    <div class="weui-cell weui-media-box">
+      <div class="weui-cell__hd mr8 fz_0"><img src="../image/u03.jpg" class="img30 img-bor"></div>
+      <div class="weui-cell__bd">
+        <p>周瑞</p><div class="fz_10 co_99">一年级（1）班</div>
+      </div>
+    </div>
+  </div>
+  <div class="weui-media-box_appmsg mt12">
+    <div class="weui-media-box__bd">
+      <div class="fz_12">添加佐证</div>
+    </div>
+  </div>
+  <div class="weui-cells weui-cells_form radius-4 mt10">
+    <div class="weui-cell">
+      <div class="weui-cell__bd">
+        <textarea class="weui-textarea" placeholder="输入内容（限300字以内）" rows="8" id="orgAuditDesc" name="orgAuditDesc"></textarea>
+        <div class="weui-textarea-counter"><span id="text-count">150</span>/150</div>
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__bd">
+        <div class="weui-uploader">
+          <div class="weui-uploader__hd">
+            <p class="weui-uploader__title co_a3 fz_14">图片上传</p>
+          </div>
+          <div class="weui-uploader__bd">
+            <ul class="weui-uploader__files" id="uploaderFiles">
+              <li class="weui-uploader__file po_r" style="background-image:url(../image/0.jpg)"><a href="#" class="po_ab_r bg_b7 co_ff pl5 pr5"><i class="iconfont icon-shanchu"></i></a></li>
+              <li class="weui-uploader__file po_r" style="background-image:url(../image/0.jpg)"><a href="#" class="po_ab_r bg_b7 co_ff pl5 pr5"><i class="iconfont icon-shanchu"></i></a></li>
+              <li class="weui-uploader__file po_r" style="background-image:url(../image/0.jpg)"><a href="#" class="po_ab_r bg_b7 co_ff pl5 pr5"><i class="iconfont icon-shanchu"></i></a></li>
+              <li class="weui-uploader__file po_r weui-uploader__file_status" style="background-image:url(../image/0.jpg)">
+                <a href="#" class="po_ab_r bg_b7 co_ff pl5 pr5"><i class="iconfont icon-shanchu"></i></a>
+                <div class="weui-uploader__file-content">
+                  <i class="weui-icon-warn"></i>
+                </div>
+              </li>
+              <li class="weui-uploader__file po_r weui-uploader__file_status" style="background-image:url(../image/0.jpg)">
+                <a href="#" class="po_ab_r bg_b7 co_ff pl5 pr5"><i class="iconfont icon-shanchu"></i></a>
+                <div class="weui-uploader__file-content">50%</div>
+              </li>
+            </ul>
+            <div class="weui-uploader__input-box">
+              <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="pb50"></div>
+<div class="weui-tabbar weui-row zindex1">
+  <a href="02mine-class_records.html" class="weui-btn weui-btn_default weui-col-50">取消操作</a>
+  <a href="javascript:;" id='show-toast' class="weui-btn weui-col-50 weui-btn_plain-primary">保存返回</a>
+</div>
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $("#date").calendar({
+	onChange: function (p, values, displayValues) {
+	  console.log(values, displayValues);
+	}
+  });
+      $("#quota").picker({
+        title: "选择指标",
+        cols: [
+          {
+            textAlign: 'center',
+            values: ['考勤', '卫生','纪律']
+          },
+          {
+            textAlign: 'center',
+            values: ['迟到（-1）', '早退（-1）']
+          }
+        ]
+      });
+	$(document).on("click", "#show-toast", function() {
+        $.toast("保存成功", function() {
+          console.log('close');
+        });
+      })
+</script>
+</body>
+</html>

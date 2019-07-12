@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>综合素质评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart>
+<form class="pl12 pr12">
+  <div class="weui-row fz_0">
+    <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray weui-col-60">
+      <div class="weui-cell weui-cell_select ptb10 plr12">
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="date" type="text" placeholder="选择日期">
+        </div>
+      </div>
+    </div>
+    <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray weui-col-40">
+      <div class="weui-cell weui-cell_select ptb10 plr12">
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="plane" type="text" placeholder="切换计划">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="weui-media-box_appmsg mt12">
+    <div class="weui-media-box__bd">
+      <div class="fz_12">选择评分项</div>
+    </div>
+  </div>
+  <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray">
+    <a class="weui-cell weui-cell_select ptb10 plr12" href="01evaluate-add_quota.html">
+      <div class="weui-cell__bd">
+        <span class="co_66">点击进入，选择评分项</span>
+      </div>
+    </a>
+  </div>
+  <div class="weui-media-box_appmsg mt12">
+    <div class="weui-media-box__bd">
+      <div class="fz_12">添加学生</div>
+    </div>
+    <div class="weui-cell__hd fz_0"><a href="01evaluate-add_evid.html" class="iblock"><img src="../image/edit.png" class="img24"></a></div>
+  </div>
+  <div class="weui-cells radius-10 mt10">
+    <div class="weui-cell weui-media-box">
+      <div class="po_ab_r">
+        <img src="../image/done.png" class="eva-evid">
+      </div>
+      <div class="weui-cell__hd mr8 fz_0"><img src="../image/u03.jpg" class="img30 img-bor"></div>
+      <div class="weui-cell__bd">
+        <p>周瑞</p><div class="fz_10 co_99">一年级（1）班</div>
+      </div>
+      <div class="weui-cell__hd zindex1fz_0"><a href="01evaluate-add_evid.html" class="iblock "><img src="../image/edit.png" class="img24"></a><a href="#" class="iblock ml20"><img src="../image/delete.png" class="img24"></a></div>
+    </div>
+    <div class="weui-cell weui-media-box">
+      <div class="weui-cell__hd fz_0 mr8"><img src="../image/u01.jpg" class="img30 img-bor"></div>
+      <div class="weui-cell__bd">
+        <p>阮良轩</p><div class="fz_10 co_99">一年级（1）班</div>
+      </div>
+      <div class="weui-cell__hd zindex1 fz_0"><a href="01evaluate-add_evid.html" class="iblock"><img src="../image/edit.png" class="img24"></a><a href="#" class="iblock ml20"><img src="../image/delete.png" class="img24"></a></div>
+    </div>
+  </div>
+  <div class="weui-row fz_0">
+    <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray weui-col-50">
+      <a class="weui-cell" href="01evaluate-add_stus.html">
+        <div class="weui-cell__bd">
+          <img src="../image/stu-add.png" class="img16 middle mr5"><span class="co_66">手动添加</span>
+        </div>
+      </a>
+    </div>
+    <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray weui-col-50">
+      <a class="weui-cell" href="">
+        <div class="weui-cell__bd">
+          <img src="../image/QR code-o.png" class="img16 middle mr5"><span class="co_66">扫码添加</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</form>
+<div class="pb50"></div>
+<div class="weui-tabbar weui-row zindex1">
+  <a href="01evaluate.html" class="weui-btn weui-btn_default weui-col-50">返回</a>
+  <a href="" class="weui-btn weui-col-50 weui-btn_disabled weui-btn_plain-primary">确认提交</a>
+</div>
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $("#date").calendar({
+	onChange: function (p, values, displayValues) {
+	  console.log(values, displayValues);
+	}
+  });
+  
+      $("#plane").picker({
+        title: "请选择您的计划",
+        cols: [
+          {
+            textAlign: 'center',
+            values: ['1']
+          }
+        ],
+        onChange: function(p, v, dv) {
+          console.log(p, v, dv);
+        },
+        onClose: function(p, v, d) {
+          console.log("close");
+        }
+      });
+
+</script>
+</body>
+</html>

@@ -417,3 +417,5 @@ fieldset:after{right:0;}
 .box .one .time{position: absolute;left:-34px;top:-6px;text-align:right; color:#999; line-height:20px; width:32px;}
 /*相册*/
 .div-album{background: no-repeat 50%;background-size: cover; width:100%; border-radius:6px;}
+
+.nodata{ text-align:center; padding:50% 20px 0; font-size:14px;}

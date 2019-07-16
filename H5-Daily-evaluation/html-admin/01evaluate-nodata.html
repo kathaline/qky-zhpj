@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>综合素质评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart>
+<div class="nodata">
+  <img src="../image/nodata.png">
+  <p>暂无评价计划，请联系学校管理员在电脑端设置</p>
+</div>
+<div class="pb50"></div>
+<div class="weui-tabbar weui-row zindex1">
+  <a href="01evaluate.html" class="weui-btn weui-btn_default weui-col-50">返回</a>
+  <a href="" class="weui-btn weui-col-50 weui-btn_disabled weui-btn_plain-primary">确认提交</a>
+</div>
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $("#date").calendar({
+	onChange: function (p, values, displayValues) {
+	  console.log(values, displayValues);
+	}
+  });
+  
+      $("#plane").picker({
+        title: "请选择您的计划",
+        cols: [
+          {
+            textAlign: 'center',
+            values: ['1']
+          }
+        ],
+        onChange: function(p, v, dv) {
+          console.log(p, v, dv);
+        },
+        onClose: function(p, v, d) {
+          console.log("close");
+        }
+      });
+
+</script>
+</body>
+</html>

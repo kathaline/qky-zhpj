@@ -293,7 +293,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .error.select .radio_a b{background:#fff;}
 /*复选改装*/
 .checkbox label{line-height:30px; height:30px;}
-a.checkbox_a{display:block; width:16px; height:16px; border:1px solid #dadada; border-radius:4px;background:#ffffff; line-height:15px; text-align:center; text-decoration: inherit; margin:6px 5px 0 0;}
+a.checkbox_a{display:block; width:16px; height:16px; border:1px solid #dadada; border-radius:4px;background:#ffffff; line-height:15px; text-align:center; text-decoration: inherit; margin:3px 5px 0 0;}
 .checkbox_a i{ color:#fff;}
 .select a.checkbox_a{background: #27b0f2;  border: 1px solid #27b0f2;}
 .disabled a.checkbox_a{background:#ffffff; border:1px solid #dadada;}

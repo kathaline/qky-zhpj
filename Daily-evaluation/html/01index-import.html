@@ -19,7 +19,6 @@
 <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/js_pack.js"></script>
-<script language="JavaScript" charset="utf-8" src="../js/ai-fix-show.js"></script>
 <!--js-->
 <script src="../dist/sea.js"></script>
 <script src="../dist/seaconfig.js"></script>
@@ -116,7 +115,7 @@
                    <a href="#" class="import_up bg_org"><i class="qkyicon">&#xe6d8;</i>上传附件</a>
                    <p class="imp_p01">从我的电脑选择要上传的文档：按住CTRL可以上传多份文档</p>
                 </div>
-                <div class="mask_btns"><a  class="bg_bl02" onClick="popIn('#dr_tips')">开始导入</a><a class="bg_w">取消操作</a></div>
+                <div class="mask_btns"><a  class="bg_bl02" data-toggle="modal" data-target="#dr_tips">开始导入</a><a class="bg_w">取消操作</a></div>
              </div>
              <div class="import_tips">
                <h3><i class="qkyicon">&#xe72f;</i>操作提示：</h3>
@@ -134,17 +133,26 @@
 </div>
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
 <!--导入提示弹窗-->
-<div class="set_box yc" id="dr_tips">
-    <div class="set_mask"></div>
-    <div class="set_mask_main dr_tips_m">
-      <div class="main_title">导入提示<div class="mask_close" onClick="popOut('#dr_tips')"><i class="qkyicon">&#xe6aa;</i></div></div>
-        <div class="main_cont">
-          <h3 class="h3_dr">正在批量导入中，点击查看导入进度。</h3>
-        </div>
-        <div class="mask_btns"><a href="02(管理教师)学生评价-评价导入(进度).html" class="bg_org"><i class="qkyicon">&#xe716;</i>查看进度</a></div>
-  </div>
+<div class="modal fade" id="dr_tips" tabindex="-1" role="dialog" aria-labelledby="dr_tipsLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content" role="tabpanel">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                ×
+            </button>
+            <h4 class="modal-title" id="myModalLabel">提示</h4>
+          </div>
+          <div class="modal-body">
+            <div class="main_cont">
+              <p class="fz_3 text-center"><i class="qkyicon_14 mar_r10 fz_22 co_y">&#xe6a4;</i>正在批量导入中，点击查看导入进度</p>
+    
+            </div>
+		  </div>
+          <div class="modal-footer">
+            <a href="02(管理教师)学生评价-评价导入(进度).html" class="btn btn-primary"><i class="qkyicon">&#xe716;</i>查看进度</a>
+          </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
 </div>
-
-
 </body>
 </html>

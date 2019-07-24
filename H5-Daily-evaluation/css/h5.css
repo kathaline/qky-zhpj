@@ -265,9 +265,10 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-flex .weui-navbar__item{ padding:9px 0 9px;}
 .weui-navbar__item:after{ border-right:0;}
 .weui-navbar__item.weui-bar__item--on{ background-color:#fff; color:#09acfb; border-bottom:2px solid #09acfb;}
-.box-navbar{ background-color: #dceaf5;}
+.box-navbar{ background-color: #f2f2f2;}
+.box-navbar .weui-navbar__item{ border-bottom: 1px solid #e9e9e9;}
 .box-navbar.weui-navbar:after{ border-bottom: none;}
-.box-navbar .weui-bar__item--on{ border-bottom-color:#fff; border-top-left-radius: 12px; border-top-right-radius: 12px; margin-top: 2px; color: #666 ; }
+.box-navbar .weui-bar__item--on{ border-bottom-color:#fff; border-top-left-radius: 12px; border-top-right-radius: 12px; margin-top: 2px; }
 /*表单类样式覆盖*/
 .weui-cell{ padding-left:12px; padding-right:12px;}
 .weui-cell_access:active{background-color:inherit}
@@ -440,3 +441,4 @@ fieldset:after{right:0;}
 .more-header.header-title{ background:#d9f8e0;}
 .weui-media-box_appmsg .weui-media-box__hd.sta-more{ width:42px; height:42px;}
 .num-f{ width:24px;}
+.num-f img{width:24px;height: 24px;}

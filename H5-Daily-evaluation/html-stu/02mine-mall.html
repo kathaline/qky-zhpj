@@ -19,22 +19,26 @@
         <a class="weui-navbar__item fz_16 weui-bar__item--on" href="02mine-mall.html">
             <i class="iconfont icon-shangjia mr10"></i>积分商城
         </a>
-        <a class="weui-navbar__item fz_16" href="02mine-mall_sort.html">
-            <i class="iconfont icon-paixingbang mr10"></i>积分明细
+        <a class="weui-navbar__item fz_16" href="02mine-mall_detail.html">
+            <i class="iconfont icon-quanbu mr10"></i>积分明细
         </a>
     </div>
-    <div class="pt50 plr12 pb12 bg_white">
-        <div class="fz_0 po_r mt5">
-            <div class="po_ab_l mall-top_txt"><div class="fz_14 plr12 bg_b3 co_ff radius-6">点击勋章查看介绍，如需调整请登录PC端。</div></div>
-            <img src="../image/mall-top.jpg" class="col-100 radius-6">
+    <div class="pt40">
+        
+        <div class="fz_0 po_r">
+            <div class="po_ab_l mall-top_txt02 t-center">
+                <h3 class="fz_24"><span class="color-warning">125</span><span class="fz_12 ml5 co_ff">积分</span></h3>
+                <div class="iblock fz_14 bor-white_d radius-6 co_ff ptb5 plr12 mt5"><span class="ma5">基础分80</span><span class="ma5">加分<b>23</b></span><span class="ma5">减分<b>10</b></span></div>
+            </div>
+            <img src="../image/mall-top02.jpg" class="col-100">
         </div> 
-        <div class="weui-tab mt20">
+        <div class="weui-tab mt20 plr12 pb12">
             <div class="weui-navbar bg_white zindex1">
                 <a class="weui-navbar__item weui-bar__item--on" href="#tab01">
                     荣誉勋章
                 </a>
                 <a class="weui-navbar__item" href="#tab02">
-                    兑换明细
+                    我已兑换
                 </a>
             </div>
             <div class="weui-tab__bd">
@@ -42,7 +46,7 @@
                     <div class="pt5">
                         <div class="weui-media-box_appmsg mb12">
                             <div class="weui-media-box__bd">
-                                <div class="fz_12"><i class="iconfont icon-xunzhang1 fz_14 mr5"></i>少年勋章</div>
+                                <div class="fz_12"><i class="iconfont icon-xunzhang1 fz_14 mr5"></i>少年勋章(3)</div>
                             </div>
                         </div>
                         <div class="row ma0 t-center">
@@ -53,7 +57,7 @@
                                 </a>                            
                             </div>
                             <div class="col-33 pb10">                                
-                                <a class="block open-popup"  href="javascript:;" data-target="#intro">
+                                <a class="block open-popup"  href="javascript:;" data-target="#intro02">
                                     <img src="../image/honor02.png" class="img60">
                                     <p class="textover01 co_66 fz_14">晨光少年</p>                                
                                 </a>                            
@@ -115,39 +119,27 @@
                     </div>
                 </div>
                 <div id="tab02" class="weui-tab__bd-item">
-                    <form>
-                        <div class="weui-row fz_0">
-                            <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray weui-col-100">
-                            <div class="weui-cell weui-cell_select ptb10 plr12">
-                                <div class="weui-cell__bd">
-                                <input class="weui-input" id="honor-coic" type="text" placeholder="" value="晨光少年">
-                                </div>
-                            </div>
-                            </div>
+                    <div class="row ma0 t-center pt12">
+                        <div class="col-33 pb10">                                
+                            <a class="block open-popup"  href="javascript:;" data-target="#intro02">
+                                <img src="../image/honor01.png" class="img60">
+                                <p class="textover01 co_66 fz_14">星光少年</p>                                
+                            </a>                            
                         </div>
-                    </form>
-                    <table width="100%" border="0" class="table mt12">
-                        <tbody>
-                        <tr>
-                            <th width="3%" scope="col"></th>
-                            <th width="22%" scope="col">兑换学生</th>
-                            <th width="38%" scope="col">学生班级</th>
-                            <th width="37%" scope="col">兑换时间</th>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <td>吴雨涵</td>
-                            <td>一年级（1）班</td>
-                            <td>2019-07-12</td>
-                        </tr>
-                        <tr>
-                            <th>2</th>
-                            <td>罗浔阳</td>
-                            <td>一年级（1）班</td>
-                            <td>2019-06-28</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                        <div class="col-33 pb10">                                
+                            <a class="block open-popup"  href="javascript:;" data-target="#intro02">
+                                <img src="../image/honor02.png" class="img60">
+                                <p class="textover01 co_66 fz_14">晨光少年</p>                                
+                            </a>                            
+                        </div>
+                        <div class="col-33 pb10">                                
+                            <a class="block open-popup"  href="javascript:;" data-target="#intro02">
+                                <img src="../image/honor03.png" class="img60">
+                                <p class="textover01 co_66 fz_14">阳光少年</p>                                
+                            </a>                            
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>           
@@ -187,28 +179,43 @@
             <p>3、有集体荣誉感，学会分工合作；</p>
             <p>4、需要100评价积分；</p>
         </div>
-        <div class="pa12 mb10 t-center"><span class="fz_14 ptb5 plr12 bor-blue_d radius-6 co_blue">本学期，已兑换235次</span></div>
+        <div class="pa12 mb10 t-center"><a href="javascript:;" class="weui-btn weui-btn_plain-primary">立即兑换</a></div>
     </div>
   </div>
 </div>
+<div id="intro02" class='weui-popup__container popup-bottom'>
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal">
+          <div class="toolbar">
+            <div class="toolbar-inner">
+              <a href="javascript:;" class="picker-button close-popup">关闭</a>
+              <h1 class="title">兑换介绍</h1>
+            </div>
+          </div>
+          <div class="modal-content bg_white">       
+              <div class="weui-media-box weui-media-box_appmsg">
+                  <div class="plr12">
+                      <img src="../image/honor01.png" class="img70" alt="">   
+                  </div>
+                  <div class="weui-media-box__bd">
+                      <p class="">星光少年</p>
+                      <div class="weui-media-box__title">需<span class=" color-danger">20</span>积分</div>
+                  </div>    
+              </div>
+              <div class="weui-cells__title ptb10 mt0">获得要求</div>
+              <div class="plr12 fz_14">
+                  <p>1、有一个为集体服务的小岗位；</p>
+                  <p>2、尽自己的能力在岗位上为集体、为他人服务；</p>
+                  <p>3、有集体荣誉感，学会分工合作；</p>
+                  <p>4、需要100评价积分；</p>
+              </div>
+              <div class="pa12 mb10 t-center"><a href="javascript:;" class="weui-btn weui-btn_plain-primary weui-btn_disabled">已兑换</a></div>
+          </div>
+        </div>
+      </div>
 <script src="../js/jquery-2.1.4.js"></script>
 <script src="../js/jquery-weui.js"></script>
 <script>
-    $("#honor-coic").picker({
-        title: "请选择",
-        cols: [
-          {
-            textAlign: 'center',
-            values: ['星光少年','晨光少年','阳光少年']
-          }
-        ],
-        onChange: function(p, v, dv) {
-          console.log(p, v, dv);
-        },
-        onClose: function(p, v, d) {
-          console.log("close");
-        }
-      });
 </script>
   
 </body>

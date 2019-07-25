@@ -207,6 +207,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.bor-white_d{border: 1px dashed #fff; }
 .bor-blue_d{border: 1px dashed #09acfb; }
 .bor-blue{ border:1px solid #09acfb;  }
 .bor-org{ border:1px solid #ff8a00;}
@@ -429,6 +430,7 @@ fieldset:after{right:0;}
 .nodata{ text-align:center; padding:50% 20px 0; font-size:14px;}
 /*商场*/
 .mall-top_txt{ bottom: 0px;width: 100%;top:auto;}
+.mall-top_txt02{top:50%; margin-top: -45px; width: 100%; text-align: center;}
 /*表格*/
 .table th{text-align:center; font-size:13px; color:#888; font-weight:normal; padding:3px 0}
 .table td{ text-align:center; padding:8px 0; color:#666;font-size: 14px;}

@@ -1077,6 +1077,18 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 
 .smenu-over{ max-height:335px; overflow-y:auto; overflow-x:hidden;}
 .list-over{ max-height:370px; overflow-y:auto; overflow-x:hidden;}
+/*弹窗-上传图片*/
+.import_list li.li_img{ height:180px; margin:0 5px 15px;}
+.import_list li.li_img .spn_import{ padding:0; font-size:14px; text-align:center;} 
+.import_list li.li_img .spn_import .qkyicon{display:inline-block;position:absolute;right:0;top:0; z-index:9; width:24px; height:24px; background:#000; line-height:24px; margin:0;color:#fff; font-weight:bold;}
+.act_write .import_list li.li_img{width:80px; height:60px; line-height:60px; text-align:center;}
+.act_write .import_list li.li_img .spn_import .div_img{width:80px; height:60px;}
+.act_write .import_list li.li_img .spn_import img{ width:80px;height:60px;}
+.act_write .import_list li.li_img .a_add{ display:block; line-height:60px; color:#fff;background: #3eb8ee;}
+.act_write .import_list li.li_img .a_add .qkyicon{line-height:60px; font-size:30px;}
+.act_write .import_list li.li_img .a_moree{ color:#3eb8ee;}
+.act_write .import_list li.li_img .a_moree .qkyicon{ color:#3eb8ee; height:50px; line-height:50px; font-size:60px;}
+.act_write .import_list li.li_img .a_moree p{ margin-top:-15px; height:20px; line-height:20px; z-index:2;}
 /*tab*/
 .tab .nav-tabs{ position: relative;}
 .tab .nav-tabs li{text-align: center; margin-right: 10px;margin-bottom: -3px; float:left;}

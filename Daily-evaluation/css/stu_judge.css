@@ -1138,7 +1138,7 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 /*日常评价*/
 .evid{ max-width:200px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; vertical-align:middle; padding-bottom:2px;}
 @media (min-width: 1200px){
-	.evid{ max-width:460px;}
+	.evid{ max-width:420px;}
 }
 @media (min-width: 1600px){
 	.evid{ max-width:580px;}

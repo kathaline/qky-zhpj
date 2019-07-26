@@ -79,6 +79,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bg-trans{ background-color:transparent !important;}
 .bg_b7{ background:rgba(0, 0, 0, .7)}
 .bg_b3{ background:rgba(0, 0, 0, .3)}
+.bg_b2{ background:rgba(0, 0, 0, .2)}
 .pointer{cursor: pointer}
 .co_ff{ color:#fff!important;}
 .co_e0{ color:#e0e0e0!important;}

@@ -448,3 +448,11 @@ fieldset:after{right:0;}
 .weui-media-box_appmsg .weui-media-box__hd.sta-more{ width:42px; height:42px;}
 .num-f{ width:24px;}
 .num-f img{width:24px;height: 24px;}
+
+.honor-top{ background:url(../image/honor-top.png) center bottom repeat-x #aeedff;}
+/* 丝带背景 */			
+.ribbon {position: relative;width:46%;height:36PX; line-height:36PX; background-color: #ffa115; margin-left: auto;  margin-right: auto;z-index:0}
+.ribbon:before,.ribbon:after {content: "";position: absolute;	display: block;bottom:1px;border:16px solid #ffa115;z-index:-1;}
+.ribbon:before {left:-29px;border-right-width: 12px;border-left-color: transparent;}
+.ribbon:after {	right:-29px;border-left-width: 12px;border-right-color: transparent;}
+

@@ -455,6 +455,7 @@ fieldset:after{right:0;}
 .ribbon:before {left:-29px;border-right-width: 12px;border-left-color: transparent;}
 .ribbon:after {	right:-29px;border-left-width: 12px;border-right-color: transparent;}
 .honor-card{ position: relative;box-shadow: 0 0 8px #9aa2a7; overflow:}
-.honor-card:before{content: " "; position: absolute;background: radial-gradient(transparent 0, transparent 4px, #fff 4px); width:calc(100% + 20px); height:8px;box-sizing: border-box;background-size: 15px 14px; background-position: 8px 0px;background-color: transparent;}
+.honor-card:before{content: " "; position: absolute;background: radial-gradient(transparent 0, transparent 4px, #fff 4px); width: 100%; height:8px;box-sizing: border-box;background-size: 15px 14px; background-position: 8px 0px;background-color: transparent;}
 .honor-card:before{top:-4px;left:-20px; transform:rotate(180deg); }
+.pl12.honor-card:before{width:calc(100% + 20px);}
 

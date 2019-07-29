@@ -449,7 +449,7 @@ fieldset:after{right:0;}
 .num-f{ width:24px;}
 .num-f img{width:24px;height: 24px;}
 
-.honor-top{ background:url(../image/honor-top.png) center bottom repeat-x #aeedff;}
+.honor-top{ background:url(../image/honor-top.png) center bottom repeat-x,linear-gradient(to bottom,#aeedff,#7ee2fe,#16d2ff);}
 /* 丝带背景 */			
 .ribbon {position: relative;width:46%;height:36PX; line-height:36PX; background-color: #ffa115; margin-left: auto;  margin-right: auto;z-index:0}
 .ribbon:before,.ribbon:after {content: "";position: absolute;	display: block;bottom:1px;border:16px solid #ffa115;z-index:-1;}

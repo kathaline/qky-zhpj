@@ -449,12 +449,15 @@ fieldset:after{right:0;}
 .num-f{ width:24px;}
 .num-f img{width:24px;height: 24px;}
 /*荣誉墙*/
-.honor-top{ background:/*url(../image/honor-top.png) center bottom repeat-x,*/linear-gradient(to bottom,#aeedff,#7ee2fe,#16d2ff);}	
-.ribbon {position: relative;width:46%;height:36PX; line-height:36PX; background-color: #ffa115; margin-left: auto;  margin-right: auto;z-index:0}
-.ribbon:before,.ribbon:after {content: "";position: absolute;	display: block;bottom:1px;border:16px solid #ffa115;z-index:-1;}
+.honor-top{ background:#f6f6f6/*linear-gradient(to bottom,#aeedff,#7ee2fe,#16d2ff)*/; position: relative;}	
+.honor-name{ position: relative;}
+.honor-name::before{ content: " "; position: absolute; left:50%; margin-left: -100px; top:-26px;width: 160px; height: 50px; border-radius: 100px 100px 0 0 ;  height: 80px;  
+    border: 20px solid #e9edf1; border-bottom: 0;}
+.ribbon {position: relative;width:50%;height:36PX; line-height:36PX; background-color: #fcca4c; margin-left: auto;  margin-right: auto;z-index:0}
+.ribbon:before,.ribbon:after {content: "";position: absolute;	display: block;bottom:1px;border:16px solid #fcca4c;z-index:-1;}
 .ribbon:before {left:-29px;border-right-width: 12px;border-left-color: transparent;}
 .ribbon:after {	right:-29px;border-left-width: 12px;border-right-color: transparent;}
-.honor-card{ position: relative;box-shadow: 0 0 8px #9aa2a7; overflow:}
+.honor-card{ position: relative;box-shadow: 0 0 8px #c2c8cb;}
 .honor-card:before{content: " "; position: absolute;background: radial-gradient(transparent 0, transparent 4px, #fff 4px); width: 100%; height:8px;box-sizing: border-box;background-size: 15px 14px; background-position: 8px 0px;background-color: transparent;}
 .honor-card:before{top:-4px;left:-20px; transform:rotate(180deg); }
 .pl12.honor-card:before{width:calc(100% + 20px);}

@@ -249,7 +249,9 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 .lh20{ line-height: 20px;}
 .lh30{ line-height: 30px;}
-
+/*开发样式*/
+.weui-photo-browser-modal{z-index: 1000}
+.weui-photo-browser-modal .photo-container { justify-content: center; }
 /*超出省略号*/
 .w-over{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .txt-over{display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;-webkit-line-clamp: 1;}
@@ -428,7 +430,8 @@ fieldset:after{right:0;}
 /*相册*/
 .div-album{background: no-repeat 50%;background-size: cover; width:100%; border-radius:6px;}
 /*冷启动*/
-.nodata{ text-align:center; padding:50% 20px 0; font-size:14px;}
+.nodata{ text-align:center; font-size:14px;padding:47% 20px 0;}
+div+.nodata{ padding:80px 20px 0;}
 /*商场*/
 .mall-top_txt{ bottom: 0px;width: 100%;top:auto;}
 .mall-top_txt02{top:50%; margin-top: -45px; width: 100%; text-align: center;}

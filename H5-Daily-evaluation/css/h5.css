@@ -430,7 +430,7 @@ fieldset:after{right:0;}
 /*相册*/
 .div-album{background: no-repeat 50%;background-size: cover; width:100%; border-radius:6px;}
 /*冷启动*/
-.nodata{ text-align:center; font-size:14px;padding:47% 20px 0;}
+.nodata{ text-align:center; font-size:14px;padding:50% 20px 0;}
 div+.nodata{ padding:80px 20px 0;}
 /*商场*/
 .mall-top_txt{ bottom: 0px;width: 100%;top:auto;}

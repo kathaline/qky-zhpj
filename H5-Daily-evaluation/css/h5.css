@@ -277,7 +277,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
     border: 1px solid #92e3fe;
     border-bottom: none;    color: #008dd9;}
 /*表单类样式覆盖*/
-.weui-cell{ padding-left:12px; padding-right:12px;}
+.weui-cell{ padding:12px;}
 .weui-cell_access:active{background-color:inherit}
 .weui-loadmore.weui-loadmore_line{ margin-bottom:0;}
 .weui-loadmore_line .weui-loadmore__tips{ background:#f6f6f6;}

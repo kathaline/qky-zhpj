@@ -165,7 +165,7 @@ input[type="text"], select{ height:30px;}
   margin-left: auto;
 }
 /*中部模块框架样式*/
-.qky_content{ width:100%; _width:expression((documentElement.clientWidth<1000)?'1000px':'auto'); height:auto; overflow:hidden; padding-bottom:16px;}
+.qky_content{ width:100%; _width:expression((documentElement.clientWidth<1000)?'1000px':'auto'); height:auto; overflow:hidden; padding-bottom:20px;}
 
 	/*中部导航模块框架样式*/
 	.qky_nav { width:980px; height:auto; background:#fff; margin:0 auto;overflow:hidden; margin-top:14px;}

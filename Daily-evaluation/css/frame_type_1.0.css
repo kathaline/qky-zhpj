@@ -22,7 +22,8 @@ a{ color:#666; cursor:pointer; outline:none;}
 i,em{ font-style:normal;}
 textarea,input,select{ outline:none;font-family: Microsoft YaHei, Arial;resize:none;}
 input[type="text"], select,textarea  {  padding:0 0 0 5px;border: 1px solid #d4d4d4;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px;}
-input[type="text"], select{ height:30px;}
+input[type="text"], select{ height:30px; line-height: 28px;}
+select.form-control{ height:30px; line-height: 28px; padding-top: 0; padding-bottom: 0; padding-left: 1px;}
 /*input[type="text"]:focus, select:focus,textarea:focus,.perc_span:focus,.bor_all.rad4:focus{ outline: 0; border: 1px solid #03a9f4; box-shadow: 0px 0px 8px 0px #76d4fe;}*/
 .clear2{ clear:both; zoom:1;}
 .fl{ float:left;}
@@ -52,17 +53,19 @@ input[type="text"], select{ height:30px;}
 .w_ba{ background:#fff;}
 .b_ba{ background:#04acf7;}
 .fz_00{ font-size:0 !important;}
-.fz_0{ font-size:12px !important;}
-.fz_1{ font-size:14px !important;}
-.fz15{ font-size:15px !important;}
-.fz_2{ font-size:16px !important;}
+.fz_0,.fz_12{ font-size:12px !important;}
+.fz_1,.fz_14{ font-size:14px !important;}
+.fz15,.fz_15{ font-size:15px !important;}
+.fz_2,.fz_16{ font-size:16px !important;}
 .fz_3,.fz_18{ font-size:18px !important;}
-.fz_4{ font-size:20px !important;}
+.fz_4,.fz_20{ font-size:20px !important;}
 .fz_5,.fz_22{ font-size:22px !important;}
-.fz_max{ font-size:36px;}
+.fz_max,.fz_36{ font-size:36px;}
 
 .img30{ width:30px; height:30px;}
 .img50{ width:50px; height:50px;}
+.img100{ width:100px; height:100px;}
+.img100x75{ width:100px; height:75px;}
 
 .alert-info{background-color:#f8fdff !important;}
 .bg-gray{ background-color:#fafafa !important;}

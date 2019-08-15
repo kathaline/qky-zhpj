@@ -46,10 +46,10 @@
     <div class="side">
       <div class="side-menu nav mall-smenu">
         <ul class="ul-menu" role="tablist">
-          <li class="active" role="presentation">
+          <li role="presentation">
             <a href="#Set01" aria-controls="" role="tab" data-toggle="tab">分数设置</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="active">
             <a href="#Set02" aria-controls="" role="tab" data-toggle="tab">勋章管理</a>
           </li>
           <li role="presentation">
@@ -60,10 +60,9 @@
     </div>
     <div class="main">
       <div class="tab-content tabs label-h-over">
-        <div role="tabpanel" class="tab-pane fade active in" id="Set01">
+        <div role="tabpanel" class="tab-pane fade" id="Set01">
           <div class="cont_tit pad_lr20">
-            <div class="fl"><h3>基础分数设置</h3>
-            </div>      
+            <div class="fl"><h3>基础分数设置</h3></div>      
           </div>
           <form class="pad_lr20 pad_b20">
             <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5">日常表现</div>
@@ -88,196 +87,82 @@
             </div>
           </form>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="Set02">
-          
+        <div role="tabpanel" class="tab-pane fade active in" id="Set02">
+          <div class="cont_tit pad_lr20">
+            <div class="fl"><h3>勋章信息管理</h3></div>     
+            <div class="fr"><a href="JavaScript:" class="bg_gray" data-toggle="modal" data-target="#add-medal"><i class="qkyicon">&#xe69e;</i>新增勋章</a></div> 
+          </div>
         </div>
       </div>       
     </div>
   </div>
 </div>
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
-<div class="modal fade" id="add-teacher" tabindex="-1" role="dialog" aria-labelledby="add-teacherLabel" aria-hidden="true">
+<div class="modal fade" id="add-medal" tabindex="-1" role="dialog" aria-labelledby="add-medalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content" role="tabpanel">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                 ×
             </button>
-            <h4 class="modal-title" id="myModalLabel">添加评价老师<span class="fz_1 co_999 mar_l5">（可自定义评价范围、评价权限有效期）</span></h4>
+            <h4 class="modal-title" id="myModalLabel"> 新增勋章信息</h4>
           </div>
           <div class="modal-body">
-            <div class="row pad_lr15 pad_b15">
-              <div class="col-sm-6">
-                <div class="has-feedback">
-                  <input type="text" class="form-control" placeholder="姓名搜索">
-                  <a class="qkyicon form-control-feedback" aria-hidden="true">&#xe631;</a>
+            <form class="form-horizontal row pad_t15">
+              <div class="col-sm-12 clearfix">
+                <div class="col-sm-9">
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0"><strong class="co_r">*</strong>勋章名称</label>
+                    <div class="col-sm-10 has-feedback">
+                      <input type="text" class="form-control" required="" placeholder="输入勋章名称" value="星光少年">
+                      <span class="form-control-feedback co_999 mar_r5" aria-hidden="true">4/12</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0"><strong class="co_r">*</strong>兑换条件</label>
+                    <div class="col-sm-4">
+                      <select name="select" class="form-control">
+                        <option>请选择</option>
+                        <option selected="">积分换勋章</option>
+                      </select>
+                    </div>
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">需要</label>
+                    <div class="col-sm-4 has-feedback">
+                      <input type="text" class="form-control" required="" placeholder="" value="20">
+                      <span class="form-control-feedback co_999 mar_r5" aria-hidden="true">积分</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0"><strong class="co_r">*</strong>适用年级</label>
+                    <div class="col-sm-10">
+                      
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pad_t5 pad_l0 pad_r0">课程介绍<p class="co_999">(0/50)</p></label>
+                    <div class="col-sm-10">
+                      <textarea id="" rows="7" placeholder="输入介绍文字，限300字以内" class="form-control"></textarea> 
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-sm-3 pl10">
+                  <label class="col-sm-12 pad_t5 pad_l0 pad_r0"><strong class="co_r">*</strong>勋章图片</label>
+                  <div class="up-div text-center">
+                    <img src="../images/honor01.png" class="img100">
+                    <div class="p-r">
+                      <button class="btn bg-ylw w_co" type="button"><i class="iconfont icon-shangchuan fz_14"></i>点击上传勋章图片
+                        <input type="file" name="fileField" class="ycfile" size="28" accept="image/gif,image/jpeg,image/jpg,image/png">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="co_999 mar_t15 fz_12 text-center">上传png格式；40*40</div>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <label class="checkbox-qky parent fz_nwe fr pad_t5" lj="checkbox_grader" isc="no"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a>选择全部</label>
-              </div>
-            </div>
-            <div class="clear mar_lr15 pad_b5">
-              <div class="col-sm-3">教师姓名</div>
-              <div class="col-sm-3">评价范围</div>
-              <div class="col-sm-5">评价权限有效期</div>
-              <div class="col-sm-1 pad_l0">选择</div>
-            </div>
-            <div class="members bor_top bor_btm">
-              <div class="bg-gray clear mar_15 pad_5">
-                <div class="col-sm-3 pad_t5">沈佳妮(1353358215)</div>
-                <div class="col-sm-3">
-                  <select name="select" class="wid-100">
-                    <option selected>所在班级</option>
-                    <option>全校班级</option>
-                  </select>
-                </div>
-                <div class="col-sm-5">
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                </div>
-                <div class="col-sm-1 pad_l0 pad_t5"><label class="checkbox-qky child fz_nwe fr  select" lj="checkbox_grader"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a></label></div>
-              </div>
-              <div class="bg-gray clear mar_15 pad_5">
-                <div class="col-sm-3 pad_t5">沈佳妮(1353358215)</div>
-                <div class="col-sm-3">
-                  <select name="select" class="wid-100">
-                    <option selected>所在班级</option>
-                    <option>全校班级</option>
-                  </select>
-                </div>
-                <div class="col-sm-5">
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                </div>
-                <div class="col-sm-1 pad_l0 pad_t5"><label class="checkbox-qky child fz_nwe fr" lj="checkbox_grader"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a></label></div>
-              </div>
-              <div class="bg-gray clear mar_15 pad_5">
-                <div class="col-sm-3 pad_t5">沈佳妮(1353358215)</div>
-                <div class="col-sm-3">
-                  <select name="select" class="wid-100">
-                    <option selected>所在班级</option>
-                    <option>全校班级</option>
-                  </select>
-                </div>
-                <div class="col-sm-5">
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                </div>
-                <div class="col-sm-1 pad_l0 pad_t5"><label class="checkbox-qky child fz_nwe fr" lj="checkbox_grader"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a></label></div>
-              </div>
-              <div class="bg-gray clear mar_15 pad_5">
-                <div class="col-sm-3 pad_t5">沈佳妮(1353358215)</div>
-                <div class="col-sm-3">
-                  <select name="select" class="wid-100">
-                    <option selected>所在班级</option>
-                    <option>全校班级</option>
-                  </select>
-                </div>
-                <div class="col-sm-5">
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                </div>
-                <div class="col-sm-1 pad_l0 pad_t5"><label class="checkbox-qky child fz_nwe fr" lj="checkbox_grader"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a></label></div>
-              </div>
-              <div class="bg-gray clear mar_15 pad_5">
-                <div class="col-sm-3 pad_t5">沈佳妮(1353358215)</div>
-                <div class="col-sm-3">
-                  <select name="select" class="wid-100">
-                    <option selected>所在班级</option>
-                    <option>全校班级</option>
-                  </select>
-                </div>
-                <div class="col-sm-5">
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                </div>
-                <div class="col-sm-1 pad_l0 pad_t5"><label class="checkbox-qky child fz_nwe fr" lj="checkbox_grader"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a></label></div>
-              </div>
-              <div class="bg-gray clear mar_15 pad_5">
-                <div class="col-sm-3 pad_t5">沈佳妮(1353358215)</div>
-                <div class="col-sm-3">
-                  <select name="select" class="wid-100">
-                    <option selected>所在班级</option>
-                    <option>全校班级</option>
-                  </select>
-                </div>
-                <div class="col-sm-5">
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                </div>
-                <div class="col-sm-1 pad_l0 pad_t5"><label class="checkbox-qky child fz_nwe fr" lj="checkbox_grader"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a></label></div>
-              </div>
-              <div class="bg-gray clear mar_15 pad_5">
-                <div class="col-sm-3 pad_t5">沈佳妮(1353358215)</div>
-                <div class="col-sm-3">
-                  <select name="select" class="wid-100">
-                    <option selected>所在班级</option>
-                    <option>全校班级</option>
-                  </select>
-                </div>
-                <div class="col-sm-5">
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                </div>
-                <div class="col-sm-1 pad_l0 pad_t5"><label class="checkbox-qky child fz_nwe fr" lj="checkbox_grader"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a></label></div>
-              </div>
-              <div class="bg-gray clear mar_15 pad_5">
-                <div class="col-sm-3 pad_t5">沈佳妮(1353358215)</div>
-                <div class="col-sm-3">
-                  <select name="select" class="wid-100">
-                    <option selected>所在班级</option>
-                    <option>全校班级</option>
-                  </select>
-                </div>
-                <div class="col-sm-5">
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                </div>
-                <div class="col-sm-1 pad_l0 pad_t5"><label class="checkbox-qky child fz_nwe fr" lj="checkbox_grader"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a></label></div>
-              </div>
-              <div class="bg-gray clear mar_15 pad_5">
-                <div class="col-sm-3 pad_t5">沈佳妮(1353358215)</div>
-                <div class="col-sm-3">
-                  <select name="select" class="wid-100">
-                    <option selected>所在班级</option>
-                    <option>全校班级</option>
-                  </select>
-                </div>
-                <div class="col-sm-5">
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                  <div class="col-sm-6 pad_l0"><strong class="b_datec wid_max"><input type="text"  value="2016-09-23" class="set_text" onClick="WdatePicker()" onFocus="this.className='set_text'"/><i class="qkyicon">&#xe695;</i></strong></div>
-                </div>
-                <div class="col-sm-1 pad_l0 pad_t5"><label class="checkbox-qky child fz_nwe fr" lj="checkbox_grader"><a class="checkbox_a fl"><i class="qkyicon fz_1">&#xe69f;</i></a></label></div>
-              </div>
-  
-            </div>
+            </form>
 		  </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
             <button type="button" class="btn btn-primary">保存</button>
-          </div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal -->
-</div>
-<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="deleteLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content" role="tabpanel">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                ×
-            </button>
-            <h4 class="modal-title" id="myModalLabel">提示</h4>
-          </div>
-          <div class="modal-body clear pa0">
-            <div class="main_cont text-center">
-              <p class="fz_3 pad_lr10"><i class="qkyicon_14 mar_r10 co_y fz_5">&#xe6a4;</i>删除后将无法找回，确认删除？</p>
-    
-            </div>
-		  </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-            <button type="button" class="btn btn-primary">确认</button>
           </div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal -->

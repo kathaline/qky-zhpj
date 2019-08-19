@@ -1063,7 +1063,7 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .side-menu .ul-menu,.side-menu .ul-intro{ padding:0; margin:0}
 .side-menu .ul-menu li{ color:#333;  display:block; padding:12px 20px 12px 20px;border-left:3px solid transparent; cursor:pointer;}
 .side-menu .ul-intro li{ color:#333;padding:6px 5px 6px 35px;}
-.side-menu .ul-menu li.active{ border-left: 3px solid #21a2db; color: #21a2db; background: #f2fafd;}
+.side-menu .ul-menu li.active{ border-left: 3px solid #21a2db; color: #21a2db; background: #eefaff;}
 .side-menu .ul-intro li a:hover{ color:#21a2db !important;}
 .mall-smenu .ul-menu li{ padding: 0;}
 .mall-smenu .ul-menu li a{ padding:12px 20px 12px 20px; display: block;}

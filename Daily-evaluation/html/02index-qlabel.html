@@ -29,7 +29,6 @@
  });
 </script>
 </head>
-
 <body>
 <!--顶部-->
 <div class="div-rgt">
@@ -45,8 +44,7 @@
       <div class="cont_tit pad_lr20">
         <div class="fl"><h3>编辑指标大项</h3>
         </div>
-        <div class="fr"><a data-toggle="modal" data-target="#label-add" class=" co_b" title="添加指标大项"><i class="qkyicon">&#xe6dc;</i></a></div>
-                
+        <div class="fr"><a data-toggle="modal" data-target="#label-copy" class=" co_b" title="复用指标"><i class="qkyicon">&#xe661;</i></a><a data-toggle="modal" data-target="#label-add" class=" co_b" title="添加指标大项"><i class="qkyicon">&#xe6dc;</i></a></div>        
       </div>
       <div class="side-menu">
         <ul class="ul-menu collapse in" id="menu1">
@@ -164,6 +162,103 @@
   <div class="modal-footer">
     <a type="button" href="02index-qcreat.html" class="btn btn-default fz_2 mar_lr10">上一步</a><a type="button" href="02index-quota.html" class="btn btn-primary fz_2 mar_lr10">保存提交</a>
   </div>
+</div>
+<div class="modal fade" id="label-copy" tabindex="-1" role="dialog" aria-labelledby="label-copyLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+        <div class="tab" role="tabpanel">
+          <!-- Nav tabs -->
+          <div class="modal-header nav nav-tabs pad_0">
+            <ul class="fl" role="tablist">
+              <li role="presentation" class="active"><a href="#Section01" aria-controls="home" role="tab" data-toggle="tab" class="fz_16" aria-expanded="true">全部佐证</a></li>
+              <li role="presentation" class=""><a href="#Section02" aria-controls="school" role="tab" data-toggle="tab" class="fz_16" aria-expanded="false">学业水平</a></li>
+            </ul>
+            <div class="fr pad_t15 pad_r15 text-warning"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></div>
+          </div>
+          <!-- Tab panes -->
+          <div class="modal-body tab-content tabs pad_0 bor-b pad_20">
+            <div role="tabpanel" class="tab-pane fade active in" id="Section01">
+              
+              <div class="add_01 bor_btm">
+                <div class="fl_chk fl">
+                  <div class="search"><input name="text" type="text" placeholder="请输入关键字"><a href="#" title="搜索"><i class="qkyicon"></i></a></div>
+                  <form name="form1" method="post" action="">
+                      <label class="radio-box">
+                        <input type="radio" name="RadioGroup1" value="2016-2017学年评价" id="RadioGroup1_0">
+                        <span title="2016-2017学年评价2016-2017学年评价2016-2017学年评价2016-2017学年评价2016-2017学年评价">2016-2017学年评价2016-2017学年评价2016-2017学年评价2016-2017学年评价2016-2017学年评价</span>
+                      </label>
+                      <label class="radio-box">
+                        <input type="radio" name="RadioGroup1" value="2016-2017学年评价" id="RadioGroup1_1">
+                        <span title="2016-2017学年评价2016-2017学年评价2016-2017学年评价2016-2017学年评价2016-2017学年评价">2016-2017学年评价2016-2017学年评价2016-2017学年评价2016-2017学年评价2016-2017学年评价</span>
+                      </label>
+                  </form>
+                </div>
+                <div class="tan_cont fr">
+                  <div class="all_zb">
+                    <label for="chk001" class="weui-switch-cp mar_bno">
+                      <input id="chk001" class="weui-switch-cp__input" type="checkbox">
+                      <span class="chk_box mar_r5"></span>添加全部
+                    </label>
+                  </div>
+                  <div class=" fr-zbk">
+                    <div class="nopass_list m-wid">
+                      <span class="st-name pad_r20 p-r cur">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r cur">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r cur">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r cur">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r cur">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe69e;</i></a></span>
+                      </div>
+                  </div>     
+                </div>  
+                <div class="clear"> </div>
+                </div>
+                <div class="mar_t20 mar_b10 co_333 bor_lb pad_l5">已选指标:</div>
+                <div class="nopass_list  m-wid">
+                  <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe7da;</i></a></span>
+                  <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe7da;</i></a></span>
+                  <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe7da;</i></a></span>
+                  <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe7da;</i></a></span>
+                  <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe7da;</i></a></span>
+                  <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe7da;</i></a></span>
+                  <span class="st-name pad_r20 p-r">荣誉内容有容有日常评<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe7da;</i></a></span>
+                  <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe7da;</i></a></span>
+                  <span class="st-name pad_r20 p-r">内容有日常评价<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0">&#xe7da;</i></a></span>
+                </div>
+              
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section02">
+              
+            </div>
+           
+          </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">确认</button>
+        </div>
+      </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
 </div>
 <div class="modal fade" id="label-add" tabindex="-1" role="dialog" aria-labelledby="label-addLabel" aria-hidden="true">
 	<div class="modal-dialog">

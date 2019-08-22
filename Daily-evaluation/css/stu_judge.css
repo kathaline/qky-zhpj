@@ -505,12 +505,12 @@ a.ul_data-btn:hover{border:1px solid #999}
 .tit_tab a.curr,.tit_tab a:hover{border-bottom:2px solid #f90;color:#f90}
 .fl_chk{width:240px;position:relative}
 .fl_chk .search{width:220px;position:absolute;left:0;top:0}
-.fl_chk form{padding:20px 10px 10px 0; height:200px;overflow-y:auto;overflow-x:hidden}
-.fl_chk form label{width:230px;margin:18px 0;display:block;padding:0;height:16px}
+.fl_chk form{padding:26px 10px 10px 0; height:252px;overflow-y:auto;overflow-x:hidden}
+.fl_chk form label{width:230px;margin:18px 0 0;display:block;padding:0;height:16px}
 .fl_chk form label input,.fl_chk form label span{display:block;float:left;height:16px;line-height:16px; margin:0}
 .fl_chk form label span{width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fr-zbk{width:600px; height:170px;overflow-y:auto;overflow-x:hidden}
-.fr-zbk .nopass_list{height:170px !important;max-height:180px !important;}
+.fr-zbk{width:600px; overflow-y:auto;overflow-x:hidden}
+.fr-zbk .nopass_list{max-height:222px !important; font-size: 0;}
 .m-wid.nopass_list span{ width:180px !important;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .all_zb{height:30px;line-height:30px;}
 .all_zb input{margin-right:8px}
@@ -884,7 +884,7 @@ table.formbox_one .txt,table.formbox_one .b_datec .set_text{ width:100%;text-ind
 /*荣誉审核*/
 .mark_txtare02{ width:94%; padding:3px; border:1px solid #ccc;}
 .nopass_list{ max-height:80px; overflow-y:auto;}
-.nopass_list span{ display:inline-block;}
+.nopass_list span{ display:inline-block; font-size: 14px;}
 .nopass_list .sp_nopass .qkyicon{ vertical-align:middle; margin:0 5px;}
 .nopass_list .sp_nopass:hover .qkyicon{ color:#f60;}
 /*全部荣誉*/
@@ -1174,3 +1174,10 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .chk_box{display:inline-block; width:16px; height:16px; border:1px solid #dadada; border-radius:4px;background:#ffffff; line-height:15px; text-align:center; text-decoration: inherit; position: relative; vertical-align:text-top;}
 .chk_box:before{ content: " "; position: absolute; top: 0; left:3px;width:5px; height:9px; border-color:#fff; border-style:solid; border-width:0 2px 2px 0; transform: rotate(45deg);}
 .weui-switch-cp__input:checked ~ .chk_box{background: #27b0f2;  border: 1px solid #27b0f2;}
+
+/*单选*/
+.radio-box input[type="radio"] { position: absolute; clip: rect(0, 0, 0, 0);}
+.radio-box input[type="radio"] + label::before,.radio-box input[type="radio"] + span::before { content: "\a0"; /*不换行空格*/ display: inline-block; vertical-align:text-top; width: 12px; height:12px;
+margin-right: 5px;    border-radius: 50%; border: 1px solid #bbb; line-height:10px; }
+.radio-box input[type="radio"]:checked + label::before ,.radio-box input[type="radio"]:checked + span::before{width: 8px;height:8px;border: 1px solid #21a2db; background-color: #21a2db; background-clip: content-box;
+ padding: 2px;}

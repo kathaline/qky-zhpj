@@ -59,7 +59,7 @@ h3{ font-weight:normal; font-size:14px;}
 /*.bor_all .co_999.text-right{ height:16px; line-height:14px; margin-top:0; position:absolute; right:0; bottom:12px;}*/
 .bor_all .co_999.text-right{ height:16px; line-height:14px; margin-top:0;}
 .bor_all textarea{ margin-bottom:0; height:100%; padding-bottom:0}
-.bor_all input[type=text]{ padding-right:55px; height:28px;}
+/*.bor_all input[type=text]{ padding-right:55px; height:28px;}*/
 .bor_all input[type=text],.bor_all textarea{padding-left:10px;}
 .bor_all .text-right.co_999 .co_y{ color:#f00 !important}
 .rad4{border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}

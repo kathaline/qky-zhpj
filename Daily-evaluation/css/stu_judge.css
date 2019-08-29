@@ -275,7 +275,7 @@ a.a_btn:hover{background:#2fb0e8;color:#fff; border:1px solid #7cc6e6;}
 .judge_table .a_btn_unuse,.judge_table .a_btn_unuse:hover{background:#fcfcfc;color:#e0e0e0; border:1px solid #d8d8d8; cursor:default;}
 
 .rl_exp{margin:0 auto;position:absolute;top:21px;width:156px;border:1px solid #D0D0D0;box-shadow:0 0 5px 5px #fff inset,2px 2px 0 rgba(127,127,127,.1);background:none repeat scroll 0 0 #fff;zoom:1;z-index:999;text-align:left}
-.i_bg{position:absolute;background:url(../images/ico-bq_bg.png) 0 0 no-repeat;width:16px;height:8px;top:-8px;left:40px}
+
 #menu{overflow:hidden}
 #nav{height:auto;position:relative;overflow-x:hidden;overflow-y:auto}
 #nav *{text-align:left}
@@ -1025,7 +1025,7 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .courses .div_dul ul{ min-height:31px;}
 
 /*活动详情*/
-.intro-top{background:url(../images/intron-bg.jpg) no-repeat center center #2bace4; background-size:cover;}
+
 .hz-course-before .img-responsive{ width:100%;}
 @media (min-width: 768px){
 	/*.cour-intro-pic.hz-course-before .img-responsive{ min-width:480px;}*/

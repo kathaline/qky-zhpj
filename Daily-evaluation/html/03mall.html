@@ -46,10 +46,10 @@
     <div class="side">
       <div class="side-menu nav mall-smenu">
         <ul class="ul-menu" role="tablist">
-          <li role="presentation" class="active">
+          <li role="presentation">
             <a href="#Set01" aria-controls="" role="tab" data-toggle="tab">分数设置</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="active">
             <a href="#Set02" aria-controls="" role="tab" data-toggle="tab">勋章管理</a>
           </li>
           <li role="presentation">
@@ -60,7 +60,7 @@
     </div>
     <div class="main">
       <div class="tab-content tabs label-h-over">
-        <div role="tabpanel" class="tab-pane fade active in" id="Set01">
+        <div role="tabpanel" class="tab-pane fade" id="Set01">
           <div class="cont_tit pad_lr20">
             <div class="fl"><h3>基础分数设置</h3></div>      
           </div>
@@ -87,7 +87,7 @@
             </div>
           </form>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="Set02">
+        <div role="tabpanel" class="tab-pane fade active in" id="Set02">
           <div class="cont_tit pad_lr20">
             <div class="fl"><h3>勋章信息管理</h3></div>     
             <div class="fr"><a href="JavaScript:" class="bg_gray" data-toggle="modal" data-target="#add-medal"><i class="qkyicon">&#xe69e;</i>新增勋章</a></div> 
@@ -368,9 +368,9 @@
                   </div>  
                 </div>
                 <div class="col-sm-3 pl10">
-                  <label class="col-sm-12 pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>勋章图片</label>
-                  <div class="up-div text-center">
-                    <img src="../images/honor.png" class="img100">
+                  <div class="pad_t5"><strong class="co_r mar_r5">*</strong>勋章图片</div>
+                  <div class="up-div text-center pad_t10">
+                    <div class="iblock bg-upload"><div class="status_cont">50%</div><img src="../images/honor.png" class="img100"></div>
                     <div class="p-r">
                       <button class="btn bg-ylw w_co" type="button"><i class="iconfont icon-shangchuan fz_14"></i>点击上传勋章图片
                         <input type="file" name="fileField" class="ycfile" size="28" accept="image/gif,image/jpeg,image/jpg,image/png">
@@ -526,9 +526,9 @@
                   </div>  
                 </div>
                 <div class="col-sm-3 pl10">
-                  <label class="col-sm-12 pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>勋章图片</label>
-                  <div class="up-div text-center">
-                    <img src="../images/honor01.png" class="img100">
+                  <div class="pad_t5"><strong class="co_r mar_r5">*</strong>勋章图片</div>
+                  <div class="up-div text-center pad_t10">
+                    <div class="iblock bg-upload"><div class="status_cont"><i class="co_r fz_4 qky_icon qky-gantanhao"></i></div><img src="../images/honor01.png" class="img100"></div>
                     <div class="p-r">
                       <button class="btn bg-ylw w_co" type="button"><i class="iconfont icon-shangchuan fz_14"></i>点击上传勋章图片
                         <input type="file" name="fileField" class="ycfile" size="28" accept="image/gif,image/jpeg,image/jpg,image/png">

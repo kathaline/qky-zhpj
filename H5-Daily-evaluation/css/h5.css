@@ -471,4 +471,6 @@ div+.nodata{ padding:80px 20px 0;}
 .honor-card:before{content: " "; position: absolute;background: radial-gradient(transparent 0, transparent 4px, #fff 4px); width: 100%; height:8px;box-sizing: border-box;background-size: 15px 14px; background-position: 8px 0px;background-color: transparent;}
 .honor-card:before{top:-4px;left:-20px; transform:rotate(180deg); }
 .pl12.honor-card:before{width:calc(100% + 20px);}
+/*券已使用*/
+.tip_done{transform: rotate(-20deg); color:#555; border:1px dashed #555; padding:1px 5px; font-size:12px; border-radius:4px;}
 

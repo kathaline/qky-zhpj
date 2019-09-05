@@ -4,7 +4,7 @@
  * 创建者：yhc 
  * 创建日期：2017-08-16
 */
-body, html {-webkit-tap-highlight-color: transparent; background-color:#f6f6f6; }
+body, html {-webkit-tap-highlight-color: transparent; background-color:#f6f6f6; height: 100%; }
 a{ color:#09acfb;}
 ul,li{ padding:0; margin:0; list-style:none;}
 *{WORD-WRAP:break-word;TABLE-LAYOUT:fixed;word-break:break-all;}
@@ -277,6 +277,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
     border: 1px solid #92e3fe;
     border-bottom: none;    color: #008dd9;}
 /*表单类样式覆盖*/
+input[disabled]{ color: #e3e3e3;}
 .weui-cell{ padding:12px;}
 .weui-cell_access:active{background-color:inherit}
 .weui-loadmore.weui-loadmore_line{ margin-bottom:0;}
@@ -473,4 +474,17 @@ div+.nodata{ padding:80px 20px 0;}
 .pl12.honor-card:before{width:calc(100% + 20px);}
 /*券已使用*/
 .tip_done{transform: rotate(-20deg); color:#555; border:1px dashed #555; padding:1px 5px; font-size:12px; border-radius:4px;}
-
+/*电子券*/
+.stamp {height: 140px;padding: 0 10px;position: relative;overflow: hidden;   background: none;}
+.stamp *{ box-sizing: content-box; }
+.stamp:before {content: '';position: absolute;top:0;bottom:0;left:10px;right:10px;z-index: -1;}
+.stamp i{position: absolute;left: 20%;top: 45px;height: 190px;width: 390px;background-color: rgba(255,255,255,.15);transform: rotate(-30deg);}
+.stamp .par{float: left;padding: 15px 0;width: 220px;border-right:2px dashed rgba(255,255,255,.3);text-align: left;}
+.stamp .par p{color:#fff;}
+.stamp .par span{font-size: 50px;color:#fff;margin-right: 5px;}
+.stamp .par .sign{font-size: 34px;}
+.stamp .par sub{position: relative;top:-5px;color:rgba(255,255,255,.8);}
+.stamp .copy{display: inline-block;padding:20px 0;width:100px;vertical-align: text-bottom;font-size: 30px;color:rgb(255,255,255);}
+.stamp .copy p{font-size: 16px;margin-top: 15px;}
+.stamp01{background: #F39B00;background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 5px, #F39B00 5px);background-size: 15px 15px;background-position: 9px 3px;}
+.stamp01:before{background-color:#F39B00;}

@@ -4,7 +4,7 @@
  * 创建者：yhc 
  * 创建日期：2017-08-16
 */
-body, html {-webkit-tap-highlight-color: transparent; background-color:#f6f6f6; height: 100%; }
+body, html {-webkit-tap-highlight-color: transparent; background-color:#f6f6f6; min-height: min-content;height: 100%; }
 a{ color:#09acfb;}
 ul,li{ padding:0; margin:0; list-style:none;}
 *{WORD-WRAP:break-word;TABLE-LAYOUT:fixed;word-break:break-all;}
@@ -475,22 +475,27 @@ div+.nodata{ padding:80px 20px 0;}
 .honor-card:before{top:-4px;left:-20px; transform:rotate(180deg); }
 .pl12.honor-card:before{width:calc(100% + 20px);}
 /*券已使用*/
-.tip_done{transform: rotate(-20deg); color:#555; border:1px dashed #555; padding:1px 5px; font-size:12px; border-radius:4px;}
+.tip_done{transform: rotate(-20deg); color:#555; border:1px dashed #555;padding:1px 5px; font-size:12px; border-radius:4px; }
 /*电子券*/
 .stamp {height: 140px;padding: 0 10px;position: relative;background: none;color:#fff;}
 .stamp *{ box-sizing: content-box; }
-.stamp:before,.stamp:after {content: '';position: absolute;top:0;bottom:0;z-index: -1; width: 10px; height: 100%;}
-.stamp:before{left:-5px;background-size: 15px 15px;background-position: 9px 2px;}
-.stamp:after{right:-5px;}
-.stamp i{position: absolute;left: 15%;top: 45px;height: 200px;width:520px;background-color: rgba(255,255,255,.15);transform: rotate(-25deg);}
+.stamp:before,.stamp:after {content: '';position: absolute;top:0;bottom:0;z-index: -1; width: 10px; height: 100%;background-size: 18px 18px !important;}
+.stamp:before{left:-5px;background-position: 9px -2px !important;}
+.stamp:after{right:-5px;background-position:1px -2px !important;}
+.stamp i{position: absolute;left: 8%;top: 45px;height: 200px;width:520px;background-color: rgba(255,255,255,.15);transform: rotate(-25deg);}
 .stamp .par{float: left;padding: 15px 0;border-right:2px dashed rgba(255,255,255,.3);text-align: left; height: 100%;}
 .stamp .par p{ color: rgba(255, 255, 255, 0.8);}
 .stamp .par .sign{font-size: 34px;}
 .stamp .par sub{position: relative;top:-5px;color:rgba(255,255,255,.8);}
 .stamp .copy{display: inline-block;padding:20px 0;}
-.stamp01{background: #F39B00;}
-.stamp01:before,.stamp01:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #F39B00 4px);background-size: 15px 15px;background-position: 9px 2px;}
-.stamp01:after{background-position:1px 2px;}
-.stamp02{background: #F39B00;}
-.stamp02:before{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #F39B00 4px);background-size: 15px 15px;background-position: 9px 2px;}
-.stamp02:after{background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px,#F39B00 4px);background-size: 15px 15px;background-position:1px 2px;}
+.stamp01{background: #5eadef;}
+.stamp01:before,.stamp01:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #5eadef 4px);}
+.stamp02{background: #44b580;}
+.stamp02:before,.stamp02:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #44b580 4px)}
+.stamp03{background: #F39B00;}
+.stamp03:before,.stamp03:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #F39B00 4px);}
+.stamp-have{background: #d0d0d0;}
+.stamp-have:before,.stamp-have:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #d0d0d0 4px);}
+/*已使用*/
+.tip_have{transform: rotate(-25deg); right: 20%; color:#999; border:2px solid #bfbfbf; border-radius: 50%;  text-align: center; line-height: 60px;padding:3px;}
+.tip_have span{ display: inline-block; border:2px dashed #bfbfbf; width: 60px; height: 60px;border-radius: 50%; }

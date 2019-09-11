@@ -303,6 +303,8 @@ input[disabled]{ color: #e3e3e3;}
 .weui-cell_access:active{background-color:inherit}
 .weui-loadmore.weui-loadmore_line{ margin-bottom:0;}
 .weui-loadmore_line .weui-loadmore__tips{ background:#f6f6f6;}
+
+.weui-prompt-input{ width: 100%; border-radius: 4px;}
 /*单选样式*/
 .icon-checked{display: block; width: 14px; height: 14px;border: 1px solid #ccc;border-radius: 50%; background: #ffffff; margin-top:2px;}
 .icon-checked i{background: #ffffff; width: 6px; height: 6px; display: block; margin: 4px; border-radius: 50%;}
@@ -336,7 +338,7 @@ input[disabled]{ color: #e3e3e3;}
 .weui-btn_org{background-color: #ff8a00; border:1px solid #ff8a00;}
 .weui-btn_org:not(.weui-btn_disabled):visited{ color: }
 .weui-btn_primary:after{ border:0;}
-.weui-dialog__btn{ color: #2dae99;}
+.weui-dialog__btn{ color: #09acfb;}
 .weui-btn_plain-primary {color: #09acfb; border: 1px solid #09acfb; background-color:#fff;}
 .weui-btn_plain-primary:not(.weui-btn_plain-disabled):active {  color:rgba(9,172,251,.6);  border-color: rgba(9,172,251,.6);}
 .weui-btn-area.weui-btn-area-inline{display: -webkit-box;display: -webkit-flex;display: flex;}
@@ -515,7 +517,7 @@ div+.nodata{ padding:80px 20px 0;}
 .stamp02:before,.stamp02:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #44b580 4px)}
 .stamp03{background: #F39B00;}
 .stamp03:before,.stamp03:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #F39B00 4px);}
-.stamp-have{background: #d0d0d0;}
+.stamp-have{background: #d6d6d6;}
 .stamp-have:before,.stamp-have:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #d0d0d0 4px);}
 /*已使用*/
 .tip_have{transform: rotate(-25deg); right: 20%; color:#999; border:2px solid #bfbfbf; border-radius: 50%;  text-align: center; line-height: 60px;padding:3px;}

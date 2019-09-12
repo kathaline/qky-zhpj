@@ -203,6 +203,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .ptb10{ padding-top:10px !important;padding-bottom:10px!important;}
 .ptb12{ padding-top:12px !important;padding-bottom:12px!important;}
 .ptb15{ padding-top:15px !important;padding-bottom:15px!important;}
+.plr5{padding-left:5px!important;padding-right:5px!important;}
+.plr10{padding-left:10px!important;padding-right:10px!important;}
 .plr12{padding-left:12px!important;padding-right:12px!important;}
 .plr15{padding-left:15px!important;padding-right:15px!important;}
 .plr20{padding-left:20px!important;padding-right:20px!important;}
@@ -505,7 +507,7 @@ div+.nodata{ padding:80px 20px 0;}
 .stamp:before,.stamp:after {content: '';position: absolute;top:0;bottom:0;z-index: -1; width: 10px; height: 100%;background-size: 18px 18px !important;}
 .stamp:before{left:-5px;background-position: 9px -2px !important;}
 .stamp:after{right:-5px;background-position:1px -2px !important;}
-.stamp i{position: absolute;left: 8%;top: 45px;height: 200px;width:520px;background-color: rgba(255,255,255,.15);transform: rotate(-25deg);}
+.stamp i{position: absolute;left:0%;top: 45px;height: 200px;width:520px;background-color: rgba(255,255,255,.15);transform: rotate(-21deg);}
 .stamp .par{float: left;padding: 15px 0;border-right:2px dashed rgba(255,255,255,.3);text-align: left; height: 100%;}
 .stamp .par p{ color: rgba(255, 255, 255, 0.8);}
 .stamp .par .sign{font-size: 34px;}
@@ -518,7 +520,7 @@ div+.nodata{ padding:80px 20px 0;}
 .stamp03{background: #F39B00;}
 .stamp03:before,.stamp03:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #F39B00 4px);}
 .stamp-have{background: #d6d6d6;}
-.stamp-have:before,.stamp-have:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #d0d0d0 4px);}
+.stamp-have:before,.stamp-have:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #d6d6d6 4px);}
 /*已使用*/
 .tip_have{transform: rotate(-25deg); right: 20%; color:#999; border:2px solid #bfbfbf; border-radius: 50%;  text-align: center; line-height: 60px;padding:3px;}
 .tip_have span{ display: inline-block; border:2px dashed #bfbfbf; width: 60px; height: 60px;border-radius: 50%; }

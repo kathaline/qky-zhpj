@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>综合素质评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart class="bg-trans">
+<div class="pt12 plr12">
+  <div class="bg_lylw radius-10 ">
+    <div class="weui-media-box weui-media-box_appmsg">
+      <div class="weui-media-box__hd">
+        <img class="weui-media-box__thumb img-bor radius-cirle" src="../image/u01.jpg" alt="">
+        <div class="fz_12 co_66 mt5"></div>
+      </div>
+      <div class="weui-media-box__bd">
+        <h4 class="weui-media-box__title">王洋洋</h4>
+        <p class="weui-media-box__desc co_66">一年级（1）班</p>
+      </div>
+    </div>
+  </div>
+  <div class="po_r bg_white pa12 radius-10 bor-top_ds">
+    <div class="fz_12 co_99">发劵日期：2019-08-15</div>
+    <div class="t-center ">
+      <div class="fz_24 mtb20 co_33">星光少年特权奖励劵</div>
+      <div class="fz_12 co_99">有效期：2019-2020学年度第1学期</div>
+      <div class="mt20"><a href="javascript:;" class="weui-btn weui-btn_mini fz_14 weui-btn_default weui-btn_disabled">已使用 （2019-08-15  14:25)</a></div>
+    </div>
+    <div class="bor-top_ds fz_14 mt20 pt12">
+      <div class="fz_12 co_99">使用特权说明</div>
+      <div class="pa12">此劵兑换一次少卫生值日的机会</div>
+    </div>
+  </div>
+</div>
+
+<div class="weui-loadmore">
+  <a class="fz_16" href="javascript:;" id="add-note">添加备注</a>
+</div>
+<div class="pb50"></div>
+<div class="weui-tabbar zindex3">
+<div class="weui-tabbar weui-row">
+  <a href="02mine-coupon.html" class="weui-btn weui-btn_default weui-col-100">返回</a>
+</div>
+</div>
+
+
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+      $(document).on("click", "#add-note", function() {
+        $.prompt({
+          text: "备注不能超过12个字",
+          title: "添加备注",
+          onOK: function(text) {
+            $.alert("您的备注是:"+text, "备注成功");
+          },
+          onCancel: function() {
+            console.log("取消了");
+          },
+          input: ''
+        });
+      });
+</script>
+</body>
+</html>

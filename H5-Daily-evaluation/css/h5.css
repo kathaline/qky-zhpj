@@ -75,6 +75,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bg_white{ background-color:#fff !important;}
 .bg_black{background-color:#000 !important;}
 .bg_gray{ background-color:#f3f3f3 !important;}
+.bg_dgray{ background-color:#999 !important;}
 .bg_org{ background-color:#ff8a00 !important;}
 .bg_yorg{ background-color:#edb757 !important;}
 .bg_lylw{background-color:#f9eabf !important;}
@@ -133,7 +134,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .mt8{ margin-top:8px!important;}
 .mt10{ margin-top:10px!important;}
 .mt12{ margin-top:12px!important;}
-.mt12{ margin-top:12px!important;}
+.mt15{ margin-top:15px!important;}
 .mt20{ margin-top:20px!important;}
 .mb0{ margin-bottom:0px!important;}
 .mb0{ margin-bottom:0px!important;}
@@ -269,6 +270,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .img50{ width:50px; height:50px;}
 .img60{ width:60px; height:60px;}
 .img70{ width:70px; height:70px;}
+.img100{ width:100px; height:100px;}
+.img120{ width:120px; height:120px;}
 
 .lh20{ line-height: 20px;}
 .lh30{ line-height: 30px;}
@@ -445,12 +448,12 @@ fieldset:after{right:0;}
 .name{width: auto; }
 .name,.textover01{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; word-wrap: break-word; word-break: break-all;}
 /*角标*/
-.mark-topright{overflow:hidden; width:50px;height:50px; /*background-color:#FC6;*/ border-radius:6px; font-size:12px; color:#999;}
+.mark-topright{overflow:hidden; width:60px;height:60px; /*background-color:#FC6;*/ border-radius:6px; font-size:12px; color:#999;}
 .mark-topright .num{ z-index:2; height:100%; width:30px; position:relative; float:right}
 .triangle-topright{position: absolute; display: block; width:30px; height:53px; background-color:#d8f1fe; transform: rotate(-48deg);top:-22px;left:25px; z-index:1; }
 .div-alarm .triangle-topright{ background-color:#f6383a; }
 .div-alarm .num{color:#fff;}
-.weui-mark-rt { display: block; left: -2px; top:4px;height: 16px;line-height: 20px!important; position: relative; text-align: center;  transform: rotate(45deg);  width:78px;}
+.weui-mark-rt {display: block; height:22px;line-height:22px!important; position: relative; text-align: center; top: 8px; left: -5px; transform: rotate(42deg);width:90px;}
 
 .Bscore,.Sscore{ margin-right:0 !important; border-radius:10PX; height:50PX !important; line-height:20PX !important; padding-top:5px; font-size:12px;}
 .Bscore+.Sscore{ margin-left:5PX;}
@@ -502,28 +505,32 @@ div+.nodata{ padding:80px 20px 0;}
 /*券已使用*/
 .tip_done{transform: rotate(-20deg); color:#555; border:1px dashed #555;padding:1px 5px; font-size:12px; border-radius:4px; }
 /*电子券*/
-.stamp {height: 140px;padding: 0 10px;position: relative;background: none;color:#fff;}
+.stamp {height: 140px;padding: 0 6px;position: relative;background: none;color:#fff;}
 .stamp *{ box-sizing: content-box; }
 .stamp:before,.stamp:after {content: '';position: absolute;top:0;bottom:0;z-index: -1; width: 10px; height: 100%;background-size: 18px 18px !important;}
 .stamp:before{left:-5px;background-position: 9px -2px !important;}
 .stamp:after{right:-5px;background-position:1px -2px !important;}
-.stamp i{position: absolute;left:0%;top: 45px;height: 200px;width:520px;background-color: rgba(255,255,255,.15);transform: rotate(-21deg);}
-.stamp .par{float: left;padding: 15px 0;border-right:2px dashed rgba(255,255,255,.3);text-align: left; height: 100%;}
-.stamp .par p{ color: rgba(255, 255, 255, 0.8);}
-.stamp .par .sign{font-size: 34px;}
-.stamp .par sub{position: relative;top:-5px;color:rgba(255,255,255,.8);}
-.stamp .copy{display: inline-block;padding:20px 0;}
+.stamp i{position: absolute;left:0%;top: 45px;height: 200px;width:500px;background-color: rgba(255,255,255,.15);transform: rotate(-23deg);}
+.stamp .par{float: left;padding: 15px 0;border-right:2px dashed rgba(255,255,255,.3);text-align: left; height: 100%; position: relative;}
+.stamp .par p{ color: rgba(255, 255, 255, 0.7); font-size: 14px;}
+.stamp .par .btm{ position: absolute; bottom:10px; right:10px;}
+.stamp .copy{height: 100%; padding:20px 0;position: relative; font-size: 14px;}
+.weui-row .weui-col-20.copy{ width: 20%;}
+.weui-row .weui-col-20.copy .weui-btn{ display: inline-block; margin-top: 35px; font-size: 12px; padding-left: 5px; padding-right: 5px;}
 .stamp01{background: #5eadef;}
-.stamp01:before,.stamp01:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #5eadef 4px);}
+.stamp01:before,.stamp01:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 3px, #5eadef 3px);}
 .stamp02{background: #44b580;}
-.stamp02:before,.stamp02:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #44b580 4px)}
+.stamp02:before,.stamp02:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 3px, #44b580 3px)}
+.stamp02 .weui-btn_plain-primary{color: #44b580; border-color: #44b580;}
 .stamp03{background: #F39B00;}
-.stamp03:before,.stamp03:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #F39B00 4px);}
+.stamp03:before,.stamp03:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 3px, #F39B00 3px);}
+.stamp03 .weui-btn_plain-primary{color: #F39B00; border-color: #F39B00;}
 .stamp-have{background: #d6d6d6;}
-.stamp-have:before,.stamp-have:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #d6d6d6 4px);}
-/*已使用*/
-.tip_have{transform: rotate(-25deg); right: 20%; color:#999; border:2px solid #bfbfbf; border-radius: 50%;  text-align: center; line-height: 60px;padding:3px;}
+.stamp-have:before,.stamp-have:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 3px, #d6d6d6 3px);}
+/*已使用过期*/
+.tip_have{transform: rotate(-25deg); right:18%;top:-10px; color:#999; border:2px solid #bfbfbf; border-radius: 50%;  text-align: center; line-height: 60px;padding:5px; z-index: 1;}
 .tip_have span{ display: inline-block; border:2px dashed #bfbfbf; width: 60px; height: 60px;border-radius: 50%; }
+.stamp .po_ab_r.mark-topright{right: -5px;}
 
 .radius-10.bor-top_ds::before{left:10px; right: 10px;}
 .bg_yorg+.bor-top_ds::before{  border-top:2px dashed #ffba41; left: 15px; right: 15px;}

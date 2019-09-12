@@ -75,7 +75,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bg_white{ background-color:#fff !important;}
 .bg_black{background-color:#000 !important;}
 .bg_gray{ background-color:#f3f3f3 !important;}
-.bg_dgray{ background-color:#999 !important;}
+.bg_dgray{ background-color:#a9a9a9 !important;}
 .bg_org{ background-color:#ff8a00 !important;}
 .bg_yorg{ background-color:#edb757 !important;}
 .bg_lylw{background-color:#f9eabf !important;}
@@ -272,6 +272,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .img70{ width:70px; height:70px;}
 .img100{ width:100px; height:100px;}
 .img120{ width:120px; height:120px;}
+.img160{ width:160px; height:160px;}
+.img180{ width:180px; height:180px;}
 
 .lh20{ line-height: 20px;}
 .lh30{ line-height: 30px;}

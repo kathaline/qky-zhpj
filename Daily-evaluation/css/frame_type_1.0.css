@@ -24,6 +24,7 @@ textarea,input,select{ outline:none;font-family: Microsoft YaHei, Arial;resize:n
 input[type="text"], select,textarea  {  padding:0 0 0 5px;border: 1px solid #d4d4d4;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px;}
 input[type="text"], select{ height:30px; line-height: 28px;}
 select.form-control{ height:30px; line-height: 28px; padding-top: 0; padding-bottom: 0; padding-left: 1px;}
+textarea.form-control{ padding-left: 5px; padding-right: 5px;} 
 /*input[type="text"]:focus, select:focus,textarea:focus,.perc_span:focus,.bor_all.rad4:focus{ outline: 0; border: 1px solid #03a9f4; box-shadow: 0px 0px 8px 0px #76d4fe;}*/
 .clear2{ clear:both; zoom:1;}
 .fl{ float:left;}

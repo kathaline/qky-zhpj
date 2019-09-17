@@ -38,6 +38,7 @@
          <li><a href="03mall.html" class="cur">基础设置</a></li>
          <li><a href="03mall-score.html">积分情况</a></li>
          <li><a href="03mall-medal.html">勋章兑换情况</a></li>
+         <li><a href="03mall-coupon.html">电子券情况</a></li>
       </ul>
    </div>
 </div>   
@@ -49,11 +50,14 @@
           <li role="presentation">
             <a href="#Set01" aria-controls="" role="tab" data-toggle="tab">分数设置</a>
           </li>
-          <li role="presentation" class="active">
+          <li role="presentation">
             <a href="#Set02" aria-controls="" role="tab" data-toggle="tab">勋章管理</a>
           </li>
           <li role="presentation">
             <a href="#Set03" aria-controls="" role="tab" data-toggle="tab">商城设置</a>
+          </li>
+          <li role="presentation" class="active">
+            <a href="#Set04" aria-controls="" role="tab" data-toggle="tab">电子券管理</a>
           </li>
         </ul>
       </div>
@@ -87,7 +91,7 @@
             </div>
           </form>
         </div>
-        <div role="tabpanel" class="tab-pane fade active in" id="Set02">
+        <div role="tabpanel" class="tab-pane fade" id="Set02">
           <div class="cont_tit pad_lr20">
             <div class="fl"><h3>勋章信息管理</h3></div>     
             <div class="fr"><a href="JavaScript:" class="bg_gray" data-toggle="modal" data-target="#add-medal"><i class="qkyicon">&#xe69e;</i>新增勋章</a></div> 
@@ -234,12 +238,51 @@
               <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5">积分商城实景图</div>
               <div class="col-sm-12 pad_b20"><img src="../images/mall-phone.png" class="wid-100"></div>
             </div>-->
+        </div>
+        <div role="tabpanel" class="tab-pane fade active in" id="Set04">
+          <div class="cont_tit pad_lr20">
+            <div class="fl"><h3>电子券信息管理</h3></div>     
+            <div class="fr"><a href="JavaScript:" class="bg_gray" data-toggle="modal" data-target="#add-coupon"><i class="qkyicon">&#xe69e;</i>新增电子券</a></div> 
+          </div>
+          <div class="pad_lr20"><div class="mar_t20 bor_lb pad_l5">电子券派发规则：学生兑换获得一枚勋章时，系统同时派发一张关联的电子激励劵。（列如：兑换获得A勋章，后系统自动派发一张A关联的电子券）</div></div>
+          <div class="pad_20">
+            <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table">
+              <tr>
+                <th width="16%" scope="col"><strong class="co_r mar_r5">*</strong>电子券名称</th>
+                <th width="13%" scope="col">关联勋章</th>
+                <th width="25%" scope="col">兑换有效期</th>
+                <th width="33%" scope="col">使用特权说明（限30个字）</th>
+                <th width="13%" scope="col">操作</th>
+              </tr>
+              <tr>
+                <td>星光少年特权劵</td>
+                <td>星光少年</td>
+                <td>2019-2020年第二学期</td>
+                <td>此劵兑换一次少卫生值日的机会</td>
+                <td><a data-toggle="modal" data-target="#" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
+                </tr>
+              <tr>
+                <td>星光少年特权劵</td>
+                <td>星光少年</td>
+                <td>2019-2020年第二学期</td>
+                <td>学习习惯：按时上学，课前预习、课间准备好学习用品，课上乐于思考、积极发言</td>
+                <td><a data-toggle="modal" data-target="#" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
+                </tr>
+              <tr>
+                <td>星光少年特权劵</td>
+                <td>星光少年</td>
+                <td>2019-2020年第二学期</td>
+                <td>此劵兑换一次担任小组组长1天的机会</td>
+                <td><a data-toggle="modal" data-target="#" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
+                </tr>
+            </table>
           </div>
         </div>
-      </div>       
-    </div>
+      </div>
+    </div>       
   </div>
 </div>
+
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
 <div class="modal fade" id="add-medal" tabindex="-1" role="dialog" aria-labelledby="add-medalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
@@ -608,6 +651,55 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
             <button type="button" class="btn btn-primary">提交</button>
+          </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<div class="modal fade" id="add-coupon" tabindex="-1" role="dialog" aria-labelledby="add-couponLabel" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content" role="tabpanel">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                ×
+            </button>
+            <h4 class="modal-title" id="myModalLabel">新增电子券信息</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal pad_15">
+                <div class="form-group">
+                  <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>电子券名称</label>
+                  <div class="col-sm-8 pad_l0 has-feedback">
+                    <input type="text" class="form-control" required placeholder="输入电子券名称" value="0">
+                    <span class="form-control-feedback co_999 mar_r5" aria-hidden="true">0/12</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>有效期</label>
+                  <div class="col-sm-8 pad_l0">
+                    <strong class="b_datec wid_max"><input type="text" placeholder="请选择" value="" class="set_text" onclick="WdatePicker()" onfocus="this.className='set_text'"><i class="qkyicon"></i></strong>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>关联勋章</label>
+                  <div class="col-sm-8 pad_l0">
+                    <select name="select" class="form-control">
+                      <option selected="">请选择</option>
+                      <option>星光少年</option>
+                      <option>晨光少年</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 text-right pad_t5 pad_l0">兑换特权描述<p class="co_999">(0/50)</p></label>
+                  <div class="col-sm-8 pad_l0">
+                    <textarea id="" rows="4" placeholder="输入兑换特权描述" class="form-control"></textarea> 
+                  </div>
+                </div>  
+            </form>
+		      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">保存</button>
           </div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal -->

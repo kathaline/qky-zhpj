@@ -47,10 +47,10 @@
     <div class="side">
       <div class="side-menu nav mall-smenu">
         <ul class="ul-menu" role="tablist">
-          <li role="presentation" class="active">
+          <li role="presentation">
             <a href="#Set01" aria-controls="" role="tab" data-toggle="tab">派发统计</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="active">
             <a href="#Set02" aria-controls="" role="tab" data-toggle="tab">派用明细</a>
           </li>
           <li role="presentation">
@@ -64,7 +64,7 @@
     </div>
     <div class="main">
       <div class="tab-content tabs label-h-over">
-        <div role="tabpanel" class="tab-pane fade active in" id="Set01">
+        <div role="tabpanel" class="tab-pane fade" id="Set01">
           <div class="pad_lr20 pad_t20 clearfix"> 
             <ul class="ul_srh col-sm-10 pad_0">
                 <li><span>学年学期：</span>
@@ -98,7 +98,7 @@
               </tr>
             <tr>
               <td>1</td>
-              <td>晨光少年</td>
+              <td>晨光少年特权券</td>
               <td>1</td>
               <td>2</td>
               <td>1</td>
@@ -107,7 +107,7 @@
               </tr>
             <tr>
               <td>2</td>
-              <td>阳光少年</td>
+              <td>阳光少年特权券</td>
               <td>1</td>
               <td>1</td>
               <td>1</td>
@@ -201,7 +201,7 @@
             </div> 
           </div>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="Set02">
+        <div role="tabpanel" class="tab-pane fade active in" id="Set02">
           <div class="pad_lr20 pad_t20 clearfix"> 
             <ul class="ul_srh col-sm-10 pad_0">
                 <li><span>学年学期：</span>
@@ -224,11 +224,12 @@
                       <option>（2）班</option>
                     </select>
                 </li>
-                <li><span>兑换方式：</span>
+                <li><span>是否兑换：</span>
                     <select name="select">
                       <option selected="">全部</option>
-                      <option>学校添加</option>
-                      <option>自主兑换</option>
+                      <option>已兑换</option>
+                      <option>未兑换</option>
+                      <option>逾期未兑</option>
                     </select>
                 </li>
              </ul>
@@ -239,23 +240,25 @@
           <div class="pad_20">
             <table width="100%" border="0" cellspacing="1" cellpadding="1" class="judge_table">
             <tbody><tr>
-              <th width="81" scope="col">序号</th>
-              <th width="155" scope="col">年级</th>
-              <th width="125" scope="col">班级</th>
-              <th width="157" scope="col">学生姓名</th>
-              <th width="159" scope="col"><a href="#" class="w_co">勋章名称</a></th>
-              <th width="156" scope="col"><a href="#" class="w_co">兑换方式</a></th>
-              <th width="171" scope="col"><a href="#" class="w_co">兑换时间</a></th>
-              <th width="149" scope="col"><a href="#" class="w_co">操作</a></th>
+              <th width="80" scope="col">序号</th>
+              <th width="130" scope="col">年级</th>
+              <th width="115" scope="col">班级</th>
+              <th width="132" scope="col">学生姓名</th>
+              <th width="133" scope="col"><a href="#" class="w_co">电子劵名称</a></th>
+              <th width="131" scope="col"><a href="#" class="w_co">系统派发时间</a></th>
+              <th width="149" scope="col"><a href="#" class="w_co">学生使用时间</a></th>
+              <th width="149" scope="col"><a href="#" class="w_co">兑换老师</a></th>
+              <th width="131" scope="col"><a href="#" class="w_co">操作</a></th>
               </tr>
             <tr>
               <td>1</td>
               <td>一年级</td>
               <td>(1)班</td>
               <td>林玲玲</td>
-              <td>星光少年</td>
-              <td>学校添加</td>
+              <td>星光少年激励券</td>
               <td>2019-06-30</td>
+              <td>2019-06-30 09:57</td>
+              <td>欧阳兰兰</td>
               <td><a href="javascript:" class="qkyicon_14" title="删除">&#xe6be;</a></td>
               </tr>
             <tr>
@@ -263,33 +266,37 @@
               <td>一年级</td>
               <td>(2)班</td>
               <td>王心凌</td>
-              <td>星光少年</td>
-              <td>自主兑换</td>
+              <td>星光少年激励券</td>
               <td>2019-06-30</td>
+              <td>2019-06-30 09:57</td>
+              <td>易烊千玺</td>
               <td><a href="javascript:" class="qkyicon_14" title="删除">&#xe6be;</a></td>
               </tr>
             <tr>
               <td>3</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+              <td>一年级</td>
+              <td>(1)班</td>
+              <td>林玲玲</td>
+              <td>星光少年激励券</td>
+              <td>2019-06-30</td>
+              <td>2019-06-30 09:57</td>
+              <td>欧阳兰兰</td>
               <td>&nbsp;</td>
               </tr>
             <tr>
               <td>4</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+              <td>一年级</td>
+              <td>(2)班</td>
+              <td>王心凌</td>
+              <td>星光少年激励券</td>
+              <td>2019-06-30</td>
+              <td>2019-06-30 09:57</td>
+              <td>易烊千玺</td>
               <td>&nbsp;</td>
               </tr>
             <tr>
               <td>5</td>
+              <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
@@ -307,9 +314,11 @@
               <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
+              <td>&nbsp;</td>
               </tr>
             <tr>
               <td>7</td>
+              <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
@@ -327,9 +336,11 @@
               <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
+              <td>&nbsp;</td>
               </tr>
             <tr>
               <td>9</td>
+              <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
@@ -342,6 +353,7 @@
               <td>10</td>
               <td>一年级</td>
               <td>(2)班</td>
+              <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>

@@ -494,8 +494,7 @@ div+.nodata{ padding:80px 20px 0;}
 /*荣誉墙*/
 .honor-top{ background:#f6f6f6/*linear-gradient(to bottom,#aeedff,#7ee2fe,#16d2ff)*/; position: relative;}	
 .honor-name{ position: relative;}
-.honor-name::before{ content: " "; position: absolute; left:50%; margin-left: -100px; top:-26px;width: 160px; height: 50px; border-radius: 100px 100px 0 0 ;  height: 80px;  
-    border: 20px solid #e9edf1; border-bottom: 0;}
+.honor-name::before{ content: " "; position: absolute; left:50%; margin-left: -100px; top:-26px;width: 160px; height: 50px; border-radius: 100px 100px 0 0 ;  height: 80px; border: 20px solid #e9edf1; border-bottom: 0;}
 .ribbon {position: relative;width:50%;height:36PX; line-height:36PX; background-color: #fcca4c; margin-left: auto;  margin-right: auto;z-index:0}
 .ribbon:before,.ribbon:after {content: "";position: absolute;	display: block;bottom:1px;border:16px solid #fcca4c;z-index:-1;}
 .ribbon:before {left:-29px;border-right-width: 12px;border-left-color: transparent;}
@@ -510,6 +509,7 @@ div+.nodata{ padding:80px 20px 0;}
 .stamp {height: 140px;padding: 0 6px;position: relative;background: none;color:#fff;}
 .stamp *{ box-sizing: content-box; }
 .img-coupon{ width: calc(100% + 20px ); height: auto; margin-left: -10px; margin-right: -10px;}
+.img-cdone{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);-ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray;}
 .stamp:before,.stamp:after {content: '';position: absolute;top:0;bottom:0;z-index: -1; width: 10px; height: 100%;background-size: 18px 18px !important;}
 .stamp:before{left:-5px;background-position: 9px -2px !important;}
 .stamp:after{right:-5px;background-position:1px -2px !important;}
@@ -531,8 +531,8 @@ div+.nodata{ padding:80px 20px 0;}
 .stamp-have{background: #d6d6d6;}
 .stamp-have:before,.stamp-have:after{ background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 3px, #d6d6d6 3px);}
 /*已使用过期*/
-.tip_have{transform: rotate(-25deg); right:18%;top:-10px; color:#999; border:2px solid #bfbfbf; border-radius: 50%;  text-align: center; line-height: 60px;padding:5px; z-index: 1;}
-.tip_have span{ display: inline-block; border:2px dashed #bfbfbf; width: 60px; height: 60px;border-radius: 50%; }
+.tip_have{transform: rotate(-25deg); right:18%;top:-10px; color:#666; border:2px solid #999; border-radius: 50%;  text-align: center; line-height: 60px;padding:5px; z-index: 1;}
+.tip_have span{ display: inline-block; border:2px dashed #999; width: 60px; height: 60px;border-radius: 50%; }
 .stamp .po_ab_r.mark-topright{right: -5px;}
 
 .radius-10.bor-top_ds::before{left:10px; right: 10px;}

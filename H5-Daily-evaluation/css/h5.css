@@ -509,6 +509,7 @@ div+.nodata{ padding:80px 20px 0;}
 /*电子券*/
 .stamp {height: 140px;padding: 0 6px;position: relative;background: none;color:#fff;}
 .stamp *{ box-sizing: content-box; }
+.img-coupon{ width: calc(100% + 20px ); height: auto; margin-left: -10px; margin-right: -10px;}
 .stamp:before,.stamp:after {content: '';position: absolute;top:0;bottom:0;z-index: -1; width: 10px; height: 100%;background-size: 18px 18px !important;}
 .stamp:before{left:-5px;background-position: 9px -2px !important;}
 .stamp:after{right:-5px;background-position:1px -2px !important;}

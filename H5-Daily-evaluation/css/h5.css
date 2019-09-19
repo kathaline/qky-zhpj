@@ -506,7 +506,7 @@ div+.nodata{ padding:80px 20px 0;}
 /*券已使用*/
 .tip_done{transform: rotate(-20deg); color:#555; border:1px dashed #555;padding:1px 5px; font-size:12px; border-radius:4px; }
 /*电子券*/
-.stamp {height: 140px;padding: 0 6px;position: relative;background: none;color:#fff;}
+.stamp {height: auto;padding: 0 6px;position: relative;background: none;color:#fff;}
 .stamp *{ box-sizing: content-box; }
 .img-coupon{ width: calc(100% + 20px ); height: auto; margin-left: -10px; margin-right: -10px;}
 .img-cdone{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);-ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray;}
@@ -514,7 +514,7 @@ div+.nodata{ padding:80px 20px 0;}
 .stamp:before{left:-5px;background-position: 9px -2px !important;}
 .stamp:after{right:-5px;background-position:1px -2px !important;}
 .stamp i{position: absolute;left:0%;top: 45px;height: 200px;width:500px;background-color: rgba(255,255,255,.15);transform: rotate(-23deg);}
-.stamp .par{float: left;padding: 15px 0;border-right:2px dashed rgba(255,255,255,.3);text-align: left; height: 100%; position: relative;}
+.stamp .par{float: left;padding: 15px 0;border-right:2px dashed rgba(255,255,255,.3);text-align: left; min-height:140px; position: relative;}
 .stamp .par p{ color: rgba(255, 255, 255, 0.7); font-size: 14px;}
 .stamp .par .btm{ position: absolute; bottom:10px; right:10px;}
 .stamp .copy{height: 100%; padding:20px 0;position: relative; font-size: 14px;}

@@ -100,6 +100,19 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .co_gr{ color: #39db59 !important;}
 .b-shadow{ box-shadow:0 0 5px lightgray }
 
+.level-a{ color: #026330 !important;}
+.level-b{ color: #14721c !important;}
+.level-c{ color: #408711 !important;}
+.level-d{ color: #bb812f !important;}
+.level-e{ color: #b46031 !important;}
+.level-f{ color: #b74137 !important;}
+.levelb-a{ background-color: #026330 !important;}
+.levelb-b{ background-color: #14721c !important;}
+.levelb-c{ background-color: #408711 !important;}
+.levelb-d{ background-color: #bb812f !important;}
+.levelb-e{ background-color: #b46031 !important;}
+.levelb-f{ background-color: #b74137 !important;}
+
 .fz_we{ font-weight:bold!important;}
 .fz_nor{ font-weight:normal!important;}
 .fz_0{ font-size:0!important;}
@@ -311,6 +324,9 @@ input[disabled]{ color: #e3e3e3;}
 .weui-loadmore.weui-loadmore_line{ margin-bottom:0;}
 .weui-loadmore_line .weui-loadmore__tips{ background:#f6f6f6;}
 
+.mine_ft{ position: relative; padding-right: 10px}
+.mine_ft:after { content: " ";  display: inline-block; height: 6px; width: 6px; border-width: 2px 2px 0 0; border-color: #c8c8cd; border-style: solid;  -webkit-transform: matrix(.71,.71,-.71,.71,0,0); transform: matrix(.71,.71,-.71,.71,0,0);  position: relative; top: -2px; position: absolute; top: 50%; margin-top: -4px; right: 2px;}
+
 .weui-prompt-input{ width: 100%; border-radius: 4px;}
 /*单选样式*/
 .icon-checked{display: block; width: 14px; height: 14px;border: 1px solid #ccc;border-radius: 50%; background: #ffffff; margin-top:2px;}
@@ -450,9 +466,9 @@ fieldset:after{right:0;}
 .name{width: auto; }
 .name,.textover01{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; word-wrap: break-word; word-break: break-all;}
 /*角标*/
-.mark-topright{overflow:hidden; width:60px;height:60px; /*background-color:#FC6;*/ border-radius:6px; font-size:12px; color:#999;}
+.mark-topright{overflow:hidden; width:60px;height:60px; /*background-color:#FC6;*/ border-radius:6px; font-size:12px;  color: #fff;}
 .mark-topright .num{ z-index:2; height:100%; width:30px; position:relative; float:right}
-.triangle-topright{position: absolute; display: block; width:30px; height:53px; background-color:#d8f1fe; transform: rotate(-48deg);top:-22px;left:25px; z-index:1; }
+.triangle-topright{position: absolute; display: block; width:30px; height:70px; background-color:#d8f1fe; transform: rotate(-48deg);top:-30px;left:35px; z-index:1; }
 .div-alarm .triangle-topright{ background-color:#f6383a; }
 .div-alarm .num{color:#fff;}
 .weui-mark-rt {display: block; height:22px;line-height:22px!important; position: relative; text-align: center; top: 8px; left: -5px; transform: rotate(42deg);width:90px;}

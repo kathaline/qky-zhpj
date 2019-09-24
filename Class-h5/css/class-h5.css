@@ -15,6 +15,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .col-20{ width:20%;}
 .col-18{ width:18%;}
 .col-15{ width:15%;}
+.col-5{ width:5%;}
+.col-2{ width:2%;}
 .h100{ height:100%;}
 .hidden{ overflow:hidden;}
 .t-center{ text-align:center;}
@@ -32,6 +34,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .iblock{ display:inline-block;}
 .text-indent{text-indent:2em;}
 .radius-4{ border-radius:4px;}
+.radius-10{ border-radius:10px;}
 .radius-cirle{ border-radius:50%;}
 .bg_white{ background-color:#fff;}
 .bg_black{background-color:#000;}
@@ -50,6 +53,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 .fz_we{ font-weight:bold!important;}
 .fz_nor{ font-weight:normal!important;}
+.fz_8{ font-size:8px!important;}
 .fz_10{ font-size:10px!important;}
 .fz_11{ font-size:11px!important;}
 .fz_12{ font-size:12px!important;}
@@ -208,6 +212,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .color-warning { color:#ff8a00;}
 .color-success { color:#4cd964; color:#177d6d;}
 .color-blue{ color:#1bb1c7;}
+.color-green{ color:#28ce57;}
 /*表格*/
 .table th{text-align:left; font-size:13px; color:#888; font-weight:normal; padding:5px 0; background:#f6f6f6;}
 .table td{ font-size:14px; padding:10px 0; color:#666;}
@@ -271,6 +276,23 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-agree__checkbox{ width:16px; height:16px;}
 .weui-agree__checkbox:checked:before{ font-size:16px;}
 
+.img12{ width:12px; height:12px;}
+.img14{ width:14px; height:14px;}
+.img16{ width:16px; height:16px;}
+.img18{ width:18px; height:18px;}
+.img20{ width:20px; height:20px;}
+.img24{ width:24px; height:24px;}
+.img26{ width:26px; height:26px;}
+.img30{ width:30px!important; height:30px!important;}
+.img40{ width:40px!important; height:40px!important;}
+.img50{ width:50px!important; height:50px!important;}
+.img60{ width:60px!important; height:60px!important;}
+.img70{ width:70px; height:70px;}
+.img100{ width:100px; height:100px;}
+.img120{ width:120px; height:120px;}
+.img160{ width:160px; height:160px;}
+.img180{ width:180px; height:180px;}
+
 /*首页*/
 .top_bg{ background-image:url(../image/top_bg.png); background-repeat:no-repeat; background-size:100% 100%; height:75%; width:100%;}
 .po_ab_r.tip-badge{top:10px; right:8px;}
@@ -283,3 +305,25 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .tooltip-arrow { position: absolute; width: 0; height: 0; border-color: transparent; border-style: solid; z-index:1071;}
 .tooltip.top .tooltip-arrow { bottom: -2px; left: 33%;  margin-left: -5px;  border-width: 8px 5px 0;  border-top-color: #f43530;transform: rotate(15deg);}
 .weui-badge.fz_10{ line-height:14px; height:13px; z-index:1072;}
+
+.date-badge{min-width: 8px; border-radius:6px; background-color: #d0d0d0; color: #fff; display:inline-block; text-align: center; font-size: 12px; vertical-align: middle; padding:2px 6px;}
+.border-top-dash{border-top: 1px dashed #dadada;}
+.box-shadow{box-shadow: 0 0 8px #dadada;}
+
+/*tabbar 按钮样式覆盖*/
+.btn-tab .weui-navbar__item.weui-bar__item--on{background-color:#28ce57; color:#fff;}
+.tab-left{ border-bottom-left-radius: 6px;border-top-left-radius: 6px;}
+.tab-right{ border-bottom-right-radius: 6px;border-top-right-radius: 6px;}
+.btn-tab .weui-navbar__item{ border:1px solid #28ce57;}
+/*学生选择页面*/
+.stus-cla { border-top:1px solid #e9e9e9;}
+.stus-cla .weui-cells{ display:none; margin-top:0;}
+.stus-cla.show .weui-cells{ display:block;}
+.stus-cla .weui-cells:after{ border-bottom:none;}
+.stus-cla.show .icon-jiantou2:before { content: "\e625";}
+.stus-cla .weui-cells .weui-cell__hd{ padding-right:8px;}
+.eva-evid{margin-right:96px; z-index:0; height:60px;opacity:0.8;filter:alpha(opacity=80);}
+
+.rel{position: relative!important;}
+.lineheight{line-height:inherit!important;}
+.lineheight18{line-height:18px!important;}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>评价统计</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/class-h5.css">
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="../js/swiper.js"></script>
+</head>
+<body ontouchstart style="background-color: #fefefe">
+  <div class="btn-tab weui-tab ">
+    <div class="weui-navbar header-title weui-flex mt10">
+      <div class="placeholder col-2"></div>
+      <div class="weui-flex__item">
+        <div class="weui-flex ">
+          <a class="weui-navbar__item weui-bar__item--on tab-left" href="#tab1">待处理</a>
+          <a class="weui-navbar__item tab-right" href="#tab2">已处理</a>
+        </div>
+      </div>
+      <div class="placeholder col-2"></div>
+    </div>
+    <div class="weui-tab__bd pt44">
+      <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active pl10 pr10">
+        <div class="mt10">
+          <div class="t-center fz_0"><span class="date-badge">2019-06-20</span></div>
+          <div class="weui-panel weui-panel_access radius-10 box-shadow">
+            <div class="weui-panel__bd">
+              <a href="04processing.html" class="weui-cell weui-cell_access">
+                <div class="weui-cell__bd weui-cell_primary">
+                  <h4 class="fz_16 mt8 mb8">主题班会课-考勤-（01）</h4>
+                  <p class="weui-media-box__desc">评价老师：杨鹏主任</p>
+                </div>
+                <span class="weui-cell__ft"></span>
+              </a>
+              <a href="#" class="t-center border-top-dash iblock col-100 pt10 pb10 bg_gray">
+                <p class="weui-cell__bd weui-cell_primary color-warning">
+                  <i class="iconfont icon-chuli pr5"></i><span>开始处理</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt10">
+          <div class="t-center fz_0"><span class="date-badge">2019-06-20</span></div>
+          <div class="weui-panel weui-panel_access radius-10 box-shadow">
+            <div class="weui-panel__bd">
+              <a href="#" class="weui-cell weui-cell_access">
+                <div class="weui-cell__bd weui-cell_primary">
+                  <h4 class="fz_16 mt8 mb8">主题班会课-考勤-（01）</h4>
+                  <p class="weui-media-box__desc">评价老师：杨鹏主任</p>
+                </div>
+                <span class="weui-cell__ft"></span>
+              </a>
+              <a href="#" class="t-center border-top-dash iblock col-100 pt10 pb10 bg_gray">
+                <p class="weui-cell__bd weui-cell_primary color-warning">
+                  <i class="iconfont icon-chuli pr5"></i><span>开始处理</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips co_99">正在加载...</span>
+      </div>
+        <div class="pb50 mb12"></div>
+      </div>
+      <div id="tab2" class="weui-tab__bd-item  pl10 pr10">
+        <div class="mt10">
+          <div class="t-center fz_0"><span class="date-badge">2019-06-20</span></div>
+          <div class="weui-panel weui-panel_access radius-10 box-shadow ">
+            <div class="weui-panel__bd">
+              <a href="#" class="weui-cell weui-cell_access">
+                <div class="weui-cell__bd weui-cell_primary">
+                  <h4 class="fz_16 mt8 mb8">主题班会课-考勤-（01）</h4>
+                  <p class="weui-media-box__desc">评价老师：杨鹏主任</p>
+                </div>
+                <span class="weui-cell__ft"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="weui-loadmore">
+          <i class="weui-loading"></i>
+          <span class="weui-loadmore__tips co_99">正在加载...</span>
+        </div>
+        <div class="t-center tips po_ab_l">
+          <p class="iconfont icon-wushuju fz_90 co_99"></p>
+          <p class="fz_14 co_88">本月暂无统计数据，请周期结束后再查看</p>
+        </div>
+        <div class="pb50 mb12"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="weui-tabbar">
+    <a href="01statis.html" class="weui-tabbar__item ">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-tji"></i>
+      </div>
+      <p class="weui-tabbar__label">评价统计</p>
+    </a>
+    <a href="02input.html" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-luru"></i>
+      </div>
+      <p class="weui-tabbar__label">评价录入</p>
+    </a>
+    <a href="03mine.html" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-mine"></i>
+      </div>
+      <p class="weui-tabbar__label">我的班</p>
+    </a>
+    <a href="03mine.html" class="weui-tabbar__item weui-bar__item--on">
+      <div class="weui-tabbar__icon">
+        <i class="iconfont icon-daichuli"></i>
+      </div>
+      <p class="weui-tabbar__label">待处理</p>
+    </a>
+  </div>
+</body>
+</html>

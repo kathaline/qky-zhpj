@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>评价统计</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/class-h5.css">
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="../js/swiper.js"></script>
+</head>
+<body ontouchstart>
+<div class="weui-panel">
+  <div class="weui-panel__hd">初一（1）班</div>
+  <div class="weui-panel__bd">
+    <div class="weui-media-box weui-media-box_text">
+      <h4 class="weui-media-box__title">评价体系</h4>
+      <p class="weui-media-box__desc"> 更新主题班会评分，从-5.0修改为5.0 </p>
+      <ul class="weui-media-box__info">
+        <li class="weui-media-box__info__meta">评价老师：杨娟老师</li>
+        <li class="weui-media-box__info__meta">时间：2019-07-05 16:19:00 </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="weui-flex pa10">
+  <div class="weui-flex__item"><span class="color-error">*</span> 处理结果：</div>
+  <div class="weui-flex__item t-right">罗老师</div>
+</div>
+<div class="weui-cells weui-cells_form mt0">
+  <div class="weui-cell">
+    <div class="weui-cell__hd"></div>
+    <div class="weui-cell__bd">
+      <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+      <div class="weui-textarea-counter"><span>0</span>/200</div>
+    </div>
+  </div>
+  <div class="weui-cell">
+    <div class="weui-cell__ft fz_15 t-left">
+      <div class="weui-uploader">
+        <div class="weui-uploader__hd">
+          <p class="weui-uploader__title">图片上传</p>
+          <div class="weui-uploader__info">2/3</div>
+        </div>
+        <div class="weui-uploader__bd">
+          <ul class="weui-uploader__files" id="uploaderFiles">
+            <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(../image/pic_160.png)">
+              <i class="iconfont icon-guanbi1 po_ab_r pl5 pb5"></i>
+              <div class="weui-uploader__file-content">
+                <i class="weui-icon-warn"></i>
+              </div>
+            </li>
+            <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(../image/teacher_tx.jpg)">
+              <i class="weui-icon-cancel po_ab_r pl5 pb5"></i>
+              <div class="weui-uploader__file-content">50%</div>
+            </li>
+          </ul>
+          <div class="weui-uploader__input-box bg_white">
+            <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="weui-cell">
+    <div class="weui-cell__ft fz_15 t-left">
+      <div class="weui-uploader">
+        <div class="weui-uploader__hd">
+          <p class="weui-uploader__title">选择学生</p>
+        </div>
+        <div class="weui-uploader__bd">
+          <ul class="weui-uploader__files">
+            <li class="weui-uploader__file tcenter lineheight rel">
+              <i class="fz_8 iconfont icon-guanbi1 po_ab_r lineheight18 weui-badge" style="display: block"></i>
+                <img src="../image/u02.jpg" class="img-bor middle radius-cirle border img60 mt5">
+                <p class="mt8 fz_10" style="line-height: 1em">张三</p>
+            </li>
+            <li class="weui-uploader__file tcenter lineheight rel">
+              <i class="fz_8 iconfont icon-guanbi1 po_ab_r lineheight18 weui-badge" style="display: block"></i>
+              <img src="../image/u02.jpg" class="img-bor middle radius-cirle border img60 mt5">
+              <p class="mt8 fz_10" style="line-height: 1em">张三</p>
+            </li>
+            <li class="weui-uploader__file tcenter lineheight rel">
+              <i class="fz_8 iconfont icon-guanbi1 po_ab_r lineheight18 weui-badge" style="display: block"></i>
+              <img src="../image/u02.jpg" class="img-bor middle radius-cirle border img60 mt5">
+              <p class="mt8 fz_10" style="line-height: 1em">张三</p>
+            </li>
+            <li class="weui-uploader__file tcenter lineheight rel">
+              <i class="fz_8 iconfont icon-guanbi1 po_ab_r lineheight18 weui-badge" style="display: block"></i>
+              <img src="../image/u02.jpg" class="img-bor middle radius-cirle border img60 mt5">
+              <p class="mt8 fz_10" style="line-height: 1em">张三</p>
+            </li>
+            <li class="weui-uploader__file tcenter lineheight rel">
+              <i class="fz_8 iconfont icon-guanbi1 po_ab_r lineheight18 weui-badge" style="display: block"></i>
+              <img src="../image/u02.jpg" class="img-bor middle radius-cirle border img60 mt5">
+              <p class="mt8 fz_10" style="line-height: 1em">张三</p>
+            </li>
+            <li class="weui-uploader__file tcenter lineheight rel">
+              <i class="fz_8 iconfont icon-guanbi1 po_ab_r lineheight18 weui-badge" style="display: block"></i>
+              <img src="../image/u02.jpg" class="img-bor middle radius-cirle border img60 mt5">
+              <p class="mt8 fz_10" style="line-height: 1em">张三</p>
+            </li>
+          </ul>
+          <div class="">
+            <a href="04processing-add_stus.html"><i class="iconfont icon-tianjiarenyuan color-green fz_40 weui-uploader__file"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pb50"></div>
+<div class="weui-flex weui-tabbar weui-row zindex1">
+  <div class="weui-flex__item"><div class="placeholder "><a href="04pending.html" class="weui-btn  weui-btn_plain-primary bg_white">返回</a></div></div>
+  <div class="weui-flex__item"><div class="placeholder"><a href="04pending.html" class="weui-btn weui-btn_primary">保存提交</a></div></div>
+</div>
+</body>
+</html>

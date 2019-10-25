@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>综合素质评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart class="bg_white">
+<div class="user_bg monster-user bg-medalbg pt20 plr12">
+  <div class="t-center">
+    <div class=" co_ff mb20">已获得新荣誉勋章</div>
+    <img src="../image/honor01.png" class="img100" alt="">   
+    <p class="fz_14">曾宇轩 一年级（6）班</p>
+</div>
+</div>
+<div class="po_r pa12 mt12">
+  <div class="fz_14 plr12">
+    <p>勋章名称：阳光少年</p>
+    <p>派发时间：2019-08-15 15:15</p>
+    <p>派发老师：程海风</p>
+    <p>勋章说明：在校表现优秀</p>
+  </div>
+  
+  <div class="bor-top_ds fz_14 mt20 pt12">
+    <div class="fz_12 co_99">家长回复：</div>
+    <div class="pa12">谢谢老师！</div>
+  </div>
+</div>
+
+<div class="weui-loadmore">
+  <a class="fz_16" href="javascript:;" id="add-note">回复老师</a>
+</div>
+<div class="pb50"></div>
+<div class="weui-tabbar zindex3">
+<div class="weui-tabbar weui-row">
+  <a href="02mine.html" class="weui-btn weui-btn_default weui-col-100">返回</a>
+</div>
+</div>
+
+
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+      $(document).on("click", "#add-note", function() {
+        $.prompt({
+          text: "回复不能超过12个字",
+          title: "回复老师",
+          onOK: function(text) {
+            $.alert("您的备注是:"+text, "回复成功");
+          },
+          onCancel: function() {
+            console.log("取消了");
+          },
+          input: ''
+        });
+      });
+</script>
+</body>
+</html>

@@ -299,7 +299,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 /*tabbar样式覆盖*/
 .weui-tabbar{ background-color:#fbfbfb; position:fixed;}
-.weui-tabbar__item{ padding-top:8px; padding-bottom:4px;}
+.weui-tabbar__item{ padding-top:7px; padding-bottom:3px;}
 .weui-tabbar__icon{ width:24px; height:24px;}
 .weui-tabbar__item.weui-bar__item--on .weui-tabbar__icon>i,.weui-tabbar__item.weui-bar__item--on i.weui-tabbar__icon,.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{ color: #111;}
 .weui-tabbar__label { line-height:1.4; margin-top:2px;}
@@ -382,6 +382,11 @@ input[disabled]{ color: #e3e3e3;}
 .color-success { color:#08bc7f !important;}
 .color-blue{ color:#68a0f4 !important;}
 .weui-search-bar__cancel-btn,.weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before{color: #09acfb;}
+
+.weui-check__label:active{ background-color: #fff;}
+.weui-cells_checkbox .bg-topright{ position: absolute;display: block; width: 30px;height: 70px;transform: rotate(-48deg); top: -36px;left: 35px;z-index: 1;}
+.weui-cells_checkbox .weui-check:checked+.bg-topright{background-color: #09acfb;}
+
 /*搜索*/
 .po_f.weui-search-bar{ z-index:2; width: 100%;}
 
@@ -444,6 +449,7 @@ fieldset:after{right:0;}
 
 /*个人中心*/
 .bg-shading{ background:url(../image/mine-bg.jpg) center top no-repeat; background-size:contain;}
+.bg-medalbg{ background:url(../image/mine-medal.png) center top no-repeat; background-size:contain;}
 @media all and (min-width:768px) {.bg-shading{background-size:cover;}}
 .user_bg{ min-height:90px;}
 .card{ border-radius:8px ; min-height:100px;box-shadow: 0 0 8px #8f9d97;}

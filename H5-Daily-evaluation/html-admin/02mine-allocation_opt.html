@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>综合素质评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart>
+<div class="weui-cell bor-tno pt12 pb0">
+  <div class="weui-cell__bd">
+    <p class="fz_14 co_99 pt15">选择派发的学生（星光少年勋章）</p>
+  </div>
+</div>
+<form class="pl12 pr12">
+  <div class="weui-row fz_0">
+    <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray weui-col-50">
+      <div class="weui-cell weui-cell_select ptb10 plr12">
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="classes" type="text" placeholder="" value="一年级（1）班">
+        </div>
+      </div>
+    </div>
+    <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray weui-col-50">
+     
+      <div class="weui-cell ptb10 plr12">
+        <div class="weui-cell__bd">
+          <input class="weui-input" type="text" placeholder="输入姓名搜索" value="">
+        </div>
+        <div class="weui-cell__hd"><i class="weui-icon-search"></i></div>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="pl12 pr12">
+  <div class="row ml0 t-center weui-cells_checkbox">
+    <div class="col-25 pl0">
+      <label class="weui-cells mt10 radius-6 block weui-check__label" for="stu01">
+        <div class="weui-media-box_text block pt12 pb10 co_66 opt-cur" href="">
+          <div class="po_ab_r mark-topright"><div class="num"><i class="iconfont icon-duigou1 fz_12 ml10"></i></div>
+            <input type="checkbox" class="weui-check" name="checkbox1" id="stu01" checked="checked">
+            <div class="bg-topright"></div>
+          </div>
+          <img src="../image/u03.jpg" class="img40 radius-cirle img-bor">
+          <div class="name fz_14">孙晓宇</div>
+        </div>
+      </label>
+    </div>
+    <div class="col-25 pl0">
+      <label class="weui-cells mt10 radius-6 block weui-check__label" for="stu02">
+        <div class="weui-media-box_text block pt12 pb10 co_66 opt-cur" href="">
+          <div class="po_ab_r mark-topright"><div class="num"><i class="iconfont icon-duigou1 fz_12 ml10"></i></div>
+            <input type="checkbox" class="weui-check" name="checkbox1" id="stu02">
+            <div class="bg-topright"></div>
+          </div>
+          <img src="../image/u02.jpg" class="img40 radius-cirle img-bor">
+          <div class="name fz_14">杨文秀</div>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+<div class="weui-loadmore weui-loadmore_line">
+  <span class="weui-loadmore__tips">没有更多内容了</span>
+</div>
+<div class="pb50"></div>
+<div class="weui-tabbar weui-row zindex1">
+  <a href="02mine-allocation.html" class="weui-btn weui-btn_default weui-col-50">上一步</a>
+  <a href="javascript:;" id="show-toast" class="weui-btn weui-col-50 weui-btn_plain-primary">提交派送</a>
+</div>
+
+
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+      $("#classes").picker({
+        title: "请选择您的计划",
+        cols: [
+          {
+            textAlign: 'center',
+            values: ['一年级（1）班','一年级（2）班']
+          }
+        ],
+        onChange: function(p, v, dv) {
+          console.log(p, v, dv);
+        },
+        onClose: function(p, v, d) {
+          console.log("close");
+        }
+      });
+      $(document).on("click", "#show-toast", function() {
+        $.toast("操作成功", function() {
+          console.log('close');
+        });
+      })
+</script>
+</body>
+</html>

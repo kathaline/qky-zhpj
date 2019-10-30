@@ -47,10 +47,10 @@
     <div class="side">
       <div class="side-menu nav mall-smenu">
         <ul class="ul-menu" role="tablist">
-          <li role="presentation" class="active">
+          <li role="presentation">
             <a href="#Set01" aria-controls="" role="tab" data-toggle="tab">数据汇总</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="active">
             <a href="#Set02" aria-controls="" role="tab" data-toggle="tab">兑换明细</a>
           </li>
           <li role="presentation">
@@ -64,7 +64,7 @@
     </div>
     <div class="main">
       <div class="tab-content tabs label-h-over">
-        <div role="tabpanel" class="tab-pane fade active in" id="Set01">
+        <div role="tabpanel" class="tab-pane fade" id="Set01">
           <div class="pad_lr20 pad_t20 clearfix"> 
             <ul class="ul_srh col-sm-10 pad_0">
                 <li><span>学年学期：</span>
@@ -201,9 +201,9 @@
             </div> 
           </div>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="Set02">
+        <div role="tabpanel" class="tab-pane fade active in" id="Set02">
           <div class="pad_lr20 pad_t20 clearfix"> 
-            <ul class="ul_srh col-sm-10 pad_0">
+            <ul class="ul_srh fl">
                 <li><span>学年学期：</span>
                     <select name="select">
                       <option selected="">2016-2017学年第一学期</option>
@@ -232,8 +232,8 @@
                     </select>
                 </li>
              </ul>
-             <div class="col-sm-2 pad_0 text-right">
-               <a href="#" class="bg_gray"><i class="qkyicon fz_0">&#xe64b;</i>下载表格</a>
+             <div class="fr text-right">
+               <a href="" data-toggle="modal" data-target="#label-copy" class="bg_gray bg_primary mar_r5"><i class="qkyicon">&#xe6ad;</i>学校派发</a><a href="#" class="bg_gray"><i class="qkyicon fz_0">&#xe64b;</i>下载表格</a>
              </div>
           </div>
           <div class="pad_20">
@@ -368,5 +368,89 @@
   </div>
 </div>
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<div class="modal fade" id="label-copy" tabindex="-1" role="dialog" aria-labelledby="label-copyLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" role="tabpanel">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              ×
+          </button>
+          <h4 class="modal-title" id="myModalLabel">勋章派发</h4>
+        </div>
+        <div class="modal-body">
+          <div class="add_01 bor_all pad_lr15 pad_t15">
+
+          <div class="pad_b10 row"> 
+           <div class="col-sm-3 pad_r0">
+                <select name="select" class="wid-100">
+                  <option selected="">一年级（1）班</option>
+                  <option>一年级（1）班</option>
+                  <option>初三（1）班</option>
+                </select>
+            </div>
+            <div class="col-sm-3 pad_r0">
+              <div class="has-feedback">
+                <input type="text" class="form-control" placeholder="姓名搜索">
+                <a class="qkyicon form-control-feedback mar_r10" aria-hidden="true"></a>
+              </div>
+            </div>
+             
+          </div>
+          
+          <div class="row stus_list m-wid bg-gray pad_tb15">
+            <div class="fz_14">
+              <div class="col-sm-2 pad_r0 mar_b5">
+                <label for="chk001" class="weui-switch-cp mar_bno">
+                  <input id="chk001" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                  <span class="chk_box mar_r5"></span>李云霞
+                </label>
+              </div>
+              <div class="col-sm-2 pad_r0 mar_b5">
+                <label for="chk002" class="weui-switch-cp mar_bno">
+                  <input id="chk002" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                  <span class="chk_box mar_r5"></span>李云霞
+                </label>
+              </div>
+              <div class="col-sm-2 pad_r0 mar_b5">
+                <label for="chk003" class="weui-switch-cp mar_bno">
+                  <input id="chk003" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                  <span class="chk_box mar_r5"></span>李云霞
+                </label>
+              </div>
+              <div class="col-sm-2 pad_r0 mar_b5">
+                <label for="chk004" class="weui-switch-cp mar_bno">
+                  <input id="chk004" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                  <span class="chk_box mar_r5"></span>李云霞
+                </label>
+              </div>
+              <div class="col-sm-2 pad_r0 mar_b5">
+                <label for="chk005" class="weui-switch-cp mar_bno">
+                  <input id="chk005" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                  <span class="chk_box mar_r5"></span>李云霞
+                </label>
+              </div>
+            </div>
+          </div>
+
+        <div class="clear"> </div>
+        </div>
+          <div class="mar_t20 co_333 bor_lb pad_l5">选择派发：
+            <select name="select">
+              <option selected="">全部勋章</option>
+            </select>
+          </div>
+          <div class="nopass_list  m-wid pad_15">
+            <span class="st-name pad_r20 p-r">李金昊 一年级（1）班<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0"></i></a></span>
+            <span class="st-name pad_r20 p-r">刘乐成 一年级（1）班<a href="#" class="p-a rep_del01"><i class="qkyicon fz_0"></i></a></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary">提交派发</button>
+        </div>
+      </div>
+  </div>
+</div><!-- /.modal-content -->
+
 </body>
 </html>

@@ -520,6 +520,7 @@ a.ul_data-btn:hover{border:1px solid #999}
 .fl_chk form label span{width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .fr-zbk{width:600px; overflow-y:auto;overflow-x:hidden}
 .nopass_list,.stus_list{max-height:222px !important; font-size: 0;}
+.stus_list{ overflow-x:hidden; overflow-y:auto;}
 .m-wid.nopass_list span{ width:180px !important;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .all_zb{height:30px;line-height:30px;}
 .all_zb input{margin-right:8px}

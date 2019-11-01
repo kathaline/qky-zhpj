@@ -474,12 +474,15 @@ fieldset:after{right:0;}
 .name{width: auto; }
 .name,.textover01{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; word-wrap: break-word; word-break: break-all;}
 /*角标*/
-.mark-topright{overflow:hidden; width:60px;height:60px; /*background-color:#FC6;*/ border-radius:6px; font-size:12px;  color: #fff;}
+.mark-topright,.mark-topleft{overflow:hidden; width:60px;height:60px; /*background-color:#FC6;*/ border-radius:6px; font-size:12px;  color: #fff;}
 .mark-topright .num{ z-index:2; height:100%; width:30px; position:relative; float:right}
 .triangle-topright{position: absolute; display: block; width:30px; height:70px; background-color:#d8f1fe; transform: rotate(-48deg);top:-30px;left:35px; z-index:1; }
 .div-alarm .triangle-topright{ background-color:#f6383a; }
 .div-alarm .num{color:#fff;}
 .weui-mark-rt {display: block; height:22px;line-height:22px!important; position: relative; text-align: center; top: 8px; left: -5px; transform: rotate(42deg);width:90px;}
+.swipe-mark.mark-topleft{ width:80px; height:80px;top:-15px;left:-30px;}
+.mark-topleft .weui-mark-rt {transform: rotate(-42deg);}
+.swipe-mark.mark-topleft .weui-mark-rt{ height:20px; line-height:20px;}
 
 .Bscore,.Sscore{ margin-right:0 !important; border-radius:10PX; height:50PX !important; line-height:20PX !important; padding-top:5px; font-size:12px;}
 .Bscore+.Sscore{ margin-left:5PX;}
@@ -564,4 +567,4 @@ div+.nodata{ padding:80px 20px 0;}
 .bg_lylw+.bor-top_ds::before{  border-top:2px dashed #f7e09d; left: 15px; right: 15px;}
 /*分数*/
 .num-div{}
-.num-txt{ width:50px; padding-left:5px; padding-right:5px; height:28px; border-radius:4px; border:1px solid #ddd;}
+.num-txt{ width:46px; padding-left:5px; padding-right:5px; height:28px; border-radius:4px; border:1px solid #ddd;}

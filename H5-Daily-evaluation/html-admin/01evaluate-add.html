@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 <link rel="stylesheet" href="../css/weui.min.css">
-<link rel="stylesheet" href="../css/jquery-weui.css">
+<link rel="stylesheet" href="../css/jquery-weui.min.css">
 <!--基础样式覆盖-->
 <link rel="stylesheet" href="../iconfont/iconfont.css">
 <link rel="stylesheet" href="../css/h5.css">
@@ -50,35 +50,26 @@
     <div class="weui-cell__hd fz_0"><a href="01evaluate-add_evid.html" class="iblock"><img src="../image/edit.png" class="img24"></a></div>
   </div>
   <div class="weui-cells radius-10 mt10">
-    <div class="weui-cell weui-media-box">
-      <div class="po_ab_l zindex0">
-        <img src="../image/done.png" class="eva-evid">
+    <div class="weui-cell weui-cell_swiped" id="swipe1">
+      <div class="weui-cell__bd">
+        <div class="weui-cell pa0">
+          <div class="po_ab_l mark-topleft swipe-mark"><span class="weui-mark-rt zindex1 co_ff bg_yorg fz_10">已加佐证</span></div>
+          <div class="weui-cell__hd fz_0 ml10 mr5"><img src="../image/u03.jpg" class="img30 img-bor"></div>
+          <div class="weui-cell__bd">
+            <p>周瑞</p><div class="fz_10 co_99">一年级（1）班</div>
+          </div>
+          <div class="weui-cell__hd fz_0 zindex2 bg_lb ptb5 mr20">
+            <a class="iblock pa5"><i class="iconfont icon-jian fz_14"></i></a>
+            <input name="" type="tel" class="num-txt">
+            <a class="iblock pa5"><i class="iconfont icon-jia fz_14"></i></a>
+          </div>
+          <div class="weui-cell__hd zindex1 fz_0"><a href="01evaluate-add_evid.html" class="iblock "><img src="../image/edit.png" class="img24"></a></div>
+        </div>
       </div>
-      <div class="weui-cell__hd fz_0 po_r zindex1"><a href="#" class="iblock ptb5 pr5"><i class="iconfont icon-jian co_ff bg-danger radius-cirle fz_12 pa2"></i></a></div>
-      <div class="weui-cell__hd fz_0 po_r zindex1 mr8"><img src="../image/u03.jpg" class="img30 img-bor"></div>
-      <div class="weui-cell__bd po_r zindex1">
-        <p>周瑞</p><div class="fz_10 co_99">一年级（1）班</div>
+      <div class="weui-cell__ft">
+        <a href="#" class="iblock pa12 mt10 ml5 mr5"><img src="../image/delete.png" class="img24"></a>
       </div>
-      <div class="weui-cell__hd fz_0 zindex2 bg_lb ptb5 mr20">
-        <a class="iblock pa5"><i class="iconfont icon-jian fz_14"></i></a>
-        <input name="" type="tel" class="num-txt">
-        <a class="iblock pa5"><i class="iconfont icon-jia fz_14"></i></a>
-      </div>
-      <div class="weui-cell__hd zindex1 fz_0"><a href="01evaluate-add_evid.html" class="iblock "><img src="../image/edit.png" class="img24"></a></div>
-    </div>
-    <div class="weui-cell weui-media-box">
-      <div class="weui-cell__hd fz_0 po_r zindex1"><a href="#" class="iblock ptb5 pr5"><i class="iconfont icon-jian co_ff bg-danger radius-cirle fz_12 pa2"></i></a></div>
-      <div class="weui-cell__hd fz_0 po_r zindex1 mr8"><img src="../image/u01.jpg" class="img30 img-bor"></div>
-      <div class="weui-cell__bd po_r zindex1">
-        <p>阮良轩</p><div class="fz_10 co_99">一年级（1）班</div>
-      </div>
-      <div class="weui-cell__hd fz_0 zindex2 bg_lb ptb5 mr20">
-        <a class="iblock pa5"><i class="iconfont icon-jian fz_14"></i></a>
-        <input name="" type="tel" class="num-txt">
-        <a class="iblock pa5"><i class="iconfont icon-jia fz_14"></i></a>
-      </div>
-      <div class="weui-cell__hd zindex1 fz_0"><a href="01evaluate-add_evid.html" class="iblock"><img src="../image/edit.png" class="img24"></a></div>
-    </div>
+    </div> 
   </div>
   <div class="weui-row fz_0">
     <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray weui-col-50">
@@ -102,8 +93,16 @@
   <a href="01evaluate.html" class="weui-btn weui-btn_default weui-col-50">返回记录</a>
   <a href="" class="weui-btn weui-col-50 weui-btn_disabled weui-btn_plain-primary">确认提交</a>
 </div>
-<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-weui.min.js"></script>
+<script src="../js/swiper.min.js"></script>
 <script src="../js/jquery-weui.js"></script>
+<script>
+  $('.delete-swipeout').click(function () {
+	$(this).parents('.weui-cell').remove()
+  })
+
+</script>
 <script>
   $("#date").calendar({
 	onChange: function (p, values, displayValues) {

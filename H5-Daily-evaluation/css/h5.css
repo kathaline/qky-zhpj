@@ -225,6 +225,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .plr30{padding-left:30px!important;padding-right:30px!important;}
 .plr40{padding-left:40px!important;padding-right:40px!important;}
 .pa0{ padding:0!important;}
+.pa2{ padding:2px!important;}
 .pa5{ padding:5px!important;}
 .pa10{ padding:10px!important;}
 .pa12{ padding:12px!important;}
@@ -445,8 +446,8 @@ fieldset:after{right:0;}
 .stus-cla .weui-cells:after{ border-bottom:none;}
 .stus-cla.show .icon-jiantou2:before { content: "\e625";}
 .stus-cla .weui-cells .weui-cell__hd{ padding-right:8px;}
-.eva-evid{margin-right:96px; z-index:0; height:60px;opacity:0.8;filter:alpha(opacity=80);}
-
+.eva-evid{margin-right:96px; z-index:0; height:60px;margin-top:-8px;opacity:0.5;filter:alpha(opacity=50);}
+.po_ab_l .eva-evid{margin-left:120px;margin-right:auto;}
 /*个人中心*/
 .bg-shading{ background:url(../image/mine-bg.jpg) center top no-repeat; background-size:contain;}
 .bg-medalbg{ background:url(../image/mine-medal.png) center top no-repeat; background-size:contain;}
@@ -560,3 +561,6 @@ div+.nodata{ padding:80px 20px 0;}
 .radius-10.bor-top_ds::before{left:10px; right: 10px;}
 .bg_yorg+.bor-top_ds::before{  border-top:2px dashed #ffba41; left: 15px; right: 15px;}
 .bg_lylw+.bor-top_ds::before{  border-top:2px dashed #f7e09d; left: 15px; right: 15px;}
+/*分数*/
+.num-div{}
+.num-txt{ width:50px; padding-left:5px; padding-right:5px; height:26px; border-radius:4px; border:1px solid #ddd;}

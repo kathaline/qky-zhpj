@@ -480,7 +480,7 @@ fieldset:after{right:0;}
 .div-alarm .triangle-topright{ background-color:#f6383a; }
 .div-alarm .num{color:#fff;}
 .weui-mark-rt {display: block; height:22px;line-height:22px!important; position: relative; text-align: center; top: 8px; left: -5px; transform: rotate(42deg);width:90px;}
-.swipe-mark.mark-topleft{ width:80px; height:80px;top:-15px;left:-30px;}
+.swipe-mark.mark-topleft{ width:80px; height:80px;top:-14px;left:-30px;}
 .mark-topleft .weui-mark-rt {transform: rotate(-42deg);}
 .swipe-mark.mark-topleft .weui-mark-rt{ height:16px; line-height:18px !important;top:12px; left:-8px;}
 

@@ -4,10 +4,17 @@
  * 创建者：yhc 
  * 创建日期：2017-08-16
 */
+/*开发样式*/
+.weui-photo-browser-modal{z-index: 1000}
+.weui-photo-browser-modal .photo-container { justify-content: center; }
+.ms-controller, .ms-important, [ms-controller], [ms-important] { visibility: hidden;}
+
+
 body, html { height:100%; -webkit-tap-highlight-color: transparent; background-color:#ebebeb;}
 a{ color:#28ce57;}
 ul,li{ padding:0; margin:0; list-style:none;}
 *{WORD-WRAP:break-word;TABLE-LAYOUT:fixed;word-break:break-all;}
+
 /*快速基础样式*/
 .col-100{ width:100%;}
 .col-35{ width:35%;}
@@ -39,6 +46,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bg_white{ background-color:#fff;}
 .bg_black{background-color:#000;}
 .bg_gray{ background-color:#f9f9f9;}
+.bg_dark_gray{ background-color:#ebebeb;}
 .co_ff{ color:#fff!important;}
 .co_e0{ color:#e0e0e0!important;}
 .co_a3{ color:#a3a3a3!important;}
@@ -326,4 +334,4 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 .rel{position: relative!important;}
 .lineheight{line-height:inherit!important;}
-.lineheight18{line-height:18px!important;}
+.lineheight12{line-height:12px!important;}

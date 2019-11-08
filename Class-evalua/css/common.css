@@ -27,6 +27,7 @@
 .lh22{ line-height:22px;}
 .lh26{ line-height:26px;}
 .lh30{ line-height:30px;}
+.bor_no{ border:none !important;}
 .bor_nb{ border-bottom:none !important;}
 .bor_nt{ border-top:none !important;}
 .atd a:hover,.atd:hover{ text-decoration:inherit; cursor:pointer;}

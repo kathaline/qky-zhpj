@@ -686,3 +686,16 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .modal.right.fade .modal-dialog,.modal.right.fade .modal-content .navbar-fixed-bottom {right: -460px;left:auto;-webkit-transition: opacity 0.3s linear, right 0.3s ease-out; -moz-transition: opacity 0.3s linear, right 0.3s ease-out; -o-transition: opacity 0.3s linear, right 0.3s ease-out;transition: opacity 0.3s linear, right 0.3s ease-out;}
 .modal.right.fade.in .modal-dialog,.modal.right.fade.in .modal-content .navbar-fixed-bottom {right: 0;}
 .modal-content .navbar-fixed-bottom{ width:460px;}
+
+/*04to-be-processed*/
+.col-lg-2{width:20%;}
+/*04processing*/
+.news-con{background-color:#f2fafd;border-radius: 6px;border: 1px dotted #dadada;margin:15px 20px 30px 20px;padding: 20px 0px; }
+.news-con i{font-style: normal;}
+.news-con span{color:#555;font-weight: bold;}
+.news-con .con{width: 33%;padding-left:10%;}
+.news-con .con-long{width: 100%;padding-left:10%;padding-top: 30px;}
+.bzr-chuli textarea{width: 100%;height: 120px;border-radius: 6px;outline: none;padding:10px;}
+.glxs{height: 120px;border-bottom: 1px solid #dadada;}
+
+.foot-btn{height: 70px;text-align: center;line-height: 70px;}

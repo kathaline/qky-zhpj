@@ -72,7 +72,8 @@
           </div>
         </div>
         <div class="col-sm-5 text-right">
-          <a type="submit" class="btn btn-default mr20" href="02eva-log.html"><i class="icon_class class-txt02 mr5"></i>操作日志</a>
+          <a type="submit" class="btn btn-default mr10" href="02eva-record.html"><i class="icon_class class-txt02 mr5"></i>评价记录</a>
+           <a type="submit" class="btn btn-default mr20" href="02eva-log.html"><i class="icon_class class-txt02 mr5"></i>操作日志</a>
         </div>
       </div>
     </form>
@@ -135,34 +136,34 @@
               <tr>
                 <th width="9%" scope="col">二级指标</th>
                 <th width="68%" scope="col">指标说明</th>
-                <th width="17%" scope="col">加减分</th>
-                <th width="6%" scope="col">备注</th>
+                <th width="17%" scope="col">次数/得分</th>
+                <th width="6%" scope="col">评价</th>
                </tr>
              </thead>
              <tbody>
               <tr>
                 <td><div class="pt5">明辨是非</div></td>
                 <td><div class="pt5">是否具有正确的世界观、价值观、人生否具有正确的是非观念。</div></td>
-                <td><input type="text" class="form-control wd50 wd80"></td>
-                <td><div class="pt5"><a href="#" data-toggle="modal" data-target="#tips3" class="icon_class class-bianji fz_14"></a></div></td>
+                <td>无评价</td>
+                <td><div class=""><a href="02eva-input.html" class="icon_class class-bianji fz_14"></a></div></td>
                </tr>
               <tr>
                 <td><div class="pt5">关心集体</div></td>
                 <td><div class="pt5">是否关心、热爱集体，有较强的集体荣誉感，愿意为集体贡献力量。</div></td>
-                <td><input type="text" class="form-control wd80"></td>
-                <td><div class="pt5"><a href="#" data-toggle="modal" data-target="#tips3" class="icon_class class-bianji fz_14"></a></div></td>
+                <td>无评价</td>
+                <td><div class=""><a href="02eva-input.html" class="icon_class class-bianji fz_14"></a></div></td>
                </tr>
               <tr>
                 <td><div class="pt5">诚实守信</div></td>
                 <td><div class="pt5">是否有撒谎、考试作弊行为，是否真诚待人，诚实守信。</div></td>
-                <td><input type="text" class="form-control wd80"></td>
-                <td><div class="pt5"><a href="#" data-toggle="modal" data-target="#tips3" class="icon_class class-bianji fz_14"></a></div></td>
+                <td>无评价</td>
+                <td><div class=""><a href="02eva-input.html" class="icon_class class-bianji fz_14"></a></div></td>
                </tr>
               <tr>
                 <td><div class="pt5">爱护环境</div></td>
                 <td><div class="pt5">是否具有环保意识，知道学校的卫生制度及要求，是否爱护环境卫生，认真做好值日工作。</div></td>
-                <td><input type="text" class="form-control wd80"></td>
-                <td><div class="pt5"><a href="#" data-toggle="modal" data-target="#tips3" class="icon_class class-bianji fz_14"></a></div></td>
+                <td>无评价</td>
+                <td><div class=""><a href="02eva-input.html" class="icon_class class-bianji fz_14"></a></div></td>
                </tr>
               </tbody>
             </table>
@@ -182,26 +183,8 @@
               <tr>
                 <td><div class="pt5">明辨是非</div></td>
                 <td><div class="pt5">是否具有正确的世界观、价值观、人生否具有正确的是非观念。</div></td>
-                <td><input type="text" class="form-control wd50 wd80"></td>
-                <td><div class="pt5"><a href="#" data-toggle="modal" data-target="#tips3" class="icon_class class-bianji fz_14"></a></div></td>
-               </tr>
-              <tr>
-                <td><div class="pt5">关心集体</div></td>
-                <td><div class="pt5">是否关心、热爱集体，有较强的集体荣誉感，愿意为集体贡献力量。</div></td>
-                <td><input type="text" class="form-control wd80"></td>
-                <td><div class="pt5"><a href="#" data-toggle="modal" data-target="#tips3" class="icon_class class-bianji fz_14"></a></div></td>
-               </tr>
-              <tr>
-                <td><div class="pt5">诚实守信</div></td>
-                <td><div class="pt5">是否有撒谎、考试作弊行为，是否真诚待人，诚实守信。</div></td>
-                <td><input type="text" class="form-control wd80"></td>
-                <td><div class="pt5"><a href="#" data-toggle="modal" data-target="#tips3" class="icon_class class-bianji fz_14"></a></div></td>
-               </tr>
-              <tr>
-                <td><div class="pt5">爱护环境</div></td>
-                <td><div class="pt5">是否具有环保意识，知道学校的卫生制度及要求，是否爱护环境卫生，认真做好值日工作。</div></td>
-                <td><input type="text" class="form-control wd80"></td>
-                <td><div class="pt5"><a href="#" data-toggle="modal" data-target="#tips3" class="icon_class class-bianji fz_14"></a></div></td>
+                <td><a data-toggle="modal" data-target="#detail" class="a-pointer" title="得分/次数"><span class="co_93"><strong class=" error_color">-3分</strong>/2次</span><i class="icon_class class-goumaijilu ml5"></i></a></td>
+                <td><div class=""><a href="02eva-input.html" class="icon_class class-bianji fz_14"></a></div></td>
                </tr>
               </tbody>
             </table>
@@ -212,7 +195,7 @@
   
 </div>
 <div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
-<!-- 模态框（Modal） -->
+<!-- 模态框（Modal） --><!--
 <div class="modal fade" id="tips3" tabindex="-1" role="dialog" aria-labelledby="tips3Label" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content tab" role="tabpanel">
@@ -249,6 +232,56 @@
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div>
+	</div>
+</div>
+-->
+<div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="detailLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">思想品德-思想品德<span class="fz_15 ml5">（学生：杨鹏）</span></h4>
+
+			</div>
+			<div class="modal-body clear pa0">
+
+
+              <div class="bor-bgray">
+                <div class="bg-gray clear ma15 pa15">
+                  <div class="row">
+                    <div class="col-sm-10 pr0">
+                      <span>沈佳妮老师</span><span class="ml15 co_93">2018-3-30</span>
+                      <div class="mt5 co_33">评价描述：<span>上课情况任意打架，不听老师劝导，任然下课与同学约架</span></div>
+                      <div class="pt10 pb10 clear">
+                         <ul class="import_list clear">
+                             <li class="li_img fl mr10"><span class="spn_import"><div class="div_img"><img src="../images/act0.jpg"></div></span></li>
+                             <li class="li_img fl mr10"><span class="spn_import"><div class="div_img"><img src="../images/act0.jpg"></div></span></li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 text-right"><h4 class="pt10"><strong class="fz_22 text-success">+5</strong>分</h4></div>
+                  </div>
+                  <div class="bor-t pt10"><span class="ml5">学生1</span><span class="ml5">学生1</span><span class="ml5">学生1</span></div>
+                </div>
+                <div class="bg-gray clear ma15 pa15">
+                  <div class="row">
+                    <div class="col-sm-10 pr0">
+                      <span>沈佳妮老师</span><span class="ml15 co_93">2018-3-30</span>
+                      <div class="mt5 co_33">评价描述：<span>上课情况任意打架，不听老师劝导，任然下课与同学约架</span></div>
+                    </div>
+                    <div class="col-sm-2 text-right"><h4 class="pt10"><strong class="fz_22 error_color">-5</strong>分</h4></div>
+                  </div>
+                  <div class="bor-t pt10"><span class="ml5">学生1</span><span class="ml5">学生1</span><span class="ml5">学生1</span></div>
+                </div>
+              </div>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">知道了</button>
 			</div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal -->

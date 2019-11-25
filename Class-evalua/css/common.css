@@ -31,11 +31,14 @@
 .bor_nb{ border-bottom:none !important;}
 .bor_nt{ border-top:none !important;}
 .atd a:hover,.atd:hover{ text-decoration:inherit; cursor:pointer;}
+.a-pointer{ cursor:pointer;}
 .wd50{width:50%;}
 .wd80{width:80%;}
 .wd100{ width:100%;}
 .text-indent{text-indent:2em;}
 .radius-4{ border-radius:4px;}
+
+a:hover,a:focus{ text-decoration:none;}
 
 .co_ff{ color:#fff!important;}
 .co_a3{ color:#a3a3a3!important;}
@@ -47,6 +50,21 @@
 .co_43{ color:#434343!important;}
 .co_33{ color:#333333!important;}
 
+.alert-info{background-color:#f8fdff;}
+.bg-gray{ background-color:#fafafa;}
+.bg-bgray{ background-color:#f0f0f0;}
+.bg-lgray{ background-color:#ddd;}
+.bg-grn{ background-color:#73ceaf;}
+.bg-green{ background-color:#51c20c;}
+.bg-cyan{ background-color:#5dc0cf;}
+.bg-blue{ background-color:#6cb4df;}
+.bg-ylw{ background-color:#f1b866;}
+.bg-red{ background-color:#f37f75;}
+.bg-fff{ background:#fff;}
+.bg-warning { background-color: #fcf8e3;}
+.bg-danger { background-color: #f2dede;}
+.bg-success { background-color: #dff0d8;}
+.bg-info { background-color: #d9edf7;}
 .bg-lprim{ background:#5bbce6!important;}
 
 .fz_we{ font-weight:bold!important;}
@@ -137,5 +155,7 @@
 .bor-r{ border-right:1px solid #e7e7e7;}
 .bor-b{ border-bottom:1px solid #e7e7e7;}
 .bor-l{ border-left:1px solid #e7e7e7;}
+.bor-bgray{ border-bottom:1px solid #ececec;}
+.bor-dash{ border:1px dashed #e9e9e9;}
 /*超出省略号*/
 .w-over{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}

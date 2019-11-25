@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质评价</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/stu_class/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="judge_nav-bar">
+   <div class="judge_nav container-xl">
+      <ul>
+        <li><a href="05set-sys.html" class="cur">基本设置</a></li>
+      </ul>
+   </div>
+</div>   
+<div class="container-xl">
+  <div class="wrap qkycadr mt20 mb20">
+    <div class="side">
+      <div class="side-menu nav mall-smenu">
+        <ul class="ul-menu" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#Set01" aria-controls="" role="tab" data-toggle="tab">分数设置</a>
+          </li>
+          <li role="presentation" class="">
+            <a href="#Set02" aria-controls="" role="tab" data-toggle="tab">高级设置</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="tab-content tabs label-h-over">
+        <div role="tabpanel" class="tab-pane fade active in" id="Set01">
+          <div class="page-header pl20 pr20 pt15 pb15 ma0 clear">
+            <div class="fl fz_16">基础分数设置</div>
+          </div>
+          <form class="pl20 pr20 pb20">
+            <h5 class="bor-lb mt20 mb20 pl10">评价基础分</h5>
+            <div class="form-group clearfix">
+              <label for="Input01" class="col-sm-12">每个班赋予基础分，基础上进行加分或者减分，最终得分=基础分+加分/减分</label>
+              <div class="col-sm-4 pr0"><input type="text" class="form-control" id="Input01" placeholder="基础分" value="80"></div>
+            </div>
+            <h5 class="bor-lb mt20 mb20 pl10">评分是否允许修改</h5>
+            <div class="form-group clearfix">
+              <div class="col-sm-12">
+                
+                <div class="radio radio-box mt0 mb0">
+                 <label class="radio-qky clear radio-inline pt0 pl0"><a class="radio_a fl mr5"><b></b></a>否</label>
+                 <label class="radio-qky clear radio-inline pt0 select"><a class="radio_a fl mr5"><b></b></a>是</label>
+                </div>
+              </div>
+            </div>
+            <div class="page-header"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">保存</button>
+            </div>
+          </form>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="Set02">
+          <div class="page-header pl20 pr20 pt15 pb15 ma0 clear">
+            <div class="fl fz_16">高级设置</div>
+          </div>
+          <form class="pl20 pr20 pb20">
+            <h5 class="bor-lb mt20 mb20 pl10">待处理催办设置</h5>
+            <div class="form-group clearfix">
+              <label for="Input01" class="col-sm-12">当班主任未处理评价情况下，设置多久在推送消息一次</label>
+              <div class="col-sm-4 has-feedback pr0"><input type="text" class="form-control" id="Input01" placeholder="" value="80"><span class="form-control-feedback mr5 co_93">分数</span></div>
+            </div>
+            <h5 class="bor-lb mt20 mb20 pl10">文明班设置</h5>
+            <div class="form-group clearfix">
+              <label for="Input01" class="col-sm-12">年级条件下，前多少百分比排名为文明班，班级数为奇数时自动+1个单元班级</label>
+              <div class="col-sm-4 has-feedback pr0"><input type="text" class="form-control" id="Input01" placeholder="" value="50"><span class="form-control-feedback mr5 co_93">%</span></div>
+            </div>
+            <div class="page-header"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">保存</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>       
+  </div>
+</div>
+<div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script>
+ seajs.use(["jq","bs","nav","dw","rach"],function(j,b,n,dw,rach){
+	 opt.navli_j[0].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+	  rach.rach_run(function(t){},function(t){});
+});
+</script>
+</body>
+</html>

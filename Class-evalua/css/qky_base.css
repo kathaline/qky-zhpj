@@ -630,7 +630,7 @@ label { font-weight: normal;}
 .cla-height{ max-height:740px;}
 }
 .cla-height a{ text-decoration:none;}
-.cla-height >a.block{ padding-left:20px; padding-right:20px; height:40px; line-height:40px; font-size:15px;}
+.cla-height >a.block,.cla-height .menu-a{ padding-left:20px; padding-right:20px; height:40px; line-height:40px; font-size:15px;}
 .cla-height ul { border-top:1px solid #eee; border-bottom:1px solid #eee;}
 .cla-height ul li a{ height:36px; line-height:36px; padding-left:60px; display:block; color:#666;}
 .cla-height ul li a.bor-lb{background:#f6f6f6; color:#27b0f2;}

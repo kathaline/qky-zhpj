@@ -300,7 +300,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .form-control[readonly]{cursor:default;}
 /*表单校验样式覆盖*/
 .form-control-feedback{ height:30px; line-height:30px; width:auto;min-width: 30px;}
-
+.form-control-feedback.r0,.form-horizontal .has-feedback .form-control-feedback.r0{ right:0px;}
 /*下拉组改装*/
 .qkydropdown{ height:30px;}
 .qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 5px; vertical-align: inherit;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}

@@ -771,14 +771,14 @@ label { font-weight: normal;}
 @media (min-width: 768px){
 .side-menu{ min-height:300px;}
 .modal-body .side-menu{ min-height:250px;}
-.members{height:280px;}
+.members{max-height:280px;}
 .members-l{height:220px;}
 .members.bor-t{height:230px;}
 }
 @media (min-width: 992px){
 .side-menu{ min-height:480px;}
 .modal-body .side-menu{ min-height:420px;}
-.members{height:460px;}
+.members{max-height:460px;}
 .members-l{height:400px;}
 .members.bor-t{height:400px;}
 }
@@ -786,7 +786,7 @@ label { font-weight: normal;}
 @media (min-width: 1600px) {
 .side-menu{ min-height:560px;}
 .modal-body .side-menu{ min-height:480px;}
-.members{height:510px;}
+.members{max-height:510px;}
 .members-l{height:450px;}
 .members.bor-t{height:455px;}
 }
@@ -797,12 +797,14 @@ label { font-weight: normal;}
 .side-menu .ul-menu .active{ background:#f2f8fd; border-left:3px solid #199ed8;}
 .cour-labels .label.iblock{ border:1px solid transparent;cursor:pointer;  font-weight:normal;}
 .label-cour.label{ background:#f0f0f0; color:#666; font-weight:normal; font-size:13px;}
+.col-sm-2 .label-cour.label{ display:inline-block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; text-align:left; position:relative;}
 .label-cour.label:hover{ background:#fff; border:1px dashed #199ed8; cursor:pointer;}
 .label-cour.label.active{ background:#fff; border:1px dashed #199ed8; color:#199ed8;}
 .label.label-cur{background:#fff; border:1px dashed #199ed8 !important; color:#199ed8;}
 .label-cour.alert,.label-cur.alert{padding: .14em .6em .2em;}
 .label-cour.alert button.close{opacity:.5; float:none;}
 .label-cur.alert button.close{float:none;}
+.label.text-left{ text-align:left;}
 /*二级菜单*/
 .judge_nav-bar{ height:50px;background-color: #f5f5f5;border-bottom:1px solid #d8d8d8; overflow:hidden;}
 .judge_nav ul{width:100%;margin:0 auto; }

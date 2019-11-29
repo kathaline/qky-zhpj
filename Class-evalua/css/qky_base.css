@@ -795,14 +795,14 @@ label { font-weight: normal;}
 .side-menu .ul-menu li a{ display:block;}
 .side-menu .ul-menu:last-child{ border-bottom:none;}
 .side-menu .ul-menu .active{ background:#f2f8fd; border-left:3px solid #199ed8;}
-.cour-labels .label.iblock{ border:1px solid transparent;cursor:pointer;  font-weight:normal;}
+.cour-labels .label.iblock,.col-sm-2.alert .label-cour{ border:1px solid transparent;cursor:pointer;  font-weight:normal;}
 .label-cour.label{ background:#f0f0f0; color:#666; font-weight:normal; font-size:13px;}
 .col-sm-2 .label-cour.label{ display:inline-block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; text-align:left; position:relative;}
 .label-cour.label:hover{ background:#fff; border:1px dashed #199ed8; cursor:pointer;}
 .label-cour.label.active{ background:#fff; border:1px dashed #199ed8; color:#199ed8;}
 .label.label-cur{background:#fff; border:1px dashed #199ed8 !important; color:#199ed8;}
-.label-cour.alert,.label-cur.alert{padding: .14em .6em .2em;}
-.label-cour.alert button.close{opacity:.5; float:none;}
+.label-cour.alert,.label-cur.alert,.col-sm-2.alert .label-cour{padding: .14em .6em .2em;}
+.label-cour.alert button.close,.col-sm-2.alert .label-cour button.close{opacity:.5; float:none;}
 .label-cur.alert button.close{float:none;}
 .label.text-left{ text-align:left;}
 /*二级菜单*/

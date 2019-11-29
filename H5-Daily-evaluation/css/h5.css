@@ -566,5 +566,4 @@ div+.nodata{ padding:80px 20px 0;}
 .bg_yorg+.bor-top_ds::before{  border-top:2px dashed #ffba41; left: 15px; right: 15px;}
 .bg_lylw+.bor-top_ds::before{  border-top:2px dashed #f7e09d; left: 15px; right: 15px;}
 /*分数*/
-.num-div{}
 .num-txt{ width:46px; padding-left:5px; padding-right:5px; height:28px; border-radius:4px; border:1px solid #ddd;}

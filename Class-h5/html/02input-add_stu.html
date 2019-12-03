@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>评价录入</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/class-h5.css">
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+</head>
+<body ontouchstart>
+<div class="weui-search-bar" id="searchBar">
+  <form class="weui-search-bar__form">
+    <div class="weui-search-bar__box">
+      <i class="weui-icon-search"></i>
+      <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required>
+      <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+    </div>
+    <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+      <i class="weui-icon-search"></i>
+      <span>搜索</span>
+    </label>
+  </form>
+  <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+</div>
+  <div id="accor" class="weui-cells mt0">
+    <div class="user-infro col-bor">
+      <ul>
+        <li class="clearfix">
+          <h5 class="fz_nor">
+              <div class="weui-cell">
+                <div class="weui-cell__bd fz_16">一年级（1）班<span class="fz_12 co_99 ml10">学生50人（已选2人）</span></div>
+                <div class="weui-cell__ft"><i class="iconfont icon-shang color-primary"></i></div>
+              </div>
+          </h5>
+          <div class="foldContent weui-cells weui-cells_form mt0 pl15" style="display:block;">
+            <div class="weui-cells weui-cells_checkbox mt0">
+              <label class="weui-cell weui-check__label" for="s11">
+                <div class="weui-cell__hd"><img src="../image/u03.jpg" class="img30 img-bor middle"></div>
+                <div class="weui-cell__bd">
+                  <p>周瑞</p>
+                </div>
+                <div class="weui-panel__ft">
+                  <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                  <i class="weui-icon-checked"></i>
+                </div>
+              </label>
+              <label class="weui-cell weui-check__label" for="s12">
+                <div class="weui-cell__hd"><img src="../image/u01.jpg" class="img30 img-bor middle"></div>
+                <div class="weui-cell__bd">
+                  <p>阮良轩</p>
+                </div>
+                <div class="weui-panel__ft">
+                  <input type="checkbox" name="checkbox1" class="weui-check" id="s12" checked="checked">
+                  <i class="weui-icon-checked"></i>
+                </div>
+              </label>
+              <label class="weui-cell weui-check__label" for="s13">
+                <div class="weui-cell__hd"><img src="../image/u02.jpg" class="img30 img-bor middle"></div>
+                <div class="weui-cell__bd">
+                  <p>杨小雨</p>
+                </div>
+                <div class="weui-panel__ft">
+                  <input type="checkbox" name="checkbox1" class="weui-check" id="s13">
+                  <i class="weui-icon-checked"></i>
+                </div>
+              </label>
+              <label class="weui-cell weui-check__label" for="s14">
+                <div class="weui-cell__hd"><img src="../image/u04.jpg" class="img30 img-bor middle"></div>
+                <div class="weui-cell__bd">
+                  <p>王洋洋</p>
+                </div>
+                <div class="weui-panel__ft">
+                  <input type="checkbox" name="checkbox1" class="weui-check" id="s14">
+                  <i class="weui-icon-checked"></i>
+                </div>
+              </label>
+            </div>
+          </div>
+        </li>
+        <li class="clearfix fold">
+          <h5 class="fz_14 fz_nor">
+              <div class="weui-cell">
+                <div class="weui-cell__bd fz_16">一年级（2）班<span class="fz_12 co_99 ml10">学生50人（已选0人）</span></div>
+                <div class="weui-cell__ft"><i class="iconfont icon-xia color-primary"></i></div>
+              </div>
+          </h5>
+          <div class="foldContent weui-cells weui-cells_form mt0 pl15" style="display:none;">
+            <div class="weui-cells weui-cells_checkbox mt0">
+              <label class="weui-cell weui-check__label" for="s11">
+                <div class="weui-cell__hd"><img src="../image/u03.jpg" class="img30 img-bor middle"></div>
+                <div class="weui-cell__bd">
+                  <p>周瑞</p>
+                </div>
+                <div class="weui-panel__ft">
+                  <input type="checkbox" class="weui-check" name="checkbox1" id="s11">
+                  <i class="weui-icon-checked"></i>
+                </div>
+              </label>
+              <label class="weui-cell weui-check__label" for="s12">
+                <div class="weui-cell__hd"><img src="../image/u01.jpg" class="img30 img-bor middle"></div>
+                <div class="weui-cell__bd">
+                  <p>阮良轩</p>
+                </div>
+                <div class="weui-panel__ft">
+                  <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+                  <i class="weui-icon-checked"></i>
+                </div>
+              </label>
+              <label class="weui-cell weui-check__label" for="s13">
+                <div class="weui-cell__hd"><img src="../image/u02.jpg" class="img30 img-bor middle"></div>
+                <div class="weui-cell__bd">
+                  <p>杨小雨</p>
+                </div>
+                <div class="weui-panel__ft">
+                  <input type="checkbox" name="checkbox1" class="weui-check" id="s13">
+                  <i class="weui-icon-checked"></i>
+                </div>
+              </label>
+              <label class="weui-cell weui-check__label" for="s14">
+                <div class="weui-cell__hd"><img src="../image/u04.jpg" class="img30 img-bor middle"></div>
+                <div class="weui-cell__bd">
+                  <p>王洋洋</p>
+                </div>
+                <div class="weui-panel__ft">
+                  <input type="checkbox" name="checkbox1" class="weui-check" id="s14">
+                  <i class="weui-icon-checked"></i>
+                </div>
+              </label>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="weui-loadmore weui-loadmore_line">
+    <span class="weui-loadmore__tips">没有更多内容了</span>
+  </div>
+  <div class="pb50 mb12"></div> 
+  
+  <div class="weui-flex weui-tabbar weui-row zindex12">
+    <div class="weui-flex__item"><div class="placeholder "><a href="02input-add.html" class="weui-btn weui-btn_default bg_white">返回</a></div></div>
+    <div class="weui-flex__item"><div class="placeholder"><a href="02input-add.html" class="weui-btn weui-btn_plain-primary">确认添加</a></div></div>
+  </div>
+  <script>
+	$(function(){    
+		$("li>h5","#accor").bind("click",function(){
+			var li=$(this).parent();
+			if(li.hasClass("fold")){
+				li.removeClass("fold");
+				$(this).find(".weui-cell .iconfont").removeClass("icon-xia").addClass("icon-shang");
+				li.find(".foldContent").slideDown();
+			}else{
+				li.addClass("fold");
+				$(this).find(".weui-cell .iconfont").removeClass("icon-shang").addClass("icon-xia");
+				li.find(".foldContent").slideUp();
+			}
+		});
+	})
+  </script>
+</body>
+</html>

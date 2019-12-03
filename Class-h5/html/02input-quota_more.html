@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>评价统计</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/class-h5.css">
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+</head>
+<body ontouchstart>
+  <div class="btn-tab weui-tab ">
+    <div class="weui-navbar header-title weui-flex mt10 bg-trans">
+      <div class="placeholder col-2"></div>
+      <div class="weui-flex__item">
+        <div class="weui-flex ">
+          <a class="weui-navbar__item weui-bar__item--on tab-left" href="#tab1">减分项</a>
+          <a class="weui-navbar__item tab-right" href="#tab2">加分项</a>
+        </div>
+      </div>
+      <div class="placeholder col-2"></div>
+    </div>
+    <div class="weui-tab__bd pt50 mt5">
+      <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active pl10 pr10">
+        <div class="weui-cells_radio">
+          <label class="weui-cell weui-check__label weui-cells radius-4" for="x11">
+            <div class="weui-cell__bd">
+              <p>课堂吵闹（<span class="fz_16 color-error">-1分</span>）</p>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" class="weui-check" name="radio1" id="x11">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+          <label class="weui-cell weui-check__label weui-cells radius-4" for="x12">
+            <div class="weui-cell__bd">
+              <p>不交作业（<span class="fz_16 color-error">-1分</span>）</p>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" class="weui-check" name="radio1" id="x12" checked="checked">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+        </div>
+        <div class="weui-loadmore">
+          <i class="weui-loading"></i>
+          <span class="weui-loadmore__tips co_99">正在加载...</span>
+        </div>
+        <div class="pb50"></div>
+      </div>
+      <div id="tab2" class="weui-tab__bd-item  pl10 pr10">
+        <div class="weui-cells_radio">
+          <label class="weui-cell weui-check__label weui-cells radius-4" for="x21">
+            <div class="weui-cell__bd">
+              <p>课堂认真听讲（<span class="fz_16 color-success">+1分</span>）</p>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" class="weui-check" name="radio1" id="x21">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+          <label class="weui-cell weui-check__label weui-cells radius-4" for="x22">
+            <div class="weui-cell__bd">
+              <p>按时完成作业（<span class="fz_16 color-success">+1分</span>）</p>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" class="weui-check" name="radio1" id="x22">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+        </div>
+        <div class="weui-loadmore">
+          <i class="weui-loading"></i>
+          <span class="weui-loadmore__tips co_99">正在加载...</span>
+        </div>
+        
+        <div class="pb50"></div>
+      </div>
+    </div>
+  </div>
+  <div class="weui-tabbar weui-row zindex12">
+    <a href="02input-quota.html" class="weui-btn weui-btn_default weui-col-100">返回</a>
+  </div>
+</body>
+</html>

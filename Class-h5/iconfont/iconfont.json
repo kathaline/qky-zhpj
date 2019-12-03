@@ -20,6 +20,13 @@
       "unicode_decimal": 58917
     },
     {
+      "icon_id": "571726",
+      "name": "删除",
+      "font_class": "shanchu1",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
       "icon_id": "591719",
       "name": "wxb报表",
       "font_class": "wxbbaobiao",
@@ -67,6 +74,13 @@
       "font_class": "jia",
       "unicode": "e626",
       "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "1115046",
+      "name": "减",
+      "font_class": "jian",
+      "unicode": "e627",
+      "unicode_decimal": 58919
     },
     {
       "icon_id": "1127965",
@@ -361,6 +375,13 @@
       "font_class": "danxuananniu",
       "unicode": "e69e",
       "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "6119268",
+      "name": "删除",
+      "font_class": "delete-s",
+      "unicode": "e636",
+      "unicode_decimal": 58934
     },
     {
       "icon_id": "6848101",

@@ -10,7 +10,7 @@
 .ms-controller, .ms-important, [ms-controller], [ms-important] { visibility: hidden;}
 
 
-body, html { height:100%; -webkit-tap-highlight-color: transparent; background-color:#ebebeb;}
+body, html { height:100%; -webkit-tap-highlight-color: transparent; background-color:#f3f3f3;}
 a{ color:#28ce57;}
 ul,li{ padding:0; margin:0; list-style:none;}
 *{WORD-WRAP:break-word;TABLE-LAYOUT:fixed;word-break:break-all;}
@@ -20,6 +20,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .zindex1{ z-index:1;}
 .zindex2{ z-index:2;}
 .zindex3{ z-index:3;}
+.zindex12{ z-index:12;}
 .col-100{ width:100%;}
 .col-35{ width:35%;}
 .col-25{ width:25%;}
@@ -86,7 +87,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bor-ddd{ border:1px solid #ddd;}
 .bor-no{ border:none;}
 .bor-top,.bor-top_dashed,.bor-top_ds{ position:relative;}
-.bor-top:before { content: " "; position: absolute; left: 0; right: 0; top: 0; border-top: 1px solid #e5e5e5 ; -webkit-transform-origin: 0 0; transform-origin: 0 0;-webkit-transform: scaleY(.5); transform: scaleY(.5);}
+.bor-top:before { content: " "; position: absolute; left: 0; right: 0; top: 0; height:1px; border-top: 1px solid #e5e5e5 ; -webkit-transform-origin: 0 0; transform-origin: 0 0;-webkit-transform: scaleY(.5); transform: scaleY(.5);}
 .bor-top_ds::before{content: " ";  position: absolute; left: 0; right: 0; height: 1px; color: #e5e5e5;top: 0; border-top: 1px dashed #e5e5e5 ; -webkit-transform-origin: 0 0;transform-origin: 0 0; -webkit-transform: scaleY(.5); transform: scaleY(.5);}
 
 .bor-l{ border-left:3px solid #09acfb;}
@@ -176,6 +177,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pb15{ padding-bottom:15px!important;}
 .pb20{ padding-bottom:20px!important;}
 .pb50{ padding-bottom:54px!important;}
+.ptb5{ padding-top:5px !important; padding-bottom:5px !important;}
 .ptb10{ padding-top:10px !important; padding-bottom:10px !important;}
 .pl0{ padding-left:0px!important;}
 .pl5{ padding-left:5px!important;}
@@ -196,6 +198,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pa0{ padding:0!important;}
 .pa5{ padding:5px!important;}
 .pa10{ padding:10px!important;}
+.pa12{ padding:12px!important;}
 .pa15{ padding:15px!important;}
 .pa20{ padding:20px!important;}
 /*超出省略号*/
@@ -245,13 +248,18 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-cells__title:before {top: 0;border-top: 1px solid #d9d9d9; -webkit-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scaleY(.5); transform: scaleY(.5);content: " ";  position: absolute;  left: 0; right: 0;  height: 1px;  color: #d9d9d9;}
 .weui-media-box_appmsg .weui-media-box__thumb{ height:100%;}
 .weui-uploader__file{ text-align:center; line-height:79px;}
+.weui-uploader__file .po_ab_r{ line-height:normal;}
 .weui-uploader__file img{ width:100%; height:100%;}
 .weui-media-box:before, .weui-cell:before { left: 0;}
 .weui-label.wid-s{ width:40px; margin-top:1px;}
 /*.weui-cell__bd{-webkit-box-flex:0; -webkit-flex: none;flex:none;}
 .weui-cell__hd+.weui-cell__bd,.weui-cell__bd.bd-txt,.weui-cell__ft{-webkit-box-flex: 1; -webkit-flex: 1;flex: 1;}*/
 .weui-media-box__desc{ color:#888;line-height: 1.41176471;}
+
+.weui-loadmore_line .weui-loadmore__tips{ background-color:#f3f3f3;}
 /*按钮样式覆盖*/
+.weui-btn_default { border: 1px solid #ddd; background-color: #fff;}
+.weui-btn:after{ border:none;}
 .weui-btn_primary{background-color: #28ce57; border:1px solid #1aad19;}
 .weui-btn_primary:after{ border:0;}
 .weui-dialog__btn{ color: #2dae99;}
@@ -316,7 +324,6 @@ ul,li{ padding:0; margin:0; list-style:none;}
 /*评价录入*/
 .eva-add{ bottom:60px; right:12px;}
 .evaadd-btn{ width:60px; text-align:center; height:60px; line-height:60px;  background-color:#28ce57; z-index:10; display:block;border-radius:50%;}
-.eva-add_q,.eva-add{ z-index:2;}
 .eva-add_q{ left:-10px;bottom:60px;}
 .eva-add_q .weui-btn,.evaadd-btn{-moz-box-shadow:1px 2px 8px #b9b9b9; -webkit-box-shadow:1px 2px 8px #b9b9b9; box-shadow:1px 2px 8px #b9b9b9;}
 
@@ -345,6 +352,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .img24{ width:24px; height:24px;}
 .img26{ width:26px; height:26px;}
 .img30{ width:30px!important; height:30px!important;}
+.img34{ width:34px!important; height:34px!important;}
 .img40{ width:40px!important; height:40px!important;}
 .img50{ width:50px!important; height:50px!important;}
 .img60{ width:60px!important; height:60px!important;}
@@ -374,7 +382,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .btn-tab .weui-navbar__item.weui-bar__item--on{background-color:#28ce57; color:#fff;}
 .tab-left{ border-bottom-left-radius: 6px;border-top-left-radius: 6px;}
 .tab-right{ border-bottom-right-radius: 6px;border-top-right-radius: 6px;}
-.btn-tab .weui-navbar__item{ border:1px solid #28ce57;}
+.btn-tab .weui-navbar__item{ border:1px solid #28ce57; background-color:#fff;}
 /*学生选择页面*/
 .stus-cla { border-top:1px solid #e9e9e9;}
 .stus-cla .weui-cells{ display:none; margin-top:0;}

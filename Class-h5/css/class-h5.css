@@ -251,7 +251,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-cells__title{background-color: #fff; position:relative; margin-bottom:0; z-index:0;}
 .weui-cells__title:before {top: 0;border-top: 1px solid #d9d9d9; -webkit-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scaleY(.5); transform: scaleY(.5);content: " ";  position: absolute;  left: 0; right: 0;  height: 1px;  color: #d9d9d9;}
 .weui-media-box_appmsg .weui-media-box__thumb{ height:100%;}
-.weui-uploader__file{ text-align:center; line-height:79px;}
+.weui-uploader__file{ text-align:center; line-height:79px; position:relative;}
 .weui-uploader__file .po_ab_r{ line-height:normal;}
 .weui-uploader__file img{ width:100%; height:100%;}
 .weui-media-box:before, .weui-cell:before { left: 0;}

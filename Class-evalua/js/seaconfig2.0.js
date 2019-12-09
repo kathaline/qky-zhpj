@@ -58,7 +58,7 @@ var opt={
 	navli_j:[
 			{name:"首页",attrcont:"href='02eva-will.html'",isactive:false},
 			{name:"指标管理",attrcont:"href='01evalua-sys.html'",isactive:false},
-			{name:"评价统计",attrcont:"href='01browse-ind.html'",isactive:false},
+			{name:"评价统计",attrcont:"href='03statis-week.html'",isactive:false},
             {name:"处理流程",attrcont:"href='04To-be-processed.html'",isactive:false},
 			{name:"系统管理",attrcont:"href='05set-sys.html'",isactive:false},
 	]

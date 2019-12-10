@@ -357,7 +357,7 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 .table>thead >tr >th.media-middle,.table>tbody >tr >th.media-middle {vertical-align: middle;}
 .table>tbody >tr{background: #f2fafd;}
 .bg-no.table>tbody >tr { background:none;}
-.table-box td .bg-no.table td{ padding:10px 5px;}
+.table-box td .bg-no.table td{ padding:15px 5px;}
 .table.table-striped > tbody > tr:nth-child(odd) {background: #f2fafd;}
 .table.table-striped > tbody > tr:nth-child(even) { background-color: #e6f6fd;}
 .table.table-striped > tbody > tr.gray_bg{background-color: #fbfbfb;}

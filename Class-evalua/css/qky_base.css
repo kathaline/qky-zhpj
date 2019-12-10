@@ -657,8 +657,9 @@ label { font-weight: normal;}
 .media-left.statis-l{ min-width:80px;}
 .sta-chose .iblock{ width:74px; margin-bottom:4px;}
 .sta-chose .iblock.current{ position:relative; background-color:#f6f6f6;}
-.sta-chose .iblock.current .po_a_r{ font-size:10px;}
 .sta-chose .iblock.current.bg-info{background-color: #d9edf7;}
+.sta-chose .iblock .cur-pic{ display:none; position:absolute; right:0;top:0;}
+.sta-chose .iblock.current .cur-pic{ display:block;}
 .sta-chose a.iblock{ cursor:pointer; color:#666;}
 .sta-chose .bg-info{ color:#333 !important;}
 .sta-chose .checkbox-qky{ width:100px; margin-top:10px; margin-bottom:10px;}

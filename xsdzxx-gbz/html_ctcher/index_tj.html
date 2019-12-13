@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../qky2.ico">
+    <title>全课云—学生电子信息</title>
+    <!-- Bootstrap 基础样式 CSS -->
+    <link href="../dist/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+    
+    <!--全课云基础样式覆盖-->
+    <link href="../css/qkybase1.1.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body class="qkybody">
+<nav class="navbar navbar-fixed-top navbar-default" role="navigation" id="qkynav">
+<div class="container-fluid po_r">
+<div class="nav_box clear fl">
+<div class="nav_logo">
+<img src="../images/nav_logo/logo.png" alt="">
+</div>
+<div class="navline"></div>
+<div class="nav_pjname">学生信息管理</div>
+<button type="button" class="navbar-toggle collapsed mr0" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><ul class="nav_other"><li class="dropdown"><a href="#" class="dropdown-toggle clear other_sel" data-toggle="dropdown"><div class="user_photo fl"><i class="qkyicon_14"></i></div><span class="fl school_name ml5">全课云运营学校</span><span class="fl other_name">张晓明</span><span class="caret"></span></a><ul class="dropdown-menu" role="menu" id="otherli"><li><a href="#">个人空间</a></li><li><a id="toOut">退出</a></li></ul></li></ul><div id="navbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav"><li><a href="index.html">学生基本信息</a></li><li><a href="index_gl.html">学生扩展信息</a></li><li class="active"><a href="index_tj.html">学生信息统计</a></li></ul>
+</div></div></nav>
+
+    <div class="container po_r mt15">
+      <a class="btn-border po_a_r pt5 pb5" id="ljtag_btn" isc="no"><i class="qkyicon_14">&#xe67d;</i><br><span>收<br>起<br>条<br> 件</span></a>
+      
+      <div class="table-responsive table_lj mb15">
+          <table class="table table_ljchoose">
+              <tbody>
+                  <tr>
+                      <td class="tit"><label>选择县机构:</label></td>
+                      <td class="cont_a"><a class="active">都匀市</a><a>福泉市</a><a>贵定县</a><a>瓮安县</a><a>龙里县</a><a>长顺县</a><a>惠水县</a><a>罗旬县</a><a>平塘县</a><a>独山县</a><a>荔波县</a><a>三都水族自治县</a></td>
+                  </tr>
+                  <tr>
+                      <td class="tit"><label>选择镇机构:</label></td>
+                      <td class="cont_a"><a>广慧路街道</a><a class="active">文峰路街道</a><a>新华路街道 </a><a>小围寨街道</a><a>沙包堡街道</a><a>杨柳街镇</a><a>甘塘镇</a><a>洛帮镇</a><a>坝固镇</a><a>大坪镇 </a><a>王司镇</a><a>墨冲镇</a><a>平浪镇</a><a>凯口镇</a><a>奉合水族乡</a><a>阳和水族乡</a><a>基场水族乡</a><a>良亩乡</a><a>河阳乡</a><a>沙寨乡</a><a>石龙乡</a><a>摆忙乡</a></td>
+                  </tr>
+                  <tr>
+                      <td class="tit"><label>选择学校:</label></td>
+                      <td class="cont_a"><a class="active">都匀市第一幼儿园</a></td>
+                  </tr>
+                  <tr>
+                      <td class="tit"><label>选择年级:</label></td>
+                      <td class="cont_a"><a>小班</a><a>中班</a><a class="active">大班</a></td>
+                                         
+                  </tr>
+                  <tr class="lj_bottom">
+                      <td class="tit"><label>选择班级:</label></td>
+                      <td class="cont_a"><a>大班（一）</a><a class="active">大班（二）</a><a>大班（三）</a></td>               
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      <div class="row">
+          <div class="col-xs-4 stuinfo_">
+              <div class="stuinfo_li row">
+                  <div class="stuinfo_i col-sm-3 t_c"><i class="qkyicon_xs all">&#xe84d;</i></div>
+                  <div class="stuinfo_txt col-sm-8"><label>6526</label><span class="dian3">学生总人数</span></div>
+              </div>
+          </div>
+          <div class="col-xs-4 stuinfo_">
+              <div class="stuinfo_li row">
+                  <div class="stuinfo_i col-sm-4 t_c"><i class="qkyicon_xs bay">&#xe60a;</i></div>
+                  <div class="stuinfo_txt col-sm-8"><label>6526</label><span class="dian3">男生人数</span></div>
+              </div>
+          </div>
+          <div class="col-xs-4 stuinfo_">
+              <div class="stuinfo_li row">
+                  <div class="stuinfo_i col-sm-4 t_c"><i class="qkyicon_xs girl">&#xe618;</i></div>
+                  <div class="stuinfo_txt col-sm-8"><label>6526</label><span class="dian3">女生人数</span></div>
+              </div>
+          </div>
+          <div class="col-xs-4 stuinfo_">
+              <div class="stuinfo_li row">
+                  <div class="stuinfo_i col-sm-4 t_c"><i class="qkyicon_xs village">&#xe914;</i></div>
+                  <div class="stuinfo_txt col-sm-8"><label>6526</label><span class="dian3">农村人口人数</span></div>
+              </div>
+          </div>
+          <div class="col-xs-4 stuinfo_">
+              <div class="stuinfo_li row">
+                  <div class="stuinfo_i col-sm-4 t_c"><i class="qkyicon_xs unvillage">&#xe6d6;</i></div>
+                  <div class="stuinfo_txt col-sm-8"><label>6526</label><span class="dian3">非农村人口人数</span></div>
+              </div>
+          </div> 
+      </div>
+      <div class="data_view row">
+          <div class="col-xs-6 col-sm-4 data_view_li" >
+              <div class="data_view_tit"><i class="qkyicon_xs fz_16 mr5">&#xe600;</i>男女比例</div>
+              <div class="data_view_limain" id="boy_girl"></div>
+          </div>
+          <div class="col-xs-6 col-sm-4 data_view_li">
+              <div class="data_view_tit"><i class="qkyicon_xs fz_16 mr5">&#xe600;</i>农村人口比例</div>
+              <div class="data_view_limain" id="isvillage"></div>
+          </div>
+          <div class="col-xs-6 col-sm-4 data_view_li">
+              <div class="data_view_tit"><i class="qkyicon_xs fz_16 mr5">&#xe600;</i>健康比例</div>
+              <div class="data_view_limain" id="ishealthy"></div>
+          </div>
+          <div class="col-xs-6 col-sm-4 data_view_li">
+              <div class="data_view_tit"><i class="qkyicon_xs fz_16 mr5">&#xe600;</i>学生来源比例</div>
+              <div class="data_view_limain" id="studerfrom"></div>
+          </div>
+          <div class="col-xs-6 col-sm-4 data_view_li">
+              <div class="data_view_tit"><i class="qkyicon_xs fz_16 mr5">&#xe600;</i>入学比例</div>
+              <div class="data_view_limain" id="startschool"></div>
+          </div>
+          <div class="col-xs-6 col-sm-4 data_view_li">
+              <div class="data_view_tit"><i class="qkyicon_xs fz_16 mr5">&#xe600;</i>就读方式</div>
+              <div class="data_view_limain" id="attendschool"></div>
+          </div>
+          <div class="col-xs-6 col-sm-4 data_view_li">
+              <div class="data_view_tit"><i class="qkyicon_xs fz_16 mr5">&#xe600;</i>在校状态</div>
+              <div class="data_view_limain" id="schoolstate"></div>
+          </div>
+      </div>
+    </div>
+    <footer class="inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</footer>
+    <script src="../dist/jq/1.11.1/jquery.min.js"></script>
+    <!--模块化js-->
+    <script src="../dist/sea.js"></script>
+    <script>
+     seajs.use(["bootstrap/3.3.0/js/bootstrap.min","echarts/3.0/echarts.common.min","comjs/nav_add1.1","comjs/iconfont","./../js/lj_navbar","./../js/data_view"],function(){
+	 });
+    </script>
+  </body>
+</html>

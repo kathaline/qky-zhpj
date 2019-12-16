@@ -182,7 +182,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pb15{ padding-bottom:15px!important;}
 .pb20{ padding-bottom:20px!important;}
 .pb48{padding-bottom:48px!important;}
-.pb50,.pb58{ padding-bottom:58px!important;}
+.pb50,.pb58{ padding-bottom:54px!important;}
 .ptb5{ padding-top:5px !important; padding-bottom:5px !important;}
 .ptb10{ padding-top:10px !important; padding-bottom:10px !important;}
 .pl0{ padding-left:0px!important;}
@@ -215,7 +215,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 /*tabbar样式覆盖*/
 .weui-tabbar{ background-color:#fbfbfb; position:fixed;}
-.weui-tabbar__item{ padding:8px 0 2px;}
+.weui-tabbar__item{ padding:5px 0 1px;}
 .weui-tabbar__item.weui-bar__item--on .weui-tabbar__icon>i,.weui-tabbar__item.weui-bar__item--on i.weui-tabbar__icon,.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{ color: #28ce57;}
 .weui-tabbar__icon{ line-height:26px;}
 .weui-tabbar__label { font-size:12px;}
@@ -268,7 +268,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 .weui-loadmore_line .weui-loadmore__tips{ background-color:#f3f3f3;}
 /*按钮样式覆盖*/
-.weui-btn_default { border: 1px solid #ddd; background-color: #fff;}
+.weui-btn_default { border: 1px solid #ccc; background-color: #fff;}
 .weui-btn:after{ border:none;}
 .weui-btn_primary{background-color: #28ce57; border:1px solid #1aad19;}
 .weui-btn_primary:after{ border:0;}
@@ -278,8 +278,9 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-btn-area.weui-btn-area-inline .weui-btn{margin-top: auto; margin-right: 15px; width: 100%; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;}
 .weui-btn-area.weui-btn-area-inline .weui-btn:last-child { margin-right: 0;}
 .weui-btn_plain-primary:after { border-color:#28ce57;}
-.weui-tabbar .weui-btn_disabled { color: rgba(0,0,0,.3) !important;background-color: #f7f7f7 !important;pointer-events: none !important; border-color:rgba(0,0,0,.3)}
+.weui-tabbar .weui-btn_disabled { color: rgba(0,0,0,.3) !important;background-color: #f7f7f7 !important;pointer-events: none !important; border-color:rgba(0,0,0,.05)}
 .weui-btn_disabled.weui-btn_plain-primary{border-color:rgba(40,206,87,.3)!important;color:rgba(40,206,87,.3)!important;}
+.weui-btn_disabled.weui-btn_primary{border-color:rgba(40,206,87,.3)!important; background-color:rgba(40,206,87,.3)!important;color: hsla(0,0%,100%,.6);}
 /*颜色样式覆盖*/
 .color-primary { color:#596c96;}
 .color-def { color:#69a0f4;}
@@ -334,7 +335,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .tips.po_ab_l{ width:100%;top:50%; margin-top:-110px;}
 
 /*评价录入*/
-.eva-add{ bottom:60px; right:12px;}
+.eva-add{ bottom:68px; right:12px;}
 .evaadd-btn{ width:60px; text-align:center; height:60px; line-height:60px;  background-color:#28ce57; z-index:10; display:block;border-radius:50%;}
 .eva-add_q{ left:-10px;bottom:60px;}
 .eva-add_q .weui-btn,.evaadd-btn{-moz-box-shadow:1px 2px 8px #b9b9b9; -webkit-box-shadow:1px 2px 8px #b9b9b9; box-shadow:1px 2px 8px #b9b9b9;}

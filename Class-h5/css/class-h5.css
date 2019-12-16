@@ -278,6 +278,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .weui-btn-area.weui-btn-area-inline .weui-btn{margin-top: auto; margin-right: 15px; width: 100%; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;}
 .weui-btn-area.weui-btn-area-inline .weui-btn:last-child { margin-right: 0;}
 .weui-btn_plain-primary:after { border-color:#28ce57;}
+.weui-tabbar .weui-btn_disabled { color: rgba(0,0,0,.3) !important;background-color: #f7f7f7 !important;pointer-events: none !important; border-color:rgba(0,0,0,.3)}
+.weui-btn_disabled.weui-btn_plain-primary{border-color:rgba(40,206,87,.3)!important;color:rgba(40,206,87,.3)!important;}
 /*颜色样式覆盖*/
 .color-primary { color:#596c96;}
 .color-def { color:#69a0f4;}

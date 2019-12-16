@@ -97,6 +97,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 .fz_we{ font-weight:bold!important;}
 .fz_nor{ font-weight:normal!important;}
+.fz_0{ font-size:0!important;}
 .fz_8{ font-size:8px!important;}
 .fz_10{ font-size:10px!important;}
 .fz_11{ font-size:11px!important;}
@@ -180,7 +181,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pb12{ padding-bottom:12px!important;}
 .pb15{ padding-bottom:15px!important;}
 .pb20{ padding-bottom:20px!important;}
-.pb50{ padding-bottom:54px!important;}
+.pb48{padding-bottom:48px!important;}
+.pb50,.pb58{ padding-bottom:58px!important;}
 .ptb5{ padding-top:5px !important; padding-bottom:5px !important;}
 .ptb10{ padding-top:10px !important; padding-bottom:10px !important;}
 .pl0{ padding-left:0px!important;}
@@ -211,6 +213,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 /*tabbar样式覆盖*/
 .weui-tabbar{ background-color:#fbfbfb; position:fixed;}
+.weui-tabbar__item{ padding:8px 0 2px;}
 .weui-tabbar__item.weui-bar__item--on .weui-tabbar__icon>i,.weui-tabbar__item.weui-bar__item--on i.weui-tabbar__icon,.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{ color: #28ce57;}
 .weui-tabbar__icon{ line-height:26px;}
 .weui-tabbar__label { font-size:12px;}
@@ -412,3 +415,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .swipe-mark.mark-topleft .weui-mark-rt{ height:16px; line-height:18px !important;top:12px; left:-8px;}
 /*分数*/
 .num-txt{ width:46px; padding-left:5px; padding-right:5px; height:28px; border-radius:4px; border:1px solid #ddd;}
+/*input开关*/
+.min-switch.weui-switch,.min-switch.weui-switch-cp__box{ width:42px; height:24px;}
+.min-switch.weui-switch:before,.min-switch.weui-switch-cp__box:before{ width:40px; height:22px;}
+.min-switch.weui-switch:after,.min-switch.weui-switch-cp__box:after{ width:22px; height:22px;}

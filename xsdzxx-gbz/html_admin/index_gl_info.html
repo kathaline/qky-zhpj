@@ -226,8 +226,9 @@
                   <td class="td_tit">户口所在地：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
                   </tr> 
                   <tr>
-                  <td class="td_tit">特长：</td><td colspan="3" class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr>       
+                  <td class="td_tit">特长：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
+                  <td class="td_tit">当前就读学校：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
+                </tr>       
               </tbody>
           </table>
       </div>
@@ -347,31 +348,23 @@
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
                   </label>    
                   </div></td>
+                  </tr>
+                  <tr>
+                    <td class="td_tit">是否需要申请资助：</td>
+                    <td class="td_inp">
+                      <div class="radio mb0 mt0">
+                        <label class="radio-inline clear pl0" id="radio_value_1"> <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span> </label>
+                        <label class="radio-inline clear select" id="radio_value_2"> <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span> </label>
+                      </div>
+                    </td>
+                    <td class="td_tit">是否享受一补：</td>
+                    <td class="td_inp"><div class="radio mb0 mt0">
+                      <label class="radio-inline clear pl0" id="radio_value_1"> <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span> </label>
+                      <label class="radio-inline clear select" id="radio_value_2"> <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span> </label>
+                    </div></td>
                   </tr> 
                   <tr>
-                  <td class="td_tit">是否需要申请资助：</td><td class="td_inp">
-                  <div class="row">
-                    <div class="radio mb0 mt0 col-sm-6 pr0">
-                    <label class="radio-inline clear pl0" id="radio_value_1">
-                    <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                    </label>
-                    <label class="radio-inline clear select" id="radio_value_2">
-                    <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                    </label>    
-                    </div>
-                    <div class="dropdown qkydropdown havechoose col-sm-6">
-                        <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                          <span class="value">请选择</span>
-                          <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu maxh" role="menu">
-                          <li role="presentation"><a role="menuitem" tabindex="-1" >低保户</a></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1">建档立卡</a></li>
-                        </ul>
-                    </div>
-                  </div>
-                  </td>
-                  <td class="td_tit">是否享受一补：</td><td class="td_inp">
+                  <td class="td_tit">是否建档立卡户：</td><td class="td_inp">
                   <div class="radio mb0 mt0">
                   <label class="radio-inline clear pl0" id="radio_value_1">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
@@ -380,6 +373,21 @@
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
                   </label>    
                   </div></td>
+                  <td class="td_tit">是否低保户：</td><td class="td_inp">
+                  <div class="row">
+                    <div class="radio mb0 mt0 col-sm-6 pr0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                    <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                    <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
+                    </div>
+                    <div class="col-sm-6">
+                       <input class="form-control height30" type="text" placeholder="请输入低保户号">
+                    </div>
+                  </div>
+                  </td>
                   </tr> 
                   <tr>
                   <td class="td_tit xlong">是否进城务工人员随迁子女：</td><td class="td_inp">
@@ -418,24 +426,50 @@
                   </label>    
                   </div></td>
                   <td width="20%"  class="td_tit long">上下学距离（公里）：</td><td width="30%" class="td_inp"><input class="form-control height30" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td  class="td_tit long">上下学交通方式：</td>
+                    <td class="td_inp"><div class="dropdown qkydropdown havechoose dropup"> <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown"> <span class="value">请选择</span> <span class="caret"></span> </a>
+                      <ul class="dropdown-menu maxh" role="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1">步行</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">其他</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">自行车（包含摩托车、电动车）</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">公共交通</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">家长自行接送</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">校车</a></li>
+                      </ul>
+                    </div></td>
+                    <td  class="td_tit long">家长车牌号：</td>
+                    <td class="td_inp"><input class="form-control height30" type="text"></td>
                   </tr> 
                   <tr><td  class="td_tit long">上下学交通方式：</td><td class="td_inp">
                   <div class="dropdown qkydropdown havechoose dropup">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">请选择</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">步行</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">其他</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">自行车（包含摩托车、电动车）</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">公共交通</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">家长自行接送</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">校车</a></li>
-                          </ul>
-                      </div>
+                      <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+                        <span class="value">请选择</span>
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu maxh" role="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1">步行</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">其他</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">自行车（包含摩托车、电动车）</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">公共交通</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">家长自行接送</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">校车</a></li>
+                      </ul>
+                  </div>
                   </td>
-                  <td width="20%"  class="td_tit long">家长车牌号：</td><td width="30%" class="td_inp"><input class="form-control height30" type="text"></td>
+                  <td width="20%"  class="td_tit long">定制公交路线：</td>
+                  <td width="30%" class="td_inp">
+                  <div class="dropdown qkydropdown havechoose dropup">
+                      <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+                        <span class="value">请选择</span>
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu maxh" role="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1">1</a></li>
+                      </ul>
+                  </div>
+                  </td>
                   </tr>       
               </tbody>
           </table>

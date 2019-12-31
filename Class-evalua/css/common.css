@@ -114,6 +114,7 @@ a:hover,a:focus{ text-decoration:none;}
 .mr10{ margin-right:10px!important;}
 .mr15{ margin-right:15px!important;}
 .mr20{ margin-right:20px!important;}
+.mlr0{margin-left:0px!important;margin-right:0px!important;}
 .ma0{ margin:0!important;}
 .ma5{ margin:5px!important;}
 .ma10{ margin:10px!important;}
@@ -145,6 +146,7 @@ a:hover,a:focus{ text-decoration:none;}
 .pr15{ padding-right:15px!important;}
 .pr20{ padding-right:20px!important;}
 .pr60{ padding-right:60px!important;}
+.plr0{padding-left:0px!important;padding-right:0px!important;}
 .ptb0{padding-top:0px!important;padding-bottom:0px!important;}
 .pa0{ padding:0!important;}
 .pa5{ padding:5px!important;}
@@ -158,6 +160,13 @@ a:hover,a:focus{ text-decoration:none;}
 .bor-b{ border-bottom:1px solid #e7e7e7;}
 .bor-l{ border-left:1px solid #e7e7e7;}
 .bor-bgray{ border-bottom:1px solid #ececec;}
-.bor-dash{ border:1px dashed #e9e9e9;}
+.bor-dash{ border:1px dashed #e6e6e6;}
 /*超出省略号*/
 .w-over{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.img30{ width:30px; height:30px;}
+.img50{ width:50px; height:50px;}
+.img60{ width:60px; height:60px;}
+.img100{ width:100px; height:100px;}
+
+.nowrap{ white-space:nowrap;}

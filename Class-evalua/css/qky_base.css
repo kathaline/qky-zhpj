@@ -842,3 +842,19 @@ label { font-weight: normal;}
 .side-menu .ul-intro li a:hover{ color:#21a2db !important;}
 .mall-smenu .ul-menu li{ padding: 0;}
 .mall-smenu .ul-menu li a{ padding:12px 20px 12px 20px; display: block; color:#666;}
+
+/*v1.6报表导出下载*/
+.dropdown-menu.download-menu{ width:auto; min-width:268px; right:0; left:auto;}
+.dropdown-menu.download-menu .tit{ padding:10px 15px;}
+.download-list{ padding:5px 15px;}
+.download-list a{ display:block; margin-bottom:10px;}
+.cla-height.set-pop{ height:500px; overflow-y:auto;}
+.cla-height ul li a.cur{ color:#999; background-color:#f3f3f3; cursor:default;}
+.btn-r{ position:relative;  height:30px; line-height:30px; padding-left:10px; margin-right:10px;}
+.bg-info.btn-r,.bg-info.btn-r:hover{ background-color:#5bc0de;color:#fff;}
+.btn-r:after{ position:absolute;top:-10px; right:-20px; content:" ";width: 0; height: 0;  border-top:24px solid transparent; border-bottom:24px solid transparent;}
+.bg-info.btn-r:after{ border-left: 24px solid #5bc0de;}
+.btn-l{ position:relative;  height:30px; line-height:30px; padding-right:10px; margin-left:10px;}
+.bg-danger.btn-l,.bg-danger.btn-l:hover{ background-color:#ff4e4e;color:#fff;}
+.btn-l:after{ position:absolute;top:-10px; left:-20px; content:" ";width: 0; height: 0; border-top:24px solid transparent; border-bottom:24px solid transparent;}
+.bg-danger.btn-l:after{ border-right: 24px solid #ff4e4e;}

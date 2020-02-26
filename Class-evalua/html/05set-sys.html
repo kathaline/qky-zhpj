@@ -31,11 +31,14 @@
     <div class="side">
       <div class="side-menu nav mall-smenu">
         <ul class="ul-menu" role="tablist">
-          <li role="presentation" class="active">
+          <li role="presentation" class="">
             <a href="#Set01" aria-controls="" role="tab" data-toggle="tab">分数设置</a>
           </li>
           <li role="presentation" class="">
             <a href="#Set02" aria-controls="" role="tab" data-toggle="tab">高级设置</a>
+          </li>
+          <li role="presentation" class="active">
+            <a href="#Set03" aria-controls="" role="tab" data-toggle="tab">统计设置</a>
           </li>
 
         </ul>
@@ -43,7 +46,7 @@
     </div>
     <div class="main">
       <div class="tab-content tabs label-h-over">
-        <div role="tabpanel" class="tab-pane fade active in" id="Set01">
+        <div role="tabpanel" class="tab-pane fade" id="Set01">
           <div class="page-header pl20 pr20 pt15 pb15 ma0 clear">
             <div class="fl fz_16">基础分数设置</div>
           </div>
@@ -90,12 +93,145 @@
             </div>
           </form>
         </div>
+        <div role="tabpanel" class="tab-pane fade active in" id="Set03">
+          <div class="page-header pl20 pr20 pt15 pb15 ma0 clear">
+            <div class="fl fz_16">评价统计类型设置</div>
+          </div>
+          <div class="plr20 pt15 co_93">针对评价统计中，新增统计类型功能，解决不同类型班级的统计需求</div>
+          <form class="form-horizontal pa15 ma15">
+            <div class="form-group mlr0">
+              <div class="bor-dash radius-4 clear">
+                <div class="row pa15">
+                  <div class="col-sm-5 bor-lb pl10"><div class="ptb5">行政班</div></div>
+                  <div class="col-sm-7 text-right pt5">
+                    <a href="" class=""><i class="icon_class class-bianji fz_14 mr5"></i>编辑</a><a href="#" data-toggle="modal" data-target="#tips1" class="ml20" title="删除"><i class="icon_class class-shanchu fz_14 mr5"></i>删除</a>
+                  </div>
+                </div>
+                <div class="pa15 bg-gray">
+                  <div class="row ma0">初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、
+
+初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班
+
+                  </div>
+                  <div class="pt20 co_93">共<strong class="text-warning">23</strong>个班级</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mlr0">
+              <div class="bor-dash radius-4 clear">
+                <div class="row pa15">
+                  <div class="col-sm-5 bor-lb pl10"><input type="text" class="form-control" placeholder="限制12个字符" value="教务处"></div>
+                  <div class="col-sm-7 text-right pt5">
+                    <a href="" class=""><i class="icon_class class-baocun fz_14 mr5"></i>保存</a><a href="#" data-toggle="modal" data-target="#tips1" class="ml20" title="删除"><i class="icon_class class-shanchu fz_14 mr5"></i>删除</a>
+                  </div>
+                </div>
+                 <div class="pa15 bg-gray">
+                  <div class="row ma0">
+                    <div class="col-sm-2 pl0 pr10"><div class="label label-name fz_14 pr20 po_r">一年级（6）班<button type="button" class="close error_color fz_14 po_ab_r" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></div></div>
+                    <div class="col-sm-2 pl0 pr10"><div class="label label-name fz_14 pr20 po_r">一年级（6）班<button type="button" class="close error_color fz_14 po_ab_r" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></div></div>
+                    <a href="#" class="fl btn btn-default fz_14 fz_nwe" data-toggle="modal" data-target="#addclses"><i class="icon_class class-zengjia fz_14 mr5"></i>添加</a>
+                  </div>
+                  <div class="pt20 co_93">共<strong class="text-warning">2</strong>个班级</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mlr0">
+                <a href="#" class="btn btn-info pl20 pr20" title="添加权限组"><i class="icon_class class-zengjia fz_14 mr5"></i>添加统计类型</a>
+            </div>
+          </form>
+        </div>
       </div>
     </div>       
   </div>
 </div>
 <div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
-
+<div class="modal fade" id="addclses" tabindex="-1" role="dialog" aria-labelledby="addclsesLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content" role="tabpanel">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                ×
+            </button>
+            <h4 class="modal-title" id="myModalLabel">添加班级</h4>
+          </div>
+          <div class="modal-body">
+            <table width="100%" border="0">
+              <tr>
+                <td width="45%">
+                  <div class="ma15 pl10 clear fz_15 bor-lb">全部班级</div>
+                  <div class="bor-dash ml15 mr15 radius-4">
+                    <div class="cla-height set-pop bg-gray">
+                      <div><a class="menu-a block co_33" data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="true">一年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
+                      <ul id="collapse01" class="panel-collapse collapse in">
+                         <li><a href="#" class="cur">一年级（1）班</a></li>
+                         <li><a href="#" class="cur">一年级（1）班</a></li>
+                         <li><a href="#">一年级（2）班</a></li>
+                         <li><a href="#">一年级（3）班</a></li>
+                         <li><a href="#">一年级（4）班</a></li>
+                      </ul>
+                      <div><a class="menu-a block co_33 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false">二年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
+                      <ul id="collapse02" class="panel-collapse collapse">
+                         <li><a href="#" class="cur">二年级（1）班</a></li>
+                         <li><a href="#">二年级（2）班</a></li>
+                         <li><a href="#">二年级（3）班</a></li>
+                         <li><a href="#">二年级（4）班</a></li>
+                         <li><a href="#">二年级（5）班</a></li>
+                         <li><a href="#">二年级（6）班</a></li>
+                         <li><a href="#">二年级（7）班</a></li>
+                         <li><a href="#">二年级（8）班</a></li>
+                         <li><a href="#">二年级（9）班</a></li>
+                         <li><a href="#">二年级（10）班</a></li>
+                      </ul>
+                      <div><a class="menu-a block co_33 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse03" aria-expanded="false">三年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
+                      <ul id="collapse03" class="panel-collapse collapse">
+                         <li><a href="#">二年级（1）班</a></li>
+                         <li><a href="#">二年级（2）班</a></li>
+                         <li><a href="#">二年级（3）班</a></li>
+                         <li><a href="#">二年级（4）班</a></li>
+                         <li><a href="#">二年级（5）班</a></li>
+                         <li><a href="#">二年级（6）班</a></li>
+                         <li><a href="#">二年级（7）班</a></li>
+                         <li><a href="#">二年级（8）班</a></li>
+                         <li><a href="#">二年级（9）班</a></li>
+                         <li><a href="#">二年级（10）班</a></li>
+                      </ul>
+                   
+                 </div>
+                  </div>
+                </td>
+                <th width="10%">
+                  <div class=" text-center">
+                    <a href="#" class="block btn-r bg-info mb20">添加</a>
+                    <a href="#" class="block btn-l bg-danger">删除</a>
+                  </div>
+                </th>
+                <td width="45%">
+                  <div class="ma15 pl10 clear fz_15 bor-lb">已选班级</div>
+                  <div class="bor-dash ml15 mr15 radius-4">
+                    <div class="cla-height set-pop bg-gray">
+                      <div><a class="menu-a block co_33" data-toggle="collapse" data-parent="#accordion" href="#collapse01-c" aria-expanded="true">一年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
+                      <ul id="collapse01-c" class="panel-collapse collapse in">
+                         <li><a href="#">一年级（1）班</a></li>
+                         <li><a href="#">一年级（1）班</a></li>
+                      </ul>
+                      <div><a class="menu-a block co_33" data-toggle="collapse" data-parent="#accordion" href="#collapse02-c" aria-expanded="true">二年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
+                      <ul id="collapse02-c" class="panel-collapse collapse in">
+                         <li><a href="#">二年级（1）班</a></li>
+                      </ul>
+                 </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+		  </div>
+          <div class="page-header ma0"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">确认添加</button>
+          </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
 <!--模块化js--> 
 <script src="../js/sea.js"></script> 
 <script src="../js/seaconfig2.0.js"></script> 

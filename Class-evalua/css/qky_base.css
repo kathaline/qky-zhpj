@@ -813,6 +813,7 @@ label { font-weight: normal;}
 .label-cur.alert button.close{float:none;}
 .label.text-left{ text-align:left;}
 .label-name.label{ display:inline-block;text-align:left; padding-top:7px; padding-bottom:7px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.edit-classes .label-name.label{ min-width:100%;}
 .col-name{ min-width:100px;}
 .col-name .label-name.label{width:90px;}
 .col-norm{ min-width:182px}

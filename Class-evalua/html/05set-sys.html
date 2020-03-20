@@ -155,74 +155,174 @@
             <h4 class="modal-title" id="myModalLabel">添加班级</h4>
           </div>
           <div class="modal-body">
-            <table width="100%" border="0">
-              <tr>
-                <td width="45%">
-                  <div class="ma15 pl10 clear fz_15 bor-lb">全部班级</div>
-                  <div class="bor-dash ml15 mr15 radius-4">
-                    <div class="cla-height set-pop bg-gray">
-                      <div><a class="menu-a block co_33" data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="true">一年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
-                      <ul id="collapse01" class="panel-collapse collapse in">
-                         <li><a href="#" class="cur">一年级（1）班</a></li>
-                         <li><a href="#" class="cur">一年级（1）班</a></li>
-                         <li><a href="#">一年级（2）班</a></li>
-                         <li><a href="#">一年级（3）班</a></li>
-                         <li><a href="#">一年级（4）班</a></li>
-                      </ul>
-                      <div><a class="menu-a block co_33 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false">二年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
-                      <ul id="collapse02" class="panel-collapse collapse">
-                         <li><a href="#" class="cur">二年级（1）班</a></li>
-                         <li><a href="#">二年级（2）班</a></li>
-                         <li><a href="#">二年级（3）班</a></li>
-                         <li><a href="#">二年级（4）班</a></li>
-                         <li><a href="#">二年级（5）班</a></li>
-                         <li><a href="#">二年级（6）班</a></li>
-                         <li><a href="#">二年级（7）班</a></li>
-                         <li><a href="#">二年级（8）班</a></li>
-                         <li><a href="#">二年级（9）班</a></li>
-                         <li><a href="#">二年级（10）班</a></li>
-                      </ul>
-                      <div><a class="menu-a block co_33 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse03" aria-expanded="false">三年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
-                      <ul id="collapse03" class="panel-collapse collapse">
-                         <li><a href="#">二年级（1）班</a></li>
-                         <li><a href="#">二年级（2）班</a></li>
-                         <li><a href="#">二年级（3）班</a></li>
-                         <li><a href="#">二年级（4）班</a></li>
-                         <li><a href="#">二年级（5）班</a></li>
-                         <li><a href="#">二年级（6）班</a></li>
-                         <li><a href="#">二年级（7）班</a></li>
-                         <li><a href="#">二年级（8）班</a></li>
-                         <li><a href="#">二年级（9）班</a></li>
-                         <li><a href="#">二年级（10）班</a></li>
-                      </ul>
-                   
-                 </div>
-                  </div>
-                </td>
-                <th width="10%">
-                  <div class=" text-center">
-                    <a href="#" class="block btn-r bg-info mb20">添加</a>
-                    <a href="#" class="block btn-l bg-danger">删除</a>
-                  </div>
-                </th>
-                <td width="45%">
-                  <div class="ma15 pl10 clear fz_15 bor-lb">已选班级</div>
-                  <div class="bor-dash ml15 mr15 radius-4">
-                    <div class="cla-height set-pop bg-gray">
-                      <div><a class="menu-a block co_33" data-toggle="collapse" data-parent="#accordion" href="#collapse01-c" aria-expanded="true">一年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
-                      <ul id="collapse01-c" class="panel-collapse collapse in">
-                         <li><a href="#">一年级（1）班</a></li>
-                         <li><a href="#">一年级（1）班</a></li>
-                      </ul>
-                      <div><a class="menu-a block co_33" data-toggle="collapse" data-parent="#accordion" href="#collapse02-c" aria-expanded="true">二年级<i class="icon_class class-shouqi fz_20 fr"></i></a></div>
-                      <ul id="collapse02-c" class="panel-collapse collapse in">
-                         <li><a href="#">二年级（1）班</a></li>
-                      </ul>
-                 </div>
-                  </div>
-                </td>
-              </tr>
-            </table>
+             <table width="100%" border="0" class="table01">
+                <tr>
+                  <td width="50%">请选择</td>
+                  <td width="50%">已选人员</td>
+                </tr>
+                <tr>
+                  <td>
+                      <div class="input-group plr10">
+                        <input type="text" name="" class="form-control" placeholder="搜索成员姓名">
+                        <a class="input-group-addon bg_fff"><i class="iconfont icon-sousuo text-primary"></i></a>
+                      </div>
+                      <div class="side-menu  mt10">
+                        <ul>
+                            <li class="checkbox-input">
+                               <a data-toggle="collapse" href="#menu1" aria-expanded="true" class=""><i class="iconfont icon-yousanjiao iblock co_99"></i></a>
+                               <input class="checkbox_original" type="checkbox" name="tall" id="tall">
+                               <a class="checkbox_a "></a>
+                               <label for="tall">全课云产品</label>
+                              <ul class="ul-menu collapse in" id="menu1" aria-expanded="false">
+                                <li class="checkbox-input disabled">
+                                     <input type="checkbox" name="tall-1" id="tall-1" class="checkbox_original">
+                                     <a class="checkbox_a "></a>
+                                     <label for="tall-1">黄晓明（13555555555）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="tall-2" id="tall-2">
+                                     <a class="checkbox_a "></a>
+                                     <label for="tall-2">杨洋（11245454545）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="tall-3" id="tall-3">
+                                     <a class="checkbox_a "></a>
+                                     <label for="tall-3">史蒂夫（18945789874）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="tall-4" id="tall-4">
+                                     <a class="checkbox_a "></a>
+                                     <label for="tall-4">黄晓明（13555555555）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="tall-5" id="tall-5">
+                                     <a class="checkbox_a "></a>
+                                     <label for="tall-5">杨洋（11245454545）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="tall-6" id="tall-6">
+                                     <a class="checkbox_a "></a>
+                                     <label for="tall-6">史蒂夫（18945789874）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="tall-7" id="tall-7">
+                                     <a class="checkbox_a "></a>
+                                     <label for="tall-7">黄晓明（13555555555）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="tall-8" id="tall-8">
+                                     <a class="checkbox_a "></a>
+                                     <label for="tall-8">杨洋（11245454545）</label>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="checkbox-input">
+                              <a class="collapsed" data-toggle="collapse" href="#menu2"><i class="iconfont icon-yousanjiao iblock co_99"></i></a>
+                              <input class="checkbox_original" type="checkbox" name="short" id="short">
+                                     <a class="checkbox_a "></a>
+                                     <label for="short">教务处</label>
+                          
+                              <ul class="ul-menu collapse" id="menu2">
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="short-1" id="short-1">
+                                     <a class="checkbox_a "></a>
+                                     <label for="short-1">李主任（13555555555）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="short-2" id="short-2">
+                                     <a class="checkbox_a "></a>
+                                     <label for="short-2">王建国（13555555555）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="short-3" id="short-3">
+                                     <a class="checkbox_a "></a>
+                                     <label for="short-3">自建（13555555555）</label>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="checkbox-input">
+                              <a class="collapsed" data-toggle="collapse" href="#menu3"><i class="iconfont icon-yousanjiao iblock co_99"></i></a>
+                              <input class="checkbox_original" type="checkbox" name="checx" id="checx">
+                                     <a class="checkbox_a "></a>
+                                     <label for="checx">保卫处</label>
+                          
+                              <ul class="ul-menu collapse" id="menu3">
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="checx-1" id="checx-1">
+                                     <a class="checkbox_a "></a>
+                                     <label for="checx-1">王主任（13555555555）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="checx-2" id="checx-2">
+                                     <a class="checkbox_a "></a>
+                                     <label for="checx-2">王强（13555555555）</label>
+                                </li>
+                                <li class="checkbox-input">
+                                  <input class="checkbox_original" type="checkbox" name="checx-3" id="checx-3">
+                                     <a class="checkbox_a "></a>
+                                     <label for="checx-3">李志鹏（13555555555）</label>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="clear plr10">
+                        <div class="fl">
+                          <a href="#" class="btn btn-primary-bor">全部删除</a>
+                        </div>
+                        <div class="fr pa5 co_99">
+                          共10人
+                        </div>
+                      </div>
+                      <div class="side-menu  mt10">
+                        <ul class="per-checked">
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                            <li>
+                               黄晓明
+                               <a href="#" class="fr delete"><i class="iconfont icon-shanchu1"></i></a>
+                            </li>
+                          </ul>
+                      </div>
+                  </td>
+                </tr>
+              </table>
 		  </div>
           <div class="page-header ma0"></div>
           <div class="modal-footer">

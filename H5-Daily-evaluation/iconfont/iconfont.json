@@ -1,0 +1,191 @@
+{
+  "id": "1262897",
+  "name": "dairy-H5",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "504575",
+      "name": "图表",
+      "font_class": "tubiao",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "4060173",
+      "name": "荣誉",
+      "font_class": "honor",
+      "unicode": "e7eb",
+      "unicode_decimal": 59371
+    },
+    {
+      "icon_id": "688116",
+      "name": "图表 折线图",
+      "font_class": "tubiaozhexiantu",
+      "unicode": "e79a",
+      "unicode_decimal": 59290
+    },
+    {
+      "icon_id": "13086464",
+      "name": "绩效改进",
+      "font_class": "xiugai3",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "4933410",
+      "name": "提示",
+      "font_class": "tishi",
+      "unicode": "e75a",
+      "unicode_decimal": 59226
+    },
+    {
+      "icon_id": "12975010",
+      "name": "提示",
+      "font_class": "tishi1",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "1066412",
+      "name": "疑问",
+      "font_class": "problem",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "3092300",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e789",
+      "unicode_decimal": 59273
+    },
+    {
+      "icon_id": "1761733",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e7c5",
+      "unicode_decimal": 59333
+    },
+    {
+      "icon_id": "3092117",
+      "name": "全部",
+      "font_class": "quanbu",
+      "unicode": "e783",
+      "unicode_decimal": 59267
+    },
+    {
+      "icon_id": "1186830",
+      "name": "勋章",
+      "font_class": "xunzhang",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "2407532",
+      "name": "勋章",
+      "font_class": "medal",
+      "unicode": "e78a",
+      "unicode_decimal": 59274
+    },
+    {
+      "icon_id": "3092330",
+      "name": "勋章",
+      "font_class": "xunzhang1",
+      "unicode": "e796",
+      "unicode_decimal": 59286
+    },
+    {
+      "icon_id": "1115071",
+      "name": "商家",
+      "font_class": "shangjia",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "1115036",
+      "name": "福利",
+      "font_class": "fuli",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "1149403",
+      "name": "排行榜",
+      "font_class": "paixingbang",
+      "unicode": "e6c5",
+      "unicode_decimal": 59077
+    },
+    {
+      "icon_id": "1115069",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "1424269",
+      "name": "对勾",
+      "font_class": "duigou1",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "1114664",
+      "name": "地图指标",
+      "font_class": "dituzhibiao",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "1115044",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "1115046",
+      "name": "减",
+      "font_class": "jian",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "1115048",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "1115050",
+      "name": "箭头2",
+      "font_class": "jiantou2",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "1115052",
+      "name": "箭头3",
+      "font_class": "jiantou3",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "1115053",
+      "name": "箭头4",
+      "font_class": "jiantou4",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "1403075",
+      "name": "新增",
+      "font_class": "icon-xinzeng",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    }
+  ]
+}

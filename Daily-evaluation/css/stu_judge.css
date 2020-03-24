@@ -362,12 +362,13 @@ a.bg_bl04{background:#fff}
 .set_tips ul li{line-height:20px;margin-bottom:5px}
 /*右侧返回顶部+反馈*/
 .div-rgt{ z-index:999;}
-.cd-feedback{bottom:160px;}
-.cd-top{line-height:50px;bottom:100px;visibility:hidden;}
-.div-rgt a{width:50px;height:50px;z-index:999;position:fixed;right:5px;text-align:center;display:inline-block;background:#999;white-space:nowrap;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s; color:#fff;-moz-border-radius:2px; -webkit-border-radius:2px;border-radius:2px;overflow:hidden;opacity:.8}
+.div-rgt a{width:50px;height:50px;z-index:999;position:fixed;right:5px;text-align:center;display:inline-block;background:#999;white-space:nowrap;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s; color:#fff;-moz-border-radius:2px; -webkit-border-radius:2px;border-radius:2px;overflow:hidden;opacity:.75}
 .div-rgt a:hover{ background:#21a2db;}
 .div-rgt i{color:#fff;font-size:26px; margin-top:-5px;}
 .div-rgt p{ font-size:12px; margin-top:-5px;}
+.cd-feedback{bottom:160px;}
+.cd-top{line-height:50px;bottom:100px;visibility:hidden;}
+.div-rgt a.a_data{ bottom: 220px; background-color: #04acf7;}
 .cd-top.cd-is-visible{visibility:visible;opacity:.8}
 .no-touch .cd-top:hover{background-color:#e86256;opacity:1}
 

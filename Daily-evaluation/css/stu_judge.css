@@ -1206,3 +1206,5 @@ margin-right: 5px;    border-radius: 50%; border: 1px solid #bbb; line-height:10
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
+/*系统设置-权限-用户高度限制*/
+.seth_btn{}

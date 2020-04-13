@@ -16,14 +16,15 @@
 <![endif]-->
 <!--附加css-->
 <link href="../css/stu_judge.css" rel="stylesheet" type="text/css"/>
+
+<!--js-->
 <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
 <script language="JavaScript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
-<script language="JavaScript" charset="utf-8" src="../js/js_pack.js"></script>
-<!--js-->
+<script src="../js/seth.js"></script>
 <script src="../dist/sea.js"></script>
 <script src="../dist/seaconfig.js"></script>
 <script>
- seajs.use(["bs","nav","navicon","com/radio_checkbox1.1","com/dropdown_havevalue"],function(){
+ seajs.use(["bs","nav",],function(){
 	 $("#qkynav").qkynav();
  });
 </script>
@@ -44,7 +45,8 @@
 <div class="qky_content">
   <div class="cont-wrap mar_t15">
     <div class="cont_tit pad_lr20">
-      <h3><i class="qkyicon">&#xe780;</i>超级管理员<span class="fz_1 co_999 mar_l5">仅学校超级管理员拥有最高权限，可针对其他老师进行权限设置，并可访问此功能所有菜单</span></h3>
+      <h3 class="fl"><i class="qkyicon">&#xe780;</i>超级管理员<span class="fz_1 co_999 mar_l5">仅学校超级管理员拥有最高权限，可针对其他老师进行权限设置，并可访问此功能所有菜单</span></h3>
+      <div class="fr"><input type="button" class="btn btn-default btn-info seth_btn" value="展开更多管理员"></div>
     </div>
     <div class="stu_jcont pad_15">
       <div class="row mar_0 set-height">
@@ -183,9 +185,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="text-center">
-        <button class="seth_btn">2</button>
       </div>
     </div>
   </div>

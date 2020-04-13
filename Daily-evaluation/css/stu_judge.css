@@ -78,7 +78,7 @@ label { font-weight:normal}
 .cont-wrap,.judge_cont,.judge_cont_2,.judge_xq{background:#fff;width:auto;border:1px solid #d8d8d8}
 /*按钮*/
 .btn{ padding-top:3.5px; padding-bottom:3.5px}
-a:hover,a:focus { outline:none; text-decoration:none;}
+a:hover,a:focus,input[type=button]:focus,input[type=button]:hover { outline:none; text-decoration:none;}
 .bg_blue,.bg_org,.bg_gray,.mask_btns a,.no_btn{display: inline-block;font-weight: normal;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
 .bg_org{background:#21a2db; border:1px solid transparent;color:#fff; padding:0 15px; height:30px; line-height:28px;}
 .bg_primary{background:#21a2db !important; border:1px solid transparent !important;color:#fff !important; padding:0 15px;}
@@ -813,7 +813,7 @@ span.search{ display:inline-block;}
 .span-up .file-box{ position:relative;}
 .span-up .txt{ height:28px; border:1px solid #cdcdcd; width:56%;}
 .span-up .btn{ background-color:#FFF; border:1px solid #CDCDCD;height:28px; width:50px;}
-.span-up .file{ position:absolute; top:2px;left:0; height:28px; filter:alpha(opacity:0);opacity: 0;width:62%; }
+.span-up .file{ position:absolute; top:2px;left:0; height:28px; filter:alpha(opacity=0);opacity: 0;width:62%; }
 .span-up .p-tips-a{ font-size:13px; color:#21a2db;}
 .span-up .p-tips-a:hover{ text-decoration:underline;}
 .set_text{ width:30%; padding-left:3px !important;font-weight:normal;}
@@ -1206,5 +1206,3 @@ margin-right: 5px;    border-radius: 50%; border: 1px solid #bbb; line-height:10
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
-/*系统设置-权限-用户高度限制*/
-.seth_btn{}

@@ -10,7 +10,7 @@
     <title>全课云—学生电子信息</title>
     <!-- Bootstrap 基础样式 CSS -->
     <link href="../dist/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
-    
+    <link href="../dist/flatpickr/flatpickr.min.css" rel="stylesheet">
     <!--全课云基础样式覆盖-->
     <link href="../css/qkybase1.1.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -56,191 +56,893 @@
         </div>
 	</div>
     <div class="container info_main base">
-    	<div class="table-responsive table_info mt15">
-          <table class="table mb0">
-          	  <thead><tr><th colspan="3">学生个人基本信息</th></tr></thead>
-              <tbody>
-                  <tr><td>学籍号：D201636363</td><td width="36%">姓名：刘忠涛</td><td rowspan="4" width="24%"><img src="../images/dist_tx.png" alt=""></td></tr> 
-                  <tr><td>国籍/地区：中国</td><td>港澳台侨：否</td></tr>
-                  <tr><td>身份证件类型：身份证</td><td>身份证号码：425222300663211596</td></tr> 
-                  <tr><td>性别：男</td><td>出生日期：2010-10-10</td></tr>
-                  <tr><td>民族：汉</td><td colspan="2">健康状况：健康或良好</td></tr> 
-                  <tr><td>籍贯：贵州都匀</td><td  colspan="2">政治面貌：群众</td></tr> 
-                  <tr><td colspan="3">出生地：贵州省黔南自治州都匀市文峰路街道竹园小区9栋1203室</td></tr>       
-              </tbody>
-          </table>
-      </div>
-      <div class="table-responsive table_info mt15">
-          <table class="table mb0">
-          	  <thead><tr><th colspan="2">学生个人辅助信息</th></tr></thead>
-              <tbody>
-                  <tr><td>姓名拼音：LIUZHONGTAO</td><td width="50%">曾用名：无</td></tr> 
-                  <tr><td>身份证有效期：</td><td>血型：A型血</td></tr>
-                  <tr><td>户口性质：农村户口</td><td>户口所在地：贵州都匀</td></tr> 
-                  <tr><td >特长：喜欢画画、看书、打游戏</td><td >当前就读学校：雍景园小学</td></tr>       
-              </tbody>
-          </table>
-      </div>
-      <div class="table-responsive table_info mt15">
-          <table class="table mb0">
-          	  <thead><tr><th colspan="2">学生个人联系信息</th></tr></thead>
-              <tbody>
-                  <tr><td>现住址：贵州省黔南自治州都匀市文峰路街道竹苑小区4栋402室</td><td width="50%">通信地址：贵州省黔南自治州都匀市文峰路街道竹苑小区4栋402室</td></tr> 
-                  <tr><td>家庭地址：贵州省黔南自治州都匀市文峰路街道竹苑小区4栋402室</td><td>联系电话：13745633432</td></tr>
-                  <tr><td>邮政编码：317000</td><td>电子信箱：254626223@qq.com</td></tr> 
-                  <tr><td colspan="2">个人主页：</td></tr>       
-              </tbody>
-          </table>
-      </div>
-      <div class="table-responsive table_info mt15">
-          <table class="table mb0">
-          	  <thead><tr><th colspan="2">学生个人扩展信息</th></tr></thead>
-              <tbody>
-                  <tr><td>是否独生子女：否</td><td width="50%">是否受过学前教育：是</td></tr> 
-                  <tr><td>是否留守儿童：否</td><td>是否孤儿：否</td></tr>
-                  <tr><td>是否烈士或优抚子女：否</td><td>随班就读：非随班就读</td></tr> 
-                  <tr><td>残疾人类型：无残疾</td><td>是否由政府购买学位：否</td></tr>
+      <div class="table-responsive table_info mt15 ns">
+        <table class="table mb0">
+          	  <thead><tr><th colspan="5">学生个人基本信息</th></tr></thead>
+              <tbody class="info_edit">
                   <tr>
-                    <td>是否需要申请资助：否</td>
-                    <td>是否享受一补：否</td>
+                      <td width="11%" class="td_tit">学籍号：</td><td width="26%" class="td_inp">D201636363</td>
+                      <td width="12%" class="td_tit">姓名：</td>
+                      <td width="25%" class="td_inp">陈萍萍</td>
+                      <td rowspan="4" width="26%" class="t_c"><img src="../images/dist_tx.png" alt="">
+                      </td>
                   </tr> 
                   <tr>
-                  <td><span class="td_tit">是否建档立卡户：</span>否</td>
-                  <td>是否低保户：是（12345611）</td></tr>
+                      <td class="td_tit">国籍/地区：</td>
+                      <td class="td_inp">中国</td>
+                      <td class="td_tit">港澳台侨：</td>
+                      <td class="td_inp">否</td>
+                  </tr>
                   <tr>
-                    <td>是否进城务工人员随迁子女：是</td>
-                    <td>病史：无</td>
+                      <td class="td_tit">身份证件类型：</td>
+                      <td class="td_inp">身份证</td>
+                      <td class="td_tit">身份证号码：</td><td class="td_inp">425222300663211596</td>
                   </tr> 
                   <tr>
-                    <td>特殊情况：无</td><td>&nbsp;</td></tr>  
+                      <td class="td_tit">性别：</td>
+                      <td class="td_inp ">男</td>
+                      <td class="td_tit">出生日期：</td><td class="td_inp"><!--<div class="input-group datetime"  data-wrap=true data-click-opens="false">
+                      <input type="text" class="form-control height30"  data-input>
+                      <span class="input-group-btn" data-toggle>
+                      <button class="btn btn-default auto pl10 pr10" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
+                      </span>
+                      </div>-->
+                      2010-10-10</td>
+                  </tr>
+                  <tr>
+                      <td class="td_tit">民族：</td>
+                      <td class="td_inp">汉</td>
+                      <td class="td_tit">健康状况：</td>
+                      <td class="td_inp">健康或良好</td><td></td>
+                  </tr> 
+                  <tr>
+                      <td class="td_tit">籍贯：</td>
+                      <td class="td_inp">广东</td>
+                      <td class="td_tit">政治面貌：</td>
+                      <td class="td_inp">群众</td><td></td>
+                  </tr> 
+                  <tr> 
+                  	  <td class="td_tit">出生地：</td><td colspan="4" class="td_inp">贵州省黔南自治州都匀市文峰路街道竹园小区9栋1203室</td>
+                  </tr>       
               </tbody>
           </table>
       </div>
-      <div class="table-responsive table_info mt15 mb10">
+      <div class="table-responsive table_info mt15">
           <table class="table mb0">
-          	  <thead><tr><th colspan="2">学生上下学交通方式</th></tr></thead>
-              <tbody>
-                  <tr><td>是否乘坐校车：否</td><td width="50%">上下学距离（公里）：10公里</td></tr> 
-                  <tr><td>上下学交通方式：家长自行接送</td><td>家长车牌号：粤T123654</td></tr>       
+          	  <thead><tr><th colspan="4">学生个人辅助信息</th></tr></thead>
+              <tbody class="info_edit">
+                  <tr>
+                  <td width="12%" class="td_tit">姓名拼音：</td><td width="39%" class="td_inp">LIUZHONGTAO</td>
+                  <td width="10%" class="td_tit">曾用名：</td><td width="39%" class="td_inp">无</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">身份证有效期：</td><td class="td_inp">&nbsp;</td>
+                  <td class="td_tit">血型：</td><td class="td_inp">A型血</td>
+                  </tr>
+                  <tr>
+                  <td class="td_tit">户口性质：</td>
+                  <td class="td_inp">农村户口</td>
+                  <td class="td_tit">户口所在地：</td><td class="td_inp">贵州都匀</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">特长：</td><td class="td_inp">喜欢画画、看书、打游戏</td>
+                  <td class="td_tit">当前就读学校：</td><td class="td_inp">雍景园小学</td>
+                </tr>       
               </tbody>
           </table>
+      </div>
+      <div class="table-responsive table_info mt15">
+          <table class="table mb0">
+          	  <thead><tr><th colspan="4">学生个人联系信息</th></tr></thead>
+              <tbody class="info_edit">
+                  <tr>
+                  <td width="12%" class="td_tit">现住址：</td><td width="39%" class="td_inp">贵州省黔南自治州都匀市文峰路街道竹苑小区4栋402室</td>
+                  <td width="9%" class="td_tit">通信地址：</td><td width="40%" class="td_inp">贵州省黔南自治州都匀市文峰路街道竹苑小区4栋402室</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">家庭地址：</td><td class="td_inp">贵州省黔南自治州都匀市文峰路街道竹苑小区4栋402室</td>
+                  <td class="td_tit">联系电话：</td><td class="td_inp">13745633432</td>
+                  </tr>
+                  <tr>
+                  <td class="td_tit">邮政编码：</td><td class="td_inp">317000</td>
+                  <td class="td_tit">电子信箱：</td><td class="td_inp">254626223@qq.com</td>
+                  </tr> 
+                  <tr><td class="td_tit">个人主页：</td><td colspan="3" class="td_inp">&nbsp;</td></tr>       
+              </tbody>
+          </table>
+      </div>
+      <div class="table-responsive table_info mt15 ns">
+          <table class="table mb0">
+          	  <thead><tr><th colspan="4">学生个人扩展信息</th></tr></thead>
+              <tbody  class="info_edit">
+                  <tr>
+                  <td width="20%" class="td_tit">是否独生子女：</td><td width="31%" class="td_inp">否</td>
+                  <td width="10%" class="td_tit long">是否受过学前教育：</td>
+                  <td width="39%" class="td_inp">是</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">是否留守儿童：</td><td class="td_inp">否</td>
+                  <td class="td_tit">是否孤儿：</td><td class="td_inp">否</td>
+                  </tr>
+                  <tr>
+                  <td class="td_tit">是否烈士或优抚子女：</td><td class="td_inp">否</td>
+                  <td class="td_tit">随班就读：</td><td class="td_inp">非随班就读</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">残疾人类型：</td>
+                  <td class="td_inp">无残疾</td>
+                  <td class="td_tit long">是否由政府购买学位：</td><td class="td_inp">否</td>
+                  </tr>
+                  <tr>
+                    <td class="td_tit">是否需要申请资助：</td>
+                    <td class="td_inp">否</td>
+                    <td class="td_tit">是否享受一补：</td>
+                    <td class="td_inp">否</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">是否建档立卡户：</td><td class="td_inp">否</td>
+                  <td class="td_tit">是否低保户：</td><td class="td_inp">是（12345611）</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit xlong">是否进城务工人员随迁子女：</td>
+                  <td class="td_inp">是</td>
+                  <td class="td_tit">病史：</td>
+                  <td class="td_inp">无</td>
+                  </tr>  
+                  <tr>
+                  <td class="td_tit">特殊情况：</td>
+                  <td colspan="3" class="td_inp">无</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      <div class="table-responsive table_info mt15 mb10 ns">
+          <table class="table mb0">
+          	  <thead><tr><th colspan="4">学生上下学交通方式</th></tr></thead>
+              <tbody class="info_edit">
+                  <tr>
+                  <td width="16%"  class="td_tit long">是否乘坐校车：</td>
+                  <td width="35%" class="">否</td>
+                  <td width="12%"  class="td_tit long">上下学距离（公里）：</td><td width="37%" class="td_inp">10公里</td>
+                  </tr>
+                  <tr>
+                    <td  class="td_tit long">上下学交通方式：</td>
+                    <td class="td_inp">家长自行接送</td>
+                    <td  class="td_tit long">家长车牌号：</td>
+                    <td class="td_inp">粤T123654</td>
+                  </tr> 
+                  <tr><td  class="td_tit long">上下学交通方式：</td>
+                    <td class="td_inp">无</td>
+                  <td width="12%"  class="td_tit long">定制公交路线：</td>
+                  <td width="37%" class="td_inp">无</td>
+                  </tr>       
+              </tbody>
+          </table>
+      </div>
+      <div class="t_c mb15 pt5">
+      <a class="btn btn-success">保存并继续</a>
+      <a class="btn btn-success ml20 mr20">保存并返回</a>
+      <a class="btn btn-default" href="../index_gl.html">返回</a>
       </div>
     </div>
     
     <div class="container info_main studer yc">
-    	<div class="table-responsive table_info mt15">
+       <div class="table-responsive table_info mt15 ns">
           <table class="table mb0">
-          	  <thead><tr><th colspan="2">学生个人基本信息</th></tr></thead>
-              <tbody>
-                  <tr><td>学籍号：D201636363</td><td width="50%">班内学号：</td></tr> 
-                  <tr><td>年级：幼儿园大班</td><td>班级：幼儿园大班1班</td></tr>
-                  <tr><td>入学年月：2014-9-1</td><td>入学方式：就近入学</td></tr> 
-                  <tr><td>就读方式：住校</td><td>学生来源：正常入学</td></tr>      
+          <thead><tr><th colspan="5">学生个人基本信息</th></tr></thead>
+              <tbody class="info_edit">
+                  <tr>
+                  <td width="12%" class="td_tit">学籍号：</td><td width="39%" class="td_inp">D201636363</td>
+                  <td width="8%" class="td_tit">班内学号：</td><td width="41%" class="td_inp">&nbsp;</td></tr> 
+                  <tr>
+                  <td class="td_tit">年级：</td><td class="td_inp">幼儿园大班</td>
+                  <td class="td_tit">班级：</td><td class="td_inp">幼儿园大班1班</td></tr>
+                  <tr>
+                  <td class="td_tit">入学年月：</td>
+                  <td class="td_inp">2014-9-1</td>
+                  <td class="td_tit">入学方式：</td>
+                  <td class="td_inp">就近入学</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">就读方式：</td>
+                  <td class="td_inp">住校</td>
+                   <td class="td_tit">学生来源：</td>
+                   <td class="td_inp">正常入学</td>
+                    </tr>      
               </tbody>
           </table>
-        </div> 
-    	<div class="table-responsive table_info mt15 mb10">
+       </div>
+       <div class="table-responsive table_info mt15 ns">
           <table class="table mb0">
-          <thead><tr><th colspan="2">学生个人扩展信息</th></tr></thead>
-              <tbody>
-                  <tr><td colspan="2">在籍状态：正常</td></tr>       
+          <thead><tr><th colspan="5">学生个人扩展信息</th></tr></thead>
+              <tbody class="info_edit">
+                  <tr><td  class="td_tit">在籍状态：</td>
+                  <td colspan="3" class="td_inp">正常</td></tr>       
                   <tr>
-                  <td colspan="2" class="top_bno">入学方式：学方式学方式学方式学方式学方式学方式学方式学方式学方式学方式学方式学方式学方式学方式学方式学方式</td></tr>
-                  <tr>
-                  <td colspan="2" class="top_bno">备注1：备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注</td></tr>
-                  <tr>
-                  <td colspan="2" class="top_bno">备注2：备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注</td></tr>
-                  <tr><td colspan="2" class="td_tit">在校状态：正常</td></tr>       
-                  <tr>
-                      <td class="top_bno">休学时间：2017-01-01</td>
-                      <td class="top_bno">复学时间：2017-01-01</td>
+                  <td class="td_tit top_bno">入学方式：</td>
+                  <td colspan="3" class="td_inp top_bno"><span class="td_inp">就近入学</span></td>
                   </tr>
                   <tr>
-                  <td colspan="2" class="top_bno">休学原因：休学原因休学原因休学原因休学原因休学原因休学原因休学原因</td></tr>
+                  <td class="td_tit top_bno">备注1：</td><td colspan="3" class="td_inp top_bno"><span class="td_inp">就近入学</span></td>
+                  </tr>
                   <tr>
-                  <td colspan="2" class="top_bno">备注1：备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1备注1</td></tr>
+                  <td class="td_tit top_bno">备注2：</td><td colspan="3" class="td_inp top_bno"><span class="td_inp">就近入学</span></td>
+                  </tr>
+                  <tr><td  class="td_tit">在校状态：</td>
+                  <td colspan="3" class="td_inp">正常</td></tr>       
                   <tr>
-                  <td colspan="2" class="top_bno">备注2：备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注</td></tr>
+                      <td class="td_tit top_bno">休学时间：</td><td class="td_inp top_bno">2017-01-01</td>
+                      <td class="td_tit top_bno">复学时间：</td><td class="td_inp top_bno">2017-01-01</td>
+                  </tr>
+                  <tr>
+                  <td class="td_tit top_bno">休学原因：</td>
+                  <td colspan="3" class="td_inp top_bno">生病</td>
+                  </tr>
+                  <tr>
+                  <td class="td_tit top_bno">备注1：</td>
+                  <td colspan="3" class="td_inp top_bno">生病休学</td>
+                  </tr>
+                  <tr>
+                  <td class="td_tit top_bno">备注2：</td><td colspan="3" class="td_inp top_bno">&nbsp;</td>
+                  </tr>
               </tbody>
           </table>
-        </div> 
+       </div>
+       <div class="t_c mb15 pt15">
+       <a class="btn btn-success">保存并继续</a>
+       <a class="btn btn-success ml20 mr20">保存并返回</a>
+       <a class="btn btn-default" href="../index_gl.html">返回</a>
+       </div> 
     </div>
     
     <div class="container info_main family yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
-          	  <thead><tr class="info_tit"><th>姓名</th><th>关系</th><th>身份证类型</th><th>身份证号</th><th>民族</th><th>是否监护人</th><th>户口所在地</th><th>联系电话</th><th>现住址</th><th>工作单位</th><th>职务</th></tr></thead>	
-              <tbody class="info_txt">
-                  <tr><td>刘钊</td><td>父亲</td><td>身份证</td><td>432695632695369710</td><td>汉族</td><td>是</td><td>贵州都匀</td><td>13265236985</td><td>贵州都匀</td><td></td><td></td></tr> 
-                  <tr><td>刘丽</td><td>母亲</td><td>身份证</td><td>432695632695369710</td><td>汉族</td><td>是</td><td>贵州都匀</td><td>13265236985</td><td>贵州都匀</td><td></td><td></td></tr>    
+          	  <thead><tr class="info_tit"><th>姓名</th><th>关系</th><th>身份证类型</th><th>身份证号</th><th>民族</th><th>是否监护人</th><th>户口所在地</th><th>联系电话</th><th>现住址</th><th>工作单位</th><th>职务</th><th>操作</th></tr></thead>	
+              <tbody  class="info_txt">
+                  <tr><td>刘钊</td><td>父亲</td><td>身份证</td><td>432695632695369710</td><td>汉族</td><td>是</td><td>贵州都匀</td><td>13265236985</td><td>贵州都匀</td><td>全通教育</td><td>产品经理</td>
+                  <td>
+                  </td>
+                  </tr> 
               </tbody>
           </table>
-      </div> 
+      </div>
+      <div class="t_c mb15 pt15">
+       <a class="btn btn-success">保存并继续</a>
+       <a class="btn btn-success ml20 mr20">保存并返回</a>
+       <a class="btn btn-default" href="../index_gl.html">返回</a>
+       </div>  
     </div>
     
     <div class="container info_main familyeconomy yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
-              <tbody>
-                  <tr class="top"><td>家庭人口（人）：5</td><td width="50%">赡养人口（人）：2</td></tr> 
-                  <tr><td>家庭收入（元）：100000</td><td>家庭主要收入来源：父母工作所得</td></tr>
-                  <tr><td>具备劳动力人口数：2</td><td>是否低保：否</td></tr> 
-                  <tr><td>就学地低保线：5000</td><td>困难程度：不困难</td></tr>
-                  <tr><td>是否父母丧失劳动力：否</td><td>是否农村绝对贫困家庭：否</td></tr> 
-                  <tr><td>是否经民政部门确认的农村特困救助范围的家庭子女：否</td><td>是否军烈属：否</td></tr>
-                  <tr><td>家庭是否五保户：否</td><td>家中是否有大病患者：否</td></tr> 
-                  <tr><td>家庭是否遭受自然灾害：否</td><td>自然灾害家庭具体情况描述：无</td></tr> 
-                  <tr><td>家庭是否遭受突发意外：否</td><td>突发事件意外具体描述：2</td></tr> 
-                  <tr><td>家庭失业人数（人）：0</td><td>家庭欠债金额（元）：0</td></tr>
-                  <tr><td colspan="2">欠债原因：五</td></tr> 
+          <thead><tr><th colspan="4">家庭经济情况</th></tr></thead>
+              <tbody class="info_edit">
+                  <tr>
+                  <td class="td_tit">家庭人口（人）：</td>
+                  <td class="td_inp">5</td>
+                  <td class="td_tit">赡养人口（人）：</td>
+                  <td class="td_inp">2</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">家庭收入（元）：</td>
+                  <td class="td_inp">1800000</td>
+                  <td class="td_tit">家庭主要收入来源：</td><td class="td_inp">父母工作所得</td>
+                  </tr>
+                  <tr>
+                  <td class="td_tit">具备劳动力人口数：</td>
+                  <td class="td_inp">2</td>
+                  <td class="td_tit">是否低保：</td>
+                  <td class="td_inp">否</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">就学地低保线：</td>
+                  <td class="td_inp">5000</td>
+                  <td class="td_tit">困难程度：</td>
+                  <td class="td_inp">不困难</td>
+                  </tr>
+                  <tr>
+                  <td class="td_tit">是否父母丧失劳动力：</td><td class="td_inp">否</td>
+                  <td class="td_tit">是否农村绝对贫困家庭：</td><td class="td_inp">否</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">是否经民政部门确认的农村特困救助范围的家庭子女：</td><td class="td_inp">否</td>
+                  <td class="td_tit">是否军烈属：</td><td class="td_inp">否</td>
+                  </tr>
+                  <tr>
+                  <td class="td_tit">家庭是否五保户：</td><td class="td_inp">否</td>
+                  <td class="td_tit">家中是否有大病患者：</td><td class="td_inp">否</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">家庭是否遭受自然灾害：</td><td class="td_inp">否</td>
+                  <td class="td_tit">自然灾害家庭具体情况描述：</td><td class="td_inp">否</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit">家庭是否遭受突发意外：</td><td class="td_inp">否</td>
+                  <td class="td_tit">突发事件意外具体描述：</td><td class="td_inp">否</td>
+                  </tr> 
+                  <tr>
+                  <td class="td_tit long">家庭失业人数（人）：</td>
+                  <td class="td_inp">0</td>
+                  <td class="td_tit long">家庭欠债金额（元）：</td><td class="td_inp">否</td>
+                  </tr>
+                  <tr><td class="td_tit">欠债原因：</td>
+                    <td class="td_inp" colspan="3">无</td></tr> 
               </tbody>
           </table>
       </div>
+      <div class="t_c mb15 pt15">
+       <a class="btn btn-success">保存并继续</a>
+       <a class="btn btn-success ml20 mr20">保存并返回</a>
+       <a class="btn btn-default" href="../index_gl.html">返回</a>
+       </div> 
     </div>
     
     <div class="container info_main studyresume yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
           	  <thead>
-              	<tr class="info_tit"><th>学习单位</th><th>学习内容</th><th>担任职务</th><th>学习证明人</th><th>学习起始日期</th><th>学习终止日期</th><th>备注</th></tr></thead>	
-              <tbody  class="info_txt">
-                  <tr><td>都匀市第一幼儿园</td><td>义务教育</td><td>无</td><td>茂化清</td><td>2014-09-01</td><td></td><td></td></tr>
+              	<tr class="info_tit"><th>学习单位</th><th>学习内容</th><th>担任职务</th><th>学习证明人</th><th>学习起始日期</th><th>学习终止日期</th><th>备注</th><th>操作</th></tr></thead>	
+              <tbody class="info_txt">
+                  <tr><td>都匀市第一幼儿园</td><td>义务教育</td><td>无</td><td>茂化清</td><td>2014-09-01</td><td>至今</td><td></td>
+                  <td>
+                  </td>
+                  </tr>
               </tbody>
           </table>
       </div>  
+      <div class="t_c mb15 pt15">
+       <a class="btn btn-success">保存并继续</a>
+       <a class="btn btn-success ml20 mr20">保存并返回</a>
+       <a class="btn btn-default" href="../index_gl.html">返回</a>
+       </div> 
     </div>
     
     <div class="container info_main award yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
           	  <thead>
-              <tr class="info_tit"><th>奖励名称</th><th>奖励类别</th><th>奖励级别</th><th>奖励等级</th><th>奖励原因</th><th>奖励金额</th><th>奖励文号</th><th>奖励学年度</th><th>奖励类型</th><th>奖励方式</th></tr></thead>	
-              <tbody  class="info_txt">
-                  <tr><td colspan="10" class="t_c">暂无信息</td></tr>    
+              <tr class="info_tit">
+              <th>奖励名称</th><th>奖励类别</th><th>奖励级别</th><th>奖励等级</th><th>奖励金额</th><th>奖励文号</th><th>奖励学年度</th><th>奖励类型</th><th>奖励方式</th><th>操作</th>
+              </tr>
+              </thead>	
+              <tbody class="info_txt">
+                  <tr>
+                  <td>语文竞赛</td><td>学科获奖</td><td>学校级</td><td>一等</td><td>200RMB</td><td>DY-2016</td><td>2016-12-19</td><td>个人单项</td><td>奖金</td>
+                  <td>
+                  </td>
+                  </tr> 
               </tbody>
           </table>
       </div>  
+      <div class="t_c mb15 pt15">
+       <a class="btn btn-success">保存并继续</a>
+       <a class="btn btn-success ml20 mr20">保存并返回</a>
+       <a class="btn btn-default" href="../index_gl.html">返回</a>
+       </div> 
     </div>
     
     <div class="container info_main punishment yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
           	  <thead>
-              <tr class="info_tit"><th>处分名称</th><th>处分日期</th><th>处分原因</th><th>处分文号</th><th>处分撤销文号</th><th>处分撤销日期</th></tr></thead>
-               <tbody  class="info_txt">
-                  <tr><td colspan="6" class="t_c">暂无信息</td></tr>    
+              <tr class="info_tit"><th>处分名称</th><th>处分日期</th><th>处分原因</th><th>处分文号</th><th>处分撤销文号</th><th>处分撤销日期</th><th>操作</th></tr></thead>
+              <tbody class="info_txt">
+              <tr><td>警告</td><td>2016-12-19</td><td>打架</td><td>DY-2016</td><td></td><td></td>
+              <td>
+              </td>
+              </tr>
               </tbody>
           </table>
       </div>
+      <div class="t_c mb15 pt15">
+       <a class="btn btn-success">保存并继续</a>
+       <a class="btn btn-success ml20 mr20">保存并返回</a>
+       <a class="btn btn-default" href="../index_gl.html">返回</a>
+       </div> 
     </div>
     
     <footer class="inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</footer>
+    
+<!--模态窗口 Modal -->
+
+<!--删除提示 -->    
+<div class="modal fade"  id="tips" tabindex="-1" role="dialog" aria-labelledby="tips_tit" aria-hidden="true">
+  <div class="modal-dialog modal-xs">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="tips_tit">删除记录</h4>
+      </div>
+      <div class="modal-body t_c modal_auto">
+        是否删除纪录？
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn  btn-success">是</button>
+      <button type="button" class="btn btn-default" data-dismiss="modal">否</button> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--家庭信息 -->  
+<div class="modal fade" id="family_modal" tabindex="-1" role="dialog" aria-labelledby="familytit" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="familytit"></h4>
+          </div>
+          <div class="modal-body pb0">
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">姓名：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="请输入姓名">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">关系：</label>
+                    <div class="col-sm-8 ">
+                      <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">父亲</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">母亲</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">祖父母或外祖父母</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">兄弟姐妹</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">其他</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">身份证件类型：</label>
+                    <div class="col-sm-8 ">
+                      <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">居民身份证</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">护照</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">户口簿</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">香港特区护照</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">澳门特区护照</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">台湾居民来往大陆通行证</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">境外永久居住证</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">其他</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">身份证号：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="请输入身份证号">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">民族：</label>
+                    <div class="col-sm-8 ">
+                      <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">汉</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">藏</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">是否监护人：</label>
+                    <div class="col-sm-8 ">
+                      <div class="radio mb0 mt0 pt0">
+                            <label class="radio-inline clear pl0 pt0 select" id="radio_value_1">
+                              <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                            </label>
+                            <label class="radio-inline clear pt0" id="radio_value_2">
+                              <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                            </label>    
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">户口所在地：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"   placeholder="省、市、镇/区、街道">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">联系电话：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"   placeholder="请输入联系电话">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">现住址：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="省、市、镇/区、街道" >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">工作单位：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho" placeholder="请输入工作单位" >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">职务：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"   placeholder="职务">
+                    </div>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+          	<button type="button" class="btn  btn-success">确定</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">返回</button> 
+          </div>
+        </div>
+      </div>
+</div>
+
+<!--学习简历 -->  
+<div class="modal fade" id="resume_modal" tabindex="-1" role="dialog" aria-labelledby="resumetit" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="resumetit"></h4>
+          </div>
+          <div class="modal-body pb0">
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">学习单位：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="请输入学习单位">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">学习内容：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="请输入学习内容">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3   control-label">学习开始时间：</label>
+                    <div class="col-sm-8">
+                        <div class="input-group datetime"  data-wrap=true data-click-opens="false">
+                        <input type="text" class="form-control" placeholder="date" data-input>
+                        <span class="input-group-btn" data-toggle>
+                        <button class="btn btn-default auto pl10 pr10 height34" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
+                        </span>
+                        </div>     
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3   control-label">学习截止时间：</label>
+                    <div class="col-sm-8">
+                        <div class="input-group datetime"  data-wrap=true data-click-opens="false">
+                        <input type="text" class="form-control" placeholder="date" data-input>
+                        <span class="input-group-btn" data-toggle>
+                        <button class="btn btn-default auto pl10 pr10 height34" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
+                        </span>
+                        </div>     
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">担任职务：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="担任职务" >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">学习证明人：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho" placeholder="请输入学习证明人" >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">备注：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"   placeholder="备注">
+                    </div>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+          	<button type="button" class="btn  btn-success">确定</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">返回</button> 
+          </div>
+        </div>
+      </div>
+</div>  
+
+<!--奖励信息 -->  
+<div class="modal fade" id="award_modal" tabindex="-1" role="dialog" aria-labelledby="awardtit" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="awardtit"></h4>
+          </div>
+          <div class="modal-body pb0">
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">奖励名称：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="请输入奖励名称">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">奖励类别：</label>
+                    <div class="col-sm-8 ">
+                      <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">学科获奖</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">科技获奖</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">文艺获奖</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">体育获奖</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">综合获奖</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">社会工作获奖</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">公益事业获奖</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">其他</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">奖励级别：</label>
+                    <div class="col-sm-8 ">
+                      <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">国家级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">省、部委级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">教育部</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">中央其他部委</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">省（自治区、直辖市）级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">省部门级、地（市、州）级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">省级教育行政部门</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">省级其他部门</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">地（市、州）级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">地（市、州）部门级、县（区、旗）级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">地级教育行政部门</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">地级其他部门</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">县级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">县级部门、乡（镇）级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">县级教育行政部门</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">县级其他部门</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">乡（镇）级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">学校级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">国际</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">其他</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">奖励等级：</label>
+                    <div class="col-sm-8 ">
+                      <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">特等</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">一等</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">二等</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">三等</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">四等</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">未评等级</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">其他</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">奖励金额：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="请输入奖励金额">
+                    </div>
+                  </div>
+                   
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">奖励文号：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"   placeholder="请输入奖励文号">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3   control-label">奖励学年度：</label>
+                    <div class="col-sm-8">
+                        <div class="input-group datetime"  data-wrap=true data-click-opens="false">
+                        <input type="text" class="form-control" placeholder="date" data-input>
+                        <span class="input-group-btn" data-toggle>
+                        <button class="btn btn-default auto pl10 pr10 height34" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
+                        </span>
+                        </div>     
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">颁奖单位：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"   placeholder="请输入颁奖单位">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">奖励类型：</label>
+                    <div class="col-sm-8 ">
+                      <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">个人综合</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">个人单项</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">奖励方式：</label>
+                    <div class="col-sm-8 ">
+                      <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">奖状</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">荣誉称号</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">奖金</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">实物</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">其他</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </form>
+          </div>
+          <div class="modal-footer">
+          	<button type="button" class="btn  btn-success">确定</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">返回</button> 
+          </div>
+        </div>
+      </div>
+</div> 
+
+<!--处罚信息-->  
+<div class="modal fade" id="punishment_modal" tabindex="-1" role="dialog" aria-labelledby="punishmenttit" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="punishmenttit"></h4>
+          </div>
+          <div class="modal-body pb0">
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">处分名称：</label>
+                    <div class="col-sm-8 ">
+                      <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">警告</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">严重警告</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">记过</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">留校察看</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">开除学籍</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">其他</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3   control-label">处分日期：</label>
+                    <div class="col-sm-8">
+                        <div class="input-group datetime"  data-wrap=true data-click-opens="false">
+                        <input type="text" class="form-control" placeholder="date" data-input>
+                        <span class="input-group-btn" data-toggle>
+                        <button class="btn btn-default auto pl10 pr10 height34" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
+                        </span>
+                        </div>     
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">处分文号：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="请输入处分文号">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">处分原因：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho"  placeholder="请输入处分原因">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group mt20">
+                    <label class="col-sm-3   control-label">处分撤销日期：</label>
+                    <div class="col-sm-8">
+                        <div class="input-group datetime"  data-wrap=true data-click-opens="false">
+                        <input type="text" class="form-control" placeholder="date" data-input>
+                        <span class="input-group-btn" data-toggle>
+                        <button class="btn btn-default auto pl10 pr10 height34" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
+                        </span>
+                        </div>     
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="col-sm-3  control-label">处分撤销文号：</label>
+                    <div class="col-sm-8 ">
+                      <input type="text" class="form-control zb cadr_cho" >
+                    </div>
+                  </div>
+                  
+              </form>
+          </div>
+          <div class="modal-footer">
+          	<button type="button" class="btn  btn-success">确定</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">返回</button> 
+          </div>
+        </div>
+      </div>
+</div>  
+
     <script src="../dist/jq/1.11.1/jquery.min.js"></script>
     <!--模块化js-->
     <script src="../dist/sea.js"></script>
+    <script src="../dist/laydate/laydate.js"></script>
     <script>
-     seajs.use(["bootstrap/3.3.0/js/bootstrap.min","comjs/nav_add1.1","comjs/iconfont","./../js/info_nav"],function(){
-	});
+     seajs.use(
+	 [
+	 "bootstrap/3.3.0/js/bootstrap.min",
+	 "comjs/nav_add1.1","comjs/iconfont",
+	 "flatpickr/flatpickr.min.js",
+	 "./../js/radio",
+	 "./../js/dropdown_havevalue",
+	 "./../js/info_nav",
+	 "./../js/info_modaledit"
+	 ],
+	 function(){
+		$(".datetime").flatpickr({defaultDate: "2010-10-01",allowInput:true,clickOpens:false}); 
+			
+	 }
+	);
+	laydate.skin('zwt');
+	laydate({
+		elem: '.datetime'
+	})
+		
+	
+	
     </script>
+    
   </body>
 </html>

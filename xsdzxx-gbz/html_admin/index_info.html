@@ -29,7 +29,7 @@
 <div class="navline"></div>
 <div class="nav_pjname">学生信息管理</div>
 <button type="button" class="navbar-toggle collapsed mr0" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><ul class="nav_other"><li class="dropdown"><a href="#" class="dropdown-toggle clear other_sel" data-toggle="dropdown"><div class="user_photo fl"><i class="qkyicon_14"></i></div><span class="fl school_name ml5">全课云运营学校</span><span class="fl other_name">张晓明</span><span class="caret"></span></a><ul class="dropdown-menu" role="menu" id="otherli"><li><a href="#">个人空间</a></li><li><a id="toOut">退出</a></li></ul></li></ul><div id="navbar" class="navbar-collapse collapse">
-<ul class="nav navbar-nav"><li><a href="index_basic-now.html">基础数据管理</a></li><li><a href="index.html">学生基本信息</a></li><li class="active"><a href="index_gl.html">学生扩展信息</a></li><li><a href="index_tj.html">学生信息统计</a></li></ul>
+<ul class="nav navbar-nav"><li><a href="index_basic-now.html">基础数据管理</a></li><li><a href="index.html">学生基本信息</a></li><li class="active"><a href="index_gl.html">学生扩展信息</a></li><li><a href="index_tj.html">学生信息统计</a></li><li><a href="index_manage.html">系统管理</a></li></ul>
 </div></div></nav>
 
     <div class="qkyff_fluid">
@@ -44,18 +44,19 @@
             </ol>
             <div class="po_a_r mt8 mr15"><a href="#" class="iblock fz_14"><i class="qkyicon_14 mr5">&#xe604;</i>返回</a></div>
           </div>
-          <div class="info_nav">
-          	<a class="active" id="base"><em>1</em><span>基本信息</span></a>
-            <a id="studer"><em>2</em><span>学生信息</span></a>
-            <a id="family"><em>3</em><span>家庭信息</span></a>
-            <a id="familyeconomy"><em>4</em><span>家庭经济情况</span></a>
-            <a id="studyresume"><em>5</em><span>学习简历</span></a>
-            <a id="award"><em>6</em><span>奖励信息</span></a>
-            <a id="punishment"><em>7</em><span>惩罚信息</span></a>
-          </div>   
+          <div class="info_nav nobg">
+          	<a class="active" id="base"><div class="progress-sign"><em>1</em></div><span>基本信息</span></a>
+            <a id="studer"><div class="progress-sign"><em>2</em></div><span>学生信息</span></a>
+            <a id="family"><div class="progress-sign"><em>3</em></div><span>家庭信息</span></a>
+            <a id="familyeconomy"><div class="progress-sign"><em>4</em></div><span>家庭经济情况</span></a>
+            <a id="studyresume"><div class="progress-sign"><em>5</em></div><span>学习简历</span></a>
+            <a id="award"><div class="progress-sign"><em>6</em></div><span>奖励信息</span></a>
+            <a id="punishment"><div class="progress-sign"><em>7</em></div><span>惩罚信息</span></a>
+            <a id="attachment"><div class="progress-sign"><em>8</em></div><span>附件信息</span></a>
+          </div>    
         </div>
 	</div>
-    <div class="container info_main base">
+    <div class="container info_main base mb15">
       <div class="table-responsive table_info mt15 ns">
         <table class="table mb0">
           	  <thead><tr><th colspan="5">学生个人基本信息</th></tr></thead>
@@ -81,13 +82,7 @@
                   <tr>
                       <td class="td_tit">性别：</td>
                       <td class="td_inp ">男</td>
-                      <td class="td_tit">出生日期：</td><td class="td_inp"><!--<div class="input-group datetime"  data-wrap=true data-click-opens="false">
-                      <input type="text" class="form-control height30"  data-input>
-                      <span class="input-group-btn" data-toggle>
-                      <button class="btn btn-default auto pl10 pr10" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
-                      </span>
-                      </div>-->
-                      2010-10-10</td>
+                      <td class="td_tit">出生日期：</td><td class="td_inp">2010-10-10（9岁）</td>
                   </tr>
                   <tr>
                       <td class="td_tit">民族：</td>
@@ -218,15 +213,10 @@
                   </tr>       
               </tbody>
           </table>
-      </div>
-      <div class="t_c mb15 pt5">
-      <a class="btn btn-success">保存并继续</a>
-      <a class="btn btn-success ml20 mr20">保存并返回</a>
-      <a class="btn btn-default" href="../index_gl.html">返回</a>
-      </div>
+      </div>      
     </div>
     
-    <div class="container info_main studer yc">
+    <div class="container info_main studer mb15 yc">
        <div class="table-responsive table_info mt15 ns">
           <table class="table mb0">
           <thead><tr><th colspan="5">学生个人基本信息</th></tr></thead>
@@ -287,15 +277,9 @@
                   </tr>
               </tbody>
           </table>
-       </div>
-       <div class="t_c mb15 pt15">
-       <a class="btn btn-success">保存并继续</a>
-       <a class="btn btn-success ml20 mr20">保存并返回</a>
-       <a class="btn btn-default" href="../index_gl.html">返回</a>
-       </div> 
-    </div>
+       </div></div>
     
-    <div class="container info_main family yc">
+    <div class="container info_main family mb15 yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
           	  <thead><tr class="info_tit"><th>姓名</th><th>关系</th><th>身份证类型</th><th>身份证号</th><th>民族</th><th>是否监护人</th><th>户口所在地</th><th>联系电话</th><th>现住址</th><th>工作单位</th><th>职务</th><th>操作</th></tr></thead>	
@@ -306,15 +290,9 @@
                   </tr> 
               </tbody>
           </table>
-      </div>
-      <div class="t_c mb15 pt15">
-       <a class="btn btn-success">保存并继续</a>
-       <a class="btn btn-success ml20 mr20">保存并返回</a>
-       <a class="btn btn-default" href="../index_gl.html">返回</a>
-       </div>  
-    </div>
+      </div></div>
     
-    <div class="container info_main familyeconomy yc">
+    <div class="container info_main familyeconomy mb15 yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
           <thead><tr><th colspan="4">家庭经济情况</th></tr></thead>
@@ -371,15 +349,9 @@
                     <td class="td_inp" colspan="3">无</td></tr> 
               </tbody>
           </table>
-      </div>
-      <div class="t_c mb15 pt15">
-       <a class="btn btn-success">保存并继续</a>
-       <a class="btn btn-success ml20 mr20">保存并返回</a>
-       <a class="btn btn-default" href="../index_gl.html">返回</a>
-       </div> 
-    </div>
+      </div></div>
     
-    <div class="container info_main studyresume yc">
+    <div class="container info_main studyresume mb15 yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
           	  <thead>
@@ -391,15 +363,9 @@
                   </tr>
               </tbody>
           </table>
-      </div>  
-      <div class="t_c mb15 pt15">
-       <a class="btn btn-success">保存并继续</a>
-       <a class="btn btn-success ml20 mr20">保存并返回</a>
-       <a class="btn btn-default" href="../index_gl.html">返回</a>
-       </div> 
-    </div>
+      </div></div>
     
-    <div class="container info_main award yc">
+    <div class="container info_main award mb15 yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
           	  <thead>
@@ -415,15 +381,9 @@
                   </tr> 
               </tbody>
           </table>
-      </div>  
-      <div class="t_c mb15 pt15">
-       <a class="btn btn-success">保存并继续</a>
-       <a class="btn btn-success ml20 mr20">保存并返回</a>
-       <a class="btn btn-default" href="../index_gl.html">返回</a>
-       </div> 
-    </div>
+      </div></div>
     
-    <div class="container info_main punishment yc">
+    <div class="container info_main punishment mb15 yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
           	  <thead>
@@ -435,14 +395,37 @@
               </tr>
               </tbody>
           </table>
+      </div></div>
+    <div class="container info_main attachment mb15 yc">
+      <div class="table_info mt15 pt20">
+        <div class="tit_info border-lgrn pl20 ma20">身份证照片</div>
+        <div class="row up_box">
+          <div class="col-sm-6">
+            <div class="div_up up_id-a">
+              <img src="../images/id-a.jpg"/>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="div_up up_id-b">
+              <img src="../images/id-b.jpg"/>
+            </div>
+          </div>
+        </div>
+        <div class="tit_info border-lgrn pl20 ma20">户口本照片</div>
+        <div class="row up_box">
+          <div class="col-sm-6">
+            <div class="div_up up_hkb">
+              <img src="../images/hkb.jpg"/>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="div_up up_hkb">
+              <img src="../images/hkb.jpg"/>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="t_c mb15 pt15">
-       <a class="btn btn-success">保存并继续</a>
-       <a class="btn btn-success ml20 mr20">保存并返回</a>
-       <a class="btn btn-default" href="../index_gl.html">返回</a>
-       </div> 
     </div>
-    
     <footer class="inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</footer>
     
 <!--模态窗口 Modal -->

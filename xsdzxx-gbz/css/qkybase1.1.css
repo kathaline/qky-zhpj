@@ -1,6 +1,4 @@
-/* * 全课云基础样式 2016-12-16 创建1.0
- * 全课云基础样式 2019-01 调整 */
-/* * 自我字体库链接 */
+
 @font-face {
   font-family: 'qkyicon_12';  /* project id 202503 */
   src: url('../iconfont/12/iconfont.eot'); /* IE9*/
@@ -168,8 +166,8 @@ footer.default{ background:#fff; }
 /*导航条改装*/
 .nav_box{ width:100%;}
 .navbtn{ height:50px; padding:0 15px; line-height:50px; cursor:pointer; text-decoration:inherit; color:#a5a5a5;}
-.nav_logo{ float:left; height:50px; width:80px;}
-.nav_logo img{ width:60px; margin:10px auto; display:block; height:30px;}
+.nav_logo{ float:left; padding: 0 15px 0 5px;}
+.nav_logo img{ width:auto; margin:10px auto; display:block; height:49px;}
 .navline{width :1px;height:34px;  float:left; margin-top:8px;}
 .nav_pjname{ float:left; line-height:20px; padding:15px 0; font-size:16px;font-weight:600; margin:0 0 0 20px;}
 .nav_other{ list-style:none; margin-bottom:0;display:none;}
@@ -495,11 +493,13 @@ footer.default{ background:#fff; }
 .fz_20{ font-size:20px!important;}
 .fz_22{ font-size:22px!important;}
 .fz_24{ font-size:24px!important;}
+.fz_40{ font-size:40px!important;}
 
 .mt-11{ margin-top:-11px !important;}
 .mt0{ margin-top:0px!important;}
 .ma0{ margin:0px!important;}
 .ma15{ margin:15px!important;}
+.ma20{ margin:20px!important;}
 .mt5{ margin-top:5px;}
 .mt8{ margin-top:8px;}
 .mt10{ margin-top:10px;}
@@ -529,6 +529,7 @@ footer.default{ background:#fff; }
 .pa5{ padding:5px!important;}
 .pa10{ padding:10px!important;}
 .pa15{ padding:15px!important;}
+.pa20{ padding:20px!important;}
 .pt3{ padding-top:3px!important;}
 .pt5{ padding-top:5px!important;}
 .pt7{ padding-top:7px!important;}
@@ -569,6 +570,7 @@ footer.default{ background:#fff; }
 .border-t{ border-top:1px solid #ddd;}
 .border-b{ border-bottom:1px solid #ddd;}
 .border-bl{ border-bottom:1px solid #f0f0f0;}
+.border-lgrn{ border-left: 3px solid #2baf2b;}
 .iblock{ display:inline-block;}
 .block{ display:block;}
 .tit.wauto{ width:auto !important;}
@@ -694,3 +696,33 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 .m-time .con span.iblock{ margin-right:30px; margin-top:2px; margin-bottom:2px;}
 .m-time a.more{ margin-left:25px; padding-top:5px; padding-bottom:5px; background:#fcfcfc; border-radius:4px;}
 .m-time a.more:hover{ text-decoration:none; background:#94e094; color:#fff;}
+
+.info_nav.nobg{background-image: none;}
+.progress-sign{ font-style:inherit; margin:0 auto; text-align:center; position: relative;}
+.progress-sign em{ z-index: 1; position: relative;}
+.progress-sign:before,.progress-sign:after{ content: " ";position: absolute;  width:45%; top:14px; border-top:2px solid #e9e9e9; -webkit-transform-origin: 0 0;  transform-origin: 0 0; -webkit-transform: scaleY(.5); transform: scaleY(.5); z-index:0;}
+.progress-sign:before{left:-2px;}
+.progress-sign:after{right:-2px;}
+.info_nav a:first-child .progress-sign:before,.info_nav a:last-child .progress-sign:after{border-top:none;}
+.progress-sign span{ display:inline-block;position: relative; z-index:1;width:28px; height:28px; border-radius:50%; background:#fff; color:#cecece; text-align:center; line-height:22px;border:3px solid #e0e0e0;}
+.progress-cont{text-align:center; color:#999;}
+.active .progress-sign span{ border-color:#03a9f4; background-color:#03a9f4; color:#fff;}
+.active .progress-cont{ color:#333;}
+.up_box{margin: 0 50px 20px;}
+.tit_info{ font-size: 20px; font-weight: 600; color: #737373;}
+@media (min-width:768px){
+  .div_up{width:320px; height:202px;}
+}
+@media (min-width:1200px){
+  .div_up{width:454px; height:288px;}
+}
+@media (min-width:1440px){
+  .div_up{width:516px; height:328px;}
+}
+.div_up{ margin:10px auto 20px; padding-top: 1%; position: relative; text-align: center; background-size:100% 100%;}
+.up_id-a{ background-image: url(../images/id_a.png);}
+.up_id-b{ background-image: url(../images/id_b.png);}
+.up_hkb{background-image: url(../images/id-hkb.png);}
+.div_up img{max-width:100%; height: 98%;}
+.up-txt{width: 100%; position: absolute;top:50%; margin-top: -40px; z-index: 1;}
+.up-icon{ background: rgba(0, 0, 0, .15); width: 60px;height: 60px; line-height: 60px; margin: 0 auto; border-radius: 50%;}

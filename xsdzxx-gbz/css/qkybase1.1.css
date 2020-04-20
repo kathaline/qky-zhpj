@@ -467,6 +467,7 @@ footer.default{ background:#fff; }
 }
 .clear:before,.clear:after{ content: " "; display: table;}
 .clear:after {clear: both;}
+.po_f{ position:fixed;}
 .po_r{ position:relative;}
 .po_a_l{ position:absolute;left:0;top:0;}
 .po_a_r{ position:absolute;right:0;top:0;}
@@ -481,6 +482,7 @@ footer.default{ background:#fff; }
 .t_c{ text-align:center;}
 .t_l{ text-align:left;}
 .t_r{ text-align:right;}
+.zindex100{z-index: 100;}
 
 .fz_we{ font-weight:bold!important;}
 .fz_nwe{ font-weight:normal !important;}
@@ -537,11 +539,13 @@ footer.default{ background:#fff; }
 .pt10{ padding-top:10px!important;}
 .pt15{ padding-top:15px!important;}
 .pt20{ padding-top:20px!important;}
+.pt35{ padding-top:35px!important;}
 .pb0{ padding-bottom:0px!important;}
 .pb5{ padding-bottom:5px!important;}
 .pb10{ padding-bottom:10px!important;}
 .pb15{ padding-bottom:15px!important;}
 .pb20{ padding-bottom:20px!important;}
+.pb100{ padding-bottom:100px!important;}
 .pl0{ padding-left:0px!important;}
 .pl5{ padding-left:5px!important;}
 .pl10{ padding-left:10px!important;}

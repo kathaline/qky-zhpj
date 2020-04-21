@@ -35,7 +35,7 @@
     <div class="container po_r mt15">
           <a class="btn-border po_a_r pt5 pb5" id="ljtag_btn" isc="no"><i class="qkyicon_14">&#xe67d;</i><br><span>收<br>起<br>条<br> 件</span></a>
           
-          <div class="table-responsive table_lj mb10">
+          <div class="table-responsive table_lj bor-bno">
               <table class="table table_ljchoose">
                   <tbody>
                       <tr>
@@ -62,7 +62,29 @@
                   </tbody>
               </table>
           </div>
-        
+          <div class="table-responsive border mb10 pl15 pr15 pb10 bg_gray">
+          <table class="table table_ljchoose mb0">
+              <tbody>
+                  <tr class="lj_bottom">
+                      <td width="10%" class="tit bg_gray"><label>已选条件:</label></td>
+                      <td width="90%" class="cont_02 bg_gray">
+                      <ol class="breadcrumb bg_gray mb0 iblock pt10 pl5" id="ljcont_ul">
+                          <li>都匀市</li>
+                          <li>文峰路街道</li>
+                          <li>都匀市第一幼儿园</li>
+                          <li>大班</li>
+                          <li>大班(二)班</li>
+                      </ol>
+                      <div class="iblock">
+                          <span class="po_r pr20 bg_gray02">男<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">农村户口,非农村户口<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">走读,住校<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">就近入学,艺术特招,体育特招,统一招生考试<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">独生子女,非独生子女<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span>                  
+                      </div>
+                      <a class="btn btn-success fr mt5 ml15" role="button" data-toggle="modal" data-target="#myModal"><i class="qkyicon_14 mr5">&#xe63a;</i>导出结果</a>
+                      <a class="btn btn-success fr mt5" role="button" data-toggle="modal" data-target="#myModal"><i class="qkyicon_14 mr5">&#xe671;</i>高级搜索</a>
+                      </td>               
+                  </tr>
+              </tbody>
+          </table>
+      </div>
           <div class="qkytable_btn pl0 pr0 clear pt0">
               <a class="btn btn-success mr10 po_r" role="button">导入学生照片<input type="file" class="ycfile"></a>
               <a class="btn btn-success mr10 po_r" role="button">导入全校数据<input type="file" class="ycfile"></a>
@@ -192,6 +214,166 @@
         
     </div>
     <footer class="inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</footer>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">高级搜索<span class="text-danger fz_14">（最多只限选5个条件）</span></h4>
+      </div>
+      <div class="modal-body">
+         <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="col-sm-2 control-label">性别：</label>
+              <div class="col-sm-9">
+               <div class="checkbox">
+                  <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>男</label>
+                  <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>女</label>
+<!--                      <label class="radio-qky clear pl0 pt0" id="radio_value_1">
+                        <a class="radio_a fl"><b></b></a><span class="fr ml5">男</span>
+                      </label>
+                      <label class="radio-qky clear pt0" id="radio_value_2">
+                        <a class="radio_a fl"><b></b></a><span class="fr ml5">女</span>
+                      </label>    
+-->                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">健康：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>健康或良好</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>一般或较弱</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>有慢性病</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>有生理缺陷</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>残疾</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>未知</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">农村人口：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>农村户口</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>非农村户口</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>未知</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">学生来源：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>正常入学</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>借读</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>其他</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>未知</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">入学比例：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>就近入学</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>艺术特招</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>体育特招</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>统一招生考试</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>其他</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>未知</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">就读方式：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>走读</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>住校</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>未知</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">民族：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>汉族</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>蒙古族</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>回族</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>藏族</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>苗族</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>维吾尔族</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>壮族</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>其他</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">政治面貌：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>中共党员</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>预备党员</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>共青团员</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>群众</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>其他</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>未知</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">独生子女：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>独生子女</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>非独生子女</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>未知</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">孤儿：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>孤儿</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>非孤儿</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>其他</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">在校状态：</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>正常</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>休学</label>
+                   <label class="checkbox-qky fz_nwe pl0 mr20 pt0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="glyphicon glyphicon-ok fz_12"></i></a>复学</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group border-t pt10 pb10">
+              <label class="col-sm-2 control-label t_r pt10">已选条件：</label>
+              <div class="col-sm-9 pl5">
+                <div class="table_ljchoose pl0 pr0">
+                  <div class="iblock">
+                      <span class="po_r pr20 bg_gray02">男<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">农村户口,非农村户口<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">走读,住校<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">就近入学,艺术特招,体育特招,统一招生考试<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span><span class="po_r pr20 bg_gray02">独生子女,非独生子女<i class="qkyicon_14 po_a_r text-danger">&#xe618;</i></span>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-success">确定搜索</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="../dist/jq/1.11.1/jquery.min.js"></script>
     <!--模块化js-->
     <script src="../dist/sea.js"></script>

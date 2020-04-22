@@ -862,4 +862,4 @@ label { font-weight: normal;}
 
 .badge.bg-red{ border:1px solid #f37f75;}
 .badge.bg-grn{ border:1px solid #73ceaf;}
-.badge.bg-red,.badge.bg-bgray,.badge.bg-grn{ min-width:52px;}
+.badge.bg-red,.badge.bg-bgray,.badge.bg-grn{ min-width:80px;}

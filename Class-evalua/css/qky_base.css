@@ -859,3 +859,7 @@ label { font-weight: normal;}
 .bg-danger.btn-l,.bg-danger.btn-l:hover{ background-color:#ff4e4e;color:#fff;}
 .btn-l:after{ position:absolute;top:-10px; left:-20px; content:" ";width: 0; height: 0; border-top:24px solid transparent; border-bottom:24px solid transparent;}
 .bg-danger.btn-l:after{ border-right: 24px solid #ff4e4e;}
+
+.badge.bg-red{ border:1px solid #f37f75;}
+.badge.bg-grn{ border:1px solid #73ceaf;}
+.badge.bg-red,.badge.bg-bgray,.badge.bg-grn{ min-width:52px;}

@@ -162,6 +162,7 @@ a:hover,a:focus{ text-decoration:none;}
 .pa15{ padding:15px!important;}
 .pa20{ padding:20px!important;}
 /*边线*/
+.border{border:1px solid #e7e7e7;}
 .bor-lb{ border-left:3px solid #27b0f2;}
 .bor-t{ border-top:1px solid #e7e7e7;}
 .bor-r{ border-right:1px solid #e7e7e7;}

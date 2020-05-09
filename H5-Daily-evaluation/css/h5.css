@@ -29,6 +29,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .zindex1{ z-index:1;}
 .zindex2{ z-index:2;}
 .zindex3{ z-index:3;}
+.zindex999{ z-index:999;}
 .hide{display: none;}
 .row { margin-right: -12px; margin-left: -12px;}
 .row:before,.row:after{display: table; content: " ";}
@@ -610,4 +611,6 @@ div+.nodata{ padding:80px 20px 0;}
 .delete:hover i.co_a3{color: #fff !important;}
 .scan-box+.scan-box{ border-top: 1px solid #ededed;}
 .quota-cell{ background-color: #f7f9fa; border: 1px solid #f6f6f6; display: block; border-radius: 6px;}
-.quota-cell.cur{border-color: #09acfb; background-color: #f8ffff;}
+.quota-cell.cur{border-color: #ffc434; background-color: #fffefb;}
+.weui-popup__modal.scan-pop{top: 45%; left: 50%; width: 80% ;-webkit-transform: translate(-50%,-50%);  transform: translate(-50%,-50%);    -webkit-transition-duration: .2s;
+transition-duration: .2s;}

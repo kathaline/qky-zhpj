@@ -615,5 +615,5 @@ div+.nodata{ padding:80px 20px 0;}
 .scan-box+.scan-box{ border-top: 1px solid #ededed;}
 .quota-cell{ background-color: #f7f9fa; border: 1px solid #f6f6f6; display: block; border-radius: 6px;}
 .quota-cell.cur{border-color: #ffc434; background-color: #fffefb;}
-.weui-popup__modal.scan-pop{top: 45%; bottom: auto; left: 50%; width: 80% ;-webkit-transform: translate(-50%,-50%);  transform: translate(-50%,-50%);    -webkit-transition-duration: .2s;transition-duration: .2s;}
+.weui-popup__modal.scan-pop{top: 45%; bottom: auto; left: 50%; width: 80% ;-webkit-transform: translate(-50%,-50%);  transform: translate(-50%,-50%);    -webkit-transition-duration: .2s;transition-duration: .2s; border-radius: 4px;}
 .weui-popup__modal.scan-pop .weui-btn+.weui-btn{ margin-left: 15px;}

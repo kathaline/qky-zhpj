@@ -201,13 +201,16 @@
   <div class="weui-popup__modal scan-pop">
     <div class="toolbar bg_white">
       <div class="toolbar-inner">
-        <a href="javascript:;" class="picker-button close-popup">关闭</a>
-        <h1 class="title fz_18">高三（6）班    迪丽热巴</h1>
+        <h1 class="title fz_18 pt15">高三（6）班    迪丽热巴</h1>
       </div>
     </div>
     <div class="modal-content bg_white">       
-        <div class="t-center pt20 pb20">
-          <img src="../image/scan-pop_user.jpg" class=" img180 radius-6 img-bor">
+        <div class="t-center pt30 pb10">
+          <img src="../image/scan-pop_user.jpg" class=" img200 radius-6 img-bor">
+        </div>
+        <div class=" t-center pb20">
+          <a href="javascript:;" class="weui-btn weui-btn_mini fz_14 plr30 weui-btn_warn">移除</a>
+          <a href="javascript:;" class="weui-btn weui-btn_mini fz_14 plr30 weui-btn_default close-popup">关闭</a>
         </div>
     </div>
   </div>
@@ -221,6 +224,11 @@
 		$(this).addClass("cur"); 
 	 });
 
+   $(document).on("click", "#show-toast", function() {
+        $.toast("操作成功", function() {
+          console.log('close');
+        });
+      })
 </script>
 </body>
 </html>

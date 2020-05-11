@@ -191,6 +191,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pt12{ padding-top:12px!important;}
 .pt15{ padding-top:15px!important;}
 .pt20{ padding-top:20px!important;}
+.pt30{ padding-top:30px!important;}
 .pt40{ padding-top:40px!important;}
 .pt44{ padding-top:44px!important;}
 .pt80{ padding-top:80px!important;}
@@ -292,6 +293,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .img120{ width:120px; height:120px;}
 .img160{ width:160px; height:160px;}
 .img180{ width:180px; height:180px;}
+.img200{ width:200px; height:200px;}
 
 .lh20{ line-height: 20px;}
 .lh30{ line-height: 30px;}
@@ -364,6 +366,7 @@ input[disabled]{ color: #e3e3e3;}
 .weui-btn_default{ border:1px solid #ddd;background-color:#fff;}
 .weui-btn_primary{background-color: #09acfb; border:1px solid #05a4f1;}
 .weui-btn_org{background-color: #ff8a00; border:1px solid #ff8a00;}
+.weui-btn_warn{ border: 1px solid #e64340;}
 .weui-btn_org:not(.weui-btn_disabled):visited{ color: }
 .weui-btn_primary:after{ border:0;}
 .weui-dialog__btn{ color: #09acfb;}
@@ -612,5 +615,5 @@ div+.nodata{ padding:80px 20px 0;}
 .scan-box+.scan-box{ border-top: 1px solid #ededed;}
 .quota-cell{ background-color: #f7f9fa; border: 1px solid #f6f6f6; display: block; border-radius: 6px;}
 .quota-cell.cur{border-color: #ffc434; background-color: #fffefb;}
-.weui-popup__modal.scan-pop{top: 45%; left: 50%; width: 80% ;-webkit-transform: translate(-50%,-50%);  transform: translate(-50%,-50%);    -webkit-transition-duration: .2s;
-transition-duration: .2s;}
+.weui-popup__modal.scan-pop{top: 45%; bottom: auto; left: 50%; width: 80% ;-webkit-transform: translate(-50%,-50%);  transform: translate(-50%,-50%);    -webkit-transition-duration: .2s;transition-duration: .2s;}
+.weui-popup__modal.scan-pop .weui-btn+.weui-btn{ margin-left: 15px;}

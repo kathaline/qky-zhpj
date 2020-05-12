@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5652664",
+      "name": "手动备份",
+      "font_class": "backup-hm",
+      "unicode": "e7dd",
+      "unicode_decimal": 59357
+    },
+    {
       "icon_id": "9673157",
       "name": "关  闭",
       "font_class": "guanbi",

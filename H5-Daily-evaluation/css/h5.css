@@ -206,6 +206,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pb40{ padding-bottom:40px!important;}
 .pb42{ padding-bottom:42px!important;}
 .pb50{ padding-bottom:60px!important;}
+.pb100{ padding-bottom:100px!important;}
 .pl0{ padding-left:0px!important;}
 .pl5{ padding-left:5px!important;}
 .pl10{ padding-left:10px!important;}
@@ -423,8 +424,9 @@ input[disabled]{ color: #e3e3e3;}
 }
 .date-badge{min-width: 8px; border-radius:6px; background-color: #d0d0d0; color: #fff; display:inline-block; text-align: center; font-size: 12px; vertical-align: middle; padding:2px 6px;}
 .eva-add{ bottom:60px; right:12px;}
-.evaadd-btn{ width:60px; text-align:center; height:60px; line-height:60px; padding-top: 12px; padding-bottom: 12px; background-color:#09acfb; z-index:10; display:block;border-radius:50%;}
-.eva-add_q,.eva-add{ z-index:2;}
+.evaadd-btn{ width:60px; text-align:center; height:60px; padding-top: 12px; padding-bottom: 12px; background-color:#09acfb; z-index:10; display:block;border-radius:50%;}
+.eva-add .evaadd-btn+.evaadd-btn{ margin-top: 5px;}
+.eva-add_q,.eva-add{ z-index:200;}
 .eva-add_q{ left:-10px;bottom:60px;}
 .eva-add_q .weui-btn,.evaadd-btn{-moz-box-shadow:1px 2px 8px #b9b9b9; -webkit-box-shadow:1px 2px 8px #b9b9b9; box-shadow:1px 2px 8px #b9b9b9;}
 .weui-cell__hd img{ display:inline-block; margin-right:0;}

@@ -52,22 +52,27 @@
   </div>
 </div>
     <div class="container info_main base mb15">
-      <div class="table-responsive table_info mt15 ns">
-          <table class="table mb0">
-          	  <thead><tr><th colspan="5">学生个人基本信息</th></tr></thead>
-              <tbody class="info_edit">
-                  <tr>
-                      <td class="td_tit">学籍号：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                      <td class="td_tit">姓名：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                      <td rowspan="4" width="24%" class="t_c"><img src="../images/dist_tx.png" alt="">
-                      <a class="btn btn-success po_r mt15">上传<input type="file" class="ycfile"></a>
-                      </td>
-                  </tr> 
-                  <tr>
-                      <td class="td_tit">国籍/地区：</td>
-                      <td class="td_inp">
-                      <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+        <div class="table_info mt15 ns">
+          <div class="info_title border-b">学生个人基本信息</div>
+          <div class="row info_row ma0">
+            <div class="col-sm-9 col-lg-10 pa0">
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">学籍号：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">姓名：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">国籍/地区：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
                             <span class="value">中国</span>
                             <span class="caret"></span>
                           </a>
@@ -75,12 +80,14 @@
                             <li role="presentation"><a role="menuitem" tabindex="-1">中国</a></li>
                             <li role="presentation"><a role="menuitem" tabindex="-1">外国</a></li>
                           </ul>
-                      </div>
-                      </td>
-                      <td class="td_tit">港澳台侨：</td>
-                      <td class="td_inp">
-                      <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">港澳台侨：</div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
                             <span class="value">请选择</span>
                             <span class="caret"></span>
                           </a>
@@ -88,14 +95,14 @@
                             <li role="presentation"><a role="menuitem" tabindex="-1">是</a></li>
                             <li role="presentation"><a role="menuitem" tabindex="-1">否</a></li>
                           </ul>
-                      </div>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td class="td_tit">身份证件类型：</td>
-                      <td class="td_inp">
-                      <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">身份证件类型：</div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
                             <span class="value">请选择</span>
                             <span class="caret"></span>
                           </a>
@@ -103,14 +110,19 @@
                             <li role="presentation"><a role="menuitem" tabindex="-1">身份证</a></li>
                             <li role="presentation"><a role="menuitem" tabindex="-1">社保卡</a></li>
                           </ul>
-                      </div>
-                      </td>
-                      <td class="td_tit">身份证号码：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-                  <tr>
-                      <td class="td_tit">性别：</td>
-                      <td class="td_inp ">
-                      <div class="radio mb0 mt0">
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">身份证号码：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">性别：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
                             <label class="radio-inline clear pl0 select" id="radio_value_1">
                               <a class="radio_a fl"><b></b></a><span class="fr ml5">男</span>
                             </label>
@@ -118,99 +130,120 @@
                               <a class="radio_a fl"><b></b></a><span class="fr ml5">女</span>
                             </label>    
                       </div>
-                      </td>
-                      <td class="td_tit">出生日期：</td><td class="td_inp">
-                      
-                      <input type="text" class="form-control height30 laydate-icon" id="datetime">
-                      <!--<div class="input-group datetime"  data-wrap=true data-click-opens="false">
-                      <input type="text" class="form-control height30"  data-input>
-                      <span class="input-group-btn" data-toggle>
-                      <button class="btn btn-default auto pl10 pr10" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
-                      </span>
-                      </div>-->
-                      </td>
-                  </tr>
-                  <tr>
-                      <td class="td_tit">民族：</td>
-                      <td class="td_inp">
-                      <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">汉</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">汉</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">藏</a></li>
-                          </ul>
-                      </div>
-                      </td>
-                      <td class="td_tit">健康状况：</td>
-                      <td class="td_inp">
-                      <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">出生日期：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input type="text" class="form-control laydate-icon" id="datetime">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">民族：</div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
                             <span class="value">请选择</span>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">健康或者良好</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">一般般</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1">汉族</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1">回族</a></li>
                           </ul>
-                      </div>
-                      </td><td></td>
-                  </tr> 
-                  <tr>
-                      <td class="td_tit">籍贯：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                      <td class="td_tit">政治面貌：</td>
-                      <td class="td_inp">
-                      <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">群众</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">党员</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">团员</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">少先队员</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">群众</a></li>
-                          </ul>
-                      </div>
-                      </td><td></td>
-                  </tr> 
-                  <tr> 
-                  	  <td class="td_tit">出生地：</td><td colspan="4" class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr>       
-              </tbody>
-          </table>
-      </div>
-      <div class="table-responsive table_info mt15">
-          <table class="table mb0">
-          	  <thead><tr><th colspan="4">学生个人辅助信息</th></tr></thead>
-              <tbody class="info_edit">
-                  <tr>
-                  <td class="td_tit">姓名拼音：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">曾用名：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">身份证有效期：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">血型：</td><td class="td_inp">
-                  <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">健康状况：</div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
                             <span class="value">请选择</span>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" >A型</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">B型</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">AB型</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">O型</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
                           </ul>
-                      </div>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit">户口性质：</td>
-                  <td class="td_inp">
-                  <div class="radio mb0 mt0">
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">籍贯：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">政治面貌：</div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu">
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
+                          </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-12 ptb15 border-b">
+                <div class="col-sm-12 col-lg-2 pt5">出生地：</div>
+                <div class="col-sm-12 col-lg-10 pl10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-lg-2 pa0">
+              <div class=" text-center ptb15">
+                <div><img src="../images/dist_tx.png" alt=""></div>
+                <a class="btn btn-success po_r mt15">上传<input type="file" class="ycfile"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table_info mt15">
+          <div class="info_title border-b">学生个人辅助信息</div>
+          <div class="row info_row ma0">
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">姓名拼音：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">曾用名：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">身份证有效期：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">血型：</div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
+                            <span class="value">请选择</span>
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu maxh" role="menu">
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
+                          </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">户口性质：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
                   <label class="radio-inline clear pl0 select" id="radio_value_1">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">农村户口</span>
                   </label>
@@ -218,421 +251,546 @@
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">非农村户口</span>
                   </label>    
                   </div>
-                  </td>
-                  <td class="td_tit">户口所在地：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">特长：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">当前就读学校：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                </tr>       
-              </tbody>
-          </table>
-      </div>
-      <div class="table-responsive table_info mt15">
-          <table class="table mb0">
-          	  <thead><tr><th colspan="4">学生个人联系信息</th></tr></thead>
-              <tbody class="info_edit">
-                  <tr>
-                  <td class="td_tit">现住址：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">通信地址：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">家庭地址：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">联系电话：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit">邮政编码：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">电子信箱：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-                  <tr><td class="td_tit">个人主页：</td><td colspan="3" class="td_inp"><input class="form-control height30" type="text"></td></tr>       
-              </tbody>
-          </table>
-      </div>
-      <div class="table-responsive table_info mt15 ns">
-          <table class="table mb0">
-          	  <thead><tr><th colspan="4">学生个人扩展信息</th></tr></thead>
-              <tbody  class="info_edit">
-                  <tr>
-                  <td width="20%" class="td_tit">是否独生子女：</td><td width="30%" class="td_inp">
-                  <div class="radio mb0 mt0">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">户口所在地：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">特长：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">当前就读学校：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="table_info mt15">
+          <div class="info_title border-b">学生个人联系信息</div>
+          <div class="row info_row ma0">
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">现住址：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">通信地址：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">家庭地址：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">联系电话：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">邮政编码：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">电子信箱：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-12 ptb15 border-b">
+                <div class="col-sm-12 col-lg-2 pt5">个人主页：</div>
+                <div class="col-sm-12 col-lg-10 pl10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="table_info mt15">
+          <div class="info_title border-b">学生个人扩展信息</div>
+          <div class="row info_row ma0">
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否独生子女：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
                   <label class="radio-inline clear pl0 select" id="radio_value_1">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
                   </label>
                   <label class="radio-inline clear" id="radio_value_2">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
                   </label>    
-                  </div></td>
-                  <td width="20%" class="td_tit long">是否受过学前教育：</td><td width="30%" class="td_inp">
-                  <div class="radio mb0 mt0">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否受过学前教育：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
                   <label class="radio-inline clear pl0 select" id="radio_value_1">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
                   </label>
                   <label class="radio-inline clear" id="radio_value_2">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
                   </label>    
-                  </div></td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">是否留守儿童：</td><td class="td_inp">
-                  <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否留守儿童：</div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
                             <span class="value">请选择</span>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" >非留守儿童</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">双亲留守儿童</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">单亲留守儿童</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
                           </ul>
-                      </div></td>
-                  <td class="td_tit">是否孤儿：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否孤儿：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
                   <label class="radio-inline clear pl0 select" id="radio_value_1">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
                   </label>
                   <label class="radio-inline clear" id="radio_value_2">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
                   </label>    
-                  </div></td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit">是否烈士或优抚子女：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否烈士或优抚子女：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
                   <label class="radio-inline clear pl0 select" id="radio_value_1">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
                   </label>
                   <label class="radio-inline clear" id="radio_value_2">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
                   </label>    
-                  </div></td>
-                  <td class="td_tit">随班就读：</td><td class="td_inp">
-                  <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">随班就读：</div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
                             <span class="value">请选择</span>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" >非随班就读</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">视力残疾随班就读</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">听力残疾随班就读</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">智力残疾随班就读</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">其他残疾随班就读</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
                           </ul>
-                      </div>
-                  </td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">残疾人类型：</td><td class="td_inp">
-                  <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">残疾人类型：</div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="dropdown qkydropdown havechoose">
+                          <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
                             <span class="value">请选择</span>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" >无残疾</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">听力残疾</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">视力残疾</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"></a></li>
                           </ul>
-                      </div>
-                  </td>
-                  <td class="td_tit long">是否由政府购买学位：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否由政府购买学位：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
                   <label class="radio-inline clear pl0 select" id="radio_value_1">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
                   </label>
                   <label class="radio-inline clear" id="radio_value_2">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
                   </label>    
-                  </div></td>
-                  </tr>
-                  <tr>
-                    <td class="td_tit">是否需要申请资助：</td>
-                    <td class="td_inp">
-                      <div class="radio mb0 mt0">
-                        <label class="radio-inline clear pl0" id="radio_value_1"> <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span> </label>
-                        <label class="radio-inline clear select" id="radio_value_2"> <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span> </label>
-                      </div>
-                    </td>
-                    <td class="td_tit">是否享受一补：</td>
-                    <td class="td_inp"><div class="radio mb0 mt0">
-                      <label class="radio-inline clear pl0" id="radio_value_1"> <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span> </label>
-                      <label class="radio-inline clear select" id="radio_value_2"> <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span> </label>
-                    </div></td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">是否建档立卡户：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0" id="radio_value_1">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否需要申请资助：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                  <label class="radio-inline clear pl0 select" id="radio_value_1">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
                   </label>
-                  <label class="radio-inline clear select" id="radio_value_2">
+                  <label class="radio-inline clear" id="radio_value_2">
                   <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
                   </label>    
-                  </div></td>
-                  <td class="td_tit">是否低保户：</td><td class="td_inp">
-                  <div class="row">
-                    <div class="radio mb0 mt0 col-sm-6 pr0">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否享受一补：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                  <label class="radio-inline clear pl0 select" id="radio_value_1">
+                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                  </label>
+                  <label class="radio-inline clear" id="radio_value_2">
+                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                  </label>    
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否建档立卡户：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                  <label class="radio-inline clear pl0 select" id="radio_value_1">
+                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                  </label>
+                  <label class="radio-inline clear" id="radio_value_2">
+                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                  </label>    
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否低保户：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="col-sm-6 pl0">
+                    <div class="radio mb4 mt0">
+                      <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                      </label>
+                      <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                      </label>    
+                    </div>
+                  </div>
+                  <div class="col-sm-6 pa0">
+                    <input class="form-control" type="text" placeholder="输入低保户号">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="是否进城务工人员随迁子女">是否进城务工人员随迁子女：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
                     <label class="radio-inline clear pl0 select" id="radio_value_1">
-                    <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
                     </label>
                     <label class="radio-inline clear" id="radio_value_2">
-                    <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>   
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">病史：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">特异体质：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="table_info mt15">
+          <div class="info_title border-b">学生上下学交通方式</div>
+          <div class="row info_row ma0">
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否乘坐校车：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
                     </label>    
-                    </div>
-                    <div class="col-sm-6">
-                       <input class="form-control height30" type="text" placeholder="请输入低保户号">
-                    </div>
                   </div>
-                  </td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit xlong">是否进城务工人员随迁子女：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear select" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
-                  </div></td>
-                  <td class="td_tit">病史：</td>
-                  <td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr>  
-                  <tr>
-                  <td class="td_tit">特异体质：</td>
-                  <td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">&nbsp;</td>
-                  <td class="td_inp">&nbsp;</td>
-                  </tr>
-              </tbody>
-          </table>
-      </div>
-      <div class="table-responsive table_info mt15 ns">
-          <table class="table mb0">
-          	  <thead><tr><th colspan="4">学生上下学交通方式</th></tr></thead>
-              <tbody class="info_edit">
-                  <tr>
-                  <td width="20%"  class="td_tit long">是否乘坐校车：</td><td width="30%" class="">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
-                  </div></td>
-                  <td width="20%"  class="td_tit long">上下学距离（公里）：</td><td width="30%" class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr>
-                  <tr>
-                    <td  class="td_tit long">上下学交通方式：</td>
-                    <td class="td_inp"><div class="dropdown qkydropdown havechoose dropup"> <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown"> <span class="value">请选择</span> <span class="caret"></span> </a>
-                      <ul class="dropdown-menu maxh" role="menu">
-                        <li role="presentation"><a role="menuitem" tabindex="-1">步行</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">其他</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">自行车（包含摩托车、电动车）</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">公共交通</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">家长自行接送</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">校车</a></li>
-                      </ul>
-                    </div></td>
-                    <td  class="td_tit long">家长车牌号：</td>
-                    <td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-                  <tr><td  class="td_tit long">上下学交通方式：</td><td class="td_inp">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">上下学距离（公里）：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">上下学交通方式：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="dropdown qkydropdown havechoose dropup"> <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown" aria-expanded="false"> <span class="value">请选择</span> <span class="caret"></span> </a>
+                    <ul class="dropdown-menu maxh" role="menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1">步行</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">其他</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">自行车（包含摩托车、电动车）</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">公共交通</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">家长自行接送</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">校车</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">家长车牌号：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">上下学交通方式：</div>
+                <div class="col-sm-12 col-lg-8">
                   <div class="dropdown qkydropdown havechoose dropup">
-                      <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                        <span class="value">请选择</span>
-                        <span class="caret"></span>
-                      </a>
-                      <ul class="dropdown-menu maxh" role="menu">
-                        <li role="presentation"><a role="menuitem" tabindex="-1">步行</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">其他</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">自行车（包含摩托车、电动车）</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">公共交通</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">家长自行接送</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1">校车</a></li>
-                      </ul>
+                    <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
+                      <span class="value">请选择</span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu maxh" role="menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1">步行</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">其他</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">自行车（包含摩托车、电动车）</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">公共交通</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">家长自行接送</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">校车</a></li>
+                    </ul>
                   </div>
-                  </td>
-                  <td width="20%"  class="td_tit long">定制公交路线：</td>
-                  <td width="30%" class="td_inp">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">定制公交路线：</div>
+                <div class="col-sm-12 col-lg-8">
                   <div class="dropdown qkydropdown havechoose dropup">
-                      <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                        <span class="value">请选择</span>
-                        <span class="caret"></span>
-                      </a>
-                      <ul class="dropdown-menu maxh" role="menu">
-                        <li role="presentation"><a role="menuitem" tabindex="-1">1</a></li>
-                      </ul>
+                    <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
+                      <span class="value">请选择</span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu maxh" role="menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1">1</a></li>
+                    </ul>
                   </div>
-                  </td>
-                  </tr>       
-              </tbody>
-          </table>
-      </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
     </div>
     <div class="container info_main studer mb15 yc">
-       <div class="table-responsive table_info mt15 ns">
-          <table class="table mb0">
-          <thead><tr><th colspan="5">学生个人基本信息</th></tr></thead>
-              <tbody class="info_edit">
-                  <tr>
-                  <td class="td_tit">学籍号：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">班内学号：</td><td class="td_inp"><input class="form-control height30" type="text"></td></tr> 
-                  <tr>
-                  <td class="td_tit">年级：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">班级：</td><td class="td_inp"><input class="form-control height30" type="text"></td></tr>
-                  <tr>
-                  <td class="td_tit"><strong class="text-warning">*</strong>入学年月：</td>
-                  <td class="td_inp">
-                  <div class="input-group datetime"  data-wrap=true data-click-opens="false">
-                  <input type="text" class="form-control height30"  data-input>
-                  <span class="input-group-btn" data-toggle>
-                  <button class="btn btn-default auto pl10 pr10" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
-                  </span>
+      <div class="table_info mt15 ns">
+        <div class="info_title border-b">学生个人基本信息</div>
+          <div class="row info_row ma0">
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">学籍号：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">班内学号：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">年级：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">班级：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5"><b class=" text-warning">*</b>入学年月：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input type="text" class="form-control laydate-icon" id="datetime">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5"><b class=" text-warning">*</b>入学方式：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
+                      <span class="value">请选择</span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu maxh" role="menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1">就近入学</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">义务教育阶段其他</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">统一招生</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">体育特招</a></li>
+                    </ul>
                   </div>
-                  </td>
-                  <td class="td_tit"><strong class="text-warning">*</strong>入学方式：</td>
-                  <td class="td_inp"><div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">请选择</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">就近入学</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">义务教育阶段其他</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">统一招生</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">体育特招</a></li>
-                          </ul>
-                      </div></td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit"><strong class="text-warning">*</strong>就读方式：</td>
-                  <td class="td_inp"><div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">请选择</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">走读</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">住校</a></li>
-                          </ul>
-                      </div></td>
-                   <td class="td_tit"><strong class="text-warning">*</strong>学生来源：</td>
-                   <td class="td_inp">
-                   <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">请选择</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">正常入学</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">借读</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">其他</a></li>
-                          </ul>
-                      </div></td>
-                    </tr>   
-                    <tr>
-                  <td class="td_tit">学生状态：</td>
-                  <td class="td_inp"><div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">请选择</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">报到</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">退学</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">复学</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">往届生</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">未报到</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">休学</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">在外借读</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">在我校借读</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">转出</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">转入</a></li>
-                          </ul>
-                      </div></td>
-                   <td class="td_tit"></td>
-                   <td class="td_inp">
-                   </td>
-                    </tr>      
-              </tbody>
-          </table>
-       </div>
-       <div class="table-responsive table_info mt15 ns">
-          <table class="table mb0">
-          <thead><tr><th colspan="5">学生个人扩展信息</th></tr></thead>
-              <tbody class="info_edit">
-                  <tr><td  class="td_tit"><strong class="text-warning">*</strong>在籍状态：</td>
-                  <td colspan="3" class="td_inp">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5"><b class=" text-warning">*</b>就读方式：</div>
+                <div class="col-sm-12 col-lg-8">
                   <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">请选择</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">正常</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">借读</a></li>
-                          </ul>
-                      </div>
-                  </td></tr>       
-                  <tr>
-                  <td class="td_tit top_bno">入学方式：</td>
-                  <td colspan="3" class="td_inp top_bno"><textarea name="" cols="" rows="" class="form-control"></textarea></td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit top_bno">备注1：</td><td colspan="3" class="td_inp top_bno"><textarea name="" cols="" rows="" class="form-control"></textarea></td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit top_bno">备注2：</td><td colspan="3" class="td_inp top_bno"><textarea name="" cols="" rows="" class="form-control"></textarea></td>
-                  </tr>
-                  <tr><td  class="td_tit">在校状态：</td>
-                  <td colspan="3" class="td_inp">
+                      <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
+                        <span class="value">请选择</span>
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu maxh" role="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1">走读</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1">住校</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5"><b class=" text-warning">*</b>学生来源：</div>
+                <div class="col-sm-12 col-lg-8">
                   <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">请选择</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">正常</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">休学</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">复读</a></li>
-                          </ul>
-                      </div>
-                  </td></tr>       
-                  <tr>
-                      <td class="td_tit top_bno">休学时间：</td><td class="td_inp top_bno">
-                        <div class="input-group datetime"  data-wrap=true data-click-opens="false">
-                        <input type="text" class="form-control height30"  data-input>
-                        <span class="input-group-btn" data-toggle>
-                        <button class="btn btn-default auto pl10 pr10" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
-                        </span>
-                        </div>
-                      </td>
-                      <td class="td_tit top_bno">复学时间：</td><td class="td_inp top_bno">
-                        <div class="input-group datetime"  data-wrap=true data-click-opens="false">
-                        <input type="text" class="form-control height30"  data-input>
-                        <span class="input-group-btn" data-toggle>
-                        <button class="btn btn-default auto pl10 pr10" type="button" ><i class="qkyicon_20 fz_16">&#xe609;</i></button>
-                        </span>
-                        </div>
-                      </td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit top_bno">休学原因：</td><td colspan="3" class="td_inp top_bno"><textarea name="" cols="" rows="" class="form-control"></textarea></td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit top_bno">备注1：</td><td colspan="3" class="td_inp top_bno"><textarea name="" cols="" rows="" class="form-control"></textarea></td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit top_bno">备注2：</td><td colspan="3" class="td_inp top_bno"><textarea name="" cols="" rows="" class="form-control"></textarea></td>
-                  </tr>
-              </tbody>
-          </table>
-       </div>
-        
+                    <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
+                      <span class="value">请选择</span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu maxh" role="menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1">正常入学</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">借读</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">其他</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">学生状态：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">请选择</span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu maxh" role="menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1">报到</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">退学</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">复学</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">往届生</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">未报到</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">休学</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">在外借读</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">在我校借读</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">转出</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">转入</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>              
+          </div>
+      </div>
+      <div class="table_info mt15 ns">
+        <div class="info_title border-b">学生个人扩展信息</div>
+          <div class="row info_row ma0 ptb10 border-b">
+              <div class="col-sm-12 ptb10">
+                <div class="col-sm-12 col-lg-2 pt5"><b class=" text-warning">*</b>在籍状态：</div>
+                <div class="col-sm-12 col-lg-10 pl10">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
+                      <span class="value">请选择</span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu maxh" role="menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1">正常</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">借读</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 ptb10">
+                <div class="col-sm-12 col-lg-2 pt5">入学方式：</div>
+                <div class="col-sm-12 col-lg-10 pl10">
+                  <textarea name="" cols="" rows="" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-12 ptb10">
+                <div class="col-sm-12 col-lg-2 pt5">备注1：</div>
+                <div class="col-sm-12 col-lg-10 pl10">
+                  <textarea name="" cols="" rows="" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-12 ptb10">
+                <div class="col-sm-12 col-lg-2 pt5">备注2：</div>
+                <div class="col-sm-12 col-lg-10 pl10">
+                  <textarea name="" cols="" rows="" class="form-control"></textarea>
+                </div>
+              </div>           
+          </div>
+          <div class="row info_row ma0 ptb10 border-b">
+            <div class="col-sm-12 ptb10">
+              <div class="col-sm-12 col-lg-2 pt5">在校状态：</div>
+              <div class="col-sm-12 col-lg-10 pl10">
+                <div class="dropdown qkydropdown havechoose">
+                  <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown" aria-expanded="false">
+                    <span class="value">请选择</span>
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu maxh" role="menu">
+                    <li role="presentation"><a role="menuitem" tabindex="-1">正常</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">休学</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">复读</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 ptb10">
+              <div class="col-sm-12 col-lg-4 pt5">休学时间：</div>
+              <div class="col-sm-12 col-lg-8">
+                <input type="text" class="form-control laydate-icon" id="datetime">
+              </div>
+            </div>
+            <div class="col-sm-6 ptb10">
+              <div class="col-sm-12 col-lg-4 pt5">复学时间：</div>
+              <div class="col-sm-12 col-lg-8">
+                <input type="text" class="form-control laydate-icon" id="datetime">
+              </div>
+            </div>
+            <div class="col-sm-12 ptb10">
+              <div class="col-sm-12 col-lg-2 pt5">休学原因：</div>
+              <div class="col-sm-12 col-lg-10 pl10">
+                <textarea name="" cols="" rows="" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-12 ptb10">
+              <div class="col-sm-12 col-lg-2 pt5">备注1：</div>
+              <div class="col-sm-12 col-lg-10 pl10">
+                <textarea name="" cols="" rows="" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-12 ptb10">
+              <div class="col-sm-12 col-lg-2 pt5">备注2：</div>
+              <div class="col-sm-12 col-lg-10 pl10">
+                <textarea name="" cols="" rows="" class="form-control"></textarea>
+              </div>
+            </div>           
+        </div>
+      </div>
     </div>
-    
     <div class="container info_main family mb15 yc">
     	<div class="table-responsive table_info mt15">
           <table class="table mb0">
@@ -650,152 +808,218 @@
       </div>
         
     </div>
-    
     <div class="container info_main familyeconomy mb15 yc">
-    	<div class="table-responsive table_info mt15">
-          <table class="table mb0">
-          <thead><tr><th colspan="4">家庭经济情况</th></tr></thead>
-              <tbody class="info_edit">
-                  <tr>
-                  <td class="td_tit">家庭人口（人）：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">赡养人口（人）：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">家庭收入（元）：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">家庭主要收入来源：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit">具备劳动力人口数：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">是否低保：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
+      <div class="table_info mt15 ns">
+        <div class="info_title border-b">家庭经济情况</div>
+          <div class="row info_row ma0">
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">家庭人口（人）：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">赡养人口（人）：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">家庭收入（元）：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">家庭主要收入来源：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">具备劳动力人口数：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div> 
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">是否低保：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
                   </div>
-                  </td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">就学地低保线：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">困难程度：</td><td class="td_inp">
+                </div>
+              </div>  
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">就学地低保线：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>  
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5">困难程度：</div>
+                <div class="col-sm-12 col-lg-8">
                   <div class="dropdown qkydropdown havechoose">
-                          <a class="btn btn-default dropdown-toggle auto"  data-toggle="dropdown">
-                            <span class="value">请选择</span>
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu maxh" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1">不困难</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">特别困难</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">困难</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1">一般</a></li>
-                          </ul>
-                      </div></td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit">是否父母丧失劳动力：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
+                    <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown">
+                      <span class="value">请选择</span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu maxh" role="menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1">不困难</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">特别困难</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">困难</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1">一般</a></li>
+                    </ul>
                   </div>
-                  </td>
-                  <td class="td_tit">是否农村绝对贫困家庭：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
+                </div>
+              </div>  
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="是否父母丧失劳动力">是否父母丧失劳动力：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
                   </div>
-                  </td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">是否经民政部门确认的农村特困救助范围的家庭子女：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="是否农村绝对贫困家庭">是否农村绝对贫困家庭：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
                   </div>
-                  </td>
-                  <td class="td_tit">是否军烈属：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="是否经民政部门确认的农村特困救助范围的家庭子女">是否经民政部门确认的农村特困救助范围的家庭子女：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
                   </div>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td class="td_tit">家庭是否五保户：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="是否军烈属">是否军烈属：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
                   </div>
-                  </td>
-                  <td class="td_tit">家中是否有大病患者：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="家庭是否五保户">家庭是否五保户：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
                   </div>
-                  </td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">家庭是否遭受自然灾害：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="家中是否有大病患者">家中是否有大病患者：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
                   </div>
-                  </td>
-                  <td class="td_tit">自然灾害家庭具体情况描述：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit">家庭是否遭受突发意外：</td><td class="td_inp">
-                  <div class="radio mb0 mt0">
-                  <label class="radio-inline clear pl0 select" id="radio_value_1">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
-                  </label>
-                  <label class="radio-inline clear" id="radio_value_2">
-                  <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
-                  </label>    
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="家庭是否遭受自然灾害">家庭是否遭受自然灾害：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
                   </div>
-                  </td>
-                  <td class="td_tit">突发事件意外具体描述：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-                  <tr>
-                  <td class="td_tit long">家庭失业人数（人）：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit long">家庭欠债金额（元）：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr>
-                  <tr><td class="td_tit">欠债原因：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  <td class="td_tit">银行账户：</td><td class="td_inp"><input class="form-control height30" type="text"></td>
-                  </tr> 
-              </tbody>
-          </table>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="自然灾害家庭具体情况描述">自然灾害家庭具体情况描述：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="家庭是否遭受突发意外">家庭是否遭受突发意外：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="radio mb4 mt0">
+                    <label class="radio-inline clear pl0 select" id="radio_value_1">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
+                    </label>
+                    <label class="radio-inline clear" id="radio_value_2">
+                      <a class="radio_a fl"><b></b></a><span class="fr ml5">否</span>
+                    </label>    
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="突发事件意外具体描述">突发事件意外具体描述：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="家庭失业人数（人）">家庭失业人数（人）：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="家庭欠债金额（元）">家庭欠债金额（元）：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="欠债原因">欠债原因：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 ptb15 border-b">
+                <div class="col-sm-12 col-lg-4 pt5" title="银行账户">银行账户：</div>
+                <div class="col-sm-12 col-lg-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>                       
+          </div>
       </div>
-       
     </div>
     
     <div class="container info_main studyresume mb15 yc">
@@ -949,14 +1173,14 @@
           <div class="modal-body pb0">
               <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">姓名：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">姓名：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="请输入姓名">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">关系：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">关系：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="dropdown qkydropdown havechoose">
                           <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
                             <span class="value">请选择</span>
@@ -973,8 +1197,8 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">身份证件类型：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">身份证件类型：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="dropdown qkydropdown havechoose">
                           <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
                             <span class="value">请选择</span>
@@ -994,14 +1218,14 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">身份证号：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">身份证号：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="请输入身份证号">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">民族：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">民族：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="dropdown qkydropdown havechoose">
                           <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
                             <span class="value">请选择</span>
@@ -1015,8 +1239,8 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">是否监护人：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">是否监护人：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="radio mb0 mt0 pt0">
                             <label class="radio-inline clear pl0 pt0 select" id="radio_value_1">
                               <a class="radio_a fl"><b></b></a><span class="fr ml5">是</span>
@@ -1028,32 +1252,32 @@
                     </div>
                   </div> 
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">户口所在地：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">户口所在地：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"   placeholder="省、市、镇/区、街道">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">联系电话：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">联系电话：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"   placeholder="请输入联系电话">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">现住址：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">现住址：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="省、市、镇/区、街道" >
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">工作单位：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">工作单位：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho" placeholder="请输入工作单位" >
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">职务：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">职务：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"   placeholder="职务">
                     </div>
                   </div>
@@ -1078,19 +1302,19 @@
           <div class="modal-body pb0">
               <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">学习单位：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">学习单位：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="请输入学习单位">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">学习内容：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">学习内容：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="请输入学习内容">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3   control-label">学习开始时间：</label>
+                    <label class="col-sm-12 col-lg-4   control-label">学习开始时间：</label>
                     <div class="col-sm-8">
                         <div class="input-group datetime"  data-wrap=true data-click-opens="false">
                         <input type="text" class="form-control" placeholder="date" data-input>
@@ -1101,7 +1325,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3   control-label">学习截止时间：</label>
+                    <label class="col-sm-12 col-lg-4   control-label">学习截止时间：</label>
                     <div class="col-sm-8">
                         <div class="input-group datetime"  data-wrap=true data-click-opens="false">
                         <input type="text" class="form-control" placeholder="date" data-input>
@@ -1113,20 +1337,20 @@
                   </div>
                   
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">担任职务：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">担任职务：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="担任职务" >
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">学习证明人：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">学习证明人：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho" placeholder="请输入学习证明人" >
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">备注：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">备注：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"   placeholder="备注">
                     </div>
                   </div>
@@ -1151,14 +1375,14 @@
           <div class="modal-body pb0">
               <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">奖励名称：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">奖励名称：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="请输入奖励名称">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">奖励类别：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">奖励类别：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="dropdown qkydropdown havechoose">
                           <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
                             <span class="value">请选择</span>
@@ -1178,8 +1402,8 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">奖励级别：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">奖励级别：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="dropdown qkydropdown havechoose">
                           <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
                             <span class="value">请选择</span>
@@ -1212,8 +1436,8 @@
                   </div>
                   
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">奖励等级：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">奖励等级：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="dropdown qkydropdown havechoose">
                           <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
                             <span class="value">请选择</span>
@@ -1232,20 +1456,20 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">奖励金额：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">奖励金额：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="请输入奖励金额">
                     </div>
                   </div>
                    
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">奖励文号：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">奖励文号：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"   placeholder="请输入奖励文号">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3   control-label">奖励学年度：</label>
+                    <label class="col-sm-12 col-lg-4   control-label">奖励学年度：</label>
                     <div class="col-sm-8">
                         <div class="input-group datetime"  data-wrap=true data-click-opens="false">
                         <input type="text" class="form-control" placeholder="date" data-input>
@@ -1256,14 +1480,14 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">颁奖单位：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">颁奖单位：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"   placeholder="请输入颁奖单位">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">奖励类型：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">奖励类型：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="dropdown qkydropdown havechoose">
                           <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
                             <span class="value">请选择</span>
@@ -1277,8 +1501,8 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">奖励方式：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">奖励方式：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="dropdown qkydropdown havechoose">
                           <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
                             <span class="value">请选择</span>
@@ -1316,8 +1540,8 @@
           <div class="modal-body pb0">
               <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">处分名称：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">处分名称：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <div class="dropdown qkydropdown havechoose">
                           <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
                             <span class="value">请选择</span>
@@ -1335,7 +1559,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3   control-label">处分日期：</label>
+                    <label class="col-sm-12 col-lg-4   control-label">处分日期：</label>
                     <div class="col-sm-8">
                         <div class="input-group datetime"  data-wrap=true data-click-opens="false">
                         <input type="text" class="form-control" placeholder="date" data-input>
@@ -1346,20 +1570,20 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">处分文号：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">处分文号：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="请输入处分文号">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">处分原因：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">处分原因：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho"  placeholder="请输入处分原因">
                     </div>
                   </div>
                   
                   <div class="form-group mt20">
-                    <label class="col-sm-3   control-label">处分撤销日期：</label>
+                    <label class="col-sm-12 col-lg-4   control-label">处分撤销日期：</label>
                     <div class="col-sm-8">
                         <div class="input-group datetime"  data-wrap=true data-click-opens="false">
                         <input type="text" class="form-control" placeholder="date" data-input>
@@ -1371,8 +1595,8 @@
                   </div>
                   
                   <div class="form-group">
-                    <label class="col-sm-3  control-label">处分撤销文号：</label>
-                    <div class="col-sm-8 ">
+                    <label class="col-sm-12 col-lg-4  control-label">处分撤销文号：</label>
+                    <div class="col-sm-12 col-lg-8">
                       <input type="text" class="form-control zb cadr_cho" >
                     </div>
                   </div>

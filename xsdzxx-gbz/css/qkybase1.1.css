@@ -263,8 +263,8 @@ footer.default{ background:#fff; }
 .table_ljchoose >tbody >tr.lj_bottom>td{ border-bottom:0;}
 
 /*信息显示表格改装*/
-.table_info{ border:1px solid #ddd; background:#fff; padding:0 5px;}
-.table_info .table>thead>tr>th{ background:#fbfbfb; border-bottom:0; padding:15px 0 15px 20px; font-size:20px; color:#737373;}
+.table_info{ border:1px solid #ddd; background:#fff;}
+.table_info .table>thead>tr>th,.info_title{ background:#fbfbfb; border-bottom:0; padding:15px 0 15px 20px; font-size:20px; color:#737373; font-weight: bold;}
 .table_info .table>thead>tr.info_tit>th{ font-size:16px; font-weight:normal; color:#333;}
 .table_info .table>tbody>tr>td{ padding:15px 0 15px 20px; font-size:16px; background:#fff; border-top:1px solid #ddd;}
 .table_info .table>tbody.info_txt>tr>td{ font-size:14px;}
@@ -277,6 +277,13 @@ footer.default{ background:#fff; }
 .table_info .table>tbody>tr>td>img{ display:block; margin:0 auto;}
 .add_{ cursor:pointer;}
 
+.info_row{font-size: ;}
+@media (max-width: 1199px){
+.info_row .col-sm-12.pl10 {
+    padding-left:15px !important;}
+}
+/* .info_row .col-sm-6.ptb15,.info_row .col-sm-12.ptb15{ padding-left: 20px;} */
+/*.info_row .col-sm-6.ptb15:last-child{border-bottom: none;} */
 
 /*学生六列列表模块*/
 .studer_box{ background:#fff; border:1px solid #ddd; margin:5px 0; padding:10px;}
@@ -508,6 +515,7 @@ footer.default{ background:#fff; }
 .mt15{ margin-top:15px;}
 .mt20{ margin-top:20px;}
 .mb0{ margin-bottom:0px!important;}
+.mb4{ margin-bottom:4px;}
 .mb5{ margin-bottom:5px;}
 .mb8{ margin-bottom:8px;}
 .mb10{ margin-bottom:10px;}
@@ -519,12 +527,14 @@ footer.default{ background:#fff; }
 .ml10{ margin-left:10px;}
 .ml15{ margin-left:15px !important;}
 .ml20{ margin-left:20px !important;}
+.ml30{ margin-left:30px;}
 .mr0{ margin-right:0px!important;}
 .mr5{ margin-right:5px;}
 .mr8{ margin-right:8px;}
 .mr10{ margin-right:10px;}
 .mr15{ margin-right:15px !important;}
 .mr20{ margin-right:20px;}
+.mlr5{margin-left:5px;margin-right:5px;}
 
 .pt0{ padding-top:0px!important;}
 .pa0{ padding:0px!important;}
@@ -546,6 +556,8 @@ footer.default{ background:#fff; }
 .pb15{ padding-bottom:15px!important;}
 .pb20{ padding-bottom:20px!important;}
 .pb100{ padding-bottom:100px!important;}
+.ptb10{padding-top:10px!important; padding-bottom:10px!important;}
+.ptb15{padding-top:15px!important; padding-bottom:15px!important;}
 .pl0{ padding-left:0px!important;}
 .pl5{ padding-left:5px!important;}
 .pl10{ padding-left:10px!important;}
@@ -748,3 +760,6 @@ a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check02{ background-color:#fff;border-color:#e4ab03;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check01:after{ border-color:#2baf2b;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check02:after{ border-color:#e4ab03;}
+/*设置扩展信息标题超出显示省略号*/
+  .info_row > .col-sm-6 .col-lg-4,.info_row > .col-sm-12 .col-lg-2, .info_row > .col-sm-6 .col-lg-6, .info_row > .col-sm-6 .col-lg-7, .info_row > .col-sm-6 .col-lg-8{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .info_row > .col-sm-6 .col-lg-8{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}

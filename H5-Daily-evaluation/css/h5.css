@@ -507,6 +507,9 @@ fieldset:after{right:0;}
 /*冷启动*/
 .nodata{ text-align:center; font-size:14px;padding:50% 20px 0;}
 div+.nodata{ padding:80px 20px 0;}
+@media all and (max-width:700px) {
+    .no-pic{ width: 60%;}
+    }
 /*商场*/
 .mall-top_txt{ bottom: 0px;width: 100%;top:auto;}
 .mall-top_txt02{top:50%; margin-top: -45px; width: 100%; text-align: center;}
@@ -604,8 +607,9 @@ div+.nodata{ padding:80px 20px 0;}
 
 /*扫脸*/
 .scan-tbg{ position: relative; background:linear-gradient(to right bottom,#09cbfb,#09acfb);padding-left:3%; padding-right: 3%; }
-.scan-tbg::after{position: absolute; content: ''; width: 100%; height: 12px;bottom:-12px;left: 0; background: url(../image/scan-tbg.png) bottom center no-repeat ; background-size:100% 100%; }
-.scan-mbg{ background: url(../image/scan_mbg.png) 0 center repeat-y;background-size: contain; padding-left:3%; padding-right: 3%;}
+/* .scan-tbg::after{position: absolute; content: ''; width: 100%; height: 12px;bottom:-12px;left: 0; background: url(../image/scan-tbg.png) bottom center no-repeat ; background-size:100% 100%; } */
+.scan-mbg{/* min-height: calc(100% - 170px); */  position: relative;background: url(../image/scan_mbg.png) 0 center repeat-y;background-size: contain; padding-left:3%; padding-right: 3%;}
+.scan-mbg::before{position: absolute; content: ''; width: 100%; height: 12px;top:0px;left: 0; background: url(../image/scan-tbg.png) bottom center no-repeat ; background-size:100% 100%; }
 .label-stu{ height: 36px; line-height: 36px; background-color: #fff; border-radius: 6px; padding-left:10px;padding-right:10px; width: calc( 100% - 10px );white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 @media all and (max-width:320px) {
     .label-stu{font-size: 14px;}

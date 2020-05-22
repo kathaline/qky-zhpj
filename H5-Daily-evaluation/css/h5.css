@@ -610,11 +610,11 @@ div+.nodata{ padding:80px 20px 0;}
 /* .scan-tbg::after{position: absolute; content: ''; width: 100%; height: 12px;bottom:-12px;left: 0; background: url(../image/scan-tbg.png) bottom center no-repeat ; background-size:100% 100%; } */
 .scan-mbg{/* min-height: calc(100% - 170px); */  position: relative;background: url(../image/scan_mbg.png) 0 center repeat-y;background-size: contain; padding-left:3%; padding-right: 3%;}
 .scan-mbg::before{position: absolute; content: ''; width: 100%; height: 12px;top:0px;left: 0; background: url(../image/scan-tbg.png) bottom center no-repeat ; background-size:100% 100%; }
-.label-stu{ height: 36px; line-height: 36px; background-color: #fff; border-radius: 6px; padding-left:10px;padding-right:10px; width: calc( 100% - 10px );white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.label-stu{  height: 36px; line-height: 36px; background-color: #fff; border-radius: 6px; padding-left:10px;padding-right:10px; width: /* calc( 100% - 10px ) */;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 @media all and (max-width:320px) {
     .label-stu{font-size: 14px;}
 }
-.scan-stu.po_r .po_ab_r{top:-8px; right:2px;}
+.scan-stu.po_r .po_ab_r{top:-8px; right:-8px;}
 .delete{ background-color: #f0f0f0;border-radius: 50%; width: 22px; height: 22px; text-align: center; line-height:1.2;}
 .delete:hover{background-color: #ff0300; }
 .delete:hover i.co_a3{color: #fff !important;}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../qky2.ico">
+    <title>全课云—学生电子信息</title>
+    <!-- Bootstrap 基础样式 CSS -->
+    <link href="../dist/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+    
+    <!--全课云基础样式覆盖-->
+    <link href="../css/qkybase1.1.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="qkybody">
+<nav class="navbar navbar-fixed-top navbar-default" role="navigation" id="qkynav">
+<div class="container-fluid po_r">
+<div class="nav_box clear fl">
+<div class="nav_logo">
+<img src="../images/nav_logo/logo.png" alt="">
+</div>
+<div class="navline"></div>
+<div class="nav_pjname">学生信息管理</div>
+<button type="button" class="navbar-toggle collapsed mr0" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><ul class="nav_other"><li class="dropdown"><a href="#" class="dropdown-toggle clear other_sel" data-toggle="dropdown"><div class="user_photo fl"><i class="qkyicon_14"></i></div><span class="fl school_name ml5">全课云运营学校</span><span class="fl other_name">张晓明</span><span class="caret"></span></a><ul class="dropdown-menu" role="menu" id="otherli"><li><a href="#">个人空间</a></li><li><a id="toOut">退出</a></li></ul></li></ul><div id="navbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav"><li><a href="index_basic-now.html">基础数据管理</a></li><li><a href="index.html">学生基本信息</a></li><li class="active"><a href="index_gl.html">学生扩展信息</a></li><li><a href="index_tj.html">学生信息统计</a></li><li><a href="index_manage.html">系统管理</a></li></ul>
+</div></div></nav>
+
+    <div class="container po_r mt15">
+          <div class="box-div mb15">
+            <div class="tit-div clear">
+              <div class="fl pt3">选择下载条件<span class=" fz_14 co_66">（暂不支持个性化组合年级/班级导出）</span></div>
+              <div class="fr fz_14">
+                <a class="pl0 pr0 btn" role="button" href="index_gl-export.html"><u><i class="qkyicon_14">&#xe621;</i>导出日志</u></a>
+                <a class="btn btn-default ml15" href="index_gl.html"><i class="qkyicon_14 mr5 ">&#xe604;</i>返回</a>
+              </div>
+            </div>
+              <div class="table-responsive bor-bno">
+                  <table class="table table_ljchoose mb0">
+                      <tbody>
+                          <tr>
+                              <td class="tit"><label>选择年级:</label></td>
+                              <td class="cont_a"><a>小班</a><a>中班</a><a class="active">大班</a></td>
+                                                
+                          </tr>
+                          <tr class="lj_bottom">
+                              <td class="tit"><label>选择班级:</label></td>
+                              <td class="cont_a"><a>大班（一）</a><a class="active">大班（二）</a><a>大班（三）</a></td>               
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+          <div class="box-div mb15">
+            <table width="" border="0" class="table table01 mb0">
+              <tbody>
+                <tr>
+                  <th width="50%" class=" pa15 fz_16">选择下载的内容</th>
+                  <th width="50%" class=" pa15 fz_16">已选择的内容</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul class="pl20 mt10 mb10">
+                      <li class="checkbox-input mb15">
+                        <a data-toggle="collapse" href="#menu11" aria-expanded="true" class=""><i class="triangle mr5"></i></a>
+                        <input class="checkbox_original" type="checkbox" name="tall" id="tall">
+                          <a class="checkbox_a "></a>
+                          <label for="tall">基本信息（一级）</label>
+                        <ul class="ul-menu collapse in" id="menu11" aria-expanded="true" style="">
+                          <li class="checkbox-input mt5">
+                               <input type="checkbox" name="tall-1" id="tall-1" class="checkbox_original">
+                               <a class="checkbox_a "></a>
+                               <label for="tall-1">学籍号</label>
+                          </li>
+                          <li class="checkbox-input mt5">
+                            <input class="checkbox_original" type="checkbox" name="tall-2" id="tall-2">
+                               <a class="checkbox_a "></a>
+                               <label for="tall-2">姓名</label>
+                          </li>
+                          <li class="checkbox-input mt5">
+                            <input class="checkbox_original" type="checkbox" name="tall-3" id="tall-3">
+                               <a class="checkbox_a "></a>
+                               <label for="tall-3">姓名</label>
+                          </li>
+                          <li class="checkbox-input mt5">
+                            <input class="checkbox_original" type="checkbox" name="tall-4" id="tall-4">
+                               <a class="checkbox_a "></a>
+                               <label for="tall-4">姓名（二级）</label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="checkbox-input mb15">
+                        <a data-toggle="collapse" href="#menu12" aria-expanded="false" class="collapsed"><i class="triangle mr5"></i></a>
+                        <input class="checkbox_original" type="checkbox" name="short" id="short">
+                               <a class="checkbox_a "></a>
+                               <label for="short">学生信息</label>
+                        <ul class="ul-menu collapse" id="menu12">
+                          <li class="checkbox-input mt5">
+                            <input class="checkbox_original" type="checkbox" name="short-1" id="short-1">
+                               <a class="checkbox_a "></a>
+                               <label for="short-1">班内学号</label>
+                          </li>
+                          <li class="checkbox-input mt5">
+                            <input class="checkbox_original" type="checkbox" name="short-2" id="short-2">
+                               <a class="checkbox_a "></a>
+                               <label for="short-2">入学年月</label>
+                          </li>
+                          <li class="checkbox-input mt5">
+                            <input class="checkbox_original" type="checkbox" name="short-3" id="short-3">
+                               <a class="checkbox_a "></a>
+                               <label for="short-3">入学方式</label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="checkbox-input mb15">
+                        <a data-toggle="collapse" href="#menu13" aria-expanded="false" class="collapsed non"><i class="triangle mr5"></i></a>
+                        <input class="checkbox_original" type="checkbox" name="family" id="family">
+                          <a class="checkbox_a "></a>
+                          <label for="family">家庭信息</label>
+                      </li>
+                      <li class="checkbox-input mb15">
+                        <a data-toggle="collapse" href="#menu14" aria-expanded="false" class="collapsed"><i class="triangle mr5"></i></a>
+                        <input class="checkbox_original" type="checkbox" name="checx" id="checx">
+                               <a class="checkbox_a "></a>
+                               <label for="checx">家庭经济信息</label>
+                        <ul class="ul-menu collapse" id="menu14">
+                          <li class="checkbox-input mt5">
+                            <input class="checkbox_original" type="checkbox" name="checx-1" id="checx-1">
+                               <a class="checkbox_a "></a>
+                               <label for="checx-1">家庭人口</label>
+                          </li>
+                          <li class="checkbox-input mt5">
+                            <input class="checkbox_original" type="checkbox" name="checx-2" id="checx-2">
+                               <a class="checkbox_a "></a>
+                               <label for="checx-2">赡养人口</label>
+                          </li>
+                          <li class="checkbox-input mt5">
+                            <input class="checkbox_original" type="checkbox" name="checx-3" id="checx-3">
+                               <a class="checkbox_a "></a>
+                               <label for="checx-3">家庭收入</label>
+                          </li>
+                          <li class="checkbox-input mt5">
+                              <input class="checkbox_original" type="checkbox" name="checx-3" id="checx-4">
+                                 <a class="checkbox_a "></a>
+                                 <label for="checx-4">家庭主要收入来源</label>
+                            </li>
+                        </ul>
+                      </li>
+                      <li class="checkbox-input mb15">
+                        <a data-toggle="collapse" href="#menu15" aria-expanded="false" class="collapsed non"><i class="triangle mr5"></i></a>
+                        <input class="checkbox_original" type="checkbox" name="study" id="study">
+                          <a class="checkbox_a "></a>
+                          <label for="study">学习简历</label>
+                      </li>
+                      <li class="checkbox-input mb15">
+                        <a data-toggle="collapse" href="#menu16" aria-expanded="false" class="collapsed non"><i class="triangle mr5"></i></a>
+                        <input class="checkbox_original" type="checkbox" name="honor" id="honor">
+                          <a class="checkbox_a "></a>
+                          <label for="honor">奖励信息</label>
+                      </li>
+                      <li class="checkbox-input mb15">
+                        <a data-toggle="collapse" href="#menu17" aria-expanded="false" class="collapsed non"><i class="triangle mr5"></i></a>
+                        <input class="checkbox_original" type="checkbox" name="punish" id="punish">
+                          <a class="checkbox_a "></a>
+                          <label for="punish">惩罚信息</label>
+                      </li>
+                      <li class="checkbox-input mb15">
+                        <a data-toggle="collapse" href="#menu18" aria-expanded="false" class="collapsed non"><i class="triangle mr5"></i></a>
+                        <input class="checkbox_original" type="checkbox" name="attachment" id="attachment">
+                          <a class="checkbox_a "></a>
+                          <label for="attachment">附件信息</label>
+                      </li>
+                    </ul>
+
+                  </td>
+                  <td>
+                      <div class="clear plr10 mt5">
+                        <div class="fl">
+                          <a href="#" class="btn btn-default"><i class=" qkyicon_14 mr5">&#xe6be;</i>全部删除</a>
+                        </div>
+                        <div class="fr pa5 co_99">
+                          共10条
+                        </div>
+                      </div>
+                      <div class="side-menu  mt10">
+                        <ul class="per-checked pl20 pr15">
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                            <li>
+                              学籍号
+                              <a href="#" class="fr delete"><i class="qkyicon_14">&#xe618;</i></a>
+                            </li>
+                          </ul>
+                      </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="box-div mb15">
+            <form class="form-horizontal pt15 pb15" role="form">
+              <div class="form-group pt10 ml15 mr15">
+                <label class="fl pt5 fz_16 fz_nwe">导出添加水印</label>
+                <div class="col-sm-6 pl15 has-feedback">
+                  <input class="form-control" type="text" placeholder="输入导出用途描述">
+                  <span class="form-control-feedback mr5 co_99" aria-hidden="true"><span>0</span>/12</span>
+                </div>
+              </div>
+              <div class=" page-header mt0"></div>
+              <div class=" text-center pb10">
+                <button type="button" class="btn btn-default">放弃导出</button>
+                <button type="button" class="btn btn-success ml15">确认导出</button>
+              </div>
+            </form>
+          </div>
+
+    </div>
+    <footer class="inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</footer>
+    <script src="../dist/jq/1.11.1/jquery.min.js"></script>
+    <!--模块化js-->
+    <script src="../dist/sea.js"></script>
+    <script>
+     seajs.use(["bootstrap/3.3.0/js/bootstrap.min","comjs/nav_add1.1","comjs/qkyicon_14","./../js/lj_navbar", "./../js/check",]);
+    </script>
+  </body>
+</html>

@@ -568,6 +568,8 @@ footer.default{ background:#fff; }
 .pr10{ padding-right:10px!important;}
 .pr15{ padding-right:15px!important;}
 .pr20{ padding-right:20px!important;}
+.plr10{padding-left:10px!important;padding-right:10px!important;}
+.plr15{padding-left:15px!important;padding-right:15px!important;}
 
 .co_33{ color:#333 !important;}
 .co_66{ color:#666 !important;}
@@ -746,8 +748,10 @@ a.checkbox_a.iblock{display: inline-block;}
 
 span.checkbox-input+.checkbox-input{ margin-left:20px;}
 .checkbox-input{ position:relative;}
-.checkbox-input .checkbox-input label{font-weight: normal;}
+.checkbox-input label{font-weight: normal;}
 .checkbox_original{opacity: 0;outline: none;position: absolute;margin: 0;width: 14px;height: 14px;z-index:1;}
+.checkbox-input  a.checkbox_a{ vertical-align: middle; margin-top: 0; margin-bottom: 2px;}
+.checkbox-input label{ margin-bottom: 0;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a{background:#2baf2b; border:1px solid #2baf2b;}
 a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff; border-left: 0; border-top: 0; height: 7px; left: 4px; position: absolute; top: 1px; transform: rotate(45deg) scaleY(0); width: 3px;transition: transform .15s ease-in .05s; transform-origin: center;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a:after {transform: rotate(45deg) scaleY(1);}
@@ -760,6 +764,18 @@ a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check02{ background-color:#fff;border-color:#e4ab03;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check01:after{ border-color:#2baf2b;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check02:after{ border-color:#e4ab03;}
+.checkbox-input a[data-toggle="collapse"] .triangle{display: inline-block;width:14px;  height:14px; position: relative;}
+.checkbox-input a[data-toggle="collapse"] .triangle::after{  content: ""; position: absolute;display: inline-block;width: 0;  height: 0;top:5px; left: 0;  border: 6px solid; border-color:#6f6f6f transparent transparent transparent ;}
+.checkbox-input a[data-toggle="collapse"].collapsed .triangle::after{top:2px;left:5px;transform:rotate(-90deg); -webkit-transform:rotate(-90deg);  -moz-transform:rotate(-90deg);}
+.checkbox-input a[data-toggle="collapse"].non .triangle::after{ border-color:#ccc transparent transparent transparent ;}
 /*设置扩展信息标题超出显示省略号*/
   .info_row > .col-sm-6 .col-lg-4,.info_row > .col-sm-12 .col-lg-2, .info_row > .col-sm-6 .col-lg-6, .info_row > .col-sm-6 .col-lg-7, .info_row > .col-sm-6 .col-lg-8{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
   .info_row > .col-sm-6 .col-lg-8{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.table01 tr:first-child td,.table01 tr:first-child th{ border-top: none;}
+.table01 tr th{ font-weight: normal;}
+.table01 tr td{ border-right: 1px solid #ddd;}
+.per-checked li{ padding: 5px;}
+.per-checked li:hover{ background-color:#f5f7fa;}
+.per-checked li .delete .qkyicon_14{display: inline-block; font-size: 12px; color: #fff;  width: 14px;  height: 14px;  line-height: 14px;  text-align: center;  border-radius: 50%;  background-color: #ccc;}
+.per-checked li .delete .qkyicon_14:hover { background-color:#dc4242;}

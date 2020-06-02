@@ -35,7 +35,7 @@
 <div class="container po_r mt15">
   <div class="box-div mb15">
     <div class="tit-div clear">
-      <div class="fl pt3">批量导入通讯录</div>
+      <div class="fl pt3">批量导入学生数据</div>
       <div class="fr"><a class="btn btn-default ml15" href="index_gl.html"><i class="qkyicon_14 mr5 "></i>返回</a></div>
     </div>
     <div class="ml15 mr15 pt15 pb15 border-b clear">
@@ -51,26 +51,26 @@
       <div class="fr pt3"><span class="iblock pt3">导入指引：</span><a href="#" class="btn bg_gray text-warning"><i class="qkyicon_14 mr5">&#xe61f;</i><u>首次导入必看</u></a></div>
     </div>
     <form class="form-horizontal pt15 pb15" role="form">
-      <div class="form-group ml15 mr15">
+      <div class="form-group pt10 ml15 mr15">
         <label class="fl pt5">第一步：</label>
-        <div class="fl pl15 pt5">
-          <a href="#" class="iblock"><i class="qkyicon_14 mr5">&#xe63c;</i>点击下载模板</a>
+        <div class="fl pl15">
+          <a href="#" class="btn btn-success"><i class="qkyicon_14 mr5">&#xe63c;</i>学生批量导入模板下载</a>
         </div>
       </div>
-      <div class="form-group ml15 mr15">
+      <div class="form-group pt10 ml15 mr15">
         <label class="fl pt5">第二步：</label>
         <div class="fl pl15">
           <div>
-            <a href="#" class="btn btn-success"><i class="qkyicon_14 mr5">&#xe613;</i>开始导入</a><span class="ml10 co_99">（请务必按着模板文件填写后导入，以免导入失败）</span>
+            <a href="#" class="btn btn-success-plain"><i class="qkyicon_14 mr5">&#xe613;</i>导入学生扩展信息</a><a href="#" class="btn btn-success-plain ml15"><i class="qkyicon_14 mr5">&#xe613;</i>导入学生照片信息</a>
           </div>
-          <div>
-            <a href="#" class="btn btn-success"><i class="qkyicon_14 mr5">&#xe613;</i>开始导入</a><span class="ml10 co_99">（请务必按着模板文件填写后导入，以免导入失败）</span>
+          <div class="pt15  co_99">
+            <i class="qkyicon_14 mr5">&#xe611;</i>1.如需导入全校学生信息，请先下载模板。2.如需导入照片，请按“班级名称-学生姓名”命名照片后，以压缩包文件导入。
           </div>
         </div>
       </div>
     </form>
     <div class="ml15 mr15 border-t">
-      <div class="pt15 pb15 border-b"><strong>导入记录</strong><a href="#" class="fr fz_14"><i class="qkyicon_14 mr5">&#xe604;</i>反馈问题</a></div>
+      <div class="pt15 pb15 border-b"><strong>导入日志查询</strong></div>
       <div class="table_info mb10 bor-no">
         <div class="table-responsive ">
           <table class="table mb0">
@@ -79,8 +79,9 @@
             <th>文件名</th>
             <th>导入时间</th>
             <th>操作人</th>
-            <th>导入结果</th>
-            <th>下载文件</th><th>操作</th></tr>
+            <th>处理结果</th>
+            <th>导入学生数</th>
+            <th>成功学生数</th><th>失败原因</th></tr>
           </thead>
           <tbody class="info_txt">
           <tr>
@@ -88,15 +89,17 @@
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td><span class="text-danger">失败</span></td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
-            <td><a href="" class="text-danger" title="" role="button" data-toggle="modal" data-target="#mytips"><i class="qkyicon_14 mr5">&#xe6b0;</i><u>失败原因</u></a></td>
+            <td>1319</td>
+            <td><span class="text-danger">0</span></td>
+            <td><a href="" class="text-danger" title="" role="button" data-toggle="modal" data-target="#mytips"><i class="qkyicon_14 mr5">&#xe6b0;</i><u>查看</u></a></td>
           </tr>
           <tr>
             <td>全课云学生导入.xlsx</td>
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td>完成</td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
+            <td>5454</td>
+            <td>5454</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
@@ -104,7 +107,8 @@
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td>完成</td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
+            <td>2553</td>
+            <td>2553</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
@@ -112,7 +116,8 @@
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td>完成</td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
+            <td>1364</td>
+            <td>1364</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
@@ -120,7 +125,8 @@
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td>完成</td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
+            <td>8749</td>
+            <td>8749</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
@@ -128,7 +134,8 @@
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td>完成</td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
+            <td>2110</td>
+            <td>2110</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
@@ -136,7 +143,8 @@
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td>完成</td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
+            <td>2312</td>
+            <td>2312</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
@@ -144,7 +152,8 @@
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td>完成</td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
+            <td>5461</td>
+            <td>5461</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
@@ -152,7 +161,8 @@
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td>完成</td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
+            <td>1239</td>
+            <td>1239</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
@@ -160,7 +170,8 @@
             <td>2018-12-14   15:25</td>
             <td>陈敏娟</td>
             <td>完成</td>
-            <td><a href="#" role="button"><i class="qkyicon_14">&#xe614;</i></a></td>
+            <td>3698</td>
+            <td>3698</td>
             <td>&nbsp;</td>
           </tr>
           </tbody>
@@ -197,7 +208,6 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-        <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#mydelete02">提交</button>
       </div>
     </div>
   </div>

@@ -58,6 +58,12 @@
       </div>
     </div>
   </div>
+  <div class="bor-top plr15">
+    <div class="row ma0 t-center fz_14">
+      <a class="col-50 ptb10" href="02input-d_edit.html"><i class=" iconfont fz_14 mr5 icon-bianji"></i>编辑</a>
+      <a class="col-50 ptb10 color-danger border-l open-popup" href="javascript:;" data-target="#tips"><i class=" iconfont fz_14 mr5 icon-shanchu"></i>删除</a>
+    </div>
+  </div>
 </div>
 <div class="weui-cells mt12">
   <div class="weui-cell pb5 co_99 fz_12">
@@ -116,6 +122,12 @@
       </div>
     </div>
   </div>
+  <div class="bor-top plr15">
+    <div class="row ma0 t-center fz_14">
+      <a class="col-50 ptb10" href="02input-d_edit.html"><i class=" iconfont fz_14 mr5 icon-bianji"></i>编辑</a>
+      <a class="col-50 ptb10 color-danger border-l open-popup" href="javascript:;" data-target="#tips"><i class=" iconfont fz_14 mr5 icon-shanchu"></i>删除</a>
+    </div>
+  </div>
 </div>
 <div class="weui-loadmore">
   <i class="weui-loading"></i>
@@ -125,21 +137,27 @@
   <div class="weui-tabbar weui-row zindex12">
     <a href="02input.html" class="weui-btn weui-btn_default weui-col-100">返回</a>
   </div>
+  <div id="tips" class='weui-popup__container popup-bottom zindex999'>
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal scan-pop">
+      <div class="modal-content bg_white">       
+          <div class="t-center pb20 fz_18">
+            <i class="weui-icon-warn v-texttop mr5"></i>确定删除？
+          </div>
+          <div class=" t-center pb20">
+            <a  href="javascript:;" id="show-toast" class="weui-btn weui-btn_mini fz_14 plr30 weui-btn_warn close-popup">删除</a>
+            <a href="javascript:;" class="weui-btn weui-btn_mini fz_14 plr30 weui-btn_default close-popup">取消</a>
+          </div>
+      </div>
+    </div>
+  </div>
+  
   <script>
-	$(function(){    
-		$("li>h5","#accor").bind("click",function(){
-			var li=$(this).parent();
-			if(li.hasClass("fold")){
-				li.removeClass("fold");
-				$(this).find(".weui-cell .iconfont").removeClass("icon-xia").addClass("icon-shang");
-				li.find(".foldContent").slideDown();
-			}else{
-				li.addClass("fold");
-				$(this).find(".weui-cell .iconfont").removeClass("icon-shang").addClass("icon-xia");
-				li.find(".foldContent").slideUp();
-			}
-		});
-	})
+    $(document).on("click", "#show-toast", function() {
+        $.toast("删除成功", function() {
+          console.log('close');
+        });
+      })
   </script>
 </body>
 </html>

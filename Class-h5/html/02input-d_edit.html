@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>评价录入</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<link rel="stylesheet" href="../css/class-h5.css">
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+</head>
+<body ontouchstart>
+<div class="weui-cell pb5 co_99 fz_12">
+  <div class="weui-cell__bd">
+    <h4 class="fz_nor fz_16"><span class="color-danger">迟到（-1）</span></h4>
+  </div>
+  <div class="weui-cell__hd">小一（6）班</div>
+</div>
+<div class="page__bd">
+    <div class="weui-panel">
+      <div class="weui-panel__hd">添加佐证<span class=" color-warning">（选填）</span></div>
+      <div class="weui-cell">
+
+        <div class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="请输入文本" rows="10"></textarea>
+          <div class="weui-textarea-counter"><span>0</span>/300</div>
+        </div>
+      </div>
+      <div class="weui-cell">
+        <div class="weui-cell__bd fz_15 t-left">
+          <div class="weui-uploader">
+            <div class="weui-uploader__hd">
+              <p class="weui-uploader__title">图片上传</p>
+              <div class="weui-uploader__info">3/9</div>
+            </div>
+            <div class="weui-uploader__bd">
+              <ul class="weui-uploader__files" id="uploaderFiles">
+                <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(../image/pic_160.png)">
+                  <div class="po_ab_r"><a class="iblock color-error zindex3 pl5 pb5"><i class="iconfont icon-shanchu1 fz_18"></i></a></div>
+                  <div class="weui-uploader__file-content">
+                    <i class="weui-icon-warn"></i>
+                  </div>
+                </li>
+                <li class="weui-uploader__file" style="background-image:url(../image/teacher_tx.jpg)">
+                  <div class="po_ab_r"><a class="iblock color-error zindex3 pl5 pb5"><i class="iconfont icon-shanchu1 fz_18"></i></a></div>
+                </li>
+                <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(../image/teacher_tx.jpg)">
+                  <div class="po_ab_r"><a class="iblock color-error zindex3 pl5 pb5"><i class="iconfont icon-shanchu1 fz_18"></i></a></div>
+                  <div class="weui-uploader__file-content">100%</div>
+                </li>
+              </ul>
+              <div class="weui-uploader__input-box bg_white">
+                <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="weui-panel">
+      <div class="weui-panel__hd">关联学生<span class=" color-warning">（选填）</span></div>
+      <div class="weui-cell pt0 pr5">
+        <div class="clear">
+          <div class="fl fz_0 t-center mr15 mt12 po_r pt5">
+            <div class="po_ab_r"><a class="iblock color-error zindex3 pl5"><i class="iconfont icon-shanchu1 fz_18"></i></a></div>
+            <img class="img40 img-bor radius-cirle" src="../image/u01.jpg" alt="">
+            <div class="fz_10 co_66">王洋洋</div>
+          </div>
+          <div class="fl fz_0 t-center mr15 mt12 po_r pt5">
+            <div class="po_ab_r"><a class="iblock color-error zindex3 pl5"><i class="iconfont icon-shanchu1 fz_18"></i></a></div>
+            <img class="img40 img-bor radius-cirle" src="../image/yq.jpeg" alt="">
+            <div class="fz_10 co_66">易烊千玺</div>
+          </div>
+          <div class="fl fz_0 t-center mr15 mt12 po_r pt5">
+            <div class="po_ab_r"><a class="iblock color-error zindex3 pl5"><i class="iconfont icon-shanchu1 fz_18"></i></a></div>
+            <img class="img40 img-bor radius-cirle" src="../image/u03.jpg" alt="">
+            <div class="fz_10 co_66">古力娜扎</div>
+          </div>
+          <div class="fl fz_0 t-center mr15 mt12 po_r pt5">
+            <div class="po_ab_r"><a class="iblock color-error zindex3 pl5"><i class="iconfont icon-shanchu1 fz_18"></i></a></div>
+            <img class="img40 img-bor radius-cirle" src="../image/u01.jpg" alt="">
+            <div class="fz_10 co_66">王洋洋</div>
+          </div>
+          <div class="fl fz_0 t-center mr15 mt12 po_r pt5">
+            <div class="po_ab_r"><a class="iblock color-error zindex3 pl5"><i class="iconfont icon-shanchu1 fz_18"></i></a></div>
+            <img class="img40 img-bor radius-cirle" src="../image/yq.jpeg" alt="">
+            <div class="fz_10 co_66">易烊千玺</div>
+          </div>
+          <div class="fl fz_0 t-center mr15 mt12 po_r pt5">
+            <div class="po_ab_r"><a class="iblock color-error zindex3 pl5"><i class="iconfont icon-shanchu1 fz_18"></i></a></div>
+            <img class="img40 img-bor radius-cirle" src="../image/u03.jpg" alt="">
+            <div class="fz_10 co_66">古力娜扎</div>
+          </div>
+          <div class="fl fz_0 t-center mr15 mt12 po_r pt5 edit-add_stu"><a href="02input-add_stu.html" class="iblock ptb5"><img src="../image/stu-add.png" class="img40"></a></div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="pb50"></div>
+  <div class="weui-flex weui-tabbar weui-row zindex12">
+    <div class="weui-flex__item"><div class="placeholder "><a href="02input-detail.html" class="weui-btn weui-btn_default bg_white">返回</a></div></div>
+    <div class="weui-flex__item"><div class="placeholder"><a href="02input-detail.html" class="weui-btn weui-btn_plain-primary">保存提交</a></div></div>
+  </div>
+</body>
+</html>

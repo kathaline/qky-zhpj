@@ -773,6 +773,7 @@ a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff
 /*设置扩展信息标题超出显示省略号*/
   .info_row > .col-sm-6 .col-lg-4,.info_row > .col-sm-12 .col-lg-2, .info_row > .col-sm-6 .col-lg-6, .info_row > .col-sm-6 .col-lg-7, .info_row > .col-sm-6 .col-lg-8{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
   .info_row > .col-sm-6 .col-lg-8{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .info_row > .col-sm-6 .col-lg-4.pt5~ .col-lg-8{ overflow: inherit;}
 
 .table01 tr:first-child td,.table01 tr:first-child th{ border-top: none;}
 .table01 tr th{ font-weight: normal;}

@@ -863,3 +863,10 @@ label { font-weight: normal;}
 .badge.bg-red{ border:1px solid #f37f75;}
 .badge.bg-grn{ border:1px solid #73ceaf;}
 .badge.bg-red,.badge.bg-bgray,.badge.bg-grn{ min-width:80px;}
+
+/*下拉搜索*/
+.select2-container--default .select2-search--dropdown .select2-search__field{ border-radius: 4px; }
+.form-horizontal .select2-container--default .select2-selection--single{height: 30px;border-color: #ccc;}
+.form-horizontal .select2-container--default .select2-selection--single .select2-selection__arrow b{ font-weight: normal; border: none;right: 6px; margin: 0; left: auto; height: auto; width: auto;  top: 4px;  font-family: "icon_class" !important; font-size: 16px;  font-style: normal;  -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.form-horizontal .select2-container--default .select2-selection--single .select2-selection__arrow b:before{ content: "\e60e";}
+.form-horizontal .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b:before{ content: "\e600";}

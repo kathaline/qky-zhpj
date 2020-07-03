@@ -51,7 +51,7 @@
 *{word-wrap:break-word;word-break:break-all; }
 h3{ font-weight:normal; font-size:14px;}
 /*实线框-表单*/
-.bor_all{ border:1px solid #d8d8d8;}
+.bor_all{ border:1px solid #e9e9e9;}
 .bor_all.rad4{ border:1px solid #ccc;padding:0 !important; position:relative;}
 .bor_all .bor_no{ border:none;}
 .bor_all.mark_txtare{ height:auto !important; padding:0 !important;}
@@ -908,7 +908,7 @@ span.search{ display:inline-block;}
 .stuhon_pic .edit_p-btn,.stuhon_pic .edit_p-btn a{ width:100%; height:30px; line-height:30px;}
 .hon_data.stu_data .mark_txtare{ width:560px; padding:3px; line-height:24px; border:1px solid #ccc;}
 
-table.formbox_one{ width:94%;margin-bottom:10px;}
+table.formbox_one{ width:96%;margin-bottom:10px;}
 table.formbox_one td{ padding:10px 0; font-size:14px; line-height:28px;}
 table.formbox_one .sel_edit,table.formbox_one .span-up{ width:100% !important;}
 table.formbox_one .span-up .txt{ width:52%;}
@@ -1335,3 +1335,12 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .dropdown-menu > li .dw-tit{ display:inline-block; color:#999; padding-left:10px; padding-right:10px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 
 .form-control-feedback{ height:30px; line-height:30px;}
+
+/*实践活动-图片列表等级角标*/
+.po_rank{position: absolute; left: -5px;top:5px;}
+.l_rank{ position: relative; display: inline-block;background-color:rgba(70,209,255,0.75);color: #fff;  padding: 4px 0px 4px 15px; font-size: 13px;}
+.l_rank:before,.l_rank:after{ position: absolute;content:  " ";}
+.l_rank:before{left: 0; border-width: 5px 0 0 5px;border-color: #017da6 transparent transparent transparent;  border-style: solid;bottom: -5px;}
+.l_rank:after{height: 100%; width: 16px;right: -16px;top:0; background-color:rgba(70,209,255,0.75);  border-radius: 0 100px 100px 0;}
+.sjhd_lists .po_rank~ a:hover{ text-decoration: none;}
+.sjhd_lists .po_rank~ a:hover .sjhd_t{ color: #666;}

@@ -1,0 +1,247 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>学生综合素质评价</title>
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<!-- Bootstrap 基础样式 CSS -->
+<link href="../dist/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--框架css-->
+<link href="../css/frame_type_1.0.css" rel="stylesheet" type="text/css"/>
+
+<!-- HTmar_l5 shim and Respond.js for IE8 support of HTmar_l5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/htmar_l5shiv/3.7.2/htmar_l5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--附加css-->
+<link href="../css/stu_judge.css" rel="stylesheet" type="text/css"/>
+<link href="../css/select2.min.css" rel="stylesheet">
+<script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
+
+<!--js-->
+<script src="../dist/sea.js"></script>
+<script src="../dist/seaconfig.js"></script>
+<script>
+ seajs.use(["bs","com/radio_checkbox1.1","com/dropdown_havevalue"],function(){
+ });
+ 
+  $(document).ready(function () {
+     $(".sel-single").select2({
+         width: "100%", //设置下拉框的宽度
+         placeholder: "请选择",
+     });
+ });
+</script>
+</head>
+
+<body>
+<!--顶部-->
+<div class="div-rgt">
+  <a href="" class="cd-feedback"><i class="qkyicon">&#xe6af;</i><p>反馈</p></a>
+  <a href="#0" class="cd-top"><i class="qkyicon">&#xe6a5;</i></a>
+</div>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="qkynav"><div class="container-fluid po_r">
+        <div class="nav_box clear fl"><a class="navbtn fl"><i class="qkyicon_12 fz_18"></i></a><div class="nav_logo"><img src="../images/nav_logo/logo.png" alt=""></div><div class="navline"></div><div class="nav_pjname">学生综合素质评价</div><button type="button" class="navbar-toggle collapsed mr0" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><ul class="nav_other"><li><a href="#"><i class="qkyicon_14 fz_18"></i></a></li><li class="dropdown"><a href="#" class="dropdown-toggle clear other_sel" data-toggle="dropdown"><div class="user_photo fl"><img src="../images/tx01.png"></div><span class="fl other_name">杨鹏</span><span class="caret"></span></a><ul class="dropdown-menu" role="menu" id="otherli"><li><a href="#">个人设置</a></li><li><a id="toOut">退出</a></li></ul></li></ul><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="01teacher-data.html">学生信息</a></li><li><a href="02(管理教师)学生评价-日常评价操作.html">学生评价</a></li><li><a href="03(管理员)学业水平-成绩信息管理.html">学业水平</a></li><li><a href="04体质健康.html">体质健康</a></li><li><a href="05(管理员)个人荣誉-1.html">个人荣誉</a></li><li class="active"><a href="06(管理员)实践活动-汇总1.html">实践活动</a></li><li><a href="07(管理员)-报告书列表.html">学期报告书</a></li><li><a href="08(管理教师)-学生列表.html">成长档案袋</a></li><li><a href="">更多</a></li></ul></div><div class="nav_more row"><div class="nav_more_left col-md-7 col-sm-6 col-xs-12"><div class="scroll_box" id="moreli_box"><div class="nav_more_lli row"><div class="col-md-2"><svg class="color_icon" aria-hidden="true"><use xlink:href="#icon-zhonghesuzhipingjia"></use></svg></div><div class="col-md-10"><h5>综合评价</h5><div class="li_a"><a href="#">学生评价</a><a href="#">学业水平</a><a href="#">学期报告书</a></div></div></div><div class="nav_more_lli row"><div class="col-md-2"><svg class="color_icon" aria-hidden="true"><use xlink:href="#icon-xiaoyuanzhifu"></use></svg></div><div class="col-md-10"><h5>校园支付</h5><div class="li_a"><a href="#">个人办公</a><a href="#">行政办公</a><a href="#">流程审批</a></div></div></div><div class="nav_more_lli row"><div class="col-md-2"><svg class="color_icon" aria-hidden="true"><use xlink:href="#icon-zhihuijiaoxue"></use></svg></div><div class="col-md-10"><h5>智慧教学</h5><div class="li_a"><a href="#">个人办公</a><a href="#">行政办公</a><a href="#">流程审批</a></div></div></div></div><div class="navline"></div></div><div class="nav_more_right col-md-5 col-sm-6 col-xs-12"><div class="scroll_box"><div class="nav_more_lli clear pr0"><h5>常用功能</h5><div class="li_a" id="common"><a href="#">个人办公</a><a href="#">行政办公</a><a href="#">流程审批</a></div></div><div class="nav_more_lli clear pr0"><h5>最近访问</h5><div class="li_a" id="lately"><a href="#">个人办公</a><a href="#">行政办公</a><a href="#">流程审批</a></div></div></div></div></div></div>
+    </div>
+<div class="qky_content">
+    <div class="cont_tit bor_bno">
+        <div class="fr"><a href="06(管理员)实践活动-汇总1.html" class="bg_blue"><i class="qkyicon_14">&#xe604;</i>返回</a></div>
+        <div class="fl"><h3><i class="qkyicon">&#xe80c;</i>写实记录录入</h3>
+        </div>
+    </div>
+    <form class="form-horizontal reset">
+        <div class="cont-wrap">
+            <div class="row pad_tb10 mar_0 pad_l20">
+                <div class="col-sm-9 pad_l0">
+                    <div class="bor_lb pad_l10 mar_t10 mar_b20 fz_2">学生信息</div>
+                    <div class="col-sm-6 pad_0 mar_b20">
+                        <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>学年学期：</label>
+                        <div class="col-sm-9 pad_l0">
+                            <select class="form-control">
+                                <option>2016-2017学年第一学期</option>
+                                <option>2016-2017学年第二学期</option>
+                                <option>2019-2020学年第一学期</option>
+                                <option selected="">2019-2020学年第二学期</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pad_0 mar_b20">
+                        <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>对应年级：</label>
+                        <div class="col-sm-9 pad_l0">
+                            <select class="form-control">
+                                <option>请选择</option>
+                                <option>一年级</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pad_0 mar_b20">
+                        <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>对应班级：</label>
+                        <div class="col-sm-9 pad_l0">
+                            <select class="form-control">
+                                <option>请选择</option>
+                                <option>一年级（6）班</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pad_0 mar_b20">
+                        <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>学生姓名：</label>
+                        <div class="col-sm-9 pad_l0">
+                            <select class="form-control sel-name">
+                                <option value="">请选择</option>
+                                <option value="理查德">理查德</option>
+                                <option value="佩奇">佩奇</option>
+                                <option value="乔治">乔治</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="stuhon_pic"><img src="../images/act0.jpg"/><div class="edit_p-btn"><a href="#">上传活动照片<input type="file"></a> </div></div>
+                </div>
+        </div>
+        </div>
+        <div class="cont-wrap mar_t15">
+        <div class="cont_tit pad_tb15">
+            <div class="fl"> <label class="mar_bno fz_2"><strong class="co_r">*</strong>活动类型：：</label></div>
+            <div class="col-sm-3">
+            <select class="form-control">
+                <option selected="">请选择</option>
+                <optgroup label="思想品德">
+                    <option value="e8fc68042d01480592f6f34b1d1c8658">社团活动</option>
+                    <option value="00f1308a30e24e01a1038fbe37b4dd39">党群活动</option>
+                    <option value="bc5b5c26deb34f3bb9bf702369360a72">公益活动</option>
+                </optgroup>
+                <optgroup label="学业水平">
+                    <option value="e8fc68042d01480592f6f34b1d1c8658">研究学习</option>
+                    <option value="00f1308a30e24e01a1038fbe37b4dd39">其他</option>
+                </optgroup>
+            </select>
+            </div>
+            <span class="co_999 mar_l10">为了保障数据的准确性，请正确选择“活动类型”。</span>
+        </div>
+        <div class="row mar_0 pad_lr20">
+           <div class="bor_lb pad_l10 mar_tb20 fz_2">活动信息</div>
+           <div class="col-sm-6 pad_0 mar_b20">
+               <label class="col-sm-4 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>活动名称：</label>
+               <div class="col-sm-8 pad_l0">
+                   <div class="has-feedback">
+                       <input type="text" class="form-control" placeholder="">
+                       <span class="form-control-feedback co_999" aria-hidden="true"><span class="co_333">0</span>/18</span>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-6 pad_0 mar_b20">
+               <label class="col-sm-4 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>起止时间：</label>
+               <div class="col-sm-8 pad_l0">
+               <div class="col-sm-5 pad_0">
+                   <div class="has-feedback">
+                       <input type="text" class="form-control" placeholder="" onclick="WdatePicker()">
+                       <span class="form-control-feedback co_999" aria-hidden="true"><i class="qkyicon fz_1"></i></span>
+                   </div>
+               </div>
+               <div class="col-sm-2 text-center pad_t5">至</div>
+               <div class="col-sm-5 pad_0">
+                   <div class="has-feedback">
+                       <input type="text" class="form-control" placeholder="" onclick="WdatePicker()">
+                       <span class="form-control-feedback co_999" aria-hidden="true"><i class="qkyicon fz_1"></i></span>
+                   </div>
+               </div>
+               </div>
+           </div>
+           <div class="col-sm-6 pad_0 mar_b20">
+               <label class="col-sm-4 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>活动时长：</label>
+               <div class="col-sm-8 pad_l0">
+                   <div class="has-feedback">
+                       <input type="text" class="form-control" placeholder="">
+                       <span class="form-control-feedback co_999" aria-hidden="true">小时</span>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-6 pad_0 mar_b20">
+               <label class="col-sm-4 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>主办/组织单位：</label>
+               <div class="col-sm-8 pad_l0">
+                   <div class="has-feedback">
+                       <input type="text" class="form-control" placeholder="">
+                       <span class="form-control-feedback co_999" aria-hidden="true"><span class="co_333">0</span>/18</span>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-6 pad_0 mar_b20">
+               <label class="col-sm-4 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>活动级别：</label>
+               <div class="col-sm-8 pad_l0">
+                   <select class="form-control">
+                       <option>请选择</option>
+                       <option>国家级</option>
+                   </select>
+               </div>
+           </div>
+           <div class="col-sm-6 pad_0 mar_b20">
+               <label class="col-sm-4 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>考核情况：</label>
+               <div class="col-sm-8 pad_l0">
+                   <div class="radio-box">
+                       <label class="input-box clear" id="radio_value_11">
+                           <input type="radio" name="cheakRadios" checked="checked" class="inputradio">
+                           <a class="radio_a fl"><b></b></a><span class="fr mar_l5">合格</span>
+                       </label>
+                       <label class="input-box clear" id="radio_value_12">
+                           <input type="radio" name="cheakRadios" class="inputradio">
+                           <a class="radio_a fl"><b></b></a><span class="fr mar_l5">不合格</span>
+                       </label>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-12 pad_0 mar_b20">
+               <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>岗位：</label>
+               <div class="col-sm-10 pad_l0">
+                   <div class="">
+                       <input type="text" class="form-control" placeholder="">
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-12 pad_0 mar_b20">
+               <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r">*</strong>活动内容：</label>
+               <div class="col-sm-10 pad_l0">
+                   <div class="bor_all rad4 pad_tb5">
+                       <textarea cols="" rows="2" class="wid-100 bor_no"></textarea>
+                       <div class="text-right co_999 pad_r5"><span class="co_333">0</span>/120</div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-12 pad_0 mar_b20">
+               <label class="col-sm-2 text-right pad_t5 pad_l0">附件：</label>
+               <div class="col-sm-10 pad_l0">
+                   <span class="span-up">
+                           <form action="" method="post" enctype="multipart/form-data">
+                            <input type="text" name="textfield" id="textfield" class="txt">
+                            <input type="button" class="btn" value="浏览...">
+                            <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+                            <input type="submit" name="submit" class="btn btn-info" value="上传">
+                            </form>
+                   </span>
+               </div>
+           </div>
+       </div>
+            <div class="text-center pad_tb20 mar_tb15">
+                <a class="btn btn-primary">确认提交</a>
+                <a class="btn btn-default">取消</a>
+            </div>
+       </div>
+    </form>
+</div>
+<div class="footer open inverse">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<!--下拉搜索-->
+<script language="JavaScript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/select2.full.min.js"></script>
+<script>
+  $(document).ready(function () {
+     $(".sel-name").select2({
+         width: "100%", //设置下拉框的宽度
+         placeholder: "请选择",
+     });
+ });
+</script>
+
+</body>
+</html>

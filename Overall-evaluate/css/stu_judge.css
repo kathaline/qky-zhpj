@@ -1338,10 +1338,10 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 
 /*实践活动-图片列表等级角标*/
 .po_rank{position: absolute; left: -5px;top:5px;}
-.l_rank{ position: relative; display: inline-block;background-color:rgba(70,209,255,0.75);color: #fff;  padding: 4px 0px 4px 15px; font-size: 13px;}
+.l_rank{ position: relative; display: inline-block;background-color:#3ebbf3;color: #fff;  padding: 4px 0px 4px 13px; font-size: 13px;letter-spacing: 2px;}
 .l_rank:before,.l_rank:after{ position: absolute;content:  " ";}
 .l_rank:before{left: 0; border-width: 5px 0 0 5px;border-color: #017da6 transparent transparent transparent;  border-style: solid;bottom: -5px;}
-.l_rank:after{height: 100%; width: 16px;right: -16px;top:0; background-color:rgba(70,209,255,0.75);  border-radius: 0 100px 100px 0;}
+.l_rank:after{height: 100%; width: 13px;right: -13px;top:0; background-color:#3ebbf3;  border-radius: 0 100px 100px 0;}
 .sjhd_lists .po_rank~ a:hover{ text-decoration: none;}
 .sjhd_lists .po_rank~ a:hover .sjhd_t{ color: #666;}
 

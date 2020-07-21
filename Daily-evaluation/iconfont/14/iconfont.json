@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2293504",
+      "name": "第一名皇冠-07",
+      "font_class": "diyiminghuangguan-",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "7024317",
+      "name": "撤销",
+      "font_class": "chexiao1",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
       "icon_id": "1516893",
       "name": "导出 #8f8f8f & 14px",
       "font_class": "daochufffpx",

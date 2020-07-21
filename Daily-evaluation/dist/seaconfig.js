@@ -9,7 +9,7 @@ seajs.config({
 	/****插件***/
 	'cal_fp':'flatpickr/flatpickr',//日历插件fp
 	'ec':'echarts/3.0/echarts.common.min',//数据视图插件ec
-	
+	'dw':'com/dropdown_havevalue',
   },
 
   // 路径配置

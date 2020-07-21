@@ -37,12 +37,6 @@ footer.inverse{ background:#515151;}
 footer.default{ background:#fff; }
 
 
-/*底部规范*/
-.footer{ position: absolute; bottom:0; padding:15px 0; text-align:center; left:0; width:100%; background:none; color:#737373;z-index: 1001;}
-.footer.open{ display:block;}
-.footer.inverse{ background:#515151;}
-.footer.default{ background:#fff; }
-
 /*图标字体-导航部分*/
 @font-face {
   font-family: 'qkyicon_mian';  /* project id 202483 */
@@ -123,7 +117,6 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .nav_logo img{ width:50px; margin:12px auto; display:block; height:25px;}
 .navline{width :1px;height:34px;  float:left; margin-top:8px;}
 .nav_pjname{ float:left; line-height:20px; padding:15px 0; font-size:16px;font-weight: bold; margin:0 0 0 20px;}
-.navbar-nav > li > a { height:49px;}
 
 /*消息*/
 .nav_news_box{ position:relative;}
@@ -320,7 +313,8 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .qkydropdown .dropdown-menu{ width:100%; max-height:440px; overflow-y:auto;}
 .maxh{ max-height:200px; overflow-y:auto;}
 .dropdown-menu > li > a{ padding-left:10px; padding-right:10px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-
+.qkydropdown .btn .iconfont,.qkydropdown .btn .glyphicon{position: absolute; right: 6px; top: 8px; border: 0; width: 14px; height: 14px; text-align: center; line-height: 14px;}
+.qkydropdown.open .btn .glyphicon-chevron-down:before{content: "\e113";}
 /*单选改装*/
 .radio label{ line-height:30px; height:30px;}
 .radio_a{ display:block; width:14px; height:14px; border:1px solid #ccc; border-radius:50%; background:#ffffff; margin-top:8px; }
@@ -401,8 +395,10 @@ padding:10px;}
 .table >tbody>tr>td .qkyicon_14,.table >tbody>tr>td a.icon_class{ color:#21a2db; text-decoration:none;}
 .table>tbody>tr>td .qkyicon_14:hover,.table >tbody>tr>td .icon_class:hover{ color:#0288d1;}
 .table >tbody>tr>td a:focus { outline: 0;}
-
-
+.table-responsive._sm .table.bg-no>tbody>tr>td.small-nw{ min-width:36px; padding-left: 5px; padding-right: 5px;}
+.table >tbody>tr>td .qkyicon_14.text-warning{    color: #f80;}
+.table-responsive._sm{  width: 100%;  overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar;}
+.table-responsive._sm .table>tbody>tr>td{ min-width:90px;}
 /*禁区父类*/
 .no_open{ opacity:0.6; background:#f1f1f1;} 
 .no_open a.checkbox_a{background:#ffffff; border:1px solid #dadada;}
@@ -636,3 +632,41 @@ transition: opacity 0.3s linear, right 0.3s ease-out;
 
 /*学生-你需要做*/
 .step-stu{ position:relative; display:block; max-width:100%;-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .05);box-shadow: 0 5px 10px rgba(0, 0, 0, .05);}
+/*评价统计*/
+.media-left.statis-l{ min-width:80px;}
+.sta-chose .iblock{ width:74px; padding-top:5px; padding-bottom:5px; overflow:hidden;}
+.sta-chose .iblock.current{ position:relative; background-color:#f6f6f6;}
+.sta-chose .iblock.current.bg-info{background-color: #d9edf7;}
+.sta-chose .iblock.current:after{    content: "当前"; position:absolute; right:-14px;top:0; font-size:12px;transform: rotate(42deg) scale(0.8);background-color: #edb757; width:47px; color:#fff;}
+.sta-chose a.iblock{ cursor:pointer; color:#666;}
+.sta-chose .bg-info{ color:#333 !important;}
+.sta-chose .checkbox-qky{ width:110px; margin-top:10px; margin-bottom:10px;}
+.sta-minw .table-responsive._sm .table>tbody>tr>td:nth-of-type(2){ min-width:134px;}
+/*教师排名*/
+.sta-tcher img{ width:56px; height:56px; border:1px solid #e0e0e0;}
+.table.ver-middle th,.table.ver-middle td{ vertical-align:middle;}
+/*复选*/
+.checkbox-qky.checkbox-input{ display: inline-block;}
+.checkbox-input{ position:relative;}
+.checkbox-input label{font-weight: normal;}
+.checkbox_original{opacity: 0;outline: none;position: absolute;margin: 0;width: 14px;height: 14px;z-index:1;}
+.checkbox-input  a.checkbox_a{ vertical-align: middle; margin-top: 0; margin-bottom: 2px;display: inline-block;}
+.checkbox-input label{ margin-bottom: 0;}
+.checkbox-input .checkbox_original:checked~ a.checkbox_a{background: #27b0f2;  border: 1px solid #27b0f2;}
+a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff; border-left: 0; border-top: 0; height: 7px; left:6px; position: absolute; top: 5px; transform: rotate(45deg) scaleY(0); width: 3px;transition: transform .15s ease-in .05s; transform-origin: center;}
+.checkbox-input .checkbox_original:checked~ a.checkbox_a:after {transform: rotate(45deg) scaleY(1);}
+.checkbox-input .checkbox_original:indeterminate~ a.checkbox_a{background:#2baf2b; border:1px solid #2baf2b;}
+.checkbox-input .checkbox_original:indeterminate~ a.checkbox_a:before {content: ""; position: absolute; display: block; background-color: #fff; height: 2px; transform: scale(.6);left: 0; right: 0;top: 5px;}
+.checkbox-input .checkbox_original:indeterminate~ a.checkbox_a i{ color:#2baf2b;}
+.checkbox-input.disabled { pointer-events: none; cursor: not-allowed; filter: alpha(opacity=50); -webkit-box-shadow: none; box-shadow: none; opacity: .5;}
+.disabled a.checkbox_a{background:#ffffff; border:1px solid #dadada;}
+.checkbox-input .checkbox_original:checked~ a.checkbox_a.check01{ background-color:#fff;}
+.checkbox-input .checkbox_original:checked~ a.checkbox_a.check02{ background-color:#fff;border-color:#e4ab03;}
+.checkbox-input .checkbox_original:checked~ a.checkbox_a.check01:after{ border-color:#2baf2b;}
+.checkbox-input .checkbox_original:checked~ a.checkbox_a.check02:after{ border-color:#e4ab03;}
+.checkbox-input a[data-toggle="collapse"] .triangle{display: inline-block;width:14px;  height:14px; position: relative;}
+.checkbox-input a[data-toggle="collapse"] .triangle::after{  content: ""; position: absolute;display: inline-block;width: 0;  height: 0;top:5px; left: 0;  border: 6px solid; border-color:#6f6f6f transparent transparent transparent ;}
+.checkbox-input a[data-toggle="collapse"].collapsed .triangle::after{top:2px;left:5px;transform:rotate(-90deg); -webkit-transform:rotate(-90deg);  -moz-transform:rotate(-90deg);}
+.checkbox-input a[data-toggle="collapse"].non .triangle::after{ border-color:#ccc transparent transparent transparent ;}
+
+.dropdown-menu.download-menu{ width:auto; min-width:268px; right:0; left:auto;}

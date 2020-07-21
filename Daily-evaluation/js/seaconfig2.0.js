@@ -54,32 +54,3 @@ seajs.config({
     'locale': 'zh-cn'
   }
 });
-
-var opt={
-	navli_j:[
-			{name:"首页",attrcont:"href='01index.html'",isactive:false},
-			{name:"学生评价",attrcont:"href='02index_pj.html'",isactive:false},
-			{name:"学业水平",attrcont:"href='03index_xy.html'",isactive:false},
-			{name:"身心健康",attrcont:"href='04index_jk.html'",isactive:false},
-			{name:"艺术素养",attrcont:"href='05index_ys.html'",isactive:false},
-			{name:"社会实践",attrcont:"href='06index_sj.html'",isactive:false},
-			{name:"成长档案袋",attrcont:"href='07index_da.html'",isactive:false},
-	]
-}
-
-for(var i=1;i<opt.navli_j.length;i++){
-	opt.navli_j[i].isactive=false;
-}
-
-//二级文件夹页面头部的改变设置
- var second_opts={
-	htmlsrc:"../mould_html/qkynav2.0.html",//头部模板获取异步地址
-	logosrc:"../images/nav_logo/qky-logo.png",
-	pjname:"",
-	navli_j:[],
-	appcenter_link:"appcenter.html",//应用中心页面链
-	newscenter_link:"newscenter.html",//消息中心页面链接
-	otherli:[["切换身份","href='switch_user.html'"],["数据设置","href='00set-term.html'"],["账户设置","href='account_settings.html'"],["个人设置","href='#'"],["退出","href='login.html'"]],
-	newsimgsrc:"../images/appicon/",
-};
-

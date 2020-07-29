@@ -62,6 +62,8 @@ h3{ font-weight:normal; font-size:14px;}
 .bor_all input,.bor_all textarea{padding-left:10px;}
 .bor_all .text-right.co_999 .co_y{ color:#f00 !important}
 .rad4{border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+.rad16{border-radius: 16px;-moz-border-radius:16px;-webkit-border-radius:16px;}
+.rad-circle{border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
 .block{ display:block}
 .iblock{ display:inline-block}
 .disabled,.sidebar-nav ul .disabled:hover{ color:#999; cursor:default;}

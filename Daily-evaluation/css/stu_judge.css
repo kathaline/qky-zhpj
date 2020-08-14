@@ -1193,6 +1193,12 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 margin-right: 5px;    border-radius: 50%; border: 1px solid #bbb; line-height:10px; }
 .radio-box input[type="radio"]:checked + label::before ,.radio-box input[type="radio"]:checked + span::before{width: 8px;height:8px;border: 1px solid #21a2db; background-color: #21a2db; background-clip: content-box;
  padding: 2px;}
+ .input-box{ font-weight:normal; cursor:pointer; }
+.input-box+.input-box{margin-left:15px;}
+.input-box span{ margin-top:5px;}
+.inputradio{position: absolute;left: -9999px;}
+.inputradio:checked ~ .radio_a,.nav li[role="presentation"].active .radio_a{ border:1px solid #03a9f5;}
+.inputradio:checked ~ .radio_a b,.nav li[role="presentation"].active .radio_a b{background: #03a9f5;}
 
  .cur-color{ position: relative;}
  .cur-color:before {
@@ -1210,3 +1216,7 @@ margin-right: 5px;    border-radius: 50%; border: 1px solid #bbb; line-height:10
 .seth_div{ position: absolute;top:102px;right:0;width: 25%;    min-height: 1px; padding-right: 15px;padding-left: 15px;}
 .seth_btn{ display:block; padding:28px  20px; height: 82px; color: #0274a6; font-size: 16px;}
 .col-sm-3 .seth_btn[type=button]{ height: 82px; background-color: #5bc0de;}
+
+.sels-box  .fs-wrap{ width:100%;}
+.col-sm-4.sels-box  .fs-search input{ max-width: 130px;}
+.col-sm-4.sels-box .fs-selectAll{ min-width: 50px;}

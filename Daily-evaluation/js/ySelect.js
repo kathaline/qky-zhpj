@@ -12,8 +12,6 @@
 
           var  settings = $.extend(true,{},defaultOptions, options);
         }
-
-
         /**
          * Constructor
          */
@@ -40,8 +38,9 @@
 
             reload: function() {
                 if (this.settings.showSearch) {
-                    var search = '<div class="fs-search"><div class="fs-selectAll checkbox-qky checkbox-input">\n'   +'<label for="week01">全部年级</label>'+
-                        '                </div></div>';
+                   /* var search = '<div class="fs-search"><div class="fs-selectAll checkbox-qky checkbox-input">\n'   +'<label for="week01">全部年级</label>'+
+                        '                </div></div>';*/
+					var search = '<div class="fs-search"><input type="search" placeholder="' + this.settings.searchText + '" /><span class="fs-selectAll"><i class="qkyicon fz_14 mar_r5">&#xe7d4;</i></span></div>';
                     this.$wrap.find('.fs-dropdown').prepend(search);
                 }
                 var choices = this.buildOptions(this.$select);

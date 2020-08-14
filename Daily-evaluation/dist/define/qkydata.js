@@ -7,7 +7,7 @@ define({
 	navdata:{/*导航数据*/
 		"logosrc":"../images/nav_logo/logo.png",
 		"pjname":"综合素质评价",
-		"navli":[["首页","href='01index.html'"],["指标管理","href='02index-quota.html'"],["评价统计","href='05statis-daily.html'"],["积分商城设置","href='03mall.html'"],["系统设置","href='04sysset.html'"],],
+		"navli":[["首页","href='01index.html'"],["指标管理","href='02index-quota.html'"],["评价统计","href='05statis-daily.html'"],["激励平台","href='03mall.html'"],["系统设置","href='04sysset.html'"],],
 		"navli_active":0,
 		"moreli":{
 			"综合评价":["zhonghesuzhipingjia",[["学生评价","href='#'"],["学业水平","href='#'"],["学期报告书","href='#'"]]],

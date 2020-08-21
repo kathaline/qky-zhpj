@@ -1144,9 +1144,11 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .pics-list .a_add{display: block; text-align:center; line-height: 60px; color: #fff; background: #3eb8ee;}
 
 /*下拉组改装*/
+/*ä¸‹æ‹‰ç»„æ”¹è£…*/
 .qkydropdown{ height:30px;}
 .qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 10px; vertical-align: inherit;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .qkydropdown .btn .qky_icon{ position:absolute; right:6px; top:8px; border:0; width:14px; height:14px; text-align:center; line-height:14px; color:#333;}
+.qkydropdown .btn .caret{ position:absolute; right:15px; top:13px;}
 .qkydropdown.open .btn .qky_icon.qky-xiajiantou4:before{content: "\e6a5";}
 .qkydropdown .dropdown-menu{ min-width:100%; max-height:440px; overflow-y:auto;}
 .maxh{ max-height:200px; overflow-y:auto;}
@@ -1220,3 +1222,4 @@ margin-right: 5px;    border-radius: 50%; border: 1px solid #bbb; line-height:10
 .sels-box  .fs-wrap{ width:100%;}
 .col-sm-4.sels-box  .fs-search input{ max-width: 130px;}
 .col-sm-4.sels-box .fs-selectAll{ min-width: 50px;}
+.sel-tips{ height: 12px; line-height: 12px; font-size: 12px;}

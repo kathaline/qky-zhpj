@@ -102,7 +102,6 @@ jQuery(document).ready(function($){
 		 	}, scroll_top_duration
 		);
 	});
-
 });
 
 /**定位跳转**/

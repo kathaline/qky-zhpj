@@ -24,7 +24,7 @@
 <script src="../dist/seaconfig.js"></script>
 <script src="../js/ySelect.js"></script>
 <script>
- seajs.use(["bs","nav","navicon","com/radio_checkbox1.1","com/dropdown_havevalue"],function(){
+ seajs.use(["bs","nav","navicon","../js/dropdown_havevalue"],function(){
 	 $("#qkynav").qkynav();
  });
  $(function() {
@@ -101,8 +101,8 @@
                 <th width="10%" scope="col"><strong class="co_r mar_r5">*</strong>勋章图片</th>
                 <th width="11%" scope="col"><strong class="co_r mar_r5">*</strong>勋章名称</th>
                 <th width="12%" scope="col"><strong class="co_r mar_r5">*</strong>兑换条件</th>
-                <th width="25%" scope="col"><strong class="co_r mar_r5">*</strong>适用年级</th>
-                <th width="31%" scope="col">勋章说明</th>
+                <th width="27%" scope="col"><strong class="co_r mar_r5">*</strong>适用年级</th>
+                <th width="29%" scope="col">兑换规则</th>
                 <th width="11%" scope="col">操作</th>
               </tr>
               <tr>
@@ -110,7 +110,8 @@
                 <td>星光少年</td>
                 <td>20积分</td>
                 <td>全校</td>
-                <td>每积分达到20分，即可兑换</td>
+                <td><p>普通勋章</p>
+                <p>积分兑换勋章（20积分）</p></td>
                 <td><a data-toggle="modal" data-target="#edit-medal" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="停用">&#xe673;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
                 </tr>
               <tr>
@@ -118,7 +119,7 @@
                 <td>星光少年</td>
                 <td>20积分</td>
                 <td>一年级、二年级、三年级、四年级</td>
-                <td><p>1、学习习惯：按时上学，课前预习、课间准备好学习用品，课上乐于思考、积极发言</p><p>2、上乐于思考、积极发言</p></td>
+                <td><p>保持课本清洁+1</p></td>
                 <td><a data-toggle="modal" data-target="#edit-medal" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="停用">&#xe673;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
                 </tr>
               <tr>
@@ -126,7 +127,7 @@
                 <td>星光少年</td>
                 <td>20积分</td>
                 <td>全校</td>
-                <td>2个星光少年兑换1个晨光少年</td>
+                <td>唱国歌+1</td>
                 <td><a data-toggle="modal" data-target="#edit-medal" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="停用">&#xe673;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
                 </tr>
             </table>
@@ -296,137 +297,146 @@
             <form class="form-horizontal row pad_t15">
               <div class="col-sm-12 clearfix">
                 <div class="col-sm-9">
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>勋章标签</label>
-                    <div class="col-sm-10 pad_l0">
-                        <label class="input-box clear" id="radio_value_11">
-                          <input type="radio" name="cheakRadios" checked="checked" class="inputradio">
-                          <a class="radio_a fl mar_r3"><b></b></a><span class="fr ml5">普通</span>
-                        </label>
-                        <label class="input-box clear" id="radio_value_12">
-                          <input type="radio" name="cheakRadios" class="inputradio">
-                          <a class="radio_a fl mar_r3"><b></b></a><span class="fr ml5">万能</span>
-                        </label>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>勋章名称</label>
+                        <div class="col-sm-10 pad_l0 has-feedback">
+                            <input type="text" class="form-control" required placeholder="输入勋章名称" value="星光少年">
+                            <span class="form-control-feedback co_999 mar_r5" aria-hidden="true">4/12</span>
+                        </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>勋章名称</label>
-                    <div class="col-sm-10 pad_l0 has-feedback">
-                      <input type="text" class="form-control" required placeholder="输入勋章名称" value="星光少年">
-                      <span class="form-control-feedback co_999 mar_r5" aria-hidden="true">4/12</span>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>获得条件</label>
+                        <div class="col-sm-4 pad_l0">
+                            <select name="select" class="form-control">
+                                <option>请选择</option>
+                                <option selected="">积分换勋章</option>
+                                <option>单项勋章兑换</option>
+                                <option>组合勋章兑换</option>
+                            </select>
+                        </div>
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">需要</label>
+                        <div class="col-sm-4 pad_l0 has-feedback">
+                            <input type="text" class="form-control" required placeholder="" value="20">
+                            <span class="form-control-feedback co_999 mar_r5" aria-hidden="true">积分</span>
+                        </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>获得条件</label>
-                    <div class="col-sm-4 pad_l0">
-                      <select name="select" class="form-control">
-                        <option>请选择</option>
-                        <option selected="">积分换勋章</option>
-                        <option>单项勋章兑换</option>
-                      </select>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>适用年级</label>
+                        <div class="col-sm-10 pad_l0">
+                            <div class="col-sm-12 pad_0 mar_b10">
+                                <label for="chk201" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk201" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>全部
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk202" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk202" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>一年级
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk203" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk203" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>二年级
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk204" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk204" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>三年级
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk205" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk205" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>四年级
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk206" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk206" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>五年级
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk207" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk207" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>六年级
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk208" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk208" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>初一
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk209" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk209" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>初二
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk210" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk210" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>初三
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk211" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk211" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>高一
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk212" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk212" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>高二
+                                </label>
+                            </div>
+                            <div class="col-sm-2 pad_0 mar_b10">
+                                <label for="chk212" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk212" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <span class="chk_box mar_r5"></span>高三
+                                </label>
+                            </div>
+
+                        </div>
                     </div>
-                    <label class="col-sm-2 text-right pad_t5 pad_l0">需要</label>
-                    <div class="col-sm-4 pad_l0 has-feedback">
-                      <input type="text" class="form-control" required placeholder="" value="20">
-                      <span class="form-control-feedback co_999 mar_r5" aria-hidden="true">积分</span>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">关联指标</label>
+                        <div class="col-sm-10 pad_l0">
+                            <div class="dropdown qkydropdown havechoose">
+                                <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="value">选择关联指标后，只限指标评价获得积分兑换（为空不限制）</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu maxh" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">思想品德</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">学业水平</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 pad_l0 col-sm-offset-2">
+                            <div class="sel-tips text-warning mar_t5">所选适用年级，未在同一个指标体系，请重选</div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>适用年级</label>
-                    <div class="col-sm-10 pad_l0">
-                      <div class="col-sm-12 pad_0 mar_b10">
-                        <label for="chk201" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk201" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>全部
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk202" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk202" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>一年级
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk203" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk203" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>二年级
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk204" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk204" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>三年级
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk205" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk205" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>四年级
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk206" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk206" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>五年级
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk207" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk207" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>六年级
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk208" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk208" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>初一
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk209" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk209" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>初二
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk210" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk210" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>初三
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk211" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk211" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>高一
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk212" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk212" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>高二
-                        </label>
-                      </div>
-                      <div class="col-sm-2 pad_0 mar_b10">
-                        <label for="chk212" class="weui-switch-cp mar_bno mar_t5">
-                          <input id="chk212" class="weui-switch-cp__input" type="checkbox" checked="checked">
-                          <span class="chk_box mar_r5"></span>高三
-                        </label>
-                      </div>
-                      
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">勋章说明<p class="co_999">(0/50)</p></label>
+                        <div class="col-sm-10 pad_l0">
+                            <textarea id="" rows="4" placeholder="输入勋章说明" class="form-control"></textarea>
+                        </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0">勋章说明<p class="co_999">(0/50)</p></label>
-                    <div class="col-sm-10 pad_l0">
-                      <textarea id="" rows="4" placeholder="输入勋章说明" class="form-control"></textarea> 
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">高级设置</label>
+                        <div class="col-sm-10 pad_l0">
+                                <label for="chk-gj" class="weui-switch-cp mar_bno mar_t5">
+                                    <input id="chk-gj" class="weui-switch-cp__input" type="checkbox">
+                                    <span class="chk_box mar_r5"></span>勾选后，可作为万能章用于替代任何其他勋章使用
+                                </label>
+                        </div>
                     </div>
-                  </div>  
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0">关联指标</label>
-                    <div class="col-sm-10 pad_l0">
-                      <input type="text" class="form-control" required placeholder="关联评分项" value="">
-                    </div>
-                  </div>
                 </div>
                 <div class="col-sm-3 pl10">
                   <div class="pad_t5"><strong class="co_r mar_r5">*</strong>勋章图片</div>
@@ -464,19 +474,6 @@
               <div class="col-sm-12 clearfix">
                 <div class="col-sm-9">
                   <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>勋章标签</label>
-                    <div class="col-sm-10 pad_l0">
-                        <label class="input-box clear" id="radio_value_11">
-                          <input type="radio" name="cheakRadios" checked="checked" class="inputradio">
-                          <a class="radio_a fl mar_r3"><b></b></a><span class="fr ml5">普通</span>
-                        </label>
-                        <label class="input-box clear" id="radio_value_12">
-                          <input type="radio" name="cheakRadios" class="inputradio">
-                          <a class="radio_a fl mar_r3"><b></b></a><span class="fr ml5">万能</span>
-                        </label>
-                    </div>
-                  </div>
-                  <div class="form-group">
                     <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>勋章名称</label>
                     <div class="col-sm-10 pad_l0 has-feedback">
                       <input type="text" class="form-control" required placeholder="输入勋章名称" value="星光少年">
@@ -487,9 +484,10 @@
                     <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>获得条件</label>
                     <div class="col-sm-4 pad_l0">
                       <select name="select" class="form-control">
-                        <option>请选择</option>
-                        <option>积分换勋章</option>
-                        <option selected="">单项勋章兑换</option>
+                          <option>请选择</option>
+                          <option>积分换勋章</option>
+                          <option selected="">单项勋章兑换</option>
+                          <option>组合勋章兑换</option>
                       </select>
                     </div>
                     <label class="col-sm-1 text-right pad_t5 pad_l0">需要</label>
@@ -592,12 +590,39 @@
                       
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0">勋章说明<p class="co_999">(0/50)</p></label>
-                    <div class="col-sm-10 pad_l0">
-                      <textarea id="" rows="4" placeholder="输入勋章说明" class="form-control"></textarea> 
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">关联指标</label>
+                        <div class="col-sm-10 pad_l0">
+                            <div class="dropdown qkydropdown havechoose">
+                                <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="value">点击选择需要关联的指标项</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu maxh" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">思想品德</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">学业水平</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 pad_l0 col-sm-offset-2">
+                            <div class="sel-tips text-warning mar_t5"></div>
+                        </div>
                     </div>
-                  </div>  
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">勋章说明<p class="co_999">(0/50)</p></label>
+                        <div class="col-sm-10 pad_l0">
+                            <textarea id="" rows="4" placeholder="输入勋章说明" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">高级设置</label>
+                        <div class="col-sm-10 pad_l0">
+                            <label for="chk-gj" class="weui-switch-cp mar_bno mar_t5">
+                                <input id="chk-gj" class="weui-switch-cp__input" type="checkbox">
+                                <span class="chk_box mar_r5"></span>勾选后，可作为万能章用于替代任何其他勋章使用
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-3 pl10">
                   <div class="pad_t5"><strong class="co_r mar_r5">*</strong>勋章图片</div>
@@ -635,19 +660,6 @@
             <form class="form-horizontal row pad_t15">
               <div class="col-sm-12 clearfix">
                 <div class="col-sm-9">
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>勋章标签</label>
-                    <div class="col-sm-10 pad_l0">
-                        <label class="input-box clear" id="radio_value_11">
-                          <input type="radio" name="cheakRadios" checked="checked" class="inputradio">
-                          <a class="radio_a fl mar_r3"><b></b></a><span class="fr ml5">普通</span>
-                        </label>
-                        <label class="input-box clear" id="radio_value_12">
-                          <input type="radio" name="cheakRadios" class="inputradio">
-                          <a class="radio_a fl mar_r3"><b></b></a><span class="fr ml5">万能</span>
-                        </label>
-                    </div>
-                  </div>
                   <div class="form-group">
                     <label class="col-sm-2 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>勋章名称</label>
                     <div class="col-sm-10 pad_l0 has-feedback">
@@ -762,12 +774,39 @@
                       
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pad_t5 pad_l0">勋章说明<p class="co_999">(0/50)</p></label>
-                    <div class="col-sm-10 pad_l0">
-                      <textarea id="" rows="4" placeholder="输入勋章说明" class="form-control"></textarea> 
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">关联指标</label>
+                        <div class="col-sm-10 pad_l0">
+                            <div class="dropdown qkydropdown havechoose">
+                                <a class="btn btn-default dropdown-toggle auto" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="value">点击选择需要关联的指标项</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu maxh" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">思想品德</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">学业水平</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 pad_l0 col-sm-offset-2">
+                            <div class="sel-tips text-warning mar_t5">点击选择需要关联的指标项</div>
+                        </div>
                     </div>
-                  </div>  
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">勋章说明<p class="co_999">(0/50)</p></label>
+                        <div class="col-sm-10 pad_l0">
+                            <textarea id="" rows="4" placeholder="输入勋章说明" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pad_t5 pad_l0">高级设置</label>
+                        <div class="col-sm-10 pad_l0">
+                            <label for="chk-gj" class="weui-switch-cp mar_bno mar_t5">
+                                <input id="chk-gj" class="weui-switch-cp__input" type="checkbox">
+                                <span class="chk_box mar_r5"></span>勾选后，可作为万能章用于替代任何其他勋章使用
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-3 pl10">
                   <div class="pad_t5"><strong class="co_r mar_r5">*</strong>勋章图片</div>

@@ -4,7 +4,7 @@
  * 创建者：yhc 
  * 创建日期：2017-08-16
 */
-body, html {-webkit-tap-highlight-color: transparent; background-color:#f6f6f6; min-height: min-content;height: 100%; }
+body, html {-webkit-tap-highlight-color: transparent; background-color:#f6f6f6; min-height: min-content;min-height: 100%; }
 a{ color:#09acfb;}
 ul,li{ padding:0; margin:0; list-style:none;}
 *{WORD-WRAP:break-word;TABLE-LAYOUT:fixed;word-break:break-all;}
@@ -68,6 +68,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .block {display:block;}
 .iblock{ display:inline-block;}
 .tcell{display: table-cell;}
+.inhrt{ display: inherit !important;}
 .text-indent{text-indent:2em;}
 .radius-4{ border-radius:4px;}
 .radius-6{ border-radius:6px;}
@@ -248,19 +249,17 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bor-gray{ border:1px solid #e0e0e0;}
 .bor-ddd{ border:1px solid #ddd;}
 .bor-no{ border:none;}
-.bor-top,.bor-top_dashed,.bor-top_ds{ position:relative;}
-.bor-top:before {
+.bor-top,.bor-top_dashed,.bor-right{ position:relative;}
+.bor-top:before,.bor-right:before,.bor-btm:after {
     content: " ";
     position: absolute;
-    left: 0;
     right: 0;
     top: 0;
-    border-top: 1px solid #e5e5e5 ;
     -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: scaleY(.5);
-    transform: scaleY(.5);
-}
+    transform-origin: 0 0;}
+.bor-top:before {left: 0;  border-top: 1px solid #e5e5e5 ;  -webkit-transform: scaleY(.5);  transform: scaleY(.5);}
+.bor-right:before{bottom:0; border-right: 1px solid #e5e5e5;-webkit-transform: scalex(.5);    transform: scaleX(.5);}
+.bor-btm:after{top:auto; bottom: 0; left: 0;border-bottom: 1px solid #e5e5e5 ;  -webkit-transform: scaleY(.5);  transform: scaleY(.5);}
 .bor-top_ds::before{content: " ";
     position: absolute;
     left: 0;
@@ -424,7 +423,7 @@ input[disabled]{ color: #e3e3e3;}
 }
 .date-badge{min-width: 8px; border-radius:6px; background-color: #d0d0d0; color: #fff; display:inline-block; text-align: center; font-size: 12px; vertical-align: middle; padding:2px 6px;}
 .eva-add{ bottom:60px; right:12px;}
-.evaadd-btn{ width:60px; text-align:center; height:60px; padding-top: 12px; padding-bottom: 12px; background-color:#09acfb; z-index:10; display:block;border-radius:50%;}
+.evaadd-btn{ width:60px; text-align:center; height:60px; line-height: 38px; padding-top: 12px; padding-bottom: 12px; background-color:#09acfb; z-index:10; display:block;border-radius:50%;}
 .eva-add .evaadd-btn+.evaadd-btn{ margin-top: 5px;}
 .eva-add_q,.eva-add{ z-index:200;}
 .eva-add_q{ left:-10px;bottom:60px;}
@@ -543,8 +542,9 @@ div+.nodata{ padding:80px 20px 0;}
 .honor-card:before{content: " "; position: absolute;background: radial-gradient(transparent 0, transparent 4px, #fff 4px); width: 100%; height:8px;box-sizing: border-box;background-size: 15px 14px; background-position: 8px 0px;background-color: transparent;}
 .honor-card:before{top:-4px;left:-20px; transform:rotate(180deg); }
 .pl12.honor-card:before{width:calc(100% + 20px);}
-/*券已使用*/
+/*券已使用-待兑换*/
 .tip_done{transform: rotate(-20deg); color:#555; border:1px dashed #555;padding:1px 5px; font-size:12px; border-radius:4px; }
+.tip_will{transform: rotate(-35deg); color:#f30; border:1px dashed #f30;padding:1px 5px; font-size:12px; font-weight: bold; border-radius:4px; }
 /*电子券*/
 .stamp {height: auto;padding: 0 6px;position: relative;background: none;color:#fff;}
 .stamp *{ box-sizing: content-box; }
@@ -623,3 +623,9 @@ div+.nodata{ padding:80px 20px 0;}
 .quota-cell.cur{border-color: #ffc434; background-color: #fffefb;}
 .weui-popup__modal.scan-pop{top: 45%; bottom: auto; left: 50%; width: 80% ;-webkit-transform: translate(-50%,-50%);  transform: translate(-50%,-50%);    -webkit-transition-duration: .2s;transition-duration: .2s; border-radius: 4px;}
 .weui-popup__modal.scan-pop .weui-btn+.weui-btn{ margin-left: 15px;}
+
+.myapps{ position: relative;}
+.myapps .col-33:nth-child(3n).bor-right:before{border-right: none;}
+.myapps:after{content: " ";   position: absolute;   -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;bottom: 0; left: 0;border-bottom: 1px solid #e5e5e5 ;  -webkit-transform: scaleY(.5);  transform: scaleY(.5);}
+

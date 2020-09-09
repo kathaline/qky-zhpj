@@ -544,7 +544,7 @@ div+.nodata{ padding:80px 20px 0;}
 .pl12.honor-card:before{width:calc(100% + 20px);}
 /*券已使用-待兑换*/
 .tip_done{transform: rotate(-20deg); color:#555; border:1px dashed #555;padding:1px 5px; font-size:12px; border-radius:4px; }
-.tip_will{transform: rotate(-35deg); color:#f30; border:1px dashed #f30;padding:1px 5px; font-size:12px; font-weight: bold; border-radius:4px; }
+.tip_will{transform: rotate(-35deg); color:#f60; border:1px dashed #f60;padding:1px 5px; font-size:12px; font-weight: bold; border-radius:4px; }
 /*电子券*/
 .stamp {height: auto;padding: 0 6px;position: relative;background: none;color:#fff;}
 .stamp *{ box-sizing: content-box; }

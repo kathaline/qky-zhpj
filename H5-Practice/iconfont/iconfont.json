@@ -1,0 +1,72 @@
+{
+  "id": "2086215",
+  "name": "Practice",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2095877",
+      "name": "同学",
+      "font_class": "tongxue",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "8581079",
+      "name": "我的班级-我的同学",
+      "font_class": "tx",
+      "unicode": "e704",
+      "unicode_decimal": 59140
+    },
+    {
+      "icon_id": "17461516",
+      "name": "写实申报",
+      "font_class": "xieshishenbao",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "17461182",
+      "name": "申报审核",
+      "font_class": "shenbaoshenhe",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "5536080",
+      "name": "统计",
+      "font_class": "tongji",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "11330661",
+      "name": "用户 (7)",
+      "font_class": "yonghu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "4251726",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "15644358",
+      "name": "切换用户",
+      "font_class": "qiehuanyonghu",
+      "unicode": "e6c6",
+      "unicode_decimal": 59078
+    },
+    {
+      "icon_id": "5961366",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "ec6b",
+      "unicode_decimal": 60523
+    }
+  ]
+}

@@ -18,6 +18,8 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .zindex2{ z-index:2;}
 .zindex3{ z-index:3;}
 .zindex19{ z-index:19;}
+.zindex501{ z-index: 501;}
+.zindex502{ z-index: 502;}
 .zindex999{ z-index:999;}
 .hide{display: none;}
 .row { margin-right: -12px; margin-left: -12px;}
@@ -340,7 +342,7 @@ input[disabled]{ color: #e3e3e3;}
 .weui-btn-area.weui-btn-area-inline .weui-btn:last-child { margin-right: 0;}
 .weui-btn_plain-primary:after { border-color:#09acfb;}
 
-.weui-tabbar .weui-btn{  font-size:15px; padding-top:5px; padding-bottom:5px;}
+.weui-tabbar .weui-btn{  font-size:14px; padding-top:3px; padding-bottom:3px;}
 .weui-tabbar .weui-btn+.weui-btn,.weui-row .weui-btn+.weui-btn{ margin-top:0;}
 .weui-row.weui-tabbar .weui-col-50{ width: 50%;}
 .weui-tabbar .weui-btn_disabled { color: rgba(0,0,0,.3) !important;background-color: #f7f7f7 !important;pointer-events: none !important; border-color:rgba(0,0,0,.3)}

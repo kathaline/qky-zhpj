@@ -626,7 +626,6 @@ div+.nodata{ padding:80px 20px 0;}
 
 .myapps{ position: relative;}
 .myapps .col-33:nth-child(3n).bor-right:before{border-right: none;}
-.myapps:after{content: " ";   position: absolute; width: 100%;  -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;bottom: 0; left: 0;right:0;border-bottom:2px solid #fff ; }
+.myapps:after{content: " ";   position: absolute; width: 100%;  -webkit-transform-origin: 0 0;    transform-origin: 0 0;bottom: 0; left: 0;right:0;border-bottom:2px solid #fff ; }
 .txt-ico{ height: 30px; line-height: 16px; margin-bottom:5px;}
 

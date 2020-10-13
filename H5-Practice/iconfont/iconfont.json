@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "14109094",
+      "name": "重置",
+      "font_class": "zhongzhi",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "2176873",
+      "name": "上下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "5062406",
+      "name": "上下箭头",
+      "font_class": "shangjiantou",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
       "icon_id": "2095877",
       "name": "同学",
       "font_class": "tongxue",

@@ -15,7 +15,11 @@
 </head>
 <body ontouchstart>
 <div class="">
-    <a class="" href="02mine-medal_list.html"><img src="../image/pic_practice.png" class="col-100"></a>
+    <div class="po_r iblock" href="javascrip:">
+        <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+        <div class="po_ab_l"><a class="bg_b3 co_ff ptb10 plr30 radius-6">更换图片</a></div>
+        <img src="../image/pic_practice.png" class="col-100">
+    </div>
 </div>
 <div class="weui-cells weui-cells_form label-short mt5">
     <div class="weui-cell">
@@ -79,9 +83,9 @@
         <div class="weui-cell__hd"><label class="weui-label pb20">附件上传</label></div>
         <div class="weui-cell__bd">
             <div class="input-group row ma0">
-                <input type="text" name="textfield" class="form-control col-70" id="textfield" placeholder="">
+                <input type="text" name="textfield" class="form-control col-60" id="textfield" placeholder="">
                 <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
-                <span class="input-group-addon iblock col-30">上传文件</span>
+                <span class="input-group-addon iblock col-40">请选择</span>
             </div>
             <div class="co_99 fz_12 mt5">支持扩展名.doc/.docx/.pdf/.jpg</div>
         </div>

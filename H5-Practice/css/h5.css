@@ -426,6 +426,12 @@ div+.nodata{ padding:80px 20px 0;}
 .head-title{height: 52px;line-height:52px;position: relative;}
 .head-title.bg_lylw:after{content: " "; position: absolute; left: 0; right: 0; height: 1px; color: #ffe18a;    bottom: 0; border-bottom: 1px solid #ffe18a; -webkit-transform-origin: 0 100%;
     transform-origin: 0 100%;  -webkit-transform: scaleY(.5);  transform: scaleY(.5);}
-.pop-label_list{}
 .pop-label_list .label_name{ border: 1px solid #e9e9e9;border-radius: 6px;height: 30px;line-height: 30px;}
 .pop-label_list.weui-cells_radio .weui-check:checked+.label_name{border-color:#ff9c02;color: #fff;background-color: #ff9c02; }
+.input-group{position: relative;border-collapse: separate;display: inline-table; vertical-align: middle; font-size: 0;}
+.form-control{font-size: 14px; line-height: 1.42857143;background-color: #fff; background-image: none; border: 1px solid #ccc;  border-radius: 4px;   }
+.input-group .form-control:first-child{height: 30px; padding: 5px 10px;position: relative; z-index: 2; float: left; margin-bottom: 0;   display: table-cell;  border-top-right-radius: 0; border-bottom-right-radius: 0;   }
+.input-group-addon{display: table-cell;padding:0 12px;font-size: 14px; text-align: center; background-color: #eee; border: 1px solid #ccc; border-radius: 4px;}
+.input-group-addon:last-child { border-top-left-radius: 0; border-bottom-left-radius: 0; border-left: 0;}
+.input-group .form-control~ .input-group-addon {height: 30px;line-height: 30px;}
+}

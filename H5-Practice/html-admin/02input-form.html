@@ -14,34 +14,75 @@
     <link rel="stylesheet" href="../css/h5.css">
 </head>
 <body ontouchstart>
-<div class="weui-cells weui-cells_form">
+<div class="">
+    <a class="" href="02mine-medal_list.html"><img src="../image/pic_practice.png" class="col-100"></a>
+</div>
+<div class="weui-cells weui-cells_form label-short">
     <div class="weui-cell">
         <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>学生姓名</label></div>
         <div class="weui-cell__bd">
-            <input class="weui-input" type="number" pattern="[0-9]*" placeholder="选择学生">
+            <input class="weui-input" type="text" placeholder="选择学生">
         </div>
     </div>
-    <div class="weui-cell weui-cell_vcode">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>活动名称</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="输入名称">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>开始时间</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="datetime-local" value="" placeholder="选择开始时间">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>结束时间</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="datetime-local" value="" placeholder="选择结束时间">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>活动时长</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" pattern="[0-9]*" placeholder="输入时长">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>举办单位</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="输入单位名称">
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_select weui-cell_select-after">
         <div class="weui-cell__hd">
-            <label class="weui-label">手机号</label>
+            <label class="weui-label"><b class="color-danger">*</b>活动级别</label>
         </div>
         <div class="weui-cell__bd">
-            <input class="weui-input" type="tel" placeholder="请输入手机号">
-        </div>
-        <div class="weui-cell__ft">
-            <button class="weui-vcode-btn">获取验证码</button>
+            <select class="weui-select" name="select2">
+                <option value="1">省级</option>
+                <option value="2">市级</option>
+                <option value="3">区级</option>
+            </select>
         </div>
     </div>
-    <div class="weui-cell">
-        <div class="weui-cell__hd"><label for="" class="weui-label">日期</label></div>
+    <div class="weui-cell weui-row">
+        <div class="weui-col-100 pb10">活动内容
+        </div>
         <div class="weui-cell__bd">
-            <input class="weui-input" type="date" value="">
+            <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+            <div class="weui-textarea-counter"><span>0</span>/200</div>
         </div>
     </div>
+
     <div class="weui-cell">
-        <div class="weui-cell__hd"><label for="" class="weui-label">时间</label></div>
+        <div class="weui-cell__hd"><label class="weui-label pb20">附件上传</label></div>
         <div class="weui-cell__bd">
-            <input class="weui-input" type="datetime-local" value="" placeholder="">
+            <div class="po_r iblock bor-ddd radius-6">
+                <input id="uploaderInput" class="ycfile" type="file" accept="doc/*/jpg" multiple="">
+                <button class="weui-btn weui-btn_mini weui-btn_default bg_gray">上传文件</button>
+            </div>
+            <div class="co_99 fz_12 mt5">支持扩展名.doc/.docx/.pdf/.jpg</div>
         </div>
     </div>
 </div>

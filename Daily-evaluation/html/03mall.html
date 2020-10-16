@@ -101,9 +101,9 @@
                 <th width="10%" scope="col"><strong class="co_r mar_r5">*</strong>勋章图片</th>
                 <th width="11%" scope="col"><strong class="co_r mar_r5">*</strong>勋章名称</th>
                 <th width="12%" scope="col"><strong class="co_r mar_r5">*</strong>兑换规则</th>
-                <th width="27%" scope="col"><strong class="co_r mar_r5">*</strong>适用年级</th>
-                <th width="29%" scope="col">勋章说明</th>
-                <th width="11%" scope="col">操作</th>
+                <th width="26%" scope="col"><strong class="co_r mar_r5">*</strong>适用年级</th>
+                <th width="26%" scope="col">勋章说明</th>
+                <th width="15%" scope="col">操作</th>
               </tr>
               <tr>
                 <td><img src="../images/honor01.png" class="img60"></td>
@@ -112,7 +112,7 @@
                 <td>全校</td>
                 <td><p>普通勋章</p>
                 <p>积分兑换勋章（20积分）</p></td>
-                <td><a data-toggle="modal" data-target="#edit-medal" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="停用">&#xe673;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
+                <td><a data-toggle="modal" data-target="#edit-medal" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="停用">&#xe673;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a><a data-toggle="modal" data-target="#relate-medal" class="qkyicon_14 mar_l10 fz_we" title="关联">&#xe6af;</a></td>
                 </tr>
               <tr>
                 <td><img src="../images/honor02.png" class="img60"></td>
@@ -120,7 +120,7 @@
                 <td>20积分</td>
                 <td>一年级、二年级、三年级、四年级</td>
                 <td><p>保持课本清洁+1</p></td>
-                <td><a data-toggle="modal" data-target="#edit-medal" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="停用">&#xe673;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
+                <td><a data-toggle="modal" data-target="#edit-medal" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="停用">&#xe673;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a><a data-toggle="modal" data-target="#relate-medal" class="qkyicon_14 mar_l10 fz_we" title="关联">&#xe6af;</a></td>
                 </tr>
               <tr>
                 <td><img src="../images/honor03.png" class="img60"></td>
@@ -128,7 +128,7 @@
                 <td>20积分</td>
                 <td>全校</td>
                 <td>唱国歌+1</td>
-                <td><a data-toggle="modal" data-target="#edit-medal" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="停用">&#xe673;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
+                <td><a data-toggle="modal" data-target="#edit-medal" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="停用">&#xe673;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a><a data-toggle="modal" data-target="#relate-medal" class="qkyicon_14 mar_l10 fz_we" title="关联">&#xe6af;</a></td>
                 </tr>
             </table>
           </div>
@@ -639,6 +639,105 @@
               </div>
             </form>
 		      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">保存</button>
+          </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<div class="modal fade" id="relate-medal" tabindex="-1" role="dialog" aria-labelledby="relate-medalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content" role="tabpanel">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                ×
+            </button>
+            <h4 class="modal-title" id="myModalLabel">选择关联指标</h4>
+          </div>
+          <div class="modal-body quato pad_0 bor_btm">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <div class="side-menu nav mall-smenu bor_r">
+                          <ul class="ul-menu" role="tablist">
+                              <li role="presentation" class="active">
+                                  <a href="#quota01" aria-controls="" role="tab" data-toggle="tab">一年级评价体系</a>
+                              </li>
+                              <li role="presentation">
+                                  <a href="#quota02" aria-controls="" role="tab" data-toggle="tab">一年级评价体系</a>
+                              </li>
+                              <li role="presentation">
+                                  <a href="#quota03" aria-controls="" role="tab" data-toggle="tab">一年级评价体系</a>
+                              </li>
+                              <li role="presentation">
+                                  <a href="#quota04" aria-controls="" role="tab" data-toggle="tab">一年级评价体系</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-sm-9">
+                      <div class="main-con">
+                          <div class="tab-content tabs label-h-over">
+                              <div role="tabpanel" class="tab-pane fade active in" id="quota01">
+                                  <div class="row mar_r0 pad_t10">
+                                      <div class="col-sm-4 mar_b10">
+                                          <label class="input-box clear" id="radio_value_11">
+                                              <input type="radio" name="cheakRadios" checked="checked" class="inputradio">
+                                              <a class="radio_a fl"><b></b></a><span class="fr ml5">之后标只是对你表达</span>
+                                          </label>
+                                      </div>
+                                      <div class="col-sm-4 mar_b10">
+                                          <label class="input-box clear" id="radio_value_12">
+                                              <input type="radio" name="cheakRadios" class="inputradio">
+                                              <a class="radio_a fl"><b></b></a><span class="fr ml5">指标2</span>
+                                          </label>
+                                      </div>
+                                      <div class="col-sm-4 mar_b10">
+                                          <label class="input-box clear" id="radio_value_13">
+                                              <input type="radio" name="cheakRadios" class="inputradio">
+                                              <a class="radio_a fl"><b></b></a><span class="fr ml5">指标值阿比哦</span>
+                                          </label>
+                                      </div>
+                                      <div class="col-sm-4 mar_b10">
+                                          <label class="input-box clear" id="radio_value_14">
+                                              <input type="radio" name="cheakRadios" class="inputradio">
+                                              <a class="radio_a fl"><b></b></a><span class="fr ml5">指标2</span>
+                                          </label>
+                                      </div>
+                                      <div class="col-sm-4 mar_b10">
+                                          <label class="input-box clear" id="radio_value_15">
+                                              <input type="radio" name="cheakRadios" class="inputradio">
+                                              <a class="radio_a fl"><b></b></a><span class="fr ml5">指标值阿比哦</span>
+                                          </label>
+                                      </div>
+                                      <div class="col-sm-4 mar_b10">
+                                          <label class="input-box clear" id="radio_value_16">
+                                              <input type="radio" name="cheakRadios" class="inputradio">
+                                              <a class="radio_a fl"><b></b></a><span class="fr ml5">指标2</span>
+                                          </label>
+                                      </div>
+                                      <div class="col-sm-4 mar_b10">
+                                          <label class="input-box clear" id="radio_value_17">
+                                              <input type="radio" name="cheakRadios" class="inputradio">
+                                              <a class="radio_a fl"><b></b></a><span class="fr ml5">指标值阿比哦</span>
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div role="tabpanel" class="tab-pane fade" id="quota02">
+
+                              </div>
+                              <div role="tabpanel" class="tab-pane fade" id="quota03">
+
+                              </div>
+                              <div role="tabpanel" class="tab-pane fade" id="quota04">
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
             <button type="button" class="btn btn-primary">保存</button>

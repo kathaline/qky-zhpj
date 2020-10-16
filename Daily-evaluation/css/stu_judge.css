@@ -1081,6 +1081,7 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .mall-smenu .ul-menu li a{ padding:12px 20px 12px 20px; display: block;}
 .text-info { color:#a2d9f1 !important;}
 .table > thead > tr > th{background: #fbfbfb; border-bottom-width:1px;}
+.modal-body.quato .side-menu,.modal-body.quato .main-con{height: 500px; overflow-y: auto;}
 /*弹窗通用*/
 .modal-footer { text-align:center; border-top:none;}
 
@@ -1199,9 +1200,9 @@ margin-right: 5px;    border-radius: 50%; border: 1px solid #bbb; line-height:10
 .input-box+.input-box{margin-left:15px;}
 .input-box span{ margin-top:5px;}
 .inputradio{position: absolute;left: -9999px;}
-.inputradio:checked ~ .radio_a,.nav li[role="presentation"].active .radio_a{ border:1px solid #03a9f5;}
+.modal-body.quato .active .radio_a{background-color: inherit;border-color: #ccc; margin-right: 5px;}
+.inputradio:checked ~ .radio_a,.nav li[role="presentation"].active .radio_a{ border-color:#03a9f5 !important;}
 .inputradio:checked ~ .radio_a b,.nav li[role="presentation"].active .radio_a b{background: #03a9f5;}
-
  .cur-color{ position: relative;}
  .cur-color:before {
     content: " ";

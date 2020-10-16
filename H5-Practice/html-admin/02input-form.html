@@ -16,7 +16,7 @@
 <body ontouchstart>
 <div class="">
     <div class="po_r iblock" href="javascrip:">
-        <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+        <input id="uploaderInput" class="ycfile" type="file" accept="image/*" multiple="">
         <div class="po_ab_l"><a class="bg_b3 co_ff ptb10 plr30 radius-6">更换图片</a></div>
         <img src="../image/pic_practice.png" class="col-100">
     </div>
@@ -34,16 +34,20 @@
             <input class="weui-input" type="text" placeholder="输入名称">
         </div>
     </div>
-    <div class="weui-cell">
+    <div class="weui-cell weui-cell_access">
         <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>开始时间</label></div>
         <div class="weui-cell__bd">
             <input class="weui-input" type="datetime-local" value="" placeholder="选择开始时间">
         </div>
+        <div class="weui-cell__ft">
+        </div>
     </div>
-    <div class="weui-cell">
+    <div class="weui-cell weui-cell_access">
         <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>结束时间</label></div>
         <div class="weui-cell__bd">
             <input class="weui-input" type="datetime-local" value="" placeholder="选择结束时间">
+        </div>
+        <div class="weui-cell__ft">
         </div>
     </div>
     <div class="weui-cell">

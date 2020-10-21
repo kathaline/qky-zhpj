@@ -14,12 +14,10 @@
     <link rel="stylesheet" href="../css/h5.css">
 </head>
 <body ontouchstart>
-<div class="">
-    <div class="po_r iblock" href="javascrip:">
-        <input id="uploaderInput" class="ycfile" type="file" accept="image/*" multiple="">
-        <div class="po_ab_l"><a class="bg_b3 co_ff ptb10 plr30 radius-6">更换图片</a></div>
-        <img src="../image/pic_practice.png" class="col-100">
-    </div>
+<div class="po_r">
+    <input id="uploaderInput" class="ycfile" type="file" accept="image/*" multiple="">
+    <div class="po_ab_l"><a class="bg_b3 co_ff ptb10 plr30 radius-6">更换图片</a></div>
+    <img src="../image/pic_practice.jpg" class="col-100">
 </div>
 <div class="weui-cells weui-cells_form label-short mt5">
     <div class="weui-cell">
@@ -75,16 +73,18 @@
         </div>
     </div>
     <div class="weui-cell weui-row">
-        <div class="weui-col-100 pb10">活动内容
+        <div class="weui-cell__hd">
+            <label class="weui-label">活动内容</label>
         </div>
         <div class="weui-cell__bd">
             <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
             <div class="weui-textarea-counter"><span>0</span>/200</div>
         </div>
     </div>
-
-    <div class="weui-cell">
-        <div class="weui-cell__hd"><label class="weui-label pb20">附件上传</label></div>
+    <div class="weui-cell weui-row">
+        <div class="weui-cell__hd">
+            <label class="weui-label">附件上传</label>
+        </div>
         <div class="weui-cell__bd">
             <div class="input-group row ma0">
                 <input type="text" name="textfield" class="form-control col-60" id="textfield" placeholder="">
@@ -97,12 +97,25 @@
 </div>
 <div class="pb60"></div>
 <div class="weui-tabbar bor-top_no row bg_white ma0 pl15 pt10">
-    <div class="col-50 pl0" ><a href="01index.html" class="weui-btn weui-btn_default">取消</a></div>
-    <div class="col-50 pl0"> <a href="02input-form.html" class="weui-btn weui-btn_org">确认</a></div>
+    <div class="col-50 pl0" ><a href="javascript:;" id="show-confirm" class="weui-btn weui-btn_default">取消</a></div>
+    <div class="col-50 pl0"> <a href="javascript:;" id="show-toast" class="weui-btn weui-btn_org">确认</a></div>
 </div>
 <script src="../js/jquery-2.1.4.js"></script>
 <script src="../js/jquery-weui.js"></script>
 <script>
+    $(document).on("click", "#show-confirm", function() {
+        $.confirm("返回后，已填写信息不会保存，确认返回?", "警示", function() {
+            window.location.href="01index.html";
+        }, function() {
+            //取消操作
+        });
+    });
+    $(document).on("click", "#show-toast", function() {
+        $.toast("操作成功", function() {
+            console.log('close');
+            window.location.href="01index.html";
+        });
+    })
 </script>
 </body>
 </html>

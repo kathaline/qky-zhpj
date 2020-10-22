@@ -17,25 +17,31 @@
 <div class="po_r pb42">
     <div class="bg_record"></div>
     <div class="po_ab_l top_record">
-        <div class="weui-panel__bd plr5">
+        <div class="weui-panel__bd">
             <div class="weui-media-box weui-media-box_appmsg">
                 <div class="weui-media-box__hd">
                     <img class="weui-media-box__thumb img-bor radius-6" src="../image/user_pic.png" alt="">
                     <div class="fz_12 co_66 mt5"></div>
                 </div>
                 <div class="weui-media-box__bd">
-                    <h4 class="weui-media-box__title fz_16 pt30">迪丽热巴 老师</h4>
+                    <h4 class="weui-media-box__title fz_16 pt25">迪丽热巴 老师</h4>
                 </div>
-                <div class="weui-cell__hd ">
-                    <div class="pt30">
-                        <a href="" class="iblock ml20 ma5"><i class="iconfont icon-gengduo1 fz_20"></i></a>
+                <div class="weui-cell__hd pt25 ">
+                    <div class="po_r">
+                        <a href="javascript:;" id="show-more" class="iblock ml20 fz_14">更多<i class="iconfont icon-gengduo2 fz_14"></i></a>
+                        <div class="po_ab_r more-menu-box hide zindex3">
+                            <ul class="more-menu t-center">
+                                <li><a href="02input-form.html">编辑写实</a></li>
+                                <li><a>删除写实</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="weui-cells weui-cells_form label-short mt5">
+<div class="weui-cells label-short ptb10">
     <div class="weui-cell bor-top_no">
         <div class="weui-cell__hd"><label class="weui-label co_99">活动学期</label></div>
         <div class="weui-cell__bd">
@@ -134,19 +140,11 @@
 <script src="../js/jquery-2.1.4.js"></script>
 <script src="../js/jquery-weui.js"></script>
 <script>
-    $(document).on("click", "#show-confirm", function() {
-        $.confirm("返回后，已填写信息不会保存，确认返回?", "警示", function() {
-            window.location.href="01index.html";
-        }, function() {
-            //取消操作
+    $(function () {
+        $("#show-more").click(function () {
+            $(".more-menu-box").toggleClass("hide");
         });
     });
-    $(document).on("click", "#show-toast", function() {
-        $.toast("操作成功", function() {
-            console.log('close');
-            window.location.href="01index.html";
-        });
-    })
 </script>
 </body>
 </html>

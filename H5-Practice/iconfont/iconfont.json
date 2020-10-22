@@ -6,25 +6,18 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "256283",
-      "name": "时间 小",
-      "font_class": "shijianxiao",
-      "unicode": "e622",
-      "unicode_decimal": 58914
+      "icon_id": "1852490",
+      "name": "更多",
+      "font_class": "gengduo2",
+      "unicode": "e620",
+      "unicode_decimal": 58912
     },
     {
-      "icon_id": "3215541",
-      "name": "时间",
-      "font_class": "shijian",
-      "unicode": "e61a",
-      "unicode_decimal": 58906
-    },
-    {
-      "icon_id": "12146525",
-      "name": "时间",
-      "font_class": "shijian1",
-      "unicode": "e600",
-      "unicode_decimal": 58880
+      "icon_id": "12893256",
+      "name": "更多",
+      "font_class": "gengduo3",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
     },
     {
       "icon_id": "16241046",

@@ -195,6 +195,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pt12{ padding-top:12px!important;}
 .pt15{ padding-top:15px!important;}
 .pt20{ padding-top:20px!important;}
+.pt25{ padding-top:25px!important;}
 .pt30{ padding-top:30px!important;}
 .pt40{ padding-top:40px!important;}
 .pt44{ padding-top:44px!important;}
@@ -314,7 +315,7 @@ input[disabled]{ color: #e3e3e3;}
 .weui-cells_form .weui-cell{padding-top:15px;padding-bottom: 15px;}
 .weui-cells_form .weui-cell .weui-select{ height: auto; line-height: inherit;}
 .weui-cell_vcode { padding-top: 0; padding-bottom: 0;}
-.weui-cells_form.label-short .weui-label{width: 80px;}
+.label-short .weui-label{width: 80px;}
 
 /*单选样式*/
 .icon-checked{display: block; width: 14px; height: 14px;border: 1px solid #ccc;border-radius: 50%; background: #ffffff; margin-top:2px;}
@@ -444,7 +445,7 @@ div+.nodata{ padding:80px 20px 0;}
 .input-group .form-control~ .input-group-addon {height: 30px;line-height: 30px;}
 .po_r .ycfile~ .po_ab_l{left: 50%;top:45%;margin-left: -62px;}
 .bg_record{ background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url("../image/pic_practice.jpg");padding-top: 160px;}
-.top_record{top:112px;width: 100%;}
+.top_record{top:120px;width: 100%;}
 
 .box{position: relative;padding-left:26px; padding-top:25px; padding-bottom:5px;}
 .box:before {  border-LEFT:1px dashed #ddd; content: " "; position: absolute;top:0; left:15px; bottom:0;width:2px; height: 100%;}
@@ -452,5 +453,8 @@ div+.nodata{ padding:80px 20px 0;}
 .box .one::before { content: " ";position: absolute;top: -3px;left: -23px;width: 26px;height: 26px;/*border:3px solid #f6f6f6;*/background:#fff7ea;border-radius:50%;}
 .box .one .time{position: absolute;left:-34px;top:0px;text-align:right; color:#999; line-height:20px; width:32px;}
 
+.po_ab_r.more-menu-box{top:24px;}
+.more-menu{ width: auto; min-width: 100px; background-color: #fff; padding:5px; border-radius: 6px; border: 1px solid #e0e0e0;box-shadow: 0 5px 8px #e6e6e6;}
+.more-menu a{ display: block; padding: 5px;}
 .record-box .bor-top:first-child:before{border-top:none;}
 .name-chk{ min-width: 90px;}

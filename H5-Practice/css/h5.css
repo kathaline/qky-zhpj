@@ -73,6 +73,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .radius-cirle{ border-radius:50%;}
 .bg_white{ background-color:#fff !important;}
 .bg_black{background-color:#000 !important;}
+.bg_lgray{ background-color:#f9f9f9 !important;}
 .bg_gray{ background-color:#f3f3f3 !important;}
 .bg_dgray{ background-color:#a9a9a9 !important;}
 .bg_org{ background-color:#ff8a00 !important;}
@@ -343,6 +344,7 @@ input[disabled]{ color: #e3e3e3;}
 .weui-btn_default{ border:1px solid #ddd;background-color:#fff;}
 .weui-btn_primary{background-color: #09acfb; border:1px solid #05a4f1;}
 .weui-btn_org{background-color: #ff9c02; border:1px solid #ff9c02;}
+.weui-btn_grn{background-color: #68cf72; border:1px solid #68cf72;}
 .weui-btn_warn{ border: 1px solid #e64340;}
 .weui-btn_org:not(.weui-btn_disabled):visited{ }
 .weui-btn_primary:after{ border:0;}
@@ -353,7 +355,7 @@ input[disabled]{ color: #e3e3e3;}
 .weui-btn-area.weui-btn-area-inline .weui-btn{margin-top: auto; margin-right: 12px; width: 100%; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;}
 .weui-btn-area.weui-btn-area-inline .weui-btn:last-child { margin-right: 0;}
 .weui-btn_plain-primary:after { border-color:#09acfb;}
-
+.weui-btn_plain-warn{border: 1px solid #e64340;color: #e64340;background-color:#fff;}
 .weui-tabbar .weui-btn{  font-size:15px; padding-top:3px; padding-bottom:3px;}
 .weui-tabbar .weui-btn+.weui-btn,.weui-row .weui-btn+.weui-btn{ margin-top:0;}
 .weui-row.weui-tabbar .weui-col-50{ width: 50%;}
@@ -449,4 +451,6 @@ div+.nodata{ padding:80px 20px 0;}
 .box .one{ position:relative; padding-left:20px;margin-bottom:10px; }
 .box .one::before { content: " ";position: absolute;top: -3px;left: -23px;width: 26px;height: 26px;/*border:3px solid #f6f6f6;*/background:#fff7ea;border-radius:50%;}
 .box .one .time{position: absolute;left:-34px;top:0px;text-align:right; color:#999; line-height:20px; width:32px;}
-/*相册*/
+
+.record-box .bor-top:first-child:before{border-top:none;}
+.name-chk{ min-width: 90px;}

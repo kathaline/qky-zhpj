@@ -15,7 +15,7 @@
 </head>
 <body ontouchstart>
 <div class="weui-tab">
-    <div class="weui-navbar head-title bg_lylw plr15 weui-flex ">
+    <div class="weui-navbar head-title bg_lylw plr15 weui-flex  zindex502">
         <div class="weui-flex__item">
             <a class="weui-navbar__item weui-bar__item--on" href="#tab01">
                 未审核
@@ -27,13 +27,75 @@
                 我录入
             </a>
         </div>
-        <div class="placeholder po_r">
+        <div class="placeholder">
+            <a href="javascript:;" data-target="#pop-sel" class="block open-popup fz_14 co_33"><span class="bor-left pl12 pr5">全部年级</span><i class="iconfont icon-xiajiantou"></i></a>
+        </div>
+        <!--<div class="placeholder po_r">
             <div class="po_ab_r"><i class="iconfont icon-xiajiantou"></i></div>
             <select class="weui-select fz_14 pr20" name="select-grade">
                 <option value="1">全部年级</option>
                 <option value="2">一年级</option>
                 <option value="3">二年级</option>
             </select>
+        </div>-->
+    </div>
+    <div id="pop-sel" class='weui-popup__container popup-top zindex501'>
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal">
+            <div class="modal-content bg_white pt0 pb12 plr15">
+                <div class="pt20">
+                    <div class="row weui-cells_radio pop-label_list pl12 t-center fz_14">
+                        <div class="col-25 pl0 pb10">
+                            <label class="weui-check__label" for="x11">
+                                <input type="radio" class="weui-check" name="radio1" id="x11">
+                                <div class="label_name cur">学龄前</div>
+                            </label>
+                        </div>
+                        <div class="col-25 pl0 pb10">
+                            <label class="weui-check__label" for="x12">
+                                <input type="radio" class="weui-check" name="radio1" id="x12">
+                                <div class="label_name">一年级</div>
+                            </label>
+                        </div>
+                        <div class="col-25 pl0 pb10">
+                            <label class="weui-check__label" for="x13">
+                                <input type="radio" class="weui-check" name="radio1" id="x13" checked="checked">
+                                <div class="label_name">二年级</div>
+                            </label>
+                        </div>
+                        <div class="col-25 pl0 pb10">
+                            <label class="weui-check__label" for="x14">
+                                <input type="radio" class="weui-check" name="radio1" id="x14">
+                                <div class="label_name">三年级</div>
+                            </label>
+                        </div>
+                        <div class="col-25 pl0 pb10">
+                            <label class="weui-check__label" for="x15">
+                                <input type="radio" class="weui-check" name="radio1" id="x15">
+                                <div class="label_name">四年级</div>
+                            </label>
+                        </div>
+                        <div class="col-25 pl0 pb10">
+                            <label class="weui-check__label" for="x16">
+                                <input type="radio" class="weui-check" name="radio1" id="x16">
+                                <div class="label_name">五年级</div>
+                            </label>
+                        </div>
+                        <div class="col-25 pl0 pb10">
+                            <label class="weui-check__label" for="x17">
+                                <input type="radio" class="weui-check" name="radio1" id="x17">
+                                <div class="label_name">六年级</div>
+                            </label>
+                        </div>
+                        <div class="col-25 pl0 pb10">
+                            <label class="weui-check__label" for="x18">
+                                <input type="radio" class="weui-check" name="radio1" id="x18">
+                                <div class="label_name">全部</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="weui-tab__bd pt0">

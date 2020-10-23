@@ -71,6 +71,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .radius-20{ border-radius:20px;}
 .radius-30{ border-radius:30px;}
 .radius-cirle{ border-radius:50%;}
+
 .bg_white{ background-color:#fff !important;}
 .bg_black{background-color:#000 !important;}
 .bg_lgray{ background-color:#f9f9f9 !important;}
@@ -80,6 +81,17 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .bg_yorg{ background-color:#edb757 !important;}
 .bg_lylw{background-color:#fcf0cd !important;}
 .bg_lb{background-color: #f3fafd !important;}
+
+.bg-grn{background-color: #68cf72 !important;}
+.bg_brown{ background:#c48336 !important;}
+.bg-red{background-color:#f76260 !important;}
+.bg-cyan{ background:#32cfaf !important;}
+.bg-blue {background-color:#38bbea !important;}
+.bg-dblue { background-color:#678fd4 !important;}
+.bg-orange { background-color: #FF8a00 !important;}
+.bg-lorange{ background-color: #fca601 !important;}
+.bg-purple{ background-color: #afa3f5!important;}
+
 .body-bg-grn{ background-color:#a4e9cd !important;}
 .bg-trans{ background-color:transparent !important;}
 .bg_b7{ background:rgba(0, 0, 0, .7)}
@@ -458,3 +470,7 @@ div+.nodata{ padding:80px 20px 0;}
 .more-menu a{ display: block; padding: 5px;}
 .record-box .bor-top:first-child:before{border-top:none;}
 .name-chk{ min-width: 90px;}
+
+.data-view{ min-height:280px; width: 100%;}
+.data-view div{ width: 100%;}
+.percent img.po_ab_l{width: 100%; height: 100%; opacity: 0.05; filter: alpha(opacity=6);}

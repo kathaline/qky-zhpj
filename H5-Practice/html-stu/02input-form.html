@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="../image/qky2.ico">
+    <title>实践活动</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <!--基础样式覆盖-->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart>
+<div class="po_r">
+    <input id="uploaderInput" class="ycfile" type="file" accept="image/*" multiple="">
+    <div class="po_ab_l"><a class="bg_b3 co_ff ptb10 plr30 radius-6">更换图片</a></div>
+    <img src="../image/pic_practice.jpg" class="col-100">
+</div>
+<div class="weui-cells weui-cells_form label-short mt5">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>学生姓名</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="选择学生">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>活动名称</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="输入名称">
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>开始时间</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="datetime-local" value="" placeholder="选择开始时间">
+        </div>
+        <div class="weui-cell__ft">
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>结束时间</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="datetime-local" value="" placeholder="选择结束时间">
+        </div>
+        <div class="weui-cell__ft">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>活动时长</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" pattern="[0-9]*" placeholder="输入时长">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label"><b class="color-danger">*</b>举办单位</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="输入单位名称">
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_select weui-cell_select-after">
+        <div class="weui-cell__hd">
+            <label class="weui-label"><b class="color-danger">*</b>活动级别</label>
+        </div>
+        <div class="weui-cell__bd">
+            <select class="weui-select" name="select2">
+                <option value="1">省级</option>
+                <option value="2">市级</option>
+                <option value="3">区级</option>
+            </select>
+        </div>
+    </div>
+    <div class="weui-cell weui-row">
+        <div class="weui-cell__hd">
+            <label class="weui-label">活动内容</label>
+        </div>
+        <div class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+            <div class="weui-textarea-counter"><span>0</span>/200</div>
+        </div>
+    </div>
+    <div class="weui-cell weui-row">
+        <div class="weui-cell__hd">
+            <label class="weui-label">附件上传</label>
+        </div>
+        <div class="weui-cell__bd">
+            <div class="input-group row ma0">
+                <input type="text" name="textfield" class="form-control col-60" id="textfield" placeholder="">
+                <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+                <span class="input-group-addon iblock col-40">请选择</span>
+            </div>
+            <div class="co_99 fz_12 mt5">支持扩展名.doc/.docx/.pdf/.jpg</div>
+        </div>
+    </div>
+</div>
+<div class="pb60"></div>
+<div class="weui-tabbar bor-top_no row bg_white ma0 pl15 pt10">
+    <div class="col-50 pl0" ><a href="javascript:;" id="show-confirm" class="weui-btn weui-btn_default">取消</a></div>
+    <div class="col-50 pl0"> <a href="javascript:;" id="show-toast" class="weui-btn weui-btn_org">确认</a></div>
+</div>
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+    $(document).on("click", "#show-confirm", function() {
+        $.confirm("返回后，已填写信息不会保存，确认返回?", "警示", function() {
+            window.location.href="01index.html";
+        }, function() {
+            //取消操作
+        });
+    });
+    $(document).on("click", "#show-toast", function() {
+        $.toast("操作成功", function() {
+            console.log('close');
+            window.location.href="01index.html";
+        });
+    })
+</script>
+</body>
+</html>

@@ -1224,3 +1224,5 @@ margin-right: 5px;    border-radius: 50%; border: 1px solid #bbb; line-height:10
 .col-sm-4.sels-box  .fs-search input{ max-width: 130px;}
 .col-sm-4.sels-box .fs-selectAll{ min-width: 50px;}
 .sel-tips{ height: 12px; line-height: 12px; font-size: 12px;}
+
+.input-group-addon.name-z{ width: 110px; max-width:110px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; padding-left: 5px; padding-right: 5px;}

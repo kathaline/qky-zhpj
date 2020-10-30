@@ -482,8 +482,9 @@ fieldset:after{right:0;}
 .name,.textover01{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; word-wrap: break-word; word-break: break-all;}
 /*角标*/
 .mark-topright,.mark-topleft{overflow:hidden; width:60px;height:60px; /*background-color:#FC6;*/ border-radius:6px; font-size:12px;  color: #fff;}
-.mark-topright .num{ z-index:2; height:100%; width:30px; position:relative; float:right}
-.triangle-topright{position: absolute; display: block; width:30px; height:70px; background-color:#d8f1fe; transform: rotate(-48deg);top:-30px;left:35px; z-index:1; }
+.mark-topright .num{ z-index:2; width:30px; position:relative; float:right;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.triangle-topright{position: absolute; display: block; width:30px; height:70px; background-color:#e1f5ff; transform: rotate(-48deg);top:-30px;left:34px; z-index:1; }
+.weui-check__label .triangle-topright{top:-28px;left:30px; }
 .div-alarm .triangle-topright{ background-color:#f6383a; }
 .div-alarm .num{color:#fff;}
 .weui-mark-rt {display: block; height:22px;line-height:22px!important; position: relative; text-align: center; top: 8px; left: -5px; transform: rotate(42deg);width:90px;}
@@ -629,3 +630,7 @@ div+.nodata{ padding:80px 20px 0;}
 .myapps:after{content: " ";   position: absolute; width: 100%;  -webkit-transform-origin: 0 0;    transform-origin: 0 0;bottom: 0; left: 0;right:0;border-bottom:2px solid #fff ; }
 .txt-ico{ height: 30px; line-height: 16px; margin-bottom:5px;}
 
+.weui-media-box_text{ border:1px solid transparent; border-radius: 6px; display: block;}
+.weui-cells_radio .weui-check:checked+.weui-media-box_text{border-color: #09acfb;}
+.weui-cells_radio .weui-check:checked+.weui-media-box_text .triangle-topright{ background-color:#09acfb; }
+.weui-cells_radio .weui-check:checked+.weui-media-box_text .num.color-primary{color: #fff !important;}

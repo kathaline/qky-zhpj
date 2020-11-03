@@ -199,6 +199,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .pt88{ padding-top:88px!important;}
 .pt50{ padding-top:50px!important;}
 .pt60{ padding-top:60px!important;}
+.pt120{ padding-top:120px!important;}
 .pb0{ padding-bottom:0px!important;}
 .pb5{ padding-bottom:5px!important;}
 .pb10{ padding-bottom:10px!important;}
@@ -223,6 +224,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .ptb10{ padding-top:10px !important;padding-bottom:10px!important;}
 .ptb12{ padding-top:12px !important;padding-bottom:12px!important;}
 .ptb15{ padding-top:15px !important;padding-bottom:15px!important;}
+.plr0{padding-left:0px!important;padding-right:0px!important;}
 .plr5{padding-left:5px!important;padding-right:5px!important;}
 .plr10{padding-left:10px!important;padding-right:10px!important;}
 .plr12{padding-left:12px!important;padding-right:12px!important;}
@@ -634,3 +636,8 @@ div+.nodata{ padding:80px 20px 0;}
 .weui-cells_radio .weui-check:checked+.weui-media-box_text{border-color: #09acfb;}
 .weui-cells_radio .weui-check:checked+.weui-media-box_text .triangle-topright{ background-color:#09acfb; }
 .weui-cells_radio .weui-check:checked+.weui-media-box_text .num.color-primary{color: #fff !important;}
+
+.top-haved{position: fixed; width: 100%; z-index: 100;}
+.top-haved_box{overflow-x:auto; height: 75px; overflow-y: hidden;}
+.top-haved_con{width: auto;white-space:nowrap; overflow-y: hidden; clear: both; overflow-x: auto; padding-left: 15px; padding-right: 15px;}
+.top-haved_cell{width: 78px; display: inline-block;}

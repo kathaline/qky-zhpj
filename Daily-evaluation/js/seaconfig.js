@@ -3,7 +3,7 @@ seajs.config({
   // 别名配置
   alias: {
     'bs': 'bootstrap/3.3.0/js/bootstrap.min',//引用bootstrap前端框架
-    'nav': 'comjs/nav_add1.2',//引用整体头部
+    'nav': '../dist/comjs/nav_add1.2',//引用整体头部
     'navicon': 'comjs/iconfont',//引用头部图标
 	'jq-191':'jquery-1.9.1.min',
 	/****插件***/

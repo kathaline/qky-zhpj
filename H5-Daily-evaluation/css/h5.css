@@ -57,6 +57,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .t-left{ text-align:left;}
 .t-right{ text-align:right;}
 .middle{ vertical-align:middle;}
+.v-bottom{vertical-align: bottom;}
 .fl{ float:left !important;}
 .fr{ float:right !important;}
 .clear:before,.clear:after{ content: " "; display: table;}

@@ -58,6 +58,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .t-right{ text-align:right;}
 .middle{ vertical-align:middle;}
 .v-bottom{vertical-align: bottom;}
+.v-top{vertical-align: top;}
 .fl{ float:left !important;}
 .fr{ float:right !important;}
 .clear:before,.clear:after{ content: " "; display: table;}

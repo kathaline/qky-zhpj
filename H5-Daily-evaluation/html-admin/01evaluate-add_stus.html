@@ -29,27 +29,42 @@
   <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
 </div>
 <div class="stus-cla weui-cells_checkbox show">
+
+  <!--<div class="weui-media-box weui-media-box_appmsg bg_white">
+    <a class="weui-media-box__ft pl5 pr12 pb2 stus-class" href="javascript:void(0)" @click="fetchStudents(el)">
+      <i class="iconfont icon-jiantou2 co_99 fz_12"></i>
+    </a>
+    <div class="weui-media-box__bd">
+      <div class="fz_16">{{el.className}}<span class="fz_12 co_99 ml10">学生{{el.studentCount}}人（已选{{el.records?el.records.length:0}}人）</span></div>
+    </div>
+    <label class="weui-media-box__ft weui-check__label" for="s1">
+      <input type="checkbox" class="weui-check" name="checkbox1" id="s1" @click="selAll($event,el)">
+      <i class="weui-icon-checked"></i>
+    </label>
+  </div>-->
+
   <div class="weui-media-box weui-media-box_appmsg bg_white">
     <a class="weui-media-box__ft pl5 pr12 pb2 stus-class">
       <i class="iconfont icon-jiantou2 co_99 fz_12"></i>
     </a>
     <label class="weui-media-box__bd weui-check__label" for="s1">
       <div class="fl">
-        <div class="fz_16">一年级（1）班<span class="fz_12 co_99 ml10">学生50人（已选2人）</span></div>
+        <div class="fz_16">{{el.className}}<span class="fz_12 co_99 ml10">学生{{el.studentCount}}人（已选{{el.records?el.records.length:0}}人）</span></div>
       </div>
       <div class="fr">
-        <input type="checkbox" class="weui-check" name="checkbox1" id="s1">
+        <input type="checkbox" class="weui-check" name="checkbox1" id="s1"  @click="selAll($event,el)">
         <i class="weui-icon-checked"></i>
       </div>
     </label>
-    <!--<div class="weui-media-box__bd">
+  </div>
+  <!--<div class="weui-media-box__bd">
       <div class="fz_16">一年级（1）班<span class="fz_12 co_99 ml10">学生50人（已选2人）</span></div>
     </div>
     <div class="weui-panel__ft">
       <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
       <i class="weui-icon-checked"></i>
     </div>-->
-  </div>
+
   <div class="weui-cells pl20">
     <label class="weui-cell weui-check__label" for="s11">
       <div class="weui-cell__hd"><img src="../image/u03.jpg" class="img30 img-bor middle"></div>

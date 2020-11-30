@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-<link rel="icon" href="../image/qky2.ico">
-<title>综合素质评价</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-<link rel="stylesheet" href="../css/weui.min.css">
-<link rel="stylesheet" href="../css/jquery-weui.css">
-<!--基础样式覆盖-->
-<link rel="stylesheet" href="../iconfont/iconfont.css">
-<link rel="stylesheet" href="../css/h5.css">
+  <link rel="icon" href="../image/qky2.ico">
+  <title>综合素质评价</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <link rel="stylesheet" href="../css/weui.min.css">
+  <link rel="stylesheet" href="../css/jquery-weui.css">
+  <!--基础样式覆盖-->
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <link rel="stylesheet" href="../css/h5.css">
 </head>
 <body ontouchstart>
 <div class="weui-search-bar" id="searchBar">
@@ -42,19 +42,18 @@
       <i class="weui-icon-checked"></i>
     </label>
   </div>-->
-
   <div class="weui-media-box weui-media-box_appmsg bg_white">
-    <a class="weui-media-box__ft pl5 pr12 pb2 stus-class">
-      <i class="iconfont icon-jiantou2 co_99 fz_12"></i>
-    </a>
-    <label class="weui-media-box__bd weui-check__label" for="s1">
-      <div class="fl">
-        <div class="fz_16">{{el.className}}<span class="fz_12 co_99 ml10">学生{{el.studentCount}}人（已选{{el.records?el.records.length:0}}人）</span></div>
+    <a class="weui-media-box__bd stus-class">
+      <div class="fl pl5 pr5 pb2">
+        <i class="iconfont icon-jiantou2 co_99 fz_12"></i>
       </div>
-      <div class="fr">
+      <div class="fl">
+        <div class="fz_16 co_33">{{el.className}}<span class="fz_12 co_99 ml10">学生{{el.studentCount}}人（已选{{el.records?el.records.length:0}}人）</span></div>
+      </div>
+    </a>
+    <label class="weui-media-box__ft pl5 weui-check__label" for="s1"">
         <input type="checkbox" class="weui-check" name="checkbox1" id="s1"  @click="selAll($event,el)">
         <i class="weui-icon-checked"></i>
-      </div>
     </label>
   </div>
   <!--<div class="weui-media-box__bd">
@@ -110,17 +109,17 @@
 </div>
 <div class="stus-cla weui-cells_checkbox">
   <div class="weui-media-box weui-media-box_appmsg bg_white">
-    <a class="weui-media-box__ft pl5 pr12 pb2 stus-class">
-      <i class="iconfont icon-jiantou2 co_99 fz_12"></i>
-    </a>
-    <label class="weui-media-box__bd weui-check__label" for="s2">
+    <a class="weui-media-box__bd stus-class">
+      <div class="fl pl5 pr5 pb2">
+        <i class="iconfont icon-jiantou2 co_99 fz_12"></i>
+      </div>
       <div class="fl">
-        <div class="fz_16">一年级（2）班<span class="fz_12 co_99 ml10">学生50人（已选2人）</span></div>
+        <div class="fz_16 co_33">一年级（2）班<span class="fz_12 co_99 ml10">学生50人（已选2人）</span></div>
       </div>
-      <div class="fr">
-        <input type="checkbox" class="weui-check" name="checkbox1" id="s2">
+    </a>
+    <label class="weui-media-box__ft pl5 weui-check__label" for="s2"">
+        <input type="checkbox" class="weui-check" name="checkbox1" id="s2"  @click="selAll($event,el)">
         <i class="weui-icon-checked"></i>
-      </div>
     </label>
   </div>
   <div class="weui-cells pl20">
@@ -175,9 +174,9 @@
 <script src="../js/jquery-weui.js"></script>
 <script>
 
- $(".stus-class").on("click",function(){
-	$(this).parents(".stus-cla").toggleClass("show"); 
- });
+  $(".stus-class").on("click",function(){
+    $(this).parents(".stus-cla").toggleClass("show");
+  });
 </script>
 </body>
 </html>

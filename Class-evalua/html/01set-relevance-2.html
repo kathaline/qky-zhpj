@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质评价</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/stu_class/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="container-xl">
+    <div class="wrap wrap-sld mt20 border-d8">
+        <div class="side side-ld">
+            <div class="box-h">
+                <div class="plr15 mt15 mb15 fz_18 bor-lb"><i class="icon_class class-wuliaozu mr5"></i>班级评价系统</div>
+                <form class="form-horizontal pt15">
+                    <div class="form-group mb10">
+                        <label class="col-sm-3 text-right pt5">班级评价：</label>
+                        <div class="col-sm-9 pl0 pt5">全课云运营学校班级评价</div>
+                    </div>
+                    <div class="form-group mb10">
+                        <label class="col-sm-3 text-right pt5">适用年级：</label>
+                        <div class="col-sm-9 pl0 pt5">
+                            一年级、二年级、三年级
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bor-t">
+                <div  class="table_info">
+                    <div class="tit-h  clear plr15">
+                        <div class="fr co_93">已关联</div>
+                        <div class="w-over" >二级指标（15分）</div>
+                    </div>
+                    <table width="" border="0" class="table table-regular">
+                        <tr>
+                            <td>
+                                <div class="w-clamp1">
+                                    <div class="po_ab_r"><span class="badge fz_nwe bg-ylw">3</span> </div>
+                                    <span title="评分项评分项评分项评分项评分项评分项评分项评分项评分项评分项评分项（-1分）">评分项评分项评分项评分项评分项评分项评分项评分项评分项评分项评分项（-1分）</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="w-clamp1">
+                                    <div class="po_ab_r"><span class="badge fz_nwe bg-ylw">1</span> </div>
+                                    <span title="迟到（-1分）">迟到（-1分）</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div  class="table_info">
+                    <div class="tit-h  clear plr15">
+                        <div class="fr co_93"></div>
+                        <div class="w-over" >二级指标（15分）</div>
+                    </div>
+                    <table width="" border="0" class="table table-regular">
+                        <tr>
+                            <td>
+                                <div class="w-clamp1">
+                                    <div class="po_ab_r"><span class="badge fz_nwe bg-ylw"></span> </div>
+                                    <span title="评分项评分项评分项评分项评分项评分项评分项评分项评分项评分项评分项（-1分）">评分项评分项评分项评分项评分项评分项评分项评分项评分项评分项评分项（-1分）</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="w-clamp1">
+                                    <div class="po_ab_r"><span class="badge fz_nwe bg-ylw"></span> </div>
+                                    <span title="迟到（-1分）">迟到（-1分）</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="box-h">
+                <div class="plr15 mt15 mb15 fz_18 bor-lb"><i class="icon_class class-guanlian mr5"></i> 需要关联的第三方系统：<span class="co_63">由管理员自行设置，关联后实现评价数据互通。</span></div>
+                <div class="pa15 text-warning"><i class="icon_class class-gantanhao fz_14 mr5"></i>操作指引：1、在Tab栏中选择需要对接第三方系统，进行评分项关联。2、请核对对接双方系统年级关系是否一致，否则评价数据推送失败。3、只限同体系下的评分项关联，不能跨体系。</div>
+            </div>
+            <div class="tab mt-49" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs pl20" role="tablist">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="false">对接慧心评价</a></li>
+                    <li role="presentation" class=""><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="true">对接宿舍评价</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade active in" id="Section1">
+                        <div class="clear">
+                            <div  class="table_info">
+                                <div class="tit-h clear plr15">
+                                    <div class="fr">
+                                        <a href="javascrip;" data-toggle="modal" data-target="#tips1" class="btn btn-primary" role="button">重置</a>
+                                    </div>
+                                </div>
+                                <table width="" border="0" class="table table-regular">
+                                    <tr>
+                                        <td>
+                                            <div class="w-clamp1">
+                                                <div class="po_ab_r">
+                                                    <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                </div>
+                                                <span title="迟到（-1分）">迟到（-1分）</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="w-clamp1">
+                                                <div class="po_ab_r">
+                                                    <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                </div>
+                                                <span title="早退，(:3[▓▓]快醒醒开学了(:3[▓▓]快醒醒开学了 看来今年就是常年就开始春暖花开解锁口令禄口街道你还看福利卡无法查看拉我（-2分）">早退，(:3[▓▓]快醒醒开学了(:3[▓▓]快醒醒开学了 看来今年就是常年就开始春暖花开解锁口令禄口街道你还看福利卡无法查看拉我（-2分）</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div  class="table_info">
+                                <div class="tit-h clear plr15">
+                                </div>
+                                <table width="" border="0" class="table table-regular">
+                                    <tr>
+                                        <td>
+                                            <div class="w-clamp1">
+                                                <div class="po_ab_r">
+                                                    <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                </div>
+                                                <span></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="w-clamp1">
+                                                <div class="po_ab_r">
+                                                    <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                </div>
+                                                <span></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <div class="clear">
+                            <div  class="table_info">
+                                <div class="tit-h clear plr15">
+                                    <div class="fr">
+                                        <a href="javascrip;" data-toggle="modal" data-target="#tips1" class="btn btn-primary disabled" role="button">重置</a>
+                                    </div>
+                                </div>
+                                <table width="" border="0" class="table table-regular">
+                                    <tr>
+                                        <td>
+                                            <div class="w-clamp1">
+                                                <div class="po_ab_r">
+                                                    <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                </div>
+                                                <span title="迟到（-1分）">迟到（-1分）</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="w-clamp1">
+                                                <div class="po_ab_r">
+                                                    <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                </div>
+                                                <span title="早退，(:3[▓▓]快醒醒开学了(:3[▓▓]快醒醒开学了 看来今年就是常年就开始春暖花开解锁口令禄口街道你还看福利卡无法查看拉我（-2分）">早退，(:3[▓▓]快醒醒开学了(:3[▓▓]快醒醒开学了 看来今年就是常年就开始春暖花开解锁口令禄口街道你还看福利卡无法查看拉我（-2分）</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div  class="table_info">
+                                <div class="tit-h clear plr15">
+                                </div>
+                                <table width="" border="0" class="table table-regular">
+                                    <tr>
+                                        <td>
+                                            <div class="w-clamp1">
+                                                <div class="po_ab_r">
+                                                    <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                </div>
+                                                <span></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="w-clamp1">
+                                                <div class="po_ab_r">
+                                                    <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                </div>
+                                                <span></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="tips1" tabindex="-1" role="dialog" aria-labelledby="tips1Label" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content tab" role="tabpanel">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">提示</h4>
+
+            </div>
+            <div class="modal-body">
+                <div class="pt20 text-center fz_16"><p class="fz_18 text-warning"><i class="icon_class class-gantanhao mr5"></i>警告！</p>重置后关联关系将全部取消，无法找回，强确认操作。</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">确认</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<div class="modal fade right" id="myset" tabindex="-1" role="dialog" aria-labelledby="mysetLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myeditLabel">选择需要关联的指标</h4>
+      </div>
+      <div class="modal-body">
+         <form class="form-horizontal" role="form">
+           <div class="cla-height">
+              <a class="block co_33 ba_f5 bor-t" data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="true">智慧考勤闸机律<i class="icon_class class-shouqi fz_20 fr"></i></a>
+              <div id="collapse01" class="panel-collapse collapse in" aria-expanded="true">
+                 <div class="radio pt0">
+                   <label class="radio-qky clear mb5 block select"><a class="radio_a fl mr5"><b></b></a>旷课</label>
+                   <label class="radio-qky clear mb5 block"><a class="radio_a fl mr5"><b></b></a>缺勤</label>
+                   <label class="radio-qky clear mb5 block"><a class="radio_a fl mr5"><b></b></a>早退</label>
+                   <label class="radio-qky clear mb5 block"><a class="radio_a fl mr5"><b></b></a>迟到</label>
+                 </div>
+              </div>
+              <a class="block co_33 ba_f5 bor-t collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false">其他硬件（占位）<i class="icon_class class-shouqi fz_20 fr"></i></a>
+              <div id="collapse02" class="panel-collapse collapse">
+                 <div class="radio pt0">
+                   <label class="radio-qky clear mb5 block select"><a class="radio_a fl mr5"><b></b></a>11</label>
+                   <label class="radio-qky clear mb5 block"><a class="radio_a fl mr5"><b></b></a>12</label>
+                 </div>
+              </div>
+           </div>
+        </form>
+      </div>
+      <div class="navbar-fixed-bottom bg_fff">
+        <div class="modal-footer border-t">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary">确认保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script>
+ seajs.use(["jq","bs","nav","dw"],function(j,b,n,dw){
+	 opt.navli_j[1].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+	 rach.rach_run(function(t){},function(t){});
+});
+</script>
+
+</body>
+</html>

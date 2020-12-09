@@ -4,6 +4,7 @@
 /*
  * 快速样式提供
  */
+/**{padding: 0;margin: 0;}*/
 .yc{ display:none;}
 .fl{ float:left !important;}
 .fr{ float:right !important;}

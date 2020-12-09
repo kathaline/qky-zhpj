@@ -904,14 +904,19 @@ label { font-weight: normal;}
 .ul-menu{ padding-left: 40px;}
 .popover.box-set{top:18px;left: -5px;}
 
-.box-h{min-height:200px; }
+.box-h{min-height:122px;height:122px\9; }
 .tit-h{ height: 54px; padding-top: 12px; padding-bottom: 12px;line-height: 30px;}
 .wrap .side .table_info{overflow-x: hidden;}
 .table.table-regular{ border-bottom: 1px solid #e7e7e7;}
 .table.table-regular tr{background-color: transparent;}
 .table.table-regular td{border-top: 1px solid #e7e7e7;padding-left: 25px; padding-right: 15px;overflow-x: hidden;min-height: 20px; line-height: 20px;}
 .wrap .side .table.table-regular td{ background-color: #f9f9f9;}
-.wrap .table.table-regular td>.w-clamp1{position:relative;min-height: 20px;width:calc(100% - 5px);}
+.wrap .table.table-regular td>.w-clamp1{position:relative;height: 20px;width:calc(100% - 5px);}
 .wrap .side .table.table-regular td>.w-clamp1{padding-right: 30px;}
 .wrap .main .table.table-regular td>.w-clamp1{padding-right: 60px;}
 .wrap .main .tab .nav-tabs li >a{margin-left: 0;margin-right: 5px;}
+@media screen and(-ms-high-contrast:active),(-ms-high-contrast:none) {
+    /*兼容IE11*/
+    .box-h{height:122px;}
+    /*.wrap  .table.table-regular td>.w-clamp1{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}*/
+}

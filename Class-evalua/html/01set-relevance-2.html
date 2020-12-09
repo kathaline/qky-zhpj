@@ -118,7 +118,7 @@
                                             <div class="w-clamp1">
                                                 <div class="po_ab_r">
                                                     <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
-                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target="#delete"></a>
                                                 </div>
                                                 <span title="迟到（-1分）">迟到（-1分）</span>
                                             </div>
@@ -129,7 +129,7 @@
                                             <div class="w-clamp1">
                                                 <div class="po_ab_r">
                                                     <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
-                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target="#delete"></a>
                                                 </div>
                                                 <span title="早退，(:3[▓▓]快醒醒开学了(:3[▓▓]快醒醒开学了 看来今年就是常年就开始春暖花开解锁口令禄口街道你还看福利卡无法查看拉我（-2分）">早退，(:3[▓▓]快醒醒开学了(:3[▓▓]快醒醒开学了 看来今年就是常年就开始春暖花开解锁口令禄口街道你还看福利卡无法查看拉我（-2分）</span>
                                             </div>
@@ -179,7 +179,7 @@
                                             <div class="w-clamp1">
                                                 <div class="po_ab_r">
                                                     <a href="" class="icon_class fz_14 class-bianji" title="编辑" role="button" data-toggle="modal" data-target="#myset"></a>
-                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target=""></a>
+                                                    <a href="" class="icon_class fz_14 class-shanchu ml15" title="删除" role="button" data-toggle="modal" data-target="#"></a>
                                                 </div>
                                                 <span title=""></span>
                                             </div>
@@ -246,7 +246,27 @@
 
             </div>
             <div class="modal-body">
-                <div class="pt20 text-center fz_16"><p class="fz_18 text-warning"><i class="icon_class class-gantanhao mr5"></i>警告！</p>重置后关联关系将全部取消，无法找回，强确认操作。</div>
+                <div class="pt20 text-center fz_16"><p class="fz_18 text-warning"><i class="icon_class class-gantanhao mr5"></i>警告！</p>重置后关联关系将全部取消，无法找回，请确认操作。</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">确认</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="deleteLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content tab" role="tabpanel">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">提示</h4>
+
+            </div>
+            <div class="modal-body">
+                <div class="pt20 text-center fz_16"><p class="fz_18 text-warning"><i class="icon_class class-gantanhao mr5"></i>警告！</p>删除后将无法找回，请确认操作。</div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -275,11 +295,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-3 plr0 pt5">选择体系：</div>
-            <div class="col-sm-9 plr0 pt5">
-                第二学期人才评价体系
-            </div>
         </h4>
+          <h4 class="modal-title row" id="myeditLabel">
+              <div class="col-sm-3 plr0 pt5">选择体系：</div>
+              <div class="col-sm-9 plr0 pt5">
+                  第二学期人才评价体系
+              </div>
+          </h4>
       </div>
       <div class="modal-body">
          <form class="form-horizontal" role="form">

@@ -79,7 +79,7 @@
                         <h5 class="bor-lb mt20 mb15 pl10">待处理催办设置</h5>
                         <div class="form-group clearfix">
                             <label for="Input01" class="col-sm-12">当班主任未处理评价情况下，设置多久在推送消息一次</label>
-                            <div class="col-sm-4 has-feedback pr0"><input type="text" class="form-control" id="Input02" placeholder="" value="80"><span class="form-control-feedback mr5 co_93">分数</span></div>
+                            <div class="col-sm-4 has-feedback pr0"><input type="text" class="form-control" id="Input02" placeholder="" value="80"><span class="form-control-feedback mr5 co_93">分钟</span></div>
                         </div>
                         <h5 class="bor-lb mt20 mb15 pl10">是否推送班主任处理</h5>
                         <div class="form-group clearfix">
@@ -91,11 +91,11 @@
                                 </div>
                             </div>
                         </div>
-                        <h5 class="bor-lb mt20 mb15 pl10">文明班设置</h5>
+                        <h5 class="bor-lb mt20 mb15 pl10">优秀红旗班设置</h5>
                         <div class="form-group clearfix">
-                            <label for="Input01" class="col-sm-12">年级条件下，前多少百分比排名为文明班，班级数为奇数时自动+1个单元班级</label>
+                            <label for="Input01" class="col-sm-12">年级条件下，前多少百分比排名为优秀班，如班级数为奇数时自动+1个单元班级；（举例：设置50%，假设某年级有6个班级，则1、2、3班为优秀班，如7个班级，则1、2、3、4班为优秀班。）</label>
                             <div class="col-sm-4 has-feedback pr0">
-                                <input type="text" class="form-control" id="Input03" placeholder="" value="50">
+                                <input type="text" class="form-control" id="Input03" placeholder="" value="40">
                                 <span class="form-control-feedback mr5 co_93">%</span>
                             </div>
                             <div class="col-sm-8">
@@ -105,18 +105,28 @@
                                 </div>
                             </div>
                         </div>
-                        <h5 class="bor-lb mt20 mb15 pl10">日通报汇总表设置
+                        <h5 class="bor-lb mt20 mb15 pl10">日检查通报汇总表
                             <div class="checkbox-input iblock ml20">
                                 <input type="checkbox" name="grade01-1" id="tip-1" class="checkbox_original">
-                                <a class="checkbox_a iblock v-txttop"></a><label for="tip-1">需要消息提醒</label>
+                                <a class="checkbox_a iblock v-txttop"></a><label class="mb0" for="tip-1">需要消息提醒</label>
                             </div>
                         </h5>
                         <div class="form-group clearfix">
-                            <label for="Input01" class="col-sm-12">设置后，导出表格中评价记录是一行或多行显示。</label>
+                            <label for="Input01" class="col-sm-12">设置后，导出word文档中的评价记录是一行显示或多行显示。</label>
                             <div class="col-sm-8">
                                 <div class="radio radio-box mt0 mb0">
                                     <label class="radio-qky clear radio-inline pt0 pl0 select"><a class="radio_a fl mr5"><b></b></a>一行显示</label>
                                     <label class="radio-qky clear radio-inline pt0"><a class="radio_a fl mr5"><b></b></a>多行显示</label>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="bor-lb mt20 mb15 pl10">周统计推送设置</h5>
+                        <div class="form-group clearfix">
+                            <label for="Input01" class="col-sm-12">勾选设置后，每周周一12点将上周评价结果，通过移动端消息推送给班主任。</label>
+                            <div class="col-sm-8">
+                                <div class="radio radio-box mt0 mb0">
+                                    <label class="radio-qky clear radio-inline pt0 pl0 select"><a class="radio_a fl mr5"><b></b></a>是</label>
+                                    <label class="radio-qky clear radio-inline pt0"><a class="radio_a fl mr5"><b></b></a>否</label>
                                 </div>
                             </div>
                         </div>

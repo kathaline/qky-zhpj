@@ -45,18 +45,18 @@
             </div>
         </div>
         <div class="main">
-            <div class="tab-content tabs label-h-over">
+            <div class="tab-content tabs">
                 <div role="tabpanel" class="tab-pane fade" id="Set01">
                     <div class="page-header pl20 pr20 pt15 pb15 ma0 clear">
                         <div class="fl fz_16">基础分数设置</div>
                     </div>
                     <form class="pl20 pr20 pb20">
-                        <h5 class="bor-lb mt20 mb20 pl10">评价基础分</h5>
+                        <h5 class="bor-lb mt20 mb15 pl10">评价基础分</h5>
                         <div class="form-group clearfix">
                             <label for="Input01" class="col-sm-12">每个班赋予基础分，基础上进行加分或者减分，最终得分=基础分+加分/减分</label>
                             <div class="col-sm-4 pr0"><input type="text" class="form-control" id="Input01" placeholder="基础分" value="80"></div>
                         </div>
-                        <h5 class="bor-lb mt20 mb20 pl10">评分是否允许修改</h5>
+                        <h5 class="bor-lb mt20 mb15 pl10">评分是否允许修改</h5>
                         <div class="form-group clearfix">
                             <div class="col-sm-12">
                                 <div class="radio radio-box mt0 mb0">
@@ -76,12 +76,22 @@
                         <div class="fl fz_16">个性设置</div>
                     </div>
                     <form class="pl20 pr20 pb20">
-                        <h5 class="bor-lb mt20 mb20 pl10">待处理催办设置</h5>
+                        <h5 class="bor-lb mt20 mb15 pl10">待处理催办设置</h5>
                         <div class="form-group clearfix">
                             <label for="Input01" class="col-sm-12">当班主任未处理评价情况下，设置多久在推送消息一次</label>
                             <div class="col-sm-4 has-feedback pr0"><input type="text" class="form-control" id="Input02" placeholder="" value="80"><span class="form-control-feedback mr5 co_93">分数</span></div>
                         </div>
-                        <h5 class="bor-lb mt20 mb20 pl10">文明班设置</h5>
+                        <h5 class="bor-lb mt20 mb15 pl10">是否推送班主任处理</h5>
+                        <div class="form-group clearfix">
+                            <label for="Input01" class="col-sm-12">选择"是"，表示评价记录默认推送给班主任处理；选择"否"，表示评价记录默认不推送班主任处理。</label>
+                            <div class="col-sm-8">
+                                <div class="radio radio-box mt0 mb0">
+                                    <label class="radio-qky clear radio-inline pt0 pl0 select"><a class="radio_a fl mr5"><b></b></a>是</label>
+                                    <label class="radio-qky clear radio-inline pt0"><a class="radio_a fl mr5"><b></b></a>否</label>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="bor-lb mt20 mb15 pl10">文明班设置</h5>
                         <div class="form-group clearfix">
                             <label for="Input01" class="col-sm-12">年级条件下，前多少百分比排名为文明班，班级数为奇数时自动+1个单元班级</label>
                             <div class="col-sm-4 has-feedback pr0">
@@ -95,7 +105,12 @@
                                 </div>
                             </div>
                         </div>
-                        <h5 class="bor-lb mt20 mb20 pl10">日通报汇总表设置</h5>
+                        <h5 class="bor-lb mt20 mb15 pl10">日通报汇总表设置
+                            <div class="checkbox-input iblock ml20">
+                                <input type="checkbox" name="grade01-1" id="tip-1" class="checkbox_original">
+                                <a class="checkbox_a iblock v-txttop"></a><label for="tip-1">需要消息提醒</label>
+                            </div>
+                        </h5>
                         <div class="form-group clearfix">
                             <label for="Input01" class="col-sm-12">设置后，导出表格中评价记录是一行或多行显示。</label>
                             <div class="col-sm-8">

@@ -346,7 +346,7 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 span.checkbox-input+.checkbox-input{ margin-left:20px;}
 .checkbox-input{ position:relative;}
 .checkbox_original{opacity: 0;outline: none;position: absolute;margin: 0;width: 14px;height: 14px;z-index:1;}
-a.checkbox_a.iblock{ position:relative; width:14px; height:14px; border:1px solid #dadada; border-radius:4px;background:#fff; line-height:12px; text-align:center; text-decoration: inherit; margin-right:5px; margin-top:3px; z-index:0;}
+a.checkbox_a.iblock{display: inline-block; position:relative; width:14px; height:14px; border:1px solid #dadada; border-radius:4px;background:#fff; line-height:12px; text-align:center; text-decoration: inherit; margin-right:5px; margin-top:3px; z-index:0;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a{background:#03a9f5; border:1px solid #03a9f5;}
 a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff; border-left: 0; border-top: 0; height: 7px; left: 4px; position: absolute; top: 1px; transform: rotate(45deg) scaleY(0); width: 3px;transition: transform .15s ease-in .05s; transform-origin: center;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a:after {transform: rotate(45deg) scaleY(1);}

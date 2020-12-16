@@ -186,3 +186,5 @@ a:hover,a:focus{ text-decoration:none;}
 .img100{ width:100px; height:100px;}
 
 .nowrap{ white-space:nowrap;}
+
+.v-txttop{vertical-align: text-top;}

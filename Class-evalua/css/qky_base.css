@@ -920,3 +920,7 @@ label { font-weight: normal;}
     .box-h{height:122px;}
     /*.wrap  .table.table-regular td>.w-clamp1{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}*/
 }
+
+.seth_div{ position: absolute;top:102px;right:0;width: 25%;    min-height: 1px; padding-right: 15px;padding-left: 15px;}
+.seth_btn{ display:block; padding:28px  20px; height: 82px; color: #0274a6; font-size: 16px;}
+.col-sm-3 .seth_btn[type=button]{ height: 82px; background-color: #5bc0de;}

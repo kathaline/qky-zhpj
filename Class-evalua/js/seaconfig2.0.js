@@ -32,6 +32,7 @@ seajs.config({
 	'tree':'plug-in/treelist/tree-list',//
 	'data_v':'common_cadr/data_view',
 	'slide':'plug-in/slide/jquery.SuperSlide.2.1.1',
+	  'seth':'seth',
   },
 
   // 路径配置

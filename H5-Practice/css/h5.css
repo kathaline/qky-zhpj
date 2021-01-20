@@ -464,3 +464,10 @@ div+.nodata{ padding:80px 20px 0;}
 .a-like{ color: #999;}
 .a-like .iconfont{color: #ccc;}
 .a-like.cur,.a-like.cur .iconfont{ color: #ff9c02;}
+
+.stus-cla { border-top:1px solid #e9e9e9;}
+.stus-cla .weui-cells{ display:none; margin-top:0;}
+.stus-cla.show .weui-cells{ display:block;}
+.stus-cla .weui-cells:after{ border-bottom:none;}
+.stus-cla.show .icon-xiajiantou:before { content: "\e604";}
+.stus-cla .weui-cells .weui-cell__hd{ padding-right:8px;}

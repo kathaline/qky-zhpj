@@ -51,6 +51,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .col-15{ width:15%;}
 .col-10{ width:10%;}
 .h100{ height:100%;}
+.lh10{ height:10px; line-height: 10px;}
 .wd80p{ width:80px !important;}
 .hidden{ overflow:hidden;}
 .t-center{ text-align:center;}

@@ -670,7 +670,7 @@ div+.nodata{ padding:80px 20px 0;}
 .tbl02 { left: 80px;top: 0px;  z-index:200;position: sticky;width: 100%; }
 .tbl03 { left: 0px;  float: left; position: sticky; z-index:200; }
 .tbl04 { left: 80px;  position: absolute;width: 100%;}
-.tbl01 th, .tbl02 th{ height: 46px;overflow: hidden;/*display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2; float: left;*/}
+.tbl01 th, .tbl02 th{ height: 46px;overflow: hidden;}
 .tbl01 th,.tbl03 th{width: 78px;}
 .tbl03 th,.tbl04 td{height: 30px;}
 .tbl02 th,.tbl04 td{width:66px;}

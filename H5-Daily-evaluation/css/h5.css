@@ -310,6 +310,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 /*超出省略号*/
 .w-over{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .txt-over{display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;-webkit-line-clamp: 1;}
+.txt2-over{display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;-webkit-line-clamp: 2;}
 
 /*tabbar样式覆盖*/
 .weui-tabbar{ background-color:#fbfbfb; position:fixed;}
@@ -656,10 +657,20 @@ div+.nodata{ padding:80px 20px 0;}
     -webkit-background-size: cover; -o-background-size: cover; background-position: center 0;}
 
 /*商城统计*/
-.tbl-box { width: 100%; height:300px;   overflow: scroll;  position: relative; float: left;  top: 0;  left:0;}
-.tbl-box  th,.tbl-box  td,.tbl-box  tr { border: 1px solid #e5f1f1; height: 30px; width: 90px; text-align: center;}
-.tbl-box  th{padding-top: 0;padding-bottom: 0; font-weight: normal; font-size: 14px;}
-.tbl01 {  background: #f9f9f9; position:absolute; z-index:201; width: 90px;left: 0; }
-.tbl02 { background:#f9f9f9;top: 0px; width:100%; z-index:200;position: sticky;}
-.tbl03 { background:#f9f9f9; left: 0px; height: 100%; float: left; position: sticky; z-index:200; width: 90px;}
-.tbl04 { left: 92px; width: 100%; position: absolute;}
+.tbl-box { width: 100%; overflow: scroll;  position: relative; float: left;  top: 0;  left:0;}
+@media all and (min-height:568px){  .tbl-box{max-height: 410px} }
+@media all and (min-height:667px){  .tbl-box{max-height: 520px} }
+@media all and (min-height:736px){  .tbl-box{max-height: 590px} }
+@media all and (min-height:812px){  .tbl-box{max-height: 670px} }
+@media all and (min-height:1024px){  .tbl-box{max-height: 970px} }
+.tbl01 th,.tbl-box th,.tbl-box  td{ border: 1px solid #e5f1f1;  text-align: center; padding-left: 5px; padding-right: 5px;}
+.tbl01 th,.tbl-box  th{padding-top: 0;padding-bottom: 0; font-weight: normal; font-size: 14px; color: #666;}
+.tbl01,.tbl02,.tbl03{ background: #f9f9f9;}
+.tbl01 { position:absolute; z-index:201; left: 0; }
+.tbl02 { left: 80px;top: 0px;  z-index:200;position: sticky;width: 100%; }
+.tbl03 { left: 0px;  float: left; position: sticky; z-index:200; }
+.tbl04 { left: 80px;  position: absolute;width: 100%;}
+.tbl01 th, .tbl02 th{ height: 46px;overflow: hidden;/*display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2; float: left;*/}
+.tbl01 th,.tbl03 th{width: 78px;}
+.tbl03 th,.tbl04 td{height: 30px;}
+.tbl02 th,.tbl04 td{width:66px;}

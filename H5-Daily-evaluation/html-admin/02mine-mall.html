@@ -25,15 +25,15 @@
 </div> 
 <div class="weui-tab mt20">
     <div class="weui-navbar bg_white zindex1">
-        <a class="weui-navbar__item weui-bar__item--on" href="#tab01">
+        <a class="weui-navbar__item" href="#tab01">
             荣誉勋章
         </a>
-        <a class="weui-navbar__item" href="#tab02">
-            兑换明细
+        <a class="weui-navbar__item weui-bar__item--on" href="#tab02">
+            获得统计
         </a>
     </div>
     <div class="weui-tab__bd pl12 pr12">
-        <div id="tab01" class="weui-tab__bd-item weui-tab__bd-item--active">
+        <div id="tab01" class="weui-tab__bd-item">
             <div class="pt10">
                 <div class="weui-media-box_appmsg mb12">
                     <div class="weui-media-box__bd">
@@ -109,47 +109,123 @@
                 </div>
             </div>
         </div>
-        <div id="tab02" class="weui-tab__bd-item">
+        <div id="tab02" class="weui-tab__bd-item weui-tab__bd-item--active">
             <form>
                 <div class="weui-row fz_0">
                     <div class="weui-cells weui-cells_form mt10 radius-6 bor-gray weui-col-100">
                     <div class="weui-cell weui-cell_select ptb10 plr12">
                         <div class="weui-cell__bd">
-                        <input class="weui-input" id="honor-coic" type="text" placeholder="" value="晨光少年">
+                        <input class="weui-input" id="honor-coic" type="text" placeholder="" value="一年级 （1）班">
                         </div>
                     </div>
                     </div>
                 </div>
             </form>
-            <table width="100%" border="0" class="table mt12">
+            <div class="tbl-box">
+                <table border="0" class="tbl01">
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                    </tr>
+                    </thead>
+                </table>
+                <table border="0" class="tbl02" id="abunav">
+                    <thead>
+                    <tr>
+                        <th>姓名</th><th>健康勋章</th><th>七彩文明勋章</th><th>健康勋章</th><th>七彩文明勋章</th><th>健康勋章</th><th>七彩文明勋章</th>
+                    </tr>
+                    </thead>
+                </table>
+                <table border="0" class="tbl03">
+                    <tbody>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>宋晓峰</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>宋晓峰</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>宋晓峰</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>宋晓峰</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>宋晓峰</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>宋晓峰</th></tr>
+                    <tr><th>易烊千玺</th></tr><tr><th>易烊千玺</th></tr>
+                    <tr><th>宋晓峰</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>宋晓峰</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    <tr><th>宋晓峰</th></tr>
+                    <tr><th>易烊千玺</th></tr>
+                    </tbody>
+                </table>
+                <table border="0" class="tbl04">
+                    <tbody>
+                    <tr><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td></tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+           <!-- <table width="100%" border="0" class="table mt12">
                 <tbody>
                 <tr>
-                    <th width="3%" scope="col"></th>
-                    <th width="22%" scope="col">兑换学生</th>
-                    <th width="38%" scope="col">学生班级</th>
+                    <th width="22%" scope="col">姓名</th>
+                    <th width="38%" scope="col">七彩儿童张</th>
                     <th width="37%" scope="col">兑换时间</th>
                 </tr>
                 <tr>
-                    <th>1</th>
+                  <td>吴雨涵</td>
+                  <td>一年级（1）班</td>
+                  <td>2019-07-12</td>
+                </tr>
+                <tr>
+                  <td>罗浔阳</td>
+                  <td>一年级（1）班</td>
+                  <td>2019-06-28</td>
+                </tr>
+                <tr>
+                  <td>吴雨涵</td>
+                  <td>一年级（1）班</td>
+                  <td>2019-07-12</td>
+                </tr>
+                <tr>
+                  <td>罗浔阳</td>
+                  <td>一年级（1）班</td>
+                  <td>2019-06-28</td>
+                </tr>
+                <tr>
                     <td>吴雨涵</td>
                     <td>一年级（1）班</td>
                     <td>2019-07-12</td>
                 </tr>
                 <tr>
-                    <th>2</th>
+                  <td>吴雨涵</td>
+                  <td>一年级（1）班</td>
+                  <td>2019-07-12</td>
+                </tr>
+                <tr>
+                  <td>罗浔阳</td>
+                  <td>一年级（1）班</td>
+                  <td>2019-06-28</td>
+                </tr>
+                <tr>
                     <td>罗浔阳</td>
                     <td>一年级（1）班</td>
                     <td>2019-06-28</td>
                 </tr>
                 </tbody>
-            </table>
+            </table>-->
         </div>
     </div>
 </div>           
 
 
 <div class="pb50"></div>
-<div class="weui-tabbar zindex1">
+<div class="weui-tabbar">
 <div class="weui-tabbar weui-row">
   <a href="02mine.html" class="weui-btn weui-btn_default weui-col-100">返回</a>
 </div>
@@ -192,8 +268,12 @@
         cols: [
           {
             textAlign: 'center',
-            values: ['星光少年','晨光少年','阳光少年']
-          }
+            values: ['一年级','二年级','三年级','四年级','五年级','六年级',]
+          },
+            {
+                textAlign: 'center',
+                values: ['（1）班','（2）班','（3）班']
+            }
         ],
         onChange: function(p, v, dv) {
           console.log(p, v, dv);
@@ -202,6 +282,29 @@
           console.log("close");
         }
       });
+/*
+
+    window.onload=
+        function(){
+            var oDiv = document.getElementById("abunav"),
+                H = 0,
+                Y = oDiv
+            while (Y) {
+                H += Y.offsetTop;
+                Y = Y.offsetParent;
+            }
+            window.onscroll = function()
+            {
+                var s = document.body.scrollTop || document.documentElement.scrollTop
+                if(s>H) {
+                    oDiv.style = "position:fixed;top:0;overflow-x: scroll;z-index:202;"
+                }else {
+                    oDiv.style = ""
+                }
+            }
+        }
+*/
+
 </script>
   
 </body>

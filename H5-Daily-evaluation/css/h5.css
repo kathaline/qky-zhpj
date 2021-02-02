@@ -404,7 +404,7 @@ input[disabled]{ color: #e3e3e3;}
 .weui-search-bar__cancel-btn,.weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before{color: #09acfb;}
 
 .weui-check__label:active{ background-color: #fff;}
-.weui-cells_checkbox .bg-topright{ position: absolute;display: block; width: 30px;height: 70px;transform: rotate(-48deg); top: -36px;left: 35px;z-index: 1;}
+.weui-cells_checkbox .bg-topright,.weui-cells_radio .bg-topright{ position: absolute;display: block; width: 30px;height: 70px;transform: rotate(-48deg); top: -36px;left: 35px;z-index: 1;}
 .weui-cells_checkbox .weui-check:checked+.bg-topright{background-color: #09acfb;}
 
 /*搜索*/
@@ -611,7 +611,7 @@ div+.nodata{ padding:80px 20px 0;}
 .data-line{position: relative;}
 .data-line+.data-line:before{content: "";position: absolute;left: 0;border-left: 1px solid #ccc; height: 16px;top:50%;margin-top: -8px;transform: scaleX(.5);}
 .data-view{ min-height:280px; width: 100%;}
-.data-view div{ width: 100%;}
+/*.data-view div{ width: 100%;}*/
 /*.weui-tab__bd .weui-tab__bd-item.weui-tab__bd-item--active  .data-view div,.weui-tab__bd .weui-tab__bd-item.weui-tab__bd-item--active  .data-view div canvas{ width: 100% !important; height: 300px !important;}*/
 .data-list .weui-cell:nth-child(odd){background-color: #f4f8f9;}
 .data-list .weui-cell+.weui-cell:before{border-top:none;}
@@ -644,8 +644,9 @@ div+.nodata{ padding:80px 20px 0;}
 
 .weui-media-box_text{ border:1px solid transparent; border-radius: 6px; display: block;}
 .weui-cells_radio .weui-check:checked+.weui-media-box_text{border-color: #09acfb;}
-.weui-cells_radio .weui-check:checked+.weui-media-box_text .triangle-topright{ background-color:#09acfb; }
+.weui-cells_radio .weui-check:checked+.weui-media-box_text .triangle-topright,.weui-cells_radio .weui-check:checked+.weui-media-box_text .bg-topright{ background-color:#09acfb; }
 .weui-cells_radio .weui-check:checked+.weui-media-box_text .num.color-primary{color: #fff !important;}
+.weui-cells_radio .weui-check:checked+.weui-media-box_text .weui-icon-checked:before{display:block;content:"\EA08";color:#fff;}
 
 .top-haved{position: fixed; width: 100%; z-index: 100;}
 .top-haved_box{overflow-x:auto; height: 75px; overflow-y: hidden;}

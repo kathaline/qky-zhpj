@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <link rel="icon" href="../image/qky2.ico">
+  <title>综合素质评价</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <link rel="stylesheet" href="../css/weui.min.css">
+  <link rel="stylesheet" href="../css/jquery-weui.css">
+  <!--基础样式覆盖-->
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart>
+<div class="weui-media-box weui-media-box_appmsg bg_white plr20">
+  <div class="weui-media-box__hd">
+    <img class="weui-media-box__thumb" src="../image/medal_de.png" alt="">
+    <div class="fz_12 co_66 mt5"></div>
+  </div>
+  <div class="weui-media-box__bd">
+    <h4 class="weui-media-box__title">星光少年</h4>
+    <p class="weui-media-box__desc fz_14">有<b class="color-warning fz_16 ml5 mr5">6</b>位同学满足</p>
+  </div>
+  <div class="weui-cell__hd">
+    <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+    <i class="weui-icon-checked"></i>
+  </div>
+</div>
+<div class="stus-cla weui-cells_checkbox mb10 show">
+  <div class="weui-media-box weui-media-box_appmsg">
+    <a class="weui-media-box__bd stus-class">
+      <div class="fl pl5 pr5 pb2">
+        <i class="iconfont icon-jiantou2 co_99 fz_12"></i>
+      </div>
+      <div class="fl">
+        <div class="fz_16 co_33">一年级（2）班<span class="fz_12 co_99 ml5">（5人）</span></div>
+      </div>
+    </a>
+    <label class="weui-media-box__ft pl5 weui-check__label" for="s0">
+        <input type="checkbox" class="weui-check" name="checkbox1" id="s0"  @click="selAll($event,el)">
+        <i class="weui-icon-checked"></i>
+    </label>
+  </div>
+  <div class="row ml12 mr0 t-center weui-cells_checkbox">
+    <div class="col-25 pl0">
+      <label class="weui-cells mb5 radius-6 block weui-check__label" for="stu01">
+        <div class="weui-media-box_text block pt12 pb10 co_66 opt-cur">
+          <div class="po_ab_r mark-topright"><div class="num"><i class="iconfont icon-duigou1 fz_12 ml10"></i></div>
+            <input type="checkbox" class="weui-check" name="checkbox1" id="stu01" checked="checked">
+            <div class="bg-topright"></div>
+          </div>
+          <img src="../image/u03.jpg" class="img40 radius-cirle img-bor">
+          <div class="name fz_14">孙晓宇</div>
+        </div>
+      </label>
+    </div>
+    <div class="col-25 pl0">
+      <label class="weui-cells mb5 radius-6 block weui-check__label" for="stu02">
+        <div class="weui-media-box_text block pt12 pb10 co_66 opt-cur">
+          <div class="po_ab_r mark-topright"><div class="num"><i class="iconfont icon-duigou1 fz_12 ml10"></i></div>
+            <input type="checkbox" class="weui-check" name="checkbox1" id="stu02">
+            <div class="bg-topright"></div>
+          </div>
+          <img src="../image/u02.jpg" class="img40 radius-cirle img-bor">
+          <div class="name fz_14">杨文秀</div>
+        </div>
+      </label>
+    </div>
+    <div class="col-25 pl0">
+      <label class="weui-cells mb5 radius-6 block weui-check__label" for="stu03">
+        <div class="weui-media-box_text block pt12 pb10 co_66 opt-cur">
+          <div class="po_ab_r mark-topright"><div class="num"><i class="iconfont icon-duigou1 fz_12 ml10"></i></div>
+            <input type="checkbox" class="weui-check" name="checkbox1" id="stu03">
+            <div class="bg-topright"></div>
+          </div>
+          <img src="../image/u02.jpg" class="img40 radius-cirle img-bor">
+          <div class="name fz_14">杨文秀</div>
+        </div>
+      </label>
+    </div>
+    <div class="col-25 pl0">
+      <label class="weui-cells mb5 radius-6 block weui-check__label" for="stu04">
+        <div class="weui-media-box_text block pt12 pb10 co_66 opt-cur">
+          <div class="po_ab_r mark-topright"><div class="num"><i class="iconfont icon-duigou1 fz_12 ml10"></i></div>
+            <input type="checkbox" class="weui-check" name="checkbox1" id="stu04">
+            <div class="bg-topright"></div>
+          </div>
+          <img src="../image/u02.jpg" class="img40 radius-cirle img-bor">
+          <div class="name fz_14">杨文秀</div>
+        </div>
+      </label>
+    </div>
+    <div class="col-25 pl0">
+      <label class="weui-cells mb5 radius-6 block weui-check__label" for="stu05">
+        <div class="weui-media-box_text block pt12 pb10 co_66 opt-cur">
+          <div class="po_ab_r mark-topright"><div class="num"><i class="iconfont icon-duigou1 fz_12 ml10"></i></div>
+            <input type="checkbox" class="weui-check" name="checkbox1" id="stu05">
+            <div class="bg-topright"></div>
+          </div>
+          <img src="../image/u02.jpg" class="img40 radius-cirle img-bor">
+          <div class="name fz_14">杨文秀</div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+</div>
+<div class="stus-cla weui-cells_checkbox mb10 show">
+  <div class="weui-media-box weui-media-box_appmsg">
+    <a class="weui-media-box__bd stus-class">
+      <div class="fl pl5 pr5 pb2">
+        <i class="iconfont icon-jiantou2 co_99 fz_12"></i>
+      </div>
+      <div class="fl">
+        <div class="fz_16 co_33">二年级（6）班<span class="fz_12 co_99 ml5">（1人）</span></div>
+      </div>
+    </a>
+    <label class="weui-media-box__ft pl5 weui-check__label" for="s1">
+      <input type="checkbox" class="weui-check" name="checkbox1" id="s1"  @click="selAll($event,el)">
+      <i class="weui-icon-checked"></i>
+    </label>
+  </div>
+  <div class="row ml12 mr0 t-center weui-cells_checkbox">
+    <div class="col-25 pl0">
+      <label class="weui-cells mb5 radius-6 block weui-check__label" for="stu11">
+        <div class="weui-media-box_text block pt12 pb10 co_66 opt-cur">
+          <div class="po_ab_r mark-topright"><div class="num"><i class="iconfont icon-duigou1 fz_12 ml10"></i></div>
+            <input type="checkbox" class="weui-check" name="checkbox1" id="stu11" checked="checked">
+            <div class="bg-topright"></div>
+          </div>
+          <img src="../image/u03.jpg" class="img40 radius-cirle img-bor">
+          <div class="name fz_14">孙晓宇</div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+</div>
+<div class="pb50"></div>
+<div class="weui-tabbar weui-row">
+  <a href="02mine-medal_choose.html" class="weui-btn weui-btn_default weui-col-50">返回</a>
+  <a href="javascript:;" id="show-toast" class="weui-btn weui-col-50 weui-btn_plain-primary">确认派发</a>
+</div>
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+
+  $(".stus-class").on("click",function(){
+    $(this).parents(".stus-cla").toggleClass("show");
+  });
+  $(document).on("click", "#show-toast", function() {
+    $.toast("操作成功", function() {
+      console.log('close');
+    });
+  })
+</script>
+</body>
+</html>

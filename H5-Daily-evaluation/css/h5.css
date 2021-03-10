@@ -667,7 +667,7 @@ div+.nodata{ padding:80px 20px 0;}
 .tbl01 th,.tbl-box th,.tbl-box  td{ border: 1px solid #e5f1f1;  text-align: center; padding-left: 5px; padding-right: 5px;}
 .tbl01 th,.tbl-box  th{padding-top: 0;padding-bottom: 0; font-weight: normal; font-size: 14px; color: #666;}
 .tbl01,.tbl02,.tbl03{ background: #f9f9f9;}
-.tbl01 { position:absolute; z-index:201; left: 0; }
+.tbl01 { position:absolute; z-index:201; left: 0;width:82px; text-align:center;}
 .tbl02 { left: 80px;top: 0px;  z-index:200;position: sticky;width: 100%; }
 .tbl03 { left: 0px;  float: left; position: sticky; z-index:200; }
 .tbl04 { left: 80px;  position: absolute;width: 100%;}

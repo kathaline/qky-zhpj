@@ -294,6 +294,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {color: #fff;background-color: #0288d1;border-color: #0288d1;}
 .btn-default.add-a:hover,.btn-default.add-a:hover i{ background:#fff; color:#0288d1;border-color: #0288d1;}
 .modal-footer .btn + .btn{ margin-left:20px;}
+.btn-primary-border,.btn-primary-border:hover,.btn-primary-border:focus,.btn-primary-border:active{border-color:#21a2db; color:#21a2db;}
 /*表单改装*/
 .form-control {height:30px;padding:5px 10px;}
 .help-block{ font-size:12px; }
@@ -924,3 +925,25 @@ label { font-weight: normal;}
 .seth_div{ position: absolute;top:102px;right:0;width: 25%;    min-height: 1px; padding-right: 15px;padding-left: 15px;}
 .seth_btn{ display:block; padding:28px  20px; height: 82px; color: #0274a6; font-size: 16px;}
 .col-sm-3 .seth_btn[type=button]{ height: 82px; background-color: #5bc0de;}
+/*批量评价*/
+.col-sm-3.batch-l{width:306px;}
+.col-sm-9.batch-r{width: calc(100% - 306px);}
+.col-sm-9.batch-r .table-responsive::-webkit-scrollbar {
+    height:10px;
+}
+.col-sm-9.batch-r .table-responsive::-webkit-scrollbar-track{    border-radius: 10px;background: #f0f0f0;}
+/* 滚动条滑块 */
+.col-sm-9.batch-r .table-responsive::-webkit-scrollbar-thumb {
+    border-radius:6px;
+    width: 6px;
+    background:rgba(100,100,100,0.1);
+    -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+}
+.batch-l .table>thead >tr >th,.batch-r .table>thead >tr >th{  background: #f3f3f3;color:#333; text-align:center;vertical-align:middle; padding-left:0; padding-right:0;}
+.batch-l .table>tbody >tr >td,.batch-r .table>tbody >tr >td{ vertical-align:middle;}
+.batch-l .table>tbody >tr >td a,.batch-r .table>tbody >tr >td a{ cursor:pointer;}
+.batch-r .table>tbody >tr >td a{ text-decoration:underline;}
+.batch-l .table>tbody >tr >td:last-child,.batch-l .table>thead >tr >th:last-child{min-width:72px; font-size:0;}
+.batch-zb{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;width:88px;}
+.modal-body .tab-content .alert-warning{ background-color: #fff;}
+.modal-body .tab-content .alert.active{border-color: #27b0f2; color: #27b0f2; font-weight: bold; background-color: #fcf8e3;}

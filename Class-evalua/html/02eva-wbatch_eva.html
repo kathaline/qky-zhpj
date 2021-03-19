@@ -1,0 +1,528 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="../qky2.ico">
+    <title>学生综合素质评价</title>
+    <link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+    <!--全课云基础样式覆盖-->
+    <link rel="stylesheet" href="../iconfont/stu_class/iconfont.css">
+    <link href="../css/qky_base.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="container-xl">
+    <div class="qkycadr mt20 mb20">
+        <div class="bor-bgray pa15 clear">
+            <div class="fl fz_16 co_33"><i class="icon_class class-location mr5"></i>已选指标：劳动卫生指标-桌椅卫生</div>
+            <div class="fr"><a href="02eva-will-batch.html" class="co_63"><i class="icon_class class-zuo fz_14"></i>返回</a></div>
+        </div>
+        <div class="pa20">
+            <div class="page-header pb15 ma0 clear">
+                <div class="fl"><a href="#" class="btn btn-primary-border po_r"  data-toggle="modal" data-target="#addcls"><i class="icon_class class-zengjia fz_14 mr5"></i>添加班级</a></div>
+                <div class="fr"><a href="#" data-toggle="modal" data-target="#tips1" class="mr20" title=""><i class="icon_class class-zengjia fz_14 mr5"></i>批量评价项</a><a href="#" data-toggle="modal" data-target="#tips1" class="mr20" title=""><i class="icon_class class-zengjia fz_14 mr5"></i>批量上传附件</a><a href="#" data-toggle="modal" data-target="#tips1" class="mr20" title=""><i class="icon_class class-guanbi1 fz_14 mr5"></i>清空评价</a><a href="" class="btn btn-primary"><i class="icon_class class-ywc1 fz_14 mr5"></i>提交评价</a></div>
+            </div>
+        </div>
+        <form class="form-horizontal plr20">
+            <div class="mb20">
+                <div class="bor-dash radius-4 clear">
+                    <div class="row pa15">
+                        <div class="col-sm-5 bor-lb pl10"><div class="ptb5">初一(1)班</div></div>
+                        <div class="col-sm-7 text-right pt5">
+                            <a href="#" data-toggle="modal" data-target="#tips1" class="ml20" title="删除"><i class="icon_class class-shanchu fz_14 mr5"></i>删除评价</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pt5 pl0 pr0">已选评分项</label>
+                        <div class="col-sm-9 pt5">
+                            <a type="" class="a-pointer" data-toggle="modal" data-target="#addpfx"><i class="icon_class class-guanlian fz_14 mr5"></i>选择评分项</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pt5 pl0 pr0">关联学生</label>
+                        <div class="col-sm-9 pt5">
+                            <a type="" class="a-pointer" data-toggle="modal" data-target="#addstudents"><i class="icon_class class-guanlian fz_14 mr5"></i>点击关联</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pt5 pl0 pr0">关联佐证</label>
+                        <div class="col-sm-9 pt5">
+                            <a type="" class="a-pointer" data-toggle="modal" data-target="#addpfx"><i class="icon_class class-guanlian fz_14 mr5"></i>关联佐证</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb20">
+                <div class="bor-dash radius-4 clear">
+                    <div class="row pa15">
+                        <div class="col-sm-5 bor-lb pl10"><div class="ptb5">初一(2)班</div></div>
+                        <div class="col-sm-7 text-right pt5">
+                            <a href="#" data-toggle="modal" data-target="#tips1" class="ml20" title="删除"><i class="icon_class class-shanchu fz_14 mr5"></i>删除评价</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pt5 pl0 pr0">已选评分项</label>
+                        <div class="col-sm-9 pt5">
+                            <div class="alert alert-warning clear mb5">
+                                <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pt5 pl0 pr0">关联学生</label>
+                        <div class="col-sm-9 pt5">
+                            <div class="bg-gray radius-4 pt10 pb5 pl10 fz_00 clear">
+                                <div class="col-sm-2 pl0 ptb0 mb0 alert">
+                                    <div class="label label-cour mb5 fz_14 pr20">易烊千玺<button type="button" class="close error_color fz_14 po_ab_r" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></div>
+                                </div>
+                                <div class="col-sm-2 pl0 ptb0 mb0 alert">
+                                    <div class="label label-cour mb5 fz_14 pr20">沈佳妮<button type="button" class="close error_color fz_14 po_ab_r" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-sm-offset-2 pt5">
+                            <a type="" class="a-pointer" data-toggle="modal" data-target="#addstudents"><i class="icon_class class-guanlian fz_14 mr5"></i>继续关联学生</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pt5 pl0 pr0">添加佐证<p class="mt5 co_93">(0/120)</p></label>
+                        <div class="col-sm-9">
+                            <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评语"></textarea>
+                        </div>
+                        <div class="col-sm-9 col-lg-offset-2 pt10">
+                            <a href="#" class="btn btn-info po_r" title="上传"><i class="icon_class class-shangchuan fz_14 mr5"></i>本地上传<input type="file" name="fileField" class="ycfile" size="28"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb20">
+                <div class="bor-dash radius-4 clear">
+                    <div class="row pa15">
+                        <div class="col-sm-5 bor-lb pl10"><div class="ptb5">初一(3)班</div></div>
+                        <div class="col-sm-7 text-right pt5">
+                            <a href="#" data-toggle="modal" data-target="#tips1" class="ml20" title="删除"><i class="icon_class class-shanchu fz_14 mr5"></i>删除评价</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pt5 pl0 pr0">已选评分项</label>
+                        <div class="col-sm-9 pt5">
+                            <div class="alert alert-warning clear mb5">
+                                <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                <div class="col-sm-2 pa0 has-feedback "><input type="text" class="form-control pr20" value="-4"><span class="form-control-feedback r0 co_93">分</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pt5 pl0 pr0">关联学生</label>
+                        <div class="col-sm-9 pt5">
+                            <div class="bg-gray radius-4 pt10 pb5 pl10 fz_00 clear">
+                                <div class="col-sm-2 pl0 ptb0 mb0 alert">
+                                    <div class="label label-cour mb5 fz_14 pr20">易烊千玺<button type="button" class="close error_color fz_14 po_ab_r" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></div>
+                                </div>
+                                <div class="col-sm-2 pl0 ptb0 mb0 alert">
+                                    <div class="label label-cour mb5 fz_14 pr20">沈佳妮<button type="button" class="close error_color fz_14 po_ab_r" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-sm-offset-2 pt5">
+                            <a type="" class="a-pointer" data-toggle="modal" data-target="#addstudents"><i class="icon_class class-guanlian fz_14 mr5"></i>继续关联学生</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 text-right pt5 pl0 pr0">添加佐证<p class="mt5 co_93">(0/120)</p></label>
+                        <div class="col-sm-9">
+                            <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评语"></textarea>
+                        </div>
+                        <div class="col-sm-9 col-sm-offset-2 pt10">
+                            <ul class="import_list">
+                                <li class="li_img fl mr10"><span class="spn_import"><div class="div_img img_status"><div class="status_cont">50%</div><img src="../images/stu_judge/u1357.png"></div><a href="#" title="删除"><i class="icon_class class-guanbi1 fz_14"></i></a></span></li>
+                                <li class="li_img fl mr10"><span class="spn_import"><div class="div_img img_status"><div class="status_cont"><i class="icon_class class-shibai error_color fz_20"></i></div><img src="../images/stu_judge/u1357.png"></div><a href="#" title="删除"><i class="icon_class class-guanbi1 fz_14"></i></a></span></li>
+                                <li class="li_img fl mr10"><a href="#" class="a_add po_r" title="继续上传"><i class="icon_class class-zengjia"></i><input type="file" name="fileField" class="ycfile" size="28"></a></li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<div class="modal fade" id="addcls" tabindex="-1" role="dialog" aria-labelledby="addclsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" role="tabpanel">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">选择班级</h4>
+            </div>
+            <div class="modal-body clear pa0">
+                <div class="cla-height">
+                    <div class="bor-b mlr20">
+                        <div class="block co_33 ptb15">
+                            <label class="checkbox-qky mb0 parent fz_nwe" lj="checkbox_norm01" isc="no"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>一年级</label>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="true"><i class="icon_class class-shouqi fz_20 fr"></i></a>
+                        </div>
+                        <div id="collapse01" class="mlr15 panel-collapse collapse in" aria-expanded="true" style="">
+                            <div class="mt10 plr20">
+                                <label class="checkbox-qky child col-norm pb10 select" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm01"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小一（1）班</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bor-b mlr20">
+                        <div class="block co_33 ptb15">
+                            <label class="checkbox-qky mb0 parent fz_nwe" lj="checkbox_norm02" isc="no"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>二年级</label>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false"><i class="icon_class class-shouqi fz_20 fr"></i></a>
+                        </div>
+                        <div id="collapse02" class="mlr15 panel-collapse collapse">
+                            <div class="mt10 plr20">
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                                <label class="checkbox-qky child col-norm pb10" lj="checkbox_norm02"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a>小二（1）班</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ma15 pl10 clear fz_15 bor-lb">已关联班级</div>
+                <div class="row ma0 pl15">
+                    <div class="col-sm-2 pl0 ptb0 mb0 alert">
+                        <div class="label label-cour mb5 fz_14 pr20">小一（1）班<button type="button" class="close error_color fz_14 po_ab_r" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-header ma0"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确认添加</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<div class="modal fade" id="addpfx" tabindex="-1" role="dialog" aria-labelledby="addpfxLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content tab" role="tabpanel">
+            <div class="modal-header nav nav-tabs pa0">
+                <h4 class="modal-title" id="myModalLabel11">
+                    <ul class="fl" role="tablist">
+                        <li role="presentation" class="active"><a href="#Section0" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">全部评分项</a></li>
+                        <li role="presentation"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">减分项</a></li>
+                        <li role="presentation"><a href="#Section2" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">加分项</a></li>
+                    </ul>
+                </h4>
+                <div class="fr pt15 pr15">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+
+            </div>
+            <div class="modal-body ">
+                <div class="tab-content tabs cla-height">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section0">
+                        <div class="row ml0">
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear active">
+                                    <div class="col-sm-9 pa0">上课期间随意打闹</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+1分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section1">
+                        <div class="row ml0">
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">上课期间随意打闹</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">升国旗仪式缺席1次</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">没完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <div class="row ml0">
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">上课期间表现良好</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">上课期间表现良好</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pl0">
+                                <div class="alert alert-warning clear">
+                                    <div class="col-sm-9 pa0">完成作业</div>
+                                    <div class="col-sm-3 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-header ma0"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确认提交</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<div class="modal fade" id="addstudents" tabindex="-1" role="dialog" aria-labelledby="addstudentsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" role="tabpanel">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">关联学生</h4>
+            </div>
+            <div class="modal-body clear pa0">
+                <div class="ma15 pl10 clear fz_15 bor-lb">选择关联学生</div>
+                <div class="bor-dash ml15 pa15 mr15 radius-4">
+                    <div class="row ml0">
+                        <div class="col-sm-4">
+                            <div class="has-feedback">
+                                <input type="text" class="form-control" placeholder="姓名搜索">
+                                <a class="icon_class class-sousuo3 form-control-feedback" aria-hidden="true"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row members pl15 pt15">
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+                        <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                            <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_class class-gou fz_12"></i></a></label>沈佳妮
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ma15 pl10 clear fz_15 bor-lb">已关联学生</div>
+                <div class="row ma0 pl15">
+                    <div class="col-sm-2 pl0 ptb0 mb0 alert">
+                        <div class="label label-cour mb5 fz_14 pr20">易烊千玺<button type="button" class="close error_color fz_14 po_ab_r" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></div>
+                    </div>
+                    <div class="col-sm-2 pl0 ptb0 mb0 alert">
+                        <div class="label label-cour mb5 fz_14 pr20">沈佳妮<button type="button" class="close error_color fz_14 po_ab_r" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-header ma0"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确认添加</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!--模块化js-->
+<script src="../js/sea.js"></script>
+<script src="../js/seaconfig2.0.js"></script>
+<script>
+    seajs.use(["jq","bs","nav","rach","dw"],function(j,b,n,rach,dw){
+        opt.navli_j[0].isactive=true;
+        $("#qkynav").qkynav(opt);
+        rach.rach_run(function(t){},function(t){});
+    });
+</script>
+
+</body>
+</html>

@@ -1366,6 +1366,6 @@ a[data-toggle="collapse"].collapsed .qkyicon.iblock,a[data-toggle="collapse"].co
 .group-one{ padding-left: 25px; padding-right: 25px;}
 .group-cell{ position: relative; padding-top: 70px; float: left; margin-top: 12px; margin-bottom: 12px;}
 .group-cell .gp-user{width: 62px;height: 62px; position: absolute;top:0;left: 50%; margin-left: -30px;}
-.group-cell .gp-name{ font-size: 12px; width: 48px;display: inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;}
+.group-cell .gp-name{ font-size: 12px; color: #333; width: 48px;display: inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;}
 .group-cell .gp-name_box{ position: relative; width: 52px;}
 .group-cell+.group-cell .gp-name_box:before{content: "/";position: absolute;left: -2px;top:1px; color: #aaa;}

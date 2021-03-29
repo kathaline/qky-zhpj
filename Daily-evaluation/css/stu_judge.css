@@ -55,6 +55,7 @@ h3{ font-weight:normal; font-size:14px;}
 .bor_all{ border:1px solid #d8d8d8;}
 .bor_all.rad4{ border:1px solid #ccc;padding:0 !important; position:relative;}
 .bor_all .bor_no{ border:none;}
+.bor_lno{ border-left: none !important;}
 .bor_all.mark_txtare{ height:auto !important; padding:0 !important;}
 /*.bor_all .co_999.text-right{ height:16px; line-height:14px; margin-top:0; position:absolute; right:0; bottom:12px;}*/
 .bor_all .co_999.text-right{ height:16px; line-height:14px; margin-top:0;}
@@ -1235,7 +1236,7 @@ span.checkbox-input+.checkbox-input{ margin-left:20px;}
 .checkbox_original{opacity: 0;outline: none;position: absolute;margin: 0;width: 14px;height: 14px;z-index:1;}
 a.checkbox_a.iblock{ position:relative; width:14px; height:14px; border:1px solid #dadada; border-radius:4px;background:#fff; line-height:12px; text-align:center; text-decoration: inherit; margin-right:5px; margin-top:3px; z-index:0;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a{background:#03a9f5; border:1px solid #03a9f5;}
-a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff; border-left: 0; border-top: 0; height: 7px; left: 4px; position: absolute; top: 1px; transform: rotate(45deg) scaleY(0); width: 3px;transition: transform .15s ease-in .05s; transform-origin: center;}
+.checkbox-input a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff; border-left: 0; border-top: 0; height: 7px; left: 4px; position: absolute; top: 1px; transform: rotate(45deg) scaleY(0); width: 3px;transition: transform .15s ease-in .05s; transform-origin: center;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a:after {transform: rotate(45deg) scaleY(1);}
 .checkbox-input .checkbox_original:indeterminate~ a.checkbox_a{background:#03a9f5; border:1px solid #03a9f5;}
 .checkbox-input .checkbox_original:indeterminate~ a.checkbox_a:before {content: ""; position: absolute; display: block; background-color: #fff; height: 2px; transform: scale(.6);left: 0; right: 0;top: 5px;}
@@ -1246,10 +1247,125 @@ a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check02{ background-color:#fff;border-color:#e4ab03;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check01:after{ border-color:#03a9f5;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check02:after{ border-color:#e4ab03;}
+.checkbox-qky.checkbox-input{ display: inline-block;}
+.checkbox-input  a.checkbox_a{position: relative;width: 14px;height: 14px; vertical-align: middle; margin-top: 0; margin-bottom: 2px;display: inline-block;}
+
 a[data-toggle="collapse"].collapsed .qkyicon.iblock,a[data-toggle="collapse"].collapsed .qkyicon_14.iblock{transform:rotate(-90deg); -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg); margin-right:0;}
 .box-set_con{min-width: 172px;}
 .box-set_con .checkbox-input{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .box-set_con a.checkbox_a.iblock{vertical-align: text-top; margin-top: 0;}
 .box-set_con a[data-toggle="collapse"]{vertical-align: text-bottom;}
-.ul-menu{ padding-left: 40px;}
 .popover.box-set{top:20px;left: -5px;}
+
+/*0324*/
+.qkycadr{ background:#fff; border:1px solid #e0e0e0;}
+.dropdown-menu.download-menu{ width:auto; min-width:268px; right:0; left:auto;}
+/*按钮表格组改装*/
+.td_mc{ text-align:center; vertical-align:middle !important;}
+.table_btn{ color:#333; text-decoration:inherit; cursor:pointer;}
+.table_btn:hover{ color:#999;text-decoration:inherit;}
+.ns{ overflow: inherit;}/*表格外框不出现滚动条*/
+.table_card a{ color:#737373; cursor:pointer; text-decoration:inherit;}
+.table_card a:hover{ color:#333;}
+.table{ margin-bottom:0;}
+.table>thead >tr >th{ padding:10px; color:#fff; background: #21a2db; font-weight:normal; border-bottom:1px solid #f5f5f5;}
+.table>tbody >tr >td,.table >tbody >tr >th{ padding:15px 10px; border-top:0;  color:#333;}
+.table >tbody >tr >th{ border-left:1px solid #d6e8f1;}
+.table >tbody >tr >th:first-child{ border-left:none;}
+.table.bor_b>tbody >tr >td,.table.bor_b>tbody >tr >th{ border-bottom:1px  solid #dfdfdf; border-top:none; vertical-align:middle;}
+.table>thead >tr >th.media-middle,.table>tbody >tr >th.media-middle {vertical-align: middle;}
+.table>tbody >tr{background: #f2fafd;}
+.bg-no.table>tbody >tr { background:none;}
+.table.table-striped > tbody > tr:nth-child(odd) {background: #f2fafd;}
+.table.table-striped > tbody > tr:nth-child(even) { background-color: #e6f6fd;}
+.table.table-striped > tbody > tr.gray_bg{background-color: #fbfbfb;}
+.table.table-bordered  >thead >tr >th{ border-bottom:1px solid #dfdfdf;}
+.table.table-bordered  >tbody >tr >td{ border-top:1px solid #dfdfdf;}
+.table.table-fbordered  >thead >tr >th,.table.table-fbordered  >tbody >tr >td{ border-bottom:2px solid #fff;}
+.table-hover> tbody > tr:hover >td {background-color:#f9f9f9;}
+.table >tbody >tr >td a.iconfont+a.iconfont,.alert a.iconfont+a.iconfont{ margin-left:15px;}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th{
+	padding:10px;}
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+	padding:15px 10px;
+}
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+	background-color: #f9f9f9;
+}
+.table >tbody>tr>td .qkyicon_14,.table >tbody>tr>td a.icon_class{ color:#21a2db; text-decoration:none;}
+.table>tbody>tr>td .qkyicon_14:hover,.table >tbody>tr>td .icon_class:hover{ color:#0288d1;}
+.table >tbody>tr>td a:focus { outline: 0;}
+.table-responsive._sm .table.bg-no>tbody>tr>td.small-nw{ min-width:36px; padding-left: 5px; padding-right: 5px;}
+.table >tbody>tr>td .qkyicon_14.text-warning{    color: #f80;}
+.table-responsive._sm{  width: 100%;  overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar;}
+.table-responsive._sm .table>tbody>tr>td{ min-width:90px;}
+/*教师排名*/
+.sta-tcher img{ width:56px; height:56px; border:1px solid #e0e0e0;}
+.table.ver-middle th,.table.ver-middle td{ vertical-align:middle;}
+/*警告颜色覆盖*/
+.text-warning{ color:#f80;}
+.text-success{ color:#51c20c;}
+/*下拉组改装*/
+.qkydropdown{ height:30px;}
+.qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 10px; vertical-align: inherit;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.qkydropdown .btn .iconfont{ position:absolute; right:6px; top:8px; border:0; width:14px; height:14px; text-align:center; line-height:14px; color:#333;}
+.qkydropdown.open .btn .iconfont:before{content: "\e63d";}
+.qkydropdown .dropdown-menu{ width:100%; max-height:440px; overflow-y:auto;}
+.maxh{ max-height:200px; overflow-y:auto;}
+.dropdown-menu > li > a{ padding-left:10px; padding-right:10px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.qkydropdown .btn .iconfont,.qkydropdown .btn .glyphicon{position: absolute; right: 6px; top: 8px; border: 0; width: 14px; height: 14px; text-align: center; line-height: 14px;}
+.qkydropdown.open .btn .glyphicon-chevron-down:before{content: "\e113";}
+/*表单校验样式覆盖*/
+.form-control-feedback{ height:30px; line-height:30px; width:auto;min-width: 30px;}
+/*评价统计*/
+.media-left.statis-l{ min-width:80px;}
+.sta-chose .iblock{ width:74px; padding-top:5px; padding-bottom:5px; overflow:hidden;}
+.sta-chose .iblock.current{ position:relative; background-color:#f6f6f6;}
+.sta-chose .iblock.current.bg-info{background-color: #d9edf7;}
+.sta-chose .iblock.current:after{    content: "当前"; position:absolute; right:-14px;top:0; font-size:12px;transform: rotate(42deg) scale(0.8);background-color: #edb757; width:47px; color:#fff;}
+.sta-chose a.iblock{ cursor:pointer; color:#666;}
+.sta-chose .bg-info{ color:#333 !important;}
+.sta-chose .checkbox-qky{ width:110px; margin-top:10px; margin-bottom:10px;}
+.modal-body.quato .sta-chose .checkbox-qky{ width: 96px;}
+.modal-body.quato .sta-chose .checkbox-qky label{ width: 72px;display:inline-block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; vertical-align:middle;}
+.sta-minw .table-responsive._sm .table>tbody>tr>td:nth-of-type(2){ min-width:100px;}
+.sta-minw .table-responsive._sm .table>tbody>tr>td:nth-of-type(3){ min-width:134px;}
+/*分组设置*/
+.left-menu{ text-align:left; /*height:320px;*/overflow-y: auto;}
+.left-menu > ul{ margin-left:0; padding-left:0; margin-bottom:0;}
+.left-menu a[data-toggle="collapse"]{ line-height:14px;}
+.left-menu a[data-toggle="collapse"] .qky_icon.iblock{ vertical-align:text-top;}
+.left-menu  a[data-toggle="collapse"].collapsed .qky_icon.iblock{transform:rotate(-90deg); -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg); margin-right:0;}
+.left-menu  li{ padding-top:5px; padding-bottom:5px;}
+.v-top,.left-menu li label{  vertical-align: top;}
+.checkbox-input label{margin-bottom:0; font-weight:normal;}
+.left-menu  li input[type="checkbox"]{ margin-top:5px;}
+.per-checked li{ padding-right:30px; padding-top:6px; padding-bottom:6px; position: relative;}
+.per-checked li .po_ab_r.delete{right: 15px;top:12px;}
+.modal-body.quato .main-con .per-checked li{ padding-top: 10px; padding-bottom: 10px;}
+.modal-body.quato .main-con .per-checked li .badge{float:left;padding-top:6px;padding-bottom:6px; width: 86px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-right:2px;margin-top: 1px; margin-bottom: 1px;}
+.modal-body.quato .main-con .per-checked li .badge.bg-bgray:hover{cursor: pointer;background-color:#e6e8ea !important;color: #21a2db !important;}
+.per-checked li:hover{ background-color: #f9f9fd;}
+.delete .qky_icon{ display:inline-block;color: #ccc; margin-top: 2px; }
+.delete .qky_icon:hover { color:#dc4242;}
+.group-one{ padding-left: 25px; padding-right: 25px;}
+.group-cell{ position: relative; padding-top: 70px; float: left; margin-top: 12px; margin-bottom: 12px;}
+.group-cell .gp-user{width: 62px;height: 62px; position: absolute;top:0;left: 50%; margin-left: -30px;}
+.group-cell .gp-name{ font-size: 12px; width: 48px;display: inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;}
+.group-cell .gp-name_box{ position: relative; width: 52px;}
+.group-cell+.group-cell .gp-name_box:before{content: "/";position: absolute;left: -2px;top:1px; color: #aaa;}

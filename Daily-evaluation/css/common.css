@@ -29,6 +29,7 @@
 .lh30{ line-height:30px;}
 .bor_nb{ border-bottom:none !important;}
 .bor_nt{ border-top:none !important;}
+.bor-dash{ border:1px dashed #e6e6e6;}
 .atd a:hover,.atd:hover{ text-decoration:inherit; cursor:pointer;}
 .wd50{width:50%;}
 .wd80{width:80%;}
@@ -37,7 +38,13 @@
 .radius-4{ border-radius:4px !important;}
 .radius-12{ border-radius:12px !important;}
 .radius-cirle{ border-radius:50%  !important;}
-
+::-webkit-scrollbar{
+    width:6px;height: 8px;
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #d0d0d0; border-radius:4px;
+}
 .co_ff{ color:#fff!important;}
 .co_a3{ color:#a3a3a3!important;}
 .co_93{ color:#939393!important;}

@@ -355,7 +355,9 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 /*评价录入*/
 .eva-add{ bottom:68px; right:12px;}
-.evaadd-btn{ width:60px; text-align:center; height:60px; line-height:60px;  background-color:#28ce57; z-index:10; display:block;border-radius:50%;}
+.evaadd-btn{ width:60px; text-align:center; height:60px; /*line-height:60px;*/  background-color:#28ce57; z-index:10; display:block;border-radius:50%;}
+.evaadd-btn .icon-jia{ line-height: 60px; font-size: 20px;}
+.evaadd-btn .icon-ribao{ line-height: 20px;}
 .eva-add_q{ left:-10px;bottom:60px;}
 .eva-add_q .weui-btn,.evaadd-btn{-moz-box-shadow:1px 2px 8px #b9b9b9; -webkit-box-shadow:1px 2px 8px #b9b9b9; box-shadow:1px 2px 8px #b9b9b9;}
 

@@ -1334,7 +1334,7 @@ a[data-toggle="collapse"].collapsed .qkyicon.iblock,a[data-toggle="collapse"].co
 .form-control-feedback{ height:30px; line-height:30px; width:auto;min-width: 30px;}
 /*评价统计*/
 .media-left.statis-l{ min-width:80px;}
-.sta-chose .iblock{ width:74px; padding-top:5px; padding-bottom:5px; overflow:hidden;}
+.sta-chose .iblock{ width:92px; padding-top:5px; padding-bottom:5px; overflow:hidden;}
 .sta-chose .iblock.current{ position:relative; background-color:#f6f6f6;}
 .sta-chose .iblock.current.bg-info{background-color: #d9edf7;}
 .sta-chose .iblock.current:after{    content: "当前"; position:absolute; right:-14px;top:0; font-size:12px;transform: rotate(42deg) scale(0.8);background-color: #edb757; width:47px; color:#fff;}

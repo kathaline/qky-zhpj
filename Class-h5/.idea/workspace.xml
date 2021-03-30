@@ -20,31 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52e53aea-2484-4a32-bd88-53cf15e57ba0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/01statis-daily.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Daily-evaluation/html/04sysset_groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/demo_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/demo_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../Class-evalua/iconfont/stu_class/iconfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/class-h5.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/class-h5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/01statis.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/01statis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/demo_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/demo_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/iconfont.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/iconfont.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/iconfont.json" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/iconfont.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconfont/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/iconfont/iconfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Daily-evaluation/html/04sysset.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Daily-evaluation/html/04sysset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Daily-evaluation/html/04sysset_groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Daily-evaluation/html/04sysset_groups.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +64,7 @@
       <updated>1616378898692</updated>
       <workItem from="1616378899746" duration="3425000" />
       <workItem from="1616462159789" duration="4044000" />
+      <workItem from="1617085133108" duration="601000" />
     </task>
     <servers />
   </component>

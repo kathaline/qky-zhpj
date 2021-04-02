@@ -1,160 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="icon" href="../image/qky2.ico">
-<title>评价录入</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-<link rel="stylesheet" href="../css/weui.min.css">
-<link rel="stylesheet" href="../css/jquery-weui.css">
-<!--基础样式覆盖-->
-<link rel="stylesheet" href="../iconfont/iconfont.css">
-<link rel="stylesheet" href="../css/class-h5.css">
-<script src="../js/jquery-2.1.4.js"></script>
-<script src="../js/fastclick.js"></script>
-<script src="../js/jquery-weui.js"></script>
-<script>
-  $(function() {
-    FastClick.attach(document.body);
-  });
-</script>
-<script src="../js/swiper.js"></script>
-</head>
-<body ontouchstart>
-<div class="weui-cells mt0">
-  <div class="weui-cell pb5 co_99 fz_12">
-    <div class="weui-cell__bd">
-      小一（6）班
-    </div>
-    <div class="weui-cell__hd">易老师 2019-11-28</div>
-  </div>
-  <div class="pt5 pb5 pl15 pr15">
-    <div class="weui-media-box__bd">
-      <h4 class="fz_nor fz_16"><span class="color-danger">迟到（-1）</span></h4>
-      <p class="fz_14 pt5">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
-      <div class="weui-uploader__bd mt5">
-        <ul class="weui-uploader__files" id="uploaderFiles">
-          <li class="weui-uploader__file"><img src="../image/u02.jpg"></li>
-          <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="bor-top pb10 pl12 pr5">
-    <div class="clear">
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/u01.jpg" alt="">
-        <div class="fz_10 co_66">王洋洋</div>
-      </div>
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/yq.jpeg" alt="">
-        <div class="fz_10 co_66">易烊千玺</div>
-      </div>
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/u03.jpg" alt="">
-        <div class="fz_10 co_66">古力娜扎</div>
-      </div>
-    </div>
-  </div>
-  <div class="bor-top plr15">
-    <div class="row ma0 t-center fz_14">
-      <a class="col-50 ptb10" href="02input-d_edit.html"><i class=" iconfont fz_14 mr5 icon-bianji"></i>编辑</a>
-      <a class="col-50 ptb10 color-danger border-l open-popup" href="javascript:;" data-target="#tips"><i class=" iconfont fz_14 mr5 icon-shanchu"></i>删除</a>
-    </div>
-  </div>
-</div>
-<div class="weui-cells mt12">
-  <div class="weui-cell pb5 co_99 fz_12">
-    <div class="weui-cell__bd">
-      小一（6）班
-    </div>
-    <div class="weui-cell__hd">易老师 2019-11-28</div>
-  </div>
-  <div class="pt5 pb5 pl15 pr15">
-    <div class="weui-media-box__bd">
-      <h4 class="fz_nor fz_16"><span class="color-danger">迟到（-1）</span></h4>
-      <p class="fz_14 pt5">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
-      <div class="weui-uploader__bd mt5">
-        <ul class="weui-uploader__files" id="uploaderFiles">
-          <li class="weui-uploader__file"><img src="../image/u02.jpg"></li>
-          <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
-          <li class="weui-uploader__file"><img src="../image/u02.jpg"></li>
-          <li class="weui-uploader__file"><img src="../image/teacher_tx.jpg"></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="bor-top pb10 pl12 pr5">
-    <div class="clear">
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/u01.jpg" alt="">
-        <div class="fz_10 co_66">王洋洋</div>
-      </div>
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/yq.jpeg" alt="">
-        <div class="fz_10 co_66">易烊千玺</div>
-      </div>
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/u03.jpg" alt="">
-        <div class="fz_10 co_66">古力娜扎</div>
-      </div>
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/u01.jpg" alt="">
-        <div class="fz_10 co_66">王洋洋</div>
-      </div>
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/u03.jpg" alt="">
-        <div class="fz_10 co_66">古力娜扎</div>
-      </div>
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/u01.jpg" alt="">
-        <div class="fz_10 co_66">王洋洋</div>
-      </div>
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/yq.jpeg" alt="">
-        <div class="fz_10 co_66">易烊千玺</div>
-      </div>
-      <div class="fl fz_0 t-center mr8 mt5">
-        <img class="img30 img-bor radius-cirle" src="../image/u03.jpg" alt="">
-        <div class="fz_10 co_66">古力娜扎</div>
-      </div>
-    </div>
-  </div>
-  <div class="bor-top plr15">
-    <div class="row ma0 t-center fz_14">
-      <a class="col-50 ptb10" href="02input-d_edit.html"><i class=" iconfont fz_14 mr5 icon-bianji"></i>编辑</a>
-      <a class="col-50 ptb10 color-danger border-l open-popup" href="javascript:;" data-target="#tips"><i class=" iconfont fz_14 mr5 icon-shanchu"></i>删除</a>
-    </div>
-  </div>
-</div>
-
-  <div class="pb50"></div> 
-  <div class="weui-tabbar weui-row zindex12">
-    <a href="01statis.html" class="weui-btn weui-btn_default weui-col-100">返回</a>
-  </div>
-  <div id="tips" class='weui-popup__container popup-bottom zindex999'>
-    <div class="weui-popup__overlay"></div>
-    <div class="weui-popup__modal scan-pop">
-      <div class="modal-content bg_white">       
-          <div class="t-center pb20 fz_18">
-            <i class="weui-icon-warn v-texttop mr5"></i>确定删除？
-          </div>
-          <div class=" t-center pb20">
-            <a  href="javascript:;" id="show-toast" class="weui-btn weui-btn_mini fz_14 plr30 weui-btn_warn close-popup">删除</a>
-            <a href="javascript:;" class="weui-btn weui-btn_mini fz_14 plr30 weui-btn_default close-popup">取消</a>
-          </div>
-      </div>
-    </div>
-  </div>
-  
+  <link rel="icon" href="../image/qky2.ico">
+  <title>评价录入</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <link rel="stylesheet" href="../css/weui.min.css">
+  <link rel="stylesheet" href="../css/jquery-weui.css">
+  <!--基础样式覆盖-->
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <link rel="stylesheet" href="../css/class-h5.css">
+  <script src="../js/jquery-2.1.4.js"></script>
+  <script src="../js/fastclick.js"></script>
+  <script src="../js/jquery-weui.js"></script>
   <script>
-    $(document).on("click", "#show-toast", function() {
-        $.toast("删除成功", function() {
-          console.log('close');
-        });
-      })
+    $(function() {
+      FastClick.attach(document.body);
+    });
   </script>
+  <script src="../js/swiper.js"></script>
+</head>
+<body ontouchstart class="daily-bg">
+<div class="pa12 data-top t-center">
+  <div class="fz_24 ptb10">日检查通报</div>
+  <div class="pb15">
+    <a href="javascript:;" data-target="#pop-sel" class="block open-popup fz_14 co_33"><span class="bor-left pl12 pr5">4月2日 周五</span><i class="iconfont icon-xia fz_14"></i></a>
+  </div>
+</div>
+<div class="plr15 pt10">
+  <div class="weui-panel weui-panel_access radius-10 pb10">
+    <div class="pb10">
+      <div class="weui-cell_access d_flex pt20 pb5">
+        <div class="weui-cell__bd bor-l_grn pl12 co_66">教室卫生</div>
+      </div>
+      <div class="plr15">
+        主体卫生：三(19)班，三(21)班，教室地面有杂物-0.1。
+      </div>
+    </div>
+    <div class="pb10">
+      <div class="weui-cell_access d_flex pt20 pb5">
+        <div class="weui-cell__bd bor-l_grn pl12 co_66">教室卫生</div>
+      </div>
+      <div class="plr15">
+        主体卫生：三(19)班，三(21)班，教室地面有杂物-0.1。
+      </div>
+    </div>
+    <div class="weui-loadmore">
+      <i class="weui-loading"></i>
+      <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+  </div>
+</div>
+<div class="pb50"></div>
+<div class="weui-tabbar weui-row zindex12">
+  <a href="01statis.html" class="weui-btn weui-btn_default weui-col-100">返回</a>
+</div>
+<div id="pop-sel" class='weui-popup__container popup-bottom zindex999'>
+  <div class="weui-popup__overlay"></div>
+  <div class="weui-popup__modal scan-pop">
+    <div class="modal-content bg_white pt0 pb12 plr15">
+      <div class="pt20">
+        <div class="row weui-cells_radio pop-label_list pl12 t-center fz_14">
+          <div class="col-25 pl0 pb10">
+            <label class="weui-check__label" for="x11">
+              <input type="radio" class="weui-check" name="radio1" id="x11">
+              <div class="label_name cur">周一</div>
+            </label>
+          </div>
+          <div class="col-25 pl0 pb10">
+            <label class="weui-check__label" for="x12">
+              <input type="radio" class="weui-check" name="radio1" id="x12">
+              <div class="label_name">周二</div>
+            </label>
+          </div>
+          <div class="col-25 pl0 pb10">
+            <label class="weui-check__label" for="x13">
+              <input type="radio" class="weui-check" name="radio1" id="x13" checked="checked">
+              <div class="label_name">周三</div>
+            </label>
+          </div>
+          <div class="col-25 pl0 pb10">
+            <label class="weui-check__label" for="x14">
+              <input type="radio" class="weui-check" name="radio1" id="x14">
+              <div class="label_name">周四</div>
+            </label>
+          </div>
+          <div class="col-25 pl0 pb10">
+            <label class="weui-check__label" for="x15">
+              <input type="radio" class="weui-check" name="radio1" id="x15">
+              <div class="label_name">周五</div>
+            </label>
+          </div>
+          <div class="col-25 pl0 pb10">
+            <label class="weui-check__label" for="x16">
+              <input type="radio" class="weui-check" name="radio1" id="x16">
+              <div class="label_name">周六</div>
+            </label>
+          </div>
+          <div class="col-25 pl0 pb10">
+            <label class="weui-check__label" for="x17">
+              <input type="radio" class="weui-check" name="radio1" id="x17">
+              <div class="label_name">周日</div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="pt20 ml0 bor-top mt10">
+        <div class="row ml0">
+          <div class="col-50 pl0" ><a href="javascript:" class="weui-btn fz_14 weui-btn_default" onclick="$.closePopup();">取消</a></div>
+          <div class="col-50 pl0"> <a href="javascript:" class="weui-btn fz_14 weui-btn_plain-primary">确认</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).on("click", "#show-toast", function() {
+    $.toast("删除成功", function() {
+      console.log('close');
+    });
+  })
+</script>
 </body>
 </html>

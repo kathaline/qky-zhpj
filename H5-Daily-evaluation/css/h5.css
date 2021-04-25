@@ -377,6 +377,7 @@ input[disabled]{ color: #e3e3e3;}
 .weui-btn:after{ border:none;}
 .weui-btn_default{ border:1px solid #ddd;background-color:#fff;}
 .weui-btn_primary{background-color: #09acfb; border:1px solid #05a4f1;}
+.weui-btn_primary:not(.weui-btn_disabled):active{background-color: #09acfb;}
 .weui-btn_org{background-color: #ff8a00; border:1px solid #ff8a00;}
 .weui-btn_warn{ border: 1px solid #e64340;}
 .weui-btn_org:not(.weui-btn_disabled):visited{ color: }
@@ -636,6 +637,8 @@ div+.nodata{ padding:80px 20px 0;}
 .quota-cell.cur{border-color: #ffc434; background-color: #fffefb;}
 .weui-popup__modal.scan-pop{top: 45%; bottom: auto; left: 50%; width: 80% ;-webkit-transform: translate(-50%,-50%);  transform: translate(-50%,-50%);    -webkit-transition-duration: .2s;transition-duration: .2s; border-radius: 4px;}
 .weui-popup__modal.scan-pop .weui-btn+.weui-btn{ margin-left: 15px;}
+.pop-label_list .label_name{border: 1px solid transparent; border-radius: 2px;height: 30px;line-height: 30px;}
+.pop-label_list.weui-cells_radio .weui-check:checked+.label_name{color: #09acfb;border-color:#09acfb; }
 
 .myapps{ position: relative;}
 .myapps .col-33:nth-child(3n).bor-right:before{border-right: none;}
@@ -676,3 +679,7 @@ div+.nodata{ padding:80px 20px 0;}
 .tbl03 th,.tbl04 td{height: 30px;}
 .tbl02 th,.tbl04 td{width:66px;}
 .tbl01 th{white-space:nowrap;}
+
+.btn-close{ border: none;background-color: transparent;}
+.po_r .po_ab_r~ .weui-media-box_appmsg{align-items: unset;}
+.po_r .po_ab_r~ .weui-media-box_appmsg .weui-media-box__hd{ text-align: left;}

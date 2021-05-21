@@ -21,7 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="52e53aea-2484-4a32-bd88-53cf15e57ba0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/01statis-daily.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/01statis-daily.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/html-admin/01evaluate.html" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/html-admin/01evaluate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/demo_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/demo_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.json" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../H5-Daily-evaluation/iconfont/iconfont.woff2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +79,8 @@
       <workItem from="1617332174507" duration="8940000" />
       <workItem from="1617671497397" duration="2462000" />
       <workItem from="1617778112677" duration="430000" />
+      <workItem from="1617955251497" duration="169000" />
+      <workItem from="1619084689414" duration="1004000" />
     </task>
     <servers />
   </component>

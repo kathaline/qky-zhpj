@@ -278,7 +278,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 /**********4.组件改装**********/
 
 /*按钮改装*/
-.btn{ padding:4px 15px; max-height:30px;}
+.btn{ padding:2px 15px; height:30px;}
 .btn-xl, .btn-group-xl > .btn {padding:16px 20px;font-size:20px;line-height:1.33;border-radius: 6px;}
 .btn-group-lg > .btn {padding:5px 15px;}
 .btn.btn-lg{padding: 10px 16px;font-size: 18px !important; max-height:46px !important;}
@@ -348,7 +348,8 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 span.checkbox-input+.checkbox-input{ margin-left:20px;}
 .checkbox-input{ position:relative;}
 .checkbox_original{opacity: 0;outline: none;position: absolute;margin: 0;width: 14px;height: 14px;z-index:1;}
-a.checkbox_a.iblock{display: inline-block; position:relative; width:14px; height:14px; border:1px solid #dadada; border-radius:4px;background:#fff; line-height:12px; text-align:center; text-decoration: inherit; margin-right:5px; margin-top:3px; z-index:0;}
+.checkbox-input a.checkbox_a,a.checkbox_a.iblock{display: inline-block !important; position:relative; width:14px; height:14px; border:1px solid #dadada; border-radius:4px;background:#fff; line-height:12px; text-align:center; text-decoration: inherit; margin-right:5px; margin-top:3px; z-index:0;}
+.checkbox-input label {  margin-bottom: 0;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a{background:#03a9f5; border:1px solid #03a9f5;}
 a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff; border-left: 0; border-top: 0; height: 7px; left: 4px; position: absolute; top: 1px; transform: rotate(45deg) scaleY(0); width: 3px;transition: transform .15s ease-in .05s; transform-origin: center;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a:after {transform: rotate(45deg) scaleY(1);}
@@ -362,7 +363,8 @@ a.checkbox_a:after {box-sizing: content-box; content: ""; border: 1px solid #fff
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check01:after{ border-color:#03a9f5;}
 .checkbox-input .checkbox_original:checked~ a.checkbox_a.check02:after{ border-color:#e4ab03;}
 a[data-toggle="collapse"].collapsed .class-zhankai.iblock,a[data-toggle="collapse"].collapsed .class-zhankai.iblock{transform:rotate(-90deg); -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg); margin-right:0;}
-
+.checkbox_original.fr{right: 0;}
+.checkbox-input a.checkbox_a.fr{ margin-right: 0;}
 /*按钮表格组改装*/
 .td_mc{ text-align:center; vertical-align:middle !important;}
 .table_btn{ color:#333; text-decoration:inherit; cursor:pointer;}
@@ -411,6 +413,8 @@ padding:10px;}
 .table>tbody>tr>td .qkyicon_14:hover,.table >tbody>tr>td .icon_class:hover{ color:#0288d1;}
 .table >tbody>tr>td a:focus { outline: 0;}
 
+.table-default > tbody > tr:nth-child(odd) { background-color: #f9f9f9;}
+.table-default > tbody > tr:nth-child(even) { background-color:transparent; }
 
 /*禁区父类*/
 .no_open{ opacity:0.6; background:#f1f1f1;} 
@@ -647,11 +651,11 @@ label { font-weight: normal;}
 @media (min-height: 768px)and (max-height: 900px){
 .cla-height{ max-height:496px;}
 }
-@media (min-height: 900px)and (max-height: 1080px){
+@media (min-height: 900px)and (max-height: 1050px){
 .cla-height{ max-height:600px;}
 }
-@media (min-height:1080px){
-.cla-height{ max-height:740px;}
+@media (min-height:1050px){
+.cla-height{ max-height:726px;}
 }
 .cla-height a{ text-decoration:none;}
 .cla-height >a.block,.cla-height .menu-a{ padding-left:20px; padding-right:20px; height:40px; line-height:40px; font-size:15px;}
@@ -702,9 +706,10 @@ label { font-weight: normal;}
 /*右侧模态框*/
 .right.modal.in .modal-backdrop.in{ opacity:0;}
 .modal.left .modal-dialog,.modal.right .modal-dialog {position: fixed;margin: auto;	width:460px;height: 100%;-webkit-transform: translate3d(0%, 0, 0);-ms-transform: translate3d(0%, 0, 0); -o-transform: translate3d(0%, 0, 0);transform: translate3d(0%, 0, 0);}
-.modal.left .modal-content,.modal.right .modal-content {height: 100%;overflow-y: auto; position:relative; padding-bottom:60px;}
+.modal.left .modal-content,.modal.right .modal-content {height: 100%; position:relative; overflow-y: auto;padding-bottom:60px;}
 .modal.left .modal-body,.modal.right .modal-body {	padding: 15px 15px 45px;}
 .modal.left .modal-body.pb0,.modal.right .modal-body.pb0{ padding-bottom:0;}
+.modal.right .modal-dialog.modal-md{ width: 680px;}
 /*Left*/
 .modal.left.fade .modal-dialog{	left: -460px;-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;  -moz-transition: opacity 0.3s linear, left 0.3s ease-out; -o-transition: opacity 0.3s linear, left 0.3s ease-out;		transition: opacity 0.3s linear, left 0.3s ease-out;}
 .modal.left.fade.in .modal-dialog{left: 0;}
@@ -712,7 +717,16 @@ label { font-weight: normal;}
 .modal.right.fade .modal-dialog,.modal.right.fade .modal-content .navbar-fixed-bottom {right: -460px;left:auto;-webkit-transition: opacity 0.3s linear, right 0.3s ease-out; -moz-transition: opacity 0.3s linear, right 0.3s ease-out; -o-transition: opacity 0.3s linear, right 0.3s ease-out;transition: opacity 0.3s linear, right 0.3s ease-out;}
 .modal.right.fade.in .modal-dialog,.modal.right.fade.in .modal-content .navbar-fixed-bottom {right: 0;}
 .modal-content .navbar-fixed-bottom{ width:460px;}
+.modal.right .modal-dialog.modal-md .modal-content .navbar-fixed-bottom{width: 680px;}
 
+.modal.right .modal-content.set-height{ overflow: hidden; padding: 0;}
+.modal.right .modal-content.set-height .modal-body{ padding-bottom: 0;}
+.modalby-con{ height: calc(100% - 116px);}
+.row-height{height: calc(100% - 90px);}
+.modalr_left,.modalr_right{height: 100%;}
+.modalr_left >div,.modalr_right >div{height: calc(100% - 15px);}
+.modalleft_con{height: calc(100% - 32px); overflow-y: auto; padding-left: 30px;}
+.modalr-con{ height: 100%; overflow-y: auto;}
 /*04to-be-processed*/
 .col-lg-2{width:20%;}
 /*04processing*/

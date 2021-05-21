@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质评价</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/stu_class/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="container-xl">
+  <div class="qkycadr mt20 mb20">
+   <div class="pt15 pb15">
+    <form class="form-horizontal">
+      <div class="row"> 
+        <div class="col-sm-7">
+          <div class="col-sm-5">
+            <div class="dropdown qkydropdown havechoose">
+              <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                <span class="value">2020-2021学年第二学期</span>
+                <span class="icon_class class-zhankai"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a title="2016-2017学年第一学期中学部">2020-2021学年第一学期</a></li>
+                <li role="presentation"><a title="2016-2017学年第一学期中学部">2016-2017学年第一学期中学部</a></li>
+                <li role="presentation"><a title="2016-2017学年第一学期中学部">2016-2017学年第一学期中学部</a></li>
+                <li role="presentation"><a title="2016-2017学年第一学期中学部">2016-2017学年第一学期中学部</a></li>
+                <li role="presentation"><a title="2016-2017学年第一学期中学部">2016-2017学年第一学期中学部</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 text-right">
+          <a type="submit" class="btn btn-primary mr10" role="button" data-toggle="modal" data-target="#add"><i class="icon_class class-send mr5"></i>发布红旗班</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  <div class="row">
+     <div class="col-sm-3 pr20">
+      <div class="qkycadr  mb20">
+         <div class="page-header fz_16 pl20 pr20 pt15 pb15 ma0"><i class="icon_class class-shijianxiangmu mr5"></i>各班红旗班情况</div>
+         <div class="pl15 ptb10 bor-b">
+          <div class="row ma0">
+            <div class="col-sm-6 pl0">
+             <div class="dropdown qkydropdown havechoose">
+               <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                 <span class="value">全部年级</span>
+                 <span class="icon_class class-zhankai"></span>
+               </a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                 <li role="presentation"><a title="全部年级">全部年级</a></li>
+                 <li role="presentation"><a title="一年级">一年级</a></li>
+               </ul>
+             </div>
+            </div>
+            <div class="col-sm-6 pl0">
+             <div class="dropdown qkydropdown havechoose">
+               <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                 <span class="value">全部标签</span>
+                 <span class="icon_class class-zhankai"></span>
+               </a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                 <li role="presentation"><a title="全部标签">全部标签</a></li>
+                 <li role="presentation"><a title="标签01">标签01</a></li>
+               </ul>
+             </div>
+            </div>
+          </div>
+         </div>
+         <div class="cla-height">
+            <table width="100%" border="0" class="table table-default text-center">
+              <tr>
+                <td>1.  一年级（1）</td>
+                <td>获得<strong>12</strong>次</td>
+              </tr>
+              <tr>
+                <td>1.  一年级（1）</td>
+                <td>获得<strong>12</strong>次</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+         </div>
+      </div>
+     </div>
+     <div class="col-sm-9 pl0">
+      <div class="qkycadr  mb20">
+         <div class="page-header pl20 pr20 pt15 pb15 ma0 clear">
+           <div class="fl"><i class="icon_class class-liebiao mr5"></i>已发布红旗班信息</div>
+         </div>
+         <form class="form-horizontal pt20 plr20">
+          <div class="form-group mlr0">
+              <div class="bor-dash radius-4 clear">
+                  <div class="row pa15">
+                      <div class="col-sm-5 bor-lb pl10"><div class="ptb5">红旗班周期（2021-4-25 ~ 2021-4-30）</div></div>
+                      <div class="col-sm-7 text-right pt5">
+                          <a href=""  role="button" data-toggle="modal" data-target="#edit"><i class="icon_class class-bianji fz_14 mr5"></i></a><a href="#" data-toggle="modal" data-target="#tips1" class="ml20 error_color" title="删除"><i class="icon_class class-shanchu fz_14 mr5"></i></a>
+                      </div>
+                  </div>
+                  <div class="pa15 bg-gray">
+                      <div class="row ma0">初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、
+
+                          初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班
+
+                      </div>
+                      <div class="pt20 co_93">罗老师发布：2021-4-30 09:59</div>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group mlr0">
+            <div class="bor-dash radius-4 clear">
+                <div class="row pa15">
+                    <div class="col-sm-5 bor-lb pl10"><div class="ptb5">红旗班周期（2021-4-25 ~ 2021-4-30）</div></div>
+                    <div class="col-sm-7 text-right pt5">
+                        <a href=""  role="button" data-toggle="modal" data-target="#edit"><i class="icon_class class-bianji fz_14 mr5"></i></a><a href="#" data-toggle="modal" data-target="#tips1" class="ml20 error_color" title="删除"><i class="icon_class class-shanchu fz_14 mr5"></i></a>
+                    </div>
+                </div>
+                <div class="pa15 bg-gray">
+                    <div class="row ma0">初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、
+
+                        初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班
+
+                    </div>
+                    <div class="pt20 co_93">罗老师发布：2021-4-30 09:59</div>
+                </div>
+            </div>
+          </div>
+          <div class="form-group mlr0">
+            <div class="bor-dash radius-4 clear">
+                <div class="row pa15">
+                    <div class="col-sm-5 bor-lb pl10"><div class="ptb5">红旗班周期（2021-4-25 ~ 2021-4-30）</div></div>
+                    <div class="col-sm-7 text-right pt5">
+                        <a href=""  role="button" data-toggle="modal" data-target="#edit"><i class="icon_class class-bianji fz_14 mr5"></i></a><a href="#" data-toggle="modal" data-target="#tips1" class="ml20 error_color" title="删除"><i class="icon_class class-shanchu fz_14 mr5"></i></a>
+                    </div>
+                </div>
+                <div class="pa15 bg-gray">
+                    <div class="row ma0">初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、
+
+                        初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班、初一(1)班
+
+                    </div>
+                    <div class="pt20 co_93">罗老师发布：2021-4-30 09:59</div>
+                </div>
+            </div>
+          </div>
+        </form>
+       </div>
+     </div>
+  </div>
+  
+</div>
+<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<div class="modal fade right" id="edit" tabindex="-1" role="dialog" aria-labelledby="editLabel">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content set-height">
+      <div class="modal-header">
+        <h4 class="modal-title" id="addLabel"><div class="fz_14">只允许班级名单修改，如发布周期有误，请删除重新发布。</div></h4>
+      </div>
+      <div class="modal-body modalby-con">
+        <form class="form-horizontal pb15">
+          红旗班周期:  2021-4-25 ~ 2021-4-30
+        </form>
+        <div class="row bor-t">
+          <div class="col-sm-6 pr0">
+              <div class="cont_tit ptb10 bor-r">系统红旗班名单</div>
+          </div>
+          <div class="col-sm-6 pr0">
+              <div class="cont_tit ptb10">确认发布名单<span class="fz_12 co_93">（不受条件检索）</span></div>
+          </div>
+        </div>
+        <div class="row bor-b row-height">
+          <div class="col-sm-6 modalr_left bor-r">
+              <div class="bg-gray">
+                <div class=" pl15">
+                  <div class="checkbox-qky checkbox-input ptb5 iblock">
+                    <input class="checkbox_original" type="checkbox" name="clses" id="clses">
+                    <a class="checkbox_a v-txttop"></a>
+                    <label for="clses">全选</label>
+                  </div>
+                  <div class="checkbox-qky checkbox-input ptb5 iblock ml20">
+                    <input class="checkbox_original" type="checkbox" name="clses" id="clses-0">
+                    <a class="checkbox_a v-txttop"></a>
+                    <label for="clses-0">前十名</label>
+                  </div>
+                </div>
+                  <div class="pr20 pt5 pb5 modalleft_con">
+                      <ul>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <label for="clses-1">1. 一年级（1）班</label>
+                              <input type="checkbox" name="clses" id="clses-1" class="checkbox_original fr">
+                              <a class="checkbox_a v-txttop fr"></a>   
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr" type="checkbox" name="clses" id="clses-2">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-2">2.  一年级（1）二</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-3">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-3">3.  一年级（1）三</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-4">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-4">4.  一年级（1）四</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-5">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-5">5.  一年级（1）五</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-6">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-6">6.  一年级（1）六</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-7">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-7">7.  一年级（1）</label>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 modalr_right">
+              <div class="bg-gray modalr-con">
+                <ul class="per-checked plr20 ptb10">
+                  <li class="ptb5">
+                    一年级（1）
+                     <a href="#" class="fr iblock fz_16 plr10 text-warning" title="删除">×</a>
+                  </li>
+                  <li class="ptb5">
+                    一年级（1）
+                     <a href="#" class="fr iblock fz_16 plr10 text-warning" title="删除">×</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消发布</button>
+        <button type="button" class="btn btn-primary">确认发布，不可撤回</button>
+      </div> 
+    </div>
+  </div>
+</div>
+<div class="modal fade right" id="add" tabindex="-1" role="dialog" aria-labelledby="addLabel">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content set-height">
+      <div class="modal-header">
+        <h4 class="modal-title" id="addLabel"><div class="fz_14">请选择开始和结束时间，系统自动统计排名，最后由你确认后发布红旗班。</div></h4>
+      </div>
+      <div class="modal-body modalby-con">
+        <form class="form-horizontal pb15">
+          <div class="row ma0">
+            <div class="col-sm-10 pl0">
+              <label class="fl pt5 pl0 pr0">红旗班周期</label>
+              <div class="col-sm-3 pr0">
+                 <input type="text" class="form-control" placeholder="开始时间" onclick="WdatePicker()">
+                 <span class="form-control-feedback mr5" aria-hidden="true"><i class="icon_class class-rili co_93"></i></span>
+              </div>
+              <div class="col-sm-3 pr0">
+                 <input type="text" class="form-control" placeholder="结束时间" onclick="WdatePicker()">
+                 <span class="form-control-feedback mr5" aria-hidden="true"><i class="icon_class class-rili co_93"></i></span>
+              </div>
+              <div class="col-sm-3 pr0">
+                <div class="dropdown qkydropdown havechoose open">
+                  <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    <span class="value">全部年级</span>
+                    <span class="icon_class class-zhankai"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a title="全部年级">全部年级</a></li>
+                    <li role="presentation"><a title="一年级">一年级</a></li>
+                  </ul>
+                </div>
+               </div>
+            </div>
+            
+               <div class="col-sm-2 pl0">
+                <a type="submit" class="btn btn-primary mr10" role="button" data-toggle="modal" data-target="#add"><i class="icon_class class-chazhaobiaodanliebiao mr5"></i>开始统计</a>
+               </div>
+            
+          </div>
+        </form>
+        <div class="row bor-t">
+          <div class="col-sm-6 pr0">
+              <div class="cont_tit ptb10 bor-r">系统红旗班名单</div>
+          </div>
+          <div class="col-sm-6 pr0">
+              <div class="cont_tit ptb10">确认发布名单<span class="fz_12 co_93">（不受条件检索）</span></div>
+          </div>
+        </div>
+        <div class="row bor-b row-height">
+          <div class="col-sm-6 modalr_left bor-r">
+              <div class="bg-gray">
+                <div class=" pl15">
+                  <div class="checkbox-qky checkbox-input ptb5 iblock">
+                    <input class="checkbox_original" type="checkbox" name="clses" id="clses">
+                    <a class="checkbox_a v-txttop"></a>
+                    <label for="clses">全选</label>
+                  </div>
+                  <div class="checkbox-qky checkbox-input ptb5 iblock ml20">
+                    <input class="checkbox_original" type="checkbox" name="clses" id="clses-0">
+                    <a class="checkbox_a v-txttop"></a>
+                    <label for="clses-0">前十名</label>
+                  </div>
+                </div>
+                  <div class="pr20 pt5 pb5 modalleft_con">
+                      <ul>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <label for="clses-1">1. 一年级（1）班</label>
+                              <input type="checkbox" name="clses" id="clses-1" class="checkbox_original fr">
+                              <a class="checkbox_a v-txttop fr"></a>   
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr" type="checkbox" name="clses" id="clses-2">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-2">2.  一年级（1）二</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-3">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-3">3.  一年级（1）三</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-4">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-4">4.  一年级（1）四</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-5">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-5">5.  一年级（1）五</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-6">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-6">6.  一年级（1）六</label>
+                          </li>
+                          <li class="checkbox-qky checkbox-input ptb5">
+                              <input class="checkbox_original fr"  type="checkbox" name="clses" id="clses-7">
+                              <a class="checkbox_a v-txttop fr"></a>
+                              <label for="clses-7">7.  一年级（1）</label>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 modalr_right">
+              <div class="bg-gray modalr-con">
+                <ul class="per-checked plr20 ptb10">
+                  <li class="ptb5">
+                    一年级（1）
+                     <a href="#" class="fr iblock fz_16 plr10 text-warning" title="删除">×</a>
+                  </li>
+                  <li class="ptb5">
+                    一年级（1）
+                     <a href="#" class="fr iblock fz_16 plr10 text-warning" title="删除">×</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消发布</button>
+        <button type="button" class="btn btn-primary">确认发布，不可撤回</button>
+      </div> 
+    </div>
+  </div>
+</div>
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script>
+ seajs.use(["jq","bs","nav","rach","dw","datep"],function(j,b,n,rach,dw,datep){
+	 opt.navli_j[3].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+     rach.rach_run(function(t){},function(t){});
+	 $(".cla-height li a").on("click",function(){
+		$(".cla-height li a").removeClass("bor-lb"); 
+		$(this).addClass("bor-lb"); 
+	 });
+});
+</script>
+		 
+</body>
+</html>

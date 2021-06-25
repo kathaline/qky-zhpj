@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="../image/qky2.ico">
+    <title>综合素质评价</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <!--基础样式覆盖-->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/h5.css">
+</head>
+<body ontouchstart>
+<div class="bg_shade-set ptb15 pl15 pr15">
+    <div class="weui-media-box_appmsg co_ff fz_14">
+        <div class="pl5 pr15">
+            <div class="user-img radius-6"><img src="../image/u04.jpg" class="img80 radius-6"></div>
+        </div>
+        <div class="weui-media-box__bd">
+            <div class="fz_16">易烊千玺<i class="iconfont icon-nan ml5"></i></div>
+            <div class="">出生年月：2012-11-28</div>
+            <div class="">当前班级：小二（6）班</div>
+            <div class="">学生学号：20190626</div>
+        </div>
+    </div>
+</div>
+<div class="weui-tab">
+    <div class="weui-navbar bg_white block clear">
+        <div class="w-box">
+            <div class="w-box_auto">
+                <a class="weui-navbar__item iblock weui-bar__item--on" href="#tab1">
+                    我的品德
+                </a>
+                <a class="weui-navbar__item iblock" href="#tab2">
+                    我的健康
+                </a>
+                <a class="weui-navbar__item iblock" href="#tab3">
+                    我的学习
+                </a>
+                <a class="weui-navbar__item iblock" href="#tab4">
+                    我的荣誉
+                </a>
+                <a class="weui-navbar__item iblock" href="#tab5">
+                    我的活动
+                </a>
+                <a class="weui-navbar__item iblock" href="#tab6">
+                    教师评语
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+            <div class="weui-cells mt12">
+                <div class="weui-media-box_appmsg pa12">
+                    <div class="weui-cell__bd bor-l_blue pl10 co_66">日常行为评价图</div>
+                </div>
+                <div class="plr12 pb12">
+                    <div class="echart01 ptb10" id="cla-radar"></div>
+                    <div class="fz_12 co_99"><i class="iconfont icon-tixing fz_14 color-warning mr5"></i>雷达图说明：各指标获得分值/指标总分*100% </div>
+                </div>
+                <div class="weui-media-box_appmsg pa12">
+                    <div class="weui-cell__bd bor-l_blue pl10 co_66">日常综合评语</div>
+                </div>
+                <div class="plr12 pb12">
+                    <div class="pa12 radius-6 bg_lgray">本学期，日常评价总得分为6411分，年级排名第1，班级排名第1。表现突出的评分项为【文明宿舍】。</div>
+                </div>
+            </div>
+            <div class="weui-cells mt12">
+                <div class="weui-media-box_appmsg pa12">
+                    <div class="weui-cell__bd bor-l_blue pl10 co_66">我的成绩 - 考试成绩 <span class="color-warning">（总分：882分）</span> </div>
+                </div>
+                <div class="plr12 pb12">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="score-table bor-top bor-btm">
+                        <tbody><tr class="color-blue">
+                            <th width="40%" scope="col">科目</th>
+                            <th width="20%" scope="col">得分</th>
+                            <th width="20%" scope="col">班级均分</th>
+                            <th width="20%" scope="col">年级均分</th>
+                        </tr>
+                        <tr>
+                            <td>语文</td>
+                            <td>89</td>
+                            <td>80</td>
+                            <td>79</td>
+                        </tr>
+                        <tr>
+                            <td>数学</td>
+                            <td>95</td>
+                            <td>90</td>
+                            <td>91</td>
+                        </tr>
+                        <tr>
+                            <td>思想道德与品质</td>
+                            <td>89</td>
+                            <td>85</td>
+                            <td>84</td>
+                        </tr>
+                        <tr>
+                            <td>大数据分析挖掘技术</td>
+                            <td>A</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>计算机科学技术</td>
+                            <td>A</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>英语</td>
+                            <td>88</td>
+                            <td>80</td>
+                            <td>84</td>
+                        </tr>
+                        <tr>
+                            <td>体育</td>
+                            <td>B</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>计算机科学技术</td>
+                            <td>A</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>英语</td>
+                            <td>88</td>
+                            <td>80</td>
+                            <td>84</td>
+                        </tr>
+                        <tr>
+                            <td>体育</td>
+                            <td>B</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="weui-media-box_appmsg pa12">
+                    <div class="weui-cell__bd bor-l_blue pl10 co_66">我的成绩 - 我的选修课 </div>
+                </div>
+                <div class="plr12 pb12">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="score-table bor-top bor-btm">
+                        <tbody><tr class="color-blue">
+                            <th width="40%" scope="col">科目</th>
+                            <th width="20%" scope="col">得分</th>
+                            <th width="20%" scope="col">班级均分</th>
+                            <th width="20%" scope="col">年级均分</th>
+                        </tr>
+                        <tr>
+                            <td>大数据分析挖掘技术</td>
+                            <td>A</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>计算机科学技术</td>
+                            <td>A</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="weui-cells mt12">
+                <div class="weui-media-box_appmsg pa12">
+                    <div class="weui-cell__bd bor-l_blue pl10 co_66">我的荣誉-  雏鹰争章</div>
+                </div>
+                <div class="plr12 pb12">
+                    <div class="haved_con bg_lgray radius-6 pa12">
+                        <div class="haved_cell pb10 t-center">
+                            <img src="../image/medal_de.png" class="img40">
+                            <p class="textover01 co_66 fz_12">星光少年</p>
+                        </div>
+                        <div class="haved_cell pb10 t-center">
+                            <img src="../image/medal_zhi.png" class="img40">
+                            <p class="textover01 co_66 fz_12">晨光少年</p>
+                        </div>
+                        <div class="haved_cell pb10 t-center">
+                            <img src="../image/medal_ti.png" class="img40">
+                            <p class="textover01 co_66 fz_12">阳光少年</p>
+                        </div>
+                        <div class="haved_cell pb10 t-center">
+                            <img src="../image/medal_mei.png" class="img40">
+                            <p class="textover01 co_66 fz_12">星光少年</p>
+                        </div>
+                        <div class="haved_cell pb10 t-center">
+                            <img src="../image/medal_lao.png" class="img40">
+                            <p class="textover01 co_66 fz_12">晨光少年</p>
+                        </div>
+                        <div class="haved_cell pb10 t-center">
+                            <img src="../image/medal_zhi.png" class="img40">
+                            <p class="textover01 co_66 fz_12">阳光少年</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-media-box_appmsg pa12">
+                    <div class="weui-cell__bd bor-l_blue pl10 co_66">我的荣誉-  荣誉活动</div>
+                </div>
+                <div class="plr12 pb12">
+                    <div class="weui-media-box_appmsg fz_14">
+                        <div class="pl5 pr15">
+                            <div class="user-img radius-6"><img src="../image/0.jpg" class="img120-80 radius-6"></div>
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <p class="weui-media-box__desc fz_16 co_33">评价报告评价报告评价报告</p>
+                            <div class="mt10 fz_0"><span class="badge_tips badge_org">荣誉</span><span class="badge_tips badge_inf">国家级</span></div>
+                            <ul class="weui-media-box__info mt10 co_66 pb0">
+                                <li class="weui-media-box__info__meta">中山教育局</li>
+                                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">2021-06-15</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-media-box_appmsg pa12">
+                    <div class="weui-cell__bd bor-l_blue pl10 co_66">我的荣誉-  社会实践</div>
+                </div>
+                <div class="plr12 pb12">
+                    <div class="weui-media-box_appmsg fz_14">
+                        <div class="pl5 pr15">
+                            <div class="user-img radius-6"><img src="../image/0.jpg" class="img120-80 radius-6"></div>
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <p class="weui-media-box__desc fz_16 co_33">评价报告评价报告评价报告</p>
+                            <div class="mt10 fz_0"><span class="badge_tips badge_grn">实践</span><span class="badge_tips badge_inf">国家级</span></div>
+                            <ul class="weui-media-box__info mt10 co_66 pb0">
+                                <li class="weui-media-box__info__meta">中山教育局</li>
+                                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">2021-06-15</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells mt12">
+                <div class="weui-media-box_appmsg pa12">
+                    <div class="weui-cell__bd bor-l_blue pl10 co_66">教师评语</div>
+                </div>
+                <div class="plr12 pb12">
+                    <div class="pa12 radius-6 bg_lgray">该生能很好地遵守校规校纪，有较强的集体观念，担任学生干部能很好地完成各种任务。尊敬师长，团结同学。学习态度认真，能吃苦，有理想，上进心强，是个综合素质高的学生。</div>
+                </div>
+                <div class="weui-media-box_appmsg pa12">
+                    <div class="weui-cell__bd bor-l_blue pl10 co_66">下学期通知</div>
+                </div>
+                <div class="plr12 pb12">
+                    <div class="pa12 radius-6 bg_lgray">该生能很好地遵守校规校纪，有较强的集体观念，担任学生干部能很好地完成各种任务。尊敬师长，团结同学。学习态度认真，能吃苦，有理想，上进心强，是个综合素质高的学生。</div>
+                </div>
+            </div>
+        </div>
+        <div id="tab2" class="weui-tab__bd-item">
+        </div>
+        <div id="tab3" class="weui-tab__bd-item">
+
+        </div>
+    </div>
+</div>
+<div class="pb46"></div>
+<div class="weui-tabbar weui-row">
+    <a href="" class="weui-btn weui-btn_default weui-col-50">返回</a>
+    <a href="javascript:;"  data-target="#pop-sel" class="weui-btn weui-col-50 weui-btn_plain-primary open-popup">填写回执</a>
+</div>
+<div id="pop-sel" class='weui-popup__container popup-bottom zindex999'>
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal scan-pop bg_white t-center">
+        <div class="weui-dialog__bd pt15">
+            <p class="weui-prompt-text">请填写回执意见，不能超过200个字符，不得出现不和谐文字</p>
+            <div class="row pa12 txt-sty">
+                <textarea rows="6" class="col-100 bor-ddd fz_14"></textarea>
+            </div>
+        </div>
+        <div class="weui-dialog__ft"><a href="javascript:;" class="weui-dialog__btn default  close-popup">取消</a><a href="javascript:;" class="weui-dialog__btn primary">确定</a></div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script src="../js/data-view.js"></script>
+<script>
+    var radarChart = echarts.init(document.getElementById('cla-radar'));
+    option = {
+        title: {
+            text: ''
+        },
+        backgroundColor: 'rgba(255,255,255,0)',
+
+        tooltip: {},
+        radar: {
+            // shape: 'circle',
+            indicator: [
+                { name: '生物', max: 100},
+                { name: '数学', max: 100},
+                { name: '语文', max: 100},
+                { name: '英语', max: 100},
+                { name: '生物', max: 100},
+                { name: '数学', max: 100},
+                { name: '语文', max: 100},
+                { name: '英语', max: 100},
+            ],
+            center: ['50%', '51%'],
+        },
+        series: [{
+            name: '',
+            type: 'radar',
+            // areaStyle: {normal: {}},
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data : [
+                {
+                    value : [89, 56, 32, 66,50,67,89,90],
+                    name : '百分比'
+                    ,itemStyle:{normal: {color:'#f0ad4e'}},
+                },
+            ]
+        }]
+    };        // 使用刚指定的配置项和数据显示图表。
+    radarChart.setOption(option);
+</script>
+</body>
+</html>

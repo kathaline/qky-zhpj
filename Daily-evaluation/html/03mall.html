@@ -15,6 +15,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 <!--附加css-->
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
 <link href="../css/stu_judge.css" rel="stylesheet" type="text/css"/>
 <link href="../css/ySelect.css" rel="stylesheet">
 <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
@@ -51,21 +52,21 @@
     <div class="side">
       <div class="side-menu nav mall-smenu">
         <ul class="ul-menu" role="tablist">
-          <li role="presentation" class="active">
+          <li role="presentation">
             <a href="#Set02" aria-controls="" role="tab" data-toggle="tab">勋章管理</a>
           </li>
           <li role="presentation">
             <a href="#Set03" aria-controls="" role="tab" data-toggle="tab">商城设置</a>
           </li>
-          <li role="presentation">
-            <a href="#Set04" aria-controls="" role="tab" data-toggle="tab">电子券管理</a>
+          <li role="presentation" class="active">
+            <a href="#Set04" aria-controls="" role="tab" data-toggle="tab">心愿管理</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="main">
       <div class="tab-content tabs label-h-over">
-        <div role="tabpanel" class="tab-pane fade active in" id="Set02">
+        <div role="tabpanel" class="tab-pane fade" id="Set02">
           <div class="cont_tit pad_lr20">
             <div class="fl"><h3>勋章信息管理</h3></div>     
             <div class="fr"><a href="JavaScript:" class="bg_gray" data-toggle="modal" data-target="#add-medal"><i class="qkyicon">&#xe69e;</i>新增勋章</a><a href="JavaScript:" class="bg_gray" data-toggle="modal" data-target="#add1-medal"><i class="qkyicon">&#xe69e;</i>新增勋章</a></div> 
@@ -137,140 +138,126 @@
           <div class="cont_tit pad_lr20">
             <div class="fl"><h3>商城布局设置</h3></div>     
           </div>
-          <!--
-          <div class="row mar_l0">
-            <div class="col-sm-8 pad_l0">-->
-              <div class="pad_20">
+            <div class="pad_20">
                 <div class="co_999">设置积分商城兑换列表，可分多个类别进行添加；删除类别必须清空其下勋章</div>
                 <div>
-                  <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5 clearfix">
-                    <div class="col-sm-5 pad_0">勋章类别1</div>
-                    <div class="col-sm-7 pad_0 text-right"><a href="javascript:" class="qkyicon_14" title="编辑">&#xe60f;</a></div>
-                  </div>
-                  <div class="row mar_r0">
-                    <div class="col-sm-2 pad_r0 pad_b15">
-                      <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
-                        <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
-                        <img src="../images/honor01.png" class="img60">
-                        <div class="mar_t5 over-ell">星光少年</div>
-                      </div>
+                    <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5 clearfix">
+                        <div class="col-sm-5 pad_0">勋章类别1</div>
+                        <div class="col-sm-7 pad_0 text-right"><a href="javascript:" class="qkyicon_14" title="编辑">&#xe60f;</a></div>
                     </div>
-                    <div class="col-sm-2 pad_r0 pad_b15">
-                      <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
-                        <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
-                        <img src="../images/honor01.png" class="img60">
-                        <div class="mar_t5 over-ell">星光少年星年</div>
-                      </div>
+                    <div class="row mar_r0">
+                        <div class="col-sm-2 pad_r0 pad_b15">
+                            <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
+                                <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
+                                <img src="../images/honor01.png" class="img60">
+                                <div class="mar_t5 over-ell">星光少年</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 pad_r0 pad_b15">
+                            <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
+                                <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
+                                <img src="../images/honor01.png" class="img60">
+                                <div class="mar_t5 over-ell">星光少年星年</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 pad_r0 pad_b15">
+                            <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
+                                <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
+                                <img src="../images/honor01.png" class="img60">
+                                <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 pad_r0 pad_b15">
+                            <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
+                                <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
+                                <img src="../images/honor01.png" class="img60">
+                                <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 pad_r0 pad_b15">
+                            <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
+                                <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
+                                <img src="../images/honor01.png" class="img60">
+                                <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 pad_r0 pad_b15">
+                            <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
+                                <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
+                                <img src="../images/honor01.png" class="img60">
+                                <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 pad_r0 pad_b15">
+                            <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
+                                <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
+                                <img src="../images/honor01.png" class="img60">
+                                <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 pad_r0">
+                            <div class="p-r text-center mar_b10 pad_10 bg-gray rad4">
+                                <a class="qkyicon co_y block fz_60" title="添加" href="JavaScript:" data-toggle="modal" data-target="#set-medal">&#xe731;</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-2 pad_r0 pad_b15">
-                      <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
-                        <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
-                        <img src="../images/honor01.png" class="img60">
-                        <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 pad_r0 pad_b15">
-                      <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
-                        <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
-                        <img src="../images/honor01.png" class="img60">
-                        <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 pad_r0 pad_b15">
-                      <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
-                        <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
-                        <img src="../images/honor01.png" class="img60">
-                        <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 pad_r0 pad_b15">
-                      <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
-                        <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
-                        <img src="../images/honor01.png" class="img60">
-                        <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 pad_r0 pad_b15">
-                      <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
-                        <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
-                        <img src="../images/honor01.png" class="img60">
-                        <div class="mar_t5 over-ell">星光少年星光少年星光少年</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 pad_r0">
-                      <div class="p-r text-center mar_b10 pad_10 bg-gray rad4">
-                        <a class="qkyicon co_y block fz_60" title="添加" href="JavaScript:" data-toggle="modal" data-target="#set-medal">&#xe731;</a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div>
-                  <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5 clearfix">
-                    <div class="col-sm-5 pad_0">勋章类别1</div>
-                    <div class="col-sm-7 pad_0 text-right"><a href="javascript:" class="qkyicon_14" title="编辑">&#xe60f;</a><a href="javascript:" class="qkyicon_14 mar_l15" title="删除">&#xe6be;</a></div>
-                  </div>
-                  <div class="row mar_r0">
-                    <div class="col-sm-2 pad_r0 pad_b15">
-                      <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
-                        <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
-                        <img src="../images/honor02.png" class="img60">
-                        <div class="mar_t5 over-ell">星光少年</div>
-                      </div>
+                    <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5 clearfix">
+                        <div class="col-sm-5 pad_0">勋章类别1</div>
+                        <div class="col-sm-7 pad_0 text-right"><a href="javascript:" class="qkyicon_14" title="编辑">&#xe60f;</a><a href="javascript:" class="qkyicon_14 mar_l15" title="删除">&#xe6be;</a></div>
                     </div>
-                    <div class="col-sm-2 pad_r0">
-                      <div class="p-r text-center mar_b10 pad_10 bg-gray rad4">
-                        <a class="qkyicon co_y block fz_60" title="添加" href="JavaScript:" data-toggle="modal" data-target="#set-medal">&#xe731;</a>
-                      </div>
+                    <div class="row mar_r0">
+                        <div class="col-sm-2 pad_r0 pad_b15">
+                            <div class="p-r text-center pad_tb10 pad_lr5 bg-gray rad4">
+                                <div class="p-a-r"><a href="javascript:" class="qkyicon co_r" title="删除">&#xe6aa;</a></div>
+                                <img src="../images/honor02.png" class="img60">
+                                <div class="mar_t5 over-ell">星光少年</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 pad_r0">
+                            <div class="p-r text-center mar_b10 pad_10 bg-gray rad4">
+                                <a class="qkyicon co_y block fz_60" title="添加" href="JavaScript:" data-toggle="modal" data-target="#set-medal">&#xe731;</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div>
-                  <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5 clearfix">
-                    <div class="col-sm-5 pad_0"><input type="text" class="form-control pad_r10" id="Input01" placeholder="基础分" value="80"></div>
-                    <div class="col-sm-7 pad_0 text-right"><a href="javascript:" class="qkyicon_14" title="保存">&#xe691;</a></div>
-                  </div>
+                    <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5 clearfix">
+                        <div class="col-sm-5 pad_0"><input type="text" class="form-control pad_r10" id="Input01" placeholder="基础分" value="80"></div>
+                        <div class="col-sm-7 pad_0 text-right"><a href="javascript:" class="qkyicon_14" title="保存">&#xe691;</a></div>
+                    </div>
                 </div>
-              </div>
-            <!--  
             </div>
-          
-            <div class="col-sm-4 pad_l0">
-              <div class="mar_t20 mar_b15 co_333 bor_lb pad_l5">积分商城实景图</div>
-              <div class="col-sm-12 pad_b20"><img src="../images/mall-phone.png" class="wid-100"></div>
-            </div>-->
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="Set04">
+        <div role="tabpanel" class="tab-pane fade active in" id="Set04">
           <div class="cont_tit pad_lr20">
-            <div class="fl"><h3>电子券信息管理</h3></div>     
-            <div class="fr"><a href="JavaScript:" class="bg_gray" data-toggle="modal" data-target="#add-coupon"><i class="qkyicon">&#xe69e;</i>新增电子券</a></div> 
+            <div class="fl"><h3>心愿单信息管理</h3></div>
+            <div class="fr"><a href="JavaScript:" class="bg_gray" data-toggle="modal" data-target="#add-coupon"><i class="qkyicon">&#xe69e;</i>新增</a></div>
           </div>
-          <div class="pad_lr20"><div class="mar_t20 bor_lb pad_l5">电子券派发规则：学生兑换获得一枚勋章时，系统同时派发一张关联的电子激励劵。（列如：兑换获得A勋章，后系统自动派发一张A关联的电子券）</div></div>
+          <div class="pad_lr20"><div class="mar_t20 bor_lb pad_l5">为了让评价更具有激励性，学生可根据自己拥有的七彩章的数量，在心愿单里兑换不同的愿望。</div></div>
           <div class="pad_20">
             <table width="100%" border="0" cellspacing="1" cellpadding="1"  class="judge_table">
               <tr>
-                <th width="16%" scope="col"><strong class="co_r mar_r5">*</strong>电子券名称</th>
-                <th width="13%" scope="col">关联勋章</th>
-                <th width="25%" scope="col">兑换有效期</th>
-                <th width="33%" scope="col">使用特权说明（限30个字）</th>
-                <th width="13%" scope="col">操作</th>
+                <th width="16%" scope="col"><strong class="co_r mar_r5">*</strong>名称</th>
+                <th width="25%" scope="col">兑换规则</th>
+                <th width="45%" scope="col">心愿单（任选其一）</th>
+                <th width="14%" scope="col">操作</th>
               </tr>
               <tr>
-                <td>星光少年特权劵</td>
-                <td>星光少年</td>
+                <td>A级心愿单</td>
                 <td>2019-2020年第二学期</td>
                 <td>此劵兑换一次少卫生值日的机会</td>
                 <td><a data-toggle="modal" data-target="#" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
                 </tr>
               <tr>
-                <td>星光少年特权劵</td>
-                <td>星光少年</td>
+                <td>A滑雪场季后赛心愿单</td>
                 <td>2019-2020年第二学期</td>
                 <td>学习习惯：按时上学，课前预习、课间准备好学习用品，课上乐于思考、积极发言</td>
                 <td><a data-toggle="modal" data-target="#" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
                 </tr>
               <tr>
-                <td>星光少年特权劵</td>
-                <td>星光少年</td>
+                <td>A滑雪场季后赛心愿单</td>
                 <td>2019-2020年第二学期</td>
                 <td>此劵兑换一次担任小组组长1天的机会</td>
                 <td><a data-toggle="modal" data-target="#" class="qkyicon_14" title="">&#xe60f;</a><a class="qkyicon_14 mar_l10" title="删除">&#xe6be;</a></td>
@@ -291,7 +278,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                 ×
             </button>
-            <h4 class="modal-title" id="myModalLabel">新增勋章信息</h4>
+            <h4 class="modal-title" id="">新增勋章信息</h4>
           </div>
           <div class="modal-body">
             <form class="form-horizontal row pad_t15">
@@ -1035,54 +1022,79 @@
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>
+
 <div class="modal fade" id="add-coupon" tabindex="-1" role="dialog" aria-labelledby="add-couponLabel" aria-hidden="true">
-	<div class="modal-dialog modal-md">
-		<div class="modal-content" role="tabpanel">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                ×
-            </button>
-            <h4 class="modal-title" id="myModalLabel">新增电子券信息</h4>
-          </div>
-          <div class="modal-body">
-            <form class="form-horizontal pad_15">
-                <div class="form-group">
-                  <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>电子券名称</label>
-                  <div class="col-sm-8 pad_l0 has-feedback">
-                    <input type="text" class="form-control" required placeholder="输入电子券名称" value="0">
-                    <span class="form-control-feedback co_999 mar_r5" aria-hidden="true">0/12</span>
-                  </div>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" role="tabpanel">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">新增心愿单</h4>
+            </div>
+            <div class="modal-body quato pad_0 bor_btm">
+                <div class="row">
+                    <div class="col-sm-6 pr0">
+                        <div class="nav mall-smenu pr15">
+                            <div class="pl15 pt10 pb5"><strong class="co_r mar_r5">*</strong>心愿单名称</div>
+                            <div class="has-feedback pl15">
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="form-control-feedback mr5" aria-hidden="true"><b class="co_333">0</b>/10</span>
+                            </div>
+                            <div class="pl15 pt10 pb5"><strong class="co_r mar_r5">*</strong>兑换规则</div>
+                            <div class="clear">
+                                <div class="col-sm-6 pr0">
+                                    <select name="select" class="form-control">
+                                        <option>请选择</option>
+                                        <option selected="">1枚</option>
+                                        <option>2枚</option>
+                                        <option>3枚</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 pr0">
+                                    <select name="select" class="form-control">
+                                        <option>请选择</option>
+                                        <option selected="">七彩少年勋章</option>
+                                        <option>五好少年勋章</option>
+                                        <option>阳光少年勋章</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pl0">
+                        <div class="pr15 bor-l">
+                            <div class="pl15 pt10 pb5"><strong class="co_r mar_r5">*</strong>心愿清单</div>
+                            <div class="clear mb5">
+                                <div class="col-sm-11 has-feedback pl15 pr0">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <span class="form-control-feedback mr5" aria-hidden="true"><b class="co_333">0</b>/10</span>
+                                </div>
+                                <div class="col-sm-1 pl10 pr0"><a href="javascript:" class="qkyicon_14 co_b block mt5" title="保存">&#xe691;</a></div>
+                            </div>
+                            <ul class="main-con  per-checked">
+                                <li class="clear pr0">
+                                    <div class="col-sm-10">
+                                        <div class="bg-bgray co_63 fz_14 pa5 rad4">易烊千玺</div>
+                                    </div>
+                                    <div class="col-sm-2 pt5 pl0 text-right">
+                                        <a href="#" class="iblock text-primary"><i class="qky_icon qky-pingjia"></i></a>
+                                        <a href="#" class="iblock ml5 text-danger"><i class="qky_icon qky-shanchu"></i></a>
+                                    </div>
+                                </li>
+                                
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>有效期</label>
-                  <div class="col-sm-8 pad_l0">
-                    <strong class="b_datec wid_max"><input type="text" placeholder="请选择" value="" class="set_text" onclick="WdatePicker()" onfocus="this.className='set_text'"><i class="qkyicon"></i></strong>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-sm-3 text-right pad_t5 pad_l0"><strong class="co_r mar_r5">*</strong>关联勋章</label>
-                  <div class="col-sm-8 pad_l0">
-                    <select name="select" class="form-control">
-                      <option selected="">请选择</option>
-                      <option>星光少年</option>
-                      <option>晨光少年</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-sm-3 text-right pad_t5 pad_l0">兑换特权描述<p class="co_999">(0/50)</p></label>
-                  <div class="col-sm-8 pad_l0">
-                    <textarea id="" rows="4" placeholder="输入兑换特权描述" class="form-control"></textarea> 
-                  </div>
-                </div>  
-            </form>
-		      </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-            <button type="button" class="btn btn-primary">保存</button>
-          </div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
 </div>
 </body>
 </html>

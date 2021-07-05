@@ -1070,7 +1070,7 @@ span.tit_span.tit_span-lg{ min-width:120px;}
 .main{float:right; width:100%; background: #fff; }
 .side.side-md {width:300px;margin-left:-300px; min-height: calc(100% - 100px);}
 .main .table_info,.main .box-div{ border-left:none; border-top:none; border-bottom:none; border-right:none;}
-.side-menu > a,.side-menu > div{ padding:5px 5px 5px 15px; display:block; color:#333;}
+.side-menu > a,.side-menu > div{ /*padding:5px 5px 5px 15px;*/ display:block; color:#333;}
 .side-menu a:hover,.side-menu a:focus{ text-decoration:none;}
 .side-menu >a.collapsed .qkyicon_14.iblock{transform:rotate(-90deg); -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);}
 .side-menu .ul-menu,.side-menu .ul-intro{ padding:0; margin:0}
@@ -1355,7 +1355,7 @@ a[data-toggle="collapse"].collapsed .qkyicon.iblock,a[data-toggle="collapse"].co
 .v-top,.left-menu li label{  vertical-align: top;}
 .checkbox-input label{margin-bottom:0; font-weight:normal;}
 .left-menu  li input[type="checkbox"]{ margin-top:5px;}
-.per-checked li{ padding-right:30px; padding-top:6px; padding-bottom:6px; position: relative;}
+.per-checked li{ /*padding-right:30px;*/ padding-top:6px; padding-bottom:6px; position: relative;}
 .per-checked li .po_ab_r.delete{right: 15px;top:12px;}
 .modal-body.quato .main-con .per-checked li{ padding-top: 10px; padding-bottom: 10px;}
 .modal-body.quato .main-con .per-checked li .badge{float:left;padding-top:6px;padding-bottom:6px; width: 86px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-right:2px;margin-top: 1px; margin-bottom: 1px;}

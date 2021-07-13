@@ -28,7 +28,7 @@
     </div>
 </div>
 <div class="weui-tab">
-    <div class="weui-navbar bg_white block clear">
+    <div class="weui-navbar bg_white block clear" id="abunav">
         <div class="w-box">
             <div class="w-box_auto">
                 <a class="weui-navbar__item iblock weui-bar__item--on" href="#tab1">
@@ -335,6 +335,26 @@
 <script src="../js/echarts.min.js"></script>
 <script src="../js/data-view.js"></script>
 <script>
+    window.onload=
+        function(){
+            var oDiv = document.getElementById("abunav"),
+                H = 0,
+                Y = oDiv
+            while (Y) {
+                H += Y.offsetTop;
+                Y = Y.offsetParent;
+            }
+            window.onscroll = function()
+            {
+                var s = document.body.scrollTop || document.documentElement.scrollTop
+                if(s>H) {
+                    oDiv.style = "position:fixed;top:0;"
+                } else {
+                    oDiv.style = ""
+                }
+            }
+        }
+
     var radarChart = echarts.init(document.getElementById('cla-radar'));
     option = {
         title: {
